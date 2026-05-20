@@ -72,20 +72,20 @@ export default function Hero() {
 
             <motion.h1
               variants={heroReveal}
-              className="font-serif text-[clamp(2.5rem,5.6vw,4.75rem)] leading-[1.02] tracking-[-0.025em] text-white mb-6"
+              className="font-serif text-[clamp(2.25rem,4.8vw,4rem)] leading-[1.05] tracking-[-0.025em] text-white mb-6"
             >
-              The surgeon who{" "}
-              <span className="serif-italic text-gold-400">helped design</span>{" "}
-              the hardware.
+              Chief of Hand Surgery at Lenox Hill.{" "}
+              <span className="serif-italic text-gold-400">Implant designer</span>{" "}
+              at Arthrex. Twenty-five years in New York.
             </motion.h1>
 
             <motion.p
               variants={heroReveal}
               className="text-white/70 text-lg md:text-xl leading-[1.5] max-w-xl mb-12 font-light"
             >
-              Double fellowship-trained orthopedic surgeon. On the design team
-              for multiple Arthrex implants. Among the first in New York to perform
-              PRP therapy for upper extremity injuries.
+              Double fellowship-trained in hand surgery and sports medicine. Among
+              the first in New York to perform PRP therapy for upper extremity
+              injuries. Author of 35+ peer-reviewed papers.
             </motion.p>
 
             {/* Editorial Recognition list: serif names + gold years, divider rules.
