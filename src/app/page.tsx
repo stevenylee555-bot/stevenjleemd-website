@@ -1,6 +1,5 @@
 import { buildFaqSchema } from "@/lib/schema";
 import Hero from "@/components/home/Hero";
-import PressStrip from "@/components/home/PressStrip";
 import AnimatedStats from "@/components/home/AnimatedStats";
 import ArthrexFeature from "@/components/home/ArthrexFeature";
 import Specialties from "@/components/home/Specialties";
@@ -51,7 +50,6 @@ export default function HomePage() {
       />
 
       <Hero />
-      <PressStrip />
       <AnimatedStats />
       <ArthrexFeature />
       <Specialties />
