@@ -26,7 +26,7 @@ export const conditions: Condition[] = [
     region: "Hand & Wrist",
     status: "priority",
     blurb:
-      "The most common fracture orthopedic surgeons treat. Dr. Lee is on the design team for the next-generation Arthrex distal radius plate.",
+      "The most common fracture orthopedic surgeons treat. Dr. Lee uses Arthrex fixed-angle volar plating in displaced or intra-articular cases.",
   },
   {
     name: "Scapholunate Ligament Injury",
@@ -123,7 +123,7 @@ export const conditions: Condition[] = [
     region: "Shoulder",
     status: "phase2",
     blurb:
-      "Plate fixation. Dr. Lee is slated to join the design team for Arthrex's next-generation clavicle plate.",
+      "Plate fixation with current-generation Arthrex hardware.",
   },
 
   // Knee & Sports — priority
@@ -167,7 +167,7 @@ export const conditions: Condition[] = [
     region: "Advanced Treatments",
     status: "phase2",
     blurb:
-      "Dr. Lee was the first surgeon in NYC to perform PRP therapy for upper extremity injuries.",
+      "Dr. Lee was among the first surgeons in NYC to perform PRP — and 99% certain the first specifically for upper extremity injuries. 250+ PRP procedures performed annually.",
   },
   {
     name: "Peptide Therapy",

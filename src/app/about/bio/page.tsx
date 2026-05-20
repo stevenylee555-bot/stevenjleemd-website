@@ -7,15 +7,16 @@ import PageHeader from "@/components/PageHeader";
 export const metadata: Metadata = {
   title: "Biography — Steven J. Lee, MD",
   description:
-    "Biography of Dr. Steven J. Lee, MD — Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, Arthrex implant designer, double fellowship-trained orthopedic surgeon serving NYC and Scarsdale.",
+    "Biography of Dr. Steven J. Lee, MD — Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, on the Arthrex implant design team, double fellowship-trained orthopedic surgeon serving NYC and Scarsdale.",
   alternates: { canonical: "https://www.stevenjleemd.com/about/bio" },
 };
 
 const credentials = [
   "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
+  "Associate Director, NISMAT",
   "Double Fellowship-Trained",
   "Board-Certified, American Board of Orthopaedic Surgery",
-  "Arthrex Implant Designer",
+  "Arthrex Implant Design Team",
 ];
 
 export default function BioPage() {
@@ -55,31 +56,36 @@ export default function BioPage() {
                 </p>
 
                 <h2 className="font-serif text-2xl md:text-3xl text-navy-950 tracking-[-0.01em] !mt-12 mb-2 leading-tight">
-                  The surgeon who designed the hardware
+                  The surgeon on the team that designed the hardware
                 </h2>
                 <p>
-                  What sets Dr. Lee apart is his direct role in advancing the field. He has designed
-                  plating systems, suture anchors, and internal brace constructs for{" "}
-                  <strong className="text-navy-950 font-semibold">Arthrex</strong> — one of the
-                  world&apos;s leading orthopedic device companies. Patients undergoing hand fracture
-                  repair, UCL reconstruction, tendon repair, or basal joint arthroplasty may
-                  literally be receiving hardware he helped create.
+                  What sets Dr. Lee apart is his direct role in advancing the field. He is on the
+                  design team for several{" "}
+                  <strong className="text-navy-950 font-semibold">Arthrex</strong> implants used
+                  worldwide: the Mini Comprehensive Fixation System for hand fractures, the Elbow
+                  Fracture Plating System, the 3.5 DX SwiveLock anchor (used in internal brace
+                  reconstructions for the UCL, scapholunate, and other ligament repairs), the
+                  NanoCorkscrew FT for tendon-to-bone repair, and the FiberLock CMC
+                  Suspensionplasty for thumb basal joint reconstruction.
                 </p>
                 <p>
-                  He is also slated to join the design teams for the next generation of clavicle
-                  plates and distal radius plates — the latter being the most common fracture
-                  orthopedic surgeons treat.
+                  Patients undergoing hand fracture repair, UCL reconstruction, tendon repair, or
+                  basal joint arthroplasty with Dr. Lee may literally be receiving hardware he
+                  helped create.
                 </p>
 
                 <h2 className="font-serif text-2xl md:text-3xl text-navy-950 tracking-[-0.01em] !mt-12 mb-2 leading-tight">
                   Biologics and the future of repair
                 </h2>
                 <p>
-                  Dr. Lee was the first surgeon in New York City to perform PRP (Platelet-Rich Plasma)
-                  therapy for upper extremity injuries. He has continued to pioneer the use of
-                  biologics in orthopedic care — including BMAC stem cell therapy and, more recently,
-                  peptides. He published what is believed to be the first review paper on the use of
-                  peptides in an orthopedic journal.
+                  Dr. Lee was among the first surgeons in New York City to perform PRP
+                  (Platelet-Rich Plasma) therapy, and 99% sure the first specifically for upper
+                  extremity injuries — at a time when biologics were still considered experimental
+                  in the orthopedic mainstream. He performs over 250 PRP procedures annually today,
+                  across the full body. He has continued to pioneer the use of biologics in
+                  orthopedic care, including BMAC stem cell therapy and, more recently, peptides —
+                  publishing what is believed to be the first review paper on the use of peptides
+                  in an orthopedic journal.
                 </p>
 
                 <h2 className="font-serif text-2xl md:text-3xl text-navy-950 tracking-[-0.01em] !mt-12 mb-2 leading-tight">
@@ -159,11 +165,15 @@ export default function BioPage() {
                   ))}
                 </ul>
 
-                <div className="kicker text-navy-900/40 mb-3">Hospital Affiliations</div>
+                <div className="kicker text-navy-900/55 mb-3">Hospital Affiliations</div>
                 <ul className="space-y-3 mb-10 text-[14.5px] text-navy-900/85">
                   <li>
                     <span className="font-semibold text-navy-950">Lenox Hill Hospital</span>
-                    <div className="text-navy-900/55 text-xs mt-0.5">Chief of Hand and Upper Extremity Surgery</div>
+                    <div className="text-navy-900/60 text-xs mt-0.5">Chief of Hand and Upper Extremity Surgery</div>
+                  </li>
+                  <li>
+                    <span className="font-semibold text-navy-950">NISMAT</span>
+                    <div className="text-navy-900/60 text-xs mt-0.5">Associate Director (Sports Medicine &amp; Athletic Trauma)</div>
                   </li>
                   <li>
                     <span className="font-semibold text-navy-950">

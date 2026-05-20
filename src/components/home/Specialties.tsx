@@ -28,7 +28,7 @@ const specialties = [
     title: "Elbow",
     eyebrow: "UCL · Complex trauma",
     description:
-      "Tommy John (UCL) reconstruction, LUCL repair, complex elbow trauma, biceps ruptures. Implant designer for internal brace constructs.",
+      "Tommy John (UCL) reconstruction, LUCL repair, complex elbow trauma, biceps ruptures. On the Arthrex design team for the internal brace constructs used in these procedures.",
     href: "/specialties/elbow",
     Icon: ElbowIcon,
   },
@@ -50,9 +50,9 @@ const specialties = [
   },
   {
     title: "PRP & Biologics",
-    eyebrow: "First in NYC for upper extremity",
+    eyebrow: "Among the first in NYC for upper extremity",
     description:
-      "PRP injections, BMAC stem cell therapy, and peptide treatments — including the first orthopedic-journal review paper on peptides.",
+      "PRP injections (250+ annually), BMAC stem cell therapy, and peptide treatments — including the first orthopedic-journal review paper on peptides.",
     href: "/specialties/advanced-treatments",
     Icon: BiologicsIcon,
   },

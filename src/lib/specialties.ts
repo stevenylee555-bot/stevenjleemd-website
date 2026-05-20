@@ -47,7 +47,7 @@ export const specialties: Specialty[] = [
     introTitle: "Surgery at the level of the person teaching it.",
     introBody: [
       "Dr. Lee serves as Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, a Northwell Health flagship in New York City. He is double fellowship-trained in hand and upper extremity surgery and in sports medicine — a combination that makes him fluent in both the fine reconstructive work of the hand and the high-demand return-to-sport considerations athletes care about.",
-      "Beyond his clinical practice, Dr. Lee is on the design team for several Arthrex implants used in hand and wrist surgery, including next-generation plate systems for the distal radius. When you have surgery with Dr. Lee, the hardware in your wrist may be hardware he helped design.",
+      "Beyond his clinical practice, Dr. Lee is on the design team for several Arthrex implants used worldwide — including the Mini Comprehensive Fixation System for hand fractures and the Elbow Fracture Plating System. When you have surgery with Dr. Lee, the hardware in your wrist may be hardware he helped create.",
     ],
     iconKey: "hand",
     conditionRegions: ["Hand & Wrist"],
@@ -60,7 +60,7 @@ export const specialties: Specialty[] = [
       {
         title: "Wrist fracture fixation",
         body:
-          "Volar plating and bridge plating using current-generation Arthrex hardware. Dr. Lee is on the design team for next-generation distal radius implants.",
+          "Volar plating and bridge plating using current-generation Arthrex hardware. Dr. Lee uses the same plating systems he has helped design for Arthrex.",
       },
       {
         title: "Ligament reconstruction with internal brace",
@@ -76,19 +76,19 @@ export const specialties: Specialty[] = [
     credentials: [
       "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital (Northwell Health)",
       "Double fellowship-trained — Hand & Upper Extremity, Sports Medicine",
-      "Arthrex implant designer — hand and wrist plating systems",
+      "On the Arthrex design team — Mini Comprehensive Fixation System (hand)",
       "Castle Connolly Top Doctor since 2008",
       "Routinely sees second-opinion and revision-surgery referrals",
     ],
     arthrex: {
-      title: "He designed the plate in your wrist.",
+      title: "He helped design the plate in your wrist.",
       body:
-        "Dr. Lee co-designed multiple plating systems Arthrex sells globally, and is on the design team for the next-generation Arthrex distal radius plate. Few surgeons in the country have that level of involvement with the hardware they implant.",
+        "Dr. Lee is on the Arthrex design team for the Mini Comprehensive Fixation System used in hand fractures and the Elbow Fracture Plating System. Few surgeons in the country have that level of involvement with the hardware they implant.",
     },
     metaTitle:
       "Hand & Wrist Surgery — Steven J. Lee, MD | Chief of Hand and Upper Extremity Surgery, Lenox Hill",
     metaDescription:
-      "Hand and wrist surgery in NYC and Scarsdale. Dr. Steven J. Lee — Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, double fellowship-trained, and an Arthrex implant designer. Carpal tunnel, distal radius fractures, scapholunate, basal joint, and more.",
+      "Hand and wrist surgery in NYC and Scarsdale. Dr. Steven J. Lee — Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, double fellowship-trained, and an on the Arthrex design team. Carpal tunnel, distal radius fractures, scapholunate, basal joint, and more.",
   },
 
   // ─────────────────────────────────────────────────────────────────
@@ -134,7 +134,7 @@ export const specialties: Specialty[] = [
     credentials: [
       "Fellowship-trained in Hand & Upper Extremity Surgery",
       "Fellowship-trained in Sports Medicine",
-      "Arthrex implant designer — anchors and internal brace constructs",
+      "on the Arthrex design team — anchors and internal brace constructs",
       "Sees referrals for complex and revision elbow surgery",
     ],
     arthrex: {
@@ -162,7 +162,7 @@ export const specialties: Specialty[] = [
     introTitle: "Sports medicine training, applied to the shoulder.",
     introBody: [
       "Dr. Lee's sports medicine fellowship training gives him deep familiarity with the shoulder — both at the elite-athlete level and in the broader population of active adults who don't want a torn rotator cuff or a labral injury to end their tennis, golf, or weight training.",
-      "Most shoulder procedures Dr. Lee performs are arthroscopic — small portals, anchor-based fixation, structured rehab. He is also on the design team for next-generation Arthrex clavicle plating, expanding his implant-design footprint from the elbow upward.",
+      "Most shoulder procedures Dr. Lee performs are arthroscopic — small portals, anchor-based fixation, structured rehab. His implant-design work with Arthrex spans the upper extremity, and the same precision philosophy applies to shoulder reconstruction.",
     ],
     iconKey: "shoulder",
     conditionRegions: ["Shoulder"],
@@ -180,7 +180,7 @@ export const specialties: Specialty[] = [
       {
         title: "Clavicle fracture fixation",
         body:
-          "Plate-and-screw fixation for displaced clavicle fractures. Dr. Lee is slated to join the design team for Arthrex's next-generation clavicle plate.",
+          "Plate-and-screw fixation for displaced clavicle fractures using current-generation Arthrex hardware.",
       },
       {
         title: "Return-to-sport planning",
@@ -191,13 +191,13 @@ export const specialties: Specialty[] = [
     credentials: [
       "Fellowship-trained in Sports Medicine",
       "Arthroscopic shoulder reconstruction",
-      "Joining design team — Arthrex next-generation clavicle plate",
+      "Arthroscopic shoulder reconstruction with current Arthrex anchor systems",
       "Treats elite athletes and active adults",
     ],
     arthrex: {
-      title: "Implant design is expanding to the shoulder.",
+      title: "The implant-design philosophy carries forward.",
       body:
-        "Dr. Lee is being added to the Arthrex design team for next-generation clavicle plating, applying the same design philosophy that produced his hand and wrist plates to the shoulder girdle.",
+        "The precision and engineering focus Dr. Lee brings to his Arthrex design work on the hand and elbow — including the Mini Comprehensive Fixation System and the Elbow Fracture Plating System — informs his approach to shoulder reconstruction.",
     },
     metaTitle:
       "Shoulder Surgery — Rotator Cuff, Arthroscopy | Steven J. Lee, MD NYC",
@@ -263,14 +263,14 @@ export const specialties: Specialty[] = [
     name: "PRP & Advanced Treatments",
     shortName: "PRP & Biologics",
     navLabel: "PRP & Advanced Treatments",
-    eyebrow: "First in NYC for upper extremity",
+    eyebrow: "Among the first in NYC for upper extremity",
     headline: "Biologic therapies,",
     headlineItalic: "from the surgeon who pioneered them.",
     lede:
-      "Platelet-rich plasma (PRP), bone marrow aspirate concentrate (BMAC), and peptide therapy — used when they're the right tool, not when they're a marketing line. Dr. Lee was the first surgeon in NYC to perform PRP for upper extremity injuries.",
+      "Platelet-rich plasma (PRP), bone marrow aspirate concentrate (BMAC), and peptide therapy — used when they're the right tool, not when they're a marketing line. Dr. Lee was among the first surgeons in NYC to perform PRP, and 99% sure the first specifically for upper extremity injuries. He performs 250+ PRP procedures annually today.",
     introTitle: "An early adopter, not a marketer.",
     introBody: [
-      "Dr. Lee was the first surgeon in New York City to use platelet-rich plasma (PRP) for upper extremity injuries — at a time when biologics were still considered experimental in the orthopedic mainstream. He has watched the field grow from a research idea into a routine clinical option, and his patient selection reflects that experience.",
+      "Dr. Lee was among the first surgeons in New York City to use platelet-rich plasma (PRP), and 99% certain the first specifically for upper extremity injuries — at a time when biologics were still considered experimental in the orthopedic mainstream. He performs over 250 PRP procedures annually today and has watched the field grow from a research idea into a routine clinical option.",
       "He has also published what is believed to be the first review paper on peptide therapy in an orthopedic journal — expanding the conversation around what biologic and regenerative options can responsibly offer orthopedic patients.",
     ],
     iconKey: "biologics",
@@ -298,7 +298,7 @@ export const specialties: Specialty[] = [
       },
     ],
     credentials: [
-      "First NYC surgeon to perform PRP for upper extremity injuries",
+      "Among the first NYC surgeons to perform PRP, and the first for upper extremity",
       "First-author review on peptide therapy in an orthopedic journal",
       "Image-guided injection technique",
       "Patient-specific selection criteria",
@@ -306,7 +306,7 @@ export const specialties: Specialty[] = [
     metaTitle:
       "PRP & Advanced Treatments — Biologics, BMAC, Peptides | Dr. Lee NYC",
     metaDescription:
-      "PRP, BMAC, and peptide therapy in NYC and Scarsdale by Dr. Steven J. Lee — the first surgeon in New York City to use PRP for upper extremity injuries. Conservative, patient-specific selection.",
+      "PRP, BMAC, and peptide therapy in NYC and Scarsdale by Dr. Steven J. Lee — among the first surgeons in New York City to use PRP, and the first specifically for upper extremity injuries. 250+ PRP procedures annually. Conservative, patient-specific selection.",
   },
 ];
 

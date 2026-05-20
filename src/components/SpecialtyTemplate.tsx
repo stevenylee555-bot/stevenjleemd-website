@@ -121,7 +121,7 @@ export default function SpecialtyTemplate({ specialty }: { specialty: Specialty 
               <div>
                 <div className="flex items-center gap-3 mb-5">
                   <span className="h-px w-10 bg-gold-500" />
-                  <span className="kicker text-gold-400">Arthrex Implant Designer</span>
+                  <span className="kicker text-gold-400">Arthrex Design Team</span>
                 </div>
                 <h2 className="font-serif text-[clamp(1.75rem,3.2vw,2.75rem)] tracking-[-0.02em] leading-[1.1] mb-6">
                   {specialty.arthrex.title}

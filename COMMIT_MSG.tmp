@@ -1,0 +1,52 @@
+Apply Dr. Lee's content corrections from his PDF review
+
+Facts and dates:
+- Castle Connolly: "Since 2008" -> "Since 2014" across Hero, About,
+  homepage FAQ, OG image, schema (he was wrong about 2008 start)
+- NY Times Super Doctors: "Hall of Fame 2020" -> "Since 2008,
+  Hall of Fame since 2019"
+- NY Magazine: "Multiple years" -> "2014-Present"
+
+New credential added (visible in his speaking photo):
+- "Associate Director, NISMAT" (Nicholas Institute of Sports
+  Medicine and Athletic Trauma) added to Hero recognition list,
+  About home section credentials, Bio credentials, hospital
+  affiliations lists, JSON-LD schema, layout metadata
+
+Hero headline softened per his request:
+- "The surgeon who designed the hardware." ->
+  "The surgeon who helped design the hardware."
+- Subhead reworked: "Arthrex implant designer" -> "On the design
+  team for multiple Arthrex implants"; "first physician" ->
+  "among the first"
+
+Arthrex implant designer language softened (he didn't want to
+imply solo credit; team contribution is the accurate framing):
+- "Arthrex Implant Designer" (kicker) -> "Arthrex Design Team"
+  in Hero kicker, ArthrexFeature kicker, SpecialtyTemplate kicker
+- "Arthrex implant designer" (prose) -> "on the Arthrex implant
+  design team" across schema, layout metadata, all page descriptions
+
+Real Arthrex product names now used (not generic labels):
+- Mini Comprehensive Fixation System (hand)
+- Elbow Fracture Plating System
+- 3.5 DX SwiveLock (internal brace anchor)
+- NanoCorkscrew FT (tendon-to-bone)
+- FiberLock CMC Suspensionplasty (basal joint)
+Updated in ArthrexFeature implants list, About home section,
+Bio page prose, specialties.ts hand/wrist content, schema, layout
+
+Confidential removals (his explicit instruction):
+- All references to "Next-Gen Clavicle Plate" removed
+- All references to "Next-Gen Distal Radius Plate" removed
+- "Slated to join design teams for next-generation" removed from
+  About home, Bio, conditionPages, specialties
+
+PRP claim softened to match his words:
+- "first surgeon in NYC/New York to perform PRP" -> "among the
+  first surgeons in NYC/New York to perform PRP, and 99% sure
+  the first specifically for upper extremity injuries"
+- "Pioneer of PRP" -> removed
+- Added "250+ PRP procedures annually" stat where appropriate
+  (Hero subhead, About home, Bio, specialties advanced-treatments,
+  homepage FAQ, schema, conditions.ts blurb)

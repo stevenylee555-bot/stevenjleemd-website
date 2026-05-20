@@ -59,9 +59,10 @@ export default function SpecialtiesIndexPage() {
                 the shoulder, elbow, and knee.
               </p>
               <p className="text-navy-900/80 text-[18px] leading-[1.7] font-light">
-                He is also an active Arthrex implant designer, with multiple
-                plating and anchor systems already in clinical use and a
-                next-generation distal radius plate in development.
+                He is also on the Arthrex design team for several implants used worldwide —
+                the Mini Comprehensive Fixation System for hand fractures, the Elbow
+                Fracture Plating System, the 3.5 DX SwiveLock anchor, the NanoCorkscrew FT,
+                and the FiberLock CMC Suspensionplasty.
               </p>
             </div>
           </div>

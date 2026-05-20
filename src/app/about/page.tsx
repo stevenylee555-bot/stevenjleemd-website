@@ -6,7 +6,7 @@ import PageHeader from "@/components/PageHeader";
 export const metadata: Metadata = {
   title: "About Dr. Lee — Steven J. Lee, MD",
   description:
-    "About Dr. Steven J. Lee, MD — Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, Arthrex implant designer, double fellowship-trained orthopedic surgeon. Biography, credentials, publications, and CV.",
+    "About Dr. Steven J. Lee, MD — Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, on the Arthrex implant design team, double fellowship-trained orthopedic surgeon. Biography, credentials, publications, and CV.",
   alternates: { canonical: "https://www.stevenjleemd.com/about" },
 };
 
@@ -50,7 +50,7 @@ export default function AboutIndexPage() {
         kicker="About Dr. Lee"
         title="Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital,"
         italic="and the surgeon who designed the hardware."
-        lede="Dr. Steven J. Lee is a double fellowship-trained, board-certified orthopedic surgeon specializing in hand, wrist, elbow, shoulder, and sports medicine. Designer of plating systems, suture anchors, and internal brace constructs for Arthrex. First in NYC to perform PRP therapy for upper extremity injuries."
+        lede="Dr. Steven J. Lee is a double fellowship-trained, board-certified orthopedic surgeon specializing in hand, wrist, elbow, shoulder, and sports medicine. On the Arthrex design team for the Mini Comprehensive Fixation System, Elbow Fracture Plating System, 3.5 DX SwiveLock, NanoCorkscrew FT, and FiberLock CMC Suspensionplasty. Among the first in NYC to perform PRP therapy, and the first for upper extremity injuries."
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "About", href: "/about" },

@@ -58,7 +58,7 @@ export default function Hero() {
             <motion.div variants={heroReveal} className="flex items-center gap-3 mb-8">
               <span className="h-px w-10 bg-gold-500" aria-hidden="true" />
               <span className="kicker text-gold-400">
-                Arthrex Implant Designer · Lenox Hill Hospital
+                Arthrex Design Team · Lenox Hill Hospital
               </span>
             </motion.div>
 
@@ -67,7 +67,7 @@ export default function Hero() {
               className="font-serif text-[clamp(2.5rem,5.6vw,4.75rem)] leading-[1.02] tracking-[-0.025em] text-white mb-6"
             >
               The surgeon who{" "}
-              <span className="serif-italic text-gold-400">designed</span>{" "}
+              <span className="serif-italic text-gold-400">helped design</span>{" "}
               the hardware.
             </motion.h1>
 
@@ -75,9 +75,9 @@ export default function Hero() {
               variants={heroReveal}
               className="text-white/70 text-lg md:text-xl leading-[1.5] max-w-xl mb-10 font-light"
             >
-              Double fellowship-trained orthopedic surgeon. Arthrex implant designer.
-              The first physician in New York to perform PRP therapy for upper extremity
-              injuries.
+              Double fellowship-trained orthopedic surgeon. On the design team
+              for multiple Arthrex implants. Among the first in New York to perform
+              PRP therapy for upper extremity injuries.
             </motion.p>
 
             {/* Recognition block — accolades front and center, individually staggered */}
@@ -88,10 +88,10 @@ export default function Hero() {
                 className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5 max-w-xl"
               >
                 {[
-                  { name: "Castle Connolly Top Doctor", note: "Annually since 2008" },
-                  { name: "New York Times Super Doctors", note: null },
-                  { name: "US News Top Doctor", note: null },
-                  { name: "New York Magazine Top Doctor", note: null },
+                  { name: "Castle Connolly Top Doctor", note: "Annually since 2014" },
+                  { name: "NY Times Super Doctors", note: "Hall of Fame since 2019" },
+                  { name: "New York Magazine Top Doctor", note: "Since 2014" },
+                  { name: "Associate Director, NISMAT", note: null },
                 ].map((a) => (
                   <motion.li
                     key={a.name}
@@ -246,8 +246,8 @@ export default function Hero() {
                   <div className="text-white text-sm font-semibold leading-tight">
                     Castle Connolly Top Doctor
                   </div>
-                  <div className="text-white/50 text-xs mt-0.5">
-                    Recognized annually since 2008
+                  <div className="text-white/60 text-xs mt-0.5">
+                    Recognized annually since 2014
                   </div>
                 </div>
               </motion.div>

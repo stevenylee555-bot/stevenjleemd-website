@@ -7,7 +7,7 @@ export const physicianSchema = {
   url: "https://www.stevenjleemd.com",
   image: "https://www.stevenjleemd.com/images/dr-lee-headshot.jpg",
   description:
-    "Dr. Steven J. Lee is a double fellowship-trained, board-certified orthopedic surgeon specializing in hand, wrist, elbow, shoulder, and sports medicine. Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital. Arthrex implant designer. Pioneer of PRP therapy for upper extremity injuries in New York City.",
+    "Dr. Steven J. Lee is a double fellowship-trained, board-certified orthopedic surgeon specializing in hand, wrist, elbow, shoulder, and sports medicine. Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital and Associate Director at NISMAT. On the Arthrex design team for the Mini Comprehensive Fixation System, Elbow Fracture Plating System, 3.5 DX SwiveLock anchor, NanoCorkscrew FT, and FiberLock CMC Suspensionplasty. Among the first surgeons in New York to perform PRP therapy for upper extremity injuries, with 250+ PRP procedures performed annually.",
   medicalSpecialty: [
     "Orthopedic Surgery",
     "Hand Surgery",

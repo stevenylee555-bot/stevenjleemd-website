@@ -81,7 +81,7 @@ const distalRadiusFracture: ConditionPageContent = {
   headerTitle: "Distal Radius Fracture —",
   headerItalic: "the wrist fracture, treated properly.",
   headerLede:
-    "A broken wrist is the most common fracture orthopedic surgeons treat. The right treatment depends on the fracture pattern, the patient, and the surgeon. Dr. Lee is on the design team for the next-generation Arthrex distal radius plate.",
+    "A broken wrist is the most common fracture orthopedic surgeons treat. The right treatment depends on the fracture pattern, the patient, and the surgeon. Dr. Lee is on the Arthrex design team for fixed-angle volar plating systems.",
   byline: {
     name: "Steven J. Lee, MD",
     title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
@@ -121,7 +121,7 @@ const distalRadiusFracture: ConditionPageContent = {
   drLeeApproach: {
     paragraphs: [
       "Not every distal radius fracture needs surgery. Stable, well-aligned fractures heal beautifully in a cast — and Dr. Lee will never recommend an operation a patient doesn't need.",
-      "When surgery is the right call, the goal is to restore the anatomy as closely as possible to what was there before the fall. Dr. Lee is on the design team for the next-generation Arthrex distal radius plate — the same fixed-angle volar plating system used by surgeons around the country. He uses it on his own patients.",
+      "When surgery is the right call, the goal is to restore the anatomy as closely as possible to what was there before the fall. Dr. Lee is on the Arthrex design team for fixed-angle volar plating systems — the same fixed-angle volar plating system used by surgeons around the country. He uses it on his own patients.",
     ],
   },
   treatmentSections: [
@@ -185,7 +185,7 @@ const distalRadiusFracture: ConditionPageContent = {
   ],
   whyDrLee: [
     "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
-    "On the Arthrex design team for the next-generation distal radius plate",
+    "On the Arthrex design team for fixed-angle volar plating systems",
     "Volar plating for displaced and intra-articular fractures",
     "Conservative — won't recommend surgery for fractures that don't need it",
   ],
@@ -233,7 +233,7 @@ const distalRadiusFracture: ConditionPageContent = {
     "A distal radius fracture heals once. The quality of that healing depends heavily on the quality of the initial treatment. Whether you need surgery or not, the goal is the same — a wrist that works normally in 30 years.",
   metaTitle: "Distal Radius (Wrist) Fracture — Steven J. Lee, MD",
   metaDescription:
-    "Distal radius (wrist) fracture treatment by Dr. Steven J. Lee, MD — Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital and Arthrex implant designer. Volar plate fixation, cast treatment, recovery, and second opinions.",
+    "Distal radius (wrist) fracture treatment by Dr. Steven J. Lee, MD — Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital and on the Arthrex implant design team. Volar plate fixation, cast treatment, recovery, and second opinions.",
   schemaDescription:
     "A distal radius fracture is a break of the radius bone at the wrist, usually caused by a fall onto an outstretched hand. Treatment options include cast immobilization for stable fractures and volar plate fixation for displaced or intra-articular fractures.",
 };

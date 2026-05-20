@@ -6,19 +6,19 @@ import { ArrowUpRight } from "lucide-react";
 import { fadeUp, inViewProps, stagger } from "@/lib/motion";
 
 const awards = [
-  { name: "Castle Connolly Top Doctor", years: "2008–Present" },
-  { name: "NY Times Super Doctors Hall of Fame", years: "2020" },
+  { name: "Castle Connolly Top Doctor", years: "2014–Present" },
+  { name: "NY Times Super Doctors", years: "Since 2008" },
+  { name: "NY Times Super Doctors Hall of Fame", years: "Since 2019" },
+  { name: "New York Magazine Best Doctors", years: "2014–Present" },
   { name: "U.S. News & World Report Best Doctors", years: "Multiple years" },
-  { name: "New York Magazine Best Doctors", years: "Multiple years" },
-  { name: "Vitals Compassionate Doctor Award", years: "Recurring" },
 ];
 
 const credentials = [
   "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
+  "Associate Director, NISMAT",
   "Double Fellowship-Trained",
   "Board-Certified Orthopedic Surgery",
-  "Arthrex Implant Designer",
-  "First in NYC: PRP for Upper Extremity",
+  "Arthrex Implant Design Team",
 ];
 
 export default function About() {
@@ -52,16 +52,19 @@ export default function About() {
                 and board-certified by the American Board of Orthopaedic Surgery.
               </p>
               <p>
-                What sets Dr. Lee apart is his direct role advancing the field. He has
-                designed plating systems, suture anchors, and internal brace constructs
-                for <span className="text-navy-950 font-medium">Arthrex</span>, one of
-                the world&apos;s leading orthopedic device companies. He is on the design
-                team for the next generation of clavicle and distal radius plates.
+                What sets Dr. Lee apart is his direct role advancing the field. He is on
+                the design team for several{" "}
+                <span className="text-navy-950 font-medium">Arthrex</span> implants used
+                worldwide — including the Mini Comprehensive Fixation System (hand), the
+                Elbow Fracture Plating System, the 3.5 DX SwiveLock anchor, the
+                NanoCorkscrew FT, and the FiberLock CMC Suspensionplasty for thumb
+                reconstruction.
               </p>
               <p>
-                He was the first surgeon in New York City to perform PRP therapy for
-                upper extremity injuries, and recently published what is believed to be
-                the first review paper on the use of peptides in an orthopedic journal.
+                He was among the first surgeons in New York to perform PRP therapy for
+                upper extremity injuries — performing 250+ PRP procedures annually
+                today — and published what is believed to be the first review paper on
+                the use of peptides in an orthopedic journal.
               </p>
             </motion.div>
 
@@ -114,14 +117,21 @@ export default function About() {
               <div className="kicker text-navy-900/40 mb-4">Hospital Affiliations</div>
               <ul className="space-y-3 text-navy-900/75 text-sm">
                 <li className="flex items-baseline gap-3">
-                  <span className="h-1 w-1 rounded-full bg-gold-500 shrink-0 translate-y-[2px]" />
+                  <span className="h-1 w-1 rounded-full bg-gold-500 shrink-0 translate-y-[2px]" aria-hidden="true" />
                   <span>
                     <span className="font-semibold text-navy-950">Lenox Hill Hospital</span>
                     {" — "}Chief of Hand and Upper Extremity Surgery
                   </span>
                 </li>
                 <li className="flex items-baseline gap-3">
-                  <span className="h-1 w-1 rounded-full bg-gold-500 shrink-0 translate-y-[2px]" />
+                  <span className="h-1 w-1 rounded-full bg-gold-500 shrink-0 translate-y-[2px]" aria-hidden="true" />
+                  <span>
+                    <span className="font-semibold text-navy-950">NISMAT</span>
+                    {" — "}Associate Director (Nicholas Institute of Sports Medicine &amp; Athletic Trauma)
+                  </span>
+                </li>
+                <li className="flex items-baseline gap-3">
+                  <span className="h-1 w-1 rounded-full bg-gold-500 shrink-0 translate-y-[2px]" aria-hidden="true" />
                   <span>
                     <span className="font-semibold text-navy-950">
                       Manhattan Eye, Ear &amp; Throat Hospital

@@ -5,12 +5,11 @@ import { fadeUp, inViewProps, stagger } from "@/lib/motion";
 import { ImplantPlateIcon } from "./icons/AnatomyIcons";
 
 const implants = [
-  { label: "Hand & Elbow Plating Systems", status: "designed" },
-  { label: "Internal Brace Anchors", status: "designed" },
-  { label: "Tendon-to-Bone Anchors", status: "designed" },
-  { label: "Basal Joint Internal Brace", status: "designed" },
-  { label: "Next-Gen Clavicle Plate", status: "upcoming" },
-  { label: "Next-Gen Distal Radius Plate", status: "upcoming" },
+  { label: "Arthrex Mini Comprehensive Fixation System (hand)", status: "designed" },
+  { label: "Arthrex Elbow Fracture Plating System", status: "designed" },
+  { label: "Arthrex 3.5 DX SwiveLock (internal brace)", status: "designed" },
+  { label: "Arthrex NanoCorkscrew FT (tendon-to-bone)", status: "designed" },
+  { label: "Arthrex FiberLock CMC Suspensionplasty", status: "designed" },
 ];
 
 export default function ArthrexFeature() {
@@ -31,7 +30,7 @@ export default function ArthrexFeature() {
           <div>
             <motion.div variants={fadeUp} className="flex items-center gap-3 mb-6">
               <span className="h-px w-10 bg-gold-500" />
-              <span className="kicker text-gold-400">Arthrex Implant Designer</span>
+              <span className="kicker text-gold-400">Arthrex Design Team</span>
             </motion.div>
 
             <motion.h2
@@ -39,27 +38,26 @@ export default function ArthrexFeature() {
               className="font-serif text-[clamp(2.25rem,4.6vw,3.75rem)] leading-[1.05] tracking-[-0.02em] mb-8 max-w-xl"
             >
               He didn&apos;t just learn the procedure.{" "}
-              <span className="serif-italic text-gold-400">He designed the hardware.</span>
+              <span className="serif-italic text-gold-400">He helped design the hardware.</span>
             </motion.h2>
 
             <motion.p
               variants={fadeUp}
-              className="text-white/65 text-lg leading-[1.65] font-light mb-6 max-w-xl"
+              className="text-white/75 text-lg leading-[1.65] font-light mb-6 max-w-xl"
             >
-              Dr. Lee has designed plating systems, suture anchors, and internal brace
-              constructs for Arthrex — one of the world&apos;s leading orthopedic device
-              companies. Patients undergoing hand fracture repair, UCL reconstruction,
-              tendon repair, and basal joint arthroplasty may literally be receiving
-              hardware he helped create.
+              Dr. Lee is on the design team for several Arthrex implants used worldwide —
+              plating systems for the hand and elbow, the 3.5 DX SwiveLock anchor used
+              in internal brace reconstructions, the NanoCorkscrew FT for tendon-to-bone
+              repair, and the FiberLock CMC Suspensionplasty for thumb arthritis.
             </motion.p>
 
             <motion.p
               variants={fadeUp}
               className="text-white/70 text-sm leading-relaxed mb-10 max-w-xl"
             >
-              He is slated to join the design teams for the next generation of clavicle
-              plates and distal radius plates — the most common fracture orthopedic
-              surgeons treat.
+              Patients undergoing hand fracture repair, UCL reconstruction, tendon
+              repair, or basal joint arthroplasty with Dr. Lee may literally be
+              receiving hardware he helped create.
             </motion.p>
 
             <motion.ul
