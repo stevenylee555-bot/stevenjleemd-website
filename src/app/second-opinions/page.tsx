@@ -145,7 +145,7 @@ export default function SecondOpinionsPage() {
               {pillars.map((p) => (
                 <div key={p.title} className="bg-white p-6 lg:p-8">
                   <div className="flex h-10 w-10 items-center justify-center rounded-sm bg-gold-500/15 ring-1 ring-gold-500/30 mb-5">
-                    <p.Icon size={18} className="text-gold-600" strokeWidth={1.6} />
+                    <p.Icon size={18} className="text-gold-600" strokeWidth={1.5} />
                   </div>
                   <div className="font-serif text-lg text-navy-950 tracking-[-0.01em] mb-2">
                     {p.title}
@@ -293,7 +293,7 @@ export default function SecondOpinionsPage() {
                     </span>
                     <ChevronRight
                       size={20}
-                      strokeWidth={1.6}
+                      strokeWidth={1.5}
                       className="text-navy-900/60 shrink-0 mt-1.5 transition-transform group-open:rotate-90"
                     />
                   </summary>

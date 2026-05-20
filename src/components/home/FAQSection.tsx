@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
-import { Plus, BookOpen } from "lucide-react";
+import { Plus, BookOpen, ArrowRight } from "lucide-react";
 import { fadeUp, inViewProps, stagger } from "@/lib/motion";
 
 export type Faq = { question: string; answer: string };
@@ -64,7 +64,7 @@ export default function FAQSection({ faqs }: { faqs: Faq[] }) {
                       (isOpen ? "rotate-45 text-gold-600" : "text-navy-900/60")
                     }
                   >
-                    <Plus size={22} strokeWidth={1.6} />
+                    <Plus size={22} strokeWidth={1.5} />
                   </span>
                 </button>
 
@@ -97,13 +97,24 @@ export default function FAQSection({ faqs }: { faqs: Faq[] }) {
           variants={fadeUp}
           className="mt-12 flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 text-navy-900/70"
         >
-          <BookOpen size={18} className="text-gold-600 shrink-0" strokeWidth={1.6} />
+          <BookOpen
+            size={18}
+            className="text-gold-600 shrink-0"
+            strokeWidth={1.5}
+            aria-hidden="true"
+          />
           <span className="text-sm">More questions answered across the</span>
           <Link
             href="/conditions"
-            className="text-sm font-semibold text-navy-950 hover:text-gold-600 border-b border-navy-950 hover:border-gold-600 pb-0.5 transition-colors"
+            className="group inline-flex items-center gap-1.5 text-sm font-semibold text-navy-950 hover:text-gold-600 border-b border-navy-950 hover:border-gold-600 pb-0.5 transition-colors"
           >
-            full conditions library →
+            full conditions library
+            <ArrowRight
+              size={14}
+              strokeWidth={1.5}
+              aria-hidden="true"
+              className="transition-transform group-hover:translate-x-0.5"
+            />
           </Link>
         </motion.div>
       </div>

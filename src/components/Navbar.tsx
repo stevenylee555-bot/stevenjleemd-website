@@ -57,7 +57,7 @@ export default function Navbar() {
       <div className="bg-navy-950 py-2 px-4 text-sm text-white/60 hidden sm:flex justify-between items-center max-w-7xl mx-auto">
         <span>Lenox Hill Hospital · NYC &amp; Scarsdale</span>
         <a href="tel:+12127373301" className="flex items-center gap-1 hover:text-gold-400 transition-colors" aria-label="Call office at (212) 737-3301">
-          <Phone size={13} aria-hidden="true" />
+          <Phone size={14} strokeWidth={1.5} aria-hidden="true" />
           (212) 737-3301
         </a>
       </div>
@@ -100,7 +100,7 @@ export default function Navbar() {
                 )}
               >
                 {link.label}
-                {link.children && <ChevronDown size={13} className="opacity-60" aria-hidden="true" />}
+                {link.children && <ChevronDown size={14} strokeWidth={1.5} className="opacity-60" aria-hidden="true" />}
               </Link>
 
               {link.children && activeDropdown === link.href && (

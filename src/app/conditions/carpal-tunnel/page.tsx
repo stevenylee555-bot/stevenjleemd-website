@@ -296,7 +296,7 @@ export default function CarpalTunnelPage() {
                     <AlertTriangle
                       size={16}
                       className="text-gold-600 mt-1 shrink-0"
-                      strokeWidth={1.6}
+                      strokeWidth={1.5}
                     />
                     <span>
                       <strong className="text-navy-950">
@@ -310,7 +310,7 @@ export default function CarpalTunnelPage() {
                     <AlertTriangle
                       size={16}
                       className="text-gold-600 mt-1 shrink-0"
-                      strokeWidth={1.6}
+                      strokeWidth={1.5}
                     />
                     <span>
                       <strong className="text-navy-950">Delay can cost recovery.</strong>{" "}
@@ -323,7 +323,7 @@ export default function CarpalTunnelPage() {
                     <AlertTriangle
                       size={16}
                       className="text-gold-600 mt-1 shrink-0"
-                      strokeWidth={1.6}
+                      strokeWidth={1.5}
                     />
                     <span>
                       <strong className="text-navy-950">
@@ -370,7 +370,7 @@ export default function CarpalTunnelPage() {
                 {/* At a glance */}
                 <div className="bg-cream/60 border border-navy-900/[0.08] p-6 lg:p-7 rounded-sm">
                   <div className="flex items-center gap-2 mb-5">
-                    <Activity size={16} className="text-gold-600" strokeWidth={1.6} />
+                    <Activity size={16} className="text-gold-600" strokeWidth={1.5} />
                     <span className="kicker text-gold-600">At a glance</span>
                   </div>
                   <dl className="space-y-4">
@@ -395,7 +395,7 @@ export default function CarpalTunnelPage() {
                       <CheckCircle2
                         size={14}
                         className="text-gold-600 mt-1 shrink-0"
-                        strokeWidth={1.6}
+                        strokeWidth={1.5}
                       />
                       <span>Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital</span>
                     </li>
@@ -403,7 +403,7 @@ export default function CarpalTunnelPage() {
                       <CheckCircle2
                         size={14}
                         className="text-gold-600 mt-1 shrink-0"
-                        strokeWidth={1.6}
+                        strokeWidth={1.5}
                       />
                       <span>Endoscopic technique — minimally invasive, faster recovery</span>
                     </li>
@@ -411,7 +411,7 @@ export default function CarpalTunnelPage() {
                       <CheckCircle2
                         size={14}
                         className="text-gold-600 mt-1 shrink-0"
-                        strokeWidth={1.6}
+                        strokeWidth={1.5}
                       />
                       <span>
                         Performs revision carpal tunnel for patients who had prior surgery
@@ -450,7 +450,7 @@ export default function CarpalTunnelPage() {
                 {/* CTA card */}
                 <div className="bg-navy-950 text-white p-6 lg:p-7 rounded-sm">
                   <div className="flex items-center gap-2 mb-4">
-                    <Clock size={16} className="text-gold-400" strokeWidth={1.6} />
+                    <Clock size={16} className="text-gold-400" strokeWidth={1.5} />
                     <span className="kicker text-gold-400">15-minute procedure</span>
                   </div>
                   <div className="font-serif text-xl text-white tracking-[-0.01em] leading-snug mb-5">
@@ -495,7 +495,7 @@ export default function CarpalTunnelPage() {
                     </span>
                     <ChevronRight
                       size={20}
-                      strokeWidth={1.6}
+                      strokeWidth={1.5}
                       className="text-navy-900/60 shrink-0 mt-1.5 transition-transform group-open:rotate-90"
                     />
                   </summary>

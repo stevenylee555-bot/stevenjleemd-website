@@ -48,7 +48,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-navy-900/10 border border-navy-900/10">
             <div className="bg-white p-8 lg:p-10">
               <div className="flex h-11 w-11 items-center justify-center rounded-sm bg-gold-500/15 ring-1 ring-gold-500/30 mb-6">
-                <Calendar size={20} className="text-gold-600" strokeWidth={1.6} />
+                <Calendar size={20} className="text-gold-600" strokeWidth={1.5} />
               </div>
               <h2 className="font-serif text-2xl text-navy-950 tracking-[-0.01em] mb-3">
                 Book online
@@ -71,7 +71,7 @@ export default function ContactPage() {
 
             <div className="bg-white p-8 lg:p-10">
               <div className="flex h-11 w-11 items-center justify-center rounded-sm bg-gold-500/15 ring-1 ring-gold-500/30 mb-6">
-                <Phone size={20} className="text-gold-600" strokeWidth={1.6} />
+                <Phone size={20} className="text-gold-600" strokeWidth={1.5} />
               </div>
               <h2 className="font-serif text-2xl text-navy-950 tracking-[-0.01em] mb-3">
                 Call the office
@@ -89,7 +89,7 @@ export default function ContactPage() {
 
             <div className="bg-white p-8 lg:p-10">
               <div className="flex h-11 w-11 items-center justify-center rounded-sm bg-gold-500/15 ring-1 ring-gold-500/30 mb-6">
-                <Video size={20} className="text-gold-600" strokeWidth={1.6} />
+                <Video size={20} className="text-gold-600" strokeWidth={1.5} />
               </div>
               <h2 className="font-serif text-2xl text-navy-950 tracking-[-0.01em] mb-3">
                 Telemedicine
@@ -137,7 +137,7 @@ export default function ContactPage() {
                     <MapPin
                       size={18}
                       className="text-gold-600 mt-0.5 shrink-0"
-                      strokeWidth={1.6}
+                      strokeWidth={1.5}
                     />
                     <div className="text-navy-900/85">
                       {loc.address.map((line) => (
@@ -152,7 +152,7 @@ export default function ContactPage() {
                     <Phone
                       size={18}
                       className="text-gold-600 mt-0.5 shrink-0"
-                      strokeWidth={1.6}
+                      strokeWidth={1.5}
                       aria-hidden="true"
                     />
                     <a
@@ -169,7 +169,7 @@ export default function ContactPage() {
                       <Printer
                         size={18}
                         className="text-gold-600 mt-0.5 shrink-0"
-                        strokeWidth={1.6}
+                        strokeWidth={1.5}
                         aria-hidden="true"
                       />
                       <div className="text-[15px] text-navy-900/85">
@@ -183,7 +183,7 @@ export default function ContactPage() {
                     <Clock
                       size={18}
                       className="text-gold-600 mt-0.5 shrink-0"
-                      strokeWidth={1.6}
+                      strokeWidth={1.5}
                       aria-hidden="true"
                     />
                     <div className="text-[15px] text-navy-900/85">
@@ -217,7 +217,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-12">
             <div>
               <div className="flex h-10 w-10 items-center justify-center rounded-sm bg-gold-500/15 ring-1 ring-gold-500/30 mb-5">
-                <Mail size={16} className="text-gold-400" strokeWidth={1.6} />
+                <Mail size={16} className="text-gold-400" strokeWidth={1.5} />
               </div>
               <div className="font-serif text-lg text-white mb-2">Records & forms</div>
               <p className="text-white/55 text-sm leading-relaxed">
@@ -228,7 +228,7 @@ export default function ContactPage() {
 
             <div>
               <div className="flex h-10 w-10 items-center justify-center rounded-sm bg-gold-500/15 ring-1 ring-gold-500/30 mb-5">
-                <Video size={16} className="text-gold-400" strokeWidth={1.6} />
+                <Video size={16} className="text-gold-400" strokeWidth={1.5} />
               </div>
               <div className="font-serif text-lg text-white mb-2">Out-of-network</div>
               <p className="text-white/55 text-sm leading-relaxed">
@@ -240,7 +240,7 @@ export default function ContactPage() {
 
             <div>
               <div className="flex h-10 w-10 items-center justify-center rounded-sm bg-gold-500/15 ring-1 ring-gold-500/30 mb-5">
-                <Phone size={16} className="text-gold-400" strokeWidth={1.6} />
+                <Phone size={16} className="text-gold-400" strokeWidth={1.5} />
               </div>
               <div className="font-serif text-lg text-white mb-2">Emergencies</div>
               <p className="text-white/55 text-sm leading-relaxed">

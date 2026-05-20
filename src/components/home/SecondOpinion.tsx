@@ -100,7 +100,7 @@ export default function SecondOpinion() {
                 className="bg-navy-900 p-6 lg:p-7"
               >
                 <div className="flex h-10 w-10 items-center justify-center rounded-sm bg-gold-500/10 ring-1 ring-gold-500/30 mb-5">
-                  <p.Icon size={18} className="text-gold-400" strokeWidth={1.6} />
+                  <p.Icon size={18} className="text-gold-400" strokeWidth={1.5} />
                 </div>
                 <div className="font-serif text-lg text-white mb-2 tracking-[-0.01em]">
                   {p.title}

@@ -149,7 +149,7 @@ export default function ConditionTemplate({
                           <AlertTriangle
                             size={16}
                             className="text-gold-600 mt-1 shrink-0"
-                            strokeWidth={1.6}
+                            strokeWidth={1.5}
                           />
                           <span>
                             <strong className="text-navy-950">{item.heading}</strong>{" "}
@@ -200,7 +200,7 @@ export default function ConditionTemplate({
                     <Activity
                       size={16}
                       className="text-gold-600"
-                      strokeWidth={1.6}
+                      strokeWidth={1.5}
                     />
                     <span className="kicker text-gold-600">At a glance</span>
                   </div>
@@ -227,7 +227,7 @@ export default function ConditionTemplate({
                         <CheckCircle2
                           size={14}
                           className="text-gold-600 mt-1 shrink-0"
-                          strokeWidth={1.6}
+                          strokeWidth={1.5}
                         />
                         <span>{item}</span>
                       </li>
@@ -264,7 +264,7 @@ export default function ConditionTemplate({
                     <Clock
                       size={16}
                       className="text-gold-400"
-                      strokeWidth={1.6}
+                      strokeWidth={1.5}
                     />
                     <span className="kicker text-gold-400">
                       {data.ctaCard.eyebrow}
@@ -312,7 +312,7 @@ export default function ConditionTemplate({
                     </span>
                     <ChevronRight
                       size={20}
-                      strokeWidth={1.6}
+                      strokeWidth={1.5}
                       className="text-navy-900/60 shrink-0 mt-1.5 transition-transform group-open:rotate-90"
                     />
                   </summary>

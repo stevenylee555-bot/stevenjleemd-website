@@ -100,7 +100,8 @@ export default function Hero() {
                   >
                     <Check
                       size={15}
-                      strokeWidth={2.2}
+                      strokeWidth={2}
+                      aria-hidden="true"
                       className="text-gold-500 shrink-0 mt-[3px]"
                     />
                     <span className="text-white/85">
@@ -154,15 +155,15 @@ export default function Hero() {
                 aria-label="Call office at (212) 737-3301"
                 className="inline-flex items-center gap-2 sm:pr-5 hover:text-gold-400 transition-colors"
               >
-                <Phone size={14} strokeWidth={1.8} className="text-white/55" aria-hidden="true" />
+                <Phone size={14} strokeWidth={1.5} className="text-white/55" aria-hidden="true" />
                 (212) 737-3301
               </a>
               <span className="inline-flex items-center gap-2 sm:px-5">
-                <MapPin size={14} strokeWidth={1.8} className="text-white/55" aria-hidden="true" />
+                <MapPin size={14} strokeWidth={1.5} className="text-white/55" aria-hidden="true" />
                 NYC · Scarsdale
               </span>
               <span className="inline-flex items-center gap-2 sm:pl-5">
-                <Video size={14} strokeWidth={1.8} className="text-white/55" aria-hidden="true" />
+                <Video size={14} strokeWidth={1.5} className="text-white/55" aria-hidden="true" />
                 Telemedicine available
               </span>
             </motion.div>

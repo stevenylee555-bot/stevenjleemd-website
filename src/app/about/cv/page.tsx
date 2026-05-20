@@ -120,7 +120,7 @@ export default function CVPage() {
                   <s.Icon
                     size={18}
                     className="text-gold-600 mb-3"
-                    strokeWidth={1.6}
+                    strokeWidth={1.5}
                     aria-hidden="true"
                   />
                   <div className="font-serif text-2xl lg:text-3xl text-navy-950 tracking-[-0.01em] leading-none mb-1.5">
@@ -221,7 +221,7 @@ export default function CVPage() {
                 <l.Icon
                   size={24}
                   className="text-navy-900 group-hover:text-gold-600 transition-colors mb-6"
-                  strokeWidth={1.4}
+                  strokeWidth={1.5}
                   aria-hidden="true"
                 />
                 <div className="font-serif text-xl text-navy-950 tracking-[-0.01em] mb-3 group-hover:text-gold-600 transition-colors">

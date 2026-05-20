@@ -59,7 +59,7 @@ export default function BookingCTA() {
               href="tel:+12127373301"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-white/25 hover:border-white/60 text-white hover:bg-white/5 rounded-md transition-all text-base font-medium"
             >
-              <Phone size={18} strokeWidth={1.8} />
+              <Phone size={18} strokeWidth={1.5} aria-hidden="true" />
               (212) 737-3301
             </a>
           </motion.div>
@@ -69,7 +69,7 @@ export default function BookingCTA() {
             className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto text-sm"
           >
             <div className="flex items-start gap-3 text-left">
-              <MapPin size={16} className="text-gold-400 mt-0.5 shrink-0" strokeWidth={1.6} />
+              <MapPin size={16} className="text-gold-400 mt-0.5 shrink-0" strokeWidth={1.5} />
               <div>
                 <div className="text-white font-semibold mb-0.5">New York City</div>
                 <div className="text-white/65 leading-relaxed">
@@ -80,7 +80,7 @@ export default function BookingCTA() {
               </div>
             </div>
             <div className="flex items-start gap-3 text-left">
-              <MapPin size={16} className="text-gold-400 mt-0.5 shrink-0" strokeWidth={1.6} />
+              <MapPin size={16} className="text-gold-400 mt-0.5 shrink-0" strokeWidth={1.5} />
               <div>
                 <div className="text-white font-semibold mb-0.5">Scarsdale</div>
                 <div className="text-white/65 leading-relaxed">
@@ -91,7 +91,7 @@ export default function BookingCTA() {
               </div>
             </div>
             <div className="flex items-start gap-3 text-left">
-              <Video size={16} className="text-gold-400 mt-0.5 shrink-0" strokeWidth={1.6} />
+              <Video size={16} className="text-gold-400 mt-0.5 shrink-0" strokeWidth={1.5} />
               <div>
                 <div className="text-white font-semibold mb-0.5">Telemedicine</div>
                 <div className="text-white/50 leading-relaxed">
