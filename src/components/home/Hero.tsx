@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion, useScroll, useTransform, useReducedMotion } from "motion/react";
 import { useRef, useState } from "react";
-import { Calendar, ChevronRight, Phone, MapPin, Video, Award } from "lucide-react";
+import { Calendar, ChevronRight, Phone, MapPin, Video, Award, Check } from "lucide-react";
 import { heroReveal, stagger } from "@/lib/motion";
 
 export default function Hero() {
@@ -15,7 +15,7 @@ export default function Hero() {
     target: ref,
     offset: ["start start", "end start"],
   });
-  const y = useTransform(scrollYProgress, [0, 1], reduce ? [0, 0] : [0, 80]);
+  const y = useTransform(scrollYProgress, [0, 1], reduce ? [0, 0] : [0, 40]);
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0.4]);
 
   return (
@@ -46,7 +46,7 @@ export default function Hero() {
       {/* Left gold rule */}
       <div className="absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-gold-500/60 to-transparent" />
 
-      <div className="relative mx-auto max-w-7xl px-6 lg:px-10 pt-16 pb-24 lg:pt-24 lg:pb-32">
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-10 pt-24 pb-24 lg:pt-32 lg:pb-32">
         <motion.div
           variants={stagger(0, 0.12)}
           initial="hidden"
@@ -58,13 +58,13 @@ export default function Hero() {
             <motion.div variants={heroReveal} className="flex items-center gap-3 mb-8">
               <span className="h-px w-10 bg-gold-500" />
               <span className="kicker text-gold-400">
-                Chief of Hand &amp; Upper Extremity Surgery · Lenox Hill Hospital
+                Arthrex Implant Designer · Lenox Hill Hospital
               </span>
             </motion.div>
 
             <motion.h1
               variants={heroReveal}
-              className="font-serif text-[clamp(2.5rem,5.6vw,4.75rem)] leading-[1.02] tracking-[-0.02em] text-white mb-8"
+              className="font-serif text-[clamp(2.5rem,5.6vw,4.75rem)] leading-[1.02] tracking-[-0.025em] text-white mb-6"
             >
               The surgeon who{" "}
               <span className="serif-italic text-gold-400">designed</span>{" "}
@@ -73,7 +73,7 @@ export default function Hero() {
 
             <motion.p
               variants={heroReveal}
-              className="text-white/70 text-lg md:text-xl leading-[1.5] max-w-xl mb-8 font-light"
+              className="text-white/70 text-lg md:text-xl leading-[1.5] max-w-xl mb-10 font-light"
             >
               Double fellowship-trained orthopedic surgeon. Arthrex implant designer.
               The first physician in New York to perform PRP therapy for upper extremity
@@ -92,9 +92,13 @@ export default function Hero() {
                 ].map((a) => (
                   <li
                     key={a.name}
-                    className="flex items-baseline gap-3 text-[14.5px]"
+                    className="flex items-start gap-2.5 text-[14.5px]"
                   >
-                    <span className="h-1.5 w-1.5 rounded-full bg-gold-500 shrink-0 translate-y-[5px]" />
+                    <Check
+                      size={15}
+                      strokeWidth={2.2}
+                      className="text-gold-500 shrink-0 mt-[3px]"
+                    />
                     <span className="text-white/85">
                       <span className="font-medium text-white">{a.name}</span>
                       {a.note && (
@@ -114,7 +118,7 @@ export default function Hero() {
                 href="https://www.zocdoc.com/doctor/steven-lee-md"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center justify-center gap-2 px-7 py-4 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold rounded-md transition-all duration-300 text-base shadow-[0_10px_40px_-12px_rgba(201,168,76,0.6)] hover:shadow-[0_18px_50px_-12px_rgba(201,168,76,0.8)] hover:-translate-y-0.5"
+                className="group inline-flex items-center justify-center gap-2 px-7 py-4 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold rounded-md transition-all duration-300 text-base shadow-[0_8px_24px_-12px_rgba(201,168,76,0.45)] hover:shadow-[0_12px_28px_-12px_rgba(201,168,76,0.65)] hover:-translate-y-0.5"
               >
                 <Calendar size={18} strokeWidth={2} />
                 Book an Appointment
@@ -137,21 +141,21 @@ export default function Hero() {
 
             <motion.div
               variants={heroReveal}
-              className="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-white/55"
+              className="flex flex-wrap items-center text-sm text-white/70 divide-x divide-white/15"
             >
               <a
                 href="tel:+12127373301"
-                className="inline-flex items-center gap-2 hover:text-white transition-colors"
+                className="inline-flex items-center gap-2 pr-5 hover:text-gold-400 transition-colors"
               >
-                <Phone size={14} strokeWidth={1.8} />
+                <Phone size={14} strokeWidth={1.8} className="text-white/55" />
                 (212) 737-3301
               </a>
-              <span className="inline-flex items-center gap-2">
-                <MapPin size={14} strokeWidth={1.8} />
+              <span className="inline-flex items-center gap-2 px-5">
+                <MapPin size={14} strokeWidth={1.8} className="text-white/55" />
                 NYC · Scarsdale
               </span>
-              <span className="inline-flex items-center gap-2">
-                <Video size={14} strokeWidth={1.8} />
+              <span className="inline-flex items-center gap-2 pl-5">
+                <Video size={14} strokeWidth={1.8} className="text-white/55" />
                 Telemedicine available
               </span>
             </motion.div>
@@ -163,9 +167,9 @@ export default function Hero() {
             style={{ y, opacity }}
             className="relative hidden lg:block"
           >
-            {/* Gold accent frame */}
-            <div className="absolute -top-3 -left-3 h-24 w-24 border-t-2 border-l-2 border-gold-500" />
-            <div className="absolute -bottom-3 -right-3 h-24 w-24 border-b-2 border-r-2 border-gold-500" />
+            {/* Gold accent frame — restrained editorial corners */}
+            <div className="absolute -top-2 -left-2 h-16 w-16 border-t-[1.5px] border-l-[1.5px] border-gold-500" />
+            <div className="absolute -bottom-2 -right-2 h-16 w-16 border-b-[1.5px] border-r-[1.5px] border-gold-500" />
 
             <div className="relative aspect-[4/5] overflow-hidden rounded-sm bg-navy-800 ring-1 ring-white/10 shadow-2xl">
               {!imgFailed ? (
@@ -209,8 +213,8 @@ export default function Hero() {
               {/* Subtle navy gradient overlay for legibility */}
               <div className="absolute inset-0 bg-gradient-to-t from-navy-950/70 via-transparent to-transparent" />
 
-              {/* Badge */}
-              <div className="absolute bottom-5 left-5 right-5 flex items-center gap-3 bg-navy-950/85 backdrop-blur-md rounded-sm px-4 py-3 ring-1 ring-white/10">
+              {/* Badge — reads as a stamp, not a banner */}
+              <div className="absolute bottom-5 left-5 inline-flex items-center gap-3 bg-navy-950/85 backdrop-blur-md px-4 py-3 ring-1 ring-white/10">
                 <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gold-500/15 ring-1 ring-gold-500/30">
                   <Award size={16} className="text-gold-400" />
                 </div>
@@ -222,13 +226,6 @@ export default function Hero() {
                     Recognized annually since 2008
                   </div>
                 </div>
-              </div>
-            </div>
-
-            {/* Floating credential tag */}
-            <div className="absolute -top-4 right-6 hidden xl:block">
-              <div className="rotate-[-3deg] bg-cream text-navy-900 px-3 py-1.5 text-xs font-semibold tracking-wide shadow-xl">
-                ARTHREX IMPLANT DESIGNER
               </div>
             </div>
           </motion.div>

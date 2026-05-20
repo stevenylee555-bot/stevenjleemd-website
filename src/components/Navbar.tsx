@@ -40,10 +40,10 @@ export default function Navbar() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-navy-900 shadow-lg">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-navy-900 border-b border-white/5">
       {/* Top bar */}
       <div className="bg-navy-950 py-2 px-4 text-sm text-white/60 flex justify-between items-center max-w-7xl mx-auto">
-        <span>Chief of Hand &amp; Upper Extremity Surgery · Lenox Hill Hospital · NYC &amp; Scarsdale</span>
+        <span>Lenox Hill Hospital · NYC &amp; Scarsdale</span>
         <a href="tel:+12127373301" className="flex items-center gap-1 hover:text-gold-400 transition-colors">
           <Phone size={13} />
           (212) 737-3301
@@ -58,7 +58,7 @@ export default function Navbar() {
             Steven J. Lee,{" "}
             <span className="serif-italic text-gold-400">MD</span>
           </span>
-          <span className="text-white/55 text-[10px] tracking-[0.18em] uppercase font-semibold mt-1.5">
+          <span className="text-white/60 text-[11px] tracking-[0.16em] uppercase font-semibold mt-1.5">
             Chief of Hand &amp; Upper Extremity Surgery
           </span>
         </Link>
@@ -84,12 +84,12 @@ export default function Navbar() {
               </Link>
 
               {link.children && activeDropdown === link.href && (
-                <div className="absolute top-full left-0 mt-1 w-52 bg-white rounded-lg shadow-xl border border-gray-100 py-1 z-50">
+                <div className="absolute top-full left-0 mt-1 w-52 bg-navy-900 rounded-sm shadow-2xl border border-white/10 py-1 z-50">
                   {link.children.map((child) => (
                     <Link
                       key={child.href}
                       href={child.href}
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-navy-800 hover:text-white transition-colors"
+                      className="block px-4 py-2 text-sm text-white/80 hover:bg-white/10 hover:text-white transition-colors"
                     >
                       {child.label}
                     </Link>
