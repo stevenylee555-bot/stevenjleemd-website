@@ -4,8 +4,16 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion, useScroll, useTransform, useReducedMotion } from "motion/react";
 import { useRef, useState } from "react";
-import { Calendar, ChevronRight, Phone, MapPin, Video, Award, Check } from "lucide-react";
+import { Calendar, ChevronRight, Phone, MapPin, Video } from "lucide-react";
 import { heroReveal, stagger, fadeUp } from "@/lib/motion";
+
+const recognition: { name: string; years: string }[] = [
+  { name: "Castle Connolly Top Doctor", years: "2014–Present" },
+  { name: "NY Times Super Doctors", years: "Since 2008" },
+  { name: "Super Doctors Hall of Fame", years: "Since 2019" },
+  { name: "New York Magazine Best Doctor", years: "2014–Present" },
+  { name: "U.S. News Top Doctor", years: "Multiple years" },
+];
 
 export default function Hero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -58,7 +66,7 @@ export default function Hero() {
             <motion.div variants={heroReveal} className="flex items-center gap-3 mb-8">
               <span className="h-px w-10 bg-gold-500" aria-hidden="true" />
               <span className="kicker text-gold-400">
-                Arthrex Design Team · Lenox Hill Hospital
+                Arthrex Design Team · Lenox Hill Hospital · NISMAT
               </span>
             </motion.div>
 
@@ -73,42 +81,35 @@ export default function Hero() {
 
             <motion.p
               variants={heroReveal}
-              className="text-white/70 text-lg md:text-xl leading-[1.5] max-w-xl mb-10 font-light"
+              className="text-white/70 text-lg md:text-xl leading-[1.5] max-w-xl mb-12 font-light"
             >
               Double fellowship-trained orthopedic surgeon. On the design team
               for multiple Arthrex implants. Among the first in New York to perform
               PRP therapy for upper extremity injuries.
             </motion.p>
 
-            {/* Recognition block, accolades front and center, individually staggered */}
-            <motion.div variants={heroReveal} className="mb-10">
-              <div className="kicker text-white/40 mb-4">Recognized by</div>
+            {/* Editorial Recognition list: serif names + gold years, divider rules.
+                Matches the About section treatment for visual rhyme. */}
+            <motion.div variants={heroReveal} className="mb-12 max-w-xl">
+              <div className="flex items-center gap-3 mb-6">
+                <span className="h-px w-8 bg-gold-500/70" aria-hidden="true" />
+                <span className="kicker text-white/55">Recognition</span>
+              </div>
               <motion.ul
-                variants={stagger(0.1, 0.08)}
-                className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5 max-w-xl"
+                variants={stagger(0.08, 0.06)}
+                className="divide-y divide-white/10"
               >
-                {[
-                  { name: "Castle Connolly Top Doctor", note: "Annually since 2014" },
-                  { name: "NY Times Super Doctors", note: "Hall of Fame since 2019" },
-                  { name: "New York Magazine Top Doctor", note: "Since 2014" },
-                  { name: "Associate Director, NISMAT", note: null },
-                ].map((a) => (
+                {recognition.map((a) => (
                   <motion.li
                     key={a.name}
                     variants={fadeUp}
-                    className="flex items-start gap-2.5 text-[14.5px]"
+                    className="py-3.5 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-6"
                   >
-                    <Check
-                      size={15}
-                      strokeWidth={2}
-                      aria-hidden="true"
-                      className="text-gold-500 shrink-0 mt-[3px]"
-                    />
-                    <span className="text-white/85">
-                      <span className="font-medium text-white">{a.name}</span>
-                      {a.note && (
-                        <span className="text-white/65"> · {a.note}</span>
-                      )}
+                    <span className="font-serif text-white text-base lg:text-[17px] leading-snug tracking-[-0.01em]">
+                      {a.name}
+                    </span>
+                    <span className="kicker text-gold-400/90 shrink-0">
+                      {a.years}
                     </span>
                   </motion.li>
                 ))}
@@ -231,25 +232,27 @@ export default function Hero() {
                 </div>
               )}
               {/* Subtle navy gradient overlay for legibility */}
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-950/70 via-transparent to-transparent" />
+              <div
+                className="absolute inset-0 bg-gradient-to-t from-navy-950/50 via-transparent to-transparent"
+                aria-hidden="true"
+              />
 
-              {/* Badge, reads as a stamp, not a banner; enters after portrait */}
+              {/* Patent stamp, enters after portrait. A newer credential than
+                  Castle Connolly (which is now in the Recognition list above)
+                  so it adds rather than duplicates. */}
               <motion.div
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.95, ease: [0.22, 1, 0.36, 1] }}
-                className="absolute bottom-5 left-5 inline-flex items-center gap-3 bg-navy-950/85 backdrop-blur-md px-4 py-3 ring-1 ring-white/10"
+                className="absolute bottom-5 left-5 right-5 sm:right-auto inline-flex items-center gap-3 bg-navy-950/85 backdrop-blur-md px-4 py-2.5 ring-1 ring-white/10"
               >
-                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gold-500/15 ring-1 ring-gold-500/30">
-                  <Award size={16} className="text-gold-400" />
-                </div>
-                <div>
-                  <div className="text-white text-sm font-semibold leading-tight">
-                    Castle Connolly Top Doctor
-                  </div>
-                  <div className="text-white/60 text-xs mt-0.5">
-                    Recognized annually since 2014
-                  </div>
+                <span
+                  className="h-1.5 w-1.5 rounded-full bg-gold-500 shrink-0"
+                  aria-hidden="true"
+                />
+                <div className="text-[11px] uppercase tracking-[0.16em] font-semibold text-white/85 leading-tight">
+                  US Patent <span className="text-gold-400">·</span> Surgical
+                  Instrumentation <span className="text-gold-400">·</span> 2026
                 </div>
               </motion.div>
             </div>
