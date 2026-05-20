@@ -12,10 +12,10 @@ type Stat = {
 };
 
 const stats: Stat[] = [
-  { value: 20, suffix: "+", label: "Years in practice", caption: "Board-certified since 2008" },
+  { value: 20, suffix: "+", label: "Years in practice", caption: "Attending at Lenox Hill since 2000" },
   { value: 15000, suffix: "+", label: "Procedures performed", caption: "Across hand, elbow, shoulder, knee" },
-  { value: 50, suffix: "+", label: "Peer-reviewed papers", caption: "Including 4 on Achilles repair" },
-  { value: 6, suffix: "", label: "Arthrex implant designs", caption: "Plates, anchors, internal brace" },
+  { value: 35, suffix: "+", label: "Peer-reviewed publications", caption: "Plus 84 national lectures and presentations" },
+  { value: 5, suffix: "", label: "Arthrex implants designed", caption: "Plus 1 US patent for surgical instrumentation" },
 ];
 
 const easeOutQuart = (t: number) => 1 - Math.pow(1 - t, 4);

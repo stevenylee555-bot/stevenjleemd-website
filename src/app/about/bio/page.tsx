@@ -12,11 +12,14 @@ export const metadata: Metadata = {
 };
 
 const credentials = [
-  "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
-  "Associate Director, NISMAT",
-  "Double Fellowship-Trained",
+  "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital (since 2013)",
+  "Associate Director, NISMAT (since 2006)",
+  "Lenox Hill Hospital Medical Board (since 2023)",
+  "Double Fellowship-Trained — Hand & Upper Extremity, Sports Medicine",
   "Board-Certified, American Board of Orthopaedic Surgery",
+  "Subspecialty Certified, Orthopaedic Surgery of the Hand",
   "Arthrex Implant Design Team",
+  "US Patent #12,622,710 B2 — Center of Rotation Guide (2026)",
 ];
 
 export default function BioPage() {
@@ -83,8 +86,19 @@ export default function BioPage() {
                   extremity injuries — at a time when biologics were still considered experimental
                   in the orthopedic mainstream. He performs over 250 PRP procedures annually today,
                   across the full body. He has continued to pioneer the use of biologics in
-                  orthopedic care, including BMAC stem cell therapy and, more recently, peptides —
-                  publishing what is believed to be the first review paper on the use of peptides
+                  orthopedic care, including BMAC stem cell therapy and, more recently, peptides.
+                  In 2026 he co-authored{" "}
+                  <a
+                    href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12753158/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-navy-950 font-medium border-b border-gold-500/60 hover:border-gold-600 transition-colors"
+                  >
+                    &quot;Therapeutic Peptides in Orthopaedics: Applications, Challenges, and Future
+                    Directions&quot;
+                  </a>{" "}
+                  in <em className="serif-italic">JAAOS Global Research &amp; Reviews</em> —
+                  believed to be the first peer-reviewed review paper on therapeutic peptides
                   in an orthopedic journal.
                 </p>
 
@@ -92,10 +106,25 @@ export default function BioPage() {
                   Research and teaching
                 </h2>
                 <p>
-                  Dr. Lee has authored peer-reviewed publications across hand, elbow, shoulder, and
-                  knee surgery, with a particular focus on Achilles tendon repair — the subject of
-                  multiple papers. He teaches surgical technique through Arthrex&apos;s educational
-                  platform and VuMedi, and lectures regularly to residents, fellows, and colleagues.
+                  Dr. Lee has authored 35+ peer-reviewed publications and book chapters across
+                  hand, elbow, shoulder, and knee surgery, with a particular focus on Achilles
+                  tendon repair (the subject of 4 of his papers) and scapholunate ligament
+                  reconstruction. He has given 84 national lectures and presentations to date,
+                  teaches surgical technique through Arthrex&apos;s educational platform and VuMedi,
+                  and serves as a journal reviewer for the{" "}
+                  <em className="serif-italic">Journal of the American Academy of Orthopaedic Surgeons</em>.
+                </p>
+                <p>
+                  At Lenox Hill, he sits on the residency and sports medicine fellowship selection
+                  committees and the Program Evaluation Committee. He has received the
+                  Chitranjan S. Ranawat Mentorship Award seven times (2010, 2014, 2015, 2017,
+                  2018, 2019, 2023) and the Maurice H. Cowen Teacher of the Year award twice
+                  (2003, 2009) — both voted by the Lenox Hill orthopaedic residents.
+                </p>
+                <p>
+                  In 2026 he was awarded{" "}
+                  <strong className="text-navy-950 font-semibold">US Patent #12,622,710 B2</strong>{" "}
+                  for a Center of Rotation Guide — a surgical instrumentation design.
                 </p>
 
                 <h2 className="font-serif text-2xl md:text-3xl text-navy-950 tracking-[-0.01em] !mt-12 mb-2 leading-tight">
