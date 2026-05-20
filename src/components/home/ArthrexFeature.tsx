@@ -1,8 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "motion/react";
 import { fadeUp, inViewProps, stagger } from "@/lib/motion";
-import { ImplantPlateIcon } from "./icons/AnatomyIcons";
 
 const implants = [
   { label: "Arthrex Mini Comprehensive Fixation System (hand)", status: "designed" },
@@ -89,33 +89,33 @@ export default function ArthrexFeature() {
             </motion.ul>
           </div>
 
-          {/* Right column — implant illustration */}
+          {/* Right column — Dr. Lee teaching at Arthrex */}
           <motion.div variants={fadeUp} className="relative">
-            <div className="relative aspect-square w-full max-w-[520px] mx-auto">
-              {/* Concentric rings */}
-              <div className="absolute inset-0 rounded-full border border-white/10" />
-              <div className="absolute inset-8 rounded-full border border-white/10" />
-              <div className="absolute inset-16 rounded-full border border-white/15" />
-              <div className="absolute inset-24 rounded-full border border-gold-500/30" />
+            {/* Gold accent corners */}
+            <div
+              className="absolute -top-2 -left-2 h-14 w-14 border-t-[1.5px] border-l-[1.5px] border-gold-500 z-10"
+              aria-hidden="true"
+            />
+            <div
+              className="absolute -bottom-2 -right-2 h-14 w-14 border-b-[1.5px] border-r-[1.5px] border-gold-500 z-10"
+              aria-hidden="true"
+            />
 
-              {/* Diagonal accent rules */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-gold-400">
-                  <ImplantPlateIcon className="w-[78%] max-w-[420px]" />
-                </div>
-              </div>
+            <div className="relative aspect-[4/3] w-full max-w-[560px] mx-auto overflow-hidden ring-1 ring-white/10 shadow-2xl">
+              <Image
+                src="/images/dr-lee-arthrex-podium.jpg"
+                alt="Dr. Steven J. Lee teaching at an Arthrex surgical skills course"
+                fill
+                sizes="(min-width: 1024px) 40vw, 100vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-950/85 via-navy-950/10 to-transparent" />
 
-              {/* Annotations — hidden on mobile to avoid overlapping the central illustration */}
-              <div className="hidden md:block absolute top-4 right-4 text-right" aria-hidden="true">
-                <div className="kicker text-gold-400 mb-1">Plate · Hand &amp; Elbow</div>
-                <div className="text-xs text-white/65 max-w-[160px]">
-                  Low-profile titanium with locking screw geometry
-                </div>
-              </div>
-              <div className="hidden md:block absolute bottom-4 left-4" aria-hidden="true">
-                <div className="kicker text-gold-400 mb-1">Anchor · Internal Brace</div>
-                <div className="text-xs text-white/65 max-w-[160px]">
-                  Knotless ligament reinforcement
+              {/* Caption stamp */}
+              <div className="absolute bottom-4 left-4 right-4 sm:right-auto sm:max-w-[80%] bg-navy-950/85 backdrop-blur-md px-4 py-3 ring-1 ring-white/10">
+                <div className="kicker text-gold-400 mb-1">Arthrex Faculty</div>
+                <div className="text-white text-sm leading-snug">
+                  Teaching surgical technique at an Arthrex course
                 </div>
               </div>
             </div>

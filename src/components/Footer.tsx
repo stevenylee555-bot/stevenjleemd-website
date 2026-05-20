@@ -43,23 +43,27 @@ export default function Footer() {
 
             <div className="space-y-3 text-sm text-white/70">
               <div className="flex items-start gap-2">
-                <MapPin size={15} className="text-gold-400 mt-0.5 shrink-0" />
+                <MapPin size={15} className="text-gold-400 mt-0.5 shrink-0" aria-hidden="true" />
                 <div>
                   <div className="font-medium text-white">New York City</div>
-                  <div>333 E 56th St, New York, NY 10022</div>
+                  <div>159 East 74th Street, New York, NY 10021</div>
                 </div>
               </div>
               <div className="flex items-start gap-2">
-                <MapPin size={15} className="text-gold-400 mt-0.5 shrink-0" />
+                <MapPin size={15} className="text-gold-400 mt-0.5 shrink-0" aria-hidden="true" />
                 <div>
                   <div className="font-medium text-white">Scarsdale</div>
-                  <div>341 Central Park Ave, Scarsdale, NY 10583</div>
+                  <div>2 Overhill Road, Suite 310, Scarsdale, NY 10583</div>
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                <Phone size={15} className="text-gold-400 shrink-0" />
-                <a href="tel:+12127373301" className="hover:text-white transition-colors">
+                <Phone size={15} className="text-gold-400 shrink-0" aria-hidden="true" />
+                <a href="tel:+12127373301" className="hover:text-white transition-colors" aria-label="Call NYC office">
                   (212) 737-3301
+                </a>
+                <span className="text-white/40">·</span>
+                <a href="tel:+19147256970" className="hover:text-white transition-colors" aria-label="Call Scarsdale office">
+                  (914) 725-6970
                 </a>
               </div>
             </div>

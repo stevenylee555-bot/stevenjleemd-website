@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Calendar, Phone, MapPin, Video, Mail, ExternalLink, Clock } from "lucide-react";
+import { Calendar, Phone, MapPin, Video, Mail, ExternalLink, Clock, Printer } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
@@ -12,17 +12,19 @@ export const metadata: Metadata = {
 const locations = [
   {
     city: "New York City",
-    address: ["333 E 56th St", "New York, NY 10022"],
+    address: ["159 East 74th Street", "New York, NY 10021"],
     phone: "(212) 737-3301",
+    fax: "(212) 737-4876",
     note: "Manhattan office — primary location",
-    mapsQuery: "333+E+56th+St,+New+York,+NY+10022",
+    mapsQuery: "159+East+74th+Street,+New+York,+NY+10021",
   },
   {
     city: "Scarsdale",
-    address: ["341 Central Park Ave", "Scarsdale, NY 10583"],
-    phone: "(212) 737-3301",
+    address: ["2 Overhill Road, Suite 310", "Scarsdale, NY 10583"],
+    phone: "(914) 725-6970",
+    fax: null,
     note: "Westchester office — by appointment",
-    mapsQuery: "341+Central+Park+Ave,+Scarsdale,+NY+10583",
+    mapsQuery: "2+Overhill+Road,+Scarsdale,+NY+10583",
   },
 ];
 
@@ -151,20 +153,38 @@ export default function ContactPage() {
                       size={18}
                       className="text-gold-600 mt-0.5 shrink-0"
                       strokeWidth={1.6}
+                      aria-hidden="true"
                     />
                     <a
                       href={`tel:+1${loc.phone.replace(/\D/g, "")}`}
                       className="text-[15px] text-navy-900/85 hover:text-gold-600 transition-colors"
+                      aria-label={`Call ${loc.city} office`}
                     >
                       {loc.phone}
                     </a>
                   </div>
+
+                  {loc.fax && (
+                    <div className="flex items-start gap-3">
+                      <Printer
+                        size={18}
+                        className="text-gold-600 mt-0.5 shrink-0"
+                        strokeWidth={1.6}
+                        aria-hidden="true"
+                      />
+                      <div className="text-[15px] text-navy-900/85">
+                        <span className="kicker text-navy-900/55 mr-2">Fax</span>
+                        {loc.fax}
+                      </div>
+                    </div>
+                  )}
 
                   <div className="flex items-start gap-3">
                     <Clock
                       size={18}
                       className="text-gold-600 mt-0.5 shrink-0"
                       strokeWidth={1.6}
+                      aria-hidden="true"
                     />
                     <div className="text-[15px] text-navy-900/85">
                       Monday–Friday · 8:00 AM – 5:00 PM

@@ -72,10 +72,10 @@ export default function BookingCTA() {
               <MapPin size={16} className="text-gold-400 mt-0.5 shrink-0" strokeWidth={1.6} />
               <div>
                 <div className="text-white font-semibold mb-0.5">New York City</div>
-                <div className="text-white/50 leading-relaxed">
-                  333 E 56th St
+                <div className="text-white/65 leading-relaxed">
+                  159 East 74th Street
                   <br />
-                  New York, NY 10022
+                  New York, NY 10021
                 </div>
               </div>
             </div>
@@ -83,8 +83,8 @@ export default function BookingCTA() {
               <MapPin size={16} className="text-gold-400 mt-0.5 shrink-0" strokeWidth={1.6} />
               <div>
                 <div className="text-white font-semibold mb-0.5">Scarsdale</div>
-                <div className="text-white/50 leading-relaxed">
-                  341 Central Park Ave
+                <div className="text-white/65 leading-relaxed">
+                  2 Overhill Road, Suite 310
                   <br />
                   Scarsdale, NY 10583
                 </div>

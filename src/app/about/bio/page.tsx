@@ -131,10 +131,11 @@ export default function BioPage() {
                   Practice today
                 </h2>
                 <p>
-                  Dr. Lee sees patients at two offices — a primary practice in Manhattan&apos;s East 56th
-                  Street and a second office in Scarsdale, Westchester. He accommodates in-person and
-                  telemedicine consultations, and sees both in-network and out-of-network patients,
-                  including international patients who travel specifically to consult with him.
+                  Dr. Lee sees patients at two offices — a primary practice on Manhattan&apos;s
+                  East 74th Street and a second office in Scarsdale, Westchester. He accommodates
+                  in-person and telemedicine consultations, and sees both in-network and
+                  out-of-network patients, including international patients who travel
+                  specifically to consult with him.
                 </p>
 
                 <p className="text-navy-900/55 text-sm !mt-10 italic">
@@ -184,7 +185,7 @@ export default function BioPage() {
                   </div>
                 </div>
 
-                <div className="kicker text-navy-900/40 mb-4">Credentials</div>
+                <div className="kicker text-navy-900/55 mb-4">Credentials</div>
                 <ul className="space-y-3 mb-10">
                   {credentials.map((c) => (
                     <li key={c} className="flex items-baseline gap-3 text-[14.5px] text-navy-900/85">
@@ -215,14 +216,94 @@ export default function BioPage() {
                   href="https://www.zocdoc.com/doctor/steven-lee-md"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 w-full px-5 py-3 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold rounded-md transition-all text-sm shadow-[0_10px_30px_-12px_rgba(201,168,76,0.5)] hover:-translate-y-0.5"
+                  aria-label="Book an appointment via ZocDoc (opens in new tab)"
+                  className="inline-flex items-center justify-center gap-2 w-full px-5 py-3 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold rounded-md transition-all text-sm shadow-[0_8px_24px_-12px_rgba(201,168,76,0.45)] hover:-translate-y-0.5"
                 >
-                  <Calendar size={14} />
+                  <Calendar size={14} aria-hidden="true" />
                   Book an Appointment
-                  <ExternalLink size={12} className="opacity-70" />
+                  <ExternalLink size={12} className="opacity-70" aria-hidden="true" />
                 </a>
               </div>
             </aside>
+          </div>
+        </div>
+      </section>
+
+      {/* Teaching & Speaking gallery */}
+      <section className="bg-cream border-t border-navy-900/[0.06]">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 lg:py-24">
+          <div className="max-w-3xl mb-12 lg:mb-16">
+            <div className="flex items-center gap-3 mb-5">
+              <span className="h-px w-10 bg-gold-500" aria-hidden="true" />
+              <span className="kicker text-gold-600">Teaching &amp; Speaking</span>
+            </div>
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-navy-950 tracking-[-0.02em] leading-[1.08] mb-6">
+              84 lectures and presentations.{" "}
+              <span className="serif-italic text-gold-600">Counting.</span>
+            </h2>
+            <p className="text-navy-900/75 text-[17px] leading-[1.7] font-light">
+              National podium presentations at AAOS, AOSSM, and ASSH. Invited lectures
+              at Arthrex, VuMedi, the Orthopaedic Summit, the Philadelphia Hand Meeting,
+              and the IFSSH. Course faculty and cadaver-lab instructor at Arthrex
+              surgical skills programs. Below: selected moments.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
+            {[
+              {
+                src: "/images/dr-lee-fellowship-forum.jpg",
+                alt: "Dr. Lee speaking at the Arthrex Fellowship Forum",
+                kicker: "Arthrex Fellowship Forum",
+                caption: "Speaking on technique and outcomes",
+                aspect: "aspect-[3/4]",
+              },
+              {
+                src: "/images/dr-lee-scapholunate-talk.jpg",
+                alt: "Dr. Lee presenting Scapholunate Tear Options at NISMAT",
+                kicker: "NISMAT · Scapholunate Tear Options",
+                caption: "Academic lecture on a published surgical series",
+                aspect: "aspect-[3/4]",
+              },
+              {
+                src: "/images/dr-lee-arthrex-panel.jpg",
+                alt: "Dr. Lee on a panel of upper-extremity surgeons at Arthrex",
+                kicker: "Arthrex Panel",
+                caption: "Upper-extremity surgery faculty panel",
+                aspect: "aspect-[3/4]",
+              },
+              {
+                src: "/images/dr-lee-nfl-fracture-panel.jpg",
+                alt: "Dr. Lee on the NFL fracture management panel at Arthrex",
+                kicker: "NFL Fracture Management",
+                caption: "Faculty panel on professional-athlete fracture care",
+                aspect: "aspect-[3/4]",
+              },
+            ].map((img) => (
+              <figure key={img.src} className="relative group">
+                <div
+                  className={`relative ${img.aspect} w-full overflow-hidden bg-navy-800 ring-1 ring-navy-900/10`}
+                >
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    fill
+                    sizes="(min-width: 640px) 50vw, 100vw"
+                    className="object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.02]"
+                  />
+                  <div
+                    className="absolute inset-0 bg-gradient-to-t from-navy-950/85 via-navy-950/20 to-transparent"
+                    aria-hidden="true"
+                  />
+                  <figcaption className="absolute bottom-0 left-0 right-0 p-5 lg:p-6">
+                    <div className="kicker text-gold-400 mb-1.5">{img.kicker}</div>
+                    <div className="text-white text-[15px] leading-snug font-light">
+                      {img.caption}
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+            ))}
           </div>
         </div>
       </section>

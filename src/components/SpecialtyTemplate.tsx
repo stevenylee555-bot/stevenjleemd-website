@@ -276,7 +276,7 @@ export default function SpecialtyTemplate({ specialty }: { specialty: Specialty 
                   <div className="text-white font-medium mb-0.5">
                     Manhattan office
                   </div>
-                  <div>333 E 56th Street · New York, NY</div>
+                  <div>159 East 74th Street · New York, NY</div>
                 </div>
               </div>
               <div className="flex items-start gap-3 text-white/75">
@@ -285,7 +285,7 @@ export default function SpecialtyTemplate({ specialty }: { specialty: Specialty 
                   <div className="text-white font-medium mb-0.5">
                     Westchester office
                   </div>
-                  <div>341 Central Park Ave · Scarsdale, NY</div>
+                  <div>2 Overhill Road, Suite 310 · Scarsdale, NY</div>
                 </div>
               </div>
               <div className="flex items-start gap-3 text-white/75">

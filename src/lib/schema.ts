@@ -32,15 +32,15 @@ export const physicianSchema = {
   address: [
     {
       "@type": "PostalAddress",
-      streetAddress: "333 E 56th St",
+      streetAddress: "159 East 74th Street",
       addressLocality: "New York",
       addressRegion: "NY",
-      postalCode: "10022",
+      postalCode: "10021",
       addressCountry: "US",
     },
     {
       "@type": "PostalAddress",
-      streetAddress: "341 Central Park Ave",
+      streetAddress: "2 Overhill Road, Suite 310",
       addressLocality: "Scarsdale",
       addressRegion: "NY",
       postalCode: "10583",
@@ -48,6 +48,7 @@ export const physicianSchema = {
     },
   ],
   telephone: "+1-212-737-3301",
+  faxNumber: "+1-212-737-4876",
   sameAs: [
     "https://www.zocdoc.com/doctor/steven-lee-md",
     "https://www.healthgrades.com/physician/dr-steven-lee",
@@ -64,16 +65,16 @@ export const medicalBusinessSchema = {
   priceRange: "$$$$",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "333 E 56th St",
+    streetAddress: "159 East 74th Street",
     addressLocality: "New York",
     addressRegion: "NY",
-    postalCode: "10022",
+    postalCode: "10021",
     addressCountry: "US",
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 40.7576,
-    longitude: -73.9631,
+    latitude: 40.7724,
+    longitude: -73.9587,
   },
   openingHoursSpecification: [
     {
