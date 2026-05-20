@@ -37,8 +37,8 @@ export default function BioPage() {
       <section className="bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 lg:py-28">
           <div className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-16 lg:gap-20">
-            {/* Prose */}
-            <article className="max-w-2xl">
+            {/* Prose — capped at ~70ch for editorial readability */}
+            <article className="max-w-[640px]">
               <div className="space-y-6 text-navy-900/80 text-[17px] leading-[1.75] font-light">
                 <p className="text-navy-900/90 text-[18px] font-normal">
                   Dr. Steven J. Lee is Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital

@@ -66,8 +66,8 @@ export default function ConditionTemplate({
       <section className="bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-16 lg:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-16 lg:gap-20">
-            {/* Main column */}
-            <article className="max-w-2xl">
+            {/* Main column — capped at ~70ch for editorial readability */}
+            <article className="max-w-[640px]">
               <div className="text-navy-900/80 text-[17px] leading-[1.75] font-light">
                 {/* Overview */}
                 {data.overview.map((para, i) => (
@@ -88,10 +88,13 @@ export default function ConditionTemplate({
                   <BodySection key={section.heading} section={section} />
                 ))}
 
-                {/* Dr. Lee's approach callout */}
-                <div className="!my-12 border-l-4 border-gold-500 bg-cream/70 p-6 lg:p-8 rounded-r-sm">
-                  <div className="kicker text-gold-600 mb-3">
-                    Dr. Lee&apos;s approach
+                {/* Dr. Lee's approach — full-card editorial treatment, no side-stripe */}
+                <div className="!my-14 relative bg-cream/70 border border-navy-900/12 p-7 lg:p-9">
+                  <div className="flex items-center gap-3 mb-5 pb-5 border-b border-navy-900/10">
+                    <span className="h-px w-8 bg-gold-500" />
+                    <span className="kicker text-gold-600">
+                      Dr. Lee&apos;s approach
+                    </span>
                   </div>
                   {data.drLeeApproach.paragraphs.map((p, i) => (
                     <p

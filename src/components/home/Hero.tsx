@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion, useScroll, useTransform, useReducedMotion } from "motion/react";
 import { useRef, useState } from "react";
 import { Calendar, ChevronRight, Phone, MapPin, Video, Award, Check } from "lucide-react";
-import { heroReveal, stagger } from "@/lib/motion";
+import { heroReveal, stagger, fadeUp } from "@/lib/motion";
 
 export default function Hero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -15,13 +15,13 @@ export default function Hero() {
     target: ref,
     offset: ["start start", "end start"],
   });
-  const y = useTransform(scrollYProgress, [0, 1], reduce ? [0, 0] : [0, 40]);
+  const y = useTransform(scrollYProgress, [0, 1], reduce ? [0, 0] : [0, 72]);
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0.4]);
 
   return (
     <section
       ref={ref}
-      className="relative isolate overflow-hidden bg-navy-950 text-white"
+      className="relative isolate overflow-hidden bg-navy-950 text-white hero-grain"
     >
       {/* Layered background */}
       <div className="absolute inset-0 -z-10">
@@ -80,18 +80,22 @@ export default function Hero() {
               injuries.
             </motion.p>
 
-            {/* Recognition block — accolades front and center */}
+            {/* Recognition block — accolades front and center, individually staggered */}
             <motion.div variants={heroReveal} className="mb-10">
               <div className="kicker text-white/40 mb-4">Recognized by</div>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5 max-w-xl">
+              <motion.ul
+                variants={stagger(0.1, 0.08)}
+                className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5 max-w-xl"
+              >
                 {[
                   { name: "Castle Connolly Top Doctor", note: "Annually since 2008" },
                   { name: "New York Times Super Doctors", note: null },
                   { name: "US News Top Doctor", note: null },
                   { name: "New York Magazine Top Doctor", note: null },
                 ].map((a) => (
-                  <li
+                  <motion.li
                     key={a.name}
+                    variants={fadeUp}
                     className="flex items-start gap-2.5 text-[14.5px]"
                   >
                     <Check
@@ -105,9 +109,9 @@ export default function Hero() {
                         <span className="text-white/45"> · {a.note}</span>
                       )}
                     </span>
-                  </li>
+                  </motion.li>
                 ))}
-              </ul>
+              </motion.ul>
             </motion.div>
 
             <motion.div
@@ -167,11 +171,23 @@ export default function Hero() {
             style={{ y, opacity }}
             className="relative hidden lg:block"
           >
-            {/* Gold accent frame — restrained editorial corners */}
-            <div className="absolute -top-2 -left-2 h-16 w-16 border-t-[1.5px] border-l-[1.5px] border-gold-500" />
-            <div className="absolute -bottom-2 -right-2 h-16 w-16 border-b-[1.5px] border-r-[1.5px] border-gold-500" />
+            {/* Gold accent frame — draws in from corners after portrait reveal */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.6 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.7, delay: 0.65, ease: [0.22, 1, 0.36, 1] }}
+              style={{ transformOrigin: "top left" }}
+              className="absolute -top-2 -left-2 h-16 w-16 border-t-[1.5px] border-l-[1.5px] border-gold-500"
+            />
+            <motion.div
+              initial={{ opacity: 0, scale: 0.6 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.7, delay: 0.78, ease: [0.22, 1, 0.36, 1] }}
+              style={{ transformOrigin: "bottom right" }}
+              className="absolute -bottom-2 -right-2 h-16 w-16 border-b-[1.5px] border-r-[1.5px] border-gold-500"
+            />
 
-            <div className="relative aspect-[4/5] overflow-hidden rounded-sm bg-navy-800 ring-1 ring-white/10 shadow-2xl">
+            <div className="group/portrait relative aspect-[4/5] overflow-hidden rounded-sm bg-navy-800 ring-1 ring-white/10 shadow-2xl transition-shadow duration-700 hover:shadow-[0_30px_60px_-20px_rgba(0,0,0,0.7)]">
               {!imgFailed ? (
                 <Image
                   src="/images/dr-lee-headshot.jpg"
@@ -179,7 +195,7 @@ export default function Hero() {
                   fill
                   priority
                   sizes="(min-width: 1024px) 40vw, 100vw"
-                  className="object-cover"
+                  className="object-cover transition-transform duration-[1200ms] ease-out group-hover/portrait:scale-[1.02]"
                   onError={() => setImgFailed(true)}
                 />
               ) : (
@@ -213,8 +229,13 @@ export default function Hero() {
               {/* Subtle navy gradient overlay for legibility */}
               <div className="absolute inset-0 bg-gradient-to-t from-navy-950/70 via-transparent to-transparent" />
 
-              {/* Badge — reads as a stamp, not a banner */}
-              <div className="absolute bottom-5 left-5 inline-flex items-center gap-3 bg-navy-950/85 backdrop-blur-md px-4 py-3 ring-1 ring-white/10">
+              {/* Badge — reads as a stamp, not a banner; enters after portrait */}
+              <motion.div
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.95, ease: [0.22, 1, 0.36, 1] }}
+                className="absolute bottom-5 left-5 inline-flex items-center gap-3 bg-navy-950/85 backdrop-blur-md px-4 py-3 ring-1 ring-white/10"
+              >
                 <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gold-500/15 ring-1 ring-gold-500/30">
                   <Award size={16} className="text-gold-400" />
                 </div>
@@ -226,7 +247,7 @@ export default function Hero() {
                     Recognized annually since 2008
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </motion.div>
         </motion.div>
