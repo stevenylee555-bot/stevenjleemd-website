@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# scratch commit messages (used for multi-line git -F when PowerShell parsing fails)
+COMMIT_MSG.tmp
