@@ -99,7 +99,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
+        <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/60">
           <p>© {new Date().getFullYear()} Steven J. Lee, MD. All rights reserved.</p>
           <p className="text-center">
             The information on this website is for general educational purposes only and does not constitute medical advice.

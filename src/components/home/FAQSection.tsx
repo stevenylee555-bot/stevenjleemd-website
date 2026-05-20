@@ -38,6 +38,8 @@ export default function FAQSection({ faqs }: { faqs: Faq[] }) {
         >
           {faqs.map((faq, i) => {
             const isOpen = open === i;
+            const panelId = `faq-panel-${i}`;
+            const buttonId = `faq-button-${i}`;
             return (
               <motion.li
                 key={faq.question}
@@ -45,15 +47,18 @@ export default function FAQSection({ faqs }: { faqs: Faq[] }) {
                 className="border-b border-navy-900/15"
               >
                 <button
+                  id={buttonId}
                   type="button"
                   onClick={() => setOpen(isOpen ? null : i)}
                   aria-expanded={isOpen}
+                  aria-controls={panelId}
                   className="group w-full flex items-start justify-between gap-6 py-7 text-left"
                 >
                   <span className="font-serif text-xl md:text-2xl text-navy-950 tracking-[-0.01em] leading-[1.3] group-hover:text-gold-600 transition-colors">
                     {faq.question}
                   </span>
                   <span
+                    aria-hidden="true"
                     className={
                       "shrink-0 mt-1.5 transition-all duration-500 " +
                       (isOpen ? "rotate-45 text-gold-600" : "text-navy-900/60")
@@ -66,6 +71,9 @@ export default function FAQSection({ faqs }: { faqs: Faq[] }) {
                 <AnimatePresence initial={false}>
                   {isOpen && (
                     <motion.div
+                      id={panelId}
+                      role="region"
+                      aria-labelledby={buttonId}
                       key="content"
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}

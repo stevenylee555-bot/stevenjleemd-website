@@ -55,7 +55,7 @@ export default function ArthrexFeature() {
 
             <motion.p
               variants={fadeUp}
-              className="text-white/50 text-sm leading-relaxed mb-10 max-w-xl"
+              className="text-white/70 text-sm leading-relaxed mb-10 max-w-xl"
             >
               He is slated to join the design teams for the next generation of clavicle
               plates and distal radius plates — the most common fracture orthopedic
@@ -107,16 +107,16 @@ export default function ArthrexFeature() {
                 </div>
               </div>
 
-              {/* Annotations */}
-              <div className="absolute top-4 right-4 text-right">
-                <div className="kicker text-gold-500/70 mb-1">Plate · Hand &amp; Elbow</div>
-                <div className="text-xs text-white/40 max-w-[160px]">
+              {/* Annotations — hidden on mobile to avoid overlapping the central illustration */}
+              <div className="hidden md:block absolute top-4 right-4 text-right" aria-hidden="true">
+                <div className="kicker text-gold-400 mb-1">Plate · Hand &amp; Elbow</div>
+                <div className="text-xs text-white/65 max-w-[160px]">
                   Low-profile titanium with locking screw geometry
                 </div>
               </div>
-              <div className="absolute bottom-4 left-4">
-                <div className="kicker text-gold-500/70 mb-1">Anchor · Internal Brace</div>
-                <div className="text-xs text-white/40 max-w-[160px]">
+              <div className="hidden md:block absolute bottom-4 left-4" aria-hidden="true">
+                <div className="kicker text-gold-400 mb-1">Anchor · Internal Brace</div>
+                <div className="text-xs text-white/65 max-w-[160px]">
                   Knotless ligament reinforcement
                 </div>
               </div>

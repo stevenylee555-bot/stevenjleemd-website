@@ -97,14 +97,21 @@ export default function AnimatedStats() {
               variants={fadeUp}
               className="relative"
             >
-              <div className="kicker text-gold-600 mb-4">0{i + 1}</div>
-              <div className="font-serif text-5xl md:text-6xl text-navy-950 leading-none tracking-[-0.02em] mb-3">
+              <div className="kicker text-gold-600 mb-4" aria-hidden="true">0{i + 1}</div>
+              <div
+                className="font-serif text-4xl md:text-6xl text-navy-950 leading-none tracking-[-0.02em] mb-3"
+                aria-hidden="true"
+              >
                 <CountUp value={stat.value} suffix={stat.suffix} run={run} />
               </div>
+              {/* Screen reader: announce the final, parsed value */}
+              <span className="sr-only">
+                {stat.value.toLocaleString()}{stat.suffix} {stat.label}.
+              </span>
               <div className="text-navy-900 font-semibold text-sm mb-1">
                 {stat.label}
               </div>
-              <div className="text-navy-900/55 text-xs leading-relaxed max-w-[200px]">
+              <div className="text-navy-900/70 text-xs leading-relaxed max-w-[200px]">
                 {stat.caption}
               </div>
             </motion.div>

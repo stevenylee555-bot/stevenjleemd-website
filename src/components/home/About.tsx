@@ -100,12 +100,12 @@ export default function About() {
               {awards.map((a) => (
                 <li
                   key={a.name}
-                  className="py-5 flex items-baseline justify-between gap-4"
+                  className="py-5 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4"
                 >
                   <span className="font-serif text-navy-950 text-lg leading-snug tracking-[-0.01em]">
                     {a.name}
                   </span>
-                  <span className="kicker text-navy-900/40 shrink-0">{a.years}</span>
+                  <span className="kicker text-navy-900/55 shrink-0">{a.years}</span>
                 </li>
               ))}
             </ul>

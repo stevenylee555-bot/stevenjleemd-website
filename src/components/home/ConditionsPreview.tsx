@@ -50,7 +50,7 @@ export default function ConditionsPreview() {
           <div className="max-w-2xl">
             <motion.div variants={fadeUp} className="flex items-center gap-3 mb-5">
               <span className="h-px w-10 bg-gold-600" />
-              <span className="kicker text-gold-700 text-gold-600">Conditions Library</span>
+              <span className="kicker text-gold-600">Conditions Library</span>
             </motion.div>
             <motion.h2
               variants={fadeUp}

@@ -56,7 +56,7 @@ export default function ConditionTemplate({
             <span className="font-semibold text-navy-950">{data.byline.name}</span>
             <span className="text-navy-900/55"> · {data.byline.title}</span>
           </div>
-          <div className="text-xs text-navy-900/45 uppercase tracking-wider">
+          <div className="text-xs text-navy-900/60 uppercase tracking-wider">
             Last reviewed · {data.byline.reviewed}
           </div>
         </div>
@@ -124,7 +124,7 @@ export default function ConditionTemplate({
                   {data.recovery.map((r) => (
                     <li
                       key={r.when}
-                      className="grid grid-cols-[120px_1fr] sm:grid-cols-[160px_1fr] gap-4 sm:gap-8 py-5 border-b border-navy-900/10"
+                      className="grid grid-cols-[88px_1fr] sm:grid-cols-[160px_1fr] gap-3 sm:gap-8 py-5 border-b border-navy-900/10"
                     >
                       <div className="font-serif text-base sm:text-lg text-gold-600 tracking-[-0.01em]">
                         {r.when}
@@ -161,7 +161,7 @@ export default function ConditionTemplate({
                   </>
                 )}
 
-                <p className="!mt-12 text-navy-900/55 text-sm italic">
+                <p className="!mt-12 text-navy-900/65 text-sm italic">
                   This page is general educational content authored by Dr. Lee.
                   It is not a substitute for individual medical advice. Every
                   patient&apos;s case is different — book a consultation to discuss

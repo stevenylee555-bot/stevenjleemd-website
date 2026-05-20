@@ -85,8 +85,14 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col bg-white text-navy-900">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-navy-950 focus:text-white focus:px-4 focus:py-2 focus:rounded-sm focus:shadow-lg"
+        >
+          Skip to content
+        </a>
         <Navbar />
-        <main className="flex-1 pt-[88px]">{children}</main>
+        <main id="main" className="flex-1 pt-[88px]">{children}</main>
         <Footer />
       </body>
     </html>

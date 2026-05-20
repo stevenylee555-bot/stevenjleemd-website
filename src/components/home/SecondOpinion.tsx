@@ -105,7 +105,7 @@ export default function SecondOpinion() {
                 <div className="font-serif text-lg text-white mb-2 tracking-[-0.01em]">
                   {p.title}
                 </div>
-                <p className="text-white/55 text-sm leading-relaxed">{p.body}</p>
+                <p className="text-white/70 text-sm leading-relaxed">{p.body}</p>
               </motion.div>
             ))}
           </motion.div>

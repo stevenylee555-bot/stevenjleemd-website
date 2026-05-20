@@ -56,7 +56,7 @@ export default function Hero() {
           {/* Copy column */}
           <div>
             <motion.div variants={heroReveal} className="flex items-center gap-3 mb-8">
-              <span className="h-px w-10 bg-gold-500" />
+              <span className="h-px w-10 bg-gold-500" aria-hidden="true" />
               <span className="kicker text-gold-400">
                 Arthrex Implant Designer · Lenox Hill Hospital
               </span>
@@ -106,7 +106,7 @@ export default function Hero() {
                     <span className="text-white/85">
                       <span className="font-medium text-white">{a.name}</span>
                       {a.note && (
-                        <span className="text-white/45"> · {a.note}</span>
+                        <span className="text-white/65"> · {a.note}</span>
                       )}
                     </span>
                   </motion.li>
@@ -122,12 +122,14 @@ export default function Hero() {
                 href="https://www.zocdoc.com/doctor/steven-lee-md"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Book an appointment via ZocDoc (opens in new tab)"
                 className="group inline-flex items-center justify-center gap-2 px-7 py-4 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold rounded-md transition-all duration-300 text-base shadow-[0_8px_24px_-12px_rgba(201,168,76,0.45)] hover:shadow-[0_12px_28px_-12px_rgba(201,168,76,0.65)] hover:-translate-y-0.5"
               >
-                <Calendar size={18} strokeWidth={2} />
+                <Calendar size={18} strokeWidth={2} aria-hidden="true" />
                 Book an Appointment
                 <ChevronRight
                   size={16}
+                  aria-hidden="true"
                   className="transition-transform group-hover:translate-x-0.5"
                 />
               </a>
@@ -145,21 +147,22 @@ export default function Hero() {
 
             <motion.div
               variants={heroReveal}
-              className="flex flex-wrap items-center text-sm text-white/70 divide-x divide-white/15"
+              className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:gap-y-2 text-sm text-white/70 sm:divide-x sm:divide-white/15"
             >
               <a
                 href="tel:+12127373301"
-                className="inline-flex items-center gap-2 pr-5 hover:text-gold-400 transition-colors"
+                aria-label="Call office at (212) 737-3301"
+                className="inline-flex items-center gap-2 sm:pr-5 hover:text-gold-400 transition-colors"
               >
-                <Phone size={14} strokeWidth={1.8} className="text-white/55" />
+                <Phone size={14} strokeWidth={1.8} className="text-white/55" aria-hidden="true" />
                 (212) 737-3301
               </a>
-              <span className="inline-flex items-center gap-2 px-5">
-                <MapPin size={14} strokeWidth={1.8} className="text-white/55" />
+              <span className="inline-flex items-center gap-2 sm:px-5">
+                <MapPin size={14} strokeWidth={1.8} className="text-white/55" aria-hidden="true" />
                 NYC · Scarsdale
               </span>
-              <span className="inline-flex items-center gap-2 pl-5">
-                <Video size={14} strokeWidth={1.8} className="text-white/55" />
+              <span className="inline-flex items-center gap-2 sm:pl-5">
+                <Video size={14} strokeWidth={1.8} className="text-white/55" aria-hidden="true" />
                 Telemedicine available
               </span>
             </motion.div>

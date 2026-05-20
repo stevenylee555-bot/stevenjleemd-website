@@ -25,23 +25,23 @@ export default function TestimonialSpotlight() {
             had considered. <span className="serif-italic text-gold-600">Six weeks later I was throwing again.</span>
           </motion.blockquote>
 
-          <motion.div
+          <motion.figcaption
             variants={fadeUp}
             className="mt-10 flex items-center justify-center gap-4"
           >
-            <div className="h-px w-12 bg-gold-500" />
-            <div className="text-left">
+            <div className="h-px w-12 bg-gold-500" aria-hidden="true" />
+            <cite className="text-left not-italic">
               <div className="font-semibold text-navy-950 text-sm">M.K.</div>
-              <div className="text-navy-900/55 text-xs uppercase tracking-wider">
+              <div className="text-navy-900/60 text-xs uppercase tracking-wider">
                 Professional athlete · Second opinion patient
               </div>
-            </div>
-            <div className="h-px w-12 bg-gold-500" />
-          </motion.div>
+            </cite>
+            <div className="h-px w-12 bg-gold-500" aria-hidden="true" />
+          </motion.figcaption>
 
           <motion.div
             variants={fadeUp}
-            className="mt-14 text-xs text-navy-900/40 max-w-md mx-auto leading-relaxed"
+            className="mt-14 text-xs text-navy-900/60 max-w-md mx-auto leading-relaxed"
           >
             Quoted with permission. Additional patient testimonials — including
             notable public figures — are featured on the testimonials page.
