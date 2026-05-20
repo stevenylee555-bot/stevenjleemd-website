@@ -249,79 +249,66 @@ export default function BioPage() {
             </p>
           </div>
 
-          {/* Asymmetric grid: featured portrait + 3 stacked landscape panels.
-              Each photo uses its natural aspect ratio so nothing gets badly cropped. */}
-          <div className="grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-6 lg:gap-8">
-            {/* Featured — Fellowship Forum (natural portrait, 9:16) */}
-            <figure className="relative group">
-              <div className="relative aspect-[3/4] lg:aspect-[9/16] w-full overflow-hidden bg-navy-800 ring-1 ring-navy-900/10">
-                <Image
-                  src="/images/dr-lee-fellowship-forum.jpg"
-                  alt="Dr. Lee speaking at the Arthrex Fellowship Forum"
-                  fill
-                  sizes="(min-width: 1024px) 40vw, 100vw"
-                  className="object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.02]"
-                />
-                <div
-                  className="absolute inset-0 bg-gradient-to-t from-navy-950/85 via-navy-950/20 to-transparent"
-                  aria-hidden="true"
-                />
-                <figcaption className="absolute bottom-0 left-0 right-0 p-5 lg:p-6">
-                  <div className="kicker text-gold-400 mb-1.5">
-                    Arthrex Fellowship Forum
-                  </div>
-                  <div className="text-white text-[15px] leading-snug font-light">
-                    Speaking on technique and outcomes
+          {/* Masonry-style 2-column flow. Each photo uses its NATURAL aspect ratio
+              (no cropping) and CSS columns auto-balance vertical height. Captions
+              live below the image, not overlaid, for proper breathing room. */}
+          <div className="lg:columns-2 lg:gap-10 xl:gap-12 space-y-10 lg:space-y-0">
+            {[
+              {
+                src: "/images/dr-lee-fellowship-forum.jpg",
+                alt: "Dr. Lee speaking at the Arthrex Fellowship Forum",
+                width: 3372,
+                height: 5995,
+                kicker: "Arthrex Fellowship Forum",
+                caption: "Speaking on technique and outcomes",
+              },
+              {
+                src: "/images/dr-lee-scapholunate-talk.jpg",
+                alt: "Dr. Lee presenting Scapholunate Tear Options at NISMAT",
+                width: 7360,
+                height: 4912,
+                kicker: "NISMAT · Scapholunate Tear Options",
+                caption: "Academic lecture on a published surgical series",
+              },
+              {
+                src: "/images/dr-lee-arthrex-panel.jpg",
+                alt: "Dr. Lee on a panel of upper-extremity surgeons at Arthrex",
+                width: 7952,
+                height: 5304,
+                kicker: "Arthrex Panel",
+                caption: "Upper-extremity surgery faculty panel",
+              },
+              {
+                src: "/images/dr-lee-nfl-fracture-panel.jpg",
+                alt: "Dr. Lee on the NFL fracture management panel at Arthrex",
+                width: 7952,
+                height: 5304,
+                kicker: "NFL Fracture Management",
+                caption: "Faculty panel on professional-athlete fracture care",
+              },
+            ].map((img) => (
+              <figure
+                key={img.src}
+                className="group lg:break-inside-avoid lg:mb-10 xl:mb-12"
+              >
+                <div className="relative w-full overflow-hidden bg-navy-800 ring-1 ring-navy-900/10">
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    width={img.width}
+                    height={img.height}
+                    sizes="(min-width: 1024px) 46vw, 100vw"
+                    className="w-full h-auto transition-transform duration-[1200ms] ease-out group-hover:scale-[1.02]"
+                  />
+                </div>
+                <figcaption className="mt-4 lg:mt-5">
+                  <div className="kicker text-gold-600 mb-1.5">{img.kicker}</div>
+                  <div className="text-navy-900/75 text-[15px] leading-snug">
+                    {img.caption}
                   </div>
                 </figcaption>
-              </div>
-            </figure>
-
-            {/* Stack of 3 landscape panels — each at natural 3:2 */}
-            <div className="flex flex-col gap-6 lg:gap-8">
-              {[
-                {
-                  src: "/images/dr-lee-scapholunate-talk.jpg",
-                  alt: "Dr. Lee presenting Scapholunate Tear Options at NISMAT",
-                  kicker: "NISMAT · Scapholunate Tear Options",
-                  caption: "Academic lecture on a published surgical series",
-                },
-                {
-                  src: "/images/dr-lee-arthrex-panel.jpg",
-                  alt: "Dr. Lee on a panel of upper-extremity surgeons at Arthrex",
-                  kicker: "Arthrex Panel",
-                  caption: "Upper-extremity surgery faculty panel",
-                },
-                {
-                  src: "/images/dr-lee-nfl-fracture-panel.jpg",
-                  alt: "Dr. Lee on the NFL fracture management panel at Arthrex",
-                  kicker: "NFL Fracture Management",
-                  caption: "Faculty panel on professional-athlete fracture care",
-                },
-              ].map((img) => (
-                <figure key={img.src} className="relative group">
-                  <div className="relative aspect-[3/2] w-full overflow-hidden bg-navy-800 ring-1 ring-navy-900/10">
-                    <Image
-                      src={img.src}
-                      alt={img.alt}
-                      fill
-                      sizes="(min-width: 1024px) 56vw, 100vw"
-                      className="object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.02]"
-                    />
-                    <div
-                      className="absolute inset-0 bg-gradient-to-t from-navy-950/85 via-navy-950/20 to-transparent"
-                      aria-hidden="true"
-                    />
-                    <figcaption className="absolute bottom-0 left-0 right-0 p-5 lg:p-6">
-                      <div className="kicker text-gold-400 mb-1.5">{img.kicker}</div>
-                      <div className="text-white text-[15px] leading-snug font-light">
-                        {img.caption}
-                      </div>
-                    </figcaption>
-                  </div>
-                </figure>
-              ))}
-            </div>
+              </figure>
+            ))}
           </div>
         </div>
       </section>
