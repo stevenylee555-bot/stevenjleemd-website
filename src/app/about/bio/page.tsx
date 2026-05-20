@@ -249,61 +249,79 @@ export default function BioPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
-            {[
-              {
-                src: "/images/dr-lee-fellowship-forum.jpg",
-                alt: "Dr. Lee speaking at the Arthrex Fellowship Forum",
-                kicker: "Arthrex Fellowship Forum",
-                caption: "Speaking on technique and outcomes",
-                aspect: "aspect-[3/4]",
-              },
-              {
-                src: "/images/dr-lee-scapholunate-talk.jpg",
-                alt: "Dr. Lee presenting Scapholunate Tear Options at NISMAT",
-                kicker: "NISMAT · Scapholunate Tear Options",
-                caption: "Academic lecture on a published surgical series",
-                aspect: "aspect-[3/4]",
-              },
-              {
-                src: "/images/dr-lee-arthrex-panel.jpg",
-                alt: "Dr. Lee on a panel of upper-extremity surgeons at Arthrex",
-                kicker: "Arthrex Panel",
-                caption: "Upper-extremity surgery faculty panel",
-                aspect: "aspect-[3/4]",
-              },
-              {
-                src: "/images/dr-lee-nfl-fracture-panel.jpg",
-                alt: "Dr. Lee on the NFL fracture management panel at Arthrex",
-                kicker: "NFL Fracture Management",
-                caption: "Faculty panel on professional-athlete fracture care",
-                aspect: "aspect-[3/4]",
-              },
-            ].map((img) => (
-              <figure key={img.src} className="relative group">
+          {/* Asymmetric grid: featured portrait + 3 stacked landscape panels.
+              Each photo uses its natural aspect ratio so nothing gets badly cropped. */}
+          <div className="grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-6 lg:gap-8">
+            {/* Featured — Fellowship Forum (natural portrait, 9:16) */}
+            <figure className="relative group">
+              <div className="relative aspect-[3/4] lg:aspect-[9/16] w-full overflow-hidden bg-navy-800 ring-1 ring-navy-900/10">
+                <Image
+                  src="/images/dr-lee-fellowship-forum.jpg"
+                  alt="Dr. Lee speaking at the Arthrex Fellowship Forum"
+                  fill
+                  sizes="(min-width: 1024px) 40vw, 100vw"
+                  className="object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.02]"
+                />
                 <div
-                  className={`relative ${img.aspect} w-full overflow-hidden bg-navy-800 ring-1 ring-navy-900/10`}
-                >
-                  <Image
-                    src={img.src}
-                    alt={img.alt}
-                    fill
-                    sizes="(min-width: 640px) 50vw, 100vw"
-                    className="object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.02]"
-                  />
-                  <div
-                    className="absolute inset-0 bg-gradient-to-t from-navy-950/85 via-navy-950/20 to-transparent"
-                    aria-hidden="true"
-                  />
-                  <figcaption className="absolute bottom-0 left-0 right-0 p-5 lg:p-6">
-                    <div className="kicker text-gold-400 mb-1.5">{img.kicker}</div>
-                    <div className="text-white text-[15px] leading-snug font-light">
-                      {img.caption}
-                    </div>
-                  </figcaption>
-                </div>
-              </figure>
-            ))}
+                  className="absolute inset-0 bg-gradient-to-t from-navy-950/85 via-navy-950/20 to-transparent"
+                  aria-hidden="true"
+                />
+                <figcaption className="absolute bottom-0 left-0 right-0 p-5 lg:p-6">
+                  <div className="kicker text-gold-400 mb-1.5">
+                    Arthrex Fellowship Forum
+                  </div>
+                  <div className="text-white text-[15px] leading-snug font-light">
+                    Speaking on technique and outcomes
+                  </div>
+                </figcaption>
+              </div>
+            </figure>
+
+            {/* Stack of 3 landscape panels — each at natural 3:2 */}
+            <div className="flex flex-col gap-6 lg:gap-8">
+              {[
+                {
+                  src: "/images/dr-lee-scapholunate-talk.jpg",
+                  alt: "Dr. Lee presenting Scapholunate Tear Options at NISMAT",
+                  kicker: "NISMAT · Scapholunate Tear Options",
+                  caption: "Academic lecture on a published surgical series",
+                },
+                {
+                  src: "/images/dr-lee-arthrex-panel.jpg",
+                  alt: "Dr. Lee on a panel of upper-extremity surgeons at Arthrex",
+                  kicker: "Arthrex Panel",
+                  caption: "Upper-extremity surgery faculty panel",
+                },
+                {
+                  src: "/images/dr-lee-nfl-fracture-panel.jpg",
+                  alt: "Dr. Lee on the NFL fracture management panel at Arthrex",
+                  kicker: "NFL Fracture Management",
+                  caption: "Faculty panel on professional-athlete fracture care",
+                },
+              ].map((img) => (
+                <figure key={img.src} className="relative group">
+                  <div className="relative aspect-[3/2] w-full overflow-hidden bg-navy-800 ring-1 ring-navy-900/10">
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      fill
+                      sizes="(min-width: 1024px) 56vw, 100vw"
+                      className="object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.02]"
+                    />
+                    <div
+                      className="absolute inset-0 bg-gradient-to-t from-navy-950/85 via-navy-950/20 to-transparent"
+                      aria-hidden="true"
+                    />
+                    <figcaption className="absolute bottom-0 left-0 right-0 p-5 lg:p-6">
+                      <div className="kicker text-gold-400 mb-1.5">{img.kicker}</div>
+                      <div className="text-white text-[15px] leading-snug font-light">
+                        {img.caption}
+                      </div>
+                    </figcaption>
+                  </div>
+                </figure>
+              ))}
+            </div>
           </div>
         </div>
       </section>
