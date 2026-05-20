@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Fraunces } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -9,6 +9,13 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
   display: "swap",
+});
+
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
+  subsets: ["latin"],
+  display: "swap",
+  axes: ["opsz", "SOFT"],
 });
 
 export const metadata: Metadata = {
@@ -34,6 +41,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Steven J. Lee, MD" }],
   creator: "Steven J. Lee, MD",
+  metadataBase: new URL("https://www.stevenjleemd.com"),
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -42,14 +50,7 @@ export const metadata: Metadata = {
     title: "Steven J. Lee, MD — Orthopedic Surgeon | NYC & Scarsdale",
     description:
       "Board-certified orthopedic surgeon specializing in hand, wrist, elbow, shoulder, and sports medicine. Chief of Hand Surgery at Lenox Hill Hospital.",
-    images: [
-      {
-        url: "https://www.stevenjleemd.com/images/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Dr. Steven J. Lee, MD — Orthopedic Surgeon",
-      },
-    ],
+    // og:image is auto-injected from app/opengraph-image.tsx
   },
   twitter: {
     card: "summary_large_image",
@@ -72,7 +73,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} h-full antialiased`}>
+    <html lang="en" className={`${inter.variable} ${fraunces.variable} h-full antialiased`}>
       <head>
         <script
           type="application/ld+json"

@@ -11,8 +11,10 @@
   --color-gold-500: #c9a84c;
   --color-gold-600: #a8872e;
   --color-cream: #faf8f4;
+  --color-bone: #f1ede4;
 
   --font-sans: var(--font-inter);
+  --font-serif: var(--font-fraunces);
 }
 
 :root {
@@ -25,12 +27,10 @@ body {
   color: var(--foreground);
 }
 
-/* Smooth scroll */
 html {
   scroll-behavior: smooth;
 }
 
-/* Gold underline utility */
 .gold-underline {
   position: relative;
 }
@@ -42,4 +42,48 @@ html {
   width: 60px;
   height: 3px;
   background: #c9a84c;
+}
+
+/* Editorial: hairline divider */
+.hairline {
+  border-top: 1px solid currentColor;
+  opacity: 0.15;
+}
+
+/* Editorial: kicker label */
+.kicker {
+  font-family: var(--font-inter);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* Drop the focus outline default into a refined gold ring */
+*:focus-visible {
+  outline: 2px solid #c9a84c;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Marquee animation for press strip */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+.animate-marquee:hover { animation-play-state: paused; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee { animation: none; }
+  html { scroll-behavior: auto; }
+}
+
+/* Pull serif italics for accent words inline */
+.serif-italic {
+  font-family: var(--font-fraunces);
+  font-style: italic;
+  font-feature-settings: "ss01";
 }
