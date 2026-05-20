@@ -5,7 +5,7 @@ import ComingSoon from "@/components/ComingSoon";
 export const metadata: Metadata = {
   title: "Curriculum Vitae — Steven J. Lee, MD",
   description:
-    "Download the full curriculum vitae of Dr. Steven J. Lee, MD — Chief of Hand Surgery at Lenox Hill Hospital.",
+    "Download the full curriculum vitae of Dr. Steven J. Lee, MD — Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
   alternates: { canonical: "https://www.stevenjleemd.com/about/cv" },
 };
 

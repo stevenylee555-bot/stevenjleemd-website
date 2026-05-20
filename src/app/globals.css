@@ -2,11 +2,11 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --color-navy-950: #0a1020;
-  --color-navy-900: #0f1a30;
-  --color-navy-800: #1a2744;
-  --color-navy-700: #243358;
-  --color-navy-600: #2e4070;
+  --color-navy-950: #11193a;
+  --color-navy-900: #182446;
+  --color-navy-800: #22305a;
+  --color-navy-700: #2c3d6c;
+  --color-navy-600: #3a4d82;
   --color-gold-400: #e8c96a;
   --color-gold-500: #c9a84c;
   --color-gold-600: #a8872e;
@@ -19,7 +19,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #0f1a30;
+  --foreground: #182446;
 }
 
 body {

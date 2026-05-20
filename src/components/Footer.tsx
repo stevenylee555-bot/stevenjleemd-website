@@ -38,7 +38,7 @@ export default function Footer() {
             <p className="text-gold-400 text-sm mb-4">Board-Certified Orthopedic Surgeon</p>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
               Double fellowship-trained specialist in hand, upper extremity, and sports medicine surgery.
-              Chief of Hand Surgery at Lenox Hill Hospital. Serving patients in NYC and Scarsdale.
+              Chief of Hand &amp; Upper Extremity Surgery at Lenox Hill Hospital. Serving patients in NYC and Scarsdale.
             </p>
 
             <div className="space-y-3 text-sm text-white/70">

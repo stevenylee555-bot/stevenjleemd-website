@@ -43,7 +43,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-navy-900 shadow-lg">
       {/* Top bar */}
       <div className="bg-navy-950 py-2 px-4 text-sm text-white/60 flex justify-between items-center max-w-7xl mx-auto">
-        <span>Chief of Hand Surgery · Lenox Hill Hospital · NYC & Scarsdale</span>
+        <span>Chief of Hand &amp; Upper Extremity Surgery · Lenox Hill Hospital · NYC &amp; Scarsdale</span>
         <a href="tel:+12127373301" className="flex items-center gap-1 hover:text-gold-400 transition-colors">
           <Phone size={13} />
           (212) 737-3301
@@ -53,9 +53,14 @@ export default function Navbar() {
       {/* Main nav */}
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
         {/* Logo / Name */}
-        <Link href="/" className="flex flex-col leading-tight">
-          <span className="text-white font-bold text-lg tracking-wide">Steven J. Lee, MD</span>
-          <span className="text-gold-400 text-xs tracking-wider uppercase">Orthopedic Surgery</span>
+        <Link href="/" className="flex flex-col leading-tight group">
+          <span className="font-serif text-white text-xl lg:text-[22px] tracking-[-0.01em] leading-none">
+            Steven J. Lee,{" "}
+            <span className="serif-italic text-gold-400">MD</span>
+          </span>
+          <span className="text-white/55 text-[10px] tracking-[0.18em] uppercase font-semibold mt-1.5">
+            Chief of Hand &amp; Upper Extremity Surgery
+          </span>
         </Link>
 
         {/* Desktop links */}

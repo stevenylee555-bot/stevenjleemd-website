@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Steven J. Lee, MD",
   },
   description:
-    "Dr. Steven J. Lee is a board-certified orthopedic surgeon specializing in hand, wrist, elbow, shoulder, and sports medicine surgery. Chief of Hand Surgery at Lenox Hill Hospital. Serving New York City and Scarsdale. Arthrex implant designer. Pioneer of PRP therapy for upper extremity injuries. Book online via ZocDoc.",
+    "Dr. Steven J. Lee is a board-certified orthopedic surgeon specializing in hand, wrist, elbow, shoulder, and sports medicine surgery. Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital. Serving New York City and Scarsdale. Arthrex implant designer. Pioneer of PRP therapy for upper extremity injuries. Book online via ZocDoc.",
   keywords: [
     "orthopedic surgeon NYC",
     "hand surgeon New York",
@@ -49,13 +49,13 @@ export const metadata: Metadata = {
     siteName: "Steven J. Lee, MD",
     title: "Steven J. Lee, MD — Orthopedic Surgeon | NYC & Scarsdale",
     description:
-      "Board-certified orthopedic surgeon specializing in hand, wrist, elbow, shoulder, and sports medicine. Chief of Hand Surgery at Lenox Hill Hospital.",
+      "Board-certified orthopedic surgeon specializing in hand, wrist, elbow, shoulder, and sports medicine. Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
     // og:image is auto-injected from app/opengraph-image.tsx
   },
   twitter: {
     card: "summary_large_image",
     title: "Steven J. Lee, MD — Orthopedic Surgeon | NYC",
-    description: "Chief of Hand Surgery at Lenox Hill Hospital. Arthrex implant designer.",
+    description: "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital. Arthrex implant designer.",
   },
   robots: {
     index: true,

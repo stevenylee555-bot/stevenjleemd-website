@@ -58,7 +58,7 @@ export default function Hero() {
             <motion.div variants={heroReveal} className="flex items-center gap-3 mb-8">
               <span className="h-px w-10 bg-gold-500" />
               <span className="kicker text-gold-400">
-                Chief of Hand Surgery · Lenox Hill Hospital
+                Chief of Hand &amp; Upper Extremity Surgery · Lenox Hill Hospital
               </span>
             </motion.div>
 
@@ -73,13 +73,38 @@ export default function Hero() {
 
             <motion.p
               variants={heroReveal}
-              className="text-white/70 text-lg md:text-xl leading-[1.55] max-w-xl mb-10 font-light"
+              className="text-white/70 text-lg md:text-xl leading-[1.5] max-w-xl mb-8 font-light"
             >
-              Dr. Steven J. Lee is a double fellowship-trained orthopedic surgeon, Arthrex
-              implant designer, and the first physician in New York to perform PRP therapy
-              for upper extremity injuries. Hand, elbow, shoulder, knee — surgery, sports
-              medicine, and second opinions in NYC and Scarsdale.
+              Double fellowship-trained orthopedic surgeon. Arthrex implant designer.
+              The first physician in New York to perform PRP therapy for upper extremity
+              injuries.
             </motion.p>
+
+            {/* Recognition block — accolades front and center */}
+            <motion.div variants={heroReveal} className="mb-10">
+              <div className="kicker text-white/40 mb-4">Recognized by</div>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5 max-w-xl">
+                {[
+                  { name: "Castle Connolly Top Doctor", note: "Annually since 2008" },
+                  { name: "New York Times Super Doctors", note: null },
+                  { name: "US News Top Doctor", note: null },
+                  { name: "New York Magazine Top Doctor", note: null },
+                ].map((a) => (
+                  <li
+                    key={a.name}
+                    className="flex items-baseline gap-3 text-[14.5px]"
+                  >
+                    <span className="h-1.5 w-1.5 rounded-full bg-gold-500 shrink-0 translate-y-[5px]" />
+                    <span className="text-white/85">
+                      <span className="font-medium text-white">{a.name}</span>
+                      {a.note && (
+                        <span className="text-white/45"> · {a.note}</span>
+                      )}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
 
             <motion.div
               variants={heroReveal}

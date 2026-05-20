@@ -14,7 +14,7 @@ const awards = [
 ];
 
 const credentials = [
-  "Chief of Hand Surgery, Lenox Hill Hospital",
+  "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
   "Double Fellowship-Trained",
   "Board-Certified Orthopedic Surgery",
   "Arthrex Implant Designer",
@@ -117,7 +117,7 @@ export default function About() {
                   <span className="h-1 w-1 rounded-full bg-gold-500 shrink-0 translate-y-[2px]" />
                   <span>
                     <span className="font-semibold text-navy-950">Lenox Hill Hospital</span>
-                    {" — "}Chief of Hand Surgery
+                    {" — "}Chief of Hand and Upper Extremity Surgery
                   </span>
                 </li>
                 <li className="flex items-baseline gap-3">

@@ -55,7 +55,7 @@ export default async function OpengraphImage() {
             }}
           >
             <div style={{ width: 56, height: 1, backgroundColor: "#c9a84c" }} />
-            Chief of Hand Surgery · Lenox Hill Hospital
+            Chief of Hand &amp; Upper Extremity Surgery · Lenox Hill
           </div>
 
           {/* Middle: name + tagline */}

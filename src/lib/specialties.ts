@@ -39,14 +39,14 @@ export const specialties: Specialty[] = [
     name: "Hand & Wrist Surgery",
     shortName: "Hand & Wrist",
     navLabel: "Hand & Wrist",
-    eyebrow: "Chief of Hand Surgery · Lenox Hill Hospital",
+    eyebrow: "Chief of Hand and Upper Extremity Surgery · Lenox Hill Hospital",
     headline: "The hand is where Dr. Lee made his name —",
     headlineItalic: "and where he designed the hardware.",
     lede:
       "Carpal tunnel, distal radius fractures, scapholunate ligament injuries, basal joint reconstruction, and the full spectrum of hand and wrist surgery. Performed by the surgeon who designed the implants now used by his peers around the country.",
     introTitle: "Surgery at the level of the person teaching it.",
     introBody: [
-      "Dr. Lee serves as Chief of Hand Surgery at Lenox Hill Hospital, a Northwell Health flagship in New York City. He is double fellowship-trained in hand and upper extremity surgery and in sports medicine — a combination that makes him fluent in both the fine reconstructive work of the hand and the high-demand return-to-sport considerations athletes care about.",
+      "Dr. Lee serves as Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, a Northwell Health flagship in New York City. He is double fellowship-trained in hand and upper extremity surgery and in sports medicine — a combination that makes him fluent in both the fine reconstructive work of the hand and the high-demand return-to-sport considerations athletes care about.",
       "Beyond his clinical practice, Dr. Lee is on the design team for several Arthrex implants used in hand and wrist surgery, including next-generation plate systems for the distal radius. When you have surgery with Dr. Lee, the hardware in your wrist may be hardware he helped design.",
     ],
     iconKey: "hand",
@@ -74,7 +74,7 @@ export const specialties: Specialty[] = [
       },
     ],
     credentials: [
-      "Chief of Hand Surgery, Lenox Hill Hospital (Northwell Health)",
+      "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital (Northwell Health)",
       "Double fellowship-trained — Hand & Upper Extremity, Sports Medicine",
       "Arthrex implant designer — hand and wrist plating systems",
       "Castle Connolly Top Doctor since 2008",
@@ -86,9 +86,9 @@ export const specialties: Specialty[] = [
         "Dr. Lee co-designed multiple plating systems Arthrex sells globally, and is on the design team for the next-generation Arthrex distal radius plate. Few surgeons in the country have that level of involvement with the hardware they implant.",
     },
     metaTitle:
-      "Hand & Wrist Surgery — Steven J. Lee, MD | Chief of Hand Surgery, Lenox Hill",
+      "Hand & Wrist Surgery — Steven J. Lee, MD | Chief of Hand and Upper Extremity Surgery, Lenox Hill",
     metaDescription:
-      "Hand and wrist surgery in NYC and Scarsdale. Dr. Steven J. Lee — Chief of Hand Surgery at Lenox Hill Hospital, double fellowship-trained, and an Arthrex implant designer. Carpal tunnel, distal radius fractures, scapholunate, basal joint, and more.",
+      "Hand and wrist surgery in NYC and Scarsdale. Dr. Steven J. Lee — Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, double fellowship-trained, and an Arthrex implant designer. Carpal tunnel, distal radius fractures, scapholunate, basal joint, and more.",
   },
 
   // ─────────────────────────────────────────────────────────────────

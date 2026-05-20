@@ -15,7 +15,7 @@ import type { ComponentType } from "react";
 export const metadata: Metadata = {
   title: "Specialties — Steven J. Lee, MD",
   description:
-    "Orthopedic specialties of Dr. Steven J. Lee, MD — Chief of Hand Surgery at Lenox Hill Hospital. Hand and wrist, elbow, shoulder, knee and sports, and advanced biologic treatments including PRP, BMAC, and peptide therapy.",
+    "Orthopedic specialties of Dr. Steven J. Lee, MD — Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital. Hand and wrist, elbow, shoulder, knee and sports, and advanced biologic treatments including PRP, BMAC, and peptide therapy.",
   alternates: { canonical: "https://www.stevenjleemd.com/specialties" },
 };
 

@@ -84,7 +84,7 @@ const distalRadiusFracture: ConditionPageContent = {
     "A broken wrist is the most common fracture orthopedic surgeons treat. The right treatment depends on the fracture pattern, the patient, and the surgeon. Dr. Lee is on the design team for the next-generation Arthrex distal radius plate.",
   byline: {
     name: "Steven J. Lee, MD",
-    title: "Chief of Hand Surgery, Lenox Hill Hospital",
+    title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
     reviewed: "May 2026",
   },
   overview: [
@@ -184,7 +184,7 @@ const distalRadiusFracture: ConditionPageContent = {
     { label: "Return to work", value: "Office work ~2 weeks, manual work 8–12 weeks" },
   ],
   whyDrLee: [
-    "Chief of Hand Surgery at Lenox Hill Hospital",
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
     "On the Arthrex design team for the next-generation distal radius plate",
     "Volar plating for displaced and intra-articular fractures",
     "Conservative — won't recommend surgery for fractures that don't need it",
@@ -233,7 +233,7 @@ const distalRadiusFracture: ConditionPageContent = {
     "A distal radius fracture heals once. The quality of that healing depends heavily on the quality of the initial treatment. Whether you need surgery or not, the goal is the same — a wrist that works normally in 30 years.",
   metaTitle: "Distal Radius (Wrist) Fracture — Steven J. Lee, MD",
   metaDescription:
-    "Distal radius (wrist) fracture treatment by Dr. Steven J. Lee, MD — Chief of Hand Surgery at Lenox Hill Hospital and Arthrex implant designer. Volar plate fixation, cast treatment, recovery, and second opinions.",
+    "Distal radius (wrist) fracture treatment by Dr. Steven J. Lee, MD — Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital and Arthrex implant designer. Volar plate fixation, cast treatment, recovery, and second opinions.",
   schemaDescription:
     "A distal radius fracture is a break of the radius bone at the wrist, usually caused by a fall onto an outstretched hand. Treatment options include cast immobilization for stable fractures and volar plate fixation for displaced or intra-articular fractures.",
 };
@@ -250,7 +250,7 @@ const scapholunate: ConditionPageContent = {
     "The scapholunate ligament holds two key wrist bones together. When it tears, the wrist mechanics change — and untreated, the wrist will eventually arthrose. Dr. Lee reconstructs scapholunate injuries using anchors he co-designed for Arthrex.",
   byline: {
     name: "Steven J. Lee, MD",
-    title: "Chief of Hand Surgery, Lenox Hill Hospital",
+    title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
     reviewed: "May 2026",
   },
   overview: [
@@ -338,7 +338,7 @@ const scapholunate: ConditionPageContent = {
   ],
   whyDrLee: [
     "Co-designer of the anchor and internal brace system used in reconstruction",
-    "Chief of Hand Surgery at Lenox Hill Hospital",
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
     "Wrist arthroscopy for both diagnosis and treatment",
     "Routinely sees patients told the injury 'can't be fixed' elsewhere",
   ],
@@ -403,7 +403,7 @@ const basalJointArthroplasty: ConditionPageContent = {
     "The base of the thumb is one of the most common sites of arthritis in the hand. When conservative treatment fails, modern reconstruction — including internal brace techniques Dr. Lee co-designed — restores a strong, painless thumb.",
   byline: {
     name: "Steven J. Lee, MD",
-    title: "Chief of Hand Surgery, Lenox Hill Hospital",
+    title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
     reviewed: "May 2026",
   },
   overview: [
@@ -501,7 +501,7 @@ const basalJointArthroplasty: ConditionPageContent = {
   whyDrLee: [
     "Co-designer of the Arthrex anchor system used in basal joint reconstruction",
     "Internal brace technique — shorter immobilization than traditional LRTI",
-    "Chief of Hand Surgery at Lenox Hill Hospital",
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
     "Conservative — won't operate on arthritis that hasn't earned an operation",
   ],
   related: [
@@ -565,7 +565,7 @@ const handWristFractures: ConditionPageContent = {
     "Metacarpal fractures, phalanx fractures, scaphoid fractures, and other small bone injuries of the hand and wrist. The principles are the same as larger fractures — restore the anatomy, allow early motion, prevent stiffness — applied with smaller-scale hardware.",
   byline: {
     name: "Steven J. Lee, MD",
-    title: "Chief of Hand Surgery, Lenox Hill Hospital",
+    title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
     reviewed: "May 2026",
   },
   overview: [
@@ -663,7 +663,7 @@ const handWristFractures: ConditionPageContent = {
   ],
   whyDrLee: [
     "Designed the Arthrex hand and wrist plating systems used in fixation",
-    "Chief of Hand Surgery at Lenox Hill Hospital",
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
     "Early-motion focused — minimizes the risk of stiffness",
     "Treats both acute fractures and the stiffness from poorly-treated old fractures",
   ],

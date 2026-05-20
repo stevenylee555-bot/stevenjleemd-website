@@ -7,7 +7,7 @@ import { regions, conditionsByRegion } from "@/lib/conditions";
 export const metadata: Metadata = {
   title: "Conditions Treated — Steven J. Lee, MD",
   description:
-    "Comprehensive library of orthopedic conditions treated by Dr. Steven J. Lee, MD — Chief of Hand Surgery at Lenox Hill Hospital. Hand, wrist, elbow, shoulder, knee, and Achilles. Physician-authored treatment information.",
+    "Comprehensive library of orthopedic conditions treated by Dr. Steven J. Lee, MD — Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital. Hand, wrist, elbow, shoulder, knee, and Achilles. Physician-authored treatment information.",
   alternates: { canonical: "https://www.stevenjleemd.com/conditions" },
 };
 

@@ -6,7 +6,7 @@ import PageHeader from "@/components/PageHeader";
 export const metadata: Metadata = {
   title: "About Dr. Lee — Steven J. Lee, MD",
   description:
-    "About Dr. Steven J. Lee, MD — Chief of Hand Surgery at Lenox Hill Hospital, Arthrex implant designer, double fellowship-trained orthopedic surgeon. Biography, credentials, publications, and CV.",
+    "About Dr. Steven J. Lee, MD — Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, Arthrex implant designer, double fellowship-trained orthopedic surgeon. Biography, credentials, publications, and CV.",
   alternates: { canonical: "https://www.stevenjleemd.com/about" },
 };
 
@@ -48,7 +48,7 @@ export default function AboutIndexPage() {
     <>
       <PageHeader
         kicker="About Dr. Lee"
-        title="Chief of Hand Surgery at Lenox Hill Hospital,"
+        title="Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital,"
         italic="and the surgeon who designed the hardware."
         lede="Dr. Steven J. Lee is a double fellowship-trained, board-certified orthopedic surgeon specializing in hand, wrist, elbow, shoulder, and sports medicine. Designer of plating systems, suture anchors, and internal brace constructs for Arthrex. First in NYC to perform PRP therapy for upper extremity injuries."
         breadcrumb={[

@@ -17,7 +17,7 @@ import { buildFaqSchema, buildConditionSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Carpal Tunnel Syndrome — Steven J. Lee, MD",
   description:
-    "Carpal tunnel syndrome — symptoms, diagnosis, and treatment options including endoscopic carpal tunnel release. Written by Dr. Steven J. Lee, MD, Chief of Hand Surgery at Lenox Hill Hospital.",
+    "Carpal tunnel syndrome — symptoms, diagnosis, and treatment options including endoscopic carpal tunnel release. Written by Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
   alternates: { canonical: "https://www.stevenjleemd.com/conditions/carpal-tunnel" },
 };
 
@@ -117,7 +117,7 @@ export default function CarpalTunnelPage() {
             <span className="font-semibold text-navy-950">Steven J. Lee, MD</span>
             <span className="text-navy-900/55">
               {" "}
-              · Chief of Hand Surgery, Lenox Hill Hospital
+              · Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital
             </span>
           </div>
           <div className="text-xs text-navy-900/45 uppercase tracking-wider">
@@ -394,7 +394,7 @@ export default function CarpalTunnelPage() {
                         className="text-gold-600 mt-1 shrink-0"
                         strokeWidth={1.6}
                       />
-                      <span>Chief of Hand Surgery at Lenox Hill Hospital</span>
+                      <span>Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital</span>
                     </li>
                     <li className="flex items-baseline gap-3">
                       <CheckCircle2

@@ -16,7 +16,7 @@ import { buildFaqSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Orthopedic Surgery Second Opinions — Steven J. Lee, MD",
   description:
-    "Get a world-class second opinion from Dr. Steven J. Lee, MD — Chief of Hand Surgery at Lenox Hill Hospital, Arthrex implant designer. In-person consultations in NYC and Scarsdale, telemedicine available for out-of-state and international patients.",
+    "Get a world-class second opinion from Dr. Steven J. Lee, MD — Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, Arthrex implant designer. In-person consultations in NYC and Scarsdale, telemedicine available for out-of-state and international patients.",
   alternates: { canonical: "https://www.stevenjleemd.com/second-opinions" },
 };
 

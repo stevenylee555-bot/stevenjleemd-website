@@ -7,12 +7,12 @@ import PageHeader from "@/components/PageHeader";
 export const metadata: Metadata = {
   title: "Biography — Steven J. Lee, MD",
   description:
-    "Biography of Dr. Steven J. Lee, MD — Chief of Hand Surgery at Lenox Hill Hospital, Arthrex implant designer, double fellowship-trained orthopedic surgeon serving NYC and Scarsdale.",
+    "Biography of Dr. Steven J. Lee, MD — Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, Arthrex implant designer, double fellowship-trained orthopedic surgeon serving NYC and Scarsdale.",
   alternates: { canonical: "https://www.stevenjleemd.com/about/bio" },
 };
 
 const credentials = [
-  "Chief of Hand Surgery, Lenox Hill Hospital",
+  "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
   "Double Fellowship-Trained",
   "Board-Certified, American Board of Orthopaedic Surgery",
   "Arthrex Implant Designer",
@@ -163,7 +163,7 @@ export default function BioPage() {
                 <ul className="space-y-3 mb-10 text-[14.5px] text-navy-900/85">
                   <li>
                     <span className="font-semibold text-navy-950">Lenox Hill Hospital</span>
-                    <div className="text-navy-900/55 text-xs mt-0.5">Chief of Hand Surgery</div>
+                    <div className="text-navy-900/55 text-xs mt-0.5">Chief of Hand and Upper Extremity Surgery</div>
                   </li>
                   <li>
                     <span className="font-semibold text-navy-950">
