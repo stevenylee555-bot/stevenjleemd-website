@@ -5,20 +5,19 @@ import { motion } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
 import { fadeUp, inViewProps, stagger } from "@/lib/motion";
 
-const awards = [
-  { name: "Castle Connolly Top Doctor", years: "2014–Present" },
-  { name: "NY Times Super Doctors", years: "Since 2008" },
-  { name: "NY Times Super Doctors Hall of Fame", years: "Since 2019" },
-  { name: "New York Magazine Best Doctors", years: "2014–Present" },
-  { name: "U.S. News & World Report Best Doctors", years: "Multiple years" },
-];
+// Recognition list now lives in the Hero only, avoids the awards-listed-twice
+// problem. About leans on training + affiliations for the right column instead.
 
 const credentials = [
-  "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
-  "Associate Director, NISMAT",
   "Double Fellowship-Trained",
-  "Board-Certified Orthopedic Surgery",
+  "Board-Certified, Orthopaedic Surgery",
   "Arthrex Implant Design Team",
+];
+
+const affiliations: { name: string; role: string }[] = [
+  { name: "Lenox Hill Hospital", role: "Chief, Hand & UE · Since 2013" },
+  { name: "NISMAT", role: "Associate Director · Since 2006" },
+  { name: "Manhattan Eye, Ear & Throat Hospital", role: "Attending" },
 ];
 
 export default function About() {
@@ -48,23 +47,21 @@ export default function About() {
               <p>
                 Dr. Steven J. Lee is Chief of Hand and Upper Extremity Surgery at Lenox
                 Hill Hospital, one of New York&apos;s premier medical centers. He is
-                double fellowship-trained in Hand Surgery and Shoulder &amp; Elbow Surgery,
-                and board-certified by the American Board of Orthopaedic Surgery.
+                double fellowship-trained in Hand Surgery and Sports Medicine, and
+                board-certified by the American Board of Orthopaedic Surgery.
               </p>
               <p>
                 What sets Dr. Lee apart is his direct role advancing the field. He is on
                 the design team for several{" "}
                 <span className="text-navy-950 font-medium">Arthrex</span> implants used
-                worldwide, including the Mini Comprehensive Fixation System (hand), the
-                Elbow Fracture Plating System, the 3.5 DX SwiveLock anchor, the
-                NanoCorkscrew FT, and the FiberLock CMC Suspensionplasty for thumb
-                reconstruction.
+                worldwide, including plating systems for the hand and elbow and the
+                internal brace constructs used in ligament reconstruction.
               </p>
               <p>
-                He was among the first surgeons in New York to perform PRP therapy for
-                upper extremity injuries, performing 250+ PRP procedures annually
-                today, and published what is believed to be the first review paper on
-                the use of peptides in an orthopedic journal.
+                He has authored 35+ peer-reviewed papers, including what is believed to
+                be the first review paper on the use of peptides in an orthopedic
+                journal. His advanced-treatment practice includes 250+ PRP procedures
+                annually.
               </p>
             </motion.div>
 
@@ -95,12 +92,14 @@ export default function About() {
             </motion.div>
           </div>
 
-          {/* Awards column, editorial list, not cards */}
+          {/* Affiliations column. The Recognition list moved fully into Hero,
+              so this column carries the institutional credentials only, with
+              the same editorial treatment for visual rhyme. */}
           <motion.aside variants={fadeUp} className="lg:pt-4">
-            <div className="kicker text-navy-900/40 mb-6">Recognition</div>
+            <div className="kicker text-navy-900/40 mb-6">Hospital Affiliations</div>
 
             <ul className="divide-y divide-navy-900/10">
-              {awards.map((a) => (
+              {affiliations.map((a) => (
                 <li
                   key={a.name}
                   className="py-5 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4"
@@ -108,38 +107,16 @@ export default function About() {
                   <span className="font-serif text-navy-950 text-lg leading-snug tracking-[-0.01em]">
                     {a.name}
                   </span>
-                  <span className="kicker text-navy-900/55 shrink-0">{a.years}</span>
+                  <span className="kicker text-navy-900/55 shrink-0">{a.role}</span>
                 </li>
               ))}
             </ul>
 
-            <div className="mt-10 pt-6 border-t border-navy-900/10">
-              <div className="kicker text-navy-900/40 mb-4">Hospital Affiliations</div>
-              <ul className="space-y-3 text-navy-900/75 text-sm">
-                <li className="flex items-baseline gap-3">
-                  <span className="h-1 w-1 rounded-full bg-gold-500 shrink-0 translate-y-[2px]" aria-hidden="true" />
-                  <span>
-                    <span className="font-semibold text-navy-950">Lenox Hill Hospital</span>
-                    {", "}Chief of Hand and Upper Extremity Surgery
-                  </span>
-                </li>
-                <li className="flex items-baseline gap-3">
-                  <span className="h-1 w-1 rounded-full bg-gold-500 shrink-0 translate-y-[2px]" aria-hidden="true" />
-                  <span>
-                    <span className="font-semibold text-navy-950">NISMAT</span>
-                    {", "}Associate Director (Nicholas Institute of Sports Medicine &amp; Athletic Trauma)
-                  </span>
-                </li>
-                <li className="flex items-baseline gap-3">
-                  <span className="h-1 w-1 rounded-full bg-gold-500 shrink-0 translate-y-[2px]" aria-hidden="true" />
-                  <span>
-                    <span className="font-semibold text-navy-950">
-                      Manhattan Eye, Ear &amp; Throat Hospital
-                    </span>
-                  </span>
-                </li>
-              </ul>
-            </div>
+            <p className="mt-8 text-navy-900/55 text-sm leading-relaxed">
+              NISMAT is the Nicholas Institute of Sports Medicine &amp; Athletic
+              Trauma, founded in 1973 as the country&apos;s first hospital-based
+              sports medicine center.
+            </p>
           </motion.aside>
         </motion.div>
       </div>

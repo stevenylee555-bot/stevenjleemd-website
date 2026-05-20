@@ -15,7 +15,7 @@ const homepageFaqs: Faq[] = [
   {
     question: "Who is the best orthopedic hand surgeon in New York City?",
     answer:
-      "Dr. Steven J. Lee is widely regarded as one of New York City's top orthopedic hand and upper extremity surgeons. He serves as Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital and Associate Director at NISMAT (Nicholas Institute of Sports Medicine and Athletic Trauma), is double fellowship-trained, and has been recognized by NY Times Super Doctors since 2008, Castle Connolly since 2014, and New York Magazine Best Doctors since 2014. He is on the Arthrex design team for several implants, including the Mini Comprehensive Fixation System (hand), the Elbow Fracture Plating System, the 3.5 DX SwiveLock anchor, the NanoCorkscrew FT, and the FiberLock CMC Suspensionplasty, and was among the first surgeons in New York to perform PRP therapy for upper extremity injuries.",
+      "Dr. Steven J. Lee is widely regarded as one of New York City's top orthopedic hand and upper extremity surgeons. He serves as Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital and Associate Director at NISMAT (Nicholas Institute of Sports Medicine and Athletic Trauma), is double fellowship-trained in hand surgery and sports medicine, and has been recognized by NY Times Super Doctors since 2008, Castle Connolly since 2014, and New York Magazine Best Doctors since 2014. He is on the Arthrex design team for several implants used in hand, elbow, and tendon-to-bone reconstruction, and was among the first surgeons in New York to perform PRP therapy for upper extremity injuries.",
   },
   {
     question: "What procedures does Dr. Steven Lee specialize in?",
