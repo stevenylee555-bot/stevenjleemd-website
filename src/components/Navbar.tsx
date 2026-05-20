@@ -53,7 +53,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-navy-900 border-b border-white/5">
-      {/* Top bar — hidden on phones to prevent overflow with phone number */}
+      {/* Top bar, hidden on phones to prevent overflow with phone number */}
       <div className="bg-navy-950 py-2 px-4 text-sm text-white/60 hidden sm:flex justify-between items-center max-w-7xl mx-auto">
         <span>Lenox Hill Hospital · NYC &amp; Scarsdale</span>
         <a href="tel:+12127373301" className="flex items-center gap-1 hover:text-gold-400 transition-colors" aria-label="Call office at (212) 737-3301">
@@ -131,7 +131,7 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Mobile toggle — 44x44 hit target */}
+        {/* Mobile toggle, 44x44 hit target */}
         <button
           className="lg:hidden text-white p-2.5"
           onClick={() => setMobileOpen(!mobileOpen)}
@@ -178,7 +178,7 @@ export default function Navbar() {
             aria-label="Book online via ZocDoc (opens in new tab)"
             className="block w-full text-center mt-4 px-4 py-3 bg-gold-500 text-navy-900 font-semibold rounded"
           >
-            Book Online — ZocDoc
+            Book Online, ZocDoc
           </a>
         </div>
       )}

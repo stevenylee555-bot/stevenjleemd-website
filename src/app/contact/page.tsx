@@ -3,7 +3,7 @@ import { Calendar, Phone, MapPin, Video, Mail, ExternalLink, Clock, Printer } fr
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Contact — Steven J. Lee, MD",
+  title: "Contact, Steven J. Lee, MD",
   description:
     "Contact Dr. Steven J. Lee, MD for orthopedic surgery appointments and consultations. Locations in New York City and Scarsdale. Telemedicine available for out-of-state and international patients.",
   alternates: { canonical: "https://www.stevenjleemd.com/contact" },
@@ -15,7 +15,7 @@ const locations = [
     address: ["159 East 74th Street", "New York, NY 10021"],
     phone: "(212) 737-3301",
     fax: "(212) 737-4876",
-    note: "Manhattan office — primary location",
+    note: "Manhattan office, primary location",
     mapsQuery: "159+East+74th+Street,+New+York,+NY+10021",
   },
   {
@@ -23,7 +23,7 @@ const locations = [
     address: ["2 Overhill Road, Suite 310", "Scarsdale, NY 10583"],
     phone: "(914) 725-6970",
     fax: null,
-    note: "Westchester office — by appointment",
+    note: "Westchester office, by appointment",
     mapsQuery: "2+Overhill+Road,+Scarsdale,+NY+10583",
   },
 ];

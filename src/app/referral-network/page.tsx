@@ -3,9 +3,9 @@ import PageHeader from "@/components/PageHeader";
 import ComingSoon from "@/components/ComingSoon";
 
 export const metadata: Metadata = {
-  title: "Referral Network — Steven J. Lee, MD",
+  title: "Referral Network, Steven J. Lee, MD",
   description:
-    "Trusted specialists Dr. Steven J. Lee personally recommends — physical therapists, hand therapists, dermatologists, nutritionists, trainers, and more.",
+    "Trusted specialists Dr. Steven J. Lee personally recommends, physical therapists, hand therapists, dermatologists, nutritionists, trainers, and more.",
   alternates: { canonical: "https://www.stevenjleemd.com/referral-network" },
 };
 
@@ -16,7 +16,7 @@ export default function ReferralNetworkPage() {
         kicker="Referral Network"
         title="The specialists Dr. Lee"
         italic="personally recommends."
-        lede="A curated directory of providers across the disciplines patients ask Dr. Lee about most often — physical therapy, hand therapy, dermatology, nutrition, training, and more."
+        lede="A curated directory of providers across the disciplines patients ask Dr. Lee about most often, physical therapy, hand therapy, dermatology, nutrition, training, and more."
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "Referral Network", href: "/referral-network" },
@@ -24,7 +24,7 @@ export default function ReferralNetworkPage() {
       />
       <ComingSoon
         title="Referral directory coming soon."
-        description="Dr. Lee is assembling a searchable, categorized list of providers he refers patients to — across physical therapy, hand therapy, dermatology, nutrition, training, home care, and more. Each listing will include specialty, location, and a brief note from Dr. Lee."
+        description="Dr. Lee is assembling a searchable, categorized list of providers he refers patients to, across physical therapy, hand therapy, dermatology, nutrition, training, home care, and more. Each listing will include specialty, location, and a brief note from Dr. Lee."
         preview={[
           "Physical Therapists",
           "Hand Therapists",

@@ -3,7 +3,7 @@ import PageHeader from "@/components/PageHeader";
 import ComingSoon from "@/components/ComingSoon";
 
 export const metadata: Metadata = {
-  title: "Blog — Steven J. Lee, MD",
+  title: "Blog, Steven J. Lee, MD",
   description:
     "Notes and updates from Dr. Steven J. Lee, MD on orthopedic surgery, implant design, biologics, and the practice.",
   alternates: { canonical: "https://www.stevenjleemd.com/blog" },
@@ -27,7 +27,7 @@ export default function BlogPage() {
         description="Dr. Lee will share notes on advances in orthopedic care, implant design developments, biologics evidence, and practice updates. New posts will appear here as they are published."
         preview={[
           "Implant design and what it means for patients",
-          "When biologics work — and when they don't",
+          "When biologics work, and when they don't",
           "Recovery realities surgeons don't always discuss",
           "Practice updates and announcements",
         ]}

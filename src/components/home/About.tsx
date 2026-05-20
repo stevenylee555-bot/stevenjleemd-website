@@ -47,7 +47,7 @@ export default function About() {
             <motion.div variants={fadeUp} className="space-y-5 text-navy-900/75 text-[17px] leading-[1.7] font-light max-w-2xl">
               <p>
                 Dr. Steven J. Lee is Chief of Hand and Upper Extremity Surgery at Lenox
-                Hill Hospital — one of New York&apos;s premier medical centers. He is
+                Hill Hospital, one of New York&apos;s premier medical centers. He is
                 double fellowship-trained in Hand Surgery and Shoulder &amp; Elbow Surgery,
                 and board-certified by the American Board of Orthopaedic Surgery.
               </p>
@@ -55,15 +55,15 @@ export default function About() {
                 What sets Dr. Lee apart is his direct role advancing the field. He is on
                 the design team for several{" "}
                 <span className="text-navy-950 font-medium">Arthrex</span> implants used
-                worldwide — including the Mini Comprehensive Fixation System (hand), the
+                worldwide, including the Mini Comprehensive Fixation System (hand), the
                 Elbow Fracture Plating System, the 3.5 DX SwiveLock anchor, the
                 NanoCorkscrew FT, and the FiberLock CMC Suspensionplasty for thumb
                 reconstruction.
               </p>
               <p>
                 He was among the first surgeons in New York to perform PRP therapy for
-                upper extremity injuries — performing 250+ PRP procedures annually
-                today — and published what is believed to be the first review paper on
+                upper extremity injuries, performing 250+ PRP procedures annually
+                today, and published what is believed to be the first review paper on
                 the use of peptides in an orthopedic journal.
               </p>
             </motion.div>
@@ -95,7 +95,7 @@ export default function About() {
             </motion.div>
           </div>
 
-          {/* Awards column — editorial list, not cards */}
+          {/* Awards column, editorial list, not cards */}
           <motion.aside variants={fadeUp} className="lg:pt-4">
             <div className="kicker text-navy-900/40 mb-6">Recognition</div>
 
@@ -120,14 +120,14 @@ export default function About() {
                   <span className="h-1 w-1 rounded-full bg-gold-500 shrink-0 translate-y-[2px]" aria-hidden="true" />
                   <span>
                     <span className="font-semibold text-navy-950">Lenox Hill Hospital</span>
-                    {" — "}Chief of Hand and Upper Extremity Surgery
+                    {", "}Chief of Hand and Upper Extremity Surgery
                   </span>
                 </li>
                 <li className="flex items-baseline gap-3">
                   <span className="h-1 w-1 rounded-full bg-gold-500 shrink-0 translate-y-[2px]" aria-hidden="true" />
                   <span>
                     <span className="font-semibold text-navy-950">NISMAT</span>
-                    {" — "}Associate Director (Nicholas Institute of Sports Medicine &amp; Athletic Trauma)
+                    {", "}Associate Director (Nicholas Institute of Sports Medicine &amp; Athletic Trauma)
                   </span>
                 </li>
                 <li className="flex items-baseline gap-3">

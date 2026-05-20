@@ -26,7 +26,7 @@ export default function ArthrexFeature() {
           variants={stagger(0, 0.12)}
           className="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-16 lg:gap-20 items-center"
         >
-          {/* Left column — copy */}
+          {/* Left column, copy */}
           <div>
             <motion.div variants={fadeUp} className="flex items-center gap-3 mb-6">
               <span className="h-px w-10 bg-gold-500" />
@@ -45,7 +45,7 @@ export default function ArthrexFeature() {
               variants={fadeUp}
               className="text-white/75 text-lg leading-[1.65] font-light mb-6 max-w-xl"
             >
-              Dr. Lee is on the design team for several Arthrex implants used worldwide —
+              Dr. Lee is on the design team for several Arthrex implants used worldwide,
               plating systems for the hand and elbow, the 3.5 DX SwiveLock anchor used
               in internal brace reconstructions, the NanoCorkscrew FT for tendon-to-bone
               repair, and the FiberLock CMC Suspensionplasty for thumb arthritis.
@@ -89,7 +89,7 @@ export default function ArthrexFeature() {
             </motion.ul>
           </div>
 
-          {/* Right column — Dr. Lee teaching at Arthrex */}
+          {/* Right column, Dr. Lee teaching at Arthrex */}
           <motion.div variants={fadeUp} className="relative">
             {/* Gold accent corners */}
             <div

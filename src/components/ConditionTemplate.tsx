@@ -66,7 +66,7 @@ export default function ConditionTemplate({
       <section className="bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-16 lg:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-16 lg:gap-20">
-            {/* Main column — capped at ~70ch for editorial readability */}
+            {/* Main column, capped at ~70ch for editorial readability */}
             <article className="max-w-[640px]">
               <div className="text-navy-900/80 text-[17px] leading-[1.75] font-light">
                 {/* Overview */}
@@ -88,7 +88,7 @@ export default function ConditionTemplate({
                   <BodySection key={section.heading} section={section} />
                 ))}
 
-                {/* Dr. Lee's approach — full-card editorial treatment, no side-stripe */}
+                {/* Dr. Lee's approach, full-card editorial treatment, no side-stripe */}
                 <div className="!my-14 relative bg-cream/70 border border-navy-900/12 p-7 lg:p-9">
                   <div className="flex items-center gap-3 mb-5 pb-5 border-b border-navy-900/10">
                     <span className="h-px w-8 bg-gold-500" />
@@ -164,7 +164,7 @@ export default function ConditionTemplate({
                 <p className="!mt-12 text-navy-900/65 text-sm italic">
                   This page is general educational content authored by Dr. Lee.
                   It is not a substitute for individual medical advice. Every
-                  patient&apos;s case is different — book a consultation to discuss
+                  patient&apos;s case is different, book a consultation to discuss
                   yours.
                 </p>
               </div>

@@ -20,7 +20,7 @@ const fraunces = Fraunces({
 
 export const metadata: Metadata = {
   title: {
-    default: "Steven J. Lee, MD — Orthopedic Surgeon | NYC & Scarsdale",
+    default: "Steven J. Lee, MD, Orthopedic Surgeon | NYC & Scarsdale",
     template: "%s | Steven J. Lee, MD",
   },
   description:
@@ -47,14 +47,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://www.stevenjleemd.com",
     siteName: "Steven J. Lee, MD",
-    title: "Steven J. Lee, MD — Orthopedic Surgeon | NYC & Scarsdale",
+    title: "Steven J. Lee, MD, Orthopedic Surgeon | NYC & Scarsdale",
     description:
       "Board-certified orthopedic surgeon specializing in hand, wrist, elbow, shoulder, and sports medicine. Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
     // og:image is auto-injected from app/opengraph-image.tsx
   },
   twitter: {
     card: "summary_large_image",
-    title: "Steven J. Lee, MD — Orthopedic Surgeon | NYC",
+    title: "Steven J. Lee, MD, Orthopedic Surgeon | NYC",
     description: "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital. on the Arthrex implant design team.",
   },
   robots: {

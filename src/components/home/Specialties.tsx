@@ -52,7 +52,7 @@ const specialties = [
     title: "PRP & Biologics",
     eyebrow: "Among the first in NYC for upper extremity",
     description:
-      "PRP injections (250+ annually), BMAC stem cell therapy, and peptide treatments — including the first orthopedic-journal review paper on peptides.",
+      "PRP injections (250+ annually), BMAC stem cell therapy, and peptide treatments, including the first orthopedic-journal review paper on peptides.",
     href: "/specialties/advanced-treatments",
     Icon: BiologicsIcon,
   },
@@ -88,7 +88,7 @@ export default function Specialties() {
           </motion.h2>
           <motion.p variants={fadeUp} className="text-navy-900/65 text-lg leading-relaxed font-light">
             Dr. Lee&apos;s practice spans upper extremity surgery, sports medicine, and advanced
-            biologics — with particular depth in the procedures he helped pioneer.
+            biologics, with particular depth in the procedures he helped pioneer.
           </motion.p>
         </motion.div>
 

@@ -4,9 +4,9 @@ import { ArrowUpRight, User, Award, BookOpen, Video, FileText } from "lucide-rea
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "About Dr. Lee — Steven J. Lee, MD",
+  title: "About Dr. Lee, Steven J. Lee, MD",
   description:
-    "About Dr. Steven J. Lee, MD — Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, on the Arthrex implant design team, double fellowship-trained orthopedic surgeon. Biography, credentials, publications, and CV.",
+    "About Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, on the Arthrex implant design team, double fellowship-trained orthopedic surgeon. Biography, credentials, publications, and CV.",
   alternates: { canonical: "https://www.stevenjleemd.com/about" },
 };
 

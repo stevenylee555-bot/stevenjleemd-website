@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       // Allow general crawlers
       { userAgent: "*", allow: "/" },
-      // Explicitly welcome AI/LLM crawlers — important for GEO (Generative Engine Optimization)
+      // Explicitly welcome AI/LLM crawlers, important for GEO (Generative Engine Optimization)
       { userAgent: "GPTBot", allow: "/" },
       { userAgent: "ChatGPT-User", allow: "/" },
       { userAgent: "OAI-SearchBot", allow: "/" },

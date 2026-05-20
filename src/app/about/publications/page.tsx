@@ -4,9 +4,9 @@ import { ArrowUpRight, Download, ExternalLink } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Publications & Research — Steven J. Lee, MD",
+  title: "Publications & Research, Steven J. Lee, MD",
   description:
-    "Peer-reviewed publications, book chapters, and research from Dr. Steven J. Lee, MD — including the 2026 review of therapeutic peptides in orthopaedics (JAAOS Global Research & Reviews), four papers on Achilles tendon repair, scapholunate ligament reconstruction, and coracoclavicular ligament biomechanics.",
+    "Peer-reviewed publications, book chapters, and research from Dr. Steven J. Lee, MD, including the 2026 review of therapeutic peptides in orthopaedics (JAAOS Global Research & Reviews), four papers on Achilles tendon repair, scapholunate ligament reconstruction, and coracoclavicular ligament biomechanics.",
   alternates: {
     canonical: "https://www.stevenjleemd.com/about/publications",
   },
@@ -234,7 +234,7 @@ export default function PublicationsPage() {
         kicker="Publications & Research"
         title="35+ peer-reviewed publications,"
         italic="across hand, elbow, shoulder, knee, and biologics."
-        lede="Selected publications below. The complete bibliography — 37 entries including book chapters — is available in the CV PDF. Dr. Lee has also given 34 national presentations and 50 invited lectures."
+        lede="Selected publications below. The complete bibliography, 37 entries including book chapters, is available in the CV PDF. Dr. Lee has also given 34 national presentations and 50 invited lectures."
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "About", href: "/about" },
@@ -295,9 +295,9 @@ export default function PublicationsPage() {
             <div className="kicker text-gold-600 mb-3">A note on this list</div>
             <p className="text-navy-900/80 text-[16px] leading-[1.7] mb-6">
               The publications above are selected highlights. The full 37-entry
-              bibliography — including early biomechanical work from residency, all
+              bibliography, including early biomechanical work from residency, all
               Achilles repair papers, the scapholunate reconstruction series, and the
-              2022 lateral epicondylitis MRI study — is documented in the CV.
+              2022 lateral epicondylitis MRI study, is documented in the CV.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <a

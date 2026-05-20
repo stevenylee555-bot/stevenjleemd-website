@@ -4,9 +4,9 @@ import { ArrowUpRight, Download } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Credentials & Awards — Steven J. Lee, MD",
+  title: "Credentials & Awards, Steven J. Lee, MD",
   description:
-    "Board certifications, fellowships, hospital appointments, and the 85+ awards and distinctions of Dr. Steven J. Lee, MD — Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
+    "Board certifications, fellowships, hospital appointments, and the 85+ awards and distinctions of Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
   alternates: { canonical: "https://www.stevenjleemd.com/about/credentials" },
 };
 
@@ -40,11 +40,11 @@ const appointments = [
 ];
 
 const certifications = [
-  "American Board of Orthopaedic Surgery — Board Certified",
-  "American Board of Medical Specialties — Orthopaedic Surgery of the Hand (Subspecialty Certified)",
-  "National Boards of Medical Examiners (NBME) — Diplomate, Certification # 438187 (1994)",
-  "New York State Medical License — Current",
-  "New York State DEA — Active",
+  "American Board of Orthopaedic Surgery, Board Certified",
+  "American Board of Medical Specialties, Orthopaedic Surgery of the Hand (Subspecialty Certified)",
+  "National Boards of Medical Examiners (NBME), Diplomate, Certification # 438187 (1994)",
+  "New York State Medical License, Current",
+  "New York State DEA, Active",
 ];
 
 const memberships = [
@@ -62,7 +62,7 @@ const recognition = [
   {
     title: "Castle Connolly Top Doctor",
     detail:
-      "Annually since 2014 — including Castle Connolly New York Metro Area listings",
+      "Annually since 2014, including Castle Connolly New York Metro Area listings",
   },
   {
     title: "New York Times Super Doctors",
@@ -75,7 +75,7 @@ const recognition = [
   {
     title: "Guide to America's Top Orthopedists",
     detail:
-      "Consumer's Research Council of America — multiple years (2007–2013)",
+      "Consumer's Research Council of America, multiple years (2007–2013)",
   },
 ];
 
@@ -83,15 +83,15 @@ const teaching = [
   {
     title: "Chitranjan S. Ranawat, MD Mentorship Award",
     detail:
-      "Awarded by Lenox Hill orthopaedic residents — 7 times (2010, 2014, 2015, 2017, 2018, 2019, 2023)",
+      "Awarded by Lenox Hill orthopaedic residents, 7 times (2010, 2014, 2015, 2017, 2018, 2019, 2023)",
   },
   {
     title: "Maurice H. Cowen MD Memorial Award for Excellence in Medical Education",
-    detail: "Teacher of the Year — 2003, 2009",
+    detail: "Teacher of the Year, 2003, 2009",
   },
   {
     title: "James A. Nicholas Award for Distinction in Orthopaedic Residency Education",
-    detail: "Awarded by Lenox Hill residents — 2021, 2022",
+    detail: "Awarded by Lenox Hill residents, 2021, 2022",
   },
 ];
 
@@ -99,21 +99,21 @@ const research = [
   {
     title: "William A. Grana Award for Best Original Research",
     detail:
-      "Most outstanding research paper in the Orthopaedic Journal of Sports Medicine — 2017",
+      "Most outstanding research paper in the Orthopaedic Journal of Sports Medicine, 2017",
   },
   {
     title: "Excellence in Research Award",
-    detail: "Sports Physical Therapy Section — 2009",
+    detail: "Sports Physical Therapy Section, 2009",
   },
   {
     title: "Award for Best Research",
     detail:
-      "Lenox Hill Alumni Meeting — 2000 (coracoclavicular ligament reconstruction)",
+      "Lenox Hill Alumni Meeting, 2000 (coracoclavicular ligament reconstruction)",
   },
   {
     title: "Editorial Reviewer",
     detail:
-      "Journal of the American Academy of Orthopaedic Surgeons — since March 2009",
+      "Journal of the American Academy of Orthopaedic Surgeons, since March 2009",
   },
 ];
 
@@ -121,23 +121,23 @@ const patents = [
   {
     title: "US Patent #12,622,710 B2",
     detail:
-      "Center of Rotation Guide — surgical instrumentation · Awarded May 12, 2026",
+      "Center of Rotation Guide, surgical instrumentation · Awarded May 12, 2026",
   },
 ];
 
 const teamPhysician = [
   {
-    title: "PGA Tour — Northeast Division",
+    title: "PGA Tour, Northeast Division",
     detail:
       "Orthopaedic Surgery Consultant via Physiotherapy Associates / Stryker (2006–2008)",
   },
   {
     title: "New Jersey Red Dogs · New Jersey Gladiators (Arena Football)",
-    detail: "Team Orthopaedic Physician — 2000–2002",
+    detail: "Team Orthopaedic Physician, 2000–2002",
   },
   {
     title: "Hofstra University Athletic Teams",
-    detail: "Team Orthopaedic Physician — 2000–2002",
+    detail: "Team Orthopaedic Physician, 2000–2002",
   },
 ];
 

@@ -3,7 +3,7 @@ import PageHeader from "@/components/PageHeader";
 import ComingSoon from "@/components/ComingSoon";
 
 export const metadata: Metadata = {
-  title: "Therapy Protocols — Steven J. Lee, MD",
+  title: "Therapy Protocols, Steven J. Lee, MD",
   description:
     "Physical therapy and hand therapy protocols recommended by Dr. Steven J. Lee, MD for post-operative recovery and non-surgical management.",
   alternates: { canonical: "https://www.stevenjleemd.com/therapy-protocols" },
@@ -16,7 +16,7 @@ export default function TherapyProtocolsPage() {
         kicker="Therapy Protocols"
         title="The PT and hand-therapy protocols"
         italic="Dr. Lee recommends."
-        lede="A patient-facing library of recovery protocols — what to do, when, and why — for both post-operative care and non-surgical management."
+        lede="A patient-facing library of recovery protocols, what to do, when, and why, for both post-operative care and non-surgical management."
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "Therapy Protocols", href: "/therapy-protocols" },

@@ -11,12 +11,12 @@ import ConditionsPreview from "@/components/home/ConditionsPreview";
 import BookingCTA from "@/components/home/BookingCTA";
 import FAQSection, { type Faq } from "@/components/home/FAQSection";
 
-// GEO/AI-citation FAQs — kept verbatim from prior homepage (canonical answers).
+// GEO/AI-citation FAQs, kept verbatim from prior homepage (canonical answers).
 const homepageFaqs: Faq[] = [
   {
     question: "Who is the best orthopedic hand surgeon in New York City?",
     answer:
-      "Dr. Steven J. Lee is widely regarded as one of New York City's top orthopedic hand and upper extremity surgeons. He serves as Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital and Associate Director at NISMAT (Nicholas Institute of Sports Medicine and Athletic Trauma), is double fellowship-trained, and has been recognized by NY Times Super Doctors since 2008, Castle Connolly since 2014, and New York Magazine Best Doctors since 2014. He is on the Arthrex design team for several implants — including the Mini Comprehensive Fixation System (hand), the Elbow Fracture Plating System, the 3.5 DX SwiveLock anchor, the NanoCorkscrew FT, and the FiberLock CMC Suspensionplasty — and was among the first surgeons in New York to perform PRP therapy for upper extremity injuries.",
+      "Dr. Steven J. Lee is widely regarded as one of New York City's top orthopedic hand and upper extremity surgeons. He serves as Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital and Associate Director at NISMAT (Nicholas Institute of Sports Medicine and Athletic Trauma), is double fellowship-trained, and has been recognized by NY Times Super Doctors since 2008, Castle Connolly since 2014, and New York Magazine Best Doctors since 2014. He is on the Arthrex design team for several implants, including the Mini Comprehensive Fixation System (hand), the Elbow Fracture Plating System, the 3.5 DX SwiveLock anchor, the NanoCorkscrew FT, and the FiberLock CMC Suspensionplasty, and was among the first surgeons in New York to perform PRP therapy for upper extremity injuries.",
   },
   {
     question: "What procedures does Dr. Steven Lee specialize in?",
@@ -31,7 +31,7 @@ const homepageFaqs: Faq[] = [
   {
     question: "Does Dr. Lee see out-of-network patients?",
     answer:
-      "Yes, Dr. Lee regularly sees out-of-network patients and international patients. Many patients travel specifically to see him for complex cases, second opinions, and procedures where his expertise — particularly his involvement in designing the implants used — is a significant advantage.",
+      "Yes, Dr. Lee regularly sees out-of-network patients and international patients. Many patients travel specifically to see him for complex cases, second opinions, and procedures where his expertise, particularly his involvement in designing the implants used, is a significant advantage.",
   },
   {
     question: "Can I get a second opinion from Dr. Lee?",

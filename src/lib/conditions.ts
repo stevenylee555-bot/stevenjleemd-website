@@ -11,14 +11,14 @@ export type Condition = {
 // Master list of conditions Dr. Lee treats. Drives the /conditions index,
 // the homepage preview, and (later) individual condition pages.
 export const conditions: Condition[] = [
-  // Hand & Wrist — priority
+  // Hand & Wrist, priority
   {
     name: "Carpal Tunnel Syndrome",
     slug: "carpal-tunnel",
     region: "Hand & Wrist",
     status: "priority",
     blurb:
-      "Including endoscopic release — a minimally invasive approach with faster recovery than traditional open surgery.",
+      "Including endoscopic release, a minimally invasive approach with faster recovery than traditional open surgery.",
   },
   {
     name: "Distal Radius Fracture",
@@ -52,7 +52,7 @@ export const conditions: Condition[] = [
     blurb:
       "Fracture fixation using the hand and elbow plating systems Dr. Lee designed for Arthrex.",
   },
-  // Hand & Wrist — phase 2
+  // Hand & Wrist, phase 2
   {
     name: "Trigger Finger",
     slug: "trigger-finger",
@@ -68,7 +68,7 @@ export const conditions: Condition[] = [
     blurb: "Minimally invasive evaluation and treatment of wrist pain.",
   },
 
-  // Elbow — priority
+  // Elbow, priority
   {
     name: "UCL Tear (Tommy John)",
     slug: "ucl-reconstruction",
@@ -85,7 +85,7 @@ export const conditions: Condition[] = [
     blurb:
       "Distal biceps repair using tendon-to-bone anchors Dr. Lee designed for Arthrex.",
   },
-  // Elbow — phase 2
+  // Elbow, phase 2
   {
     name: "Complex Elbow Trauma",
     slug: "elbow-trauma",
@@ -101,7 +101,7 @@ export const conditions: Condition[] = [
     blurb: "Plate-and-screw fixation using designs Dr. Lee helped develop.",
   },
 
-  // Shoulder — priority
+  // Shoulder, priority
   {
     name: "Rotator Cuff Tear",
     slug: "rotator-cuff",
@@ -109,7 +109,7 @@ export const conditions: Condition[] = [
     status: "priority",
     blurb: "Arthroscopic repair with current-generation suture anchors.",
   },
-  // Shoulder — phase 2
+  // Shoulder, phase 2
   {
     name: "Shoulder Arthroscopy",
     slug: "shoulder-arthroscopy",
@@ -126,7 +126,7 @@ export const conditions: Condition[] = [
       "Plate fixation with current-generation Arthrex hardware.",
   },
 
-  // Knee & Sports — priority
+  // Knee & Sports, priority
   {
     name: "ACL Tear",
     slug: "acl-reconstruction",
@@ -134,7 +134,7 @@ export const conditions: Condition[] = [
     status: "priority",
     blurb: "ACL reconstruction with autograft or allograft, internal brace augmentation when appropriate.",
   },
-  // Knee & Sports — phase 2
+  // Knee & Sports, phase 2
   {
     name: "Meniscus Tear",
     slug: "meniscus",
@@ -150,7 +150,7 @@ export const conditions: Condition[] = [
     blurb: "Minimally invasive treatment for cartilage, meniscus, and ligament injuries.",
   },
 
-  // Foot & Ankle — priority
+  // Foot & Ankle, priority
   {
     name: "Achilles Tendon Rupture",
     slug: "achilles-rupture",
@@ -160,14 +160,14 @@ export const conditions: Condition[] = [
       "Repair and reconstruction. Dr. Lee has authored four peer-reviewed papers on Achilles repair.",
   },
 
-  // Advanced Treatments — phase 2
+  // Advanced Treatments, phase 2
   {
     name: "PRP / BMAC Injections",
     slug: "prp-bmac",
     region: "Advanced Treatments",
     status: "phase2",
     blurb:
-      "Dr. Lee was among the first surgeons in NYC to perform PRP — and 99% certain the first specifically for upper extremity injuries. 250+ PRP procedures performed annually.",
+      "Dr. Lee was among the first surgeons in NYC to perform PRP, and 99% certain the first specifically for upper extremity injuries. 250+ PRP procedures performed annually.",
   },
   {
     name: "Peptide Therapy",

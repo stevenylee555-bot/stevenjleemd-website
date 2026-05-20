@@ -3,9 +3,9 @@ import PageHeader from "@/components/PageHeader";
 import ComingSoon from "@/components/ComingSoon";
 
 export const metadata: Metadata = {
-  title: "Patient Testimonials — Steven J. Lee, MD",
+  title: "Patient Testimonials, Steven J. Lee, MD",
   description:
-    "Testimonials from patients of Dr. Steven J. Lee, MD — including notable figures who have trusted him with their orthopedic care.",
+    "Testimonials from patients of Dr. Steven J. Lee, MD, including notable figures who have trusted him with their orthopedic care.",
   alternates: { canonical: "https://www.stevenjleemd.com/testimonials" },
 };
 
@@ -16,7 +16,7 @@ export default function TestimonialsPage() {
         kicker="Testimonials"
         title="What patients say"
         italic="about their care."
-        lede="A collection of testimonials from patients who have trusted Dr. Lee with their surgical and second-opinion consultations — including notable public figures."
+        lede="A collection of testimonials from patients who have trusted Dr. Lee with their surgical and second-opinion consultations, including notable public figures."
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "Testimonials", href: "/testimonials" },

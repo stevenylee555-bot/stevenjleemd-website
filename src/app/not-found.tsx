@@ -16,7 +16,7 @@ export default function NotFound() {
         </div>
         <div className="kicker text-gold-400 mb-6">Page not found</div>
         <h1 className="font-serif text-[clamp(2rem,4vw,3.5rem)] tracking-[-0.02em] leading-[1.05] mb-8">
-          That page isn&apos;t here —{" "}
+          That page isn&apos;t here,{" "}
           <span className="serif-italic text-gold-400">but Dr. Lee is.</span>
         </h1>
         <p className="text-white/65 text-lg leading-relaxed max-w-xl mx-auto mb-12 font-light">

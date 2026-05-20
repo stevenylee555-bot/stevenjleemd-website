@@ -5,9 +5,9 @@ import PageHeader from "@/components/PageHeader";
 import { regions, conditionsByRegion } from "@/lib/conditions";
 
 export const metadata: Metadata = {
-  title: "Conditions Treated — Steven J. Lee, MD",
+  title: "Conditions Treated, Steven J. Lee, MD",
   description:
-    "Comprehensive library of orthopedic conditions treated by Dr. Steven J. Lee, MD — Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital. Hand, wrist, elbow, shoulder, knee, and Achilles. Physician-authored treatment information.",
+    "Comprehensive library of orthopedic conditions treated by Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital. Hand, wrist, elbow, shoulder, knee, and Achilles. Physician-authored treatment information.",
   alternates: { canonical: "https://www.stevenjleemd.com/conditions" },
 };
 
@@ -18,7 +18,7 @@ export default function ConditionsIndexPage() {
         kicker="Conditions Library"
         title="Physician-authored information"
         italic="on every condition Dr. Lee treats."
-        lede="From diagnosis through surgery and recovery — read what your surgeon would tell you in the office. Detailed pages are rolling out across the conditions Dr. Lee sees most often. Patients are encouraged to revisit the relevant page after their visit."
+        lede="From diagnosis through surgery and recovery, read what your surgeon would tell you in the office. Detailed pages are rolling out across the conditions Dr. Lee sees most often. Patients are encouraged to revisit the relevant page after their visit."
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "Conditions", href: "/conditions" },
@@ -102,7 +102,7 @@ export default function ConditionsIndexPage() {
                 <span className="kicker text-gold-400">A note from Dr. Lee</span>
               </div>
               <h2 className="font-serif text-[clamp(1.75rem,3vw,2.5rem)] tracking-[-0.02em] leading-[1.15] mb-6">
-                These pages aren&apos;t a substitute for a visit —{" "}
+                These pages aren&apos;t a substitute for a visit,{" "}
                 <span className="serif-italic text-gold-400">they&apos;re a complement to one.</span>
               </h2>
               <p className="text-white/65 text-[16px] leading-[1.75] font-light">

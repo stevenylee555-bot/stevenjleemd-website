@@ -78,7 +78,7 @@ const distalRadiusFracture: ConditionPageContent = {
   slug: "distal-radius-fracture",
   name: "Distal Radius Fracture",
   region: "Hand & Wrist",
-  headerTitle: "Distal Radius Fracture —",
+  headerTitle: "Distal Radius Fracture:",
   headerItalic: "the wrist fracture, treated properly.",
   headerLede:
     "A broken wrist is the most common fracture orthopedic surgeons treat. The right treatment depends on the fracture pattern, the patient, and the surgeon. Dr. Lee is on the Arthrex design team for fixed-angle volar plating systems.",
@@ -88,14 +88,14 @@ const distalRadiusFracture: ConditionPageContent = {
     reviewed: "May 2026",
   },
   overview: [
-    "The distal radius — the bone at the wrist end of the forearm — is the most commonly fractured bone in the upper extremity. A distal radius fracture (sometimes called a Colles fracture, Smith fracture, or simply a broken wrist) usually happens after a fall onto an outstretched hand.",
+    "The distal radius, the bone at the wrist end of the forearm, is the most commonly fractured bone in the upper extremity. A distal radius fracture (sometimes called a Colles fracture, Smith fracture, or simply a broken wrist) usually happens after a fall onto an outstretched hand.",
     "The fracture pattern can range from a simple crack in the bone to a complex break that extends into the wrist joint. The right treatment depends on how the bone is displaced, whether the joint surface is involved, the age and activity level of the patient, and how the fracture is likely to heal.",
   ],
   bodySections: [
     {
       heading: "Anatomy of the wrist",
       body: [
-        "The wrist is formed by the distal ends of the radius and ulna meeting eight small carpal bones. Most of the load across the wrist passes through the radius — which is why the radius is the bone that breaks. The articular surface of the radius is gently angled and must be restored to its original shape for the wrist to work normally long-term.",
+        "The wrist is formed by the distal ends of the radius and ulna meeting eight small carpal bones. Most of the load across the wrist passes through the radius, which is why the radius is the bone that breaks. The articular surface of the radius is gently angled and must be restored to its original shape for the wrist to work normally long-term.",
       ],
     },
     {
@@ -103,13 +103,13 @@ const distalRadiusFracture: ConditionPageContent = {
       body: ["A distal radius fracture is usually obvious. Patients describe:"],
       bullets: [
         "Immediate pain and swelling at the wrist after a fall",
-        "Visible deformity — a 'dinner fork' shape in classic displaced fractures",
+        "Visible deformity, a 'dinner fork' shape in classic displaced fractures",
         "Inability to use the hand or rotate the forearm",
         "Bruising that develops over the next 24 hours",
         "Numbness or tingling in the fingers (a sign the median nerve may be compressed by the fracture)",
       ],
       bulletsAfter:
-        "New numbness, severe pain not controlled by ice and elevation, or rapidly worsening swelling are reasons to be seen urgently — these can indicate acute carpal tunnel syndrome or compartment syndrome.",
+        "New numbness, severe pain not controlled by ice and elevation, or rapidly worsening swelling are reasons to be seen urgently, these can indicate acute carpal tunnel syndrome or compartment syndrome.",
     },
     {
       heading: "How distal radius fractures are diagnosed",
@@ -120,8 +120,8 @@ const distalRadiusFracture: ConditionPageContent = {
   ],
   drLeeApproach: {
     paragraphs: [
-      "Not every distal radius fracture needs surgery. Stable, well-aligned fractures heal beautifully in a cast — and Dr. Lee will never recommend an operation a patient doesn't need.",
-      "When surgery is the right call, the goal is to restore the anatomy as closely as possible to what was there before the fall. Dr. Lee is on the Arthrex design team for fixed-angle volar plating systems — the same fixed-angle volar plating system used by surgeons around the country. He uses it on his own patients.",
+      "Not every distal radius fracture needs surgery. Stable, well-aligned fractures heal beautifully in a cast, and Dr. Lee will never recommend an operation a patient doesn't need.",
+      "When surgery is the right call, the goal is to restore the anatomy as closely as possible to what was there before the fall. Dr. Lee is on the Arthrex design team for fixed-angle volar plating systems, the same fixed-angle volar plating system used by surgeons around the country. He uses it on his own patients.",
     ],
   },
   treatmentSections: [
@@ -132,9 +132,9 @@ const distalRadiusFracture: ConditionPageContent = {
       ],
     },
     {
-      heading: "Surgical treatment — volar plate fixation",
+      heading: "Surgical treatment, volar plate fixation",
       body: [
-        "When the fracture is displaced, unstable, or extends into the wrist joint, surgery offers a more reliable path to a normal-functioning wrist. Dr. Lee uses fixed-angle volar plating — an incision on the palm side of the wrist, the fracture reduced under direct vision, and the bone secured with a contoured titanium plate.",
+        "When the fracture is displaced, unstable, or extends into the wrist joint, surgery offers a more reliable path to a normal-functioning wrist. Dr. Lee uses fixed-angle volar plating, an incision on the palm side of the wrist, the fracture reduced under direct vision, and the bone secured with a contoured titanium plate.",
         "The hardware Dr. Lee uses is hardware he helped design. The fixed-angle screws maintain reduction even in osteoporotic bone, and the low-profile plate sits beneath the pronator quadratus muscle to minimize tendon irritation. Most patients begin gentle finger and wrist motion within days.",
       ],
     },
@@ -163,7 +163,7 @@ const distalRadiusFracture: ConditionPageContent = {
     items: [
       {
         heading: "Cast vs. surgery is not always the obvious call.",
-        body: "A cast is the right answer for many fractures and the wrong answer for others. The fracture pattern, displacement, and patient demands all matter — a good surgeon talks through both options honestly.",
+        body: "A cast is the right answer for many fractures and the wrong answer for others. The fracture pattern, displacement, and patient demands all matter, a good surgeon talks through both options honestly.",
       },
       {
         heading: "Wrist stiffness is the most common avoidable problem.",
@@ -187,7 +187,7 @@ const distalRadiusFracture: ConditionPageContent = {
     "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
     "On the Arthrex design team for fixed-angle volar plating systems",
     "Volar plating for displaced and intra-articular fractures",
-    "Conservative — won't recommend surgery for fractures that don't need it",
+    "Conservative, won't recommend surgery for fractures that don't need it",
   ],
   related: [
     { name: "Hand & Wrist Fractures", slug: "hand-wrist-fractures" },
@@ -204,12 +204,12 @@ const distalRadiusFracture: ConditionPageContent = {
     {
       question: "Do I need surgery for a broken wrist?",
       answer:
-        "Not always. Fractures that are not displaced, are stable, and don't extend into the wrist joint usually heal well in a cast. Fractures that are displaced, unstable, or break into the joint surface generally do better with surgery — restoring the anatomy gives the best long-term wrist function. Dr. Lee discusses both options honestly and will not push an operation for a fracture that doesn't need one.",
+        "Not always. Fractures that are not displaced, are stable, and don't extend into the wrist joint usually heal well in a cast. Fractures that are displaced, unstable, or break into the joint surface generally do better with surgery, restoring the anatomy gives the best long-term wrist function. Dr. Lee discusses both options honestly and will not push an operation for a fracture that doesn't need one.",
     },
     {
       question: "What is a volar plate?",
       answer:
-        "A volar plate is a small titanium plate placed on the palm-side surface of the radius to hold the fracture in correct alignment while it heals. Modern volar plates use fixed-angle screws — the screws lock into the plate — which makes the construct stable even in osteoporotic bone. Dr. Lee is on the Arthrex design team for the next-generation distal radius plate.",
+        "A volar plate is a small titanium plate placed on the palm-side surface of the radius to hold the fracture in correct alignment while it heals. Modern volar plates use fixed-angle screws, the screws lock into the plate, which makes the construct stable even in osteoporotic bone. Dr. Lee is on the Arthrex design team for the next-generation distal radius plate.",
     },
     {
       question: "How long until I can use my hand again?",
@@ -224,16 +224,16 @@ const distalRadiusFracture: ConditionPageContent = {
     {
       question: "Can I get a second opinion on a wrist fracture?",
       answer:
-        "Yes — and many patients do. Dr. Lee sees second-opinion patients regularly, including patients told they need surgery elsewhere and patients told they don't. If you have imaging already, send it ahead and the visit will be substantive.",
+        "Yes, and many patients do. Dr. Lee sees second-opinion patients regularly, including patients told they need surgery elsewhere and patients told they don't. If you have imaging already, send it ahead and the visit will be substantive.",
     },
   ],
   bottomCtaTitle: "Broke your wrist recently?",
   bottomCtaItalic: "Get it set right the first time.",
   bottomCtaBody:
-    "A distal radius fracture heals once. The quality of that healing depends heavily on the quality of the initial treatment. Whether you need surgery or not, the goal is the same — a wrist that works normally in 30 years.",
-  metaTitle: "Distal Radius (Wrist) Fracture — Steven J. Lee, MD",
+    "A distal radius fracture heals once. The quality of that healing depends heavily on the quality of the initial treatment. Whether you need surgery or not, the goal is the same, a wrist that works normally in 30 years.",
+  metaTitle: "Distal Radius (Wrist) Fracture, Steven J. Lee, MD",
   metaDescription:
-    "Distal radius (wrist) fracture treatment by Dr. Steven J. Lee, MD — Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital and on the Arthrex implant design team. Volar plate fixation, cast treatment, recovery, and second opinions.",
+    "Distal radius (wrist) fracture treatment by Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital and on the Arthrex implant design team. Volar plate fixation, cast treatment, recovery, and second opinions.",
   schemaDescription:
     "A distal radius fracture is a break of the radius bone at the wrist, usually caused by a fall onto an outstretched hand. Treatment options include cast immobilization for stable fractures and volar plate fixation for displaced or intra-articular fractures.",
 };
@@ -244,24 +244,24 @@ const scapholunate: ConditionPageContent = {
   slug: "scapholunate",
   name: "Scapholunate Ligament Injury",
   region: "Hand & Wrist",
-  headerTitle: "Scapholunate Ligament Injury —",
+  headerTitle: "Scapholunate Ligament Injury:",
   headerItalic: "the wrist sprain that isn't just a sprain.",
   headerLede:
-    "The scapholunate ligament holds two key wrist bones together. When it tears, the wrist mechanics change — and untreated, the wrist will eventually arthrose. Dr. Lee reconstructs scapholunate injuries using anchors he co-designed for Arthrex.",
+    "The scapholunate ligament holds two key wrist bones together. When it tears, the wrist mechanics change, and untreated, the wrist will eventually arthrose. Dr. Lee reconstructs scapholunate injuries using anchors he co-designed for Arthrex.",
   byline: {
     name: "Steven J. Lee, MD",
     title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
     reviewed: "May 2026",
   },
   overview: [
-    "The scapholunate ligament is the most important ligament in the wrist — a small, strong band that holds the scaphoid and lunate bones together so they move as a unit. When this ligament tears, the two bones separate, the wrist mechanics change, and over years the cartilage wears down in a predictable pattern called SLAC wrist (scapholunate advanced collapse).",
-    "The challenge with scapholunate injuries is that the initial injury is often dismissed as a sprain — and only diagnosed years later when arthritis is already developing. Catching the injury early opens treatment options that aren't available once the damage is done.",
+    "The scapholunate ligament is the most important ligament in the wrist, a small, strong band that holds the scaphoid and lunate bones together so they move as a unit. When this ligament tears, the two bones separate, the wrist mechanics change, and over years the cartilage wears down in a predictable pattern called SLAC wrist (scapholunate advanced collapse).",
+    "The challenge with scapholunate injuries is that the initial injury is often dismissed as a sprain, and only diagnosed years later when arthritis is already developing. Catching the injury early opens treatment options that aren't available once the damage is done.",
   ],
   bodySections: [
     {
       heading: "How the injury happens",
       body: [
-        "Most scapholunate injuries result from a fall onto an outstretched, extended wrist — the same mechanism that causes a distal radius fracture. The ligament can also be injured in sports, motor vehicle accidents, or from forceful twisting of the wrist.",
+        "Most scapholunate injuries result from a fall onto an outstretched, extended wrist, the same mechanism that causes a distal radius fracture. The ligament can also be injured in sports, motor vehicle accidents, or from forceful twisting of the wrist.",
         "What makes the diagnosis tricky is that X-rays may look normal in the days after the injury. The clinical exam is what raises suspicion: tenderness directly over the scapholunate interval (about a centimeter distal to Lister's tubercle), and a positive scaphoid shift test.",
       ],
     },
@@ -274,15 +274,15 @@ const scapholunate: ConditionPageContent = {
   ],
   drLeeApproach: {
     paragraphs: [
-      "Timing matters enormously with scapholunate injuries. A tear caught within the first few weeks of injury has the best chance of being repaired directly — sewing the ligament back to bone using anchors. After several months, the ligament tissue often can't be repaired and reconstruction becomes necessary.",
-      "Dr. Lee co-designed the suture anchor and internal brace constructs Arthrex sells for ligament reconstruction. He uses those same constructs in his own scapholunate reconstructions — typically combining a tendon graft with an internal brace tape to support the repair during healing.",
+      "Timing matters enormously with scapholunate injuries. A tear caught within the first few weeks of injury has the best chance of being repaired directly, sewing the ligament back to bone using anchors. After several months, the ligament tissue often can't be repaired and reconstruction becomes necessary.",
+      "Dr. Lee co-designed the suture anchor and internal brace constructs Arthrex sells for ligament reconstruction. He uses those same constructs in his own scapholunate reconstructions, typically combining a tendon graft with an internal brace tape to support the repair during healing.",
     ],
   },
   treatmentSections: [
     {
       heading: "Acute repair (within ~6 weeks)",
       body: [
-        "Acute scapholunate tears, where the ligament can still be identified and tissue quality is good, are repaired by reattaching the ligament to the bone with small suture anchors. The repair is protected with an internal brace tape — a synthetic 'seatbelt' that supports the ligament during healing.",
+        "Acute scapholunate tears, where the ligament can still be identified and tissue quality is good, are repaired by reattaching the ligament to the bone with small suture anchors. The repair is protected with an internal brace tape, a synthetic 'seatbelt' that supports the ligament during healing.",
       ],
     },
     {
@@ -357,7 +357,7 @@ const scapholunate: ConditionPageContent = {
     {
       question: "How is a scapholunate injury different from a sprain?",
       answer:
-        "A scapholunate injury is a tear of a specific key ligament in the wrist that holds the scaphoid and lunate bones in alignment. A 'sprain' is a vague term that can mean almost anything. The reason scapholunate injuries get missed is that they often present as 'just a sprain' — but unlike most sprains, untreated scapholunate tears lead to wrist arthritis over time.",
+        "A scapholunate injury is a tear of a specific key ligament in the wrist that holds the scaphoid and lunate bones in alignment. A 'sprain' is a vague term that can mean almost anything. The reason scapholunate injuries get missed is that they often present as 'just a sprain', but unlike most sprains, untreated scapholunate tears lead to wrist arthritis over time.",
     },
     {
       question: "How long do I have to get this treated?",
@@ -367,7 +367,7 @@ const scapholunate: ConditionPageContent = {
     {
       question: "Will my wrist be normal again?",
       answer:
-        "Outcome depends heavily on timing. Acute repairs in good ligament tissue have excellent outcomes — most patients return to full activity. Late reconstructions are reliable but rarely restore a fully normal wrist. The goal in chronic cases is a pain-free, functional wrist that delays or prevents arthritis.",
+        "Outcome depends heavily on timing. Acute repairs in good ligament tissue have excellent outcomes, most patients return to full activity. Late reconstructions are reliable but rarely restore a fully normal wrist. The goal in chronic cases is a pain-free, functional wrist that delays or prevents arthritis.",
     },
     {
       question: "What is the internal brace?",
@@ -377,16 +377,16 @@ const scapholunate: ConditionPageContent = {
     {
       question: "Can scapholunate injuries be treated arthroscopically?",
       answer:
-        "Sometimes — acute partial tears can be treated arthroscopically with capsular shrinkage and immobilization, and arthroscopy is invaluable for diagnosis. Complete tears generally require an open procedure to do a durable repair or reconstruction. Dr. Lee uses arthroscopy in nearly every case to confirm the diagnosis and assess the cartilage.",
+        "Sometimes, acute partial tears can be treated arthroscopically with capsular shrinkage and immobilization, and arthroscopy is invaluable for diagnosis. Complete tears generally require an open procedure to do a durable repair or reconstruction. Dr. Lee uses arthroscopy in nearly every case to confirm the diagnosis and assess the cartilage.",
     },
   ],
   bottomCtaTitle: "Still calling it a sprain?",
   bottomCtaItalic: "Get a real diagnosis.",
   bottomCtaBody:
     "Persistent wrist pain after a fall deserves more than reassurance. Most scapholunate injuries are diagnosable on a careful exam and confirmed with the right imaging. The earlier the diagnosis, the more your wrist's future is on the table.",
-  metaTitle: "Scapholunate Ligament Injury — Steven J. Lee, MD",
+  metaTitle: "Scapholunate Ligament Injury, Steven J. Lee, MD",
   metaDescription:
-    "Scapholunate ligament tear treatment by Dr. Steven J. Lee, MD — co-designer of the Arthrex internal brace and anchor system used in scapholunate reconstruction. Acute repair, chronic reconstruction, and second opinions.",
+    "Scapholunate ligament tear treatment by Dr. Steven J. Lee, MD, co-designer of the Arthrex internal brace and anchor system used in scapholunate reconstruction. Acute repair, chronic reconstruction, and second opinions.",
   schemaDescription:
     "A scapholunate ligament injury is a tear of the key wrist ligament connecting the scaphoid and lunate bones. Untreated tears lead to wrist arthritis (SLAC wrist). Treatment options include acute repair with internal brace augmentation and tendon-graft reconstruction for chronic injuries.",
 };
@@ -397,18 +397,18 @@ const basalJointArthroplasty: ConditionPageContent = {
   slug: "basal-joint-arthroplasty",
   name: "Basal Joint Arthritis (Thumb CMC)",
   region: "Hand & Wrist",
-  headerTitle: "Basal Joint Arthritis —",
+  headerTitle: "Basal Joint Arthritis:",
   headerItalic: "thumb pain, definitively treated.",
   headerLede:
-    "The base of the thumb is one of the most common sites of arthritis in the hand. When conservative treatment fails, modern reconstruction — including internal brace techniques Dr. Lee co-designed — restores a strong, painless thumb.",
+    "The base of the thumb is one of the most common sites of arthritis in the hand. When conservative treatment fails, modern reconstruction, including internal brace techniques Dr. Lee co-designed, restores a strong, painless thumb.",
   byline: {
     name: "Steven J. Lee, MD",
     title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
     reviewed: "May 2026",
   },
   overview: [
-    "Basal joint arthritis — arthritis at the base of the thumb, where the metacarpal meets the trapezium (the carpometacarpal or CMC joint) — is one of the most common conditions in hand surgery. It is more common in women than men, often appears after the fourth or fifth decade of life, and can make even simple tasks like opening a jar, turning a key, or pinching a button feel impossible.",
-    "Like many forms of arthritis, basal joint arthritis exists on a spectrum. Some patients live happily with mild arthritis for decades. Others develop disabling pain that no amount of bracing or injection will solve. The good news is that surgical treatment for advanced basal joint arthritis is highly successful — most patients regain a strong, pain-free thumb.",
+    "Basal joint arthritis, arthritis at the base of the thumb, where the metacarpal meets the trapezium (the carpometacarpal or CMC joint), is one of the most common conditions in hand surgery. It is more common in women than men, often appears after the fourth or fifth decade of life, and can make even simple tasks like opening a jar, turning a key, or pinching a button feel impossible.",
+    "Like many forms of arthritis, basal joint arthritis exists on a spectrum. Some patients live happily with mild arthritis for decades. Others develop disabling pain that no amount of bracing or injection will solve. The good news is that surgical treatment for advanced basal joint arthritis is highly successful, most patients regain a strong, pain-free thumb.",
   ],
   bodySections: [
     {
@@ -417,7 +417,7 @@ const basalJointArthroplasty: ConditionPageContent = {
       bullets: [
         "Pain at the base of the thumb with pinching, gripping, and twisting",
         "A 'shoulder' or bump at the base of the thumb (subluxation of the metacarpal)",
-        "Weakness with pinch — dropping objects, difficulty turning keys",
+        "Weakness with pinch, dropping objects, difficulty turning keys",
         "Stiffness, especially in the morning",
         "Pain that worsens with use and improves with rest, until the arthritis is advanced",
       ],
@@ -431,8 +431,8 @@ const basalJointArthroplasty: ConditionPageContent = {
   ],
   drLeeApproach: {
     paragraphs: [
-      "Surgery for basal joint arthritis is one of the most successful operations in hand surgery — but timing matters. Dr. Lee does not push patients into surgery; mild arthritis is treated conservatively with splinting, injections, and activity modification, and many patients live happily with that approach for years.",
-      "When surgery is the right call, Dr. Lee uses a modern reconstruction technique that combines removal of the arthritic trapezium with stabilization of the thumb using an internal brace — the same anchor and tape construct he co-designed for Arthrex. The result is a strong, well-positioned thumb without the prolonged immobilization required by traditional techniques.",
+      "Surgery for basal joint arthritis is one of the most successful operations in hand surgery, but timing matters. Dr. Lee does not push patients into surgery; mild arthritis is treated conservatively with splinting, injections, and activity modification, and many patients live happily with that approach for years.",
+      "When surgery is the right call, Dr. Lee uses a modern reconstruction technique that combines removal of the arthritic trapezium with stabilization of the thumb using an internal brace, the same anchor and tape construct he co-designed for Arthrex. The result is a strong, well-positioned thumb without the prolonged immobilization required by traditional techniques.",
     ],
   },
   treatmentSections: [
@@ -440,17 +440,17 @@ const basalJointArthroplasty: ConditionPageContent = {
       heading: "Non-surgical treatment",
       body: ["Most patients begin with one or more of the following:"],
       bullets: [
-        "Thumb-spica splinting — usually a removable neoprene brace worn for activities that provoke pain",
+        "Thumb-spica splinting, usually a removable neoprene brace worn for activities that provoke pain",
         "NSAIDs for symptom control",
-        "Corticosteroid injection — can provide months of relief and is often diagnostic",
+        "Corticosteroid injection, can provide months of relief and is often diagnostic",
         "Hand therapy for joint protection and adaptive techniques",
-        "Activity modification — avoiding repetitive forceful pinch",
+        "Activity modification, avoiding repetitive forceful pinch",
       ],
     },
     {
       heading: "Surgical reconstruction with internal brace",
       body: [
-        "When conservative treatment fails, Dr. Lee performs a basal joint reconstruction — removing the arthritic trapezium, stabilizing the thumb metacarpal with an internal brace anchored into the index metacarpal, and reconstructing the supporting soft tissue. The internal brace construct uses anchors Dr. Lee co-designed for Arthrex and provides immediate stability without the long immobilization required by traditional ligament reconstruction techniques.",
+        "When conservative treatment fails, Dr. Lee performs a basal joint reconstruction, removing the arthritic trapezium, stabilizing the thumb metacarpal with an internal brace anchored into the index metacarpal, and reconstructing the supporting soft tissue. The internal brace construct uses anchors Dr. Lee co-designed for Arthrex and provides immediate stability without the long immobilization required by traditional ligament reconstruction techniques.",
       ],
     },
   ],
@@ -482,7 +482,7 @@ const basalJointArthroplasty: ConditionPageContent = {
       },
       {
         heading: "An injection isn't a cure.",
-        body: "Corticosteroid injection can buy months of relief — sometimes much longer. But it does not stop the underlying arthritis. The decision to operate is based on symptoms and function, not on imaging.",
+        body: "Corticosteroid injection can buy months of relief, sometimes much longer. But it does not stop the underlying arthritis. The decision to operate is based on symptoms and function, not on imaging.",
       },
       {
         heading: "Both thumbs often go.",
@@ -496,13 +496,13 @@ const basalJointArthroplasty: ConditionPageContent = {
     { label: "Surgical option", value: "Reconstruction with internal brace (Arthrex anchors)" },
     { label: "Anesthesia", value: "Regional block + light sedation" },
     { label: "Brace duration", value: "2 weeks rigid, 4 more weeks soft" },
-    { label: "Full strength", value: "6 months — improves up to a year" },
+    { label: "Full strength", value: "6 months, improves up to a year" },
   ],
   whyDrLee: [
     "Co-designer of the Arthrex anchor system used in basal joint reconstruction",
-    "Internal brace technique — shorter immobilization than traditional LRTI",
+    "Internal brace technique, shorter immobilization than traditional LRTI",
     "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
-    "Conservative — won't operate on arthritis that hasn't earned an operation",
+    "Conservative, won't operate on arthritis that hasn't earned an operation",
   ],
   related: [
     { name: "Carpal Tunnel Syndrome", slug: "carpal-tunnel" },
@@ -519,12 +519,12 @@ const basalJointArthroplasty: ConditionPageContent = {
     {
       question: "How do I know if my thumb pain is basal joint arthritis?",
       answer:
-        "Basal joint arthritis classically causes pain right at the base of the thumb — the small joint at the wrist end of the thumb — with pinching, opening jars, turning keys, and gripping. Many patients describe a visible 'shoulder' or bump at that spot. A physician's exam and a plain X-ray confirm the diagnosis. Many patients have been told they have 'arthritis' generally — basal joint specifically is a different conversation than wrist or finger arthritis.",
+        "Basal joint arthritis classically causes pain right at the base of the thumb, the small joint at the wrist end of the thumb, with pinching, opening jars, turning keys, and gripping. Many patients describe a visible 'shoulder' or bump at that spot. A physician's exam and a plain X-ray confirm the diagnosis. Many patients have been told they have 'arthritis' generally, basal joint specifically is a different conversation than wrist or finger arthritis.",
     },
     {
       question: "Do I need surgery, or will an injection be enough?",
       answer:
-        "Many patients are well-managed for years with bracing, NSAIDs, and corticosteroid injections. Surgery is reserved for patients whose pain is interfering with daily life despite these measures. The decision is symptomatic — not based on the X-ray. Dr. Lee will not push surgery on someone managing well without it.",
+        "Many patients are well-managed for years with bracing, NSAIDs, and corticosteroid injections. Surgery is reserved for patients whose pain is interfering with daily life despite these measures. The decision is symptomatic, not based on the X-ray. Dr. Lee will not push surgery on someone managing well without it.",
     },
     {
       question: "What is internal brace reconstruction?",
@@ -539,16 +539,16 @@ const basalJointArthroplasty: ConditionPageContent = {
     {
       question: "Will I need surgery on my other thumb eventually?",
       answer:
-        "Often, yes. Basal joint arthritis is frequently bilateral — both sides develop arthritis, though usually not at the same rate. Outcomes are reliably good on both sides, and there is no need to operate on the second thumb until it's bothering you. Many patients have one side done, recover fully, and then decide on the other side months or years later.",
+        "Often, yes. Basal joint arthritis is frequently bilateral, both sides develop arthritis, though usually not at the same rate. Outcomes are reliably good on both sides, and there is no need to operate on the second thumb until it's bothering you. Many patients have one side done, recover fully, and then decide on the other side months or years later.",
     },
   ],
   bottomCtaTitle: "Thumb pain making your hands feel old?",
   bottomCtaItalic: "It doesn't have to stay that way.",
   bottomCtaBody:
     "Modern basal joint reconstruction is one of the most reliably successful operations in hand surgery. Most patients regain a pain-free, strong thumb and wonder why they waited so long.",
-  metaTitle: "Basal Joint Arthritis (Thumb CMC) — Steven J. Lee, MD",
+  metaTitle: "Basal Joint Arthritis (Thumb CMC), Steven J. Lee, MD",
   metaDescription:
-    "Basal joint (thumb CMC) arthritis treatment by Dr. Steven J. Lee, MD — co-designer of the Arthrex internal brace system used in modern thumb reconstruction. Conservative treatment, surgery, and recovery explained.",
+    "Basal joint (thumb CMC) arthritis treatment by Dr. Steven J. Lee, MD, co-designer of the Arthrex internal brace system used in modern thumb reconstruction. Conservative treatment, surgery, and recovery explained.",
   schemaDescription:
     "Basal joint arthritis is osteoarthritis of the thumb carpometacarpal (CMC) joint, causing pain with pinching and gripping. Treatment ranges from splinting and corticosteroid injection to surgical reconstruction using internal brace techniques.",
 };
@@ -559,47 +559,47 @@ const handWristFractures: ConditionPageContent = {
   slug: "hand-wrist-fractures",
   name: "Hand & Wrist Fractures",
   region: "Hand & Wrist",
-  headerTitle: "Hand & Wrist Fractures —",
+  headerTitle: "Hand & Wrist Fractures:",
   headerItalic: "treated with the hardware Dr. Lee designed.",
   headerLede:
-    "Metacarpal fractures, phalanx fractures, scaphoid fractures, and other small bone injuries of the hand and wrist. The principles are the same as larger fractures — restore the anatomy, allow early motion, prevent stiffness — applied with smaller-scale hardware.",
+    "Metacarpal fractures, phalanx fractures, scaphoid fractures, and other small bone injuries of the hand and wrist. The principles are the same as larger fractures, restore the anatomy, allow early motion, prevent stiffness, applied with smaller-scale hardware.",
   byline: {
     name: "Steven J. Lee, MD",
     title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
     reviewed: "May 2026",
   },
   overview: [
-    "The hand and wrist contain 27 bones, and almost any of them can break. Common injuries include metacarpal fractures ('boxer's fractures'), phalanx fractures (the bones inside the fingers), and scaphoid fractures — small but consequential injuries that require expertise to treat well.",
-    "Most hand and wrist fractures heal without surgery if they are stable and well-aligned. The fractures that need surgery — displaced fractures, intra-articular fractures, and unstable injuries — heal best with the same modern fixation hardware used in larger bone fractures, scaled to the size of the hand.",
+    "The hand and wrist contain 27 bones, and almost any of them can break. Common injuries include metacarpal fractures ('boxer's fractures'), phalanx fractures (the bones inside the fingers), and scaphoid fractures, small but consequential injuries that require expertise to treat well.",
+    "Most hand and wrist fractures heal without surgery if they are stable and well-aligned. The fractures that need surgery, displaced fractures, intra-articular fractures, and unstable injuries, heal best with the same modern fixation hardware used in larger bone fractures, scaled to the size of the hand.",
   ],
   bodySections: [
     {
       heading: "Common hand and wrist fractures",
       body: ["The fractures Dr. Lee sees most often include:"],
       bullets: [
-        "Metacarpal fractures — including 'boxer's fractures' of the small finger metacarpal",
-        "Proximal and middle phalanx fractures — finger bone injuries that risk stiffness without proper treatment",
-        "Scaphoid fractures — a wrist bone with notoriously fragile blood supply, prone to non-union",
-        "Carpal bone fractures (other than scaphoid) — less common but each with specific implications",
-        "Intra-articular finger fractures — small injuries with outsized consequences if mistreated",
+        "Metacarpal fractures, including 'boxer's fractures' of the small finger metacarpal",
+        "Proximal and middle phalanx fractures, finger bone injuries that risk stiffness without proper treatment",
+        "Scaphoid fractures, a wrist bone with notoriously fragile blood supply, prone to non-union",
+        "Carpal bone fractures (other than scaphoid), less common but each with specific implications",
+        "Intra-articular finger fractures, small injuries with outsized consequences if mistreated",
       ],
     },
     {
       heading: "Why hand fractures are different",
       body: [
-        "Fractures in the hand carry a higher risk of stiffness than fractures elsewhere in the body. The fingers are surrounded by tendons that adhere quickly when immobilized — even a few weeks of stillness can leave a finger permanently stiff. The art of hand fracture treatment is choosing the approach that gives stable bony healing with the shortest possible period of immobilization, so motion can start early.",
+        "Fractures in the hand carry a higher risk of stiffness than fractures elsewhere in the body. The fingers are surrounded by tendons that adhere quickly when immobilized, even a few weeks of stillness can leave a finger permanently stiff. The art of hand fracture treatment is choosing the approach that gives stable bony healing with the shortest possible period of immobilization, so motion can start early.",
       ],
     },
     {
       heading: "How fractures are diagnosed",
       body: [
-        "Plain X-rays diagnose most hand and wrist fractures. Scaphoid fractures are the notable exception — they can be invisible on initial films and may require CT, MRI, or a repeat X-ray two weeks after injury. CT scans are sometimes ordered for intra-articular fractures when surgical planning needs more detail than X-ray provides.",
+        "Plain X-rays diagnose most hand and wrist fractures. Scaphoid fractures are the notable exception, they can be invisible on initial films and may require CT, MRI, or a repeat X-ray two weeks after injury. CT scans are sometimes ordered for intra-articular fractures when surgical planning needs more detail than X-ray provides.",
       ],
     },
   ],
   drLeeApproach: {
     paragraphs: [
-      "Hand fracture treatment is one of the areas where Dr. Lee's Arthrex implant design work is most directly applied. The plating systems he helped design — for distal radius, hand, and wrist — are the same systems he uses on his own patients.",
+      "Hand fracture treatment is one of the areas where Dr. Lee's Arthrex implant design work is most directly applied. The plating systems he helped design, for distal radius, hand, and wrist, are the same systems he uses on his own patients.",
       "The treatment approach is conservative when conservative is right, and surgical when surgery is the better path. Many hand fractures do beautifully with proper buddy-taping, splinting, and hand therapy. The ones that need surgery do best when the hardware is small, well-contoured, and allows the finger or wrist to start moving early.",
     ],
   },
@@ -607,13 +607,13 @@ const handWristFractures: ConditionPageContent = {
     {
       heading: "Non-surgical treatment",
       body: [
-        "Stable, well-aligned fractures are typically managed with buddy-taping (taping the injured finger to its neighbor for support), a removable splint, or a short period of cast immobilization. Hand therapy begins early — often within the first week — to keep adjacent joints moving while the fracture heals.",
+        "Stable, well-aligned fractures are typically managed with buddy-taping (taping the injured finger to its neighbor for support), a removable splint, or a short period of cast immobilization. Hand therapy begins early, often within the first week, to keep adjacent joints moving while the fracture heals.",
       ],
     },
     {
       heading: "Surgical fixation",
       body: [
-        "Displaced, unstable, or intra-articular fractures are best treated with internal fixation — small plates and screws, or sometimes percutaneous pins. The hardware Dr. Lee uses for hand and wrist fractures is hardware he helped design as part of the Arthrex implant team. The construct is sized to the bone and contoured to sit beneath the surrounding tissue, allowing immediate finger motion in most cases.",
+        "Displaced, unstable, or intra-articular fractures are best treated with internal fixation, small plates and screws, or sometimes percutaneous pins. The hardware Dr. Lee uses for hand and wrist fractures is hardware he helped design as part of the Arthrex implant team. The construct is sized to the bone and contoured to sit beneath the surrounding tissue, allowing immediate finger motion in most cases.",
       ],
     },
   ],
@@ -633,7 +633,7 @@ const handWristFractures: ConditionPageContent = {
     },
     {
       when: "Weeks 6–12",
-      what: "Full strength returns. Sport and impact activity resume. Stiffness, if present, is actively addressed in therapy — never accepted as the new normal.",
+      what: "Full strength returns. Sport and impact activity resume. Stiffness, if present, is actively addressed in therapy, never accepted as the new normal.",
     },
   ],
   misconceptions: {
@@ -641,7 +641,7 @@ const handWristFractures: ConditionPageContent = {
     items: [
       {
         heading: "Small fracture, big consequences.",
-        body: "A subtle finger fracture treated as a 'jam' can leave a stiff, painful finger for years. Hand fractures benefit from prompt evaluation by a hand surgeon — especially when they involve a joint.",
+        body: "A subtle finger fracture treated as a 'jam' can leave a stiff, painful finger for years. Hand fractures benefit from prompt evaluation by a hand surgeon, especially when they involve a joint.",
       },
       {
         heading: "Pins are not as common as they used to be.",
@@ -664,7 +664,7 @@ const handWristFractures: ConditionPageContent = {
   whyDrLee: [
     "Designed the Arthrex hand and wrist plating systems used in fixation",
     "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
-    "Early-motion focused — minimizes the risk of stiffness",
+    "Early-motion focused, minimizes the risk of stiffness",
     "Treats both acute fractures and the stiffness from poorly-treated old fractures",
   ],
   related: [
@@ -675,14 +675,14 @@ const handWristFractures: ConditionPageContent = {
   ],
   ctaCard: {
     eyebrow: "Hand fracture recently?",
-    headline: "Get it set right — your hand has 30 years to thank you for it.",
+    headline: "Get it set right, your hand has 30 years to thank you for it.",
   },
   faqHeadline: "Hand & wrist fractures, answered.",
   faqs: [
     {
       question: "How can I tell if my finger is broken or just jammed?",
       answer:
-        "A 'jam' usually improves substantially over a week or two. Persistent swelling, visible deformity, inability to make a fist, or pain that doesn't fade after 7–10 days are reasons to get an X-ray. Subtle finger fractures that are mistreated as jams can become stiff, painful fingers — most are easily treated with prompt diagnosis.",
+        "A 'jam' usually improves substantially over a week or two. Persistent swelling, visible deformity, inability to make a fist, or pain that doesn't fade after 7–10 days are reasons to get an X-ray. Subtle finger fractures that are mistreated as jams can become stiff, painful fingers, most are easily treated with prompt diagnosis.",
     },
     {
       question: "Do I need surgery, or is buddy-taping enough?",
@@ -692,7 +692,7 @@ const handWristFractures: ConditionPageContent = {
     {
       question: "What hardware does Dr. Lee use?",
       answer:
-        "Dr. Lee uses the Arthrex hand and wrist plating systems — including hardware he co-designed. The plates are small, low-profile, contoured to the bone, and allow early motion in most cases. He uses the same hardware on his own patients that he helped develop for Arthrex's broader surgeon community.",
+        "Dr. Lee uses the Arthrex hand and wrist plating systems, including hardware he co-designed. The plates are small, low-profile, contoured to the bone, and allow early motion in most cases. He uses the same hardware on his own patients that he helped develop for Arthrex's broader surgeon community.",
     },
     {
       question: "Will the plate need to be removed later?",
@@ -702,16 +702,16 @@ const handWristFractures: ConditionPageContent = {
     {
       question: "How soon will my finger move again?",
       answer:
-        "Earlier than most patients expect. Many hand fracture fixations allow gentle finger motion within a few days of surgery — preventing stiffness is one of the central goals. Hand therapy typically begins within the first 1–2 weeks. Most patients regain full finger motion by 6–8 weeks.",
+        "Earlier than most patients expect. Many hand fracture fixations allow gentle finger motion within a few days of surgery, preventing stiffness is one of the central goals. Hand therapy typically begins within the first 1–2 weeks. Most patients regain full finger motion by 6–8 weeks.",
     },
   ],
   bottomCtaTitle: "Hand fracture that's not healing right?",
   bottomCtaItalic: "It's still treatable.",
   bottomCtaBody:
-    "Whether you have a fresh injury or a fracture that wasn't treated well the first time, Dr. Lee evaluates both. Many post-fracture problems — stiffness, malunion, non-union — are correctable when addressed by a hand surgeon.",
-  metaTitle: "Hand & Wrist Fractures — Steven J. Lee, MD",
+    "Whether you have a fresh injury or a fracture that wasn't treated well the first time, Dr. Lee evaluates both. Many post-fracture problems, stiffness, malunion, non-union, are correctable when addressed by a hand surgeon.",
+  metaTitle: "Hand & Wrist Fractures, Steven J. Lee, MD",
   metaDescription:
-    "Hand and wrist fracture treatment by Dr. Steven J. Lee, MD — co-designer of the Arthrex hand and wrist plating systems used in fixation. Metacarpal, phalanx, scaphoid, and other small bone fractures.",
+    "Hand and wrist fracture treatment by Dr. Steven J. Lee, MD, co-designer of the Arthrex hand and wrist plating systems used in fixation. Metacarpal, phalanx, scaphoid, and other small bone fractures.",
   schemaDescription:
     "Hand and wrist fractures include metacarpal fractures (boxer's fractures), phalanx fractures, scaphoid fractures, and other small bone injuries. Treatment ranges from buddy-taping and splinting to internal fixation with small plates and screws.",
 };
@@ -722,7 +722,7 @@ const uclReconstruction: ConditionPageContent = {
   slug: "ucl-reconstruction",
   name: "UCL Reconstruction (Tommy John Surgery)",
   region: "Elbow",
-  headerTitle: "UCL Reconstruction —",
+  headerTitle: "UCL Reconstruction:",
   headerItalic: "Tommy John surgery, modern technique.",
   headerLede:
     "The ulnar collateral ligament (UCL) of the elbow is the throwing athlete's most vulnerable structure. Reconstruction uses anchors Dr. Lee co-designed for Arthrex, combined with internal brace augmentation in selected cases.",
@@ -732,28 +732,28 @@ const uclReconstruction: ConditionPageContent = {
     reviewed: "May 2026",
   },
   overview: [
-    "The ulnar collateral ligament — the UCL — sits on the inside of the elbow and resists the enormous valgus stress generated by throwing. When it tears, throwing velocity drops, accuracy fails, and continued play risks larger injuries to the ulnar nerve and surrounding structures.",
-    "Tommy John surgery — named for the pitcher who underwent the first successful procedure in 1974 — has evolved enormously over the past five decades. Modern techniques use stronger fixation, allow faster rehab, and now include internal brace augmentation for selected patients. The fundamental goal remains the same: a reconstructed elbow that can throw at the same level as before, or higher.",
+    "The ulnar collateral ligament, the UCL, sits on the inside of the elbow and resists the enormous valgus stress generated by throwing. When it tears, throwing velocity drops, accuracy fails, and continued play risks larger injuries to the ulnar nerve and surrounding structures.",
+    "Tommy John surgery, named for the pitcher who underwent the first successful procedure in 1974, has evolved enormously over the past five decades. Modern techniques use stronger fixation, allow faster rehab, and now include internal brace augmentation for selected patients. The fundamental goal remains the same: a reconstructed elbow that can throw at the same level as before, or higher.",
   ],
   bodySections: [
     {
       heading: "How UCL injuries happen",
       body: [
-        "Most UCL tears occur in overhead throwing athletes — baseball pitchers most famously, but also football quarterbacks, javelin throwers, and high-level tennis players. The injury can be acute (a sudden pop during a throw) or chronic (progressive medial elbow pain over a season of throwing).",
+        "Most UCL tears occur in overhead throwing athletes, baseball pitchers most famously, but also football quarterbacks, javelin throwers, and high-level tennis players. The injury can be acute (a sudden pop during a throw) or chronic (progressive medial elbow pain over a season of throwing).",
         "The injury typically begins as partial tearing that worsens with continued throwing. Many athletes describe a drop in velocity, loss of control, or pain late in games before the ligament fails completely.",
       ],
     },
     {
       heading: "How UCL injuries are diagnosed",
       body: [
-        "MRI is the standard imaging study for suspected UCL injury. MR arthrogram (MRI with contrast injected into the joint) improves sensitivity for partial tears. Stress radiography — comparing both elbows on X-ray under valgus stress — is sometimes used to assess joint opening. The clinical exam, including the moving valgus stress test, is highly suggestive in experienced hands.",
+        "MRI is the standard imaging study for suspected UCL injury. MR arthrogram (MRI with contrast injected into the joint) improves sensitivity for partial tears. Stress radiography, comparing both elbows on X-ray under valgus stress, is sometimes used to assess joint opening. The clinical exam, including the moving valgus stress test, is highly suggestive in experienced hands.",
       ],
     },
   ],
   drLeeApproach: {
     paragraphs: [
       "Not every UCL injury requires surgery. Partial tears in non-throwers can be managed conservatively. Even some partial tears in throwers respond to a period of rest, structured rehab, and biologic injection (PRP). The decision to operate is based on the tear pattern, the patient's sport and level, and how the elbow responds to non-surgical treatment.",
-      "When reconstruction is the right call, Dr. Lee uses the modern docking technique with internal brace augmentation in appropriate patients — using anchors he co-designed for Arthrex. The internal brace allows for more confident early rehab and, in selected athletes, a shorter timeline to return to throwing.",
+      "When reconstruction is the right call, Dr. Lee uses the modern docking technique with internal brace augmentation in appropriate patients, using anchors he co-designed for Arthrex. The internal brace allows for more confident early rehab and, in selected athletes, a shorter timeline to return to throwing.",
     ],
   },
   treatmentSections: [
@@ -766,7 +766,7 @@ const uclReconstruction: ConditionPageContent = {
     {
       heading: "UCL reconstruction (modified docking technique)",
       body: [
-        "When reconstruction is needed, a tendon graft — typically the patient's own palmaris longus or gracilis — is routed through bone tunnels to recreate the UCL. The construct is secured with the anchor system Dr. Lee co-designed. In selected patients, an internal brace tape is added to the construct, allowing for earlier confident rehab and, in some cases, a faster return to throwing.",
+        "When reconstruction is needed, a tendon graft, typically the patient's own palmaris longus or gracilis, is routed through bone tunnels to recreate the UCL. The construct is secured with the anchor system Dr. Lee co-designed. In selected patients, an internal brace tape is added to the construct, allowing for earlier confident rehab and, in some cases, a faster return to throwing.",
       ],
     },
   ],
@@ -786,7 +786,7 @@ const uclReconstruction: ConditionPageContent = {
     },
     {
       when: "Months 4–9",
-      what: "Begin interval throwing program at month 4–5. Progress through long-toss, mound work, and competitive throwing under guided protocol. Return to competitive pitching typically at 12–15 months — sometimes faster with internal brace augmentation.",
+      what: "Begin interval throwing program at month 4–5. Progress through long-toss, mound work, and competitive throwing under guided protocol. Return to competitive pitching typically at 12–15 months, sometimes faster with internal brace augmentation.",
     },
   ],
   misconceptions: {
@@ -794,7 +794,7 @@ const uclReconstruction: ConditionPageContent = {
     items: [
       {
         heading: "Tommy John surgery does not throw harder.",
-        body: "There is a persistent myth that UCL reconstruction improves velocity. It does not. The goal is to return to the same level as before — not to exceed it. Velocity recovery is a function of rehab, mechanics, and conditioning.",
+        body: "There is a persistent myth that UCL reconstruction improves velocity. It does not. The goal is to return to the same level as before, not to exceed it. Velocity recovery is a function of rehab, mechanics, and conditioning.",
       },
       {
         heading: "The graft is not the whole story.",
@@ -815,7 +815,7 @@ const uclReconstruction: ConditionPageContent = {
     { label: "Internal brace augmentation", value: "May shorten return in selected patients" },
   ],
   whyDrLee: [
-    "Double fellowship-trained — hand & sports medicine",
+    "Double fellowship-trained, hand & sports medicine",
     "Co-designer of the Arthrex anchor system used in UCL reconstruction",
     "Modern docking technique with optional internal brace augmentation",
     "Sees second-opinion patients on UCL injuries regularly",
@@ -835,12 +835,12 @@ const uclReconstruction: ConditionPageContent = {
     {
       question: "Do I need Tommy John surgery, or can my UCL heal on its own?",
       answer:
-        "It depends on the tear. Partial tears in athletes who aren't committed to high-level throwing often improve with rest and rehab, sometimes with PRP. Complete tears in throwers usually require reconstruction to return to competitive throwing. The decision is individualized — Dr. Lee discusses both paths honestly and won't push surgery on an injury that doesn't require it.",
+        "It depends on the tear. Partial tears in athletes who aren't committed to high-level throwing often improve with rest and rehab, sometimes with PRP. Complete tears in throwers usually require reconstruction to return to competitive throwing. The decision is individualized, Dr. Lee discusses both paths honestly and won't push surgery on an injury that doesn't require it.",
     },
     {
       question: "What is the internal brace, and do I need it?",
       answer:
-        "The internal brace is a synthetic tape, anchored into bone, that augments the tendon graft used in UCL reconstruction. In selected patients — particularly skeletally mature athletes with good ligament tissue — the internal brace allows for more confident early rehab and, in some cases, a faster return to throwing. It is not appropriate for every patient. Dr. Lee discusses whether it makes sense in your case.",
+        "The internal brace is a synthetic tape, anchored into bone, that augments the tendon graft used in UCL reconstruction. In selected patients, particularly skeletally mature athletes with good ligament tissue, the internal brace allows for more confident early rehab and, in some cases, a faster return to throwing. It is not appropriate for every patient. Dr. Lee discusses whether it makes sense in your case.",
     },
     {
       question: "How long until I can pitch again?",
@@ -850,21 +850,21 @@ const uclReconstruction: ConditionPageContent = {
     {
       question: "Will I throw as hard as before?",
       answer:
-        "Most successfully-rehabilitated athletes return to their previous level of throwing. Tommy John surgery does not, as the myth has it, increase velocity above the patient's natural ceiling. What it does is restore the elbow's ability to withstand throwing — which often allows athletes who had been pitching through pain to return to their full mechanical potential.",
+        "Most successfully-rehabilitated athletes return to their previous level of throwing. Tommy John surgery does not, as the myth has it, increase velocity above the patient's natural ceiling. What it does is restore the elbow's ability to withstand throwing, which often allows athletes who had been pitching through pain to return to their full mechanical potential.",
     },
     {
       question: "Can I get a second opinion if I've already been told I need surgery?",
       answer:
-        "Yes — and many patients do. Dr. Lee sees UCL second opinions regularly, both for patients told they need surgery and for patients told they don't. If you have an MRI, sending it ahead lets the visit be substantive.",
+        "Yes, and many patients do. Dr. Lee sees UCL second opinions regularly, both for patients told they need surgery and for patients told they don't. If you have an MRI, sending it ahead lets the visit be substantive.",
     },
   ],
   bottomCtaTitle: "UCL injury or unexplained throwing arm pain?",
   bottomCtaItalic: "Get the right diagnosis first.",
   bottomCtaBody:
-    "Throwing arm pain is rarely just 'soreness.' The athletes who do best are the ones who get an accurate diagnosis early — before continued throwing turns a partial tear into a complete one.",
-  metaTitle: "Tommy John (UCL) Reconstruction — Steven J. Lee, MD",
+    "Throwing arm pain is rarely just 'soreness.' The athletes who do best are the ones who get an accurate diagnosis early, before continued throwing turns a partial tear into a complete one.",
+  metaTitle: "Tommy John (UCL) Reconstruction, Steven J. Lee, MD",
   metaDescription:
-    "Tommy John surgery (UCL reconstruction) by Dr. Steven J. Lee, MD — double fellowship-trained in hand and sports medicine. Uses Arthrex anchors Dr. Lee co-designed and offers internal brace augmentation in appropriate patients.",
+    "Tommy John surgery (UCL reconstruction) by Dr. Steven J. Lee, MD, double fellowship-trained in hand and sports medicine. Uses Arthrex anchors Dr. Lee co-designed and offers internal brace augmentation in appropriate patients.",
   schemaDescription:
     "Tommy John surgery (UCL reconstruction) is the rebuilding of the ulnar collateral ligament of the elbow using a tendon graft, performed for throwing athletes with UCL insufficiency. Modern techniques include internal brace augmentation in appropriate patients.",
 };
@@ -875,7 +875,7 @@ const bicepsRupture: ConditionPageContent = {
   slug: "biceps-rupture",
   name: "Distal Biceps Tendon Rupture",
   region: "Elbow",
-  headerTitle: "Distal Biceps Tendon Rupture —",
+  headerTitle: "Distal Biceps Tendon Rupture:",
   headerItalic: "the elbow tendon, repaired definitively.",
   headerLede:
     "A distal biceps rupture is one of the few orthopedic injuries with a clear best-treatment answer for most patients: surgical repair. Dr. Lee uses the anchor and cortical button constructs he co-designed for Arthrex.",
@@ -885,27 +885,27 @@ const bicepsRupture: ConditionPageContent = {
     reviewed: "May 2026",
   },
   overview: [
-    "The distal biceps tendon is the strong tendon that connects the biceps muscle to the radius bone at the elbow. When it ruptures — usually after a sudden eccentric load on the flexed elbow, like catching a heavy object — the tendon retracts up the arm, the biceps muscle balls up, and the patient loses meaningful elbow flexion and forearm supination strength.",
-    "Distal biceps rupture is one of the few injuries where the surgical and non-surgical paths diverge sharply. Non-operative management is reasonable for low-demand patients, but most active adults — especially those who use their arms for work or sport — do meaningfully better with prompt surgical repair.",
+    "The distal biceps tendon is the strong tendon that connects the biceps muscle to the radius bone at the elbow. When it ruptures, usually after a sudden eccentric load on the flexed elbow, like catching a heavy object, the tendon retracts up the arm, the biceps muscle balls up, and the patient loses meaningful elbow flexion and forearm supination strength.",
+    "Distal biceps rupture is one of the few injuries where the surgical and non-surgical paths diverge sharply. Non-operative management is reasonable for low-demand patients, but most active adults, especially those who use their arms for work or sport, do meaningfully better with prompt surgical repair.",
   ],
   bodySections: [
     {
       heading: "How the injury happens",
       body: [
-        "The classic mechanism is a sudden, unexpected eccentric load — the biceps is contracting to lift something heavy when the weight suddenly increases (catching a falling box, attempting to lift a load that's heavier than expected). The tendon fails at its insertion onto the radius. Most patients describe a sharp pop, immediate weakness, and pain in the antecubital crease.",
-        "Bruising along the front of the elbow and up the arm typically appears within 24–48 hours. The biceps muscle balls up high in the arm — the 'Popeye sign' — though this is less obvious than in proximal biceps ruptures.",
+        "The classic mechanism is a sudden, unexpected eccentric load, the biceps is contracting to lift something heavy when the weight suddenly increases (catching a falling box, attempting to lift a load that's heavier than expected). The tendon fails at its insertion onto the radius. Most patients describe a sharp pop, immediate weakness, and pain in the antecubital crease.",
+        "Bruising along the front of the elbow and up the arm typically appears within 24–48 hours. The biceps muscle balls up high in the arm, the 'Popeye sign', though this is less obvious than in proximal biceps ruptures.",
       ],
     },
     {
       heading: "How it's diagnosed",
       body: [
-        "Distal biceps rupture is usually diagnosable on clinical exam. A 'hook test' — the examiner cannot hook a finger under the intact biceps tendon — is highly specific. MRI confirms the diagnosis and can distinguish complete from partial tears, and Dr. Lee uses MRI to plan the surgical approach.",
+        "Distal biceps rupture is usually diagnosable on clinical exam. A 'hook test', the examiner cannot hook a finger under the intact biceps tendon, is highly specific. MRI confirms the diagnosis and can distinguish complete from partial tears, and Dr. Lee uses MRI to plan the surgical approach.",
       ],
     },
   ],
   drLeeApproach: {
     paragraphs: [
-      "Distal biceps rupture is a tendon-to-bone reconstruction problem, and the quality of that fixation determines the outcome. Dr. Lee uses a single-incision anterior approach with cortical button and tenodesis screw fixation — the same Arthrex construct he helped design.",
+      "Distal biceps rupture is a tendon-to-bone reconstruction problem, and the quality of that fixation determines the outcome. Dr. Lee uses a single-incision anterior approach with cortical button and tenodesis screw fixation, the same Arthrex construct he helped design.",
       "The repair is durable enough to support early protected motion, which avoids the elbow stiffness that has historically been the biggest complication of biceps repair. Most patients are out of formal immobilization within 2–3 weeks.",
     ],
   },
@@ -917,9 +917,9 @@ const bicepsRupture: ConditionPageContent = {
       ],
     },
     {
-      heading: "Surgical repair — single-incision anterior approach",
+      heading: "Surgical repair, single-incision anterior approach",
       body: [
-        "Dr. Lee performs a single-incision anterior repair, the most widely used modern technique. A small horizontal incision is made in the antecubital crease. The retracted tendon is identified, debrided, and reattached to the bicipital tuberosity of the radius using a cortical button and tenodesis screw — the Arthrex construct Dr. Lee co-designed. The single-incision technique avoids the risk of heterotopic ossification associated with the older two-incision technique.",
+        "Dr. Lee performs a single-incision anterior repair, the most widely used modern technique. A small horizontal incision is made in the antecubital crease. The retracted tendon is identified, debrided, and reattached to the bicipital tuberosity of the radius using a cortical button and tenodesis screw, the Arthrex construct Dr. Lee co-designed. The single-incision technique avoids the risk of heterotopic ossification associated with the older two-incision technique.",
       ],
     },
   ],
@@ -951,7 +951,7 @@ const bicepsRupture: ConditionPageContent = {
       },
       {
         heading: "The bulge doesn't always go away.",
-        body: "The cosmetic 'Popeye' deformity improves substantially after repair but may not return entirely to normal. The functional outcome — strength and motion — is the more important measure.",
+        body: "The cosmetic 'Popeye' deformity improves substantially after repair but may not return entirely to normal. The functional outcome, strength and motion, is the more important measure.",
       },
       {
         heading: "Non-operative is a real option for the right patient.",
@@ -969,8 +969,8 @@ const bicepsRupture: ConditionPageContent = {
   ],
   whyDrLee: [
     "Co-designer of the Arthrex cortical button and tenodesis screw used in repair",
-    "Double fellowship-trained — hand & sports medicine",
-    "Single-incision technique — avoids heterotopic ossification risk",
+    "Double fellowship-trained, hand & sports medicine",
+    "Single-incision technique, avoids heterotopic ossification risk",
     "Treats both acute and chronic (delayed) biceps ruptures",
   ],
   related: [
@@ -981,7 +981,7 @@ const bicepsRupture: ConditionPageContent = {
   ],
   ctaCard: {
     eyebrow: "Felt a pop in your elbow?",
-    headline: "Don't wait — early repair is easier.",
+    headline: "Don't wait, early repair is easier.",
   },
   faqHeadline: "Distal biceps rupture, answered.",
   faqs: [
@@ -998,7 +998,7 @@ const bicepsRupture: ConditionPageContent = {
     {
       question: "What is the cortical button?",
       answer:
-        "The cortical button is a small fixation device — about the size of a piece of pencil eraser — that anchors the repaired biceps tendon to the back side of the radius bone. Combined with a tenodesis screw on the near side, it creates a 'sandwich' fixation that is biomechanically stronger than older suture-only techniques. Dr. Lee co-designed the construct he uses.",
+        "The cortical button is a small fixation device, about the size of a piece of pencil eraser, that anchors the repaired biceps tendon to the back side of the radius bone. Combined with a tenodesis screw on the near side, it creates a 'sandwich' fixation that is biomechanically stronger than older suture-only techniques. Dr. Lee co-designed the construct he uses.",
     },
     {
       question: "When can I lift weights again?",
@@ -1008,16 +1008,16 @@ const bicepsRupture: ConditionPageContent = {
     {
       question: "Will the muscle bulge come back?",
       answer:
-        "Surgical repair pulls the retracted muscle back to its normal position and restores most of the contour. Subtle cosmetic differences may persist, but the functional outcome — strength and motion — is what matters. Most patients are highly satisfied with the cosmetic and functional result.",
+        "Surgical repair pulls the retracted muscle back to its normal position and restores most of the contour. Subtle cosmetic differences may persist, but the functional outcome, strength and motion, is what matters. Most patients are highly satisfied with the cosmetic and functional result.",
     },
   ],
   bottomCtaTitle: "Suspect a biceps tendon rupture?",
-  bottomCtaItalic: "Time is on your side — but not forever.",
+  bottomCtaItalic: "Time is on your side, but not forever.",
   bottomCtaBody:
     "Distal biceps ruptures are best repaired within a few weeks of injury. If you felt a pop and the arm doesn't feel right, get evaluated. The earlier the diagnosis, the simpler the path back to a fully functional arm.",
-  metaTitle: "Distal Biceps Tendon Rupture — Steven J. Lee, MD",
+  metaTitle: "Distal Biceps Tendon Rupture, Steven J. Lee, MD",
   metaDescription:
-    "Distal biceps tendon rupture and repair by Dr. Steven J. Lee, MD — co-designer of the Arthrex cortical button and tenodesis screw used in repair. Single-incision technique, recovery timeline, and when surgery is right.",
+    "Distal biceps tendon rupture and repair by Dr. Steven J. Lee, MD, co-designer of the Arthrex cortical button and tenodesis screw used in repair. Single-incision technique, recovery timeline, and when surgery is right.",
   schemaDescription:
     "A distal biceps tendon rupture is a tear of the biceps tendon at its insertion on the radius bone at the elbow, typically from sudden eccentric load. Treatment is usually surgical repair using cortical button and tenodesis screw fixation.",
 };
@@ -1028,18 +1028,18 @@ const rotatorCuff: ConditionPageContent = {
   slug: "rotator-cuff",
   name: "Rotator Cuff Tear",
   region: "Shoulder",
-  headerTitle: "Rotator Cuff Tear —",
+  headerTitle: "Rotator Cuff Tear:",
   headerItalic: "from diagnosis to durable repair.",
   headerLede:
-    "Rotator cuff tears are the most common cause of shoulder surgery in adults. Modern arthroscopic repair, when indicated, is reliable and durable — but not every tear needs an operation, and not every operation is necessary.",
+    "Rotator cuff tears are the most common cause of shoulder surgery in adults. Modern arthroscopic repair, when indicated, is reliable and durable, but not every tear needs an operation, and not every operation is necessary.",
   byline: {
     name: "Steven J. Lee, MD",
     title: "Double Fellowship-Trained · Hand & Sports Medicine",
     reviewed: "May 2026",
   },
   overview: [
-    "The rotator cuff is a group of four small muscles and their tendons that wrap around the head of the humerus and control fine shoulder motion. Tears in the cuff — most commonly in the supraspinatus tendon — are extremely common, particularly with age. Many rotator cuff tears are asymptomatic and require no treatment.",
-    "When a cuff tear is symptomatic — causing weakness, pain, or significant functional limitation — modern arthroscopic repair is reliable and durable. The art of cuff surgery is knowing which tears need repair, which are best managed conservatively, and which are too far gone for repair alone.",
+    "The rotator cuff is a group of four small muscles and their tendons that wrap around the head of the humerus and control fine shoulder motion. Tears in the cuff, most commonly in the supraspinatus tendon, are extremely common, particularly with age. Many rotator cuff tears are asymptomatic and require no treatment.",
+    "When a cuff tear is symptomatic, causing weakness, pain, or significant functional limitation, modern arthroscopic repair is reliable and durable. The art of cuff surgery is knowing which tears need repair, which are best managed conservatively, and which are too far gone for repair alone.",
   ],
   bodySections: [
     {
@@ -1047,7 +1047,7 @@ const rotatorCuff: ConditionPageContent = {
       body: ["Common symptoms include:"],
       bullets: [
         "Pain on the outside of the shoulder, often worse at night",
-        "Weakness with overhead activity — reaching to a shelf, brushing hair",
+        "Weakness with overhead activity, reaching to a shelf, brushing hair",
         "A sensation of catching or grinding with motion",
         "Difficulty sleeping on the affected side",
         "Pain that radiates down the upper arm but not below the elbow",
@@ -1056,15 +1056,15 @@ const rotatorCuff: ConditionPageContent = {
     {
       heading: "How rotator cuff tears are diagnosed",
       body: [
-        "MRI is the standard imaging study for a suspected rotator cuff tear. The exam — assessing strength of each cuff muscle individually — guides the suspicion before imaging. Ultrasound is sometimes used as a screening tool and can be valuable when MRI is contraindicated.",
+        "MRI is the standard imaging study for a suspected rotator cuff tear. The exam, assessing strength of each cuff muscle individually, guides the suspicion before imaging. Ultrasound is sometimes used as a screening tool and can be valuable when MRI is contraindicated.",
         "Plain X-rays are not used to diagnose cuff tears themselves but are taken to rule out arthritis, calcific deposits, or other conditions that may be causing the symptoms.",
       ],
     },
   ],
   drLeeApproach: {
     paragraphs: [
-      "Not every rotator cuff tear needs surgery. Many are asymptomatic findings on MRI. Even some symptomatic tears respond well to a structured course of physical therapy, anti-inflammatories, and selective injection — particularly partial-thickness tears and small full-thickness tears in older patients.",
-      "When surgery is appropriate, Dr. Lee performs all-arthroscopic repair using current-generation suture anchor constructs. The technique restores the tendon to its bony footprint with the strongest available fixation. Aggressive but disciplined rehabilitation gets the shoulder back to function — most patients regain the motion they had within months and the strength within a year.",
+      "Not every rotator cuff tear needs surgery. Many are asymptomatic findings on MRI. Even some symptomatic tears respond well to a structured course of physical therapy, anti-inflammatories, and selective injection, particularly partial-thickness tears and small full-thickness tears in older patients.",
+      "When surgery is appropriate, Dr. Lee performs all-arthroscopic repair using current-generation suture anchor constructs. The technique restores the tendon to its bony footprint with the strongest available fixation. Aggressive but disciplined rehabilitation gets the shoulder back to function, most patients regain the motion they had within months and the strength within a year.",
     ],
   },
   treatmentSections: [
@@ -1085,7 +1085,7 @@ const rotatorCuff: ConditionPageContent = {
   recovery: [
     {
       when: "Weeks 0–6",
-      what: "Sling immobilization. Passive range of motion only — therapist or other arm moves the shoulder. No active use of the cuff. Elbow, wrist, and hand motion encouraged.",
+      what: "Sling immobilization. Passive range of motion only, therapist or other arm moves the shoulder. No active use of the cuff. Elbow, wrist, and hand motion encouraged.",
     },
     {
       when: "Weeks 6–12",
@@ -1113,7 +1113,7 @@ const rotatorCuff: ConditionPageContent = {
       },
       {
         heading: "Massive tears have other options.",
-        body: "Some tears are too large or too retracted to repair primarily. Options for these include partial repair, superior capsular reconstruction, tendon transfer, or — in the right older patient — reverse shoulder replacement. Dr. Lee can discuss whether your tear is reparable based on your MRI.",
+        body: "Some tears are too large or too retracted to repair primarily. Options for these include partial repair, superior capsular reconstruction, tendon transfer, or, in the right older patient, reverse shoulder replacement. Dr. Lee can discuss whether your tear is reparable based on your MRI.",
       },
     ],
   },
@@ -1126,10 +1126,10 @@ const rotatorCuff: ConditionPageContent = {
     { label: "Full strength", value: "9–12 months" },
   ],
   whyDrLee: [
-    "Double fellowship-trained — sports medicine and hand & upper extremity",
+    "Double fellowship-trained, sports medicine and hand & upper extremity",
     "All-arthroscopic technique with current-generation anchor constructs",
     "Sees second-opinion patients on cuff surgery regularly",
-    "Conservative — will recommend non-surgical management when appropriate",
+    "Conservative, will recommend non-surgical management when appropriate",
   ],
   related: [
     { name: "UCL Tear (Tommy John)", slug: "ucl-reconstruction" },
@@ -1139,7 +1139,7 @@ const rotatorCuff: ConditionPageContent = {
   ],
   ctaCard: {
     eyebrow: "Shoulder pain not getting better?",
-    headline: "Find out whether it's the cuff — and whether it needs surgery.",
+    headline: "Find out whether it's the cuff, and whether it needs surgery.",
   },
   faqHeadline: "Rotator cuff tears, answered.",
   faqs: [
@@ -1156,7 +1156,7 @@ const rotatorCuff: ConditionPageContent = {
     {
       question: "Why is the recovery so long?",
       answer:
-        "Rotator cuff tissue heals to bone slowly — the biology of tendon-to-bone healing takes 3–4 months to reach reasonable strength. Loading the repair too early is the most common cause of re-tear. The 6-week sling and graduated rehab protect the healing tendon while it remodels into a durable construct.",
+        "Rotator cuff tissue heals to bone slowly, the biology of tendon-to-bone healing takes 3–4 months to reach reasonable strength. Loading the repair too early is the most common cause of re-tear. The 6-week sling and graduated rehab protect the healing tendon while it remodels into a durable construct.",
     },
     {
       question: "Will I get full strength and motion back?",
@@ -1166,16 +1166,16 @@ const rotatorCuff: ConditionPageContent = {
     {
       question: "What if my tear is too large to repair?",
       answer:
-        "Massive or retracted tears that can't be repaired primarily still have options. These include partial repair, superior capsular reconstruction (using an Achilles or dermal graft to bridge the defect), tendon transfer, or — in selected older patients — reverse shoulder arthroplasty. Dr. Lee reviews the MRI and discusses what makes sense for your specific tear.",
+        "Massive or retracted tears that can't be repaired primarily still have options. These include partial repair, superior capsular reconstruction (using an Achilles or dermal graft to bridge the defect), tendon transfer, or, in selected older patients, reverse shoulder arthroplasty. Dr. Lee reviews the MRI and discusses what makes sense for your specific tear.",
     },
   ],
   bottomCtaTitle: "Shoulder pain that won't settle?",
   bottomCtaItalic: "Find out what's actually going on.",
   bottomCtaBody:
-    "Most shoulder pain has a treatable cause. A careful exam and appropriate imaging usually clarifies the diagnosis — and clarifies whether surgery is even on the table.",
-  metaTitle: "Rotator Cuff Tear — Surgery & Treatment | Steven J. Lee, MD",
+    "Most shoulder pain has a treatable cause. A careful exam and appropriate imaging usually clarifies the diagnosis, and clarifies whether surgery is even on the table.",
+  metaTitle: "Rotator Cuff Tear, Surgery & Treatment | Steven J. Lee, MD",
   metaDescription:
-    "Rotator cuff tear treatment by Dr. Steven J. Lee, MD — fellowship-trained sports medicine surgeon. Arthroscopic repair, conservative management, recovery timeline, and when surgery is the right call.",
+    "Rotator cuff tear treatment by Dr. Steven J. Lee, MD, fellowship-trained sports medicine surgeon. Arthroscopic repair, conservative management, recovery timeline, and when surgery is the right call.",
   schemaDescription:
     "A rotator cuff tear is a tear of one or more of the four tendons that surround the shoulder joint, most commonly the supraspinatus. Treatment ranges from physical therapy and corticosteroid injection to arthroscopic suture anchor repair.",
 };
@@ -1186,38 +1186,38 @@ const aclReconstruction: ConditionPageContent = {
   slug: "acl-reconstruction",
   name: "ACL Tear & Reconstruction",
   region: "Knee & Sports",
-  headerTitle: "ACL Reconstruction —",
+  headerTitle: "ACL Reconstruction:",
   headerItalic: "knee surgery, designed around your sport.",
   headerLede:
-    "An ACL tear is one of the most common athletic injuries in the knee. Reconstruction returns most athletes to their previous level — when the surgery, graft choice, and rehabilitation are matched to the patient.",
+    "An ACL tear is one of the most common athletic injuries in the knee. Reconstruction returns most athletes to their previous level, when the surgery, graft choice, and rehabilitation are matched to the patient.",
   byline: {
     name: "Steven J. Lee, MD",
     title: "Double Fellowship-Trained · Hand & Sports Medicine",
     reviewed: "May 2026",
   },
   overview: [
-    "The anterior cruciate ligament — the ACL — is the central stabilizer of the knee, resisting forward translation of the tibia on the femur. ACL tears most commonly occur during non-contact pivoting injuries in sport: landing from a jump, cutting laterally, or planting and twisting.",
-    "ACL reconstruction is one of the most studied operations in orthopedic surgery. The principles are well-established; the art is in the details — graft choice, tunnel position, fixation, and rehabilitation timing, all matched to the demands of the individual patient.",
+    "The anterior cruciate ligament, the ACL, is the central stabilizer of the knee, resisting forward translation of the tibia on the femur. ACL tears most commonly occur during non-contact pivoting injuries in sport: landing from a jump, cutting laterally, or planting and twisting.",
+    "ACL reconstruction is one of the most studied operations in orthopedic surgery. The principles are well-established; the art is in the details, graft choice, tunnel position, fixation, and rehabilitation timing, all matched to the demands of the individual patient.",
   ],
   bodySections: [
     {
       heading: "How ACL injuries happen",
       body: [
-        "Most ACL tears are non-contact injuries — the athlete plants the foot and the knee gives out, often with an audible pop. Swelling develops within hours. The classic mechanism is deceleration with the knee close to extension and the foot fixed on the ground, with internal rotation of the tibia.",
-        "Roughly half of ACL tears are accompanied by other injuries — meniscus tears, MCL injuries, or chondral damage. The full picture is determined by MRI and the operative arthroscopy.",
+        "Most ACL tears are non-contact injuries, the athlete plants the foot and the knee gives out, often with an audible pop. Swelling develops within hours. The classic mechanism is deceleration with the knee close to extension and the foot fixed on the ground, with internal rotation of the tibia.",
+        "Roughly half of ACL tears are accompanied by other injuries, meniscus tears, MCL injuries, or chondral damage. The full picture is determined by MRI and the operative arthroscopy.",
       ],
     },
     {
       heading: "How ACL tears are diagnosed",
       body: [
-        "The clinical exam — Lachman test, anterior drawer, pivot shift — is highly suggestive. MRI confirms the diagnosis and identifies associated injuries. Most ACL tears are diagnosable on exam alone in experienced hands, with imaging used to plan surgery and identify concurrent damage.",
+        "The clinical exam, Lachman test, anterior drawer, pivot shift, is highly suggestive. MRI confirms the diagnosis and identifies associated injuries. Most ACL tears are diagnosable on exam alone in experienced hands, with imaging used to plan surgery and identify concurrent damage.",
       ],
     },
   ],
   drLeeApproach: {
     paragraphs: [
       "The question of whether to reconstruct an ACL is partly about activity level and partly about associated injury. Sedentary patients with isolated tears can sometimes function well without surgery. Active patients, athletes, and patients with associated meniscus injuries generally do better with reconstruction.",
-      "Dr. Lee discusses graft options — patellar tendon (BTB), quadriceps tendon, hamstring, or allograft — based on age, sport, activity level, and personal preference. In selected patients, internal brace augmentation can shorten the recovery timeline. The rehabilitation protocol is structured around the patient's goal sport.",
+      "Dr. Lee discusses graft options, patellar tendon (BTB), quadriceps tendon, hamstring, or allograft, based on age, sport, activity level, and personal preference. In selected patients, internal brace augmentation can shorten the recovery timeline. The rehabilitation protocol is structured around the patient's goal sport.",
     ],
   },
   treatmentSections: [
@@ -1230,8 +1230,8 @@ const aclReconstruction: ConditionPageContent = {
     {
       heading: "ACL reconstruction",
       body: [
-        "Reconstruction is performed arthroscopically. A tendon graft — typically patellar tendon (BTB), quadriceps tendon, or hamstring autograft, or in selected patients an allograft — is routed through bone tunnels in the femur and tibia and secured with interference screws or cortical button constructs.",
-        "Associated meniscus tears are repaired or trimmed at the same time. Cartilage injuries are addressed as needed. Dr. Lee uses Arthrex fixation hardware throughout — the same constructs used by surgeons in the broader Arthrex surgeon community.",
+        "Reconstruction is performed arthroscopically. A tendon graft, typically patellar tendon (BTB), quadriceps tendon, or hamstring autograft, or in selected patients an allograft, is routed through bone tunnels in the femur and tibia and secured with interference screws or cortical button constructs.",
+        "Associated meniscus tears are repaired or trimmed at the same time. Cartilage injuries are addressed as needed. Dr. Lee uses Arthrex fixation hardware throughout, the same constructs used by surgeons in the broader Arthrex surgeon community.",
       ],
     },
   ],
@@ -1251,7 +1251,7 @@ const aclReconstruction: ConditionPageContent = {
     },
     {
       when: "Months 6–12",
-      what: "Return to sport criteria typically met around 9–12 months. Functional testing — single-leg hop tests, strength symmetry, psychological readiness — guide return-to-sport decisions. Returning too early is the single most preventable cause of re-injury.",
+      what: "Return to sport criteria typically met around 9–12 months. Functional testing, single-leg hop tests, strength symmetry, psychological readiness, guide return-to-sport decisions. Returning too early is the single most preventable cause of re-injury.",
     },
   ],
   misconceptions: {
@@ -1280,7 +1280,7 @@ const aclReconstruction: ConditionPageContent = {
     { label: "Return to sport", value: "9–12 months with functional testing" },
   ],
   whyDrLee: [
-    "Double fellowship-trained — sports medicine and hand & upper extremity",
+    "Double fellowship-trained, sports medicine and hand & upper extremity",
     "Graft selection tailored to age, sport, and patient preference",
     "Arthrex fixation constructs throughout",
     "Functional return-to-sport testing, not calendar-based clearance",
@@ -1300,7 +1300,7 @@ const aclReconstruction: ConditionPageContent = {
     {
       question: "Do I need ACL reconstruction?",
       answer:
-        "It depends on your activity level and any associated injuries. Athletes and active patients who want to return to pivoting sports almost always do better with reconstruction. Sedentary patients with isolated tears can sometimes function well without surgery — though they accept a higher risk of future meniscus injury if they return to pivoting activity. Dr. Lee discusses both paths honestly.",
+        "It depends on your activity level and any associated injuries. Athletes and active patients who want to return to pivoting sports almost always do better with reconstruction. Sedentary patients with isolated tears can sometimes function well without surgery, though they accept a higher risk of future meniscus injury if they return to pivoting activity. Dr. Lee discusses both paths honestly.",
     },
     {
       question: "Which graft should I have?",
@@ -1310,12 +1310,12 @@ const aclReconstruction: ConditionPageContent = {
     {
       question: "How long until I can play sports again?",
       answer:
-        "Return-to-sport is typically 9–12 months after reconstruction, with functional testing (strength symmetry, single-leg hop tests, psychological readiness) guiding the timing. Earlier return — especially before 9 months — is associated with higher re-tear rates. The goal is not just clearance by the calendar but readiness by objective testing.",
+        "Return-to-sport is typically 9–12 months after reconstruction, with functional testing (strength symmetry, single-leg hop tests, psychological readiness) guiding the timing. Earlier return, especially before 9 months, is associated with higher re-tear rates. The goal is not just clearance by the calendar but readiness by objective testing.",
     },
     {
       question: "What is internal brace augmentation for the ACL?",
       answer:
-        "Internal brace augmentation adds a synthetic tape — anchored alongside the graft — that protects the reconstruction during the early healing phase. It is appropriate in selected patients and may shorten the early protected timeline. Not every ACL needs it, and not every surgeon uses it; Dr. Lee discusses whether it makes sense in your case.",
+        "Internal brace augmentation adds a synthetic tape, anchored alongside the graft, that protects the reconstruction during the early healing phase. It is appropriate in selected patients and may shorten the early protected timeline. Not every ACL needs it, and not every surgeon uses it; Dr. Lee discusses whether it makes sense in your case.",
     },
     {
       question: "Can I get a second opinion on a knee surgery I've been told I need?",
@@ -1326,10 +1326,10 @@ const aclReconstruction: ConditionPageContent = {
   bottomCtaTitle: "Knee felt wrong after a pivot?",
   bottomCtaItalic: "Get the diagnosis right the first time.",
   bottomCtaBody:
-    "An ACL tear that's properly diagnosed early — and treated with surgery matched to your sport and life — usually returns you to the field. Get a real evaluation before you start training around the injury.",
-  metaTitle: "ACL Tear & Reconstruction — Steven J. Lee, MD",
+    "An ACL tear that's properly diagnosed early, and treated with surgery matched to your sport and life, usually returns you to the field. Get a real evaluation before you start training around the injury.",
+  metaTitle: "ACL Tear & Reconstruction, Steven J. Lee, MD",
   metaDescription:
-    "ACL reconstruction by Dr. Steven J. Lee, MD — double fellowship-trained in sports medicine. Graft options (BTB, quadriceps, hamstring, allograft), internal brace augmentation in selected patients, return-to-sport timing.",
+    "ACL reconstruction by Dr. Steven J. Lee, MD, double fellowship-trained in sports medicine. Graft options (BTB, quadriceps, hamstring, allograft), internal brace augmentation in selected patients, return-to-sport timing.",
   schemaDescription:
     "An ACL tear is a tear of the anterior cruciate ligament, typically from a non-contact pivoting injury. Treatment for active patients is usually ACL reconstruction using a tendon graft, with return to sport at 9–12 months.",
 };
@@ -1340,24 +1340,24 @@ const achillesRupture: ConditionPageContent = {
   slug: "achilles-rupture",
   name: "Achilles Tendon Rupture",
   region: "Foot & Ankle",
-  headerTitle: "Achilles Tendon Rupture —",
+  headerTitle: "Achilles Tendon Rupture:",
   headerItalic: "from rupture to running.",
   headerLede:
-    "The Achilles is the largest tendon in the body — and when it ruptures, the path back is months long. Dr. Lee has authored four peer-reviewed papers on Achilles repair and treats this injury with the urgency and precision it deserves.",
+    "The Achilles is the largest tendon in the body, and when it ruptures, the path back is months long. Dr. Lee has authored four peer-reviewed papers on Achilles repair and treats this injury with the urgency and precision it deserves.",
   byline: {
     name: "Steven J. Lee, MD",
     title: "Double Fellowship-Trained · Hand & Sports Medicine",
     reviewed: "May 2026",
   },
   overview: [
-    "The Achilles tendon connects the calf muscles to the heel and transmits the force that allows pushing off the ground in walking, running, and jumping. Rupture typically happens during a sudden push-off — often during recreational sport in middle-aged adults — and produces an unmistakable pop followed by immediate weakness in the calf.",
-    "Treatment of Achilles rupture has evolved significantly over the past decade. The previous orthodox of 'surgery for athletes, casting for everyone else' has given way to a more nuanced approach in which both surgical and structured non-operative pathways can produce excellent outcomes — when the protocol is right.",
+    "The Achilles tendon connects the calf muscles to the heel and transmits the force that allows pushing off the ground in walking, running, and jumping. Rupture typically happens during a sudden push-off, often during recreational sport in middle-aged adults, and produces an unmistakable pop followed by immediate weakness in the calf.",
+    "Treatment of Achilles rupture has evolved significantly over the past decade. The previous orthodox of 'surgery for athletes, casting for everyone else' has given way to a more nuanced approach in which both surgical and structured non-operative pathways can produce excellent outcomes, when the protocol is right.",
   ],
   bodySections: [
     {
       heading: "How Achilles ruptures happen",
       body: [
-        "The classic mechanism is a sudden eccentric load on the tendon — pushing off to start a sprint, jumping for a tennis shot, or stepping off a curb. Many patients describe a sensation of being kicked in the back of the leg before they realize what happened. The injury is most common in 'weekend warrior' athletes in their 30s and 40s.",
+        "The classic mechanism is a sudden eccentric load on the tendon, pushing off to start a sprint, jumping for a tennis shot, or stepping off a curb. Many patients describe a sensation of being kicked in the back of the leg before they realize what happened. The injury is most common in 'weekend warrior' athletes in their 30s and 40s.",
         "Achilles rupture is diagnosable in nearly every case on history and exam alone. A palpable gap in the tendon and a positive Thompson test (squeezing the calf produces no plantarflexion of the foot) are typically all that is needed.",
       ],
     },
@@ -1370,8 +1370,8 @@ const achillesRupture: ConditionPageContent = {
   ],
   drLeeApproach: {
     paragraphs: [
-      "Achilles rupture is one of the conditions Dr. Lee has studied most academically — he has authored four peer-reviewed papers on Achilles repair. Modern functional rehabilitation protocols have made non-operative treatment a legitimate option for many patients, while surgical repair retains advantages in selected athletes and active adults.",
-      "The decision-making is individualized. Dr. Lee discusses both paths — operative and non-operative — with honest expectations about re-rupture risk, recovery timeline, and functional return. The patient's age, activity level, and risk tolerance all factor in.",
+      "Achilles rupture is one of the conditions Dr. Lee has studied most academically, he has authored four peer-reviewed papers on Achilles repair. Modern functional rehabilitation protocols have made non-operative treatment a legitimate option for many patients, while surgical repair retains advantages in selected athletes and active adults.",
+      "The decision-making is individualized. Dr. Lee discusses both paths, operative and non-operative, with honest expectations about re-rupture risk, recovery timeline, and functional return. The patient's age, activity level, and risk tolerance all factor in.",
     ],
   },
   treatmentSections: [
@@ -1415,7 +1415,7 @@ const achillesRupture: ConditionPageContent = {
         body: "Modern functional bracing produces re-rupture rates close to surgical repair in appropriate patients. The 'surgery for athletes, casting for everyone else' rule is outdated.",
       },
       {
-        heading: "The slow part is not the surgery — it's the biology.",
+        heading: "The slow part is not the surgery, it's the biology.",
         body: "Tendon takes 6–9 months to remodel into something durable enough for running, cutting, and jumping. This is true regardless of whether the rupture was treated surgically or non-surgically.",
       },
       {
@@ -1435,7 +1435,7 @@ const achillesRupture: ConditionPageContent = {
   whyDrLee: [
     "Four peer-reviewed publications on Achilles tendon repair",
     "Both surgical and non-surgical functional protocols",
-    "Double fellowship-trained — sports medicine and hand & upper extremity",
+    "Double fellowship-trained, sports medicine and hand & upper extremity",
     "Treats delayed and re-ruptured Achilles tendons",
   ],
   related: [
@@ -1468,21 +1468,21 @@ const achillesRupture: ConditionPageContent = {
     {
       question: "When can I run again?",
       answer:
-        "Most patients return to running between months 4 and 5 following the protocol. Earlier running attempts are the most common cause of re-rupture. The progression is gradual — walking, then walk-jog intervals, then full running — and adherence to the protocol is what prevents the re-injury that ends the recovery.",
+        "Most patients return to running between months 4 and 5 following the protocol. Earlier running attempts are the most common cause of re-rupture. The progression is gradual, walking, then walk-jog intervals, then full running, and adherence to the protocol is what prevents the re-injury that ends the recovery.",
     },
     {
       question: "What if I'm presenting weeks or months after the injury?",
       answer:
-        "Delayed-presentation Achilles ruptures are not uncommon — patients sometimes 'walk it off' for weeks before realizing something is seriously wrong. These cases can still be treated, but treatment becomes more complex. Repair may require tendon transfer or grafting to bridge the gap. Get evaluated.",
+        "Delayed-presentation Achilles ruptures are not uncommon, patients sometimes 'walk it off' for weeks before realizing something is seriously wrong. These cases can still be treated, but treatment becomes more complex. Repair may require tendon transfer or grafting to bridge the gap. Get evaluated.",
     },
   ],
   bottomCtaTitle: "Suspect an Achilles rupture?",
   bottomCtaItalic: "The earlier the diagnosis, the more options remain.",
   bottomCtaBody:
     "Whether you ruptured the tendon yesterday or three weeks ago, treatment options are available. The earlier the evaluation, the simpler the path back to walking, running, and sport.",
-  metaTitle: "Achilles Tendon Rupture — Steven J. Lee, MD",
+  metaTitle: "Achilles Tendon Rupture, Steven J. Lee, MD",
   metaDescription:
-    "Achilles tendon rupture treatment by Dr. Steven J. Lee, MD — author of four peer-reviewed Achilles repair papers and double fellowship-trained in sports medicine. Surgical repair and functional bracing protocols.",
+    "Achilles tendon rupture treatment by Dr. Steven J. Lee, MD, author of four peer-reviewed Achilles repair papers and double fellowship-trained in sports medicine. Surgical repair and functional bracing protocols.",
   schemaDescription:
     "An Achilles tendon rupture is a tear of the large tendon connecting the calf muscles to the heel, typically from a sudden push-off injury. Treatment options include surgical repair and structured functional bracing protocols, with similar outcomes in appropriate patients.",
 };

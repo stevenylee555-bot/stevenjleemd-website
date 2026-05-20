@@ -3,7 +3,7 @@ import PageHeader from "@/components/PageHeader";
 import ComingSoon from "@/components/ComingSoon";
 
 export const metadata: Metadata = {
-  title: "Videos — Steven J. Lee, MD",
+  title: "Videos, Steven J. Lee, MD",
   description:
     "Operative videos, surgical technique demonstrations, and lectures from Dr. Steven J. Lee, MD via Arthrex and VuMedi.",
   alternates: { canonical: "https://www.stevenjleemd.com/about/videos" },
@@ -24,7 +24,7 @@ export default function VideosPage() {
       />
       <ComingSoon
         title="Video library coming soon."
-        description="Operative videos, surgical technique demonstrations, and teaching content from Dr. Lee — published via Arthrex's educational platform and VuMedi — will be embedded here."
+        description="Operative videos, surgical technique demonstrations, and teaching content from Dr. Lee, published via Arthrex's educational platform and VuMedi, will be embedded here."
         preview={[
           "UCL reconstruction with internal brace",
           "Basal joint arthroplasty technique",

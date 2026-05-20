@@ -14,9 +14,9 @@ import PageHeader from "@/components/PageHeader";
 import { buildFaqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Orthopedic Surgery Second Opinions — Steven J. Lee, MD",
+  title: "Orthopedic Surgery Second Opinions, Steven J. Lee, MD",
   description:
-    "Get a world-class second opinion from Dr. Steven J. Lee, MD — Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, on the Arthrex implant design team. In-person consultations in NYC and Scarsdale, telemedicine available for out-of-state and international patients.",
+    "Get a world-class second opinion from Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, on the Arthrex implant design team. In-person consultations in NYC and Scarsdale, telemedicine available for out-of-state and international patients.",
   alternates: { canonical: "https://www.stevenjleemd.com/second-opinions" },
 };
 
@@ -57,7 +57,7 @@ const pillars = [
   {
     Icon: Globe2,
     title: "Worldwide telemedicine",
-    body: "Virtual consults for patients traveling for care or living outside New York — across the U.S. and internationally.",
+    body: "Virtual consults for patients traveling for care or living outside New York, across the U.S. and internationally.",
   },
   {
     Icon: FileSearch,
@@ -67,7 +67,7 @@ const pillars = [
   {
     Icon: CheckCircle2,
     title: "Confident decisions",
-    body: "Understand your options before committing to surgery. Sometimes the right answer is a different operation — or no operation at all.",
+    body: "Understand your options before committing to surgery. Sometimes the right answer is a different operation, or no operation at all.",
   },
 ];
 
@@ -104,7 +104,7 @@ export default function SecondOpinionsPage() {
         kicker="Second Opinions"
         title="Been told you need surgery?"
         italic="Get a real second look."
-        lede="A second opinion from a world-class specialist is rarely wasted. Dr. Lee reviews imaging, records, and prior surgical plans for patients who have been told they need orthopedic surgery — and helps them decide whether an operation, a different operation, or no operation is the right call."
+        lede="A second opinion from a world-class specialist is rarely wasted. Dr. Lee reviews imaging, records, and prior surgical plans for patients who have been told they need orthopedic surgery, and helps them decide whether an operation, a different operation, or no operation is the right call."
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "Second Opinions", href: "/second-opinions" },
@@ -128,11 +128,11 @@ export default function SecondOpinionsPage() {
                 <p>
                   Dr. Lee is Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital and a
                   designer of plating systems, suture anchors, and internal brace constructs for
-                  Arthrex — one of the world&apos;s leading orthopedic device companies.
+                  Arthrex, one of the world&apos;s leading orthopedic device companies.
                 </p>
                 <p>
                   When a procedure involves the hardware he helped design, his perspective is
-                  not just expert — it&apos;s sometimes the most informed in the country.
+                  not just expert, it&apos;s sometimes the most informed in the country.
                 </p>
                 <p>
                   Patients come to Dr. Lee for second opinions on hand, wrist, elbow, shoulder,

@@ -62,7 +62,7 @@ export default function SecondOpinion() {
             >
               A second opinion from a world-class specialist is rarely wasted. Dr. Lee
               reviews imaging, records, and prior surgical plans for patients who have
-              been told they need orthopedic surgery — and helps them understand whether
+              been told they need orthopedic surgery, and helps them understand whether
               an operation, a different operation, or no operation is the right call.
             </motion.p>
 

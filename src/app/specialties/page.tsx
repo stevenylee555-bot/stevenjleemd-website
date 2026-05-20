@@ -13,9 +13,9 @@ import {
 import type { ComponentType } from "react";
 
 export const metadata: Metadata = {
-  title: "Specialties — Steven J. Lee, MD",
+  title: "Specialties, Steven J. Lee, MD",
   description:
-    "Orthopedic specialties of Dr. Steven J. Lee, MD — Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital. Hand and wrist, elbow, shoulder, knee and sports, and advanced biologic treatments including PRP, BMAC, and peptide therapy.",
+    "Orthopedic specialties of Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital. Hand and wrist, elbow, shoulder, knee and sports, and advanced biologic treatments including PRP, BMAC, and peptide therapy.",
   alternates: { canonical: "https://www.stevenjleemd.com/specialties" },
 };
 
@@ -34,7 +34,7 @@ export default function SpecialtiesIndexPage() {
         kicker="Areas of Expertise"
         title="Surgery and sports medicine,"
         italic="from fingertip to knee."
-        lede="Dr. Lee's practice spans upper extremity surgery, sports medicine, and advanced biologics — with particular depth in the procedures he helped pioneer and the hardware he helped design."
+        lede="Dr. Lee's practice spans upper extremity surgery, sports medicine, and advanced biologics, with particular depth in the procedures he helped pioneer and the hardware he helped design."
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "Specialties", href: "/specialties" },
@@ -53,13 +53,13 @@ export default function SpecialtiesIndexPage() {
               <p className="text-navy-900/80 text-[18px] leading-[1.7] font-light">
                 Most orthopedic surgeons specialize in one body region. Dr. Lee is{" "}
                 <em className="serif-italic text-navy-950">double fellowship-trained</em> in
-                hand &amp; upper extremity surgery and in sports medicine — a
+                hand &amp; upper extremity surgery and in sports medicine, a
                 combination that lets him treat both the fine reconstructive work
                 of the hand and the high-demand return-to-sport considerations of
                 the shoulder, elbow, and knee.
               </p>
               <p className="text-navy-900/80 text-[18px] leading-[1.7] font-light">
-                He is also on the Arthrex design team for several implants used worldwide —
+                He is also on the Arthrex design team for several implants used worldwide,
                 the Mini Comprehensive Fixation System for hand fractures, the Elbow
                 Fracture Plating System, the 3.5 DX SwiveLock anchor, the NanoCorkscrew FT,
                 and the FiberLock CMC Suspensionplasty.

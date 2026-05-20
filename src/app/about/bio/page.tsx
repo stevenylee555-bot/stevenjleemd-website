@@ -5,9 +5,9 @@ import { ArrowUpRight, Calendar, ExternalLink } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Biography — Steven J. Lee, MD",
+  title: "Biography, Steven J. Lee, MD",
   description:
-    "Biography of Dr. Steven J. Lee, MD — Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, on the Arthrex implant design team, double fellowship-trained orthopedic surgeon serving NYC and Scarsdale.",
+    "Biography of Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, on the Arthrex implant design team, double fellowship-trained orthopedic surgeon serving NYC and Scarsdale.",
   alternates: { canonical: "https://www.stevenjleemd.com/about/bio" },
 };
 
@@ -15,11 +15,11 @@ const credentials = [
   "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital (since 2013)",
   "Associate Director, NISMAT (since 2006)",
   "Lenox Hill Hospital Medical Board (since 2023)",
-  "Double Fellowship-Trained — Hand & Upper Extremity, Sports Medicine",
+  "Double Fellowship-Trained, Hand & Upper Extremity, Sports Medicine",
   "Board-Certified, American Board of Orthopaedic Surgery",
   "Subspecialty Certified, Orthopaedic Surgery of the Hand",
   "Arthrex Implant Design Team",
-  "US Patent #12,622,710 B2 — Center of Rotation Guide (2026)",
+  "US Patent #12,622,710 B2, Center of Rotation Guide (2026)",
 ];
 
 export default function BioPage() {
@@ -29,7 +29,7 @@ export default function BioPage() {
         kicker="Biography"
         title="A surgeon at the"
         italic="leading edge of his field."
-        lede="From Lenox Hill Hospital to Arthrex implant design — the career of an orthopedic surgeon known for treating the cases other physicians find too complex."
+        lede="From Lenox Hill Hospital to Arthrex implant design, the career of an orthopedic surgeon known for treating the cases other physicians find too complex."
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "About", href: "/about" },
@@ -41,12 +41,12 @@ export default function BioPage() {
       <section className="bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 lg:py-28">
           <div className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-16 lg:gap-20">
-            {/* Prose — capped at ~70ch for editorial readability */}
+            {/* Prose, capped at ~70ch for editorial readability */}
             <article className="max-w-[640px]">
               <div className="space-y-6 text-navy-900/80 text-[17px] leading-[1.75] font-light">
                 <p className="text-navy-900/90 text-[18px] font-normal">
                   Dr. Steven J. Lee is Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital
-                  — one of New York&apos;s premier medical centers — and a double fellowship-trained
+                 , one of New York&apos;s premier medical centers, and a double fellowship-trained
                   orthopedic surgeon.
                 </p>
 
@@ -54,7 +54,7 @@ export default function BioPage() {
                   He is board-certified by the American Board of Orthopaedic Surgery and
                   fellowship-trained in both Hand Surgery and Shoulder &amp; Elbow Surgery. His practice
                   spans hand and wrist surgery, elbow surgery, shoulder arthroscopy, knee
-                  reconstruction, and sports medicine — with particular depth in the cases that
+                  reconstruction, and sports medicine, with particular depth in the cases that
                   other surgeons consider technically demanding.
                 </p>
 
@@ -83,7 +83,7 @@ export default function BioPage() {
                 <p>
                   Dr. Lee was among the first surgeons in New York City to perform PRP
                   (Platelet-Rich Plasma) therapy, and 99% sure the first specifically for upper
-                  extremity injuries — at a time when biologics were still considered experimental
+                  extremity injuries, at a time when biologics were still considered experimental
                   in the orthopedic mainstream. He performs over 250 PRP procedures annually today,
                   across the full body. He has continued to pioneer the use of biologics in
                   orthopedic care, including BMAC stem cell therapy and, more recently, peptides.
@@ -97,7 +97,7 @@ export default function BioPage() {
                     &quot;Therapeutic Peptides in Orthopaedics: Applications, Challenges, and Future
                     Directions&quot;
                   </a>{" "}
-                  in <em className="serif-italic">JAAOS Global Research &amp; Reviews</em> —
+                  in <em className="serif-italic">JAAOS Global Research &amp; Reviews</em>,
                   believed to be the first peer-reviewed review paper on therapeutic peptides
                   in an orthopedic journal.
                 </p>
@@ -119,19 +119,19 @@ export default function BioPage() {
                   committees and the Program Evaluation Committee. He has received the
                   Chitranjan S. Ranawat Mentorship Award seven times (2010, 2014, 2015, 2017,
                   2018, 2019, 2023) and the Maurice H. Cowen Teacher of the Year award twice
-                  (2003, 2009) — both voted by the Lenox Hill orthopaedic residents.
+                  (2003, 2009), both voted by the Lenox Hill orthopaedic residents.
                 </p>
                 <p>
                   In 2026 he was awarded{" "}
                   <strong className="text-navy-950 font-semibold">US Patent #12,622,710 B2</strong>{" "}
-                  for a Center of Rotation Guide — a surgical instrumentation design.
+                  for a Center of Rotation Guide, a surgical instrumentation design.
                 </p>
 
                 <h2 className="font-serif text-2xl md:text-3xl text-navy-950 tracking-[-0.01em] !mt-12 mb-2 leading-tight">
                   Practice today
                 </h2>
                 <p>
-                  Dr. Lee sees patients at two offices — a primary practice on Manhattan&apos;s
+                  Dr. Lee sees patients at two offices, a primary practice on Manhattan&apos;s
                   East 74th Street and a second office in Scarsdale, Westchester. He accommodates
                   in-person and telemedicine consultations, and sees both in-network and
                   out-of-network patients, including international patients who travel

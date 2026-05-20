@@ -13,9 +13,9 @@ import {
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Curriculum Vitae — Steven J. Lee, MD",
+  title: "Curriculum Vitae, Steven J. Lee, MD",
   description:
-    "Download the curriculum vitae of Dr. Steven J. Lee, MD — Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital and Associate Director at NISMAT. 35+ peer-reviewed publications, 84 lectures and presentations, US patent for surgical instrumentation.",
+    "Download the curriculum vitae of Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital and Associate Director at NISMAT. 35+ peer-reviewed publications, 84 lectures and presentations, US patent for surgical instrumentation.",
   alternates: { canonical: "https://www.stevenjleemd.com/about/cv" },
 };
 
@@ -202,14 +202,14 @@ export default function CVPage() {
                 Icon: FileText,
                 title: "Publications",
                 body:
-                  "Peer-reviewed papers and book chapters — including the 2026 review of therapeutic peptides in orthopaedics.",
+                  "Peer-reviewed papers and book chapters, including the 2026 review of therapeutic peptides in orthopaedics.",
                 href: "/about/publications",
               },
               {
                 Icon: Calendar,
                 title: "Biography",
                 body:
-                  "The career narrative — from Lehigh through Arthrex implant design and 35+ peer-reviewed publications.",
+                  "The career narrative, from Lehigh through Arthrex implant design and 35+ peer-reviewed publications.",
                 href: "/about/bio",
               },
             ].map((l) => (

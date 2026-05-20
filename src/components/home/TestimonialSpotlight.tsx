@@ -43,8 +43,8 @@ export default function TestimonialSpotlight() {
             variants={fadeUp}
             className="mt-14 text-xs text-navy-900/60 max-w-md mx-auto leading-relaxed"
           >
-            Quoted with permission. Additional patient testimonials — including
-            notable public figures — are featured on the testimonials page.
+            Quoted with permission. Additional patient testimonials, including
+            notable public figures, are featured on the testimonials page.
           </motion.div>
         </motion.div>
       </div>

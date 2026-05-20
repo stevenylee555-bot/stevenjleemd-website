@@ -46,7 +46,7 @@ export default function SpecialtyTemplate({ specialty }: { specialty: Specialty 
         ]}
       />
 
-      {/* Intro — editorial two-column */}
+      {/* Intro, editorial two-column */}
       <section className="bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 lg:py-28">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] gap-12 lg:gap-20 items-start">
@@ -300,7 +300,7 @@ export default function SpecialtyTemplate({ specialty }: { specialty: Specialty 
               <div className="flex items-start gap-3 text-white/75">
                 <Video size={16} className="text-gold-400 shrink-0 mt-1" />
                 <div className="text-[15px] leading-relaxed">
-                  Telemedicine available — domestic & international
+                  Telemedicine available, domestic & international
                 </div>
               </div>
             </div>

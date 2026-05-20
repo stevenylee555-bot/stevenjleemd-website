@@ -80,7 +80,7 @@ export default function Hero() {
               PRP therapy for upper extremity injuries.
             </motion.p>
 
-            {/* Recognition block — accolades front and center, individually staggered */}
+            {/* Recognition block, accolades front and center, individually staggered */}
             <motion.div variants={heroReveal} className="mb-10">
               <div className="kicker text-white/40 mb-4">Recognized by</div>
               <motion.ul
@@ -175,7 +175,7 @@ export default function Hero() {
             style={{ y, opacity }}
             className="relative hidden lg:block"
           >
-            {/* Gold accent frame — draws in from corners after portrait reveal */}
+            {/* Gold accent frame, draws in from corners after portrait reveal */}
             <motion.div
               initial={{ opacity: 0, scale: 0.6 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -203,7 +203,7 @@ export default function Hero() {
                   onError={() => setImgFailed(true)}
                 />
               ) : (
-                // Editorial fallback if headshot is missing — silhouette + monogram.
+                // Editorial fallback if headshot is missing, silhouette + monogram.
                 <div className="absolute inset-0 bg-gradient-to-br from-navy-800 via-navy-900 to-navy-950">
                   <svg
                     viewBox="0 0 400 500"
@@ -233,7 +233,7 @@ export default function Hero() {
               {/* Subtle navy gradient overlay for legibility */}
               <div className="absolute inset-0 bg-gradient-to-t from-navy-950/70 via-transparent to-transparent" />
 
-              {/* Badge — reads as a stamp, not a banner; enters after portrait */}
+              {/* Badge, reads as a stamp, not a banner; enters after portrait */}
               <motion.div
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}

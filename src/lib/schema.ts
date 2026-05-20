@@ -59,7 +59,7 @@ export const physicianSchema = {
 export const medicalBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "MedicalBusiness",
-  name: "Steven J. Lee, MD — Orthopedic Surgery",
+  name: "Steven J. Lee, MD, Orthopedic Surgery",
   url: "https://www.stevenjleemd.com",
   telephone: "+1-212-737-3301",
   priceRange: "$$$$",

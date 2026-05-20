@@ -2,7 +2,7 @@
 
 import type { Variants, Transition } from "motion/react";
 
-// Shared eased transition — premium, restrained
+// Shared eased transition, premium, restrained
 export const ease: Transition = {
   duration: 0.7,
   ease: [0.22, 1, 0.36, 1], // out-quart
