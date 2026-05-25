@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Phone, MapPin, ExternalLink } from "lucide-react";
+import { Phone, MapPin, ExternalLink, Globe } from "lucide-react";
 
 const footerLinks = {
   Specialties: [
@@ -65,6 +65,21 @@ export default function Footer() {
                 <a href="tel:+19147256970" className="hover:text-white transition-colors" aria-label="Call Scarsdale office">
                   (914) 725-6970
                 </a>
+              </div>
+              {/* Group practice site; changes after the practice transition */}
+              <div className="flex items-start gap-2">
+                <Globe size={15} className="text-gold-400 mt-0.5 shrink-0" aria-hidden="true" />
+                <div>
+                  <div className="font-medium text-white">Group practice</div>
+                  <a
+                    href="https://www.newyorkorthopedics.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors"
+                  >
+                    newyorkorthopedics.com
+                  </a>
+                </div>
               </div>
             </div>
           </div>

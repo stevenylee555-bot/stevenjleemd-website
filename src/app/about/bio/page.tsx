@@ -367,7 +367,7 @@ export default function BioPage() {
                 </div>
                 <p className="text-navy-900/80 text-[14.5px] leading-relaxed">
                   Center of Rotation Guide, a surgical instrumentation design granted in
-                  2026.
+                  2026, with additional patents pending.
                 </p>
                 <div className="mt-6 pt-5 border-t border-navy-900/10 text-navy-900/80 text-[14.5px] leading-relaxed">
                   Implants designed by Dr. Lee are now used by surgeons across the
@@ -403,12 +403,14 @@ export default function BioPage() {
               </p>
               <p>
                 His teaching has been recognized repeatedly by the Lenox Hill orthopedic
-                residents, who have voted him the Maurice H. Cowen Teacher of the Year
-                award (2003, 2009) and the Chitranjan S. Ranawat Mentorship Award seven
-                times (2010, 2014, 2015, 2017, 2018, 2019, 2023). At Lenox Hill he sits
-                on the orthopedic residency and sports medicine fellowship admissions
-                committees, the Program Evaluation Committee, and the Hospital Medical
-                Board.
+                residents, who have voted him the Chitranjan S. Ranawat Mentorship Award
+                seven times (2010, 2014, 2015, 2017, 2018, 2019, 2023), the James A.
+                Nicholas Award for Distinction in Orthopaedic Residency Education twice
+                (2021, 2022), and the Maurice Cohen Award for Excellence in Medical
+                Education twice (2003, 2009), eleven teaching honors in all. At Lenox Hill
+                he sits on the orthopedic residency and sports medicine fellowship
+                admissions committees, the Program Evaluation Committee, and the Hospital
+                Medical Board.
               </p>
               <p>
                 He is a Fellow of the American Academy of Orthopaedic Surgeons and a

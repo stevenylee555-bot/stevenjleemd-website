@@ -83,15 +83,15 @@ const teaching = [
   {
     title: "Chitranjan S. Ranawat, MD Mentorship Award",
     detail:
-      "Awarded by Lenox Hill orthopaedic residents, 7 times (2010, 2014, 2015, 2017, 2018, 2019, 2023)",
-  },
-  {
-    title: "Maurice H. Cowen MD Memorial Award for Excellence in Medical Education",
-    detail: "Teacher of the Year, 2003, 2009",
+      "Voted by Lenox Hill orthopaedic residents, 7 times (2010, 2014, 2015, 2017, 2018, 2019, 2023)",
   },
   {
     title: "James A. Nicholas Award for Distinction in Orthopaedic Residency Education",
-    detail: "Awarded by Lenox Hill residents, 2021, 2022",
+    detail: "Voted by Lenox Hill residents, twice (2021, 2022)",
+  },
+  {
+    title: "Maurice Cohen, MD Memorial Award for Excellence in Medical Education",
+    detail: "Teacher of the Year, twice (2003, 2009)",
   },
 ];
 
@@ -146,6 +146,10 @@ const patents = [
     title: "US Patent #12,622,710 B2",
     detail:
       "Center of Rotation Guide, surgical instrumentation · Awarded May 12, 2026",
+  },
+  {
+    title: "Additional patents pending",
+    detail: "Further inventions are in the patent application process.",
   },
 ];
 
