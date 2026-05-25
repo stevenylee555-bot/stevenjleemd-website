@@ -5,10 +5,12 @@ import { motion } from "motion/react";
 import { fadeUp, inViewProps, stagger } from "@/lib/motion";
 
 const capabilities = [
-  "Plating systems, hand, wrist & elbow",
-  "Suture anchors & internal-brace constructs",
-  "Tendon-to-bone repair fixation",
-  "Thumb basal-joint reconstruction",
+  "Plating and fixation systems for fractures of the hand, wrist, and elbow",
+  "Anchors that revolutionized internal bracing for the upper extremity",
+  "Anchors for tendon-to-bone fixation in tendon ruptures",
+  "Anchors for ligament repair and reconstruction, for tears of the UCL (Tommy John) and LUCL of the elbow, the UCL and RCL of the thumb and fingers, and the scapholunate",
+  "Anchors for basal joint arthritis surgery",
+  "Anchors for TFCC repairs",
   "US patent, surgical instrumentation",
 ];
 
@@ -55,21 +57,23 @@ export default function InnovationFeature() {
               variants={fadeUp}
               className="text-white/85 text-sm leading-relaxed mb-10 max-w-xl"
             >
-              That engineering perspective informs how he approaches every repair: the
-              right construct, sized and placed for the individual patient.
+              Designing a wide range of orthopedic implants has given him a unique
+              engineering perspective that directly shapes his surgical approach,
+              ensuring that every construct is perfectly tailored, sized, and
+              anatomically placed for the individual patient.
             </motion.p>
 
             <motion.ul
               variants={stagger(0.1, 0.05)}
-              className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 max-w-xl"
+              className="space-y-3.5 max-w-xl"
             >
               {capabilities.map((item) => (
                 <motion.li
                   key={item}
                   variants={fadeUp}
-                  className="flex items-center gap-3 text-sm"
+                  className="flex items-baseline gap-3 text-[15px] leading-relaxed"
                 >
-                  <span className="h-1.5 w-1.5 rounded-full shrink-0 bg-gold-500" />
+                  <span className="h-1.5 w-1.5 rounded-full shrink-0 bg-gold-500 translate-y-[7px]" />
                   <span className="text-white/85">{item}</span>
                 </motion.li>
               ))}

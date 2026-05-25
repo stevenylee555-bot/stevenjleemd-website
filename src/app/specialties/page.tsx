@@ -33,7 +33,7 @@ export default function SpecialtiesIndexPage() {
       <PageHeader
         kicker="Areas of Expertise"
         title="Surgery and sports medicine,"
-        italic="from fingertip to knee."
+        italic="from fingertip to knee to ankle."
         lede="Dr. Lee's practice spans upper extremity surgery, sports medicine, and advanced biologics, with particular depth in the procedures he helped pioneer and the hardware he helped design."
         breadcrumb={[
           { label: "Home", href: "/" },

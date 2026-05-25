@@ -84,7 +84,7 @@ export default function Specialties() {
             className="font-serif text-[clamp(2.25rem,4vw,3.5rem)] leading-[1.05] tracking-[-0.02em] text-navy-950 mb-6"
           >
             Surgery and sports medicine, from{" "}
-            <span className="serif-italic text-gold-600">fingertip to knee.</span>
+            <span className="serif-italic text-gold-600">fingertip to knee to ankle.</span>
           </motion.h2>
           <motion.p variants={fadeUp} className="text-navy-900/80 text-lg leading-relaxed font-light">
             Dr. Lee&apos;s practice spans upper extremity surgery, sports medicine, and advanced
