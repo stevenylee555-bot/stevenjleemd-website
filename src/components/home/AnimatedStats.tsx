@@ -111,7 +111,7 @@ export default function AnimatedStats() {
               <div className="text-navy-900 font-semibold text-sm mb-1">
                 {stat.label}
               </div>
-              <div className="text-navy-900/70 text-xs leading-relaxed max-w-[200px]">
+              <div className="text-navy-900/80 text-[13px] leading-relaxed max-w-[200px]">
                 {stat.caption}
               </div>
             </motion.div>

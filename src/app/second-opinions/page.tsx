@@ -124,7 +124,7 @@ export default function SecondOpinionsPage() {
                 The opinion of a surgeon who{" "}
                 <span className="serif-italic text-gold-600">helped design the hardware.</span>
               </h2>
-              <div className="space-y-5 text-navy-900/75 text-[17px] leading-[1.7] font-light max-w-xl">
+              <div className="space-y-5 text-navy-900/80 text-[17px] leading-[1.7] font-light max-w-xl">
                 <p>
                   Dr. Lee is Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital and a
                   designer of plating systems, suture anchors, and internal-brace constructs now
@@ -176,7 +176,7 @@ export default function SecondOpinionsPage() {
             {cases.map((c) => (
               <div key={c.label} className="bg-white p-8">
                 <div className="kicker text-gold-600 mb-3">{c.label}</div>
-                <p className="text-navy-900/75 text-[15px] leading-relaxed">{c.text}</p>
+                <p className="text-navy-900/80 text-[15px] leading-relaxed">{c.text}</p>
               </div>
             ))}
           </div>
@@ -223,7 +223,7 @@ export default function SecondOpinionsPage() {
                   <div className="font-serif text-xl md:text-2xl text-navy-950 tracking-[-0.01em] mb-3">
                     {s.title}
                   </div>
-                  <p className="text-navy-900/70 text-[16px] leading-[1.7] font-light max-w-2xl">
+                  <p className="text-navy-900/80 text-[16px] leading-[1.7] font-light max-w-2xl">
                     {s.body}
                   </p>
                 </div>
@@ -297,7 +297,7 @@ export default function SecondOpinionsPage() {
                       className="text-navy-900/80 shrink-0 mt-1.5 transition-transform group-open:rotate-90"
                     />
                   </summary>
-                  <p className="text-navy-900/70 text-[17px] leading-[1.7] pb-8 pr-12 font-light max-w-3xl">
+                  <p className="text-navy-900/80 text-[17px] leading-[1.7] pb-8 pr-12 font-light max-w-3xl">
                     {faq.answer}
                   </p>
                 </details>

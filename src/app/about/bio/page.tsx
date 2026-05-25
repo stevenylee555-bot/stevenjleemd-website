@@ -164,7 +164,7 @@ export default function BioPage() {
                   </div>
                 </div>
 
-                <div className="kicker text-navy-900/75 mb-4">Credentials</div>
+                <div className="kicker text-navy-900/80 mb-4">Credentials</div>
                 <ul className="space-y-3 mb-10">
                   {credentials.map((c) => (
                     <li key={c} className="flex items-baseline gap-3 text-[14.5px] text-navy-900/85">
@@ -174,7 +174,7 @@ export default function BioPage() {
                   ))}
                 </ul>
 
-                <div className="kicker text-navy-900/75 mb-3">Hospital Affiliations</div>
+                <div className="kicker text-navy-900/80 mb-3">Hospital Affiliations</div>
                 <ul className="space-y-3 mb-10 text-[14.5px] text-navy-900/85">
                   <li>
                     <span className="font-semibold text-navy-950">Lenox Hill Hospital</span>
@@ -236,7 +236,7 @@ export default function BioPage() {
                       {t.detail}
                     </div>
                     {t.note && (
-                      <p className="text-navy-900/75 text-[13.5px] italic leading-relaxed mt-2 max-w-md">
+                      <p className="text-navy-900/80 text-[13.5px] italic leading-relaxed mt-2 max-w-md">
                         {t.note}
                       </p>
                     )}
@@ -365,11 +365,11 @@ export default function BioPage() {
                 <div className="font-serif text-3xl lg:text-4xl text-navy-950 tracking-[-0.01em] leading-none mb-3">
                   12,622,710 B2
                 </div>
-                <p className="text-navy-900/70 text-[14.5px] leading-relaxed">
+                <p className="text-navy-900/80 text-[14.5px] leading-relaxed">
                   Center of Rotation Guide, a surgical instrumentation design granted in
                   2026.
                 </p>
-                <div className="mt-6 pt-5 border-t border-navy-900/10 text-navy-900/70 text-[14.5px] leading-relaxed">
+                <div className="mt-6 pt-5 border-t border-navy-900/10 text-navy-900/80 text-[14.5px] leading-relaxed">
                   Implants designed by Dr. Lee are now used by surgeons across the
                   country.
                 </div>
@@ -438,7 +438,7 @@ export default function BioPage() {
               84 lectures and presentations.{" "}
               <span className="serif-italic text-gold-600">Counting.</span>
             </h2>
-            <p className="text-navy-900/75 text-[17px] leading-[1.7] font-light">
+            <p className="text-navy-900/80 text-[17px] leading-[1.7] font-light">
               National podium presentations at AAOS, AOSSM, and ASSH. Invited lectures at
               national meetings and educational platforms including the Orthopaedic
               Summit, the Philadelphia Hand Meeting, VuMedi, and the IFSSH. Course faculty
@@ -462,7 +462,7 @@ export default function BioPage() {
                 </div>
                 <figcaption className="mt-4 lg:mt-5">
                   <div className="kicker text-gold-600 mb-1.5">{img.kicker}</div>
-                  <div className="text-navy-900/75 text-[15px] leading-snug">{img.caption}</div>
+                  <div className="text-navy-900/80 text-[15px] leading-snug">{img.caption}</div>
                 </figcaption>
               </figure>
             ))}
@@ -501,7 +501,7 @@ export default function BioPage() {
             </div>
 
             <div className="lg:pt-2">
-              <div className="kicker text-navy-900/75 mb-5">Continue</div>
+              <div className="kicker text-navy-900/80 mb-5">Continue</div>
               <div className="grid grid-cols-1 gap-3">
                 {[
                   { label: "Credentials & Awards", href: "/about/credentials" },

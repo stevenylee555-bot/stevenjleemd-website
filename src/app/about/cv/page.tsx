@@ -87,7 +87,7 @@ export default function CVPage() {
               <h2 className="font-serif text-3xl md:text-4xl text-navy-950 tracking-[-0.01em] leading-[1.1] mb-6">
                 Full CV as a PDF.
               </h2>
-              <p className="text-navy-900/75 text-[17px] leading-[1.7] font-light max-w-xl mb-8">
+              <p className="text-navy-900/80 text-[17px] leading-[1.7] font-light max-w-xl mb-8">
                 Includes education, professional and faculty appointments, peer-reviewed
                 publications, national presentations, invited lectures, professional
                 memberships, and the full awards and distinctions list.

@@ -222,7 +222,7 @@ export default function CredentialsPage() {
                     </div>
                     <div className="text-navy-900/80 text-sm mt-0.5">{a.org}</div>
                   </div>
-                  <span className="kicker text-navy-900/75 shrink-0">
+                  <span className="kicker text-navy-900/80 shrink-0">
                     {a.years}
                   </span>
                 </li>
@@ -301,7 +301,7 @@ export default function CredentialsPage() {
           </Section>
 
           <Section kicker="Implant Design" title="Implants & fixation systems.">
-            <p className="text-navy-900/70 text-[15.5px] leading-relaxed mb-6 max-w-2xl">
+            <p className="text-navy-900/80 text-[15.5px] leading-relaxed mb-6 max-w-2xl">
               Dr. Lee has served on the design teams for several orthopedic implants now
               used by surgeons across the country. Selected contributions:
             </p>

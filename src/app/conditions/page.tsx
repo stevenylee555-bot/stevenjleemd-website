@@ -76,7 +76,7 @@ export default function ConditionsIndexPage() {
                                   Coming soon
                                 </span>
                               </div>
-                              <p className="text-navy-900/75 text-[14.5px] leading-relaxed">
+                              <p className="text-navy-900/80 text-[14.5px] leading-relaxed">
                                 {c.blurb}
                               </p>
                             </div>

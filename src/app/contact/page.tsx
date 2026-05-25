@@ -173,7 +173,7 @@ export default function ContactPage() {
                         aria-hidden="true"
                       />
                       <div className="text-[15px] text-navy-900/85">
-                        <span className="kicker text-navy-900/75 mr-2">Fax</span>
+                        <span className="kicker text-navy-900/80 mr-2">Fax</span>
                         {loc.fax}
                       </div>
                     </div>

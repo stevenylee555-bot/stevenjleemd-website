@@ -43,7 +43,7 @@ export default function About() {
               <span className="serif-italic text-gold-600">leading edge</span> of his field.
             </motion.h2>
 
-            <motion.div variants={fadeUp} className="space-y-5 text-navy-900/75 text-[17px] leading-[1.7] font-light max-w-2xl">
+            <motion.div variants={fadeUp} className="space-y-5 text-navy-900/80 text-[17px] leading-[1.7] font-light max-w-2xl">
               <p>
                 Dr. Steven J. Lee is Chief of Hand and Upper Extremity Surgery at Lenox
                 Hill Hospital, one of New York&apos;s premier medical centers. He is
@@ -106,12 +106,12 @@ export default function About() {
                   <span className="font-serif text-navy-950 text-lg leading-snug tracking-[-0.01em]">
                     {a.name}
                   </span>
-                  <span className="kicker text-navy-900/75 shrink-0">{a.role}</span>
+                  <span className="kicker text-navy-900/80 shrink-0">{a.role}</span>
                 </li>
               ))}
             </ul>
 
-            <p className="mt-8 text-navy-900/75 text-sm leading-relaxed">
+            <p className="mt-8 text-navy-900/80 text-sm leading-relaxed">
               NISMAT is the Nicholas Institute of Sports Medicine &amp; Athletic
               Trauma, founded in 1973 as the country&apos;s first hospital-based
               sports medicine center.

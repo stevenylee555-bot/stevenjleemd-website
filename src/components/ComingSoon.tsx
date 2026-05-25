@@ -21,13 +21,13 @@ export default function ComingSoon({ title, description, preview }: ComingSoonPr
           {title}
         </h2>
 
-        <p className="text-navy-900/70 text-lg leading-relaxed font-light max-w-2xl mb-10">
+        <p className="text-navy-900/80 text-lg leading-relaxed font-light max-w-2xl mb-10">
           {description}
         </p>
 
         {preview && preview.length > 0 && (
           <div className="border border-navy-900/10 rounded-sm bg-cream/60 p-6 lg:p-8 mb-10">
-            <div className="kicker text-navy-900/70 mb-4">What this page will include</div>
+            <div className="kicker text-navy-900/80 mb-4">What this page will include</div>
             <ul className="space-y-3">
               {preview.map((item) => (
                 <li

@@ -115,7 +115,7 @@ export default function CarpalTunnelPage() {
           <div className="text-sm text-navy-900/80">
             <span className="kicker text-navy-900/65 mr-3">Written by</span>
             <span className="font-semibold text-navy-950">Steven J. Lee, MD</span>
-            <span className="text-navy-900/75">
+            <span className="text-navy-900/80">
               {" "}
               · Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital
             </span>
@@ -376,7 +376,7 @@ export default function CarpalTunnelPage() {
                   <dl className="space-y-4">
                     {sidebarFacts.map((f) => (
                       <div key={f.label}>
-                        <dt className="text-xs uppercase tracking-wider text-navy-900/70 font-semibold mb-1">
+                        <dt className="text-xs uppercase tracking-wider text-navy-900/80 font-semibold mb-1">
                           {f.label}
                         </dt>
                         <dd className="text-[14.5px] text-navy-900/85 leading-snug">
@@ -499,7 +499,7 @@ export default function CarpalTunnelPage() {
                       className="text-navy-900/80 shrink-0 mt-1.5 transition-transform group-open:rotate-90"
                     />
                   </summary>
-                  <p className="text-navy-900/75 text-[17px] leading-[1.7] pb-8 pr-12 font-light max-w-3xl">
+                  <p className="text-navy-900/80 text-[17px] leading-[1.7] pb-8 pr-12 font-light max-w-3xl">
                     {faq.answer}
                   </p>
                 </details>

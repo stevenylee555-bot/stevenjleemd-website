@@ -41,7 +41,7 @@ export default function TestimonialSpotlight() {
 
           <motion.div
             variants={fadeUp}
-            className="mt-14 text-xs text-navy-900/80 max-w-md mx-auto leading-relaxed"
+            className="mt-14 text-[13px] text-navy-900/80 max-w-md mx-auto leading-relaxed"
           >
             Quoted with permission. Additional patient testimonials, including
             notable public figures, are featured on the testimonials page.
