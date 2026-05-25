@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
 import { fadeUp, inViewProps, stagger } from "@/lib/motion";
+import type { HomeContent } from "@/sanity/getHomePage";
 
 // Recognition list now lives in the Hero only, avoids the awards-listed-twice
 // problem. About leans on training + affiliations for the right column instead.
@@ -20,7 +21,24 @@ const affiliations: { name: string; role: string }[] = [
   { name: "Manhattan Eye, Ear & Throat Hospital", role: "Attending" },
 ];
 
-export default function About() {
+export default function About({ home }: { home?: HomeContent }) {
+  const credentialList =
+    home?.aboutCredentials && home.aboutCredentials.length > 0
+      ? home.aboutCredentials
+      : credentials;
+  const affiliationList =
+    home?.aboutAffiliations && home.aboutAffiliations.length > 0
+      ? home.aboutAffiliations
+      : affiliations;
+  const paragraphs =
+    home?.aboutParagraphs && home.aboutParagraphs.length > 0
+      ? home.aboutParagraphs
+      : [
+          "Dr. Steven J. Lee is Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, one of New York's premier medical centers. He is double fellowship-trained in Hand Surgery and Sports Medicine, and board-certified by the American Board of Orthopaedic Surgery.",
+          "What sets Dr. Lee apart is his direct role advancing the field. He has helped design orthopedic implants now widely used by surgeons around the world, including plating and fixation systems for the hand, wrist, elbow, and feet, and the anchor and internal-brace constructs used in both the upper and lower extremities.",
+          "He has authored 35+ peer-reviewed papers, including what is believed to be the first review paper on the use of peptides in an orthopedic journal. His advanced-treatment practice includes 250+ PRP procedures annually.",
+        ];
+
   return (
     <section className="relative bg-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 py-24 lg:py-32">
@@ -32,41 +50,30 @@ export default function About() {
           <div>
             <motion.div variants={fadeUp} className="flex items-center gap-3 mb-6">
               <span className="h-px w-10 bg-gold-500" />
-              <span className="kicker text-gold-600">About Dr. Lee</span>
+              <span className="kicker text-gold-600">
+                {home?.aboutKicker ?? "About Dr. Lee"}
+              </span>
             </motion.div>
 
             <motion.h2
               variants={fadeUp}
               className="font-serif text-[clamp(2.25rem,4vw,3.5rem)] leading-[1.05] tracking-[-0.02em] text-navy-950 mb-10"
             >
-              A surgeon at the{" "}
-              <span className="serif-italic text-gold-600">leading edge</span> of his field.
+              {home?.aboutHeadlineLead ?? "A surgeon at the"}{" "}
+              <span className="serif-italic text-gold-600">
+                {home?.aboutHeadlineEmphasis ?? "leading edge"}
+              </span>{" "}
+              {home?.aboutHeadlineTail ?? "of his field."}
             </motion.h2>
 
             <motion.div variants={fadeUp} className="space-y-5 text-navy-900/80 text-[17px] leading-[1.7] font-light max-w-2xl">
-              <p>
-                Dr. Steven J. Lee is Chief of Hand and Upper Extremity Surgery at Lenox
-                Hill Hospital, one of New York&apos;s premier medical centers. He is
-                double fellowship-trained in Hand Surgery and Sports Medicine, and
-                board-certified by the American Board of Orthopaedic Surgery.
-              </p>
-              <p>
-                What sets Dr. Lee apart is his direct role advancing the field. He has
-                helped design orthopedic implants now widely used by surgeons around the
-                world, including plating and fixation systems for the hand, wrist, elbow,
-                and feet, and the anchor and internal-brace constructs used in both the
-                upper and lower extremities.
-              </p>
-              <p>
-                He has authored 35+ peer-reviewed papers, including what is believed to
-                be the first review paper on the use of peptides in an orthopedic
-                journal. His advanced-treatment practice includes 250+ PRP procedures
-                annually.
-              </p>
+              {paragraphs.map((p, i) => (
+                <p key={i}>{p}</p>
+              ))}
             </motion.div>
 
             <motion.div variants={fadeUp} className="mt-10 flex flex-wrap gap-2">
-              {credentials.map((c) => (
+              {credentialList.map((c) => (
                 <span
                   key={c}
                   className="text-xs font-medium tracking-wide text-navy-900 bg-cream border border-navy-900/10 px-3 py-1.5 rounded-full"
@@ -99,7 +106,7 @@ export default function About() {
             <div className="kicker text-navy-900/65 mb-6">Hospital Affiliations</div>
 
             <ul className="divide-y divide-navy-900/10">
-              {affiliations.map((a) => (
+              {affiliationList.map((a) => (
                 <li
                   key={a.name}
                   className="py-5 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4"
@@ -113,9 +120,8 @@ export default function About() {
             </ul>
 
             <p className="mt-8 text-navy-900/80 text-sm leading-relaxed">
-              NISMAT is the Nicholas Institute of Sports Medicine &amp; Athletic
-              Trauma, founded in 1973 as the country&apos;s first hospital-based
-              sports medicine center.
+              {home?.aboutNismatNote ??
+                "NISMAT is the Nicholas Institute of Sports Medicine & Athletic Trauma, founded in 1973 as the country's first hospital-based sports medicine center."}
             </p>
           </motion.aside>
         </motion.div>

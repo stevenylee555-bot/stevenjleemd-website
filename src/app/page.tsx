@@ -60,10 +60,10 @@ export default async function HomePage() {
       <Hero home={home} />
       <AnimatedStats home={home} />
       <InnovationFeature home={home} />
-      <Specialties />
-      <SecondOpinion />
+      <Specialties home={home} />
+      <SecondOpinion home={home} />
       <TestimonialsCarousel items={testimonials} />
-      <About />
+      <About home={home} />
       <ConditionsPreview />
       <BookingCTA />
       <FAQSection faqs={homepageFaqs} />

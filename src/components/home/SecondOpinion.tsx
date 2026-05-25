@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "motion/react";
 import { ArrowUpRight, Clock, Globe2, FileSearch, CheckCircle2 } from "lucide-react";
 import { fadeUp, inViewProps, stagger } from "@/lib/motion";
+import type { HomeContent } from "@/sanity/getHomePage";
 
 const pillars = [
   {
@@ -28,7 +29,16 @@ const pillars = [
   },
 ];
 
-export default function SecondOpinion() {
+export default function SecondOpinion({ home }: { home?: HomeContent }) {
+  const pillarList =
+    home?.soPillars && home.soPillars.length > 0
+      ? home.soPillars.map((p, i) => ({
+          Icon: pillars[i]?.Icon ?? Clock,
+          title: p.title ?? "",
+          body: p.body ?? "",
+        }))
+      : pillars;
+
   return (
     <section className="relative bg-navy-900 text-white overflow-hidden">
       {/* Editorial top number */}
@@ -45,33 +55,35 @@ export default function SecondOpinion() {
           <div>
             <motion.div variants={fadeUp} className="flex items-center gap-3 mb-6">
               <span className="h-px w-10 bg-gold-500" />
-              <span className="kicker text-gold-400">Second Opinions</span>
+              <span className="kicker text-gold-400">
+                {home?.soKicker ?? "Second Opinions"}
+              </span>
             </motion.div>
 
             <motion.h2
               variants={fadeUp}
               className="font-serif text-[clamp(2.5rem,5vw,4.25rem)] leading-[1.02] tracking-[-0.02em] mb-8"
             >
-              Been told you need surgery?{" "}
-              <span className="serif-italic text-gold-400">Get a real second look.</span>
+              {home?.soHeadlineLead ?? "Been told you need surgery?"}{" "}
+              <span className="serif-italic text-gold-400">
+                {home?.soHeadlineEmphasis ?? "Get a real second look."}
+              </span>
             </motion.h2>
 
             <motion.p
               variants={fadeUp}
               className="text-white/85 text-lg leading-[1.65] font-light max-w-xl mb-6"
             >
-              A second opinion from a world-class specialist is rarely wasted. Dr. Lee
-              reviews imaging, records, and prior surgical plans for patients who have
-              been told they need orthopedic surgery, and helps them understand whether
-              an operation, a different operation, or no operation is the right call.
+              {home?.soPara1 ??
+                "A second opinion from a world-class specialist is rarely wasted. Dr. Lee reviews imaging, records, and prior surgical plans for patients who have been told they need orthopedic surgery, and helps them understand whether an operation, a different operation, or no operation is the right call."}
             </motion.p>
 
             <motion.p
               variants={fadeUp}
               className="text-white/75 text-base leading-relaxed max-w-xl mb-10"
             >
-              In-person in NYC or Scarsdale. Telemedicine consultations available for
-              out-of-state and international patients.
+              {home?.soPara2 ??
+                "In-person in NYC or Scarsdale. Telemedicine consultations available for out-of-state and international patients."}
             </motion.p>
 
             <motion.div variants={fadeUp}>
@@ -79,7 +91,7 @@ export default function SecondOpinion() {
                 href="/second-opinions"
                 className="group inline-flex items-center gap-2 px-7 py-4 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold rounded-md transition-all text-base shadow-[0_10px_40px_-12px_rgba(201,168,76,0.5)] hover:-translate-y-0.5"
               >
-                Request a Second Opinion
+                {home?.soCtaLabel ?? "Request a Second Opinion"}
                 <ArrowUpRight
                   size={16}
                   className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
@@ -93,7 +105,7 @@ export default function SecondOpinion() {
             variants={stagger(0.15, 0.08)}
             className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-white/10"
           >
-            {pillars.map((p) => (
+            {pillarList.map((p) => (
               <motion.div
                 key={p.title}
                 variants={fadeUp}

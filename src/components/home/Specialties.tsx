@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
 import { fadeUp, inViewProps, stagger } from "@/lib/motion";
+import type { HomeContent } from "@/sanity/getHomePage";
 import {
   HandIcon,
   ElbowIcon,
@@ -66,7 +67,15 @@ const specialties = [
   },
 ];
 
-export default function Specialties() {
+export default function Specialties({ home }: { home?: HomeContent }) {
+  // Icons and links stay fixed in code; Sanity text overlays by position.
+  const cardList = specialties.map((s, i) => ({
+    ...s,
+    title: home?.specCards?.[i]?.title ?? s.title,
+    eyebrow: home?.specCards?.[i]?.eyebrow ?? s.eyebrow,
+    description: home?.specCards?.[i]?.description ?? s.description,
+  }));
+
   return (
     <section className="relative bg-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 py-24 lg:py-32">
@@ -77,18 +86,22 @@ export default function Specialties() {
         >
           <motion.div variants={fadeUp} className="flex items-center gap-3 mb-5">
             <span className="h-px w-10 bg-gold-500" />
-            <span className="kicker text-gold-600">Areas of Expertise</span>
+            <span className="kicker text-gold-600">
+              {home?.specKicker ?? "Areas of Expertise"}
+            </span>
           </motion.div>
           <motion.h2
             variants={fadeUp}
             className="font-serif text-[clamp(2.25rem,4vw,3.5rem)] leading-[1.05] tracking-[-0.02em] text-navy-950 mb-6"
           >
-            Surgery and sports medicine, from{" "}
-            <span className="serif-italic text-gold-600">fingertip to knee to ankle.</span>
+            {home?.specHeadlineLead ?? "Surgery and sports medicine, from"}{" "}
+            <span className="serif-italic text-gold-600">
+              {home?.specHeadlineEmphasis ?? "fingertip to knee to ankle."}
+            </span>
           </motion.h2>
           <motion.p variants={fadeUp} className="text-navy-900/80 text-lg leading-relaxed font-light">
-            Dr. Lee&apos;s practice spans upper extremity surgery, sports medicine, and advanced
-            biologics, with particular depth in the procedures he helped pioneer.
+            {home?.specIntro ??
+              "Dr. Lee's practice spans upper extremity surgery, sports medicine, and advanced biologics, with particular depth in the procedures he helped pioneer."}
           </motion.p>
         </motion.div>
 
@@ -97,7 +110,7 @@ export default function Specialties() {
           variants={stagger(0.1, 0.08)}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-navy-900/10"
         >
-          {specialties.map((s) => (
+          {cardList.map((s) => (
             <motion.div key={s.href} variants={fadeUp}>
               <Link
                 href={s.href}

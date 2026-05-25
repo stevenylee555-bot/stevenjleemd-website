@@ -26,6 +26,26 @@ export const HOME_QUERY = defineQuery(`
     innovationHeadlineEmphasis,
     innovationPara1,
     innovationPara2,
-    capabilities
+    capabilities,
+    aboutKicker,
+    aboutHeadlineLead,
+    aboutHeadlineEmphasis,
+    aboutHeadlineTail,
+    aboutParagraphs,
+    aboutCredentials,
+    aboutAffiliations[]{ name, role },
+    aboutNismatNote,
+    soKicker,
+    soHeadlineLead,
+    soHeadlineEmphasis,
+    soPara1,
+    soPara2,
+    soCtaLabel,
+    soPillars[]{ title, body },
+    specKicker,
+    specHeadlineLead,
+    specHeadlineEmphasis,
+    specIntro,
+    specCards[]{ title, eyebrow, description }
   }
 `);
