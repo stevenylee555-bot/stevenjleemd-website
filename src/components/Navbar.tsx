@@ -76,13 +76,17 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-navy-900 border-b border-white/5">
-      {/* Top bar, hidden on phones to prevent overflow with phone number */}
-      <div className="bg-navy-950 py-2 px-4 text-sm text-white/85 hidden sm:flex justify-between items-center max-w-7xl mx-auto">
-        <span>Lenox Hill Hospital · NYC &amp; Scarsdale</span>
-        <a href="tel:+12127373301" className="flex items-center gap-1 hover:text-gold-400 transition-colors" aria-label="Call office at (212) 737-3301">
-          <Phone size={14} strokeWidth={1.5} aria-hidden="true" />
-          (212) 737-3301
-        </a>
+      {/* Top bar, hidden on phones to prevent overflow with phone number.
+          Full-width navy background; content aligned to the same max-w-7xl
+          container as the main nav below. */}
+      <div className="bg-navy-950 hidden sm:block">
+        <div className="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center text-sm text-white/85">
+          <span>Lenox Hill Hospital · NYC &amp; Scarsdale</span>
+          <a href="tel:+12127373301" className="flex items-center gap-1 hover:text-gold-400 transition-colors" aria-label="Call office at (212) 737-3301">
+            <Phone size={14} strokeWidth={1.5} aria-hidden="true" />
+            (212) 737-3301
+          </a>
+        </div>
       </div>
 
       {/* Main nav */}
