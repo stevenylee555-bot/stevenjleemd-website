@@ -125,7 +125,7 @@ export default function BioPage() {
           <div className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-16 lg:gap-20">
             <article className="max-w-[660px]">
               <div className="space-y-6 text-navy-900/80 text-[17px] leading-[1.75] font-light">
-                <p className="text-navy-900/90 text-[19px] font-normal leading-[1.6]">
+                <p className="text-navy-950 text-[19px] md:text-[20px] font-normal leading-[1.55] tracking-[-0.005em]">
                   Dr. Steven J. Lee is double board certified and double
                   fellowship-trained in Hand &amp; Upper Extremity Surgery and Sports
                   Medicine, and specializes in the most complex disorders of the hand,
@@ -210,7 +210,7 @@ export default function BioPage() {
 
       {/* Training & Education */}
       <section className="bg-cream border-t border-navy-900/[0.06]">
-        <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 lg:py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 lg:py-28">
           <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-12 lg:gap-20">
             <div className="lg:pt-1">
               <SectionKicker label="Training & Education" />
@@ -219,23 +219,31 @@ export default function BioPage() {
               </h2>
             </div>
 
-            <ul className="divide-y divide-navy-900/10 lg:pt-2">
-              {training.map((t) => (
-                <li key={t.institution} className="py-6 first:pt-0">
-                  <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-6">
-                    <span className="font-serif text-navy-950 text-xl lg:text-[1.4rem] leading-snug tracking-[-0.01em]">
+            <ol className="border-t border-navy-900/10 lg:mt-1">
+              {training.map((t, i) => (
+                <li
+                  key={t.institution}
+                  className="grid grid-cols-[auto_1fr] gap-x-5 sm:gap-x-7 py-6 border-b border-navy-900/10"
+                >
+                  <span className="font-serif text-[1.05rem] text-gold-600/85 leading-none pt-[5px] tabular-nums">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <div>
+                    <div className="font-serif text-navy-950 text-xl lg:text-[1.35rem] leading-snug tracking-[-0.01em]">
                       {t.institution}
-                    </span>
-                    <span className="kicker text-gold-600 shrink-0">{t.detail}</span>
+                    </div>
+                    <div className="text-navy-900/65 text-[15px] leading-relaxed mt-1.5">
+                      {t.detail}
+                    </div>
+                    {t.note && (
+                      <p className="text-navy-900/55 text-[13.5px] italic leading-relaxed mt-2 max-w-md">
+                        {t.note}
+                      </p>
+                    )}
                   </div>
-                  {t.note && (
-                    <p className="mt-2 text-navy-900/60 text-[14.5px] leading-relaxed max-w-xl">
-                      {t.note}
-                    </p>
-                  )}
                 </li>
               ))}
-            </ul>
+            </ol>
           </div>
         </div>
       </section>
@@ -250,7 +258,7 @@ export default function BioPage() {
         <div className="relative mx-auto max-w-7xl px-6 lg:px-10 py-20 lg:py-28">
           <div className="max-w-3xl">
             <SectionKicker label="Athletes & Sports Medicine" light />
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl tracking-[-0.02em] leading-[1.08] mb-7">
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-[2.75rem] tracking-[-0.02em] leading-[1.1] mb-7">
               Trained at the center of{" "}
               <span className="serif-italic text-gold-400">New York sports medicine.</span>
             </h2>
@@ -423,10 +431,10 @@ export default function BioPage() {
 
       {/* Teaching & Speaking gallery */}
       <section className="bg-white border-t border-navy-900/[0.06]">
-        <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 lg:py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 lg:py-28">
           <div className="max-w-3xl mb-12 lg:mb-16">
             <SectionKicker label="Teaching & Speaking" />
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-navy-950 tracking-[-0.02em] leading-[1.08] mb-6">
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-[2.75rem] text-navy-950 tracking-[-0.02em] leading-[1.1] mb-6">
               84 lectures and presentations.{" "}
               <span className="serif-italic text-gold-600">Counting.</span>
             </h2>
@@ -464,11 +472,11 @@ export default function BioPage() {
 
       {/* Practice today + closing links */}
       <section className="bg-cream border-t border-navy-900/[0.06]">
-        <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 lg:py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 lg:py-28">
           <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-12 lg:gap-20 items-start">
             <div className="max-w-[620px]">
               <SectionKicker label="Practice Today" />
-              <h2 className="font-serif text-3xl md:text-4xl text-navy-950 tracking-[-0.02em] leading-[1.1] mb-6">
+              <h2 className="font-serif text-3xl md:text-4xl lg:text-[2.75rem] text-navy-950 tracking-[-0.02em] leading-[1.1] mb-6">
                 Two New York offices, in person and online.
               </h2>
               <p className="text-navy-900/80 text-[17px] leading-[1.75] font-light">
