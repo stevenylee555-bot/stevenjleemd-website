@@ -164,8 +164,10 @@ export default function TestimonialsCarousel() {
   const next = useCallback(() => goTo(index + 1, 1), [goTo, index]);
   const prev = useCallback(() => goTo(index - 1, -1), [goTo, index]);
 
-  const autoActive =
-    !paused && !hovering && !focusWithin && !reduce && count > 1;
+  // Always auto-advances; pauses on hover, focus, or the pause button. Under
+  // prefers-reduced-motion it still rotates but the slide animation collapses
+  // to a quick fade (handled in `variants`/transition below).
+  const autoActive = !paused && !hovering && !focusWithin && count > 1;
 
   // Advance after a full interval following each settle. Keying the timeout on
   // `index` restarts the clock after manual navigation too, so a tap never
@@ -272,20 +274,18 @@ export default function TestimonialsCarousel() {
             </div>
 
             <div className="flex items-center gap-2">
-              {!reduce && (
-                <button
-                  type="button"
-                  onClick={() => setPaused((p) => !p)}
-                  aria-label={paused ? "Play testimonials" : "Pause testimonials"}
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-navy-900/15 text-navy-900 hover:border-gold-500 hover:text-gold-600 transition-colors"
-                >
-                  {paused ? (
-                    <Play size={16} strokeWidth={1.75} aria-hidden="true" />
-                  ) : (
-                    <Pause size={16} strokeWidth={1.75} aria-hidden="true" />
-                  )}
-                </button>
-              )}
+              <button
+                type="button"
+                onClick={() => setPaused((p) => !p)}
+                aria-label={paused ? "Play testimonials" : "Pause testimonials"}
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-navy-900/15 text-navy-900 hover:border-gold-500 hover:text-gold-600 transition-colors"
+              >
+                {paused ? (
+                  <Play size={16} strokeWidth={1.75} aria-hidden="true" />
+                ) : (
+                  <Pause size={16} strokeWidth={1.75} aria-hidden="true" />
+                )}
+              </button>
               <button
                 type="button"
                 onClick={prev}
