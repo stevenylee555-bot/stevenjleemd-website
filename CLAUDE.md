@@ -226,11 +226,26 @@ public/
 
 ---
 
+## Planned: self-serve CMS (Sanity)
+
+**Goal (decided 2026-05-25):** let Dr. Lee edit and add content himself, replacing the current loop (Dr. Lee notes edits in a shared Google Doc, Steve relays them to Claude, Claude deploys).
+
+**Approach (load-bearing for whoever builds it):**
+- **Sanity CMS**, added to the existing Next.js app. Additive only: the site stays on Vercel, this is not a migration. Free tier is sufficient.
+- **Visual / click-on-the-page editing** via Sanity's Presentation tool. This matters more than the CMS brand itself, because Dr. Lee edits by looking at the live page, not by learning an abstract admin.
+- **Draft, review, publish flow:** Dr. Lee's edits save as drafts, Steve reviews and publishes. Protects the claim-wording, no-medical-advice, and SEO/schema guardrails.
+- **Build order:** testimonials section first as a proof-of-concept (cheap adoption test), then expand section by section. Import old-site content so he curates rather than retypes.
+- **Keep in code (NOT CMS-editable):** JSON-LD schema (`src/lib/schema.ts`), layout/components, and the careful-claim rules. Only the words and images move to Sanity.
+- TinaCMS (inline editing) is the fallback if Sanity's UX does not land for him.
+- **When implementing:** this Next.js version is non-standard, consult `node_modules/next/dist/docs/` before using any App Router APIs (draft mode, route handlers, the Studio catch-all route, live/visual-editing wiring).
+
+---
+
 ## Out of scope (separate sessions)
 
 - Marketing automation, email campaigns, off-site SEO/GEO growth
 - AI visitor chatbot (Claude API integration — deferred)
-- Sanity CMS integration (deferred)
+- Sanity CMS integration: now scoped (see "Planned: self-serve CMS" above), not yet built
 - Recovery Shop `/shop` affiliate integration (Phase 2)
 - GA4 wiring (blocked on ID)
 - DNS cutover itself (needs explicit Dr. Lee approval)
