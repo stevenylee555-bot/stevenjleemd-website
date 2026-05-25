@@ -90,7 +90,7 @@ const teaching = [
     detail: "Voted by Lenox Hill residents, twice (2021, 2022)",
   },
   {
-    title: "Maurice Cohen, MD Memorial Award for Excellence in Medical Education",
+    title: "Maurice Cowen, MD Memorial Award for Excellence in Medical Education",
     detail: "Teacher of the Year, twice (2003, 2009)",
   },
 ];

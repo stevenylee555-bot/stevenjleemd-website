@@ -406,7 +406,7 @@ export default function BioPage() {
                 residents, who have voted him the Chitranjan S. Ranawat Mentorship Award
                 seven times (2010, 2014, 2015, 2017, 2018, 2019, 2023), the James A.
                 Nicholas Award for Distinction in Orthopaedic Residency Education twice
-                (2021, 2022), and the Maurice Cohen Award for Excellence in Medical
+                (2021, 2022), and the Maurice Cowen Award for Excellence in Medical
                 Education twice (2003, 2009), eleven teaching honors in all. At Lenox Hill
                 he sits on the orthopedic residency and sports medicine fellowship
                 admissions committees, the Program Evaluation Committee, and the Hospital
