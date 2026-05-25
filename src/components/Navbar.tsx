@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -38,6 +38,29 @@ const navLinks = [
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const openDropdown = (href: string) => {
+    if (closeTimer.current) {
+      clearTimeout(closeTimer.current);
+      closeTimer.current = null;
+    }
+    setActiveDropdown(href);
+  };
+
+  // Delay the close so the pointer can travel from the trigger into the menu
+  // without the dropdown vanishing mid-move. Re-entering cancels the timer.
+  const scheduleClose = () => {
+    if (closeTimer.current) clearTimeout(closeTimer.current);
+    closeTimer.current = setTimeout(() => setActiveDropdown(null), 150);
+  };
+
+  useEffect(
+    () => () => {
+      if (closeTimer.current) clearTimeout(closeTimer.current);
+    },
+    []
+  );
 
   // Scroll-lock body when mobile menu is open
   useEffect(() => {
@@ -81,12 +104,12 @@ export default function Navbar() {
             <div
               key={link.href}
               className="relative"
-              onMouseEnter={() => link.children && setActiveDropdown(link.href)}
-              onMouseLeave={() => setActiveDropdown(null)}
-              onFocus={() => link.children && setActiveDropdown(link.href)}
+              onMouseEnter={() => link.children && openDropdown(link.href)}
+              onMouseLeave={() => link.children && scheduleClose()}
+              onFocus={() => link.children && openDropdown(link.href)}
               onBlur={(e) => {
                 if (!e.currentTarget.contains(e.relatedTarget as Node | null)) {
-                  setActiveDropdown(null);
+                  scheduleClose();
                 }
               }}
             >
@@ -104,16 +127,22 @@ export default function Navbar() {
               </Link>
 
               {link.children && activeDropdown === link.href && (
-                <div className="absolute top-full left-0 mt-1 w-52 bg-navy-900 rounded-sm shadow-2xl border border-white/10 py-1 z-50">
-                  {link.children.map((child) => (
-                    <Link
-                      key={child.href}
-                      href={child.href}
-                      className="block px-4 py-2 text-sm text-white/80 hover:bg-white/10 hover:text-white transition-colors"
-                    >
-                      {child.label}
-                    </Link>
-                  ))}
+                // Wrapper sits flush against the trigger (top-full, no gap) and
+                // carries the visual offset as pt-2. That transparent strip is a
+                // hover bridge, the pointer stays inside the menu while moving
+                // from the header into the submenu, so it never closes early.
+                <div className="absolute top-full left-0 w-52 pt-2 z-50">
+                  <div className="bg-navy-900 rounded-sm shadow-2xl border border-white/10 py-1">
+                    {link.children.map((child) => (
+                      <Link
+                        key={child.href}
+                        href={child.href}
+                        className="block px-4 py-2 text-sm text-white/80 hover:bg-white/10 hover:text-white transition-colors"
+                      >
+                        {child.label}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
