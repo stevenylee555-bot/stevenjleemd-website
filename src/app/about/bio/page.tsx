@@ -164,7 +164,7 @@ export default function BioPage() {
                   </div>
                 </div>
 
-                <div className="kicker text-navy-900/55 mb-4">Credentials</div>
+                <div className="kicker text-navy-900/75 mb-4">Credentials</div>
                 <ul className="space-y-3 mb-10">
                   {credentials.map((c) => (
                     <li key={c} className="flex items-baseline gap-3 text-[14.5px] text-navy-900/85">
@@ -174,15 +174,15 @@ export default function BioPage() {
                   ))}
                 </ul>
 
-                <div className="kicker text-navy-900/55 mb-3">Hospital Affiliations</div>
+                <div className="kicker text-navy-900/75 mb-3">Hospital Affiliations</div>
                 <ul className="space-y-3 mb-10 text-[14.5px] text-navy-900/85">
                   <li>
                     <span className="font-semibold text-navy-950">Lenox Hill Hospital</span>
-                    <div className="text-navy-900/60 text-xs mt-0.5">Chief of Hand and Upper Extremity Surgery</div>
+                    <div className="text-navy-900/80 text-xs mt-0.5">Chief of Hand and Upper Extremity Surgery</div>
                   </li>
                   <li>
                     <span className="font-semibold text-navy-950">NISMAT</span>
-                    <div className="text-navy-900/60 text-xs mt-0.5">Associate Director (Sports Medicine &amp; Athletic Trauma)</div>
+                    <div className="text-navy-900/80 text-xs mt-0.5">Associate Director (Sports Medicine &amp; Athletic Trauma)</div>
                   </li>
                   <li>
                     <span className="font-semibold text-navy-950">
@@ -232,11 +232,11 @@ export default function BioPage() {
                     <div className="font-serif text-navy-950 text-xl lg:text-[1.35rem] leading-snug tracking-[-0.01em]">
                       {t.institution}
                     </div>
-                    <div className="text-navy-900/65 text-[15px] leading-relaxed mt-1.5">
+                    <div className="text-navy-900/80 text-[15px] leading-relaxed mt-1.5">
                       {t.detail}
                     </div>
                     {t.note && (
-                      <p className="text-navy-900/55 text-[13.5px] italic leading-relaxed mt-2 max-w-md">
+                      <p className="text-navy-900/75 text-[13.5px] italic leading-relaxed mt-2 max-w-md">
                         {t.note}
                       </p>
                     )}
@@ -282,7 +282,7 @@ export default function BioPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
             <div>
-              <div className="kicker text-white/55 mb-5">Team Physician & Training Roles</div>
+              <div className="kicker text-white/80 mb-5">Team Physician & Training Roles</div>
               <ul className="space-y-4">
                 {athleteRoles.map((r) => (
                   <li key={r} className="flex items-baseline gap-3 text-white/85 text-[15.5px] leading-relaxed">
@@ -294,7 +294,7 @@ export default function BioPage() {
             </div>
 
             <div>
-              <div className="kicker text-white/55 mb-5">Professional Athletes Treated</div>
+              <div className="kicker text-white/80 mb-5">Professional Athletes Treated</div>
               <div className="flex flex-wrap gap-2.5">
                 {sportsTreated.map((s) => (
                   <span
@@ -305,7 +305,7 @@ export default function BioPage() {
                   </span>
                 ))}
               </div>
-              <p className="mt-6 text-white/60 text-[14.5px] leading-relaxed">
+              <p className="mt-6 text-white/85 text-[14.5px] leading-relaxed">
                 Especially attuned to collegiate and recruiting athletes: all three of
                 Dr. Lee&apos;s children are Division I athletes.
               </p>
@@ -501,7 +501,7 @@ export default function BioPage() {
             </div>
 
             <div className="lg:pt-2">
-              <div className="kicker text-navy-900/55 mb-5">Continue</div>
+              <div className="kicker text-navy-900/75 mb-5">Continue</div>
               <div className="grid grid-cols-1 gap-3">
                 {[
                   { label: "Credentials & Awards", href: "/about/credentials" },
@@ -518,7 +518,7 @@ export default function BioPage() {
                     </span>
                     <ArrowUpRight
                       size={14}
-                      className="text-navy-900/40 group-hover:text-gold-600 transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                      className="text-navy-900/65 group-hover:text-gold-600 transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                     />
                   </Link>
                 ))}

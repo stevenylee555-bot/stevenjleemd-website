@@ -86,7 +86,7 @@ export default function Specialties() {
             Surgery and sports medicine, from{" "}
             <span className="serif-italic text-gold-600">fingertip to knee.</span>
           </motion.h2>
-          <motion.p variants={fadeUp} className="text-navy-900/65 text-lg leading-relaxed font-light">
+          <motion.p variants={fadeUp} className="text-navy-900/80 text-lg leading-relaxed font-light">
             Dr. Lee&apos;s practice spans upper extremity surgery, sports medicine, and advanced
             biologics, with particular depth in the procedures he helped pioneer.
           </motion.p>
@@ -112,7 +112,7 @@ export default function Specialties() {
                 <h3 className="font-serif text-2xl lg:text-3xl text-navy-950 tracking-[-0.01em] mb-4">
                   {s.title}
                 </h3>
-                <p className="text-navy-900/65 text-[15px] leading-relaxed mb-8 flex-1 max-w-[34ch]">
+                <p className="text-navy-900/80 text-[15px] leading-relaxed mb-8 flex-1 max-w-[34ch]">
                   {s.description}
                 </p>
 

@@ -59,7 +59,7 @@ export default function ConditionsPreview() {
               Read what your surgeon would tell you in the office,{" "}
               <span className="serif-italic text-gold-600">in your own time.</span>
             </motion.h2>
-            <motion.p variants={fadeUp} className="text-navy-900/65 text-lg font-light leading-relaxed">
+            <motion.p variants={fadeUp} className="text-navy-900/80 text-lg font-light leading-relaxed">
               Comprehensive, physician-authored pages on every condition Dr. Lee treats,
               from diagnosis through surgery and recovery protocols. Patients are
               encouraged to revisit the relevant page after their visit.
@@ -93,7 +93,7 @@ export default function ConditionsPreview() {
                 <span className="font-serif text-2xl text-navy-950 tracking-[-0.01em]">
                   {g.region}
                 </span>
-                <span className="kicker text-navy-900/40">
+                <span className="kicker text-navy-900/65">
                   {g.conditions.length.toString().padStart(2, "0")}
                 </span>
               </div>

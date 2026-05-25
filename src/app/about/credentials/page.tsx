@@ -220,9 +220,9 @@ export default function CredentialsPage() {
                     <div className="font-serif text-lg text-navy-950 tracking-[-0.01em] leading-snug">
                       {a.role}
                     </div>
-                    <div className="text-navy-900/65 text-sm mt-0.5">{a.org}</div>
+                    <div className="text-navy-900/80 text-sm mt-0.5">{a.org}</div>
                   </div>
-                  <span className="kicker text-navy-900/55 shrink-0">
+                  <span className="kicker text-navy-900/75 shrink-0">
                     {a.years}
                   </span>
                 </li>
@@ -262,7 +262,7 @@ export default function CredentialsPage() {
                   <div className="font-serif text-lg text-navy-950 tracking-[-0.01em] leading-snug mb-1">
                     {r.title}
                   </div>
-                  <div className="text-navy-900/65 text-sm leading-relaxed">
+                  <div className="text-navy-900/80 text-sm leading-relaxed">
                     {r.detail}
                   </div>
                 </li>
@@ -277,7 +277,7 @@ export default function CredentialsPage() {
                   <div className="font-serif text-lg text-navy-950 tracking-[-0.01em] leading-snug mb-1">
                     {r.title}
                   </div>
-                  <div className="text-navy-900/65 text-sm leading-relaxed">
+                  <div className="text-navy-900/80 text-sm leading-relaxed">
                     {r.detail}
                   </div>
                 </li>
@@ -292,7 +292,7 @@ export default function CredentialsPage() {
                   <div className="font-serif text-lg text-navy-950 tracking-[-0.01em] leading-snug mb-1">
                     {r.title}
                   </div>
-                  <div className="text-navy-900/65 text-sm leading-relaxed">
+                  <div className="text-navy-900/80 text-sm leading-relaxed">
                     {r.detail}
                   </div>
                 </li>
@@ -311,7 +311,7 @@ export default function CredentialsPage() {
                   <div className="font-serif text-lg text-navy-950 tracking-[-0.01em] leading-snug mb-1">
                     {d.title}
                   </div>
-                  <div className="text-navy-900/65 text-sm leading-relaxed">
+                  <div className="text-navy-900/80 text-sm leading-relaxed">
                     {d.detail}
                   </div>
                 </li>
@@ -326,7 +326,7 @@ export default function CredentialsPage() {
                   <div className="font-serif text-lg text-navy-950 tracking-[-0.01em] leading-snug mb-1">
                     {p.title}
                   </div>
-                  <div className="text-navy-900/65 text-sm leading-relaxed">
+                  <div className="text-navy-900/80 text-sm leading-relaxed">
                     {p.detail}
                   </div>
                 </li>
@@ -341,7 +341,7 @@ export default function CredentialsPage() {
                   <div className="font-serif text-lg text-navy-950 tracking-[-0.01em] leading-snug mb-1">
                     {t.title}
                   </div>
-                  <div className="text-navy-900/65 text-sm leading-relaxed">
+                  <div className="text-navy-900/80 text-sm leading-relaxed">
                     {t.detail}
                   </div>
                 </li>
@@ -381,7 +381,7 @@ export default function CredentialsPage() {
                 The complete CV is available{" "}
                 <span className="serif-italic text-gold-400">as a PDF.</span>
               </h2>
-              <p className="text-white/65 text-[16px] leading-[1.7] font-light max-w-xl">
+              <p className="text-white/85 text-[16px] leading-[1.7] font-light max-w-xl">
                 The full document includes 35+ peer-reviewed publications, 34 national
                 presentations, 50 invited lectures, and the complete 85+ award list.
               </p>

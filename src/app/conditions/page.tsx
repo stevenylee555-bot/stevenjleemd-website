@@ -38,7 +38,7 @@ export default function ConditionsIndexPage() {
                     <h2 className="font-serif text-2xl md:text-3xl tracking-[-0.01em] text-navy-950">
                       {region}
                     </h2>
-                    <span className="kicker text-navy-900/40 shrink-0">
+                    <span className="kicker text-navy-900/65 shrink-0">
                       {list.length.toString().padStart(2, "0")} conditions
                     </span>
                   </div>
@@ -62,7 +62,7 @@ export default function ConditionsIndexPage() {
                                   className="text-navy-900/30 group-hover:text-gold-600 shrink-0 transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 mt-1.5"
                                 />
                               </div>
-                              <p className="text-navy-900/60 text-[14.5px] leading-relaxed">
+                              <p className="text-navy-900/80 text-[14.5px] leading-relaxed">
                                 {c.blurb}
                               </p>
                             </Link>
@@ -76,7 +76,7 @@ export default function ConditionsIndexPage() {
                                   Coming soon
                                 </span>
                               </div>
-                              <p className="text-navy-900/55 text-[14.5px] leading-relaxed">
+                              <p className="text-navy-900/75 text-[14.5px] leading-relaxed">
                                 {c.blurb}
                               </p>
                             </div>
@@ -105,7 +105,7 @@ export default function ConditionsIndexPage() {
                 These pages aren&apos;t a substitute for a visit,{" "}
                 <span className="serif-italic text-gold-400">they&apos;re a complement to one.</span>
               </h2>
-              <p className="text-white/65 text-[16px] leading-[1.75] font-light">
+              <p className="text-white/85 text-[16px] leading-[1.75] font-light">
                 Patients leave the office with a lot of information and remember a fraction of it.
                 These pages are written so you can come back to them as you make decisions about
                 your care, and so you can share them with family or referring physicians.

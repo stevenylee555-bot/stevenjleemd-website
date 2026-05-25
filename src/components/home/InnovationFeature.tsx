@@ -52,7 +52,7 @@ export default function InnovationFeature() {
 
             <motion.p
               variants={fadeUp}
-              className="text-white/70 text-sm leading-relaxed mb-10 max-w-xl"
+              className="text-white/85 text-sm leading-relaxed mb-10 max-w-xl"
             >
               That engineering perspective informs how he approaches every repair: the
               right construct, sized and placed for the individual patient.

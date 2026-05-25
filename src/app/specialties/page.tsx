@@ -88,7 +88,7 @@ export default function SpecialtiesIndexPage() {
                   <h2 className="font-serif text-2xl lg:text-3xl text-navy-950 tracking-[-0.01em] leading-snug mb-4">
                     {s.name}
                   </h2>
-                  <p className="text-navy-900/65 text-[15.5px] leading-relaxed mb-8 flex-1 max-w-[42ch]">
+                  <p className="text-navy-900/80 text-[15.5px] leading-relaxed mb-8 flex-1 max-w-[42ch]">
                     {s.lede}
                   </p>
                   <div className="flex items-center gap-2 text-sm font-medium text-navy-900 group-hover:text-gold-600 transition-colors">
@@ -119,7 +119,7 @@ export default function SpecialtiesIndexPage() {
                 Send your imaging and we&apos;ll point you{" "}
                 <span className="serif-italic text-gold-400">to the right place.</span>
               </h2>
-              <p className="text-white/65 text-[16px] leading-[1.75] font-light">
+              <p className="text-white/85 text-[16px] leading-[1.75] font-light">
                 Patients often come in unsure whether their problem is hand, elbow,
                 shoulder, or systemic. Dr. Lee&apos;s second-opinion process is
                 designed for exactly that.

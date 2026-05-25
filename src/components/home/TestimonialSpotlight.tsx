@@ -32,7 +32,7 @@ export default function TestimonialSpotlight() {
             <div className="h-px w-12 bg-gold-500" aria-hidden="true" />
             <cite className="text-left not-italic">
               <div className="font-semibold text-navy-950 text-sm">M.K.</div>
-              <div className="text-navy-900/60 text-xs uppercase tracking-wider">
+              <div className="text-navy-900/80 text-xs uppercase tracking-wider">
                 Professional athlete · Second opinion patient
               </div>
             </cite>
@@ -41,7 +41,7 @@ export default function TestimonialSpotlight() {
 
           <motion.div
             variants={fadeUp}
-            className="mt-14 text-xs text-navy-900/60 max-w-md mx-auto leading-relaxed"
+            className="mt-14 text-xs text-navy-900/80 max-w-md mx-auto leading-relaxed"
           >
             Quoted with permission. Additional patient testimonials, including
             notable public figures, are featured on the testimonials page.

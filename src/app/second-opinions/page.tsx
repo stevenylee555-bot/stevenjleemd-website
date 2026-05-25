@@ -150,7 +150,7 @@ export default function SecondOpinionsPage() {
                   <div className="font-serif text-lg text-navy-950 tracking-[-0.01em] mb-2">
                     {p.title}
                   </div>
-                  <p className="text-navy-900/65 text-[14px] leading-relaxed">{p.body}</p>
+                  <p className="text-navy-900/80 text-[14px] leading-relaxed">{p.body}</p>
                 </div>
               ))}
             </div>
@@ -244,7 +244,7 @@ export default function SecondOpinionsPage() {
           <h2 className="font-serif text-[clamp(2.25rem,4vw,3.5rem)] tracking-[-0.02em] leading-[1.05] mb-8">
             Request a second opinion.
           </h2>
-          <p className="text-white/60 text-lg leading-relaxed max-w-2xl mx-auto mb-12 font-light">
+          <p className="text-white/85 text-lg leading-relaxed max-w-2xl mx-auto mb-12 font-light">
             Most patients schedule online via ZocDoc. The office can also help arrange telemedicine
             visits and coordinate imaging transfer.
           </p>
@@ -294,7 +294,7 @@ export default function SecondOpinionsPage() {
                     <ChevronRight
                       size={20}
                       strokeWidth={1.5}
-                      className="text-navy-900/60 shrink-0 mt-1.5 transition-transform group-open:rotate-90"
+                      className="text-navy-900/80 shrink-0 mt-1.5 transition-transform group-open:rotate-90"
                     />
                   </summary>
                   <p className="text-navy-900/70 text-[17px] leading-[1.7] pb-8 pr-12 font-light max-w-3xl">

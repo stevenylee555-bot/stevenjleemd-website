@@ -61,7 +61,7 @@ export default function FAQSection({ faqs }: { faqs: Faq[] }) {
                     aria-hidden="true"
                     className={
                       "shrink-0 mt-1.5 transition-all duration-500 " +
-                      (isOpen ? "rotate-45 text-gold-600" : "text-navy-900/60")
+                      (isOpen ? "rotate-45 text-gold-600" : "text-navy-900/80")
                     }
                   >
                     <Plus size={22} strokeWidth={1.5} />

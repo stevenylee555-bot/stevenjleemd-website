@@ -126,7 +126,7 @@ export default function CVPage() {
                   <div className="font-serif text-2xl lg:text-3xl text-navy-950 tracking-[-0.01em] leading-none mb-1.5">
                     {s.value}
                   </div>
-                  <div className="text-navy-900/65 text-xs leading-snug">
+                  <div className="text-navy-900/80 text-xs leading-snug">
                     {s.label}
                   </div>
                 </div>
@@ -165,7 +165,7 @@ export default function CVPage() {
                     <div className="font-serif text-lg sm:text-xl text-navy-950 tracking-[-0.01em] leading-snug mb-1">
                       {t.title}
                     </div>
-                    <div className="text-navy-900/65 text-sm leading-relaxed">
+                    <div className="text-navy-900/80 text-sm leading-relaxed">
                       {t.detail}
                     </div>
                   </div>
@@ -227,7 +227,7 @@ export default function CVPage() {
                 <div className="font-serif text-xl text-navy-950 tracking-[-0.01em] mb-3 group-hover:text-gold-600 transition-colors">
                   {l.title}
                 </div>
-                <p className="text-navy-900/65 text-sm leading-relaxed mb-6">
+                <p className="text-navy-900/80 text-sm leading-relaxed mb-6">
                   {l.body}
                 </p>
                 <div className="inline-flex items-center gap-2 text-sm font-medium text-navy-900 group-hover:text-gold-600 transition-colors">

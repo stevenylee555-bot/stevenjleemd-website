@@ -81,7 +81,7 @@ export default function Hero() {
 
             <motion.p
               variants={heroReveal}
-              className="text-white/70 text-lg md:text-xl leading-[1.55] max-w-xl mb-12 font-light"
+              className="text-white/85 text-lg md:text-xl leading-[1.55] max-w-xl mb-12 font-light"
             >
               As Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital,
               Dr. Lee combines elite clinical expertise with pioneering advancements
@@ -93,7 +93,7 @@ export default function Hero() {
             <motion.div variants={heroReveal} className="mb-12 max-w-xl">
               <div className="flex items-center gap-3 mb-6">
                 <span className="h-px w-8 bg-gold-500/70" aria-hidden="true" />
-                <span className="kicker text-white/55">Recognition</span>
+                <span className="kicker text-white/80">Recognition</span>
               </div>
               <motion.ul
                 variants={stagger(0.08, 0.06)}
@@ -149,22 +149,22 @@ export default function Hero() {
 
             <motion.div
               variants={heroReveal}
-              className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:gap-y-2 text-sm text-white/70 sm:divide-x sm:divide-white/15"
+              className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:gap-y-2 text-sm text-white/85 sm:divide-x sm:divide-white/15"
             >
               <a
                 href="tel:+12127373301"
                 aria-label="Call office at (212) 737-3301"
                 className="inline-flex items-center gap-2 sm:pr-5 hover:text-gold-400 transition-colors"
               >
-                <Phone size={14} strokeWidth={1.5} className="text-white/55" aria-hidden="true" />
+                <Phone size={14} strokeWidth={1.5} className="text-white/80" aria-hidden="true" />
                 (212) 737-3301
               </a>
               <span className="inline-flex items-center gap-2 sm:px-5">
-                <MapPin size={14} strokeWidth={1.5} className="text-white/55" aria-hidden="true" />
+                <MapPin size={14} strokeWidth={1.5} className="text-white/80" aria-hidden="true" />
                 NYC · Scarsdale
               </span>
               <span className="inline-flex items-center gap-2 sm:pl-5">
-                <Video size={14} strokeWidth={1.5} className="text-white/55" aria-hidden="true" />
+                <Video size={14} strokeWidth={1.5} className="text-white/80" aria-hidden="true" />
                 Telemedicine available
               </span>
             </motion.div>

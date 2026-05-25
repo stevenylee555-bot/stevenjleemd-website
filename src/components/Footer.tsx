@@ -36,12 +36,12 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <h3 className="text-xl font-bold mb-1">Steven J. Lee, MD</h3>
             <p className="text-gold-400 text-sm mb-4">Board-Certified Orthopedic Surgeon</p>
-            <p className="text-white/60 text-sm leading-relaxed mb-6">
+            <p className="text-white/85 text-sm leading-relaxed mb-6">
               Double fellowship-trained specialist in hand, upper extremity, and sports medicine surgery.
               Chief of Hand &amp; Upper Extremity Surgery at Lenox Hill Hospital. Serving patients in NYC and Scarsdale.
             </p>
 
-            <div className="space-y-3 text-sm text-white/70">
+            <div className="space-y-3 text-sm text-white/85">
               <div className="flex items-start gap-2">
                 <MapPin size={15} className="text-gold-400 mt-0.5 shrink-0" aria-hidden="true" />
                 <div>
@@ -83,7 +83,7 @@ export default function Footer() {
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1 text-sm text-white/60 hover:text-white transition-colors"
+                        className="flex items-center gap-1 text-sm text-white/85 hover:text-white transition-colors"
                       >
                         {link.label}
                         <ExternalLink size={11} className="opacity-50" />
@@ -91,7 +91,7 @@ export default function Footer() {
                     ) : (
                       <Link
                         href={link.href}
-                        className="text-sm text-white/60 hover:text-white transition-colors"
+                        className="text-sm text-white/85 hover:text-white transition-colors"
                       >
                         {link.label}
                       </Link>
@@ -103,7 +103,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/60">
+        <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/85">
           <p>© {new Date().getFullYear()} Steven J. Lee, MD. All rights reserved.</p>
           <p className="text-center">
             The information on this website is for general educational purposes only and does not constitute medical advice.

@@ -95,7 +95,7 @@ export default function About() {
               so this column carries the institutional credentials only, with
               the same editorial treatment for visual rhyme. */}
           <motion.aside variants={fadeUp} className="lg:pt-4">
-            <div className="kicker text-navy-900/40 mb-6">Hospital Affiliations</div>
+            <div className="kicker text-navy-900/65 mb-6">Hospital Affiliations</div>
 
             <ul className="divide-y divide-navy-900/10">
               {affiliations.map((a) => (
@@ -106,12 +106,12 @@ export default function About() {
                   <span className="font-serif text-navy-950 text-lg leading-snug tracking-[-0.01em]">
                     {a.name}
                   </span>
-                  <span className="kicker text-navy-900/55 shrink-0">{a.role}</span>
+                  <span className="kicker text-navy-900/75 shrink-0">{a.role}</span>
                 </li>
               ))}
             </ul>
 
-            <p className="mt-8 text-navy-900/55 text-sm leading-relaxed">
+            <p className="mt-8 text-navy-900/75 text-sm leading-relaxed">
               NISMAT is the Nicholas Institute of Sports Medicine &amp; Athletic
               Trauma, founded in 1973 as the country&apos;s first hospital-based
               sports medicine center.

@@ -112,15 +112,15 @@ export default function CarpalTunnelPage() {
       {/* Author byline */}
       <section className="bg-white border-b border-navy-900/[0.06]">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-          <div className="text-sm text-navy-900/65">
-            <span className="kicker text-navy-900/40 mr-3">Written by</span>
+          <div className="text-sm text-navy-900/80">
+            <span className="kicker text-navy-900/65 mr-3">Written by</span>
             <span className="font-semibold text-navy-950">Steven J. Lee, MD</span>
-            <span className="text-navy-900/55">
+            <span className="text-navy-900/75">
               {" "}
               · Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital
             </span>
           </div>
-          <div className="text-xs text-navy-900/60 uppercase tracking-wider">
+          <div className="text-xs text-navy-900/80 uppercase tracking-wider">
             Last reviewed · May 2026
           </div>
         </div>
@@ -335,7 +335,7 @@ export default function CarpalTunnelPage() {
                   </li>
                 </ul>
 
-                <p className="!mt-12 text-navy-900/65 text-sm italic">
+                <p className="!mt-12 text-navy-900/80 text-sm italic">
                   This page is general educational content authored by Dr. Lee. It is not a
                   substitute for individual medical advice. Every patient&apos;s case is different
                  , book a consultation to discuss yours.
@@ -376,7 +376,7 @@ export default function CarpalTunnelPage() {
                   <dl className="space-y-4">
                     {sidebarFacts.map((f) => (
                       <div key={f.label}>
-                        <dt className="text-xs uppercase tracking-wider text-navy-900/50 font-semibold mb-1">
+                        <dt className="text-xs uppercase tracking-wider text-navy-900/70 font-semibold mb-1">
                           {f.label}
                         </dt>
                         <dd className="text-[14.5px] text-navy-900/85 leading-snug">
@@ -389,7 +389,7 @@ export default function CarpalTunnelPage() {
 
                 {/* Why Dr. Lee */}
                 <div>
-                  <div className="kicker text-navy-900/40 mb-3">Why Dr. Lee</div>
+                  <div className="kicker text-navy-900/65 mb-3">Why Dr. Lee</div>
                   <ul className="space-y-3 text-[14.5px] text-navy-900/85">
                     <li className="flex items-baseline gap-3">
                       <CheckCircle2
@@ -423,7 +423,7 @@ export default function CarpalTunnelPage() {
 
                 {/* Related conditions */}
                 <div>
-                  <div className="kicker text-navy-900/40 mb-3">Related conditions</div>
+                  <div className="kicker text-navy-900/65 mb-3">Related conditions</div>
                   <ul className="divide-y divide-navy-900/[0.08]">
                     {[
                       { name: "Distal Radius Fracture", slug: "distal-radius-fracture" },
@@ -496,7 +496,7 @@ export default function CarpalTunnelPage() {
                     <ChevronRight
                       size={20}
                       strokeWidth={1.5}
-                      className="text-navy-900/60 shrink-0 mt-1.5 transition-transform group-open:rotate-90"
+                      className="text-navy-900/80 shrink-0 mt-1.5 transition-transform group-open:rotate-90"
                     />
                   </summary>
                   <p className="text-navy-900/75 text-[17px] leading-[1.7] pb-8 pr-12 font-light max-w-3xl">
@@ -521,7 +521,7 @@ export default function CarpalTunnelPage() {
             Think you have carpal tunnel?{" "}
             <span className="serif-italic text-gold-400">Get it evaluated properly.</span>
           </h2>
-          <p className="text-white/60 text-lg leading-relaxed max-w-2xl mx-auto mb-10 font-light">
+          <p className="text-white/85 text-lg leading-relaxed max-w-2xl mx-auto mb-10 font-light">
             Most patients do well with non-surgical treatment. The ones who don&apos;t do best when
             they don&apos;t wait too long. Either way, the first step is an accurate diagnosis.
           </p>

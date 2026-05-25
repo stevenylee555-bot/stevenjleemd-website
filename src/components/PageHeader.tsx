@@ -47,7 +47,7 @@ export default function PageHeader({
         {breadcrumb && breadcrumb.length > 0 && (
           <nav
             aria-label="Breadcrumb"
-            className="flex items-center gap-2 text-xs text-white/50 mb-8"
+            className="flex items-center gap-2 text-xs text-white/75 mb-8"
           >
             {breadcrumb.map((b, i) => (
               <span key={b.href} className="flex items-center gap-2">
@@ -80,7 +80,7 @@ export default function PageHeader({
         </h1>
 
         {lede && (
-          <p className="mt-8 text-white/65 text-lg md:text-xl leading-[1.6] font-light max-w-2xl">
+          <p className="mt-8 text-white/85 text-lg md:text-xl leading-[1.6] font-light max-w-2xl">
             {lede}
           </p>
         )}

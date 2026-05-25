@@ -34,7 +34,7 @@ export default function BookingCTA() {
 
           <motion.p
             variants={fadeUp}
-            className="text-white/65 text-lg leading-relaxed max-w-2xl mx-auto mb-12 font-light"
+            className="text-white/85 text-lg leading-relaxed max-w-2xl mx-auto mb-12 font-light"
           >
             Same-week appointments are often available at both the NYC and Scarsdale
             offices. Telemedicine consultations available for out-of-state and
@@ -72,7 +72,7 @@ export default function BookingCTA() {
               <MapPin size={16} className="text-gold-400 mt-0.5 shrink-0" strokeWidth={1.5} />
               <div>
                 <div className="text-white font-semibold mb-0.5">New York City</div>
-                <div className="text-white/65 leading-relaxed">
+                <div className="text-white/85 leading-relaxed">
                   159 East 74th Street
                   <br />
                   New York, NY 10021
@@ -83,7 +83,7 @@ export default function BookingCTA() {
               <MapPin size={16} className="text-gold-400 mt-0.5 shrink-0" strokeWidth={1.5} />
               <div>
                 <div className="text-white font-semibold mb-0.5">Scarsdale</div>
-                <div className="text-white/65 leading-relaxed">
+                <div className="text-white/85 leading-relaxed">
                   2 Overhill Road, Suite 310
                   <br />
                   Scarsdale, NY 10583
@@ -94,7 +94,7 @@ export default function BookingCTA() {
               <Video size={16} className="text-gold-400 mt-0.5 shrink-0" strokeWidth={1.5} />
               <div>
                 <div className="text-white font-semibold mb-0.5">Telemedicine</div>
-                <div className="text-white/50 leading-relaxed">
+                <div className="text-white/75 leading-relaxed">
                   Available for U.S. and international patients
                 </div>
               </div>

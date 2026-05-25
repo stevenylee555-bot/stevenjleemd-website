@@ -204,11 +204,11 @@ function PubItem({ pub }: { pub: Pub }) {
         {pub.citation}
       </div>
       <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
-        <div className="text-navy-900/65 text-[13.5px] leading-relaxed italic">
+        <div className="text-navy-900/80 text-[13.5px] leading-relaxed italic">
           {pub.journal}
         </div>
         <div className="flex items-center gap-4 shrink-0">
-          <span className="kicker text-navy-900/55">{pub.year}</span>
+          <span className="kicker text-navy-900/75">{pub.year}</span>
           {pub.link && (
             <a
               href={pub.link}
@@ -277,7 +277,7 @@ export default function PublicationsPage() {
                   <h3 className="font-serif text-xl md:text-2xl text-navy-950 tracking-[-0.01em] mb-2">
                     {group.theme}
                   </h3>
-                  <div className="kicker text-navy-900/55 mb-6">
+                  <div className="kicker text-navy-900/75 mb-6">
                     {group.items.length} selected
                   </div>
                   <ul className="border-t border-navy-900/10">

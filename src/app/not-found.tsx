@@ -19,7 +19,7 @@ export default function NotFound() {
           That page isn&apos;t here,{" "}
           <span className="serif-italic text-gold-400">but Dr. Lee is.</span>
         </h1>
-        <p className="text-white/65 text-lg leading-relaxed max-w-xl mx-auto mb-12 font-light">
+        <p className="text-white/85 text-lg leading-relaxed max-w-xl mx-auto mb-12 font-light">
           The link may be outdated, or the page is still being prepared. Use the navigation above,
           return home, or book directly.
         </p>

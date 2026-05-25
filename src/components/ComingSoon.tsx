@@ -27,7 +27,7 @@ export default function ComingSoon({ title, description, preview }: ComingSoonPr
 
         {preview && preview.length > 0 && (
           <div className="border border-navy-900/10 rounded-sm bg-cream/60 p-6 lg:p-8 mb-10">
-            <div className="kicker text-navy-900/50 mb-4">What this page will include</div>
+            <div className="kicker text-navy-900/70 mb-4">What this page will include</div>
             <ul className="space-y-3">
               {preview.map((item) => (
                 <li
@@ -44,7 +44,7 @@ export default function ComingSoon({ title, description, preview }: ComingSoonPr
 
         <div className="hairline mb-10" />
 
-        <p className="text-navy-900/60 text-base leading-relaxed mb-8">
+        <p className="text-navy-900/80 text-base leading-relaxed mb-8">
           In the meantime, you can <strong className="text-navy-950 font-semibold">book an appointment</strong> directly,
           or contact the office with questions.
         </p>

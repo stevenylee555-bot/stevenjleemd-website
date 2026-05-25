@@ -58,7 +58,7 @@ export default function SecondOpinion() {
 
             <motion.p
               variants={fadeUp}
-              className="text-white/65 text-lg leading-[1.65] font-light max-w-xl mb-6"
+              className="text-white/85 text-lg leading-[1.65] font-light max-w-xl mb-6"
             >
               A second opinion from a world-class specialist is rarely wasted. Dr. Lee
               reviews imaging, records, and prior surgical plans for patients who have
@@ -68,7 +68,7 @@ export default function SecondOpinion() {
 
             <motion.p
               variants={fadeUp}
-              className="text-white/50 text-base leading-relaxed max-w-xl mb-10"
+              className="text-white/75 text-base leading-relaxed max-w-xl mb-10"
             >
               In-person in NYC or Scarsdale. Telemedicine consultations available for
               out-of-state and international patients.
@@ -105,7 +105,7 @@ export default function SecondOpinion() {
                 <div className="font-serif text-lg text-white mb-2 tracking-[-0.01em]">
                   {p.title}
                 </div>
-                <p className="text-white/70 text-sm leading-relaxed">{p.body}</p>
+                <p className="text-white/85 text-[15px] leading-relaxed">{p.body}</p>
               </motion.div>
             ))}
           </motion.div>

@@ -126,7 +126,7 @@ export default function SpecialtyTemplate({ specialty }: { specialty: Specialty 
                 <h2 className="font-serif text-[clamp(1.75rem,3.2vw,2.75rem)] tracking-[-0.02em] leading-[1.1] mb-6">
                   {specialty.implantDesign.title}
                 </h2>
-                <p className="text-white/70 text-[17px] leading-[1.75] font-light">
+                <p className="text-white/85 text-[17px] leading-[1.75] font-light">
                   {specialty.implantDesign.body}
                 </p>
               </div>
@@ -173,7 +173,7 @@ export default function SpecialtyTemplate({ specialty }: { specialty: Specialty 
                             className="text-navy-900/30 group-hover:text-gold-600 shrink-0 transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 mt-1"
                           />
                         </div>
-                        <p className="text-navy-900/60 text-sm leading-relaxed">
+                        <p className="text-navy-900/80 text-sm leading-relaxed">
                           {c.blurb}
                         </p>
                       </Link>
@@ -187,7 +187,7 @@ export default function SpecialtyTemplate({ specialty }: { specialty: Specialty 
                             Coming soon
                           </span>
                         </div>
-                        <p className="text-navy-900/55 text-sm leading-relaxed">
+                        <p className="text-navy-900/75 text-sm leading-relaxed">
                           {c.blurb}
                         </p>
                       </div>
@@ -243,7 +243,7 @@ export default function SpecialtyTemplate({ specialty }: { specialty: Specialty 
                 Ready to talk about{" "}
                 <span className="serif-italic text-gold-400">your case?</span>
               </h2>
-              <p className="text-white/65 text-[17px] leading-[1.7] font-light max-w-xl mb-8">
+              <p className="text-white/85 text-[17px] leading-[1.7] font-light max-w-xl mb-8">
                 In-person visits in NYC or Scarsdale. International and out-of-area
                 patients can begin with a telemedicine consultation.
               </p>
