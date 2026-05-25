@@ -45,9 +45,10 @@ export default function InnovationFeature() {
               variants={fadeUp}
               className="text-white/75 text-lg leading-[1.65] font-light mb-6 max-w-xl"
             >
-              Dr. Lee has helped design orthopedic implants now used by surgeons across
-              the country, including plating systems for the hand and elbow and the
-              anchor and internal-brace constructs used in ligament reconstruction.
+              Dr. Lee has helped design orthopedic implants now widely used by surgeons
+              across the world, including plating and fixation systems for hand, wrist,
+              elbow, and feet, and anchor and internal brace constructs used in both the
+              upper and lower extremities.
             </motion.p>
 
             <motion.p

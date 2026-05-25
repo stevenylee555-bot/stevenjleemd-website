@@ -52,9 +52,10 @@ export default function About() {
               </p>
               <p>
                 What sets Dr. Lee apart is his direct role advancing the field. He has
-                helped design several orthopedic implants now used by surgeons across the
-                country, including plating systems for the hand and elbow and the
-                internal-brace constructs used in ligament reconstruction.
+                helped design orthopedic implants now widely used by surgeons around the
+                world, including plating and fixation systems for the hand, wrist, elbow,
+                and feet, and the anchor and internal-brace constructs used in both the
+                upper and lower extremities.
               </p>
               <p>
                 He has authored 35+ peer-reviewed papers, including what is believed to

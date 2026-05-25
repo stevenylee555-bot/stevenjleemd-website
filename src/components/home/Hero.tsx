@@ -65,7 +65,7 @@ export default function Hero() {
           <div>
             <motion.div variants={heroReveal} className="flex items-center gap-3 mb-8">
               <span className="h-px w-10 bg-gold-500" aria-hidden="true" />
-              <span className="kicker text-gold-400">
+              <span className="kicker text-gold-400 text-[13.5px]!">
                 25 Years of Excellence in New York City
               </span>
             </motion.div>
@@ -105,10 +105,10 @@ export default function Hero() {
                     variants={fadeUp}
                     className="py-4 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-0.5 sm:gap-6"
                   >
-                    <span className="font-serif text-white text-[17px] lg:text-[19px] leading-snug tracking-[-0.01em]">
+                    <span className="font-serif text-white text-[19px] lg:text-[21px] leading-snug tracking-[-0.01em]">
                       {a.name}
                     </span>
-                    <span className="text-gold-400/90 shrink-0 text-[13px] lg:text-sm font-semibold uppercase tracking-[0.08em]">
+                    <span className="text-gold-400/90 shrink-0 text-sm lg:text-[15px] font-semibold uppercase tracking-[0.08em]">
                       {a.years}
                     </span>
                   </motion.li>
