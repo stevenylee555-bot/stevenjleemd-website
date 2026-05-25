@@ -6,6 +6,7 @@ import { motion, useScroll, useTransform, useReducedMotion } from "motion/react"
 import { useRef, useState } from "react";
 import { Calendar, ChevronRight, Phone, MapPin, Video } from "lucide-react";
 import { heroReveal, stagger, fadeUp } from "@/lib/motion";
+import type { HomeContent } from "@/sanity/getHomePage";
 
 const recognition: { name: string; years: string }[] = [
   { name: "Castle Connolly Top Doctor", years: "2014–Present" },
@@ -15,7 +16,7 @@ const recognition: { name: string; years: string }[] = [
   { name: "U.S. News Top Doctor", years: "Multiple years" },
 ];
 
-export default function Hero() {
+export default function Hero({ home }: { home?: HomeContent }) {
   const ref = useRef<HTMLDivElement>(null);
   const reduce = useReducedMotion();
   const [imgFailed, setImgFailed] = useState(false);
@@ -25,6 +26,11 @@ export default function Hero() {
   });
   const y = useTransform(scrollYProgress, [0, 1], reduce ? [0, 0] : [0, 72]);
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0.4]);
+
+  const recognitionList =
+    home?.recognition && home.recognition.length > 0
+      ? home.recognition
+      : recognition;
 
   return (
     <section
@@ -66,7 +72,7 @@ export default function Hero() {
             <motion.div variants={heroReveal} className="flex items-center gap-3 mb-8">
               <span className="h-px w-10 bg-gold-500" aria-hidden="true" />
               <span className="kicker text-gold-400 text-[13.5px]!">
-                25 Years of Excellence in New York City
+                {home?.heroEyebrow ?? "25 Years of Excellence in New York City"}
               </span>
             </motion.div>
 
@@ -74,18 +80,19 @@ export default function Hero() {
               variants={heroReveal}
               className="font-serif text-[clamp(2rem,4vw,3.25rem)] leading-[1.12] tracking-[-0.02em] text-white mb-6 max-w-2xl"
             >
-              <span className="serif-italic text-gold-400">Leading the future</span>{" "}
-              of hand and upper extremity surgery, sports medicine, and orthopedic
-              innovation.
+              <span className="serif-italic text-gold-400">
+                {home?.heroHeadlineEmphasis ?? "Leading the future"}
+              </span>{" "}
+              {home?.heroHeadlineRest ??
+                "of hand and upper extremity surgery, sports medicine, and orthopedic innovation."}
             </motion.h1>
 
             <motion.p
               variants={heroReveal}
               className="text-white/85 text-lg md:text-xl leading-[1.55] max-w-xl mb-12 font-light"
             >
-              As Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital,
-              Dr. Lee combines elite clinical expertise with pioneering advancements
-              in implants and biological therapies to restore peak performance.
+              {home?.heroSubheading ??
+                "As Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, Dr. Lee combines elite clinical expertise with pioneering advancements in implants and biological therapies to restore peak performance."}
             </motion.p>
 
             {/* Editorial Recognition list: serif names + gold years, divider rules.
@@ -99,7 +106,7 @@ export default function Hero() {
                 variants={stagger(0.08, 0.06)}
                 className="divide-y divide-white/10"
               >
-                {recognition.map((a) => (
+                {recognitionList.map((a) => (
                   <motion.li
                     key={a.name}
                     variants={fadeUp}

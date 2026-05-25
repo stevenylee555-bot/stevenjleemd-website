@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { fadeUp, inViewProps, stagger } from "@/lib/motion";
+import type { HomeContent } from "@/sanity/getHomePage";
 
 type Stat = {
   value: number;
@@ -59,7 +60,7 @@ function CountUp({ value, suffix, run }: { value: number; suffix: string; run: b
   );
 }
 
-export default function AnimatedStats() {
+export default function AnimatedStats({ home }: { home?: HomeContent }) {
   const sectionRef = useRef<HTMLElement>(null);
   const [run, setRun] = useState(false);
 
@@ -83,6 +84,16 @@ export default function AnimatedStats() {
     return () => window.removeEventListener("scroll", check);
   }, []);
 
+  const statList =
+    home?.stats && home.stats.length > 0
+      ? home.stats.map((s, i) => ({
+          value: typeof s.value === "number" ? s.value : stats[i]?.value ?? 0,
+          suffix: s.suffix ?? "",
+          label: s.label ?? "",
+          caption: s.caption ?? "",
+        }))
+      : stats;
+
   return (
     <section ref={sectionRef} data-run={run ? "true" : "false"} className="relative bg-cream">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 lg:py-24">
@@ -91,7 +102,7 @@ export default function AnimatedStats() {
           variants={stagger(0, 0.1)}
           className="grid grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12"
         >
-          {stats.map((stat, i) => (
+          {statList.map((stat, i) => (
             <motion.div
               key={stat.label}
               variants={fadeUp}

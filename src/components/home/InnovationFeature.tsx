@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 import { fadeUp, inViewProps, stagger } from "@/lib/motion";
+import type { HomeContent } from "@/sanity/getHomePage";
 
 const capabilities = [
   "Plating and fixation systems for fractures of the hand, wrist, and elbow",
@@ -14,7 +15,12 @@ const capabilities = [
   "US patent, surgical instrumentation",
 ];
 
-export default function InnovationFeature() {
+export default function InnovationFeature({ home }: { home?: HomeContent }) {
+  const capabilityList =
+    home?.capabilities && home.capabilities.length > 0
+      ? home.capabilities
+      : capabilities;
+
   return (
     <section className="relative bg-navy-950 text-white overflow-hidden">
       {/* Soft gold radial */}
@@ -32,42 +38,42 @@ export default function InnovationFeature() {
           <div>
             <motion.div variants={fadeUp} className="flex items-center gap-3 mb-6">
               <span className="h-px w-10 bg-gold-500" />
-              <span className="kicker text-gold-400">Implant Design & Innovation</span>
+              <span className="kicker text-gold-400">
+              {home?.innovationKicker ?? "Implant Design & Innovation"}
+            </span>
             </motion.div>
 
             <motion.h2
               variants={fadeUp}
               className="font-serif text-[clamp(2.25rem,4.6vw,3.75rem)] leading-[1.05] tracking-[-0.02em] mb-8 max-w-xl"
             >
-              He didn&apos;t just learn the procedure.{" "}
-              <span className="serif-italic text-gold-400">He helped design the hardware.</span>
+              {home?.innovationHeadlineLead ?? "He didn't just learn the procedure."}{" "}
+              <span className="serif-italic text-gold-400">
+                {home?.innovationHeadlineEmphasis ?? "He helped design the hardware."}
+              </span>
             </motion.h2>
 
             <motion.p
               variants={fadeUp}
               className="text-white/75 text-lg leading-[1.65] font-light mb-6 max-w-xl"
             >
-              Dr. Lee has helped design orthopedic implants now widely used by surgeons
-              across the world, including plating and fixation systems for hand, wrist,
-              elbow, and feet, and anchor and internal brace constructs used in both the
-              upper and lower extremities.
+              {home?.innovationPara1 ??
+                "Dr. Lee has helped design orthopedic implants now widely used by surgeons across the world, including plating and fixation systems for hand, wrist, elbow, and feet, and anchor and internal brace constructs used in both the upper and lower extremities."}
             </motion.p>
 
             <motion.p
               variants={fadeUp}
               className="text-white/85 text-sm leading-relaxed mb-10 max-w-xl"
             >
-              Designing a wide range of orthopedic implants has given him a unique
-              engineering perspective that directly shapes his surgical approach,
-              ensuring that every construct is perfectly tailored, sized, and
-              anatomically placed for the individual patient.
+              {home?.innovationPara2 ??
+                "Designing a wide range of orthopedic implants has given him a unique engineering perspective that directly shapes his surgical approach, ensuring that every construct is perfectly tailored, sized, and anatomically placed for the individual patient."}
             </motion.p>
 
             <motion.ul
               variants={stagger(0.1, 0.05)}
               className="space-y-3.5 max-w-xl"
             >
-              {capabilities.map((item) => (
+              {capabilityList.map((item) => (
                 <motion.li
                   key={item}
                   variants={fadeUp}
