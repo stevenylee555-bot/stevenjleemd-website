@@ -66,26 +66,26 @@ export default function Hero() {
             <motion.div variants={heroReveal} className="flex items-center gap-3 mb-8">
               <span className="h-px w-10 bg-gold-500" aria-hidden="true" />
               <span className="kicker text-gold-400">
-                Lenox Hill Hospital · NISMAT · Implant Designer
+                25 Years of Excellence in New York City
               </span>
             </motion.div>
 
             <motion.h1
               variants={heroReveal}
-              className="font-serif text-[clamp(2.25rem,4.8vw,4rem)] leading-[1.05] tracking-[-0.025em] text-white mb-6"
+              className="font-serif text-[clamp(2rem,4vw,3.25rem)] leading-[1.12] tracking-[-0.02em] text-white mb-6 max-w-2xl"
             >
-              Chief of Hand Surgery at Lenox Hill.{" "}
-              <span className="serif-italic text-gold-400">Implant designer</span>{" "}
-              and innovator. Twenty-five years in New York.
+              <span className="serif-italic text-gold-400">Leading the future</span>{" "}
+              of hand and upper extremity surgery, sports medicine, and orthopedic
+              innovation.
             </motion.h1>
 
             <motion.p
               variants={heroReveal}
-              className="text-white/70 text-lg md:text-xl leading-[1.5] max-w-xl mb-12 font-light"
+              className="text-white/70 text-lg md:text-xl leading-[1.55] max-w-xl mb-12 font-light"
             >
-              Double fellowship-trained in hand surgery and sports medicine. Among
-              the first in New York to perform PRP therapy for upper extremity
-              injuries. Author of 35+ peer-reviewed papers.
+              As Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital,
+              Dr. Lee combines elite clinical expertise with pioneering advancements
+              in implants and biological therapies to restore peak performance.
             </motion.p>
 
             {/* Editorial Recognition list: serif names + gold years, divider rules.
@@ -103,12 +103,12 @@ export default function Hero() {
                   <motion.li
                     key={a.name}
                     variants={fadeUp}
-                    className="py-3.5 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-6"
+                    className="py-4 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-0.5 sm:gap-6"
                   >
-                    <span className="font-serif text-white text-base lg:text-[17px] leading-snug tracking-[-0.01em]">
+                    <span className="font-serif text-white text-[17px] lg:text-[19px] leading-snug tracking-[-0.01em]">
                       {a.name}
                     </span>
-                    <span className="kicker text-gold-400/90 shrink-0">
+                    <span className="text-gold-400/90 shrink-0 text-[13px] lg:text-sm font-semibold uppercase tracking-[0.08em]">
                       {a.years}
                     </span>
                   </motion.li>

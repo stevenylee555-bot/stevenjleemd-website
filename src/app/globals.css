@@ -85,12 +85,14 @@ html {
 .serif-italic {
   font-family: var(--font-fraunces);
   font-style: italic;
-  font-feature-settings: "ss01";
+  /* Default letterforms (no ss01): keeps f/j conventional, not swashy */
+  font-feature-settings: "kern", "liga";
 }
 
-/* Enable Fraunces stylistic sets + advanced ligatures wherever the serif is used */
+/* Fraunces with standard kerning + ligatures only. Stylistic sets (ss01/ss02)
+   are intentionally OFF so the f and j match the rest of the letters. */
 .font-serif {
-  font-feature-settings: "ss01", "ss02", "kern", "liga", "calt";
+  font-feature-settings: "kern", "liga", "calt";
 }
 
 /* Grain overlay — atmospheric depth on dark sections */

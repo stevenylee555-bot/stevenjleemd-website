@@ -12,7 +12,7 @@ type Stat = {
 };
 
 const stats: Stat[] = [
-  { value: 20, suffix: "+", label: "Years in practice", caption: "Attending at Lenox Hill since 2000" },
+  { value: 25, suffix: "+", label: "Years in practice", caption: "Attending at Lenox Hill since 2000" },
   { value: 15000, suffix: "+", label: "Procedures performed", caption: "Across hand, elbow, shoulder, knee" },
   { value: 35, suffix: "+", label: "Peer-reviewed publications", caption: "Plus 84 national lectures and presentations" },
   { value: 5, suffix: "", label: "Implants designed", caption: "In wide use nationwide, plus a US patent for surgical instrumentation" },
