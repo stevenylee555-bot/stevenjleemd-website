@@ -1,5 +1,6 @@
 import { defineConfig } from "sanity";
 import { structureTool } from "sanity/structure";
+import { presentationTool } from "sanity/presentation";
 import { visionTool } from "@sanity/vision";
 import { apiVersion, dataset, projectId } from "./src/sanity/env";
 import { schema } from "./src/sanity/schemaTypes";
@@ -11,5 +12,15 @@ export default defineConfig({
   projectId,
   dataset,
   schema,
-  plugins: [structureTool(), visionTool({ defaultApiVersion: apiVersion })],
+  plugins: [
+    // Click-to-edit on a live preview of the site. `initial` defaults to the
+    // Studio's own origin, so this works on both localhost and Vercel.
+    presentationTool({
+      previewUrl: {
+        previewMode: { enable: "/api/draft-mode/enable" },
+      },
+    }),
+    structureTool(),
+    visionTool({ defaultApiVersion: apiVersion }),
+  ],
 });

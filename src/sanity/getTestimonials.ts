@@ -1,10 +1,12 @@
-import { client } from "./client";
+import { draftMode } from "next/headers";
+import { stegaClean } from "next-sanity";
 import { urlForImage } from "./image";
+import { sanityFetch } from "./live";
 import { TESTIMONIALS_QUERY } from "./queries";
 import type { Testimonial } from "@/components/home/TestimonialsCarousel";
 
 function initialsFrom(name: string): string {
-  return name
+  return stegaClean(name)
     .split(/\s+/)
     .filter(Boolean)
     .map((w) => w[0])
@@ -22,19 +24,31 @@ type SanityTestimonial = {
   photo?: { asset?: { _ref?: string } };
 };
 
-// Fetches published testimonials from Sanity, mapped to the carousel's shape
-// (photo resolved to a plain URL server-side so the client component stays
-// Sanity-agnostic). Returns [] if none exist, so the carousel falls back to
-// its built-in placeholders until Dr. Lee adds real ones.
+// Fetches published testimonials (or drafts, with click-to-edit metadata, when
+// visual editing is active) and maps them to the carousel's shape. Photo is
+// resolved to a plain URL server-side. Returns [] if none exist, so the carousel
+// falls back to its built-in placeholders until Dr. Lee adds real ones.
 export async function getTestimonials(): Promise<Testimonial[]> {
+  let isDraft = false;
+  try {
+    isDraft = (await draftMode()).isEnabled;
+  } catch {
+    isDraft = false;
+  }
+
   let docs: SanityTestimonial[] = [];
   try {
-    docs = await client.fetch(TESTIMONIALS_QUERY);
+    const { data } = await sanityFetch({
+      query: TESTIMONIALS_QUERY,
+      perspective: isDraft ? "drafts" : "published",
+      stega: isDraft,
+    });
+    docs = (data as SanityTestimonial[]) || [];
   } catch {
     return [];
   }
 
-  return (docs || [])
+  return docs
     .filter((d) => d.quote && d.name)
     .map((d) => ({
       quote: d.quote as string,

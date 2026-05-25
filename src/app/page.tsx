@@ -9,11 +9,10 @@ import About from "@/components/home/About";
 import ConditionsPreview from "@/components/home/ConditionsPreview";
 import BookingCTA from "@/components/home/BookingCTA";
 import FAQSection, { type Faq } from "@/components/home/FAQSection";
+import { draftMode } from "next/headers";
+import { VisualEditing } from "next-sanity/visual-editing";
 import { getTestimonials } from "@/sanity/getTestimonials";
-
-// Re-render at most once a minute so published testimonial edits appear without
-// a redeploy. (A later phase swaps in the Live Content API for instant updates.)
-export const revalidate = 60;
+import { SanityLive } from "@/sanity/live";
 
 // GEO/AI-citation FAQs, kept verbatim from prior homepage (canonical answers).
 const homepageFaqs: Faq[] = [
@@ -46,6 +45,7 @@ const homepageFaqs: Faq[] = [
 
 export default async function HomePage() {
   const faqSchema = buildFaqSchema(homepageFaqs);
+  const { isEnabled: isDraft } = await draftMode();
   const testimonials = await getTestimonials();
 
   return (
@@ -65,6 +65,9 @@ export default async function HomePage() {
       <ConditionsPreview />
       <BookingCTA />
       <FAQSection faqs={homepageFaqs} />
+
+      <SanityLive />
+      {isDraft && <VisualEditing />}
     </>
   );
 }
