@@ -85,7 +85,7 @@ export default async function OpengraphImage() {
                 fontWeight: 300,
               }}
             >
-              <span>Orthopedic surgeon. Arthrex design team.</span>
+              <span>Orthopedic surgeon. Implant designer.</span>
               <span>NYC &amp; Scarsdale.</span>
             </div>
           </div>

@@ -4,15 +4,15 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import { fadeUp, inViewProps, stagger } from "@/lib/motion";
 
-const implants = [
-  { label: "Arthrex Mini Comprehensive Fixation System (hand)", status: "designed" },
-  { label: "Arthrex Elbow Fracture Plating System", status: "designed" },
-  { label: "Arthrex 3.5 DX SwiveLock (internal brace)", status: "designed" },
-  { label: "Arthrex NanoCorkscrew FT (tendon-to-bone)", status: "designed" },
-  { label: "Arthrex FiberLock CMC Suspensionplasty", status: "designed" },
+const capabilities = [
+  "Plating systems, hand, wrist & elbow",
+  "Suture anchors & internal-brace constructs",
+  "Tendon-to-bone repair fixation",
+  "Thumb basal-joint reconstruction",
+  "US patent, surgical instrumentation",
 ];
 
-export default function ArthrexFeature() {
+export default function InnovationFeature() {
   return (
     <section className="relative bg-navy-950 text-white overflow-hidden">
       {/* Soft gold radial */}
@@ -30,7 +30,7 @@ export default function ArthrexFeature() {
           <div>
             <motion.div variants={fadeUp} className="flex items-center gap-3 mb-6">
               <span className="h-px w-10 bg-gold-500" />
-              <span className="kicker text-gold-400">Arthrex Design Team</span>
+              <span className="kicker text-gold-400">Implant Design & Innovation</span>
             </motion.div>
 
             <motion.h2
@@ -45,51 +45,37 @@ export default function ArthrexFeature() {
               variants={fadeUp}
               className="text-white/75 text-lg leading-[1.65] font-light mb-6 max-w-xl"
             >
-              Dr. Lee is on the design team for several Arthrex implants used worldwide,
-              plating systems for the hand and elbow, the 3.5 DX SwiveLock anchor used
-              in internal brace reconstructions, the NanoCorkscrew FT for tendon-to-bone
-              repair, and the FiberLock CMC Suspensionplasty for thumb arthritis.
+              Dr. Lee has helped design orthopedic implants now used by surgeons across
+              the country, including plating systems for the hand and elbow and the
+              anchor and internal-brace constructs used in ligament reconstruction.
             </motion.p>
 
             <motion.p
               variants={fadeUp}
               className="text-white/70 text-sm leading-relaxed mb-10 max-w-xl"
             >
-              Patients undergoing hand fracture repair, UCL reconstruction, tendon
-              repair, or basal joint arthroplasty with Dr. Lee may literally be
-              receiving hardware he helped create.
+              That engineering perspective informs how he approaches every repair: the
+              right construct, sized and placed for the individual patient.
             </motion.p>
 
             <motion.ul
               variants={stagger(0.1, 0.05)}
               className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 max-w-xl"
             >
-              {implants.map((item) => (
+              {capabilities.map((item) => (
                 <motion.li
-                  key={item.label}
+                  key={item}
                   variants={fadeUp}
                   className="flex items-center gap-3 text-sm"
                 >
-                  <span
-                    className={
-                      "h-1.5 w-1.5 rounded-full shrink-0 " +
-                      (item.status === "designed"
-                        ? "bg-gold-500"
-                        : "bg-white/30 ring-1 ring-gold-500/40")
-                    }
-                  />
-                  <span className="text-white/85">{item.label}</span>
-                  {item.status === "upcoming" && (
-                    <span className="text-[10px] uppercase tracking-wider text-gold-400/80 font-semibold ml-auto">
-                      Upcoming
-                    </span>
-                  )}
+                  <span className="h-1.5 w-1.5 rounded-full shrink-0 bg-gold-500" />
+                  <span className="text-white/85">{item}</span>
                 </motion.li>
               ))}
             </motion.ul>
           </div>
 
-          {/* Right column, Dr. Lee teaching at Arthrex */}
+          {/* Right column, Dr. Lee teaching */}
           <motion.div variants={fadeUp} className="relative">
             {/* Gold accent corners */}
             <div
@@ -104,7 +90,7 @@ export default function ArthrexFeature() {
             <div className="relative aspect-[4/3] w-full max-w-[560px] mx-auto overflow-hidden ring-1 ring-white/10 shadow-2xl">
               <Image
                 src="/images/dr-lee-arthrex-podium.jpg"
-                alt="Dr. Steven J. Lee teaching at an Arthrex surgical skills course"
+                alt="Dr. Steven J. Lee teaching surgical technique at a national skills course"
                 fill
                 sizes="(min-width: 1024px) 40vw, 100vw"
                 className="object-cover"
@@ -113,9 +99,9 @@ export default function ArthrexFeature() {
 
               {/* Caption stamp */}
               <div className="absolute bottom-4 left-4 right-4 sm:right-auto sm:max-w-[80%] bg-navy-950/85 backdrop-blur-md px-4 py-3 ring-1 ring-white/10">
-                <div className="kicker text-gold-400 mb-1">Arthrex Faculty</div>
+                <div className="kicker text-gold-400 mb-1">Faculty</div>
                 <div className="text-white text-sm leading-snug">
-                  Teaching surgical technique at an Arthrex course
+                  Teaching surgical technique at a national skills course
                 </div>
               </div>
             </div>

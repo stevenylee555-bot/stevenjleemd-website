@@ -7,20 +7,102 @@ import PageHeader from "@/components/PageHeader";
 export const metadata: Metadata = {
   title: "Biography, Steven J. Lee, MD",
   description:
-    "Biography of Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, on the Arthrex implant design team, double fellowship-trained orthopedic surgeon serving NYC and Scarsdale.",
+    "Biography of Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital and Associate Director at NISMAT. Double board certified, double fellowship-trained in hand and upper extremity surgery and sports medicine, serving NYC and Scarsdale.",
   alternates: { canonical: "https://www.stevenjleemd.com/about/bio" },
 };
 
 const credentials = [
-  "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital (since 2013)",
+  "Chief of Hand & Upper Extremity Surgery, Lenox Hill Hospital (since 2013)",
   "Associate Director, NISMAT (since 2006)",
   "Lenox Hill Hospital Medical Board (since 2023)",
-  "Double Fellowship-Trained, Hand & Upper Extremity, Sports Medicine",
-  "Board-Certified, American Board of Orthopaedic Surgery",
-  "Subspecialty Certified, Orthopaedic Surgery of the Hand",
-  "Arthrex Implant Design Team",
-  "US Patent #12,622,710 B2, Center of Rotation Guide (2026)",
+  "Double Fellowship-Trained: Hand & Upper Extremity, Sports Medicine",
+  "Double Board Certified: Orthopaedic Surgery & Surgery of the Hand",
+  "Member, American Orthopaedic Association (AOA)",
+  "Orthopedic Implant Designer & US Patent Holder",
 ];
+
+const training: { institution: string; detail: string; note?: string }[] = [
+  {
+    institution: "Lehigh University / Medical College of Pennsylvania",
+    detail: "Doctor of Medicine, combined 6-year accelerated program",
+  },
+  {
+    institution: "Stony Brook University",
+    detail: "Residency, Orthopedic Surgery",
+  },
+  {
+    institution: "NYU / Hospital for Joint Diseases",
+    detail: "Fellowship, Hand & Upper Extremity Surgery",
+  },
+  {
+    institution: "Lenox Hill Hospital",
+    detail: "Fellowship, Sports Medicine",
+    note: "One of the oldest and most prestigious sports medicine fellowships in the country.",
+  },
+];
+
+const athleteRoles = [
+  "Team physician, New Jersey Red Dogs & Gladiators (professional arena football)",
+  "Team physician, Hofstra University Athletics",
+  "Care of the New York Jets, Islanders & Rangers during training",
+];
+
+const sportsTreated = [
+  "Hockey",
+  "Football",
+  "Tennis",
+  "Squash",
+  "Golf",
+  "Baseball",
+  "Soccer",
+  "Boxing & MMA",
+];
+
+const galleryImages = [
+  {
+    src: "/images/dr-lee-fellowship-forum.jpg",
+    alt: "Dr. Lee speaking at a surgical fellowship forum",
+    width: 3372,
+    height: 5995,
+    kicker: "Fellowship Forum",
+    caption: "Speaking on technique and outcomes",
+  },
+  {
+    src: "/images/dr-lee-scapholunate-talk.jpg",
+    alt: "Dr. Lee presenting Scapholunate Tear Options at NISMAT",
+    width: 7360,
+    height: 4912,
+    kicker: "NISMAT · Scapholunate Tear Options",
+    caption: "Academic lecture on a published surgical series",
+  },
+  {
+    src: "/images/dr-lee-arthrex-panel.jpg",
+    alt: "Dr. Lee on a faculty panel of upper-extremity surgeons",
+    width: 7952,
+    height: 5304,
+    kicker: "Upper-Extremity Faculty Panel",
+    caption: "Faculty panel on advanced upper-extremity surgery",
+  },
+  {
+    src: "/images/dr-lee-nfl-fracture-panel.jpg",
+    alt: "Dr. Lee on an NFL fracture management faculty panel",
+    width: 7952,
+    height: 5304,
+    kicker: "NFL Fracture Management",
+    caption: "Faculty panel on professional-athlete fracture care",
+  },
+];
+
+function SectionKicker({ label, light = false }: { label: string; light?: boolean }) {
+  return (
+    <div className="flex items-center gap-3 mb-5">
+      <span className="h-px w-10 bg-gold-500" aria-hidden="true" />
+      <span className={"kicker " + (light ? "text-gold-400" : "text-gold-600")}>
+        {label}
+      </span>
+    </div>
+  );
+}
 
 export default function BioPage() {
   return (
@@ -29,7 +111,7 @@ export default function BioPage() {
         kicker="Biography"
         title="A surgeon at the"
         italic="leading edge of his field."
-        lede="From Lenox Hill Hospital to Arthrex implant design, the career of an orthopedic surgeon known for treating the cases other physicians find too complex."
+        lede="Double board certified and double fellowship-trained, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, and the surgeon many physicians refer the cases they find too complex."
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "About", href: "/about" },
@@ -37,140 +119,37 @@ export default function BioPage() {
         ]}
       />
 
-      {/* Body */}
+      {/* Intro + sticky sidebar */}
       <section className="bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 lg:py-28">
           <div className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-16 lg:gap-20">
-            {/* Prose, capped at ~70ch for editorial readability */}
-            <article className="max-w-[640px]">
+            <article className="max-w-[660px]">
               <div className="space-y-6 text-navy-900/80 text-[17px] leading-[1.75] font-light">
-                <p className="text-navy-900/90 text-[18px] font-normal">
-                  Dr. Steven J. Lee is Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital
-                 , one of New York&apos;s premier medical centers, and a double fellowship-trained
-                  orthopedic surgeon.
-                </p>
-
-                <p>
-                  He is board-certified by the American Board of Orthopaedic Surgery and
-                  fellowship-trained in both Hand Surgery and Shoulder &amp; Elbow Surgery. His practice
-                  spans hand and wrist surgery, elbow surgery, shoulder arthroscopy, knee
-                  reconstruction, and sports medicine, with particular depth in the cases that
-                  other surgeons consider technically demanding.
-                </p>
-
-                <h2 className="font-serif text-2xl md:text-3xl text-navy-950 tracking-[-0.01em] !mt-12 mb-2 leading-tight">
-                  The surgeon on the team that designed the hardware
-                </h2>
-                <p>
-                  What sets Dr. Lee apart is his direct role in advancing the field. He is on the
-                  design team for several{" "}
-                  <strong className="text-navy-950 font-semibold">Arthrex</strong> implants used
-                  worldwide: the Mini Comprehensive Fixation System for hand fractures, the Elbow
-                  Fracture Plating System, the 3.5 DX SwiveLock anchor (used in internal brace
-                  reconstructions for the UCL, scapholunate, and other ligament repairs), the
-                  NanoCorkscrew FT for tendon-to-bone repair, and the FiberLock CMC
-                  Suspensionplasty for thumb basal joint reconstruction.
+                <p className="text-navy-900/90 text-[19px] font-normal leading-[1.6]">
+                  Dr. Steven J. Lee is double board certified and double
+                  fellowship-trained in Hand &amp; Upper Extremity Surgery and Sports
+                  Medicine, and specializes in the most complex disorders of the hand,
+                  wrist, elbow, shoulder, knee, and ankle.
                 </p>
                 <p>
-                  Patients undergoing hand fracture repair, UCL reconstruction, tendon repair, or
-                  basal joint arthroplasty with Dr. Lee may literally be receiving hardware he
-                  helped create.
-                </p>
-
-                <h2 className="font-serif text-2xl md:text-3xl text-navy-950 tracking-[-0.01em] !mt-12 mb-2 leading-tight">
-                  Biologics and the future of repair
-                </h2>
-                <p>
-                  Dr. Lee was among the first surgeons in New York City to perform PRP
-                  (Platelet-Rich Plasma) therapy, and 99% sure the first specifically for upper
-                  extremity injuries, at a time when biologics were still considered experimental
-                  in the orthopedic mainstream. He performs over 250 PRP procedures annually today,
-                  across the full body. He has continued to pioneer the use of biologics in
-                  orthopedic care, including BMAC stem cell therapy and, more recently, peptides.
-                  In 2026 he co-authored{" "}
-                  <a
-                    href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12753158/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-navy-950 font-medium border-b border-gold-500/60 hover:border-gold-600 transition-colors"
-                  >
-                    &quot;Therapeutic Peptides in Orthopaedics: Applications, Challenges, and Future
-                    Directions&quot;
-                  </a>{" "}
-                  in <em className="serif-italic">JAAOS Global Research &amp; Reviews</em>,
-                  believed to be the first peer-reviewed review paper on therapeutic peptides
-                  in an orthopedic journal.
-                </p>
-
-                <h2 className="font-serif text-2xl md:text-3xl text-navy-950 tracking-[-0.01em] !mt-12 mb-2 leading-tight">
-                  Research and teaching
-                </h2>
-                <p>
-                  Dr. Lee has authored 35+ peer-reviewed publications and book chapters across
-                  hand, elbow, shoulder, and knee surgery, with a particular focus on Achilles
-                  tendon repair (the subject of 4 of his papers) and scapholunate ligament
-                  reconstruction. He has given 84 national lectures and presentations to date,
-                  teaches surgical technique through Arthrex&apos;s educational platform and VuMedi,
-                  and serves as a journal reviewer for the{" "}
-                  <em className="serif-italic">Journal of the American Academy of Orthopaedic Surgeons</em>.
+                  He is Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital
+                  in New York City, and Associate Director of the Nicholas Institute of
+                  Sports Medicine and Athletic Trauma (NISMAT), the first hospital-based
+                  facility in the country dedicated to the study of sports medicine and
+                  research.
                 </p>
                 <p>
-                  At Lenox Hill, he sits on the residency and sports medicine fellowship selection
-                  committees and the Program Evaluation Committee. He has received the
-                  Chitranjan S. Ranawat Mentorship Award seven times (2010, 2014, 2015, 2017,
-                  2018, 2019, 2023) and the Maurice H. Cowen Teacher of the Year award twice
-                  (2003, 2009), both voted by the Lenox Hill orthopaedic residents.
+                  Dr. Lee is perennially recognized as one of New York Magazine&apos;s
+                  Best Doctors, a Castle Connolly Top Doctor in Orthopedic Surgery, one
+                  of America&apos;s Top Orthopedists, a U.S. News &amp; World Report Top
+                  Doctor, and a New York Super Doctors Hall of Fame honoree.
                 </p>
-                <p>
-                  In 2026 he was awarded{" "}
-                  <strong className="text-navy-950 font-semibold">US Patent #12,622,710 B2</strong>{" "}
-                  for a Center of Rotation Guide, a surgical instrumentation design.
-                </p>
-
-                <h2 className="font-serif text-2xl md:text-3xl text-navy-950 tracking-[-0.01em] !mt-12 mb-2 leading-tight">
-                  Practice today
-                </h2>
-                <p>
-                  Dr. Lee sees patients at two offices, a primary practice on Manhattan&apos;s
-                  East 74th Street and a second office in Scarsdale, Westchester. He accommodates
-                  in-person and telemedicine consultations, and sees both in-network and
-                  out-of-network patients, including international patients who travel
-                  specifically to consult with him.
-                </p>
-
-                <p className="text-navy-900/55 text-sm !mt-10 italic">
-                  Full credentials, publications list, and CV are available from the links below.
-                </p>
-              </div>
-
-              {/* Inline links to sibling pages */}
-              <div className="mt-12 pt-10 border-t border-navy-900/10 grid grid-cols-1 sm:grid-cols-3 gap-4">
-                {[
-                  { label: "Credentials & Awards", href: "/about/credentials" },
-                  { label: "Publications", href: "/about/publications" },
-                  { label: "Download CV", href: "/about/cv" },
-                ].map((l) => (
-                  <Link
-                    key={l.href}
-                    href={l.href}
-                    className="group flex items-center justify-between p-4 border border-navy-900/10 rounded-sm hover:border-gold-500 hover:bg-cream transition-colors"
-                  >
-                    <span className="text-sm font-semibold text-navy-950 group-hover:text-gold-600 transition-colors">
-                      {l.label}
-                    </span>
-                    <ArrowUpRight
-                      size={14}
-                      className="text-navy-900/40 group-hover:text-gold-600 transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                    />
-                  </Link>
-                ))}
               </div>
             </article>
 
             {/* Sidebar */}
-            <aside className="lg:pt-2">
+            <aside className="lg:pt-1">
               <div className="lg:sticky lg:top-28">
-                {/* Portrait */}
                 <div className="relative aspect-[4/5] w-full max-w-[340px] mb-8">
                   <div className="absolute -top-2 -left-2 h-16 w-16 border-t-2 border-l-2 border-gold-500" />
                   <div className="absolute -bottom-2 -right-2 h-16 w-16 border-b-2 border-r-2 border-gold-500" />
@@ -229,68 +208,240 @@ export default function BioPage() {
         </div>
       </section>
 
-      {/* Teaching & Speaking gallery */}
+      {/* Training & Education */}
       <section className="bg-cream border-t border-navy-900/[0.06]">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 lg:py-24">
-          <div className="max-w-3xl mb-12 lg:mb-16">
-            <div className="flex items-center gap-3 mb-5">
-              <span className="h-px w-10 bg-gold-500" aria-hidden="true" />
-              <span className="kicker text-gold-600">Teaching &amp; Speaking</span>
+          <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-12 lg:gap-20">
+            <div className="lg:pt-1">
+              <SectionKicker label="Training & Education" />
+              <h2 className="font-serif text-3xl md:text-4xl lg:text-[2.75rem] text-navy-950 tracking-[-0.02em] leading-[1.1]">
+                A foundation built at New York&apos;s teaching hospitals.
+              </h2>
             </div>
+
+            <ul className="divide-y divide-navy-900/10 lg:pt-2">
+              {training.map((t) => (
+                <li key={t.institution} className="py-6 first:pt-0">
+                  <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-6">
+                    <span className="font-serif text-navy-950 text-xl lg:text-[1.4rem] leading-snug tracking-[-0.01em]">
+                      {t.institution}
+                    </span>
+                    <span className="kicker text-gold-600 shrink-0">{t.detail}</span>
+                  </div>
+                  {t.note && (
+                    <p className="mt-2 text-navy-900/60 text-[14.5px] leading-relaxed max-w-xl">
+                      {t.note}
+                    </p>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Athletes & Sports Medicine */}
+      <section className="relative bg-navy-950 text-white overflow-hidden hero-grain">
+        <div className="absolute inset-0 -z-0" aria-hidden="true">
+          <div className="absolute -top-32 -right-24 h-[460px] w-[460px] rounded-full bg-gold-500/[0.08] blur-3xl" />
+        </div>
+        <div className="absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-gold-500/50 to-transparent" />
+
+        <div className="relative mx-auto max-w-7xl px-6 lg:px-10 py-20 lg:py-28">
+          <div className="max-w-3xl">
+            <SectionKicker label="Athletes & Sports Medicine" light />
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl tracking-[-0.02em] leading-[1.08] mb-7">
+              Trained at the center of{" "}
+              <span className="serif-italic text-gold-400">New York sports medicine.</span>
+            </h2>
+            <p className="text-white/75 text-[17px] lg:text-lg leading-[1.7] font-light">
+              Few orthopedic surgeons are fellowship-trained in both hand and upper
+              extremity surgery and sports medicine. That combination gives Dr. Lee a
+              distinct advantage with athletes, who place far greater demands on a
+              repaired joint or tendon and almost always need to return to their sport on
+              a timeline.
+            </p>
+          </div>
+
+          <blockquote className="my-12 lg:my-16 max-w-3xl border-t border-white/15 pt-8">
+            <p className="font-serif text-2xl md:text-3xl lg:text-[2.25rem] leading-[1.25] tracking-[-0.01em] text-white">
+              He treats the athlete, not just the injury,{" "}
+              <span className="serif-italic text-gold-400">
+                tailoring care to the demands of the sport and the timeline to return.
+              </span>
+            </p>
+          </blockquote>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
+            <div>
+              <div className="kicker text-white/55 mb-5">Team Physician & Training Roles</div>
+              <ul className="space-y-4">
+                {athleteRoles.map((r) => (
+                  <li key={r} className="flex items-baseline gap-3 text-white/85 text-[15.5px] leading-relaxed">
+                    <span className="h-1 w-1 rounded-full bg-gold-500 shrink-0 translate-y-[6px]" aria-hidden="true" />
+                    <span>{r}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <div className="kicker text-white/55 mb-5">Professional Athletes Treated</div>
+              <div className="flex flex-wrap gap-2.5">
+                {sportsTreated.map((s) => (
+                  <span
+                    key={s}
+                    className="text-[13px] font-medium tracking-wide text-white/85 bg-white/[0.06] border border-white/10 px-3.5 py-1.5 rounded-full"
+                  >
+                    {s}
+                  </span>
+                ))}
+              </div>
+              <p className="mt-6 text-white/60 text-[14.5px] leading-relaxed">
+                Especially attuned to collegiate and recruiting athletes: all three of
+                Dr. Lee&apos;s children are Division I athletes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Research & Innovation */}
+      <section className="bg-white">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 lg:py-28">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-14 lg:gap-20">
+            <div className="max-w-[660px]">
+              <SectionKicker label="Research & Innovation" />
+              <h2 className="font-serif text-3xl md:text-4xl lg:text-[2.75rem] text-navy-950 tracking-[-0.02em] leading-[1.1] mb-8">
+                Advancing the tools of the field.
+              </h2>
+              <div className="space-y-6 text-navy-900/80 text-[17px] leading-[1.75] font-light">
+                <p>
+                  Dr. Lee has been a pioneer in orthopedic research and is nationally
+                  recognized for innovative techniques to treat the most difficult
+                  disorders in orthopedics. He has designed numerous orthopedic implants
+                  now in wide use, including among the most advanced plating systems for
+                  fracture fixation of the hand, wrist, elbow, and upper extremity. His
+                  anchor designs helped pioneer the use of internal bracing for the upper
+                  extremity.
+                </p>
+                <p>
+                  He has also helped advance the use of biologics in orthopedic care. Dr.
+                  Lee was among the first surgeons in New York City to perform
+                  platelet-rich plasma (PRP) therapy, including for upper extremity
+                  injuries, and performs more than 250 PRP procedures a year. His work
+                  extends to BMAC stem cell therapy and, more recently, peptides. In 2026
+                  he co-authored{" "}
+                  <a
+                    href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12753158/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-navy-950 font-medium border-b border-gold-500/60 hover:border-gold-600 transition-colors"
+                  >
+                    &quot;Therapeutic Peptides in Orthopaedics: Applications, Challenges,
+                    and Future Directions&quot;
+                  </a>{" "}
+                  in <em className="serif-italic">JAAOS Global Research &amp; Reviews</em>,
+                  believed to be the first peer-reviewed review paper on therapeutic
+                  peptides in an orthopedic journal.
+                </p>
+              </div>
+            </div>
+
+            {/* Patent highlight */}
+            <aside className="lg:pt-2">
+              <div className="relative bg-cream rounded-sm p-7 lg:p-8 ring-1 ring-navy-900/10">
+                <div className="absolute -top-2 -left-2 h-12 w-12 border-t-2 border-l-2 border-gold-500" aria-hidden="true" />
+                <div className="absolute -bottom-2 -right-2 h-12 w-12 border-b-2 border-r-2 border-gold-500" aria-hidden="true" />
+                <div className="kicker text-gold-600 mb-4">US Patent</div>
+                <div className="font-serif text-3xl lg:text-4xl text-navy-950 tracking-[-0.01em] leading-none mb-3">
+                  12,622,710 B2
+                </div>
+                <p className="text-navy-900/70 text-[14.5px] leading-relaxed">
+                  Center of Rotation Guide, a surgical instrumentation design granted in
+                  2026.
+                </p>
+                <div className="mt-6 pt-5 border-t border-navy-900/10 text-navy-900/70 text-[14.5px] leading-relaxed">
+                  Implants designed by Dr. Lee are now used by surgeons across the
+                  country.
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      {/* Teaching & Academics */}
+      <section className="bg-cream border-t border-navy-900/[0.06]">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 lg:py-28">
+          <div className="max-w-[720px]">
+            <SectionKicker label="Teaching & Academics" />
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-[2.75rem] text-navy-950 tracking-[-0.02em] leading-[1.1] mb-8">
+              A teacher first, recognized by his own residents.
+            </h2>
+            <div className="space-y-6 text-navy-900/80 text-[17px] leading-[1.75] font-light">
+              <p>
+                Dr. Lee is actively involved in the instruction of physicians and allied
+                health professionals and frequently teaches courses across the country.
+                He has authored 35+ peer-reviewed publications and book chapters and
+                delivered 84 national lectures and presentations, with particular focus
+                on Achilles tendon repair, the subject of several of his papers, and
+                scapholunate ligament reconstruction. He serves as a journal reviewer for
+                the{" "}
+                <em className="serif-italic">
+                  Journal of the American Academy of Orthopaedic Surgeons
+                </em>
+                .
+              </p>
+              <p>
+                His teaching has been recognized repeatedly by the Lenox Hill orthopedic
+                residents, who have voted him the Maurice H. Cowen Teacher of the Year
+                award (2003, 2009) and the Chitranjan S. Ranawat Mentorship Award seven
+                times (2010, 2014, 2015, 2017, 2018, 2019, 2023). At Lenox Hill he sits
+                on the orthopedic residency and sports medicine fellowship admissions
+                committees, the Program Evaluation Committee, and the Hospital Medical
+                Board.
+              </p>
+              <p>
+                He is a Fellow of the American Academy of Orthopaedic Surgeons and a
+                member of the American Orthopaedic Association, the oldest and most
+                prestigious orthopedic association in the world, comprising fewer than
+                10% of practicing orthopedic surgeons.
+              </p>
+            </div>
+
+            <blockquote className="mt-10 pt-8 border-t border-navy-900/10">
+              <p className="font-serif text-2xl md:text-[1.75rem] leading-[1.3] tracking-[-0.01em] text-navy-950">
+                By his own account, he is proudest of, and best known among his peers
+                for,{" "}
+                <span className="serif-italic text-gold-600">his surgical skill.</span>
+              </p>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      {/* Teaching & Speaking gallery */}
+      <section className="bg-white border-t border-navy-900/[0.06]">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 lg:py-24">
+          <div className="max-w-3xl mb-12 lg:mb-16">
+            <SectionKicker label="Teaching & Speaking" />
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-navy-950 tracking-[-0.02em] leading-[1.08] mb-6">
               84 lectures and presentations.{" "}
               <span className="serif-italic text-gold-600">Counting.</span>
             </h2>
             <p className="text-navy-900/75 text-[17px] leading-[1.7] font-light">
-              National podium presentations at AAOS, AOSSM, and ASSH. Invited lectures
-              at Arthrex, VuMedi, the Orthopaedic Summit, the Philadelphia Hand Meeting,
-              and the IFSSH. Course faculty and cadaver-lab instructor at Arthrex
-              surgical skills programs. Below: selected moments.
+              National podium presentations at AAOS, AOSSM, and ASSH. Invited lectures at
+              national meetings and educational platforms including the Orthopaedic
+              Summit, the Philadelphia Hand Meeting, VuMedi, and the IFSSH. Course faculty
+              and cadaver-lab instructor at national surgical skills programs. Below,
+              selected moments.
             </p>
           </div>
 
-          {/* Masonry-style 2-column flow. Each photo uses its NATURAL aspect ratio
-              (no cropping) and CSS columns auto-balance vertical height. Captions
-              live below the image, not overlaid, for proper breathing room. */}
           <div className="lg:columns-2 lg:gap-10 xl:gap-12 space-y-10 lg:space-y-0">
-            {[
-              {
-                src: "/images/dr-lee-fellowship-forum.jpg",
-                alt: "Dr. Lee speaking at the Arthrex Fellowship Forum",
-                width: 3372,
-                height: 5995,
-                kicker: "Arthrex Fellowship Forum",
-                caption: "Speaking on technique and outcomes",
-              },
-              {
-                src: "/images/dr-lee-scapholunate-talk.jpg",
-                alt: "Dr. Lee presenting Scapholunate Tear Options at NISMAT",
-                width: 7360,
-                height: 4912,
-                kicker: "NISMAT · Scapholunate Tear Options",
-                caption: "Academic lecture on a published surgical series",
-              },
-              {
-                src: "/images/dr-lee-arthrex-panel.jpg",
-                alt: "Dr. Lee on a panel of upper-extremity surgeons at Arthrex",
-                width: 7952,
-                height: 5304,
-                kicker: "Arthrex Panel",
-                caption: "Upper-extremity surgery faculty panel",
-              },
-              {
-                src: "/images/dr-lee-nfl-fracture-panel.jpg",
-                alt: "Dr. Lee on the NFL fracture management panel at Arthrex",
-                width: 7952,
-                height: 5304,
-                kicker: "NFL Fracture Management",
-                caption: "Faculty panel on professional-athlete fracture care",
-              },
-            ].map((img) => (
-              <figure
-                key={img.src}
-                className="group lg:break-inside-avoid lg:mb-10 xl:mb-12"
-              >
+            {galleryImages.map((img) => (
+              <figure key={img.src} className="group lg:break-inside-avoid lg:mb-10 xl:mb-12">
                 <div className="relative w-full overflow-hidden bg-navy-800 ring-1 ring-navy-900/10">
                   <Image
                     src={img.src}
@@ -303,12 +454,68 @@ export default function BioPage() {
                 </div>
                 <figcaption className="mt-4 lg:mt-5">
                   <div className="kicker text-gold-600 mb-1.5">{img.kicker}</div>
-                  <div className="text-navy-900/75 text-[15px] leading-snug">
-                    {img.caption}
-                  </div>
+                  <div className="text-navy-900/75 text-[15px] leading-snug">{img.caption}</div>
                 </figcaption>
               </figure>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Practice today + closing links */}
+      <section className="bg-cream border-t border-navy-900/[0.06]">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 lg:py-24">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-12 lg:gap-20 items-start">
+            <div className="max-w-[620px]">
+              <SectionKicker label="Practice Today" />
+              <h2 className="font-serif text-3xl md:text-4xl text-navy-950 tracking-[-0.02em] leading-[1.1] mb-6">
+                Two New York offices, in person and online.
+              </h2>
+              <p className="text-navy-900/80 text-[17px] leading-[1.75] font-light">
+                Dr. Lee sees patients at two offices: his primary practice on
+                Manhattan&apos;s East 74th Street and a second office in Scarsdale,
+                Westchester. He offers in-person and telemedicine consultations and treats
+                both in-network and out-of-network patients, including international
+                patients who travel specifically to consult with him.
+              </p>
+
+              <a
+                href="https://www.zocdoc.com/doctor/steven-lee-md"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Book an appointment via ZocDoc (opens in new tab)"
+                className="mt-8 inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold rounded-md transition-all text-sm shadow-[0_8px_24px_-12px_rgba(201,168,76,0.45)] hover:-translate-y-0.5"
+              >
+                <Calendar size={15} aria-hidden="true" />
+                Book an Appointment
+                <ExternalLink size={12} className="opacity-70" aria-hidden="true" />
+              </a>
+            </div>
+
+            <div className="lg:pt-2">
+              <div className="kicker text-navy-900/55 mb-5">Continue</div>
+              <div className="grid grid-cols-1 gap-3">
+                {[
+                  { label: "Credentials & Awards", href: "/about/credentials" },
+                  { label: "Publications", href: "/about/publications" },
+                  { label: "Download CV", href: "/about/cv" },
+                ].map((l) => (
+                  <Link
+                    key={l.href}
+                    href={l.href}
+                    className="group flex items-center justify-between p-4 bg-white border border-navy-900/10 rounded-sm hover:border-gold-500 transition-colors"
+                  >
+                    <span className="text-sm font-semibold text-navy-950 group-hover:text-gold-600 transition-colors">
+                      {l.label}
+                    </span>
+                    <ArrowUpRight
+                      size={14}
+                      className="text-navy-900/40 group-hover:text-gold-600 transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                    />
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>

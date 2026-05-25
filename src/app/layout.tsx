@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Steven J. Lee, MD",
   },
   description:
-    "Dr. Steven J. Lee is a board-certified orthopedic surgeon specializing in hand, wrist, elbow, shoulder, and sports medicine surgery. Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, Associate Director at NISMAT. Serving New York City and Scarsdale. On the Arthrex implant design team. Among the first surgeons in New York to perform PRP therapy for upper extremity injuries. Book online via ZocDoc.",
+    "Dr. Steven J. Lee is a board-certified orthopedic surgeon specializing in hand, wrist, elbow, shoulder, and sports medicine surgery. Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, Associate Director at NISMAT. Serving New York City and Scarsdale. Has helped design orthopedic implants used by surgeons nationwide. Among the first surgeons in New York to perform PRP therapy for upper extremity injuries. Book online via ZocDoc.",
   keywords: [
     "orthopedic surgeon NYC",
     "hand surgeon New York",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Steven J. Lee, MD, Orthopedic Surgeon | NYC",
-    description: "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital. on the Arthrex implant design team.",
+    description: "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital. Orthopedic implant designer.",
   },
   robots: {
     index: true,

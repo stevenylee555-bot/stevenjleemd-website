@@ -11,7 +11,7 @@ import { fadeUp, inViewProps, stagger } from "@/lib/motion";
 const credentials = [
   "Double Fellowship-Trained",
   "Board-Certified, Orthopaedic Surgery",
-  "Arthrex Implant Design Team",
+  "Orthopedic Implant Designer",
 ];
 
 const affiliations: { name: string; role: string }[] = [
@@ -51,11 +51,10 @@ export default function About() {
                 board-certified by the American Board of Orthopaedic Surgery.
               </p>
               <p>
-                What sets Dr. Lee apart is his direct role advancing the field. He is on
-                the design team for several{" "}
-                <span className="text-navy-950 font-medium">Arthrex</span> implants used
-                worldwide, including plating systems for the hand and elbow and the
-                internal brace constructs used in ligament reconstruction.
+                What sets Dr. Lee apart is his direct role advancing the field. He has
+                helped design several orthopedic implants now used by surgeons across the
+                country, including plating systems for the hand and elbow and the
+                internal-brace constructs used in ligament reconstruction.
               </p>
               <p>
                 He has authored 35+ peer-reviewed papers, including what is believed to

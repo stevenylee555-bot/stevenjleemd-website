@@ -26,7 +26,7 @@ export const conditions: Condition[] = [
     region: "Hand & Wrist",
     status: "priority",
     blurb:
-      "The most common fracture orthopedic surgeons treat. Dr. Lee uses Arthrex fixed-angle volar plating in displaced or intra-articular cases.",
+      "The most common fracture orthopedic surgeons treat. Dr. Lee uses fixed-angle volar plating in displaced or intra-articular cases.",
   },
   {
     name: "Scapholunate Ligament Injury",
@@ -34,7 +34,7 @@ export const conditions: Condition[] = [
     region: "Hand & Wrist",
     status: "priority",
     blurb:
-      "Internal brace reconstruction using anchors Dr. Lee designed for Arthrex.",
+      "Internal brace reconstruction using anchors Dr. Lee helped design.",
   },
   {
     name: "Basal Joint Arthritis",
@@ -42,7 +42,7 @@ export const conditions: Condition[] = [
     region: "Hand & Wrist",
     status: "priority",
     blurb:
-      "Thumb CMC reconstruction with the Arthrex internal brace system Dr. Lee designed.",
+      "Thumb CMC reconstruction with an internal brace system Dr. Lee helped design.",
   },
   {
     name: "Hand & Wrist Fractures",
@@ -50,7 +50,7 @@ export const conditions: Condition[] = [
     region: "Hand & Wrist",
     status: "priority",
     blurb:
-      "Fracture fixation using the hand and elbow plating systems Dr. Lee designed for Arthrex.",
+      "Fracture fixation using hand and elbow plating systems Dr. Lee helped design.",
   },
   // Hand & Wrist, phase 2
   {
@@ -75,7 +75,7 @@ export const conditions: Condition[] = [
     region: "Elbow",
     status: "priority",
     blurb:
-      "UCL reconstruction with internal brace augmentation. Reconstruction uses the Arthrex anchor system Dr. Lee designed.",
+      "UCL reconstruction with internal brace augmentation. Reconstruction uses an anchor system Dr. Lee helped design.",
   },
   {
     name: "Biceps Tendon Rupture",
@@ -83,7 +83,7 @@ export const conditions: Condition[] = [
     region: "Elbow",
     status: "priority",
     blurb:
-      "Distal biceps repair using tendon-to-bone anchors Dr. Lee designed for Arthrex.",
+      "Distal biceps repair using tendon-to-bone anchors Dr. Lee helped design.",
   },
   // Elbow, phase 2
   {
@@ -123,7 +123,7 @@ export const conditions: Condition[] = [
     region: "Shoulder",
     status: "phase2",
     blurb:
-      "Plate fixation with current-generation Arthrex hardware.",
+      "Plate fixation with current-generation hardware.",
   },
 
   // Knee & Sports, priority
@@ -167,7 +167,7 @@ export const conditions: Condition[] = [
     region: "Advanced Treatments",
     status: "phase2",
     blurb:
-      "Dr. Lee was among the first surgeons in NYC to perform PRP, and 99% certain the first specifically for upper extremity injuries. 250+ PRP procedures performed annually.",
+      "Dr. Lee was among the first surgeons in NYC to perform PRP, including for upper extremity injuries. 250+ PRP procedures performed annually.",
   },
   {
     name: "Peptide Therapy",

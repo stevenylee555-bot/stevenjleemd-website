@@ -117,6 +117,30 @@ const research = [
   },
 ];
 
+const implantDesign = [
+  {
+    title: "Mini Comprehensive Fixation System",
+    detail: "Hand fracture plating system · Arthrex design team",
+  },
+  {
+    title: "Elbow Fracture Plating System",
+    detail: "Elbow fracture fixation · Arthrex design team",
+  },
+  {
+    title: "3.5 DX SwiveLock Anchor",
+    detail:
+      "Suture anchor used in internal-brace ligament reconstruction · Arthrex design team",
+  },
+  {
+    title: "NanoCorkscrew FT",
+    detail: "Tendon-to-bone repair anchor · Arthrex design team",
+  },
+  {
+    title: "FiberLock CMC Suspensionplasty",
+    detail: "Thumb basal-joint reconstruction construct · Arthrex design team",
+  },
+];
+
 const patents = [
   {
     title: "US Patent #12,622,710 B2",
@@ -270,6 +294,25 @@ export default function CredentialsPage() {
                   </div>
                   <div className="text-navy-900/65 text-sm leading-relaxed">
                     {r.detail}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </Section>
+
+          <Section kicker="Implant Design" title="Implants & fixation systems.">
+            <p className="text-navy-900/70 text-[15.5px] leading-relaxed mb-6 max-w-2xl">
+              Dr. Lee has served on the design teams for several orthopedic implants now
+              used by surgeons across the country. Selected contributions:
+            </p>
+            <ul className="border-t border-navy-900/10">
+              {implantDesign.map((d) => (
+                <li key={d.title} className="py-5 border-b border-navy-900/10">
+                  <div className="font-serif text-lg text-navy-950 tracking-[-0.01em] leading-snug mb-1">
+                    {d.title}
+                  </div>
+                  <div className="text-navy-900/65 text-sm leading-relaxed">
+                    {d.detail}
                   </div>
                 </li>
               ))}

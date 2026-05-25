@@ -113,21 +113,21 @@ export default function SpecialtyTemplate({ specialty }: { specialty: Specialty 
         </div>
       </section>
 
-      {/* Arthrex callout (if applicable) */}
-      {specialty.arthrex && (
+      {/* Implant-design callout (if applicable) */}
+      {specialty.implantDesign && (
         <section className="bg-navy-950 text-white">
           <div className="mx-auto max-w-5xl px-6 lg:px-10 py-20 lg:py-24">
             <div className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-10 lg:gap-16 items-center">
               <div>
                 <div className="flex items-center gap-3 mb-5">
                   <span className="h-px w-10 bg-gold-500" />
-                  <span className="kicker text-gold-400">Arthrex Design Team</span>
+                  <span className="kicker text-gold-400">Implant Design</span>
                 </div>
                 <h2 className="font-serif text-[clamp(1.75rem,3.2vw,2.75rem)] tracking-[-0.02em] leading-[1.1] mb-6">
-                  {specialty.arthrex.title}
+                  {specialty.implantDesign.title}
                 </h2>
                 <p className="text-white/70 text-[17px] leading-[1.75] font-light">
-                  {specialty.arthrex.body}
+                  {specialty.implantDesign.body}
                 </p>
               </div>
               <div className="hidden lg:flex items-center justify-center">

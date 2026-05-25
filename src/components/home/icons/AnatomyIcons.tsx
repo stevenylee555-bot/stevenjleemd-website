@@ -91,7 +91,7 @@ export function SecondOpinionIcon({ className, size }: IconProps) {
   );
 }
 
-// Arthrex feature: stylized plate/anchor line drawing
+// Implant design feature: stylized plate/anchor line drawing
 export function ImplantPlateIcon({ className }: { className?: string }) {
   return (
     <svg

@@ -28,7 +28,7 @@ const specialties = [
     title: "Elbow",
     eyebrow: "UCL · Complex trauma",
     description:
-      "Tommy John (UCL) reconstruction, LUCL repair, complex elbow trauma, biceps ruptures. On the Arthrex design team for the internal brace constructs used in these procedures.",
+      "Tommy John (UCL) reconstruction, LUCL repair, complex elbow trauma, biceps ruptures. He helped design the internal-brace constructs used in these procedures.",
     href: "/specialties/elbow",
     Icon: ElbowIcon,
   },

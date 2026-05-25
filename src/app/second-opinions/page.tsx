@@ -16,7 +16,7 @@ import { buildFaqSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Orthopedic Surgery Second Opinions, Steven J. Lee, MD",
   description:
-    "Get a world-class second opinion from Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, on the Arthrex implant design team. In-person consultations in NYC and Scarsdale, telemedicine available for out-of-state and international patients.",
+    "Get a world-class second opinion from Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital and an orthopedic implant designer. In-person consultations in NYC and Scarsdale, telemedicine available for out-of-state and international patients.",
   alternates: { canonical: "https://www.stevenjleemd.com/second-opinions" },
 };
 
@@ -122,13 +122,13 @@ export default function SecondOpinionsPage() {
               </div>
               <h2 className="font-serif text-[clamp(2rem,3.6vw,3rem)] tracking-[-0.02em] text-navy-950 leading-[1.1] mb-8">
                 The opinion of a surgeon who{" "}
-                <span className="serif-italic text-gold-600">designed the hardware.</span>
+                <span className="serif-italic text-gold-600">helped design the hardware.</span>
               </h2>
               <div className="space-y-5 text-navy-900/75 text-[17px] leading-[1.7] font-light max-w-xl">
                 <p>
                   Dr. Lee is Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital and a
-                  designer of plating systems, suture anchors, and internal brace constructs for
-                  Arthrex, one of the world&apos;s leading orthopedic device companies.
+                  designer of plating systems, suture anchors, and internal-brace constructs now
+                  used by surgeons across the country.
                 </p>
                 <p>
                   When a procedure involves the hardware he helped design, his perspective is

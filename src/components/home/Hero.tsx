@@ -66,7 +66,7 @@ export default function Hero() {
             <motion.div variants={heroReveal} className="flex items-center gap-3 mb-8">
               <span className="h-px w-10 bg-gold-500" aria-hidden="true" />
               <span className="kicker text-gold-400">
-                Arthrex Design Team · Lenox Hill Hospital · NISMAT
+                Lenox Hill Hospital · NISMAT · Implant Designer
               </span>
             </motion.div>
 
@@ -76,7 +76,7 @@ export default function Hero() {
             >
               Chief of Hand Surgery at Lenox Hill.{" "}
               <span className="serif-italic text-gold-400">Implant designer</span>{" "}
-              at Arthrex. Twenty-five years in New York.
+              and innovator. Twenty-five years in New York.
             </motion.h1>
 
             <motion.p

@@ -81,7 +81,7 @@ const distalRadiusFracture: ConditionPageContent = {
   headerTitle: "Distal Radius Fracture:",
   headerItalic: "the wrist fracture, treated properly.",
   headerLede:
-    "A broken wrist is the most common fracture orthopedic surgeons treat. The right treatment depends on the fracture pattern, the patient, and the surgeon. Dr. Lee is on the Arthrex design team for fixed-angle volar plating systems.",
+    "A broken wrist is the most common fracture orthopedic surgeons treat. The right treatment depends on the fracture pattern, the patient, and the surgeon. Dr. Lee helped design the fixed-angle volar plating systems used for these fractures.",
   byline: {
     name: "Steven J. Lee, MD",
     title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
@@ -121,7 +121,7 @@ const distalRadiusFracture: ConditionPageContent = {
   drLeeApproach: {
     paragraphs: [
       "Not every distal radius fracture needs surgery. Stable, well-aligned fractures heal beautifully in a cast, and Dr. Lee will never recommend an operation a patient doesn't need.",
-      "When surgery is the right call, the goal is to restore the anatomy as closely as possible to what was there before the fall. Dr. Lee is on the Arthrex design team for fixed-angle volar plating systems, the same fixed-angle volar plating system used by surgeons around the country. He uses it on his own patients.",
+      "When surgery is the right call, the goal is to restore the anatomy as closely as possible to what was there before the fall. Dr. Lee helped design fixed-angle volar plating systems now used by surgeons around the country, and selects the plate best suited to each fracture.",
     ],
   },
   treatmentSections: [
@@ -178,14 +178,14 @@ const distalRadiusFracture: ConditionPageContent = {
   sidebarFacts: [
     { label: "Bone involved", value: "Distal radius (forearm at wrist)" },
     { label: "Cause", value: "Fall onto outstretched hand" },
-    { label: "Surgical option", value: "Volar plate fixation (Arthrex plate Dr. Lee helped design)" },
+    { label: "Surgical option", value: "Volar plate fixation (plating system Dr. Lee helped design)" },
     { label: "Anesthesia", value: "Regional block + light sedation" },
     { label: "Cast / brace", value: "5–6 weeks (non-surgical), 2 weeks then brace (surgical)" },
     { label: "Return to work", value: "Office work ~2 weeks, manual work 8–12 weeks" },
   ],
   whyDrLee: [
     "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
-    "On the Arthrex design team for fixed-angle volar plating systems",
+    "Helped design the fixed-angle volar plating systems used in fixation",
     "Volar plating for displaced and intra-articular fractures",
     "Conservative, won't recommend surgery for fractures that don't need it",
   ],
@@ -209,7 +209,7 @@ const distalRadiusFracture: ConditionPageContent = {
     {
       question: "What is a volar plate?",
       answer:
-        "A volar plate is a small titanium plate placed on the palm-side surface of the radius to hold the fracture in correct alignment while it heals. Modern volar plates use fixed-angle screws, the screws lock into the plate, which makes the construct stable even in osteoporotic bone. Dr. Lee is on the Arthrex design team for the next-generation distal radius plate.",
+        "A volar plate is a small titanium plate placed on the palm-side surface of the radius to hold the fracture in correct alignment while it heals. Modern volar plates use fixed-angle screws, the screws lock into the plate, which makes the construct stable even in osteoporotic bone. Dr. Lee helped design the next-generation distal radius plating system.",
     },
     {
       question: "How long until I can use my hand again?",
@@ -233,7 +233,7 @@ const distalRadiusFracture: ConditionPageContent = {
     "A distal radius fracture heals once. The quality of that healing depends heavily on the quality of the initial treatment. Whether you need surgery or not, the goal is the same, a wrist that works normally in 30 years.",
   metaTitle: "Distal Radius (Wrist) Fracture, Steven J. Lee, MD",
   metaDescription:
-    "Distal radius (wrist) fracture treatment by Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital and on the Arthrex implant design team. Volar plate fixation, cast treatment, recovery, and second opinions.",
+    "Distal radius (wrist) fracture treatment by Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital and an orthopedic implant designer. Volar plate fixation, cast treatment, recovery, and second opinions.",
   schemaDescription:
     "A distal radius fracture is a break of the radius bone at the wrist, usually caused by a fall onto an outstretched hand. Treatment options include cast immobilization for stable fractures and volar plate fixation for displaced or intra-articular fractures.",
 };
@@ -247,7 +247,7 @@ const scapholunate: ConditionPageContent = {
   headerTitle: "Scapholunate Ligament Injury:",
   headerItalic: "the wrist sprain that isn't just a sprain.",
   headerLede:
-    "The scapholunate ligament holds two key wrist bones together. When it tears, the wrist mechanics change, and untreated, the wrist will eventually arthrose. Dr. Lee reconstructs scapholunate injuries using anchors he co-designed for Arthrex.",
+    "The scapholunate ligament holds two key wrist bones together. When it tears, the wrist mechanics change, and untreated, the wrist will eventually arthrose. Dr. Lee reconstructs scapholunate injuries using anchors he helped design.",
   byline: {
     name: "Steven J. Lee, MD",
     title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
@@ -275,7 +275,7 @@ const scapholunate: ConditionPageContent = {
   drLeeApproach: {
     paragraphs: [
       "Timing matters enormously with scapholunate injuries. A tear caught within the first few weeks of injury has the best chance of being repaired directly, sewing the ligament back to bone using anchors. After several months, the ligament tissue often can't be repaired and reconstruction becomes necessary.",
-      "Dr. Lee co-designed the suture anchor and internal brace constructs Arthrex sells for ligament reconstruction. He uses those same constructs in his own scapholunate reconstructions, typically combining a tendon graft with an internal brace tape to support the repair during healing.",
+      "Dr. Lee helped design suture anchor and internal brace constructs used for ligament reconstruction. In scapholunate reconstruction he typically combines a tendon graft with an internal brace tape to support the repair during healing.",
     ],
   },
   treatmentSections: [
@@ -332,7 +332,7 @@ const scapholunate: ConditionPageContent = {
     { label: "Ligament involved", value: "Scapholunate interosseous ligament" },
     { label: "Best treatment window", value: "Within 6 weeks of injury" },
     { label: "Surgical option", value: "Repair with internal brace, or tendon-graft reconstruction" },
-    { label: "Implants used", value: "Arthrex suture anchors Dr. Lee co-designed" },
+    { label: "Implants used", value: "Suture anchors Dr. Lee helped design" },
     { label: "Immobilization", value: "6 weeks cast/splint after surgery" },
     { label: "Full return", value: "4–6 months" },
   ],
@@ -372,7 +372,7 @@ const scapholunate: ConditionPageContent = {
     {
       question: "What is the internal brace?",
       answer:
-        "The internal brace is a strong synthetic tape, anchored into bone, that supports the ligament repair while it heals. Dr. Lee co-designed the anchor and tape constructs Arthrex sells for these reconstructions. The internal brace allows for earlier, more confident rehab without overstressing the healing ligament.",
+        "The internal brace is a strong synthetic tape, anchored into bone, that supports the ligament repair while it heals. Dr. Lee helped design the anchor and tape constructs used for these reconstructions. The internal brace allows for earlier, more confident rehab without overstressing the healing ligament.",
     },
     {
       question: "Can scapholunate injuries be treated arthroscopically?",
@@ -386,7 +386,7 @@ const scapholunate: ConditionPageContent = {
     "Persistent wrist pain after a fall deserves more than reassurance. Most scapholunate injuries are diagnosable on a careful exam and confirmed with the right imaging. The earlier the diagnosis, the more your wrist's future is on the table.",
   metaTitle: "Scapholunate Ligament Injury, Steven J. Lee, MD",
   metaDescription:
-    "Scapholunate ligament tear treatment by Dr. Steven J. Lee, MD, co-designer of the Arthrex internal brace and anchor system used in scapholunate reconstruction. Acute repair, chronic reconstruction, and second opinions.",
+    "Scapholunate ligament tear treatment by Dr. Steven J. Lee, MD, co-designer of the internal brace and anchor system used in scapholunate reconstruction. Acute repair, chronic reconstruction, and second opinions.",
   schemaDescription:
     "A scapholunate ligament injury is a tear of the key wrist ligament connecting the scaphoid and lunate bones. Untreated tears lead to wrist arthritis (SLAC wrist). Treatment options include acute repair with internal brace augmentation and tendon-graft reconstruction for chronic injuries.",
 };
@@ -432,7 +432,7 @@ const basalJointArthroplasty: ConditionPageContent = {
   drLeeApproach: {
     paragraphs: [
       "Surgery for basal joint arthritis is one of the most successful operations in hand surgery, but timing matters. Dr. Lee does not push patients into surgery; mild arthritis is treated conservatively with splinting, injections, and activity modification, and many patients live happily with that approach for years.",
-      "When surgery is the right call, Dr. Lee uses a modern reconstruction technique that combines removal of the arthritic trapezium with stabilization of the thumb using an internal brace, the same anchor and tape construct he co-designed for Arthrex. The result is a strong, well-positioned thumb without the prolonged immobilization required by traditional techniques.",
+      "When surgery is the right call, Dr. Lee uses a modern reconstruction technique that combines removal of the arthritic trapezium with stabilization of the thumb using an internal brace, an anchor and tape construct he helped design. The result is a strong, well-positioned thumb without the prolonged immobilization required by traditional techniques.",
     ],
   },
   treatmentSections: [
@@ -450,7 +450,7 @@ const basalJointArthroplasty: ConditionPageContent = {
     {
       heading: "Surgical reconstruction with internal brace",
       body: [
-        "When conservative treatment fails, Dr. Lee performs a basal joint reconstruction, removing the arthritic trapezium, stabilizing the thumb metacarpal with an internal brace anchored into the index metacarpal, and reconstructing the supporting soft tissue. The internal brace construct uses anchors Dr. Lee co-designed for Arthrex and provides immediate stability without the long immobilization required by traditional ligament reconstruction techniques.",
+        "When conservative treatment fails, Dr. Lee performs a basal joint reconstruction, removing the arthritic trapezium, stabilizing the thumb metacarpal with an internal brace anchored into the index metacarpal, and reconstructing the supporting soft tissue. The internal brace construct uses anchors Dr. Lee helped design and provides immediate stability without the long immobilization required by traditional ligament reconstruction techniques.",
       ],
     },
   ],
@@ -493,13 +493,13 @@ const basalJointArthroplasty: ConditionPageContent = {
   sidebarFacts: [
     { label: "Joint involved", value: "Thumb carpometacarpal (CMC) / basal joint" },
     { label: "Typical patient", value: "Women 50+, often bilateral" },
-    { label: "Surgical option", value: "Reconstruction with internal brace (Arthrex anchors)" },
+    { label: "Surgical option", value: "Reconstruction with internal brace (anchors Dr. Lee helped design)" },
     { label: "Anesthesia", value: "Regional block + light sedation" },
     { label: "Brace duration", value: "2 weeks rigid, 4 more weeks soft" },
     { label: "Full strength", value: "6 months, improves up to a year" },
   ],
   whyDrLee: [
-    "Co-designer of the Arthrex anchor system used in basal joint reconstruction",
+    "Co-designer of the anchor system used in basal joint reconstruction",
     "Internal brace technique, shorter immobilization than traditional LRTI",
     "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
     "Conservative, won't operate on arthritis that hasn't earned an operation",
@@ -529,7 +529,7 @@ const basalJointArthroplasty: ConditionPageContent = {
     {
       question: "What is internal brace reconstruction?",
       answer:
-        "It's a modern technique that removes the arthritic trapezium bone and stabilizes the thumb using a synthetic tape (the 'internal brace') anchored into the adjacent index metacarpal. Dr. Lee co-designed the anchor system Arthrex sells for this reconstruction. Compared with the traditional LRTI procedure, the internal brace allows for shorter immobilization and faster return of function.",
+        "It's a modern technique that removes the arthritic trapezium bone and stabilizes the thumb using a synthetic tape (the 'internal brace') anchored into the adjacent index metacarpal. Dr. Lee helped design the anchor system used for this reconstruction. Compared with the traditional LRTI procedure, the internal brace allows for shorter immobilization and faster return of function.",
     },
     {
       question: "How long until I can use my hand normally?",
@@ -548,7 +548,7 @@ const basalJointArthroplasty: ConditionPageContent = {
     "Modern basal joint reconstruction is one of the most reliably successful operations in hand surgery. Most patients regain a pain-free, strong thumb and wonder why they waited so long.",
   metaTitle: "Basal Joint Arthritis (Thumb CMC), Steven J. Lee, MD",
   metaDescription:
-    "Basal joint (thumb CMC) arthritis treatment by Dr. Steven J. Lee, MD, co-designer of the Arthrex internal brace system used in modern thumb reconstruction. Conservative treatment, surgery, and recovery explained.",
+    "Basal joint (thumb CMC) arthritis treatment by Dr. Steven J. Lee, MD, co-designer of the internal brace system used in modern thumb reconstruction. Conservative treatment, surgery, and recovery explained.",
   schemaDescription:
     "Basal joint arthritis is osteoarthritis of the thumb carpometacarpal (CMC) joint, causing pain with pinching and gripping. Treatment ranges from splinting and corticosteroid injection to surgical reconstruction using internal brace techniques.",
 };
@@ -560,7 +560,7 @@ const handWristFractures: ConditionPageContent = {
   name: "Hand & Wrist Fractures",
   region: "Hand & Wrist",
   headerTitle: "Hand & Wrist Fractures:",
-  headerItalic: "treated with the hardware Dr. Lee designed.",
+  headerItalic: "treated with the hardware Dr. Lee helped design.",
   headerLede:
     "Metacarpal fractures, phalanx fractures, scaphoid fractures, and other small bone injuries of the hand and wrist. The principles are the same as larger fractures, restore the anatomy, allow early motion, prevent stiffness, applied with smaller-scale hardware.",
   byline: {
@@ -599,7 +599,7 @@ const handWristFractures: ConditionPageContent = {
   ],
   drLeeApproach: {
     paragraphs: [
-      "Hand fracture treatment is one of the areas where Dr. Lee's Arthrex implant design work is most directly applied. The plating systems he helped design, for distal radius, hand, and wrist, are the same systems he uses on his own patients.",
+      "Hand fracture treatment is one of the areas where Dr. Lee's implant-design work is most directly applied. He helped design plating systems for the distal radius, hand, and wrist now used by surgeons across the country.",
       "The treatment approach is conservative when conservative is right, and surgical when surgery is the better path. Many hand fractures do beautifully with proper buddy-taping, splinting, and hand therapy. The ones that need surgery do best when the hardware is small, well-contoured, and allows the finger or wrist to start moving early.",
     ],
   },
@@ -613,7 +613,7 @@ const handWristFractures: ConditionPageContent = {
     {
       heading: "Surgical fixation",
       body: [
-        "Displaced, unstable, or intra-articular fractures are best treated with internal fixation, small plates and screws, or sometimes percutaneous pins. The hardware Dr. Lee uses for hand and wrist fractures is hardware he helped design as part of the Arthrex implant team. The construct is sized to the bone and contoured to sit beneath the surrounding tissue, allowing immediate finger motion in most cases.",
+        "Displaced, unstable, or intra-articular fractures are best treated with internal fixation, small plates and screws, or sometimes percutaneous pins. Dr. Lee helped design plating systems used for hand and wrist fractures. The construct is sized to the bone and contoured to sit beneath the surrounding tissue, allowing immediate finger motion in most cases.",
       ],
     },
   ],
@@ -656,13 +656,13 @@ const handWristFractures: ConditionPageContent = {
   sidebarFacts: [
     { label: "Bones involved", value: "Metacarpals, phalanges, scaphoid, other carpal bones" },
     { label: "Common cause", value: "Falls, sports, punches, crush injuries" },
-    { label: "Surgical option", value: "Plate/screw fixation with Arthrex hardware Dr. Lee designed" },
+    { label: "Surgical option", value: "Plate/screw fixation with hardware Dr. Lee helped design" },
     { label: "Immobilization", value: "1–4 weeks depending on fracture and fixation" },
     { label: "Hand therapy", value: "Begins within 1–2 weeks in most cases" },
     { label: "Full recovery", value: "6–12 weeks" },
   ],
   whyDrLee: [
-    "Designed the Arthrex hand and wrist plating systems used in fixation",
+    "Helped design the hand and wrist plating systems used in fixation",
     "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
     "Early-motion focused, minimizes the risk of stiffness",
     "Treats both acute fractures and the stiffness from poorly-treated old fractures",
@@ -692,7 +692,7 @@ const handWristFractures: ConditionPageContent = {
     {
       question: "What hardware does Dr. Lee use?",
       answer:
-        "Dr. Lee uses the Arthrex hand and wrist plating systems, including hardware he co-designed. The plates are small, low-profile, contoured to the bone, and allow early motion in most cases. He uses the same hardware on his own patients that he helped develop for Arthrex's broader surgeon community.",
+        "Dr. Lee uses modern hand and wrist plating systems, including hardware he helped design. The plates are small, low-profile, contoured to the bone, and allow early motion in most cases.",
     },
     {
       question: "Will the plate need to be removed later?",
@@ -711,7 +711,7 @@ const handWristFractures: ConditionPageContent = {
     "Whether you have a fresh injury or a fracture that wasn't treated well the first time, Dr. Lee evaluates both. Many post-fracture problems, stiffness, malunion, non-union, are correctable when addressed by a hand surgeon.",
   metaTitle: "Hand & Wrist Fractures, Steven J. Lee, MD",
   metaDescription:
-    "Hand and wrist fracture treatment by Dr. Steven J. Lee, MD, co-designer of the Arthrex hand and wrist plating systems used in fixation. Metacarpal, phalanx, scaphoid, and other small bone fractures.",
+    "Hand and wrist fracture treatment by Dr. Steven J. Lee, MD, co-designer of the hand and wrist plating systems used in fixation. Metacarpal, phalanx, scaphoid, and other small bone fractures.",
   schemaDescription:
     "Hand and wrist fractures include metacarpal fractures (boxer's fractures), phalanx fractures, scaphoid fractures, and other small bone injuries. Treatment ranges from buddy-taping and splinting to internal fixation with small plates and screws.",
 };
@@ -725,7 +725,7 @@ const uclReconstruction: ConditionPageContent = {
   headerTitle: "UCL Reconstruction:",
   headerItalic: "Tommy John surgery, modern technique.",
   headerLede:
-    "The ulnar collateral ligament (UCL) of the elbow is the throwing athlete's most vulnerable structure. Reconstruction uses anchors Dr. Lee co-designed for Arthrex, combined with internal brace augmentation in selected cases.",
+    "The ulnar collateral ligament (UCL) of the elbow is the throwing athlete's most vulnerable structure. Reconstruction uses anchors Dr. Lee helped design, combined with internal brace augmentation in selected cases.",
   byline: {
     name: "Steven J. Lee, MD",
     title: "Double Fellowship-Trained · Hand & Sports Medicine",
@@ -753,7 +753,7 @@ const uclReconstruction: ConditionPageContent = {
   drLeeApproach: {
     paragraphs: [
       "Not every UCL injury requires surgery. Partial tears in non-throwers can be managed conservatively. Even some partial tears in throwers respond to a period of rest, structured rehab, and biologic injection (PRP). The decision to operate is based on the tear pattern, the patient's sport and level, and how the elbow responds to non-surgical treatment.",
-      "When reconstruction is the right call, Dr. Lee uses the modern docking technique with internal brace augmentation in appropriate patients, using anchors he co-designed for Arthrex. The internal brace allows for more confident early rehab and, in selected athletes, a shorter timeline to return to throwing.",
+      "When reconstruction is the right call, Dr. Lee uses the modern docking technique with internal brace augmentation in appropriate patients, using anchors he helped design. The internal brace allows for more confident early rehab and, in selected athletes, a shorter timeline to return to throwing.",
     ],
   },
   treatmentSections: [
@@ -810,13 +810,13 @@ const uclReconstruction: ConditionPageContent = {
     { label: "Ligament involved", value: "Ulnar collateral ligament (medial elbow)" },
     { label: "Typical patient", value: "Overhead throwing athletes (baseball, football, tennis)" },
     { label: "Surgical option", value: "UCL reconstruction (docking technique) ± internal brace" },
-    { label: "Implants used", value: "Arthrex anchors Dr. Lee co-designed" },
+    { label: "Implants used", value: "Anchors Dr. Lee helped design" },
     { label: "Throwing return", value: "Begins month 4–5; competition at 12–15 months" },
     { label: "Internal brace augmentation", value: "May shorten return in selected patients" },
   ],
   whyDrLee: [
     "Double fellowship-trained, hand & sports medicine",
-    "Co-designer of the Arthrex anchor system used in UCL reconstruction",
+    "Co-designer of the anchor system used in UCL reconstruction",
     "Modern docking technique with optional internal brace augmentation",
     "Sees second-opinion patients on UCL injuries regularly",
   ],
@@ -864,7 +864,7 @@ const uclReconstruction: ConditionPageContent = {
     "Throwing arm pain is rarely just 'soreness.' The athletes who do best are the ones who get an accurate diagnosis early, before continued throwing turns a partial tear into a complete one.",
   metaTitle: "Tommy John (UCL) Reconstruction, Steven J. Lee, MD",
   metaDescription:
-    "Tommy John surgery (UCL reconstruction) by Dr. Steven J. Lee, MD, double fellowship-trained in hand and sports medicine. Uses Arthrex anchors Dr. Lee co-designed and offers internal brace augmentation in appropriate patients.",
+    "Tommy John surgery (UCL reconstruction) by Dr. Steven J. Lee, MD, double fellowship-trained in hand and sports medicine. Uses anchors Dr. Lee helped design and offers internal brace augmentation in appropriate patients.",
   schemaDescription:
     "Tommy John surgery (UCL reconstruction) is the rebuilding of the ulnar collateral ligament of the elbow using a tendon graft, performed for throwing athletes with UCL insufficiency. Modern techniques include internal brace augmentation in appropriate patients.",
 };
@@ -878,7 +878,7 @@ const bicepsRupture: ConditionPageContent = {
   headerTitle: "Distal Biceps Tendon Rupture:",
   headerItalic: "the elbow tendon, repaired definitively.",
   headerLede:
-    "A distal biceps rupture is one of the few orthopedic injuries with a clear best-treatment answer for most patients: surgical repair. Dr. Lee uses the anchor and cortical button constructs he co-designed for Arthrex.",
+    "A distal biceps rupture is one of the few orthopedic injuries with a clear best-treatment answer for most patients: surgical repair. Dr. Lee uses anchor and cortical button constructs he helped design.",
   byline: {
     name: "Steven J. Lee, MD",
     title: "Double Fellowship-Trained · Hand & Sports Medicine",
@@ -905,7 +905,7 @@ const bicepsRupture: ConditionPageContent = {
   ],
   drLeeApproach: {
     paragraphs: [
-      "Distal biceps rupture is a tendon-to-bone reconstruction problem, and the quality of that fixation determines the outcome. Dr. Lee uses a single-incision anterior approach with cortical button and tenodesis screw fixation, the same Arthrex construct he helped design.",
+      "Distal biceps rupture is a tendon-to-bone reconstruction problem, and the quality of that fixation determines the outcome. Dr. Lee uses a single-incision anterior approach with cortical button and tenodesis screw fixation, a construct he helped design.",
       "The repair is durable enough to support early protected motion, which avoids the elbow stiffness that has historically been the biggest complication of biceps repair. Most patients are out of formal immobilization within 2–3 weeks.",
     ],
   },
@@ -919,7 +919,7 @@ const bicepsRupture: ConditionPageContent = {
     {
       heading: "Surgical repair, single-incision anterior approach",
       body: [
-        "Dr. Lee performs a single-incision anterior repair, the most widely used modern technique. A small horizontal incision is made in the antecubital crease. The retracted tendon is identified, debrided, and reattached to the bicipital tuberosity of the radius using a cortical button and tenodesis screw, the Arthrex construct Dr. Lee co-designed. The single-incision technique avoids the risk of heterotopic ossification associated with the older two-incision technique.",
+        "Dr. Lee performs a single-incision anterior repair, the most widely used modern technique. A small horizontal incision is made in the antecubital crease. The retracted tendon is identified, debrided, and reattached to the bicipital tuberosity of the radius using a cortical button and tenodesis screw, a construct Dr. Lee helped design. The single-incision technique avoids the risk of heterotopic ossification associated with the older two-incision technique.",
       ],
     },
   ],
@@ -963,12 +963,12 @@ const bicepsRupture: ConditionPageContent = {
     { label: "Tendon involved", value: "Distal biceps tendon (insertion onto radius)" },
     { label: "Typical mechanism", value: "Sudden eccentric load on flexed elbow" },
     { label: "Surgical option", value: "Single-incision repair with cortical button + tenodesis screw" },
-    { label: "Implants used", value: "Arthrex constructs Dr. Lee co-designed" },
+    { label: "Implants used", value: "Constructs Dr. Lee helped design" },
     { label: "Best repair window", value: "Within 2–4 weeks of injury" },
     { label: "Return to lifting", value: "Light at 6–8 weeks; full at 4–6 months" },
   ],
   whyDrLee: [
-    "Co-designer of the Arthrex cortical button and tenodesis screw used in repair",
+    "Co-designer of the cortical button and tenodesis screw used in repair",
     "Double fellowship-trained, hand & sports medicine",
     "Single-incision technique, avoids heterotopic ossification risk",
     "Treats both acute and chronic (delayed) biceps ruptures",
@@ -998,7 +998,7 @@ const bicepsRupture: ConditionPageContent = {
     {
       question: "What is the cortical button?",
       answer:
-        "The cortical button is a small fixation device, about the size of a piece of pencil eraser, that anchors the repaired biceps tendon to the back side of the radius bone. Combined with a tenodesis screw on the near side, it creates a 'sandwich' fixation that is biomechanically stronger than older suture-only techniques. Dr. Lee co-designed the construct he uses.",
+        "The cortical button is a small fixation device, about the size of a piece of pencil eraser, that anchors the repaired biceps tendon to the back side of the radius bone. Combined with a tenodesis screw on the near side, it creates a 'sandwich' fixation that is biomechanically stronger than older suture-only techniques. Dr. Lee helped design this construct.",
     },
     {
       question: "When can I lift weights again?",
@@ -1017,7 +1017,7 @@ const bicepsRupture: ConditionPageContent = {
     "Distal biceps ruptures are best repaired within a few weeks of injury. If you felt a pop and the arm doesn't feel right, get evaluated. The earlier the diagnosis, the simpler the path back to a fully functional arm.",
   metaTitle: "Distal Biceps Tendon Rupture, Steven J. Lee, MD",
   metaDescription:
-    "Distal biceps tendon rupture and repair by Dr. Steven J. Lee, MD, co-designer of the Arthrex cortical button and tenodesis screw used in repair. Single-incision technique, recovery timeline, and when surgery is right.",
+    "Distal biceps tendon rupture and repair by Dr. Steven J. Lee, MD, co-designer of the cortical button and tenodesis screw used in repair. Single-incision technique, recovery timeline, and when surgery is right.",
   schemaDescription:
     "A distal biceps tendon rupture is a tear of the biceps tendon at its insertion on the radius bone at the elbow, typically from sudden eccentric load. Treatment is usually surgical repair using cortical button and tenodesis screw fixation.",
 };
@@ -1231,7 +1231,7 @@ const aclReconstruction: ConditionPageContent = {
       heading: "ACL reconstruction",
       body: [
         "Reconstruction is performed arthroscopically. A tendon graft, typically patellar tendon (BTB), quadriceps tendon, or hamstring autograft, or in selected patients an allograft, is routed through bone tunnels in the femur and tibia and secured with interference screws or cortical button constructs.",
-        "Associated meniscus tears are repaired or trimmed at the same time. Cartilage injuries are addressed as needed. Dr. Lee uses Arthrex fixation hardware throughout, the same constructs used by surgeons in the broader Arthrex surgeon community.",
+        "Associated meniscus tears are repaired or trimmed at the same time. Cartilage injuries are addressed as needed. Dr. Lee uses modern fixation hardware throughout, the same constructs used by surgeons nationwide.",
       ],
     },
   ],
@@ -1282,7 +1282,7 @@ const aclReconstruction: ConditionPageContent = {
   whyDrLee: [
     "Double fellowship-trained, sports medicine and hand & upper extremity",
     "Graft selection tailored to age, sport, and patient preference",
-    "Arthrex fixation constructs throughout",
+    "Modern fixation constructs throughout",
     "Functional return-to-sport testing, not calendar-based clearance",
   ],
   related: [
