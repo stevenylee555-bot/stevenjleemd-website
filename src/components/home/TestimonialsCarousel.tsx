@@ -8,7 +8,7 @@ import { ChevronLeft, ChevronRight, Pause, Play, ArrowUpRight } from "lucide-rea
 import { ease } from "@/lib/motion";
 import { cn } from "@/lib/utils";
 
-type Testimonial = {
+export type Testimonial = {
   quote: string;
   emphasis?: string;
   name: string;
@@ -17,10 +17,9 @@ type Testimonial = {
   initials: string;
 };
 
-// Placeholder content. Dr. Lee will supply the real quotes and the photos he
-// has taken with consenting patients; drop images at /images/testimonials/*
-// and set `image` on each entry. Until then the initials monogram renders.
-const testimonials: Testimonial[] = [
+// Fallback content, shown only when Sanity has no published testimonials yet.
+// Once Dr. Lee adds real ones in the Studio, those replace these automatically.
+const fallbackTestimonials: Testimonial[] = [
   {
     quote:
       "I was told my wrist would never be the same after the break. Dr. Lee saw it differently,",
@@ -145,9 +144,14 @@ function Slide({ t }: { t: Testimonial }) {
   );
 }
 
-export default function TestimonialsCarousel() {
+export default function TestimonialsCarousel({
+  items,
+}: {
+  items?: Testimonial[];
+}) {
   const reduce = useReducedMotion();
-  const count = testimonials.length;
+  const data = items && items.length > 0 ? items : fallbackTestimonials;
+  const count = data.length;
 
   const [[index, direction], setSlide] = useState<[number, number]>([0, 0]);
   const [paused, setPaused] = useState(false);
@@ -202,7 +206,7 @@ export default function TestimonialsCarousel() {
     }),
   };
 
-  const active = testimonials[index];
+  const active = data[index];
 
   return (
     <section className="relative bg-cream overflow-hidden">
@@ -257,7 +261,7 @@ export default function TestimonialsCarousel() {
           {/* Controls */}
           <div className="mt-10 flex items-center justify-between gap-4 border-t border-navy-900/10 pt-6">
             <div className="flex items-center gap-2.5" aria-hidden="true">
-              {testimonials.map((_, i) => (
+              {data.map((_, i) => (
                 <button
                   key={i}
                   type="button"
