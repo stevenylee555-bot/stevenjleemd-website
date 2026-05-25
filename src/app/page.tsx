@@ -4,7 +4,7 @@ import AnimatedStats from "@/components/home/AnimatedStats";
 import InnovationFeature from "@/components/home/InnovationFeature";
 import Specialties from "@/components/home/Specialties";
 import SecondOpinion from "@/components/home/SecondOpinion";
-import TestimonialSpotlight from "@/components/home/TestimonialSpotlight";
+import TestimonialsCarousel from "@/components/home/TestimonialsCarousel";
 import About from "@/components/home/About";
 import ConditionsPreview from "@/components/home/ConditionsPreview";
 import BookingCTA from "@/components/home/BookingCTA";
@@ -54,7 +54,7 @@ export default function HomePage() {
       <InnovationFeature />
       <Specialties />
       <SecondOpinion />
-      <TestimonialSpotlight />
+      <TestimonialsCarousel />
       <About />
       <ConditionsPreview />
       <BookingCTA />
