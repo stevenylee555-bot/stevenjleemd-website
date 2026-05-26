@@ -3,6 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight, Calendar, ExternalLink } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
+import { ZOCDOC_URL } from "@/lib/site";
+import { getBioPage } from "@/sanity/getBioPage";
 
 export const metadata: Metadata = {
   title: "Biography, Steven J. Lee, MD",
@@ -104,14 +106,33 @@ function SectionKicker({ label, light = false }: { label: string; light?: boolea
   );
 }
 
-export default function BioPage() {
+export default async function BioPage() {
+  const bio = await getBioPage();
+  const introParagraphs =
+    bio?.introParagraphs && bio.introParagraphs.length > 0
+      ? bio.introParagraphs
+      : [
+          "Dr. Steven J. Lee is double board certified and double fellowship-trained in Hand & Upper Extremity Surgery and Sports Medicine, and specializes in the most complex disorders of the hand, wrist, elbow, shoulder, knee, and ankle.",
+          "He is Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital in New York City, and Associate Director of the Nicholas Institute of Sports Medicine and Athletic Trauma (NISMAT), the first hospital-based facility in the country dedicated to the study of sports medicine and research.",
+          "Dr. Lee is perennially recognized as one of New York Magazine's Best Doctors, a Castle Connolly Top Doctor in Orthopedic Surgery, one of America's Top Orthopedists, a U.S. News & World Report Top Doctor, and a New York Super Doctors Hall of Fame honoree.",
+        ];
+  const credentialsList = bio?.credentials?.length ? bio.credentials : credentials;
+  const trainingList = bio?.training?.length ? bio.training : training;
+  const athleteRolesList = bio?.athleteRoles?.length ? bio.athleteRoles : athleteRoles;
+  const sportsTreatedList = bio?.sportsTreated?.length ? bio.sportsTreated : sportsTreated;
+  const galleryList = galleryImages.map((img, i) => ({
+    ...img,
+    kicker: bio?.galleryCaptions?.[i]?.kicker ?? img.kicker,
+    caption: bio?.galleryCaptions?.[i]?.caption ?? img.caption,
+  }));
+
   return (
     <>
       <PageHeader
         kicker="Biography"
-        title="A surgeon at the"
-        italic="leading edge of his field."
-        lede="Double board certified and double fellowship-trained, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, and the surgeon many physicians refer the cases they find too complex."
+        title={bio?.headerTitle ?? "A surgeon at the"}
+        italic={bio?.headerItalic ?? "leading edge of his field."}
+        lede={bio?.headerLede ?? "Double board certified and double fellowship-trained, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, and the surgeon many physicians refer the cases they find too complex."}
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "About", href: "/about" },
@@ -125,25 +146,18 @@ export default function BioPage() {
           <div className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-16 lg:gap-20">
             <article className="max-w-[660px]">
               <div className="space-y-6 text-navy-900/80 text-[17px] leading-[1.75] font-light">
-                <p className="text-navy-950 text-[19px] md:text-[20px] font-normal leading-[1.55] tracking-[-0.005em]">
-                  Dr. Steven J. Lee is double board certified and double
-                  fellowship-trained in Hand &amp; Upper Extremity Surgery and Sports
-                  Medicine, and specializes in the most complex disorders of the hand,
-                  wrist, elbow, shoulder, knee, and ankle.
-                </p>
-                <p>
-                  He is Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital
-                  in New York City, and Associate Director of the Nicholas Institute of
-                  Sports Medicine and Athletic Trauma (NISMAT), the first hospital-based
-                  facility in the country dedicated to the study of sports medicine and
-                  research.
-                </p>
-                <p>
-                  Dr. Lee is perennially recognized as one of New York Magazine&apos;s
-                  Best Doctors, a Castle Connolly Top Doctor in Orthopedic Surgery, one
-                  of America&apos;s Top Orthopedists, a U.S. News &amp; World Report Top
-                  Doctor, and a New York Super Doctors Hall of Fame honoree.
-                </p>
+                {introParagraphs.map((p, i) =>
+                  i === 0 ? (
+                    <p
+                      key={i}
+                      className="text-navy-950 text-[19px] md:text-[20px] font-normal leading-[1.55] tracking-[-0.005em]"
+                    >
+                      {p}
+                    </p>
+                  ) : (
+                    <p key={i}>{p}</p>
+                  )
+                )}
               </div>
             </article>
 
@@ -166,7 +180,7 @@ export default function BioPage() {
 
                 <div className="kicker text-navy-900/80 mb-4">Credentials</div>
                 <ul className="space-y-3 mb-10">
-                  {credentials.map((c) => (
+                  {credentialsList.map((c) => (
                     <li key={c} className="flex items-baseline gap-3 text-[14.5px] text-navy-900/85">
                       <span className="h-1 w-1 rounded-full bg-gold-500 shrink-0 translate-y-[2px]" />
                       <span>{c}</span>
@@ -192,7 +206,7 @@ export default function BioPage() {
                 </ul>
 
                 <a
-                  href="https://www.zocdoc.com/doctor/steven-lee-md"
+                  href={ZOCDOC_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Book an appointment via ZocDoc (opens in new tab)"
@@ -215,12 +229,12 @@ export default function BioPage() {
             <div className="lg:pt-1">
               <SectionKicker label="Training & Education" />
               <h2 className="font-serif text-3xl md:text-4xl lg:text-[2.75rem] text-navy-950 tracking-[-0.02em] leading-[1.1]">
-                A foundation built at New York&apos;s teaching hospitals.
+                {bio?.trainingHeading ?? "A foundation built at New York's teaching hospitals."}
               </h2>
             </div>
 
             <ol className="border-t border-navy-900/10 lg:mt-1">
-              {training.map((t, i) => (
+              {trainingList.map((t, i) => (
                 <li
                   key={t.institution}
                   className="grid grid-cols-[auto_1fr] gap-x-5 sm:gap-x-7 py-6 border-b border-navy-900/10"
@@ -259,23 +273,22 @@ export default function BioPage() {
           <div className="max-w-3xl">
             <SectionKicker label="Athletes & Sports Medicine" light />
             <h2 className="font-serif text-3xl md:text-4xl lg:text-[2.75rem] tracking-[-0.02em] leading-[1.1] mb-7">
-              Trained at the center of{" "}
-              <span className="serif-italic text-gold-400">New York sports medicine.</span>
+              {bio?.athletesHeadingLead ?? "Trained at the center of"}{" "}
+              <span className="serif-italic text-gold-400">
+                {bio?.athletesHeadingEmphasis ?? "New York sports medicine."}
+              </span>
             </h2>
             <p className="text-white/75 text-[17px] lg:text-lg leading-[1.7] font-light">
-              Few orthopedic surgeons are fellowship-trained in both hand and upper
-              extremity surgery and sports medicine. That combination gives Dr. Lee a
-              distinct advantage with athletes, who place far greater demands on a
-              repaired joint or tendon and almost always need to return to their sport on
-              a timeline.
+              {bio?.athletesIntro ??
+                "Few orthopedic surgeons are fellowship-trained in both hand and upper extremity surgery and sports medicine. That combination gives Dr. Lee a distinct advantage with athletes, who place far greater demands on a repaired joint or tendon and almost always need to return to their sport on a timeline."}
             </p>
           </div>
 
           <blockquote className="my-12 lg:my-16 max-w-3xl border-t border-white/15 pt-8">
             <p className="font-serif text-2xl md:text-3xl lg:text-[2.25rem] leading-[1.25] tracking-[-0.01em] text-white">
-              He treats the athlete, not just the injury,{" "}
+              {bio?.athletesQuoteLead ?? "He treats the athlete, not just the injury,"}{" "}
               <span className="serif-italic text-gold-400">
-                tailoring care to the demands of the sport and the timeline to return.
+                {bio?.athletesQuoteEmphasis ?? "tailoring care to the demands of the sport and the timeline to return."}
               </span>
             </p>
           </blockquote>
@@ -284,7 +297,7 @@ export default function BioPage() {
             <div>
               <div className="kicker text-white/80 mb-5">Team Physician & Training Roles</div>
               <ul className="space-y-4">
-                {athleteRoles.map((r) => (
+                {athleteRolesList.map((r) => (
                   <li key={r} className="flex items-baseline gap-3 text-white/85 text-[15.5px] leading-relaxed">
                     <span className="h-1 w-1 rounded-full bg-gold-500 shrink-0 translate-y-[6px]" aria-hidden="true" />
                     <span>{r}</span>
@@ -296,7 +309,7 @@ export default function BioPage() {
             <div>
               <div className="kicker text-white/80 mb-5">Professional Athletes Treated</div>
               <div className="flex flex-wrap gap-2.5">
-                {sportsTreated.map((s) => (
+                {sportsTreatedList.map((s) => (
                   <span
                     key={s}
                     className="text-[13px] font-medium tracking-wide text-white/85 bg-white/[0.06] border border-white/10 px-3.5 py-1.5 rounded-full"
@@ -306,8 +319,8 @@ export default function BioPage() {
                 ))}
               </div>
               <p className="mt-6 text-white/85 text-[14.5px] leading-relaxed">
-                Especially attuned to collegiate and recruiting athletes: all three of
-                Dr. Lee&apos;s children are Division I athletes.
+                {bio?.athletesNote ??
+                  "Especially attuned to collegiate and recruiting athletes: all three of Dr. Lee's children are Division I athletes."}
               </p>
             </div>
           </div>
@@ -321,17 +334,12 @@ export default function BioPage() {
             <div className="max-w-[660px]">
               <SectionKicker label="Research & Innovation" />
               <h2 className="font-serif text-3xl md:text-4xl lg:text-[2.75rem] text-navy-950 tracking-[-0.02em] leading-[1.1] mb-8">
-                Advancing the tools of the field.
+                {bio?.researchHeading ?? "Advancing the tools of the field."}
               </h2>
               <div className="space-y-6 text-navy-900/80 text-[17px] leading-[1.75] font-light">
                 <p>
-                  Dr. Lee has been a pioneer in orthopedic research and is nationally
-                  recognized for innovative techniques to treat the most difficult
-                  disorders in orthopedics. He has designed numerous orthopedic implants
-                  now in wide use, including among the most advanced plating systems for
-                  fracture fixation of the hand, wrist, elbow, and upper extremity. His
-                  anchor designs helped pioneer the use of internal bracing for the upper
-                  extremity.
+                  {bio?.researchPara1 ??
+                    "Dr. Lee has been a pioneer in orthopedic research and is nationally recognized for innovative techniques to treat the most difficult disorders in orthopedics. He has designed numerous orthopedic implants now in wide use, including among the most advanced plating systems for fracture fixation of the hand, wrist, elbow, and upper extremity. His anchor designs helped pioneer the use of internal bracing for the upper extremity."}
                 </p>
                 <p>
                   He has also helped advance the use of biologics in orthopedic care. Dr.
@@ -363,15 +371,15 @@ export default function BioPage() {
                 <div className="absolute -bottom-2 -right-2 h-12 w-12 border-b-2 border-r-2 border-gold-500" aria-hidden="true" />
                 <div className="kicker text-gold-600 mb-4">US Patent</div>
                 <div className="font-serif text-3xl lg:text-4xl text-navy-950 tracking-[-0.01em] leading-none mb-3">
-                  12,622,710 B2
+                  {bio?.patentNumber ?? "12,622,710 B2"}
                 </div>
                 <p className="text-navy-900/80 text-[14.5px] leading-relaxed">
-                  Center of Rotation Guide, a surgical instrumentation design granted in
-                  2026, with additional patents pending.
+                  {bio?.patentDesc ??
+                    "Center of Rotation Guide, a surgical instrumentation design granted in 2026, with additional patents pending."}
                 </p>
                 <div className="mt-6 pt-5 border-t border-navy-900/10 text-navy-900/80 text-[14.5px] leading-relaxed">
-                  Implants designed by Dr. Lee are now used by surgeons across the
-                  country.
+                  {bio?.patentNote ??
+                    "Implants designed by Dr. Lee are now used by surgeons across the country."}
                 </div>
               </div>
             </aside>
@@ -385,7 +393,7 @@ export default function BioPage() {
           <div className="max-w-[720px]">
             <SectionKicker label="Teaching & Academics" />
             <h2 className="font-serif text-3xl md:text-4xl lg:text-[2.75rem] text-navy-950 tracking-[-0.02em] leading-[1.1] mb-8">
-              A teacher first, recognized by his own residents.
+              {bio?.teachingHeading ?? "A teacher first, recognized by his own residents."}
             </h2>
             <div className="space-y-6 text-navy-900/80 text-[17px] leading-[1.75] font-light">
               <p>
@@ -402,29 +410,21 @@ export default function BioPage() {
                 .
               </p>
               <p>
-                His teaching has been recognized repeatedly by the Lenox Hill orthopedic
-                residents, who have voted him the Chitranjan S. Ranawat Mentorship Award
-                seven times (2010, 2014, 2015, 2017, 2018, 2019, 2023), the James A.
-                Nicholas Award for Distinction in Orthopaedic Residency Education twice
-                (2021, 2022), and the Maurice Cowen Award for Excellence in Medical
-                Education twice (2003, 2009), eleven teaching honors in all. At Lenox Hill
-                he sits on the orthopedic residency and sports medicine fellowship
-                admissions committees, the Program Evaluation Committee, and the Hospital
-                Medical Board.
+                {bio?.teachingPara2 ??
+                  "His teaching has been recognized repeatedly by the Lenox Hill orthopedic residents, who have voted him the Chitranjan S. Ranawat Mentorship Award seven times (2010, 2014, 2015, 2017, 2018, 2019, 2023), the James A. Nicholas Award for Distinction in Orthopaedic Residency Education twice (2021, 2022), and the Maurice Cowen Award for Excellence in Medical Education twice (2003, 2009), eleven teaching honors in all. At Lenox Hill he sits on the orthopedic residency and sports medicine fellowship admissions committees, the Program Evaluation Committee, and the Hospital Medical Board."}
               </p>
               <p>
-                He is a Fellow of the American Academy of Orthopaedic Surgeons and a
-                member of the American Orthopaedic Association, the oldest and most
-                prestigious orthopedic association in the world, comprising fewer than
-                10% of practicing orthopedic surgeons.
+                {bio?.teachingPara3 ??
+                  "He is a Fellow of the American Academy of Orthopaedic Surgeons and a member of the American Orthopaedic Association, the oldest and most prestigious orthopedic association in the world, comprising fewer than 10% of practicing orthopedic surgeons."}
               </p>
             </div>
 
             <blockquote className="mt-10 pt-8 border-t border-navy-900/10">
               <p className="font-serif text-2xl md:text-[1.75rem] leading-[1.3] tracking-[-0.01em] text-navy-950">
-                By his own account, he is proudest of, and best known among his peers
-                for,{" "}
-                <span className="serif-italic text-gold-600">his surgical skill.</span>
+                {bio?.teachingQuoteLead ?? "By his own account, he is proudest of, and best known among his peers for,"}{" "}
+                <span className="serif-italic text-gold-600">
+                  {bio?.teachingQuoteEmphasis ?? "his surgical skill."}
+                </span>
               </p>
             </blockquote>
           </div>
@@ -437,20 +437,19 @@ export default function BioPage() {
           <div className="max-w-3xl mb-12 lg:mb-16">
             <SectionKicker label="Teaching & Speaking" />
             <h2 className="font-serif text-3xl md:text-4xl lg:text-[2.75rem] text-navy-950 tracking-[-0.02em] leading-[1.1] mb-6">
-              84 lectures and presentations.{" "}
-              <span className="serif-italic text-gold-600">Counting.</span>
+              {bio?.galleryHeadingLead ?? "84 lectures and presentations."}{" "}
+              <span className="serif-italic text-gold-600">
+                {bio?.galleryHeadingEmphasis ?? "Counting."}
+              </span>
             </h2>
             <p className="text-navy-900/80 text-[17px] leading-[1.7] font-light">
-              National podium presentations at AAOS, AOSSM, and ASSH. Invited lectures at
-              national meetings and educational platforms including the Orthopaedic
-              Summit, the Philadelphia Hand Meeting, VuMedi, and the IFSSH. Course faculty
-              and cadaver-lab instructor at national surgical skills programs. Below,
-              selected moments.
+              {bio?.galleryIntro ??
+                "National podium presentations at AAOS, AOSSM, and ASSH. Invited lectures at national meetings and educational platforms including the Orthopaedic Summit, the Philadelphia Hand Meeting, VuMedi, and the IFSSH. Course faculty and cadaver-lab instructor at national surgical skills programs. Below, selected moments."}
             </p>
           </div>
 
           <div className="lg:columns-2 lg:gap-10 xl:gap-12 space-y-10 lg:space-y-0">
-            {galleryImages.map((img) => (
+            {galleryList.map((img) => (
               <figure key={img.src} className="group lg:break-inside-avoid lg:mb-10 xl:mb-12">
                 <div className="relative w-full overflow-hidden bg-navy-800 ring-1 ring-navy-900/10">
                   <Image
@@ -479,18 +478,15 @@ export default function BioPage() {
             <div className="max-w-[620px]">
               <SectionKicker label="Practice Today" />
               <h2 className="font-serif text-3xl md:text-4xl lg:text-[2.75rem] text-navy-950 tracking-[-0.02em] leading-[1.1] mb-6">
-                Two New York offices, in person and online.
+                {bio?.practiceHeading ?? "Two New York offices, in person and online."}
               </h2>
               <p className="text-navy-900/80 text-[17px] leading-[1.75] font-light">
-                Dr. Lee sees patients at two offices: his primary practice on
-                Manhattan&apos;s East 74th Street and a second office in Scarsdale,
-                Westchester. He offers in-person and telemedicine consultations and treats
-                both in-network and out-of-network patients, including international
-                patients who travel specifically to consult with him.
+                {bio?.practicePara ??
+                  "Dr. Lee sees patients at two offices: his primary practice on Manhattan's East 74th Street and a second office in Scarsdale, Westchester. He offers in-person and telemedicine consultations and treats both in-network and out-of-network patients, including international patients who travel specifically to consult with him."}
               </p>
 
               <a
-                href="https://www.zocdoc.com/doctor/steven-lee-md"
+                href={ZOCDOC_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Book an appointment via ZocDoc (opens in new tab)"

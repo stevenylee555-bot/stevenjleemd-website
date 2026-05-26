@@ -71,3 +71,18 @@ export const CREDENTIALS_QUERY = defineQuery(`
     ctaBody
   }
 `);
+
+// The Biography page singleton.
+export const BIO_QUERY = defineQuery(`
+  *[_id == "bioPage"][0] {
+    headerTitle, headerItalic, headerLede,
+    introParagraphs, credentials,
+    trainingHeading, training[]{ institution, detail, note },
+    athletesHeadingLead, athletesHeadingEmphasis, athletesIntro,
+    athletesQuoteLead, athletesQuoteEmphasis, athleteRoles, sportsTreated, athletesNote,
+    researchHeading, researchPara1, patentNumber, patentDesc, patentNote,
+    teachingHeading, teachingPara2, teachingPara3, teachingQuoteLead, teachingQuoteEmphasis,
+    galleryHeadingLead, galleryHeadingEmphasis, galleryIntro, galleryCaptions[]{ kicker, caption },
+    practiceHeading, practicePara
+  }
+`);

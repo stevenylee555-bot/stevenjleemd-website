@@ -26,6 +26,9 @@ export default defineConfig({
           credentialsPage: defineLocations({
             locations: [{ title: "Credentials & Awards", href: "/about/credentials" }],
           }),
+          bioPage: defineLocations({
+            locations: [{ title: "Biography", href: "/about/bio" }],
+          }),
           testimonial: defineLocations({
             select: { name: "name" },
             resolve: (doc) => ({
