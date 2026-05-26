@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, Download } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
+import { getCredentialsPage } from "@/sanity/getCredentialsPage";
 
 export const metadata: Metadata = {
   title: "Credentials & Awards, Steven J. Lee, MD",
@@ -196,14 +197,25 @@ function Section({
   );
 }
 
-export default function CredentialsPage() {
+export default async function CredentialsPage() {
+  const cred = await getCredentialsPage();
+  const appointmentsList = cred?.appointments?.length ? cred.appointments : appointments;
+  const certificationsList = cred?.certifications?.length ? cred.certifications : certifications;
+  const recognitionList = cred?.recognition?.length ? cred.recognition : recognition;
+  const teachingList = cred?.teaching?.length ? cred.teaching : teaching;
+  const researchList = cred?.research?.length ? cred.research : research;
+  const implantDesignList = cred?.implantDesign?.length ? cred.implantDesign : implantDesign;
+  const patentsList = cred?.patents?.length ? cred.patents : patents;
+  const teamPhysicianList = cred?.teamPhysician?.length ? cred.teamPhysician : teamPhysician;
+  const membershipsList = cred?.memberships?.length ? cred.memberships : memberships;
+
   return (
     <>
       <PageHeader
         kicker="Credentials & Awards"
-        title="A 25-year record at"
-        italic="Lenox Hill Hospital."
-        lede="Board certifications, hospital appointments, recognition, teaching honors, research awards, and a 2026 US patent. Full CV available as a PDF download."
+        title={cred?.headerTitle ?? "A 25-year record at"}
+        italic={cred?.headerItalic ?? "Lenox Hill Hospital."}
+        lede={cred?.headerLede ?? "Board certifications, hospital appointments, recognition, teaching honors, research awards, and a 2026 US patent. Full CV available as a PDF download."}
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "About", href: "/about" },
@@ -215,7 +227,7 @@ export default function CredentialsPage() {
         <div className="mx-auto max-w-6xl px-6 lg:px-10 py-20 lg:py-24">
           <Section kicker="Appointments" title="Hospital & faculty roles.">
             <ul className="border-t border-navy-900/10">
-              {appointments.map((a) => (
+              {appointmentsList.map((a) => (
                 <li
                   key={a.role}
                   className="py-5 border-b border-navy-900/10 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-6"
@@ -236,7 +248,7 @@ export default function CredentialsPage() {
 
           <Section kicker="Board certifications" title="License & subspecialty.">
             <ul className="space-y-3">
-              {certifications.map((c) => (
+              {certificationsList.map((c) => (
                 <li
                   key={c}
                   className="flex items-baseline gap-3 text-[16px] text-navy-900/85 leading-relaxed"
@@ -261,7 +273,7 @@ export default function CredentialsPage() {
             }
           >
             <ul className="border-t border-navy-900/10">
-              {recognition.map((r) => (
+              {recognitionList.map((r) => (
                 <li key={r.title} className="py-5 border-b border-navy-900/10">
                   <div className="font-serif text-lg text-navy-950 tracking-[-0.01em] leading-snug mb-1">
                     {r.title}
@@ -276,7 +288,7 @@ export default function CredentialsPage() {
 
           <Section kicker="Teaching" title="Mentorship & education awards.">
             <ul className="border-t border-navy-900/10">
-              {teaching.map((r) => (
+              {teachingList.map((r) => (
                 <li key={r.title} className="py-5 border-b border-navy-900/10">
                   <div className="font-serif text-lg text-navy-950 tracking-[-0.01em] leading-snug mb-1">
                     {r.title}
@@ -291,7 +303,7 @@ export default function CredentialsPage() {
 
           <Section kicker="Research" title="Awards & editorial roles.">
             <ul className="border-t border-navy-900/10">
-              {research.map((r) => (
+              {researchList.map((r) => (
                 <li key={r.title} className="py-5 border-b border-navy-900/10">
                   <div className="font-serif text-lg text-navy-950 tracking-[-0.01em] leading-snug mb-1">
                     {r.title}
@@ -306,11 +318,11 @@ export default function CredentialsPage() {
 
           <Section kicker="Implant Design" title="Implants & fixation systems.">
             <p className="text-navy-900/80 text-[15.5px] leading-relaxed mb-6 max-w-2xl">
-              Dr. Lee has served on the design teams for several orthopedic implants now
-              used by surgeons across the country. Selected contributions:
+              {cred?.implantDesignIntro ??
+                "Dr. Lee has served on the design teams for several orthopedic implants now used by surgeons across the country. Selected contributions:"}
             </p>
             <ul className="border-t border-navy-900/10">
-              {implantDesign.map((d) => (
+              {implantDesignList.map((d) => (
                 <li key={d.title} className="py-5 border-b border-navy-900/10">
                   <div className="font-serif text-lg text-navy-950 tracking-[-0.01em] leading-snug mb-1">
                     {d.title}
@@ -325,7 +337,7 @@ export default function CredentialsPage() {
 
           <Section kicker="Patent" title="Surgical instrumentation.">
             <ul className="border-t border-navy-900/10">
-              {patents.map((p) => (
+              {patentsList.map((p) => (
                 <li key={p.title} className="py-5 border-b border-navy-900/10">
                   <div className="font-serif text-lg text-navy-950 tracking-[-0.01em] leading-snug mb-1">
                     {p.title}
@@ -340,7 +352,7 @@ export default function CredentialsPage() {
 
           <Section kicker="Team physician history" title="Pro and collegiate.">
             <ul className="border-t border-navy-900/10">
-              {teamPhysician.map((t) => (
+              {teamPhysicianList.map((t) => (
                 <li key={t.title} className="py-5 border-b border-navy-900/10">
                   <div className="font-serif text-lg text-navy-950 tracking-[-0.01em] leading-snug mb-1">
                     {t.title}
@@ -355,7 +367,7 @@ export default function CredentialsPage() {
 
           <Section kicker="Memberships" title="Societies & associations.">
             <ul className="space-y-3">
-              {memberships.map((m) => (
+              {membershipsList.map((m) => (
                 <li
                   key={m}
                   className="flex items-baseline gap-3 text-[15.5px] text-navy-900/85 leading-relaxed"
@@ -382,12 +394,14 @@ export default function CredentialsPage() {
                 <span className="kicker text-gold-400">Full record</span>
               </div>
               <h2 className="font-serif text-[clamp(2rem,3.6vw,3rem)] tracking-[-0.02em] leading-[1.1] mb-6">
-                The complete CV is available{" "}
-                <span className="serif-italic text-gold-400">as a PDF.</span>
+                {cred?.ctaHeadingLead ?? "The complete CV is available"}{" "}
+                <span className="serif-italic text-gold-400">
+                  {cred?.ctaHeadingEmphasis ?? "as a PDF."}
+                </span>
               </h2>
               <p className="text-white/85 text-[16px] leading-[1.7] font-light max-w-xl">
-                The full document includes 35+ peer-reviewed publications, 34 national
-                presentations, 50 invited lectures, and the complete 85+ award list.
+                {cred?.ctaBody ??
+                  "The full document includes 35+ peer-reviewed publications, 34 national presentations, 50 invited lectures, and the complete 85+ award list."}
               </p>
             </div>
             <div className="lg:pt-12">

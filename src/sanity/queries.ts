@@ -49,3 +49,25 @@ export const HOME_QUERY = defineQuery(`
     specCards[]{ title, eyebrow, description }
   }
 `);
+
+// The Credentials & Awards page singleton.
+export const CREDENTIALS_QUERY = defineQuery(`
+  *[_id == "credentialsPage"][0] {
+    headerTitle,
+    headerItalic,
+    headerLede,
+    appointments[]{ role, org, years },
+    certifications,
+    recognition[]{ title, detail },
+    teaching[]{ title, detail },
+    research[]{ title, detail },
+    implantDesignIntro,
+    implantDesign[]{ title, detail },
+    patents[]{ title, detail },
+    teamPhysician[]{ title, detail },
+    memberships,
+    ctaHeadingLead,
+    ctaHeadingEmphasis,
+    ctaBody
+  }
+`);
