@@ -107,3 +107,51 @@ export const ABOUT_QUERY = defineQuery(`
     cards[]{ title, body }
   }
 `);
+
+// The Conditions index page singleton.
+export const CONDITIONS_INDEX_QUERY = defineQuery(`
+  *[_id == "conditionsIndexPage"][0] {
+    headerTitle, headerItalic, headerLede,
+    noteKicker, noteHeadingLead, noteHeadingEmphasis, notePara, ctaKicker
+  }
+`);
+
+// A single condition detail page, matched by its slug field.
+export const CONDITION_QUERY = defineQuery(`
+  *[_type == "conditionPage" && slug == $slug][0] {
+    headerTitle, headerItalic, headerLede,
+    overview,
+    bodySections[]{ heading, body, bullets, bulletsAfter },
+    drLeeApproach,
+    treatmentSections[]{ heading, body, bullets, bulletsAfter },
+    recoveryIntro,
+    recovery[]{ when, what },
+    misconceptions{ intro, items[]{ heading, body } },
+    sidebarFacts[]{ label, value },
+    whyDrLee,
+    ctaCard{ eyebrow, headline },
+    faqHeadline,
+    faqs[]{ question, answer },
+    bottomCtaTitle, bottomCtaItalic, bottomCtaBody
+  }
+`);
+
+// The Specialties index page singleton.
+export const SPECIALTIES_INDEX_QUERY = defineQuery(`
+  *[_id == "specialtiesIndexPage"][0] {
+    headerTitle, headerItalic, headerLede,
+    introKicker, introParagraphs,
+    ctaKicker, ctaHeadingLead, ctaHeadingEmphasis, ctaPara
+  }
+`);
+
+// A single specialty page, matched by its slug field.
+export const SPECIALTY_QUERY = defineQuery(`
+  *[_type == "specialty" && slug == $slug][0] {
+    eyebrow, headline, headlineItalic, lede,
+    introTitle, introBody,
+    approach[]{ title, body },
+    credentials,
+    implantDesign{ title, body }
+  }
+`);

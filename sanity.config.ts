@@ -35,6 +35,28 @@ export default defineConfig({
           secondOpinionsPage: defineLocations({
             locations: [{ title: "Second Opinions", href: "/second-opinions" }],
           }),
+          conditionsIndexPage: defineLocations({
+            locations: [{ title: "Conditions", href: "/conditions" }],
+          }),
+          conditionPage: defineLocations({
+            select: { name: "name", slug: "slug" },
+            resolve: (doc) => ({
+              locations: doc?.slug
+                ? [{ title: doc?.name || "Condition", href: `/conditions/${doc.slug}` }]
+                : [],
+            }),
+          }),
+          specialtiesIndexPage: defineLocations({
+            locations: [{ title: "Specialties", href: "/specialties" }],
+          }),
+          specialty: defineLocations({
+            select: { name: "name", slug: "slug" },
+            resolve: (doc) => ({
+              locations: doc?.slug
+                ? [{ title: doc?.name || "Specialty", href: `/specialties/${doc.slug}` }]
+                : [],
+            }),
+          }),
           testimonial: defineLocations({
             select: { name: "name" },
             resolve: (doc) => ({

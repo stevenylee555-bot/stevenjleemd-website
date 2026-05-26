@@ -1,17 +1,20 @@
 import type { Metadata } from "next";
 import SpecialtyTemplate from "@/components/SpecialtyTemplate";
 import { specialtyBySlug } from "@/lib/specialties";
+import { getSpecialty } from "@/sanity/getSpecialty";
 
-const specialty = specialtyBySlug("advanced-treatments")!;
+const slug = "advanced-treatments";
+const fallback = specialtyBySlug(slug)!;
 
 export const metadata: Metadata = {
-  title: specialty.metaTitle,
-  description: specialty.metaDescription,
+  title: fallback.metaTitle,
+  description: fallback.metaDescription,
   alternates: {
-    canonical: `https://www.stevenjleemd.com/specialties/${specialty.slug}`,
+    canonical: `https://www.stevenjleemd.com/specialties/${fallback.slug}`,
   },
 };
 
-export default function AdvancedTreatmentsPage() {
+export default async function AdvancedTreatmentsPage() {
+  const specialty = (await getSpecialty(slug)) ?? fallback;
   return <SpecialtyTemplate specialty={specialty} />;
 }

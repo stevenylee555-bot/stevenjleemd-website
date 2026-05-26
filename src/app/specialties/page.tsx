@@ -3,6 +3,8 @@ import Link from "next/link";
 import { ArrowUpRight, Calendar, ExternalLink } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import { specialties } from "@/lib/specialties";
+import { ZOCDOC_URL } from "@/lib/site";
+import { getSpecialtiesIndexPage } from "@/sanity/getSpecialtiesIndexPage";
 import {
   HandIcon,
   ElbowIcon,
@@ -27,14 +29,27 @@ const iconMap: Record<string, ComponentType<{ size?: number; className?: string 
   biologics: BiologicsIcon,
 };
 
-export default function SpecialtiesIndexPage() {
+const INTRO_FALLBACK = [
+  "Most orthopedic surgeons specialize in one body region. Dr. Lee is double fellowship-trained in hand & upper extremity surgery and in sports medicine, a combination that lets him treat both the fine reconstructive work of the hand and the high-demand return-to-sport considerations of the shoulder, elbow, and knee.",
+  "He has also helped design several orthopedic implants now used by surgeons across the country, including plating systems for the hand and elbow and the anchor and internal-brace constructs used in ligament reconstruction.",
+];
+
+export default async function SpecialtiesIndexPage() {
+  const idx = await getSpecialtiesIndexPage();
+  const introParagraphs = idx?.introParagraphs?.length
+    ? idx.introParagraphs
+    : INTRO_FALLBACK;
+
   return (
     <>
       <PageHeader
         kicker="Areas of Expertise"
-        title="Surgery and sports medicine,"
-        italic="from fingertip to knee to ankle."
-        lede="Dr. Lee's practice spans upper extremity surgery, sports medicine, and advanced biologics, with particular depth in the procedures he helped pioneer and the hardware he helped design."
+        title={idx?.headerTitle ?? "Surgery and sports medicine,"}
+        italic={idx?.headerItalic ?? "from fingertip to knee to ankle."}
+        lede={
+          idx?.headerLede ??
+          "Dr. Lee's practice spans upper extremity surgery, sports medicine, and advanced biologics, with particular depth in the procedures he helped pioneer and the hardware he helped design."
+        }
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "Specialties", href: "/specialties" },
@@ -47,23 +62,19 @@ export default function SpecialtiesIndexPage() {
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-10 lg:gap-16 items-start">
             <div className="flex items-center gap-3">
               <span className="h-px w-10 bg-gold-500" />
-              <span className="kicker text-gold-600">A doubly-trained surgeon</span>
+              <span className="kicker text-gold-600">
+                {idx?.introKicker ?? "A doubly-trained surgeon"}
+              </span>
             </div>
             <div className="space-y-6">
-              <p className="text-navy-900/80 text-[18px] leading-[1.7] font-light">
-                Most orthopedic surgeons specialize in one body region. Dr. Lee is{" "}
-                <em className="serif-italic text-navy-950">double fellowship-trained</em> in
-                hand &amp; upper extremity surgery and in sports medicine, a
-                combination that lets him treat both the fine reconstructive work
-                of the hand and the high-demand return-to-sport considerations of
-                the shoulder, elbow, and knee.
-              </p>
-              <p className="text-navy-900/80 text-[18px] leading-[1.7] font-light">
-                He has also helped design several orthopedic implants now used by
-                surgeons across the country, including plating systems for the hand and
-                elbow and the anchor and internal-brace constructs used in ligament
-                reconstruction.
-              </p>
+              {introParagraphs.map((para, i) => (
+                <p
+                  key={i}
+                  className="text-navy-900/80 text-[18px] leading-[1.7] font-light"
+                >
+                  {para}
+                </p>
+              ))}
             </div>
           </div>
         </div>
@@ -113,16 +124,19 @@ export default function SpecialtiesIndexPage() {
             <div>
               <div className="flex items-center gap-3 mb-6">
                 <span className="h-px w-10 bg-gold-500" />
-                <span className="kicker text-gold-400">Not sure where you fit?</span>
+                <span className="kicker text-gold-400">
+                  {idx?.ctaKicker ?? "Not sure where you fit?"}
+                </span>
               </div>
               <h2 className="font-serif text-[clamp(1.75rem,3vw,2.5rem)] tracking-[-0.02em] leading-[1.15] mb-6">
-                Send your imaging and we&apos;ll point you{" "}
-                <span className="serif-italic text-gold-400">to the right place.</span>
+                {idx?.ctaHeadingLead ?? "Send your imaging and we'll point you"}{" "}
+                <span className="serif-italic text-gold-400">
+                  {idx?.ctaHeadingEmphasis ?? "to the right place."}
+                </span>
               </h2>
               <p className="text-white/85 text-[16px] leading-[1.75] font-light">
-                Patients often come in unsure whether their problem is hand, elbow,
-                shoulder, or systemic. Dr. Lee&apos;s second-opinion process is
-                designed for exactly that.
+                {idx?.ctaPara ??
+                  "Patients often come in unsure whether their problem is hand, elbow, shoulder, or systemic. Dr. Lee's second-opinion process is designed for exactly that."}
               </p>
             </div>
 
@@ -130,7 +144,7 @@ export default function SpecialtiesIndexPage() {
               <div className="kicker text-gold-400 mb-4">Next step</div>
               <div className="flex flex-col gap-3">
                 <a
-                  href="https://www.zocdoc.com/doctor/steven-lee-md"
+                  href={ZOCDOC_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold rounded-md transition-all shadow-[0_10px_30px_-12px_rgba(201,168,76,0.5)] hover:-translate-y-0.5"

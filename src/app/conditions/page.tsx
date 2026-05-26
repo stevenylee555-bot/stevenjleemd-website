@@ -3,6 +3,8 @@ import Link from "next/link";
 import { ArrowUpRight, Calendar, ExternalLink } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import { regions, conditionsByRegion } from "@/lib/conditions";
+import { ZOCDOC_URL } from "@/lib/site";
+import { getConditionsIndexPage } from "@/sanity/getConditionsIndexPage";
 
 export const metadata: Metadata = {
   title: "Conditions Treated, Steven J. Lee, MD",
@@ -11,14 +13,19 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.stevenjleemd.com/conditions" },
 };
 
-export default function ConditionsIndexPage() {
+export default async function ConditionsIndexPage() {
+  const idx = await getConditionsIndexPage();
+
   return (
     <>
       <PageHeader
         kicker="Conditions Library"
-        title="Physician-authored information"
-        italic="on every condition Dr. Lee treats."
-        lede="From diagnosis through surgery and recovery, read what your surgeon would tell you in the office. Detailed pages are rolling out across the conditions Dr. Lee sees most often. Patients are encouraged to revisit the relevant page after their visit."
+        title={idx?.headerTitle ?? "Physician-authored information"}
+        italic={idx?.headerItalic ?? "on every condition Dr. Lee treats."}
+        lede={
+          idx?.headerLede ??
+          "From diagnosis through surgery and recovery, read what your surgeon would tell you in the office. Detailed pages are rolling out across the conditions Dr. Lee sees most often. Patients are encouraged to revisit the relevant page after their visit."
+        }
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "Conditions", href: "/conditions" },
@@ -99,24 +106,29 @@ export default function ConditionsIndexPage() {
             <div>
               <div className="flex items-center gap-3 mb-6">
                 <span className="h-px w-10 bg-gold-500" />
-                <span className="kicker text-gold-400">A note from Dr. Lee</span>
+                <span className="kicker text-gold-400">
+                  {idx?.noteKicker ?? "A note from Dr. Lee"}
+                </span>
               </div>
               <h2 className="font-serif text-[clamp(1.75rem,3vw,2.5rem)] tracking-[-0.02em] leading-[1.15] mb-6">
-                These pages aren&apos;t a substitute for a visit,{" "}
-                <span className="serif-italic text-gold-400">they&apos;re a complement to one.</span>
+                {idx?.noteHeadingLead ?? "These pages aren't a substitute for a visit,"}{" "}
+                <span className="serif-italic text-gold-400">
+                  {idx?.noteHeadingEmphasis ?? "they're a complement to one."}
+                </span>
               </h2>
               <p className="text-white/85 text-[16px] leading-[1.75] font-light">
-                Patients leave the office with a lot of information and remember a fraction of it.
-                These pages are written so you can come back to them as you make decisions about
-                your care, and so you can share them with family or referring physicians.
+                {idx?.notePara ??
+                  "Patients leave the office with a lot of information and remember a fraction of it. These pages are written so you can come back to them as you make decisions about your care, and so you can share them with family or referring physicians."}
               </p>
             </div>
 
             <div className="lg:pt-12">
-              <div className="kicker text-gold-400 mb-4">Ready to talk about your case?</div>
+              <div className="kicker text-gold-400 mb-4">
+                {idx?.ctaKicker ?? "Ready to talk about your case?"}
+              </div>
               <div className="flex flex-col gap-3">
                 <a
-                  href="https://www.zocdoc.com/doctor/steven-lee-md"
+                  href={ZOCDOC_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold rounded-md transition-all shadow-[0_10px_30px_-12px_rgba(201,168,76,0.5)] hover:-translate-y-0.5"

@@ -1,17 +1,20 @@
 import type { Metadata } from "next";
 import ConditionTemplate from "@/components/ConditionTemplate";
 import { conditionPageBySlug } from "@/lib/conditionPages";
+import { getConditionPage } from "@/sanity/getConditionPage";
 
-const data = conditionPageBySlug("basal-joint-arthroplasty")!;
+const slug = "basal-joint-arthroplasty";
+const fallback = conditionPageBySlug(slug)!;
 
 export const metadata: Metadata = {
-  title: data.metaTitle,
-  description: data.metaDescription,
+  title: fallback.metaTitle,
+  description: fallback.metaDescription,
   alternates: {
-    canonical: `https://www.stevenjleemd.com/conditions/${data.slug}`,
+    canonical: `https://www.stevenjleemd.com/conditions/${fallback.slug}`,
   },
 };
 
-export default function Page() {
+export default async function Page() {
+  const data = (await getConditionPage(slug)) ?? fallback;
   return <ConditionTemplate data={data} />;
 }
