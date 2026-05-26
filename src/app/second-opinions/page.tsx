@@ -10,8 +10,10 @@ import {
   ChevronRight,
   ExternalLink,
 } from "lucide-react";
+import { ZOCDOC_URL } from "@/lib/site";
 import PageHeader from "@/components/PageHeader";
 import { buildFaqSchema } from "@/lib/schema";
+import { getSecondOpinionsPage } from "@/sanity/getSecondOpinionsPage";
 
 export const metadata: Metadata = {
   title: "Orthopedic Surgery Second Opinions, Steven J. Lee, MD",
@@ -90,8 +92,34 @@ const cases = [
   },
 ];
 
-export default function SecondOpinionsPage() {
-  const faqSchema = buildFaqSchema(faqs);
+export default async function SecondOpinionsPage() {
+  const so = await getSecondOpinionsPage();
+  const faqList = (so?.faqs && so.faqs.length > 0 ? so.faqs : faqs).map((f) => ({
+    question: f.question ?? "",
+    answer: f.answer ?? "",
+  }));
+  const faqSchema = buildFaqSchema(faqList);
+  const whyParagraphs =
+    so?.whyParagraphs && so.whyParagraphs.length > 0
+      ? so.whyParagraphs
+      : [
+          "Dr. Lee is Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital and a designer of plating systems, suture anchors, and internal-brace constructs now used by surgeons across the country.",
+          "When a procedure involves the hardware he helped design, his perspective is not just expert, it's sometimes the most informed in the country.",
+          "Patients come to Dr. Lee for second opinions on hand, wrist, elbow, shoulder, knee, and Achilles injuries from across New York, the United States, and abroad.",
+        ];
+  const pillarList =
+    so?.pillars && so.pillars.length > 0
+      ? so.pillars.map((p, i) => ({ Icon: pillars[i]?.Icon ?? Clock, title: p.title ?? "", body: p.body ?? "" }))
+      : pillars;
+  const caseList = so?.cases && so.cases.length > 0 ? so.cases : cases;
+  const stepList =
+    so?.steps && so.steps.length > 0
+      ? so.steps
+      : [
+          { title: "Send imaging and records ahead of the visit", body: "MRI, CT, X-rays, operative reports, and any prior physician notes. The office can guide you on secure transfer. For telemedicine visits, this happens before the consultation begins." },
+          { title: "Sit down with Dr. Lee", body: "An in-person or virtual consultation. Dr. Lee reviews the imaging with you, examines the relevant joint if in person, and walks through the diagnosis and treatment options." },
+          { title: "Leave with a clear recommendation", body: "Whether surgery is appropriate, what surgical approach he would recommend, what non-surgical options are available, and a realistic recovery timeline. You can follow up by email if questions come up later." },
+        ];
 
   return (
     <>
@@ -102,9 +130,9 @@ export default function SecondOpinionsPage() {
 
       <PageHeader
         kicker="Second Opinions"
-        title="Been told you need surgery?"
-        italic="Get a real second look."
-        lede="A second opinion from a world-class specialist is rarely wasted. Dr. Lee reviews imaging, records, and prior surgical plans for patients who have been told they need orthopedic surgery, and helps them decide whether an operation, a different operation, or no operation is the right call."
+        title={so?.headerTitle ?? "Been told you need surgery?"}
+        italic={so?.headerItalic ?? "Get a real second look."}
+        lede={so?.headerLede ?? "A second opinion from a world-class specialist is rarely wasted. Dr. Lee reviews imaging, records, and prior surgical plans for patients who have been told they need orthopedic surgery, and helps them decide whether an operation, a different operation, or no operation is the right call."}
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "Second Opinions", href: "/second-opinions" },
@@ -121,28 +149,20 @@ export default function SecondOpinionsPage() {
                 <span className="kicker text-gold-600">Why Dr. Lee</span>
               </div>
               <h2 className="font-serif text-[clamp(2rem,3.6vw,3rem)] tracking-[-0.02em] text-navy-950 leading-[1.1] mb-8">
-                The opinion of a surgeon who{" "}
-                <span className="serif-italic text-gold-600">helped design the hardware.</span>
+                {so?.whyHeadingLead ?? "The opinion of a surgeon who"}{" "}
+                <span className="serif-italic text-gold-600">
+                  {so?.whyHeadingEmphasis ?? "helped design the hardware."}
+                </span>
               </h2>
               <div className="space-y-5 text-navy-900/80 text-[17px] leading-[1.7] font-light max-w-xl">
-                <p>
-                  Dr. Lee is Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital and a
-                  designer of plating systems, suture anchors, and internal-brace constructs now
-                  used by surgeons across the country.
-                </p>
-                <p>
-                  When a procedure involves the hardware he helped design, his perspective is
-                  not just expert, it&apos;s sometimes the most informed in the country.
-                </p>
-                <p>
-                  Patients come to Dr. Lee for second opinions on hand, wrist, elbow, shoulder,
-                  knee, and Achilles injuries from across New York, the United States, and abroad.
-                </p>
+                {whyParagraphs.map((p, i) => (
+                  <p key={i}>{p}</p>
+                ))}
               </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-navy-900/10 border border-navy-900/10">
-              {pillars.map((p) => (
+              {pillarList.map((p) => (
                 <div key={p.title} className="bg-white p-6 lg:p-8">
                   <div className="flex h-10 w-10 items-center justify-center rounded-sm bg-gold-500/15 ring-1 ring-gold-500/30 mb-5">
                     <p.Icon size={18} className="text-gold-600" strokeWidth={1.5} />
@@ -167,13 +187,15 @@ export default function SecondOpinionsPage() {
               <span className="kicker text-gold-600">What gets reviewed</span>
             </div>
             <h2 className="font-serif text-[clamp(2rem,3.6vw,3rem)] tracking-[-0.02em] text-navy-950 leading-[1.1]">
-              The cases Dr. Lee sees{" "}
-              <span className="serif-italic text-gold-600">most often.</span>
+              {so?.casesHeadingLead ?? "The cases Dr. Lee sees"}{" "}
+              <span className="serif-italic text-gold-600">
+                {so?.casesHeadingEmphasis ?? "most often."}
+              </span>
             </h2>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-navy-900/10 border border-navy-900/10">
-            {cases.map((c) => (
+            {caseList.map((c) => (
               <div key={c.label} className="bg-white p-8">
                 <div className="kicker text-gold-600 mb-3">{c.label}</div>
                 <p className="text-navy-900/80 text-[15px] leading-relaxed">{c.text}</p>
@@ -191,33 +213,17 @@ export default function SecondOpinionsPage() {
             <span className="kicker text-gold-600">What to expect</span>
           </div>
           <h2 className="font-serif text-[clamp(2rem,3.6vw,3rem)] tracking-[-0.02em] text-navy-950 leading-[1.1] mb-12">
-            How the visit works.
+            {so?.expectHeading ?? "How the visit works."}
           </h2>
 
           <ol className="border-t border-navy-900/10">
-            {[
-              {
-                step: "01",
-                title: "Send imaging and records ahead of the visit",
-                body: "MRI, CT, X-rays, operative reports, and any prior physician notes. The office can guide you on secure transfer. For telemedicine visits, this happens before the consultation begins.",
-              },
-              {
-                step: "02",
-                title: "Sit down with Dr. Lee",
-                body: "An in-person or virtual consultation. Dr. Lee reviews the imaging with you, examines the relevant joint if in person, and walks through the diagnosis and treatment options.",
-              },
-              {
-                step: "03",
-                title: "Leave with a clear recommendation",
-                body: "Whether surgery is appropriate, what surgical approach he would recommend, what non-surgical options are available, and a realistic recovery timeline. You can follow up by email if questions come up later.",
-              },
-            ].map((s) => (
+            {stepList.map((s, i) => (
               <li
-                key={s.step}
+                key={i}
                 className="grid grid-cols-[auto_1fr] gap-6 lg:gap-10 py-8 border-b border-navy-900/10"
               >
                 <div className="font-serif text-3xl md:text-4xl text-gold-600 tracking-[-0.01em]">
-                  {s.step}
+                  {String(i + 1).padStart(2, "0")}
                 </div>
                 <div>
                   <div className="font-serif text-xl md:text-2xl text-navy-950 tracking-[-0.01em] mb-3">
@@ -242,15 +248,15 @@ export default function SecondOpinionsPage() {
             <span className="h-px w-10 bg-gold-500" />
           </div>
           <h2 className="font-serif text-[clamp(2.25rem,4vw,3.5rem)] tracking-[-0.02em] leading-[1.05] mb-8">
-            Request a second opinion.
+            {so?.ctaHeading ?? "Request a second opinion."}
           </h2>
           <p className="text-white/85 text-lg leading-relaxed max-w-2xl mx-auto mb-12 font-light">
-            Most patients schedule online via ZocDoc. The office can also help arrange telemedicine
-            visits and coordinate imaging transfer.
+            {so?.ctaBody ??
+              "Most patients schedule online via ZocDoc. The office can also help arrange telemedicine visits and coordinate imaging transfer."}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://www.zocdoc.com/doctor/steven-lee-md"
+              href={ZOCDOC_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold rounded-md transition-all text-base shadow-[0_10px_50px_-12px_rgba(201,168,76,0.7)] hover:-translate-y-0.5"
@@ -284,7 +290,7 @@ export default function SecondOpinionsPage() {
           </div>
 
           <ul className="border-t border-navy-900/15">
-            {faqs.map((faq) => (
+            {faqList.map((faq) => (
               <li key={faq.question} className="border-b border-navy-900/15">
                 <details className="group">
                   <summary className="flex items-start justify-between gap-6 py-7 cursor-pointer list-none">

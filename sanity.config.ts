@@ -29,6 +29,9 @@ export default defineConfig({
           bioPage: defineLocations({
             locations: [{ title: "Biography", href: "/about/bio" }],
           }),
+          secondOpinionsPage: defineLocations({
+            locations: [{ title: "Second Opinions", href: "/second-opinions" }],
+          }),
           testimonial: defineLocations({
             select: { name: "name" },
             resolve: (doc) => ({

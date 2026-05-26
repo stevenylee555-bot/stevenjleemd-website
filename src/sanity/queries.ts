@@ -86,3 +86,16 @@ export const BIO_QUERY = defineQuery(`
     practiceHeading, practicePara
   }
 `);
+
+// The Second Opinions page singleton.
+export const SECOND_OPINIONS_QUERY = defineQuery(`
+  *[_id == "secondOpinionsPage"][0] {
+    headerTitle, headerItalic, headerLede,
+    whyHeadingLead, whyHeadingEmphasis, whyParagraphs,
+    pillars[]{ title, body },
+    casesHeadingLead, casesHeadingEmphasis, cases[]{ label, text },
+    expectHeading, steps[]{ title, body },
+    ctaHeading, ctaBody,
+    faqs[]{ question, answer }
+  }
+`);

@@ -22,6 +22,12 @@ export const structure: StructureResolver = (S) =>
         .child(
           S.document().schemaType("credentialsPage").documentId("credentialsPage")
         ),
+      S.listItem()
+        .title("Second Opinions")
+        .id("secondOpinionsPage")
+        .child(
+          S.document().schemaType("secondOpinionsPage").documentId("secondOpinionsPage")
+        ),
       S.divider(),
       S.documentTypeListItem("testimonial").title("Testimonials"),
     ]);
