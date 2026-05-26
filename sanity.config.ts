@@ -1,6 +1,6 @@
 import { defineConfig } from "sanity";
 import { structureTool } from "sanity/structure";
-import { presentationTool } from "sanity/presentation";
+import { presentationTool, defineLocations } from "sanity/presentation";
 import { visionTool } from "@sanity/vision";
 import { apiVersion, dataset, projectId } from "./src/sanity/env";
 import { schema } from "./src/sanity/schemaTypes";
@@ -17,6 +17,20 @@ export default defineConfig({
     // Click-to-edit on a live preview of the site. `initial` defaults to the
     // Studio's own origin, so this works on both localhost and Vercel.
     presentationTool({
+      // Populates the "Documents on this page" panel when previewing the homepage.
+      resolve: {
+        locations: {
+          homePage: defineLocations({
+            locations: [{ title: "Home Page", href: "/" }],
+          }),
+          testimonial: defineLocations({
+            select: { name: "name" },
+            resolve: (doc) => ({
+              locations: [{ title: doc?.name || "Testimonial", href: "/" }],
+            }),
+          }),
+        },
+      },
       previewUrl: {
         previewMode: { enable: "/api/draft-mode/enable" },
       },

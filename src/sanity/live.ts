@@ -7,6 +7,12 @@ const liveClient = createClient({
   dataset,
   apiVersion,
   useCdn: false,
+  // Required for click-to-edit: tells stega where the Studio is so each string
+  // can carry an invisible "edit this field" link. Only applied on stega fetches
+  // (draft/visual-editing); published reads stay clean.
+  stega: {
+    studioUrl: "/studio",
+  },
 });
 
 // sanityFetch + <SanityLive /> connect the site to Sanity's Live Content API so
