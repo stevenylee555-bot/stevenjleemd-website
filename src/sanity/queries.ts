@@ -99,3 +99,11 @@ export const SECOND_OPINIONS_QUERY = defineQuery(`
     faqs[]{ question, answer }
   }
 `);
+
+// The About hub page singleton.
+export const ABOUT_QUERY = defineQuery(`
+  *[_id == "aboutPage"][0] {
+    headerTitle, headerItalic, headerLede,
+    cards[]{ title, body }
+  }
+`);

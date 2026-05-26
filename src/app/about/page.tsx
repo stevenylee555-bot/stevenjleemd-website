@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, User, Award, BookOpen, Video, FileText } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
+import { getAboutPage } from "@/sanity/getAboutPage";
 
 export const metadata: Metadata = {
   title: "About Dr. Lee, Steven J. Lee, MD",
@@ -43,14 +44,21 @@ const links = [
   },
 ];
 
-export default function AboutIndexPage() {
+export default async function AboutIndexPage() {
+  const about = await getAboutPage();
+  const cardList = links.map((l, i) => ({
+    ...l,
+    title: about?.cards?.[i]?.title ?? l.title,
+    body: about?.cards?.[i]?.body ?? l.body,
+  }));
+
   return (
     <>
       <PageHeader
         kicker="About Dr. Lee"
-        title="Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital,"
-        italic="and the surgeon who helped design the hardware."
-        lede="Dr. Steven J. Lee is a double fellowship-trained, board-certified orthopedic surgeon specializing in hand, wrist, elbow, shoulder, and sports medicine. He has helped design orthopedic implants used by surgeons nationwide, including plating systems for the hand and elbow and the anchor and internal-brace constructs used in ligament reconstruction. Among the first in NYC to perform PRP therapy, including for upper extremity injuries."
+        title={about?.headerTitle ?? "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital,"}
+        italic={about?.headerItalic ?? "and the surgeon who helped design the hardware."}
+        lede={about?.headerLede ?? "Dr. Steven J. Lee is a double fellowship-trained, board-certified orthopedic surgeon specializing in hand, wrist, elbow, shoulder, and sports medicine. He has helped design orthopedic implants used by surgeons nationwide, including plating systems for the hand and elbow and the anchor and internal-brace constructs used in ligament reconstruction. Among the first in NYC to perform PRP therapy, including for upper extremity injuries."}
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "About", href: "/about" },
@@ -60,7 +68,7 @@ export default function AboutIndexPage() {
       <section className="bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 lg:py-24">
           <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-navy-900/10 border border-navy-900/10">
-            {links.map((l) => (
+            {cardList.map((l) => (
               <li key={l.href} className="bg-white">
                 <Link
                   href={l.href}
