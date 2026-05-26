@@ -11,6 +11,7 @@ import {
   Mic,
 } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
+import { getCvPage } from "@/sanity/getCvPage";
 
 export const metadata: Metadata = {
   title: "Curriculum Vitae, Steven J. Lee, MD",
@@ -19,14 +20,18 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.stevenjleemd.com/about/cv" },
 };
 
-const stats = [
-  { Icon: FileText, label: "Peer-reviewed publications", value: "35+" },
-  { Icon: Mic, label: "Lectures & presentations", value: "84" },
-  { Icon: Award, label: "Awards & distinctions", value: "85+" },
-  { Icon: Stethoscope, label: "Years at Lenox Hill Hospital", value: "25+" },
+// Icons are positional. Stats values/labels are editable in Sanity; the icon
+// for stat N stays the same regardless of what the value reads.
+const statIcons = [FileText, Mic, Award, Stethoscope];
+
+const statsFallback = [
+  { value: "35+", label: "Peer-reviewed publications" },
+  { value: "84", label: "Lectures & presentations" },
+  { value: "85+", label: "Awards & distinctions" },
+  { value: "25+", label: "Years at Lenox Hill Hospital" },
 ];
 
-const trainingTimeline = [
+const trainingFallback = [
   {
     year: "1987–1991",
     title: "B.A., Lehigh University",
@@ -60,14 +65,29 @@ const trainingTimeline = [
   },
 ];
 
-export default function CVPage() {
+export default async function CVPage() {
+  const idx = await getCvPage();
+  const stats = idx?.stats?.length
+    ? idx.stats.map((s) => ({ value: s.value ?? "", label: s.label ?? "" }))
+    : statsFallback;
+  const trainingTimeline = idx?.training?.length
+    ? idx.training.map((t) => ({
+        year: t.year ?? "",
+        title: t.title ?? "",
+        detail: t.detail ?? "",
+      }))
+    : trainingFallback;
+
   return (
     <>
       <PageHeader
         kicker="Curriculum Vitae"
-        title="The complete record,"
-        italic="available as a PDF."
-        lede="Education, fellowships, hospital appointments, publications, presentations, awards, and patents. Patients, referring physicians, and institutions are welcome to download."
+        title={idx?.headerTitle ?? "The complete record,"}
+        italic={idx?.headerItalic ?? "available as a PDF."}
+        lede={
+          idx?.headerLede ??
+          "Education, fellowships, hospital appointments, publications, presentations, awards, and patents. Patients, referring physicians, and institutions are welcome to download."
+        }
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "About", href: "/about" },
@@ -85,12 +105,11 @@ export default function CVPage() {
                 <span className="kicker text-gold-600">Download</span>
               </div>
               <h2 className="font-serif text-3xl md:text-4xl text-navy-950 tracking-[-0.01em] leading-[1.1] mb-6">
-                Full CV as a PDF.
+                {idx?.downloadHeading ?? "Full CV as a PDF."}
               </h2>
               <p className="text-navy-900/80 text-[17px] leading-[1.7] font-light max-w-xl mb-8">
-                Includes education, professional and faculty appointments, peer-reviewed
-                publications, national presentations, invited lectures, professional
-                memberships, and the full awards and distinctions list.
+                {idx?.downloadPara ??
+                  "Includes education, professional and faculty appointments, peer-reviewed publications, national presentations, invited lectures, professional memberships, and the full awards and distinctions list."}
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
@@ -115,22 +134,25 @@ export default function CVPage() {
             </div>
 
             <div className="grid grid-cols-2 gap-px bg-navy-900/10 border border-navy-900/10">
-              {stats.map((s) => (
-                <div key={s.label} className="bg-white p-5 lg:p-6">
-                  <s.Icon
-                    size={18}
-                    className="text-gold-600 mb-3"
-                    strokeWidth={1.5}
-                    aria-hidden="true"
-                  />
-                  <div className="font-serif text-2xl lg:text-3xl text-navy-950 tracking-[-0.01em] leading-none mb-1.5">
-                    {s.value}
+              {stats.map((s, i) => {
+                const Icon = statIcons[i] ?? FileText;
+                return (
+                  <div key={`${s.label}-${i}`} className="bg-white p-5 lg:p-6">
+                    <Icon
+                      size={18}
+                      className="text-gold-600 mb-3"
+                      strokeWidth={1.5}
+                      aria-hidden="true"
+                    />
+                    <div className="font-serif text-2xl lg:text-3xl text-navy-950 tracking-[-0.01em] leading-none mb-1.5">
+                      {s.value}
+                    </div>
+                    <div className="text-navy-900/80 text-xs leading-snug">
+                      {s.label}
+                    </div>
                   </div>
-                  <div className="text-navy-900/80 text-xs leading-snug">
-                    {s.label}
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>
@@ -146,9 +168,11 @@ export default function CVPage() {
                 <span className="kicker text-gold-600">Training</span>
               </div>
               <h2 className="font-serif text-3xl md:text-4xl text-navy-950 tracking-[-0.01em] leading-[1.1] lg:max-w-[280px]">
-                Education
+                {idx?.trainingHeadingLead ?? "Education"}
                 <br />
-                <span className="serif-italic text-gold-600">&amp; fellowships.</span>
+                <span className="serif-italic text-gold-600">
+                  {idx?.trainingHeadingEmphasis ?? "& fellowships."}
+                </span>
               </h2>
             </div>
 

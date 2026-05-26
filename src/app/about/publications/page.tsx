@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, Download, ExternalLink } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
+import { getPublicationsPage } from "@/sanity/getPublicationsPage";
 
 export const metadata: Metadata = {
   title: "Publications & Research, Steven J. Lee, MD",
@@ -21,8 +22,8 @@ type Pub = {
 };
 
 // Highlighted recent + frequently-cited publications, by year (descending).
-// Full 37-entry list is in the CV PDF.
-const recent: Pub[] = [
+// Full 37-entry list is in the CV PDF. Used as fallback when Sanity is empty.
+const recentFallback: Pub[] = [
   {
     citation:
       "Rahman OF, Lee SJ, Seeds WA. Therapeutic Peptides in Orthopaedics: Applications, Challenges, and Future Directions.",
@@ -87,7 +88,7 @@ const recent: Pub[] = [
   },
 ];
 
-const themed: { theme: string; items: Pub[] }[] = [
+const themedFallback: { theme: string; items: Pub[] }[] = [
   {
     theme: "Achilles tendon repair",
     items: [
@@ -227,14 +228,39 @@ function PubItem({ pub }: { pub: Pub }) {
   );
 }
 
-export default function PublicationsPage() {
+export default async function PublicationsPage() {
+  const idx = await getPublicationsPage();
+  const recent: Pub[] = idx?.recent?.length
+    ? idx.recent.map((p) => ({
+        citation: p.citation ?? "",
+        journal: p.journal ?? "",
+        year: p.year ?? "",
+        link: p.link,
+        highlight: p.highlight,
+      }))
+    : recentFallback;
+  const themed = idx?.themed?.length
+    ? idx.themed.map((g) => ({
+        theme: g.theme ?? "",
+        items: (g.items ?? []).map((p) => ({
+          citation: p.citation ?? "",
+          journal: p.journal ?? "",
+          year: p.year ?? "",
+          link: p.link,
+        })) as Pub[],
+      }))
+    : themedFallback;
+
   return (
     <>
       <PageHeader
         kicker="Publications & Research"
-        title="35+ peer-reviewed publications,"
-        italic="across hand, elbow, shoulder, knee, and biologics."
-        lede="Selected publications below. The complete bibliography, 37 entries including book chapters, is available in the CV PDF. Dr. Lee has also given 34 national presentations and 50 invited lectures."
+        title={idx?.headerTitle ?? "35+ peer-reviewed publications,"}
+        italic={idx?.headerItalic ?? "across hand, elbow, shoulder, knee, and biologics."}
+        lede={
+          idx?.headerLede ??
+          "Selected publications below. The complete bibliography, 37 entries including book chapters, is available in the CV PDF. Dr. Lee has also given 34 national presentations and 50 invited lectures."
+        }
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "About", href: "/about" },
@@ -251,7 +277,7 @@ export default function PublicationsPage() {
               <span className="kicker text-gold-600">Recent publications</span>
             </div>
             <h2 className="font-serif text-3xl md:text-4xl text-navy-950 tracking-[-0.01em] leading-[1.1] mb-10">
-              The last decade of work.
+              {idx?.recentHeading ?? "The last decade of work."}
             </h2>
 
             <ul className="border-t border-navy-900/10">
@@ -268,7 +294,7 @@ export default function PublicationsPage() {
               <span className="kicker text-gold-600">By theme</span>
             </div>
             <h2 className="font-serif text-3xl md:text-4xl text-navy-950 tracking-[-0.01em] leading-[1.1] mb-12">
-              Areas of focused research.
+              {idx?.themedHeading ?? "Areas of focused research."}
             </h2>
 
             <div className="space-y-16">
@@ -292,12 +318,12 @@ export default function PublicationsPage() {
 
           {/* Note + CV link */}
           <div className="bg-cream border border-navy-900/10 p-7 lg:p-9">
-            <div className="kicker text-gold-600 mb-3">A note on this list</div>
+            <div className="kicker text-gold-600 mb-3">
+              {idx?.noteKicker ?? "A note on this list"}
+            </div>
             <p className="text-navy-900/80 text-[16px] leading-[1.7] mb-6">
-              The publications above are selected highlights. The full 37-entry
-              bibliography, including early biomechanical work from residency, all
-              Achilles repair papers, the scapholunate reconstruction series, and the
-              2022 lateral epicondylitis MRI study, is documented in the CV.
+              {idx?.notePara ??
+                "The publications above are selected highlights. The full 37-entry bibliography, including early biomechanical work from residency, all Achilles repair papers, the scapholunate reconstruction series, and the 2022 lateral epicondylitis MRI study, is documented in the CV."}
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <a

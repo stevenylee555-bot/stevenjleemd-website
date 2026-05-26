@@ -108,6 +108,29 @@ export const ABOUT_QUERY = defineQuery(`
   }
 `);
 
+// The Publications & Research page singleton.
+export const PUBLICATIONS_QUERY = defineQuery(`
+  *[_id == "publicationsPage"][0] {
+    headerTitle, headerItalic, headerLede,
+    recentHeading,
+    recent[]{ citation, journal, year, link, highlight },
+    themedHeading,
+    themed[]{ theme, items[]{ citation, journal, year, link } },
+    noteKicker, notePara
+  }
+`);
+
+// The Curriculum Vitae page singleton.
+export const CV_QUERY = defineQuery(`
+  *[_id == "cvPage"][0] {
+    headerTitle, headerItalic, headerLede,
+    downloadHeading, downloadPara,
+    stats[]{ value, label },
+    trainingHeadingLead, trainingHeadingEmphasis,
+    training[]{ year, title, detail }
+  }
+`);
+
 // The Conditions index page singleton.
 export const CONDITIONS_INDEX_QUERY = defineQuery(`
   *[_id == "conditionsIndexPage"][0] {

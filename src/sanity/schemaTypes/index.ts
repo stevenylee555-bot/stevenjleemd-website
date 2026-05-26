@@ -9,6 +9,8 @@ import { conditionsIndexPage } from "./conditionsIndexPage";
 import { conditionPage } from "./conditionPage";
 import { specialtiesIndexPage } from "./specialtiesIndexPage";
 import { specialty } from "./specialty";
+import { publicationsPage } from "./publicationsPage";
+import { cvPage } from "./cvPage";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
@@ -16,6 +18,8 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     aboutPage,
     bioPage,
     credentialsPage,
+    publicationsPage,
+    cvPage,
     secondOpinionsPage,
     conditionsIndexPage,
     conditionPage,

@@ -26,6 +26,12 @@ export default defineConfig({
           credentialsPage: defineLocations({
             locations: [{ title: "Credentials & Awards", href: "/about/credentials" }],
           }),
+          publicationsPage: defineLocations({
+            locations: [{ title: "Publications & Research", href: "/about/publications" }],
+          }),
+          cvPage: defineLocations({
+            locations: [{ title: "Curriculum Vitae", href: "/about/cv" }],
+          }),
           aboutPage: defineLocations({
             locations: [{ title: "About", href: "/about" }],
           }),

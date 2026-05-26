@@ -23,6 +23,14 @@ export const structure: StructureResolver = (S) =>
         .id("credentialsPage")
         .child(S.document().schemaType("credentialsPage").documentId("credentialsPage")),
       S.listItem()
+        .title("Publications & Research")
+        .id("publicationsPage")
+        .child(S.document().schemaType("publicationsPage").documentId("publicationsPage")),
+      S.listItem()
+        .title("Curriculum Vitae")
+        .id("cvPage")
+        .child(S.document().schemaType("cvPage").documentId("cvPage")),
+      S.listItem()
         .title("Second Opinions")
         .id("secondOpinionsPage")
         .child(S.document().schemaType("secondOpinionsPage").documentId("secondOpinionsPage")),
