@@ -9,11 +9,8 @@ import About from "@/components/home/About";
 import ConditionsPreview from "@/components/home/ConditionsPreview";
 import BookingCTA from "@/components/home/BookingCTA";
 import FAQSection, { type Faq } from "@/components/home/FAQSection";
-import { draftMode } from "next/headers";
-import { VisualEditing } from "next-sanity/visual-editing";
 import { getTestimonials } from "@/sanity/getTestimonials";
 import { getHomePage } from "@/sanity/getHomePage";
-import { SanityLive } from "@/sanity/live";
 
 // GEO/AI-citation FAQs, kept verbatim from prior homepage (canonical answers).
 const homepageFaqs: Faq[] = [
@@ -46,7 +43,6 @@ const homepageFaqs: Faq[] = [
 
 export default async function HomePage() {
   const faqSchema = buildFaqSchema(homepageFaqs);
-  const { isEnabled: isDraft } = await draftMode();
   const home = await getHomePage();
   const testimonials = await getTestimonials();
 
@@ -67,9 +63,6 @@ export default async function HomePage() {
       <ConditionsPreview />
       <BookingCTA />
       <FAQSection faqs={homepageFaqs} />
-
-      <SanityLive />
-      {isDraft && <VisualEditing />}
     </>
   );
 }

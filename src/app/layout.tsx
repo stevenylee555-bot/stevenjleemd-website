@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import { Inter, Newsreader } from "next/font/google";
+import { draftMode } from "next/headers";
+import { VisualEditing } from "next-sanity/visual-editing";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { physicianSchema, medicalBusinessSchema } from "@/lib/schema";
+import { SanityLive } from "@/sanity/live";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -70,11 +73,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const { isEnabled: isDraft } = await draftMode();
+
   return (
     <html lang="en" className={`${inter.variable} ${newsreader.variable} h-full antialiased`}>
       <head>
@@ -97,6 +102,8 @@ export default function RootLayout({
         <Navbar />
         <main id="main" className="flex-1 pt-[88px]">{children}</main>
         <Footer />
+        <SanityLive />
+        {isDraft && <VisualEditing />}
       </body>
     </html>
   );
