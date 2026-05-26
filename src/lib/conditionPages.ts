@@ -1488,7 +1488,178 @@ const achillesRupture: ConditionPageContent = {
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
+// 10. Carpal Tunnel Syndrome
+const carpalTunnel: ConditionPageContent = {
+  slug: "carpal-tunnel",
+  name: "Carpal Tunnel Syndrome",
+  region: "Hand & Wrist",
+  headerTitle: "Carpal Tunnel Syndrome:",
+  headerItalic: "diagnosis, treatment, and recovery.",
+  headerLede:
+    "The most common nerve compression in the body. When non-surgical treatment fails, endoscopic carpal tunnel release offers a minimally invasive solution with faster recovery than traditional open surgery.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
+    reviewed: "May 2026",
+  },
+  overview: [
+    "Carpal tunnel syndrome is compression of the median nerve as it passes through the carpal tunnel, a narrow passageway on the palm side of the wrist. It is the most common nerve compression in the body, affecting roughly 4–5% of adults, and one of the most frequent reasons patients are referred for hand surgery.",
+    "Most patients describe a slow, gradual onset of numbness, tingling, and occasional sharp pain in the thumb, index, middle, and half of the ring finger. Symptoms classically worsen at night and during activities that hold the wrist in a flexed position, driving, holding a phone, reading.",
+  ],
+  bodySections: [
+    {
+      heading: "Anatomy of the carpal tunnel",
+      body: [
+        "The carpal tunnel is bordered on three sides by the wrist bones (carpals) and on the palm side by a strong fibrous band called the transverse carpal ligament. Nine flexor tendons and the median nerve share this small space. When the contents swell, or when the ligament thickens, the nerve is the first structure to suffer, pressure on the median nerve produces the classic symptoms.",
+      ],
+    },
+    {
+      heading: "Symptoms and red flags",
+      body: ["In addition to night-time numbness, patients often notice:"],
+      bullets: [
+        "Weakness or clumsiness, dropping objects, difficulty buttoning shirts",
+        "A burning or electric sensation that travels up the forearm",
+        "Hand fatigue with prolonged gripping",
+        'Symptoms that improve briefly when the hand is shaken out (the "flick sign")',
+        "Wasting at the base of the thumb in long-standing severe cases",
+      ],
+      bulletsAfter:
+        "Persistent numbness that does not come and go, visible muscle wasting at the base of the thumb, or severe hand weakness are signs that the nerve has been compressed long enough to cause damage, and that surgery should not be delayed.",
+    },
+    {
+      heading: "How carpal tunnel is diagnosed",
+      body: [
+        "Diagnosis combines the clinical exam with an electrodiagnostic study (commonly called EMG/NCV, electromyography and nerve conduction velocity). The exam often includes provocative maneuvers, Tinel's test, Phalen's test, carpal compression, that reproduce the symptoms when the median nerve is irritated. The EMG/NCV objectively measures how well the nerve is conducting and helps grade severity. Imaging is rarely required unless an unusual cause is suspected.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Most patients with carpal tunnel syndrome do not need surgery, and they don't get surgery in Dr. Lee's practice. The first line of treatment is almost always a nighttime wrist splint, sometimes paired with a corticosteroid injection, and an honest conversation about which activities provoke symptoms.",
+      "When symptoms are severe, conservative care has failed, or the EMG shows meaningful nerve damage, Dr. Lee performs endoscopic carpal tunnel release: a minimally invasive technique that delivers the same nerve decompression as traditional open surgery, but through one small incision and with substantially less scar tenderness afterward.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["For mild and moderate carpal tunnel, the following are tried first:"],
+      bullets: [
+        "Nighttime wrist splinting, keeps the wrist neutral while sleeping; often the single most effective non-surgical step",
+        "Activity modification, reducing prolonged wrist flexion during the day",
+        "Corticosteroid injection, reduces tendon inflammation in the tunnel; often diagnostic as well as therapeutic",
+        "Ergonomic adjustments at work, neutral wrist position, supported forearms",
+        "Physical and hand therapy, for select cases",
+      ],
+    },
+    {
+      heading: "Surgical treatment: endoscopic release",
+      body: [
+        "When surgery is appropriate, the goal is straightforward: release the transverse carpal ligament that is compressing the median nerve. The relief delivered by surgery is durable, recurrence is rare.",
+        "In endoscopic carpal tunnel release, a small incision is made at the wrist crease, and a thin camera (the endoscope) is introduced into the tunnel. The ligament is then divided under direct visualization with a small blade. Because the palm itself is not cut, patients typically have less scar pain and return to normal hand use faster than with open surgery. The procedure is performed under local anesthesia with light sedation, no general anesthesia is required, and takes approximately 15 minutes per hand.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery is faster than most patients expect. The summary:",
+  recovery: [
+    {
+      when: "Day 0–3",
+      what: "Light hand use the same day. Bulky dressing for the first 2–3 days. Elevate the hand above heart level to minimize swelling.",
+    },
+    {
+      when: "Week 1",
+      what: "Sutures removed. Begin normal daily activities, typing, light cooking, dressing. Avoid heavy gripping or lifting.",
+    },
+    {
+      when: "Weeks 2–4",
+      what: "Most patients have returned to office work. Numbness and tingling improve substantially. Scar massage begins.",
+    },
+    {
+      when: "Weeks 4–6",
+      what: "Return to heavier activities, exercise, manual labor, sports. Scar tenderness fades over the following months.",
+    },
+  ],
+  misconceptions: {
+    intro: "Three things are worth setting straight:",
+    items: [
+      {
+        heading: "Carpal tunnel is not caused by typing alone.",
+        body: "Genetics, anatomy, pregnancy, thyroid disease, and diabetes are all bigger contributors than keyboard use.",
+      },
+      {
+        heading: "Delay can cost recovery.",
+        body: "Severe, long-standing nerve compression may leave permanent numbness or weakness even after a perfect surgical release. If non-surgical treatment isn't working, don't wait too long.",
+      },
+      {
+        heading: "Surgery does not require months off work.",
+        body: "Most patients return to office work within a week and full activity within 4–6 weeks.",
+      },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Affected area", value: "Median nerve at the wrist" },
+    { label: "Typical age", value: "40–60, but seen across adulthood" },
+    { label: "Surgical option", value: "Endoscopic release (Dr. Lee's preference)" },
+    { label: "Procedure time", value: "~15 minutes per hand" },
+    { label: "Return to activity", value: "Light use same day · full use 4–6 weeks" },
+    { label: "Anesthesia", value: "Local + light sedation (no general)" },
+  ],
+  whyDrLee: [
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
+    "Endoscopic technique, minimally invasive, faster recovery",
+    "Performs revision carpal tunnel for patients who had prior surgery elsewhere",
+  ],
+  related: [
+    { name: "Distal Radius Fracture", slug: "distal-radius-fracture" },
+    { name: "Scapholunate Ligament Injury", slug: "scapholunate" },
+    { name: "Basal Joint Arthritis", slug: "basal-joint-arthroplasty" },
+    { name: "Hand & Wrist Fractures", slug: "hand-wrist-fractures" },
+  ],
+  ctaCard: {
+    eyebrow: "15-minute procedure",
+    headline: "Most patients are home within an hour.",
+  },
+  faqHeadline: "Carpal tunnel, answered.",
+  faqs: [
+    {
+      question: "How do I know if I have carpal tunnel syndrome?",
+      answer:
+        "The classic symptoms are numbness, tingling, and pain in the thumb, index, middle, and half of the ring finger. Symptoms are typically worse at night and often wake patients from sleep. Many patients also describe weakness or clumsiness, dropping objects, difficulty buttoning shirts, or trouble holding a phone. A definitive diagnosis is made by combining the clinical exam with a nerve conduction study (EMG/NCV). Imaging is sometimes used to rule out other conditions but is not required to diagnose carpal tunnel syndrome.",
+    },
+    {
+      question: "Does carpal tunnel syndrome always require surgery?",
+      answer:
+        "No. Mild and early carpal tunnel syndrome often responds well to non-surgical treatment, particularly nighttime wrist splinting, activity modification, and corticosteroid injection. Dr. Lee typically recommends surgery only when symptoms are significant, when conservative treatment has failed, or when there is evidence of nerve damage on the EMG. Many of the patients Dr. Lee sees never need an operation.",
+    },
+    {
+      question: "What is endoscopic carpal tunnel release?",
+      answer:
+        "Endoscopic carpal tunnel release is a minimally invasive technique in which the transverse carpal ligament is divided through one or two very small incisions, using a small camera (endoscope) to visualize the release. Compared with traditional open release, endoscopic release typically results in less scar tenderness, faster return to normal hand use, and a smaller visible scar. The relief of nerve compression is identical to open surgery, only the approach differs.",
+    },
+    {
+      question: "How long is recovery after carpal tunnel surgery?",
+      answer:
+        "Most patients use the hand for light activities the same day. Heavy gripping, lifting, and high-impact use of the hand typically resume between 4 and 6 weeks. Numbness and tingling often improve within days to weeks; chronic symptoms or hand weakness may take longer to recover, and in cases of severe long-standing compression some residual numbness may remain. Hand therapy is occasionally recommended but is not required for most patients.",
+    },
+    {
+      question: "Will carpal tunnel come back after surgery?",
+      answer:
+        "Recurrence after a properly performed carpal tunnel release is uncommon, approximately 1–2% of patients. If symptoms persist or return, it usually means either the diagnosis was incomplete (another nerve compression was missed) or the release was not adequate. A revision is occasionally needed and Dr. Lee performs these for patients who have had prior carpal tunnel surgery elsewhere.",
+    },
+  ],
+  bottomCtaTitle: "Think you have carpal tunnel?",
+  bottomCtaItalic: "Get it evaluated properly.",
+  bottomCtaBody:
+    "Most patients do well with non-surgical treatment. The ones who don't do best when they don't wait too long. Either way, the first step is an accurate diagnosis.",
+  metaTitle: "Carpal Tunnel Syndrome, Steven J. Lee, MD",
+  metaDescription:
+    "Carpal tunnel syndrome, symptoms, diagnosis, and treatment options including endoscopic carpal tunnel release. Written by Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
+  schemaDescription:
+    "Carpal tunnel syndrome is compression of the median nerve at the wrist, causing numbness, tingling, and weakness in the thumb, index, middle, and ring fingers. Treatment options range from splinting and injections to endoscopic carpal tunnel release.",
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
 export const conditionPages: ConditionPageContent[] = [
+  carpalTunnel,
   distalRadiusFracture,
   scapholunate,
   basalJointArthroplasty,
