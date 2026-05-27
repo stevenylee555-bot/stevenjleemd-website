@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Calendar, Phone, MapPin, Video, Mail, ExternalLink, Clock, Printer } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
+import ContactForm from "@/components/ContactForm";
+import { ZOCDOC_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact, Steven J. Lee, MD",
@@ -57,7 +59,7 @@ export default function ContactPage() {
                 The fastest way. Real-time availability at both locations, 24/7. Skip the call center entirely.
               </p>
               <a
-                href="https://www.zocdoc.com/doctor/steven-lee-md"
+                href={ZOCDOC_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-navy-950 font-semibold hover:text-gold-600 transition-colors"
@@ -98,7 +100,7 @@ export default function ContactPage() {
                 Virtual consultations for out-of-state, international, and second-opinion patients. Imaging review included.
               </p>
               <a
-                href="https://www.zocdoc.com/doctor/steven-lee-md"
+                href={ZOCDOC_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-navy-950 font-semibold hover:text-gold-600 transition-colors"
@@ -110,6 +112,8 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      <ContactForm />
 
       {/* Locations */}
       <section className="bg-white">
