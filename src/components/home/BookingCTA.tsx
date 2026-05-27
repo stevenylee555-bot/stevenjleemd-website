@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import { Calendar, Phone, Video, MapPin, ExternalLink } from "lucide-react";
 import { fadeUp, inViewProps, stagger } from "@/lib/motion";
+import { ZOCDOC_URL } from "@/lib/site";
 
 export default function BookingCTA() {
   return (
@@ -46,7 +47,7 @@ export default function BookingCTA() {
             className="flex flex-col sm:flex-row gap-4 justify-center mb-14"
           >
             <a
-              href="https://www.zocdoc.com/doctor/steven-lee-md"
+              href={ZOCDOC_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold rounded-md transition-all text-base shadow-[0_10px_50px_-12px_rgba(201,168,76,0.7)] hover:-translate-y-0.5"

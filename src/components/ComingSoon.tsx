@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowUpRight, Calendar } from "lucide-react";
+import { ZOCDOC_URL } from "@/lib/site";
 
 export type ComingSoonProps = {
   title: string;
@@ -51,7 +52,7 @@ export default function ComingSoon({ title, description, preview }: ComingSoonPr
 
         <div className="flex flex-col sm:flex-row gap-3">
           <a
-            href="https://www.zocdoc.com/doctor/steven-lee-md"
+            href={ZOCDOC_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold rounded-md transition-all shadow-[0_10px_30px_-12px_rgba(201,168,76,0.5)] hover:-translate-y-0.5"

@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { ZOCDOC_URL } from "@/lib/site";
 
 const navLinks = [
   {
@@ -154,7 +155,7 @@ export default function Navbar() {
 
           {/* Book CTA */}
           <a
-            href="https://www.zocdoc.com/doctor/steven-lee-md"
+            href={ZOCDOC_URL}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Book online via ZocDoc (opens in new tab)"
@@ -205,7 +206,7 @@ export default function Navbar() {
             </div>
           ))}
           <a
-            href="https://www.zocdoc.com/doctor/steven-lee-md"
+            href={ZOCDOC_URL}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Book online via ZocDoc (opens in new tab)"

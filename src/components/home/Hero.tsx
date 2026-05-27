@@ -7,6 +7,7 @@ import { useRef, useState } from "react";
 import { Calendar, ChevronRight, Phone, MapPin, Video } from "lucide-react";
 import { heroReveal, stagger, fadeUp } from "@/lib/motion";
 import type { HomeContent } from "@/sanity/getHomePage";
+import { ZOCDOC_URL } from "@/lib/site";
 
 const recognition: { name: string; years: string }[] = [
   { name: "Castle Connolly Top Doctor", years: "2014–Present" },
@@ -128,7 +129,7 @@ export default function Hero({ home }: { home?: HomeContent }) {
               className="flex flex-col sm:flex-row gap-3 mb-10"
             >
               <a
-                href="https://www.zocdoc.com/doctor/steven-lee-md"
+                href={ZOCDOC_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Book an appointment via ZocDoc (opens in new tab)"

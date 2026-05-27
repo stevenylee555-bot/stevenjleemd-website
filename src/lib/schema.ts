@@ -1,5 +1,7 @@
 // JSON-LD schema builders for GEO (Generative Engine Optimization)
 
+import { ZOCDOC_URL } from "@/lib/site";
+
 export const physicianSchema = {
   "@context": "https://schema.org",
   "@type": "Physician",
@@ -50,7 +52,7 @@ export const physicianSchema = {
   telephone: "+1-212-737-3301",
   faxNumber: "+1-212-737-4876",
   sameAs: [
-    "https://www.zocdoc.com/doctor/steven-lee-md",
+    ZOCDOC_URL,
     "https://www.healthgrades.com/physician/dr-steven-lee",
     "https://www.vitals.com/doctors/Dr_Steven_Lee",
   ],

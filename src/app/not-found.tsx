@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowUpRight, Calendar, ExternalLink, Home } from "lucide-react";
+import { ZOCDOC_URL } from "@/lib/site";
 
 export default function NotFound() {
   return (
@@ -33,7 +34,7 @@ export default function NotFound() {
             Back to home
           </Link>
           <a
-            href="https://www.zocdoc.com/doctor/steven-lee-md"
+            href={ZOCDOC_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border border-white/25 hover:border-white/60 text-white hover:bg-white/5 rounded-md transition-all font-medium"

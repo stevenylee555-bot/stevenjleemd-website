@@ -10,6 +10,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
+import { ZOCDOC_URL } from "@/lib/site";
 import { buildFaqSchema, buildConditionSchema } from "@/lib/schema";
 import type { ConditionPageContent } from "@/lib/conditionPages";
 
@@ -172,7 +173,7 @@ export default function ConditionTemplate({
               {/* Inline CTA */}
               <div className="mt-12 pt-10 border-t border-navy-900/10 flex flex-col sm:flex-row gap-3">
                 <a
-                  href="https://www.zocdoc.com/doctor/steven-lee-md"
+                  href={ZOCDOC_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold rounded-md transition-all shadow-[0_10px_30px_-12px_rgba(201,168,76,0.5)] hover:-translate-y-0.5"
@@ -274,7 +275,7 @@ export default function ConditionTemplate({
                     {data.ctaCard.headline}
                   </div>
                   <a
-                    href="https://www.zocdoc.com/doctor/steven-lee-md"
+                    href={ZOCDOC_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 w-full px-4 py-3 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold rounded-md transition-all text-sm"
@@ -345,7 +346,7 @@ export default function ConditionTemplate({
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="https://www.zocdoc.com/doctor/steven-lee-md"
+              href={ZOCDOC_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold rounded-md transition-all text-base shadow-[0_10px_50px_-12px_rgba(201,168,76,0.7)] hover:-translate-y-0.5"
