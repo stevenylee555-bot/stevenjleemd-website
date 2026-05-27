@@ -52,6 +52,38 @@ export const conditions: Condition[] = [
     blurb:
       "Fracture fixation using hand and elbow plating systems Dr. Lee helped design.",
   },
+  {
+    name: "Finger Collateral Ligament Injury",
+    slug: "finger-collateral-ligament",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "Sideways injuries to the small ligaments that stabilize finger joints. Most heal without surgery; the unstable ones benefit from internal brace repair Dr. Lee helped design.",
+  },
+  {
+    name: "Extensor Tendon Subluxation",
+    slug: "extensor-tendon-subluxation",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "When the extensor tendon slips off the knuckle, often after a punch or in inflammatory arthritis. Treated with splinting acutely, or surgical realignment when chronic.",
+  },
+  {
+    name: "Ulnar Impaction Syndrome",
+    slug: "ulnar-impaction-syndrome",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "Pinky-side wrist pain from an ulna that sits too long relative to the radius. Treated with splinting, injections, PRP, or arthroscopic ulnar shortening (wafer procedure).",
+  },
+  {
+    name: "Thumb UCL/RCL Tear (Skier's Thumb)",
+    slug: "thumb-ucl-rcl",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "Ligament tear at the base of the thumb, often from a fall or ski-pole injury. Internal brace repair Dr. Lee helped design supports earlier return to pinching and sport.",
+  },
   // Hand & Wrist, phase 2
   {
     name: "Trigger Finger",

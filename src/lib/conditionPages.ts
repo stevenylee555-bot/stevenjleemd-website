@@ -1658,6 +1658,550 @@ const carpalTunnel: ConditionPageContent = {
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
+// Phase A rebuilds, May 2026.
+// These four pages were the highest-trafficked condition URLs on the legacy
+// Wix site (collateral ligament 7,347; extensor tendon subluxation 4,662;
+// ulnar impaction 3,007; thumb UCL/RCL 1,061 page views in the trailing 12
+// months). Drafted from existing Wix content in the new site's editorial
+// voice; awaiting Dr. Lee's final clinical review.
+
+const fingerCollateralLigament: ConditionPageContent = {
+  slug: "finger-collateral-ligament",
+  name: "Finger Collateral Ligament Injury",
+  region: "Hand & Wrist",
+  headerTitle: "Finger Collateral Ligament Injury:",
+  headerItalic: "small joint, real consequences.",
+  headerLede:
+    "Collateral ligaments stabilize each finger joint during pinching and gripping. When they tear, the joint can feel unstable, weak, or painful with everyday use. Most injuries heal without surgery, but the ones that don't can leave long-term problems if not treated correctly.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
+    reviewed: "May 2026",
+  },
+  overview: [
+    "The collateral ligaments are short, strong bands of tissue on either side of every finger joint. They hold the joint together during the rotational forces of pinching, grasping, and gripping. A tear, often dismissed as a 'jammed finger', can range from a mild sprain to a complete rupture that destabilizes the joint.",
+    "These injuries are easy to underestimate, especially when the finger is still bendable and an X-ray looks normal. But an unstable joint left untreated can lead to chronic weakness, pain with pinching, and early arthritis. Deciding what treatment is needed starts with an accurate stress examination of the joint.",
+  ],
+  bodySections: [
+    {
+      heading: "Anatomy of the finger joints",
+      body: [
+        "Each finger has three joints: distal interphalangeal (DIP), proximal interphalangeal (PIP), and metacarpophalangeal (MCP). The thumb has two: interphalangeal (IP) and MCP. Every joint has two collateral ligaments, one on each side, plus a thicker palmar plate underneath.",
+        "The radial collateral ligament (RCL) sits on the thumb-facing side, and the ulnar collateral ligament (UCL) sits on the pinky-facing side. Together they resist the sideways forces generated during pinching and gripping.",
+      ],
+    },
+    {
+      heading: "How the injury happens",
+      body: [
+        "The classic mechanism is a sideways force the ligament was not prepared to absorb: a ball striking the fingertip, a fall onto an outstretched hand, a finger caught in a closing door, or a dog leash wrapping around a finger when the dog pulls.",
+        "The injury can range from a stretch of the fibers (a sprain) to a partial tear to a complete rupture. In some cases the ligament pulls off a small fragment of bone (an avulsion fracture), and in more significant injuries the joint may dislocate entirely.",
+      ],
+    },
+    {
+      heading: "Symptoms",
+      body: [
+        "Pain and tenderness along the side of the affected joint, worse with pinching, gripping, or any sideways stress.",
+        "Swelling and bruising around the joint, which can persist for weeks.",
+        "A feeling that the joint is unstable or 'gives way' with pinching, opening and closing the hand, or sport.",
+        "In significant injuries the joint may look visibly enlarged or angulated to one side.",
+      ],
+    },
+    {
+      heading: "Diagnosis",
+      body: [
+        "Physical examination is the foundation. Dr. Lee examines the joint at rest, then stress-tests the ligament by applying a gentle sideways force, comparing the injured finger to the same finger on the opposite hand. Increased opening on the injured side is the key finding.",
+        "X-rays look for fractures, avulsion fragments, and joint dislocation, and they are usually normal in a sprain. MRI or ultrasound is occasionally used when the diagnosis is unclear or when surgery is being considered.",
+      ],
+    },
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "The majority of collateral ligament injuries heal with non-surgical care. The standard approach is buddy taping the injured finger to its neighbor so it can move within a safe range while the ligament heals, combined with a short period of splinting if the joint is unstable.",
+        "Hand therapy plays an important role in restoring motion and strength once the ligament has begun to heal. Stiffness is the most common complication of these injuries, so guided motion is started as early as the injury allows. Healing typically takes 6 weeks at minimum, and full recovery often takes 3 months or more.",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "Surgery is considered for complete tears with significant joint instability, for avulsion fractures that are meaningfully displaced, and for injuries that have not healed after appropriate non-surgical care.",
+        "The procedure is performed through a small incision over the affected ligament. The torn end is reattached to bone using small suture anchors. In many cases the ligament is augmented with an internal brace, which adds a strong suture-tape backbone to the repair and protects it during early motion.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee helped design the small-joint anchors and internal-brace constructs used to repair collateral ligaments in the hand. The internal-brace technique adds a strong suture-tape backbone to the repair, which protects it during early healing and lets patients begin guided hand therapy sooner than a traditional repair allows.",
+      "The result is often a faster, more predictable return to gripping, pinching, and sport-specific activity, with less of the stiffness that can follow prolonged splinting.",
+    ],
+  },
+  recoveryIntro:
+    "Recovery depends on whether the injury was treated non-surgically or surgically, and on which joint and which ligament is involved.",
+  recovery: [
+    { when: "Week 1", what: "Buddy taping or splinting depending on the joint. Swelling and bruising peak in the first few days." },
+    { when: "Weeks 2 to 4", what: "Edema management and gentle protected motion in hand therapy. Buddy taping continues during activity." },
+    { when: "Weeks 4 to 6", what: "Progressive range of motion and light strengthening. Most patients return to office work." },
+    { when: "Weeks 6 to 12", what: "Strengthening progresses. Most patients return to non-contact sports and unrestricted daily activity." },
+    { when: "3 to 6 months", what: "Return to contact sports, gripping-heavy occupations, and full strength. Mild residual swelling can persist longer." },
+  ],
+  misconceptions: {
+    intro: "Two common misunderstandings about finger ligament injuries.",
+    items: [
+      {
+        heading: "'I can still move it, so it must be fine.'",
+        body: "Movement does not equal stability. An unstable collateral ligament can still allow full bending and straightening, but it will give way or hurt with pinching, gripping, or any sideways stress. Stability is the key examination finding, not motion.",
+      },
+      {
+        heading: "'A jammed finger always gets better on its own.'",
+        body: "Most do. But a meaningful minority do not, and the difference matters: an unstable injury treated months later is harder to fix and the outcome is less predictable. An accurate stress exam in the first few weeks separates the two.",
+      },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Healing time", value: "6 weeks minimum, often 3+ months" },
+    { label: "Surgery rate", value: "Most heal without surgery" },
+    { label: "Common in", value: "Athletes, falls, dog walkers" },
+    { label: "Best evaluated by", value: "Hand specialist with stress exam" },
+  ],
+  whyDrLee: [
+    "Helped design the small-joint anchors and internal-brace constructs used in collateral ligament repair.",
+    "Treats finger ligament injuries regularly in athletes, climbers, and active patients.",
+    "Same-week evaluation often available at the NYC and Scarsdale offices.",
+  ],
+  related: [
+    { name: "Thumb UCL/RCL Tear (Skier's Thumb)", slug: "thumb-ucl-rcl" },
+    { name: "Scapholunate Ligament Injury", slug: "scapholunate" },
+    { name: "Hand & Wrist Fractures", slug: "hand-wrist-fractures" },
+  ],
+  ctaCard: {
+    eyebrow: "Get evaluated",
+    headline: "A jammed finger that does not feel right deserves an exam.",
+  },
+  faqHeadline: "Finger collateral ligament FAQ",
+  faqs: [
+    {
+      question: "How do I know if I tore a finger ligament or just sprained it?",
+      answer:
+        "It is hard to tell from symptoms alone, because both can cause pain and swelling. The difference shows up on stress examination: a sprained ligament is tender but stable; a torn ligament allows the joint to open up to sideways pressure compared to the same finger on the other hand. An accurate exam in the first few weeks is the most important step.",
+    },
+    {
+      question: "How long until I can use my finger normally?",
+      answer:
+        "Most patients can do desk work and light daily activity within 2 to 4 weeks while buddy-taping the finger. Pinching, gripping, and contact activity typically resume between 6 weeks and 3 months depending on the severity of the injury and whether surgery was needed. Mild stiffness and swelling can persist longer.",
+    },
+    {
+      question: "Do all finger ligament tears need surgery?",
+      answer:
+        "No. Most collateral ligament injuries, including many complete tears at the PIP and DIP joints, heal well with buddy taping, protected motion, and hand therapy. Surgery is considered when the joint is grossly unstable, when an avulsion fracture is displaced, or when non-surgical care has failed to restore stability.",
+    },
+    {
+      question: "What is an internal brace?",
+      answer:
+        "An internal brace is a strong suture-tape construct placed across a ligament repair to protect it during early healing. It does not replace the ligament; it supports it. The added strength allows earlier motion and a faster return to activity than a traditional repair, with less stiffness.",
+    },
+  ],
+  bottomCtaTitle: "Got a jammed finger that isn't right?",
+  bottomCtaItalic: "Get it evaluated.",
+  bottomCtaBody:
+    "The early evaluation is what separates injuries that heal on their own from the ones that need active treatment. Either way, the first step is an accurate diagnosis.",
+  metaTitle: "Finger Collateral Ligament Injury, Steven J. Lee, MD",
+  metaDescription:
+    "Finger collateral ligament injury, including UCL and RCL tears of the PIP, DIP, and MCP joints. Symptoms, diagnosis, treatment options, and recovery, including internal brace repair. By Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
+  schemaDescription:
+    "A finger collateral ligament injury is a sprain or tear of the ligaments on the side of a finger joint, usually caused by a sideways force during sport, a fall, or a finger caught on an object. Most injuries heal with buddy taping, splinting, and hand therapy. Unstable injuries may require surgical repair, often augmented with an internal brace.",
+};
+
+const extensorTendonSubluxation: ConditionPageContent = {
+  slug: "extensor-tendon-subluxation",
+  name: "Extensor Tendon Subluxation",
+  region: "Hand & Wrist",
+  headerTitle: "Extensor Tendon Subluxation:",
+  headerItalic: "when the tendon slips off the knuckle.",
+  headerLede:
+    "The extensor tendons on the back of the hand should stay centered over each knuckle. When the small bands that hold them in place tear, the tendon slips into the valley between knuckles, and the finger feels weak or catches when you straighten it. Acute injuries often heal with splinting; chronic cases need surgical realignment.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
+    reviewed: "May 2026",
+  },
+  overview: [
+    "The extensor tendons are the structures that straighten your fingers. Each one runs over the back of a knuckle, held centered by a small soft-tissue sleeve called the sagittal band. When the sagittal band tears, the tendon slips off the knuckle and slides into the valley between the metacarpal heads.",
+    "The usual cause is a punch, a fall onto a closed fist, or chronic inflammation of the joint, often from rheumatoid arthritis. Patients describe a snapping or catching as they straighten the finger, weakness when making a fist, or an inability to extend the finger fully.",
+  ],
+  bodySections: [
+    {
+      heading: "Anatomy",
+      body: [
+        "The extensor tendons run from forearm muscles, across the back of the wrist and hand, to attach to the fingers. They function like ropes that straighten the fingers. Over each metacarpophalangeal (MCP) joint, the tendon is held centered by the sagittal bands, thin but strong tissues on either side.",
+        "When a sagittal band tears, the tendon loses its restraint and slips into the gap between knuckles, most often toward the ulnar (pinky) side.",
+      ],
+    },
+    {
+      heading: "Causes",
+      body: [
+        "Trauma is the most common cause: punching a hard object or falling onto a closed fist, sometimes called a 'boxer's knuckle'.",
+        "Inflammatory conditions, especially rheumatoid arthritis, weaken the sagittal bands over time and can lead to spontaneous subluxation without a discrete injury.",
+      ],
+    },
+    {
+      heading: "Symptoms",
+      body: [
+        "A snapping or popping sensation as the tendon shifts off and back onto the knuckle.",
+        "Pain over the back of the knuckle, especially when making a fist.",
+        "Difficulty straightening the affected finger from a flexed position, while passive straightening is preserved.",
+        "Some patients have a visible bump or asymmetry over the knuckle. In milder cases there are no symptoms at all and the diagnosis is incidental.",
+      ],
+    },
+    {
+      heading: "Diagnosis",
+      body: [
+        "The diagnosis is usually clinical. Dr. Lee can see and feel the tendon shift as the patient flexes and extends the finger.",
+        "X-rays may be obtained to rule out fractures or arthritis. MRI or ultrasound is occasionally used when the picture is unclear, and rheumatologic workup is recommended when an inflammatory cause is suspected.",
+      ],
+    },
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "Acute injuries, treated within the first 2 to 3 weeks, often heal with splinting. The finger is held in full extension for 4 to 6 weeks to allow the sagittal band to scar back into place, then progressively weaned with the guidance of a hand therapist.",
+        "When the injury is older or the splint trial has failed, conservative care alone is unlikely to restore stability.",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "Chronic subluxation and acute injuries that fail splinting are treated surgically. The procedure is performed as outpatient surgery through a small incision over the affected knuckle.",
+        "The sagittal band is repaired directly when the tissue is good, or reconstructed using a slip of adjacent tendon when the native tissue is too damaged to hold. The goal is to re-center the tendon over the knuckle so it tracks normally with finger motion.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee tailors the approach to the cause: traumatic tears in younger patients are usually amenable to direct sagittal band repair, while inflammatory or chronic cases more often need a reconstruction. In either case the priority is centering the tendon and protecting the repair during early healing.",
+      "Hand therapy is started early under careful supervision so the joint does not stiffen while the soft tissue heals.",
+    ],
+  },
+  recovery: [
+    { when: "Acute (splinting), weeks 1 to 6", what: "Continuous extension splint for 4 to 6 weeks, removed only for skin care, with gradual weaning under hand-therapy supervision." },
+    { when: "Post-op, weeks 1 to 2", what: "Hand elevated above the heart; clean, dry dressing; sutures removed at 7 to 10 days." },
+    { when: "Weeks 2 to 6", what: "Custom hand-therapy splint and protected motion. Most desk work resumes during this window." },
+    { when: "Weeks 6 to 12", what: "Strengthening and gradual return to gripping, lifting, and recreational use." },
+    { when: "3 months and beyond", what: "Return to contact sports, full strength, and any high-demand hand use." },
+  ],
+  sidebarFacts: [
+    { label: "Common cause", value: "Punch injury or rheumatoid arthritis" },
+    { label: "Splint window", value: "Best within 2 to 3 weeks of injury" },
+    { label: "Surgery type", value: "Outpatient, small incision" },
+    { label: "Return to work", value: "2 to 6 weeks depending on demands" },
+  ],
+  whyDrLee: [
+    "Treats traumatic and rheumatologic hand conditions across thousands of cases.",
+    "Coordinates with hand therapists at both NYC and Scarsdale offices for seamless post-op rehab.",
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
+  ],
+  related: [
+    { name: "Finger Collateral Ligament Injury", slug: "finger-collateral-ligament" },
+    { name: "Hand & Wrist Fractures", slug: "hand-wrist-fractures" },
+    { name: "Carpal Tunnel Syndrome", slug: "carpal-tunnel" },
+  ],
+  ctaCard: {
+    eyebrow: "Catching knuckle?",
+    headline: "Acute injuries do best when treated early.",
+  },
+  faqHeadline: "Extensor tendon subluxation FAQ",
+  faqs: [
+    {
+      question: "What does extensor tendon subluxation feel like?",
+      answer:
+        "Most patients describe a snapping or popping over the knuckle when straightening the finger, often paired with weakness when making a fist and trouble extending the finger from a flexed position. There may be a visible bump or shift on the back of the hand. Some patients have no symptoms at all and the diagnosis is incidental.",
+    },
+    {
+      question: "Can it be treated without surgery?",
+      answer:
+        "Acute injuries treated within 2 to 3 weeks often heal with an extension splint worn for 4 to 6 weeks, followed by guided hand therapy. Older injuries or those that have failed splinting usually need surgery, because the torn sagittal band will not scar back into place without help.",
+    },
+    {
+      question: "What does surgery involve?",
+      answer:
+        "Surgery is a same-day, outpatient procedure done through a small incision over the affected knuckle. The torn sagittal band is repaired directly when the tissue is good. When it is not, a strip of nearby tendon is used to reconstruct the restraint. The goal is to re-center the tendon over the knuckle so it tracks normally during finger motion.",
+    },
+    {
+      question: "How long is recovery after surgery?",
+      answer:
+        "Most patients are in a protective splint for 4 to 6 weeks post-op, with hand therapy throughout, and resume light desk work during that window. Strengthening and gradual return to gripping, lifting, and recreation typically happen between 6 and 12 weeks. Return to contact sports or high-demand hand use is usually at 3 months.",
+    },
+  ],
+  bottomCtaTitle: "Catching, popping, or weakness over a knuckle?",
+  bottomCtaItalic: "The window matters.",
+  bottomCtaBody:
+    "Acute extensor tendon subluxation often heals with a splint if treated within the first few weeks. Older injuries usually need surgery. Either way, an early evaluation is what keeps your options open.",
+  metaTitle: "Extensor Tendon Subluxation, Steven J. Lee, MD",
+  metaDescription:
+    "Extensor tendon subluxation, also called sagittal band rupture or boxer's knuckle. Symptoms, diagnosis, splinting, and surgical reconstruction. By Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
+  schemaDescription:
+    "Extensor tendon subluxation is when an extensor tendon on the back of the hand slips off the knuckle because the sagittal band restraint has torn. It is most often caused by a punch injury or by chronic inflammation. Acute cases can heal with splinting; chronic cases are treated with surgical sagittal band repair or reconstruction.",
+};
+
+const ulnarImpactionSyndrome: ConditionPageContent = {
+  slug: "ulnar-impaction-syndrome",
+  name: "Ulnar Impaction Syndrome",
+  region: "Hand & Wrist",
+  headerTitle: "Ulnar Impaction Syndrome:",
+  headerItalic: "pinky-side wrist pain, explained.",
+  headerLede:
+    "When the ulna sits even a few millimeters longer than the radius, it can grind into the small bones on the pinky side of the wrist with every twist of the forearm. The result is ulnar-sided wrist pain that worsens with rotation, push-ups, and gripping. Treatment ranges from splinting and injections to a minimally invasive arthroscopic shortening.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
+    reviewed: "May 2026",
+  },
+  overview: [
+    "Ulnar impaction syndrome (sometimes called ulnocarpal abutment) is a common cause of pain on the pinky side of the wrist. It occurs when the ulna, one of the two forearm bones, is too long relative to the radius. With every forearm rotation the ulna impacts the small carpal bones and the TFCC (triangular fibrocartilage complex), causing pain, swelling, and sometimes cartilage damage.",
+    "Some patients are born with a naturally long ulna ('ulnar positive variance'). In others the imbalance develops after a distal radius fracture that heals slightly shortened, making the ulna effectively longer. Inflammatory conditions can also play a role.",
+  ],
+  bodySections: [
+    {
+      heading: "Anatomy",
+      body: [
+        "The wrist sits at the intersection of three structures: the distal radius, the distal ulna, and the carpal bones. The TFCC is a small cartilage and ligament complex that cushions the load between the ulna and the carpal bones during forearm rotation and gripping.",
+        "When the ulna is even 2 or 3 millimeters too long, the TFCC and adjacent cartilage take a load they were never designed for, and degenerative tears develop over time.",
+      ],
+    },
+    {
+      heading: "Causes",
+      body: [
+        "Congenital ulnar positive variance: a naturally longer ulna present from birth.",
+        "Prior distal radius fracture that healed short, leaving the ulna relatively longer.",
+        "Inflammatory arthritis affecting wrist alignment.",
+      ],
+    },
+    {
+      heading: "Symptoms",
+      body: [
+        "Pain on the pinky side of the wrist, worse with twisting motions (turning a doorknob, pouring a pot), wrist extension (push-ups), and gripping.",
+        "Onset can be sudden after a specific activity or gradual from cumulative overuse.",
+        "Some patients describe clicking, swelling, or a feeling of weakness with rotation.",
+      ],
+    },
+    {
+      heading: "Diagnosis",
+      body: [
+        "Examination focuses on point tenderness over the ulnar wrist and provocative maneuvers that load the TFCC. Dr. Lee compares wrist motion and stability to the opposite side.",
+        "X-rays measure ulnar variance directly: a difference of a few millimeters is enough to be symptomatic. MRI may be ordered to assess the TFCC and adjacent cartilage when surgery is being considered.",
+      ],
+    },
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "Initial care emphasizes wrist rest, splinting in a removable wrist brace for 4 or more weeks, and avoiding the activities that load the joint (push-ups, gripping-heavy training, twisting).",
+        "Corticosteroid injections can provide meaningful temporary pain relief and help confirm the diagnosis. PRP (platelet-rich plasma) is sometimes used in early or biologically promising cases. Dr. Lee was among the first surgeons in NYC to use PRP for upper-extremity injuries and performs more than 250 PRP procedures per year.",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "When the variance is small (under 3 to 4 millimeters) and the cartilage is preserved, the ulna can often be shortened arthroscopically. The 'wafer procedure' removes a thin slice of bone from the end of the ulna through a wrist scope. Patients typically wear a removable splint for 4 to 6 weeks afterward.",
+        "When the variance is larger or the cartilage is more involved, a formal ulnar shortening osteotomy with a plate and screws is the more reliable option. In selected inflammatory cases the head of the ulna is removed (Darrach or related procedures).",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee is fellowship trained in both Hand and Upper Extremity Surgery and Sports Medicine, and regularly instructs other surgeons in cadaver labs on the wafer procedure and ulnar shortening osteotomies. Procedure selection is matched to the variance, the cartilage status, and the patient's activity demands.",
+      "For active patients with smaller variance, the arthroscopic wafer is favored when feasible because of the faster recovery. For larger variance or complex cases, a formal shortening with internal fixation is the more predictable solution.",
+    ],
+  },
+  recovery: [
+    { when: "Weeks 1 to 4 (wafer)", what: "Removable splint, gentle motion, and edema control." },
+    { when: "Weeks 4 to 12 (wafer)", what: "Progressive hand therapy and return to most daily activities." },
+    { when: "3 to 4 months (wafer)", what: "Return to full strength and most sport." },
+    { when: "Weeks 1 to 4 (formal shortening)", what: "Long-arm cast or splint to protect the osteotomy." },
+    { when: "Weeks 4 to 12 (formal shortening)", what: "Removable splint and hand therapy beginning around week 6 once bone-healing is confirmed." },
+    { when: "3 to 6 months (formal shortening)", what: "Return to gripping, twisting, and contact sport." },
+  ],
+  sidebarFacts: [
+    { label: "Common cause", value: "Long ulna (congenital or post-fracture)" },
+    { label: "Variance threshold", value: "Symptoms often appear at 2 to 3 mm" },
+    { label: "Procedure options", value: "Arthroscopic wafer or formal shortening" },
+    { label: "Recovery (wafer)", value: "3 to 4 months" },
+  ],
+  whyDrLee: [
+    "Among the first surgeons in NYC to use PRP for upper-extremity wrist pathology.",
+    "Teaches the wafer procedure and ulnar shortening osteotomy to other surgeons in cadaver labs.",
+    "Fellowship trained in both Hand and Upper Extremity Surgery and Sports Medicine.",
+  ],
+  related: [
+    { name: "Distal Radius Fracture", slug: "distal-radius-fracture" },
+    { name: "Scapholunate Ligament Injury", slug: "scapholunate" },
+    { name: "Carpal Tunnel Syndrome", slug: "carpal-tunnel" },
+  ],
+  ctaCard: {
+    eyebrow: "Pinky-side wrist pain?",
+    headline: "Variance of a few millimeters is enough to be symptomatic.",
+  },
+  faqHeadline: "Ulnar impaction syndrome FAQ",
+  faqs: [
+    {
+      question: "Why does my pinky-side wrist hurt only with certain motions?",
+      answer:
+        "If the ulna is even 2 to 3 millimeters longer than the radius, it will impact the small bones and TFCC on the pinky side of the wrist during forearm rotation and wrist extension, like twisting a doorknob or doing a push-up. Activities that don't load the joint in those positions often feel fine. An X-ray measurement of ulnar variance is what confirms the diagnosis.",
+    },
+    {
+      question: "Do I need surgery, or can it be managed without?",
+      answer:
+        "Many patients do well with splinting for 4 or more weeks, activity modification, and either a corticosteroid injection or PRP. Surgery is considered when symptoms persist despite a real trial of conservative care, when imaging shows progressive cartilage damage, or when the variance is large enough that non-operative treatment is unlikely to succeed.",
+    },
+    {
+      question: "What is the wafer procedure?",
+      answer:
+        "The wafer procedure is a minimally invasive arthroscopic surgery that shortens the ulna by removing a thin slice (wafer) of bone from its tip through a wrist scope. It is best for variance under 3 to 4 millimeters with preserved cartilage. Recovery is faster than a formal osteotomy because no plate or fracture-healing is involved.",
+    },
+    {
+      question: "When is a formal ulnar shortening osteotomy needed instead?",
+      answer:
+        "When the variance is larger than about 3 to 4 millimeters, or when associated cartilage damage is more extensive, a formal shortening osteotomy with a plate and screws is more reliable. Bone-healing extends the recovery (typically 3 to 6 months to full strength) but the result is durable.",
+    },
+  ],
+  bottomCtaTitle: "Pinky-side wrist pain that won't quit?",
+  bottomCtaItalic: "Get the variance measured.",
+  bottomCtaBody:
+    "A few millimeters of ulnar variance is enough to cause significant pain, and an accurate X-ray measurement is the first step in deciding what treatment is right.",
+  metaTitle: "Ulnar Impaction Syndrome, Steven J. Lee, MD",
+  metaDescription:
+    "Ulnar impaction syndrome (ulnocarpal abutment), the pinky-side wrist pain caused by a long ulna. Symptoms, diagnosis, splinting, PRP, arthroscopic wafer procedure, and formal ulnar shortening osteotomy. By Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
+  schemaDescription:
+    "Ulnar impaction syndrome is wrist pain caused by an ulna that is too long relative to the radius, leading to repeated impact on the pinky-side carpal bones and TFCC. Treatment options range from splinting and corticosteroid or PRP injections to arthroscopic wafer ulnar shortening or formal ulnar shortening osteotomy.",
+};
+
+const thumbUclRcl: ConditionPageContent = {
+  slug: "thumb-ucl-rcl",
+  name: "Thumb UCL/RCL Tear (Skier's Thumb)",
+  region: "Hand & Wrist",
+  headerTitle: "Thumb UCL/RCL Tear:",
+  headerItalic: "the ligament behind every pinch.",
+  headerLede:
+    "The ulnar collateral ligament at the base of the thumb is what lets you pinch and grip with strength. A fall, a ski-pole jam, or a sports collision can tear it, and without proper treatment the thumb stays weak and unstable. Most partial tears heal in a thumb spica splint; complete tears typically need surgical repair, often augmented with an internal brace.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
+    reviewed: "May 2026",
+  },
+  overview: [
+    "The thumb ulnar collateral ligament (UCL) is a thick band on the inner side of the thumb base. It is the structure that stabilizes the thumb during every pinch and grip. The radial collateral ligament (RCL) is its counterpart on the outer side. Either can tear, and the UCL is the more common.",
+    "The classic injury patterns are 'skier's thumb' (an acute tear from a fall, often with the hand strapped to a ski pole) and 'gamekeeper's thumb' (a chronic stretch injury named for Scottish gamekeepers who repeatedly stressed the ligament). Both result in pain at the base of the thumb and a weak, unstable pinch.",
+  ],
+  bodySections: [
+    {
+      heading: "Anatomy",
+      body: [
+        "The thumb metacarpophalangeal (MCP) joint connects the thumb's metacarpal to the proximal phalanx. The UCL sits on the inner side of this joint, the RCL on the outer side. Together they create the stable platform that lets the thumb pinch against the fingers with force.",
+        "A 'Stener lesion' is a particular pattern in which the torn UCL flips outward and gets trapped on top of the adductor aponeurosis. In this position the ligament cannot heal on its own, regardless of splinting, and surgery is required to put it back in place.",
+      ],
+    },
+    {
+      heading: "Causes",
+      body: [
+        "Acute injury, the most common pattern: a fall onto an outstretched hand, a ski pole that catches and forces the thumb sideways, or a sports collision that bends the thumb away from the index finger.",
+        "Chronic injury: repeated stress on the ligament over time, classically described in gamekeepers and still seen in some occupations and sports.",
+      ],
+    },
+    {
+      heading: "Symptoms",
+      body: [
+        "Pain at the base of the thumb, on the inner side near the webspace.",
+        "Swelling and bruising acutely, sometimes with a visible bump from the torn ligament.",
+        "A feeling that the thumb is loose, unstable, or weak with pinching, gripping, opening jars, or turning keys.",
+        "Difficulty performing tasks that require a strong pinch, like writing or using utensils.",
+      ],
+    },
+    {
+      heading: "Diagnosis",
+      body: [
+        "The exam is the most important step. Dr. Lee palpates for tenderness over the UCL and performs a careful stress test, applying gentle sideways force and comparing the joint opening to the uninjured thumb. Increased opening or a soft endpoint suggests a complete tear.",
+        "X-rays rule out fractures and avulsion fragments. MRI may be used when the diagnosis is uncertain, when a Stener lesion is suspected, or when surgery is being planned.",
+      ],
+    },
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "Partial tears and stable injuries are treated in a thumb spica splint worn full-time for at least 6 weeks. The splint must be on continuously, removed only briefly for skin care, because intermittent splinting allows the ligament to stretch and prevents healing.",
+        "Hand therapy begins after the splinting period to restore motion, strength, and pinch endurance. A meaningful number of partial tears heal completely with this approach.",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "Surgery is recommended for complete UCL tears, displaced avulsion fractures, suspected Stener lesions, and partial tears that have failed splinting. Delaying treatment of an unstable thumb can lead to chronic instability, weakness, and early arthritis.",
+        "Through a small incision at the base of the thumb, Dr. Lee reattaches the torn ligament to bone using a suture anchor. When the ligament is too damaged for direct repair, it is reconstructed using a nearby tendon graft. In most repairs an internal brace is added across the ligament to add immediate strength and allow earlier protected motion.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee helped design the small-joint anchors and internal-brace constructs used in thumb UCL repair. The internal brace adds a strong suture-tape backbone across the ligament, which protects the repair during early healing and lets patients begin guided hand therapy sooner than a traditional repair allows.",
+      "For active patients and athletes, this typically translates to an earlier, more predictable return to pinching, gripping, and sport, with less of the stiffness that can follow extended splinting.",
+    ],
+  },
+  recovery: [
+    { when: "Week 1 (post-op)", what: "Protective splint, hand elevated, clean dressing. Light use of fingers and wrist as comfort allows." },
+    { when: "Weeks 1 to 2", what: "Wound check and suture removal at day 7 to 10. Transition to a custom hand-therapy thumb spica splint." },
+    { when: "Weeks 2 to 6", what: "Continuous custom splint with brief, supervised motion sessions in hand therapy to prevent stiffness." },
+    { when: "Weeks 6 to 12", what: "Progressive strengthening, scar management, and return to most daily activity. Pinch strength rebuilds gradually." },
+    { when: "3 months and beyond", what: "Return to contact sports, racquet sports, skiing, and high-demand pinching activities, individualized by sport and patient." },
+  ],
+  sidebarFacts: [
+    { label: "Common mechanism", value: "Fall, ski pole, contact sport" },
+    { label: "Stener lesion", value: "Will not heal in a splint" },
+    { label: "Splint duration", value: "6+ weeks, continuous" },
+    { label: "Return to sport", value: "Often around 3 months" },
+  ],
+  whyDrLee: [
+    "Helped design the small-joint anchors and internal-brace constructs used in thumb UCL repair.",
+    "Treats skier's thumb and gamekeeper's thumb regularly in skiers, athletes, and active patients.",
+    "Coordinates with hand therapists in NYC and Scarsdale for early, structured rehab.",
+  ],
+  related: [
+    { name: "Finger Collateral Ligament Injury", slug: "finger-collateral-ligament" },
+    { name: "Scapholunate Ligament Injury", slug: "scapholunate" },
+    { name: "Hand & Wrist Fractures", slug: "hand-wrist-fractures" },
+  ],
+  ctaCard: {
+    eyebrow: "Recent fall or ski accident?",
+    headline: "Unstable thumbs do better when treated early.",
+  },
+  faqHeadline: "Thumb UCL/RCL FAQ",
+  faqs: [
+    {
+      question: "How do I know if my thumb is sprained or actually torn?",
+      answer:
+        "A sprain is tender but stable on examination. A torn ligament allows the thumb joint to open up to sideways pressure compared to the uninjured side, and the endpoint of the motion feels soft rather than firm. An accurate stress exam, sometimes paired with an X-ray and MRI, is what distinguishes the two.",
+    },
+    {
+      question: "Can a thumb UCL tear heal without surgery?",
+      answer:
+        "Partial tears often heal in a thumb spica splint worn continuously for at least 6 weeks, followed by hand therapy. Complete tears, especially those with a Stener lesion (where the torn ligament flips out of position), generally do not heal on their own and need surgery. Delaying treatment of an unstable thumb can lead to chronic weakness and early arthritis.",
+    },
+    {
+      question: "What is a Stener lesion?",
+      answer:
+        "A Stener lesion is a specific pattern in which the torn end of the UCL flips out of position and becomes trapped above an overlying tendon. In that position the ligament cannot reach bone to heal, no matter how long the thumb is splinted. Stener lesions are typically diagnosed on examination or MRI and are treated surgically.",
+    },
+    {
+      question: "How long until I can ski or play sports again?",
+      answer:
+        "Return to sport depends on the type of sport and on whether treatment was operative or non-operative. After surgical repair with an internal brace, most patients return to non-contact sport between 8 and 12 weeks, and to contact sports, racquet sports, and skiing around 3 months. Splint-treated injuries follow a similar timeline once stability is confirmed.",
+    },
+  ],
+  bottomCtaTitle: "Thumb still weak or unstable after a fall?",
+  bottomCtaItalic: "Get it examined.",
+  bottomCtaBody:
+    "An unstable thumb that isn't properly treated will not get stronger on its own. Most injuries do well with early, accurate care, whether that is a splint or a small surgery.",
+  metaTitle: "Thumb UCL/RCL Tear (Skier's Thumb), Steven J. Lee, MD",
+  metaDescription:
+    "Thumb UCL and RCL tears, also known as skier's thumb and gamekeeper's thumb. Symptoms, diagnosis, splinting, and internal-brace ligament repair. By Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
+  schemaDescription:
+    "A thumb UCL or RCL tear is an injury to the collateral ligament at the base of the thumb, usually caused by a fall, a ski-pole injury, or a sports collision. Partial tears often heal in a thumb spica splint; complete tears and Stener lesions are treated surgically, often with an internal brace to support earlier rehabilitation.",
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
 export const conditionPages: ConditionPageContent[] = [
   carpalTunnel,
   distalRadiusFracture,
@@ -1669,6 +2213,11 @@ export const conditionPages: ConditionPageContent[] = [
   rotatorCuff,
   aclReconstruction,
   achillesRupture,
+  // Phase A additions (highest historical Wix traffic), May 2026:
+  fingerCollateralLigament,
+  extensorTendonSubluxation,
+  ulnarImpactionSyndrome,
+  thumbUclRcl,
 ];
 
 export function conditionPageBySlug(slug: string) {
