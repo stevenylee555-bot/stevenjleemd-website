@@ -5,6 +5,7 @@ import { VisualEditing } from "next-sanity/visual-editing";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Analytics from "@/components/analytics/Analytics";
 import { physicianSchema, medicalBusinessSchema } from "@/lib/schema";
 import { SanityLive } from "@/sanity/live";
 
@@ -104,6 +105,7 @@ export default async function RootLayout({
         <Footer />
         <SanityLive />
         {isDraft && <VisualEditing />}
+        <Analytics />
       </body>
     </html>
   );
