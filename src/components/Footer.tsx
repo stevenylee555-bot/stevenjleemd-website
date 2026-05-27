@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Phone, MapPin, ExternalLink, Globe } from "lucide-react";
+import { ZOCDOC_URL } from "@/lib/site";
 
 const footerLinks = {
   Specialties: [
@@ -10,7 +11,7 @@ const footerLinks = {
     { label: "PRP & Advanced Treatments", href: "/specialties/advanced-treatments" },
   ],
   "For Patients": [
-    { label: "Book an Appointment", href: "https://www.zocdoc.com/doctor/steven-lee-md", external: true },
+    { label: "Book an Appointment", href: ZOCDOC_URL, external: true },
     { label: "Conditions Library", href: "/conditions" },
     { label: "Therapy Protocols", href: "/therapy-protocols" },
     { label: "Second Opinions", href: "/second-opinions" },
@@ -119,7 +120,13 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/85">
-          <p>© {new Date().getFullYear()} Steven J. Lee, MD. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} Steven J. Lee, MD. All rights reserved.
+            <span className="text-white/40 mx-2" aria-hidden="true">·</span>
+            <Link href="/privacy" className="hover:text-white transition-colors">
+              Privacy
+            </Link>
+          </p>
           <p className="text-center">
             The information on this website is for general educational purposes only and does not constitute medical advice.
             Always consult a qualified physician for medical decisions.
