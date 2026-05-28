@@ -3131,6 +3131,157 @@ const prpInjections: ConditionPageContent = {
     "Platelet-rich plasma (PRP) injection is an autologous regenerative treatment in which the patient's own platelets and growth factors are concentrated from a blood draw and injected into an injured tendon, ligament, or joint to stimulate healing. PRP is most effective for chronic tendinopathies and mild-to-moderate arthritis, given as a series of approximately three injections one week apart, with clinical improvement developing gradually over weeks to months.",
 };
 
+const internalBrace: ConditionPageContent = {
+  slug: "internal-brace",
+  name: "Internal Brace",
+  region: "Advanced Treatments",
+  headerTitle: "Internal Brace:",
+  headerItalic: "the seatbelt inside your repair.",
+  headerLede:
+    "An internal brace is a high-strength suture-tape construct that sits across a ligament or tendon repair, acting like a seatbelt that protects the healing tissue during the first weeks after surgery. The added strength lets patients begin guided motion sooner than a traditional repair allows, with faster return to function and less stiffness. Dr. Lee helped design the internal-brace constructs used in the upper extremity.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
+    reviewed: "May 2026",
+  },
+  overview: [
+    "Internal brace is a surgical technique, not a single product. The construct consists of a high-strength suture tape (a flat, woven tape several millimeters wide) fixed to bone on either side of a repaired ligament or tendon using small suture anchors. Across the repair, the tape acts as an additional load-bearing structure, taking force off the healing biological tissue during the period when it is most vulnerable.",
+    "The clinical idea is straightforward. A repaired or reconstructed ligament is at its weakest in the first few weeks after surgery, when sutures alone hold it together. Traditionally, this meant extended immobilization in a cast or splint, with the trade-off of significant stiffness afterward. An internal brace shifts the balance: the tissue still heals on its own biology, but the construct lets the joint start moving sooner, which is what protects against the stiffness that often defines outcomes.",
+  ],
+  bodySections: [
+    {
+      heading: "How it works biomechanically",
+      body: [
+        "The tape itself is not designed to replace the ligament. The patient's own biological tissue is still what heals, scars in, and ultimately resists the loads of daily life. The tape's job is temporary load-sharing: while collagen is reorganizing and the repaired tissue is gaining strength, the tape carries enough of the load that the joint can move safely.",
+        "Over months, the biological repair matures and the tape becomes a secondary structure. It typically remains in place permanently but contributes less and less as the patient's own tissue takes over.",
+      ],
+    },
+    {
+      heading: "Conditions where internal brace is used",
+      body: [
+        "Internal brace constructs are used in a growing list of orthopedic procedures in the upper extremity and beyond. The most established applications include:",
+      ],
+      bullets: [
+        "Thumb UCL/RCL repair (Skier's thumb, gamekeeper's thumb)",
+        "Finger collateral ligament repair",
+        "Thumb basal joint reconstruction (CMC arthroplasty)",
+        "Scapholunate ligament reconstruction",
+        "TFCC repair and DRUJ stabilization",
+        "Elbow UCL reconstruction (Tommy John)",
+        "Elbow LUCL repair (lateral collateral ligament)",
+        "Ankle ligament reconstruction (Broström procedure)",
+      ],
+      bulletsAfter:
+        "The decision to add an internal brace to a particular repair depends on the tissue quality, the patient's activity demands, and the surgical pattern. Not every repair needs one, and not every repair is helped by one.",
+    },
+    {
+      heading: "How it changes recovery",
+      body: [
+        "The headline change is the timing of motion. In traditional ligament repair, the joint is often held still in a splint or cast for 4 to 6 weeks to protect the sutures. With an internal brace, supervised motion under a hand therapist or physical therapist can typically begin within 1 to 2 weeks of surgery, depending on the procedure and the tissue.",
+        "Earlier motion translates to less stiffness, faster strength recovery, and often an earlier return to sport and to gripping-heavy occupations. The biology of healing has not changed, but the rehabilitation curve is meaningfully different.",
+      ],
+    },
+    {
+      heading: "Who is a good candidate",
+      body: [
+        "Candidates for internal brace augmentation are patients who need surgical repair or reconstruction of a ligament where early motion would protect outcomes (active patients, athletes, occupations requiring fine motor function) and where the construct has been validated for the specific procedure.",
+        "It is not a substitute for a poorly performed repair, and it does not rescue a ligament that is too damaged to repair. The underlying biology of the tissue still has to be respectable; the brace gives that biology room to work.",
+      ],
+    },
+    {
+      heading: "Dr. Lee's role in the technology",
+      body: [
+        "Dr. Lee has helped design the orthopedic implants and constructs used by surgeons across the country, including plating systems, suture anchors, and internal-brace constructs for the upper extremity. That collaboration with the manufacturer means his clinical use of internal brace is grounded in the technical development of the implants themselves.",
+        "In practical terms, this informs how he chooses tape size, anchor configuration, and fixation strategy for each individual case. The construct that works for a thumb UCL is not the same construct that works for an elbow UCL, and matching the implant to the indication is part of the operation, not just an off-the-shelf addition.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee uses internal brace augmentation when it genuinely changes the outcome, not as a default. For thumb UCL injuries in active patients, finger collateral ligament reconstructions, and selected elbow procedures, the protected early motion an internal brace allows can shorten return-to-activity by weeks and reduce the stiffness that follows extended immobilization.",
+      "For repairs where the biology is straightforward and the recovery is already predictable, he uses traditional techniques and skips the additional construct. The goal is the best result for the patient, not the most technology in the surgical field.",
+    ],
+  },
+  recoveryIntro:
+    "Recovery timelines depend on the specific procedure the internal brace augments. The headline difference from traditional repair is that supervised motion can typically begin sooner, often within 1 to 2 weeks instead of 4 to 6.",
+  recovery: [
+    { when: "Weeks 1 to 2", what: "Initial post-op splint with the hand or limb elevated. Wound check and suture removal at 10 to 14 days. Transition into custom hand-therapy splint when appropriate." },
+    { when: "Weeks 2 to 6", what: "Supervised protected motion in hand or physical therapy. The internal brace allows ranges of motion that traditional repair would not at this stage. Lifting and gripping limited." },
+    { when: "Weeks 6 to 12", what: "Progressive strengthening, scar management, and graded return to most daily activities. Sport-specific drills begin." },
+    { when: "3 to 6 months", what: "Return to contact sport, gripping-heavy work, and full strength activities. The exact timing depends on the procedure (thumb UCL is faster than elbow UCL is faster than scapholunate reconstruction)." },
+  ],
+  misconceptions: {
+    intro: "Two common misconceptions about internal brace.",
+    items: [
+      {
+        heading: "'The tape replaces my ligament.'",
+        body: "It does not. The patient's own biological tissue still does the long-term work of resisting loads; the tape is a temporary load-sharing structure that protects the repair during the first weeks of healing. Over months, the biology becomes dominant and the tape becomes a secondary structure.",
+      },
+      {
+        heading: "'Internal brace means I can skip rehab.'",
+        body: "No. It means rehab starts sooner under careful supervision. The protected motion the brace allows still needs to be guided by a hand or physical therapist, and the strengthening phase is essentially the same as a traditional repair. The difference is timing, not effort.",
+      },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "Suture-tape augmentation across a repair" },
+    { label: "What it does", value: "Temporary load-sharing while tissue heals" },
+    { label: "Main benefit", value: "Earlier motion, less stiffness" },
+    { label: "Stays in place", value: "Yes, permanently" },
+  ],
+  whyDrLee: [
+    "Helped design the orthopedic plating systems, suture anchors, and internal-brace constructs used by surgeons nationwide.",
+    "Uses internal brace augmentation where it genuinely changes the outcome, not as a default add-on.",
+    "Matches tape size, anchor configuration, and fixation strategy to the specific indication.",
+  ],
+  related: [
+    { name: "Thumb UCL/RCL Tear (Skier's Thumb)", slug: "thumb-ucl-rcl" },
+    { name: "Finger Collateral Ligament Injury", slug: "finger-collateral-ligament" },
+    { name: "UCL Reconstruction (Tommy John)", slug: "ucl-reconstruction" },
+  ],
+  ctaCard: {
+    eyebrow: "Ligament surgery on the calendar?",
+    headline: "Ask whether internal brace augmentation is right for your case.",
+  },
+  faqHeadline: "Internal brace FAQ",
+  faqs: [
+    {
+      question: "What is an internal brace?",
+      answer:
+        "An internal brace is a surgical technique in which a high-strength suture tape (a flat, woven tape several millimeters wide) is fixed to bone with small anchors on either side of a repaired or reconstructed ligament. The tape acts like a seatbelt across the repair, taking load off the healing tissue during the first weeks after surgery so the patient can begin protected motion sooner. The patient's own biological tissue still heals and provides long-term strength; the tape is a load-sharing structure.",
+    },
+    {
+      question: "Which surgeries use an internal brace?",
+      answer:
+        "Internal brace constructs are used in a growing list of orthopedic procedures, especially in the upper extremity. Established applications include thumb UCL and RCL repair (skier's thumb), finger collateral ligament repair, thumb basal joint reconstruction, scapholunate ligament reconstruction, TFCC and DRUJ procedures, elbow UCL reconstruction (Tommy John), elbow LUCL repair, and ankle ligament reconstruction (Broström). The decision to add an internal brace to any particular case depends on tissue quality, the patient's activity demands, and the surgical pattern.",
+    },
+    {
+      question: "How does internal brace change recovery?",
+      answer:
+        "The main change is the timing of motion. In a traditional ligament repair, the joint is held still in a splint or cast for 4 to 6 weeks. With an internal brace, supervised protected motion under a hand or physical therapist can typically begin within 1 to 2 weeks of surgery. Earlier motion means less stiffness, faster strength recovery, and often an earlier return to sport. The biology of healing has not changed; the rehabilitation curve has.",
+    },
+    {
+      question: "Does the tape come out, or does it stay forever?",
+      answer:
+        "The internal brace construct stays in place permanently. It is biologically inert and well-tolerated by the surrounding tissue. Over the months after surgery, the patient's own healing tissue becomes dominant, and the tape becomes a secondary structure that contributes less and less to load resistance. There is no second surgery to remove it under normal circumstances.",
+    },
+    {
+      question: "Will I be able to return to sports faster?",
+      answer:
+        "For procedures where internal brace is used appropriately (thumb UCL repair, finger collateral ligament repair, selected elbow ligament reconstructions, ankle Broström), most patients can return to sport-specific drills and gradual return to play earlier than they would with a traditional repair. The exact timeline depends on the specific procedure and the demands of the sport, but for many upper-extremity ligament surgeries, the practical difference can be weeks earlier without compromising the durability of the repair.",
+    },
+  ],
+  bottomCtaTitle: "Scheduled for ligament surgery?",
+  bottomCtaItalic: "Ask whether internal brace is right.",
+  bottomCtaBody:
+    "Internal brace augmentation can shorten recovery and protect outcomes when it is used in the right cases. It is not a default add-on, and not every repair benefits. Dr. Lee can walk through whether the construct makes sense for your specific procedure and activity demands.",
+  metaTitle: "Internal Brace, Steven J. Lee, MD",
+  metaDescription:
+    "Internal brace technology: a high-strength suture-tape augmentation across a ligament or tendon repair that allows earlier motion and faster return to activity. Used in thumb UCL, finger collateral, elbow UCL/LUCL, scapholunate, ankle Broström, and more. Dr. Steven J. Lee, MD helped design the internal-brace constructs used in the upper extremity.",
+  schemaDescription:
+    "An internal brace is a surgical technique that augments a repaired or reconstructed ligament with a high-strength suture-tape construct fixed to bone with small anchors. The tape protects the repair during early healing and allows earlier supervised motion than traditional repair, with less post-operative stiffness and earlier return to activity. The patient's own biological tissue still provides long-term strength.",
+};
+
 // ─────────────────────────────────────────────────────────────────────────────
 export const conditionPages: ConditionPageContent[] = [
   carpalTunnel,
@@ -3155,6 +3306,7 @@ export const conditionPages: ConditionPageContent[] = [
   olecranonFracture,
   mucousCyst,
   prpInjections,
+  internalBrace,
 ];
 
 export function conditionPageBySlug(slug: string) {

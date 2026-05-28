@@ -132,6 +132,14 @@ export const conditions: Condition[] = [
     blurb:
       "A regenerative injection using concentrated platelets and growth factors from the patient's own blood. Dr. Lee was among the first surgeons in NYC to use PRP for the upper extremity and performs more than 250 PRP procedures per year.",
   },
+  {
+    name: "Internal Brace",
+    slug: "internal-brace",
+    region: "Advanced Treatments",
+    status: "priority",
+    blurb:
+      "A high-strength suture-tape augmentation that protects a ligament or tendon repair during early healing, allowing earlier motion and faster return to activity. Dr. Lee helped design the internal-brace constructs used for the upper extremity.",
+  },
   // Hand & Wrist, phase 2
   {
     name: "Trigger Finger",

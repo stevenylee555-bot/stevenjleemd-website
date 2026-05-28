@@ -133,7 +133,7 @@ export const redirects: RedirectRule[] = [
   { source: "/prp-injections", destination: "/conditions/prp-injections", permanent: true },
   { source: "/copy-of-prp-injections-1", destination: "/specialties/advanced-treatments", permanent: true },
   { source: "/stem-cell-and-ortho-biologics", destination: "/specialties/advanced-treatments", permanent: true },
-  { source: "/internal-brace", destination: "/specialties/advanced-treatments", permanent: true },
+  { source: "/internal-brace", destination: "/conditions/internal-brace", permanent: true },
   { source: "/cutting-edge-care", destination: "/specialties/advanced-treatments", permanent: true },
   { source: "/minimally-invasive-orthopedist", destination: "/specialties/advanced-treatments", permanent: true },
 
