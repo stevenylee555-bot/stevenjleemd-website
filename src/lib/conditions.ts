@@ -100,6 +100,14 @@ export const conditions: Condition[] = [
     blurb:
       "Tear of the triangular fibrocartilage complex, the cartilage-and-ligament structure on the pinky side of the wrist. Treated with splinting, PRP, or arthroscopic debridement or repair, depending on the tear pattern.",
   },
+  {
+    name: "Finger Pulley Injury (Climber's Finger)",
+    slug: "finger-pulley-injury",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "Rupture of the small bands that hold the flexor tendons against the finger bones, classically from a crimp-grip fall in rock climbing. Most isolated injuries heal with taping and protected motion; multiple-pulley ruptures may need surgical reconstruction.",
+  },
   // Hand & Wrist, phase 2
   {
     name: "Trigger Finger",

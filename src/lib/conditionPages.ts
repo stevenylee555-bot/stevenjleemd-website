@@ -2513,6 +2513,158 @@ const tfccTear: ConditionPageContent = {
     "A TFCC tear is an injury to the triangular fibrocartilage complex on the ulnar side of the wrist, which cushions the joint and stabilizes the distal radioulnar joint during forearm rotation. Causes include acute trauma and degenerative wear, often associated with ulnar positive variance. Treatment options range from splinting and corticosteroid or PRP injection to arthroscopic debridement or repair.",
 };
 
+const fingerPulleyInjury: ConditionPageContent = {
+  slug: "finger-pulley-injury",
+  name: "Finger Pulley Injury (Climber's Finger)",
+  region: "Hand & Wrist",
+  headerTitle: "Finger Pulley Injury:",
+  headerItalic: "the climber's pop.",
+  headerLede:
+    "A2 and A4 are small bands of tissue that hold the flexor tendons tight against the finger bones. Climbers rupture them with the crimp grip; baseball pitchers and other athletes rupture them under sudden flexor load. Most isolated tears heal with taping and protected motion, but multiple-pulley ruptures need surgery to prevent permanent bowstringing.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
+    reviewed: "May 2026",
+  },
+  overview: [
+    "The flexor tendons that bend your fingers run through a series of small tunnels along the palm side of each finger. These tunnels (called annular pulleys, labeled A1 through A5) hold the tendons close to the bone so that when the muscle contracts, the finger curls efficiently. Without them, the tendon would bowstring out from the bone, which costs both strength and motion.",
+    "A finger pulley injury is a tear of one or more of these pulleys. The A2 pulley (at the base of the finger) is the most commonly injured, followed by A4 (at the middle joint). These ruptures are classically described in rock climbers, who concentrate enormous force through a single fingertip in the crimp grip, but they also happen in baseball pitchers, in weightlifters, and after any sudden forceful flexion against resistance.",
+  ],
+  bodySections: [
+    {
+      heading: "Anatomy",
+      body: [
+        "Two flexor tendons run along the palm side of each finger: flexor digitorum profundus (which bends the fingertip) and flexor digitorum superficialis (which bends the middle joint). They pass through five annular pulleys (A1 to A5) and three cruciate pulleys, working together to keep the tendons in close apposition to the bones.",
+        "Among these, the A2 and A4 pulleys are the most biomechanically important. They sit over the bones (proximal phalanx and middle phalanx), and damage to them is what produces visible bowstringing of the tendon when the finger is flexed under load.",
+      ],
+    },
+    {
+      heading: "How the injury happens",
+      body: [
+        "The classic mechanism is the climber's crimp grip: the finger is flexed at the middle joint with the fingertip hyperextended, the climber's full body weight loaded through that one finger, and the slip of a hold transfers the entire force to the tendon-pulley interface. The A2 pulley, the strongest of the group, often ruptures audibly with a pop.",
+        "Other mechanisms include sudden flexor loading in baseball pitching, gripping a heavy weight that slips, and forced extension of an already-loaded finger (catching a bag, opening a stuck jar). Patients sometimes hear or feel a pop at the moment of injury, followed by pain and swelling at the base of the finger.",
+      ],
+    },
+    {
+      heading: "Symptoms",
+      body: [
+        "A pop at the moment of injury (not always present), followed by pain along the palm side of the affected finger.",
+        "Swelling and bruising over the affected pulley, most often at the base of the finger (A2) or over the middle joint (A4).",
+        "Weakness with gripping or crimping, sometimes dramatic in climbers.",
+        "Visible bowstringing of the tendon when the finger is flexed against resistance, especially with multiple-pulley ruptures.",
+        "Tenderness directly over the ruptured pulley on examination.",
+      ],
+    },
+    {
+      heading: "Diagnosis",
+      body: [
+        "Examination focuses on point tenderness over A2 and A4, range of motion, and a careful look for bowstringing during resisted flexion. The bowstringing test is the most specific exam finding: with the finger actively flexed against resistance, the tendon visibly lifts away from the bone if multiple pulleys are torn.",
+        "Dynamic ultrasound is the imaging test of choice. It directly shows the gap between tendon and bone during resisted flexion, and unlike static MRI it captures the injury under the load that produces it. MRI is useful when the picture is unclear or when associated injuries are suspected. X-rays are obtained when there is concern for an avulsion fracture at the pulley insertion.",
+      ],
+    },
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "Most isolated single-pulley injuries (typically isolated A2 or isolated A4 ruptures) heal with non-surgical care. A protective splint or a pulley-protection ring is worn for roughly 6 weeks to support healing while keeping the tendon in apposition to the bone.",
+        "Hand therapy starts as the splint comes off, focused on restoring range of motion, then graded strengthening. Climbers return to climbing gradually, starting on large holds (jugs) at low intensity and avoiding crimp grips for several months. Most patients recover full function.",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "Surgery is considered for ruptures of multiple pulleys (especially A2 plus A3, or A2 plus A4), for injuries with persistent bowstringing on exam, and for single-pulley injuries that fail non-operative care or remain painful.",
+        "Pulley reconstruction uses a slip of tendon graft (most commonly palmaris longus, taken from the same forearm) to recreate the lost pulley. The graft is wrapped around the bone in the position of the original pulley and sutured to itself. The repair is then protected by a splint or pulley-protection ring while the graft heals into place.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee treats finger pulley injuries with a strong bias toward conservative care for isolated single-pulley ruptures, which is the right answer for the majority of patients. The risk of overtreating a Grade II injury with surgery is real; the cost of undertreating a Grade III or IV multiple-pulley injury is permanent bowstringing.",
+      "When surgery is needed, Dr. Lee uses loupe magnification to protect the small adjacent neurovascular structures and reconstructs the pulley anatomically. Active climbers and athletes are managed with a graded return-to-sport protocol that respects healing biology while getting them back to the activities they value.",
+    ],
+  },
+  recoveryIntro:
+    "Recovery depends on whether the injury is treated with splinting alone or with surgical reconstruction.",
+  recovery: [
+    { when: "Non-surgical, weeks 1 to 6", what: "Pulley-protection splint or ring worn continuously. Hand may be used for light, non-crimping activities (typing, dressing)." },
+    { when: "Non-surgical, weeks 6 to 12", what: "Splint or ring weaned. Hand therapy begins. Gradual return to gripping and large climbing holds (jugs)." },
+    { when: "Non-surgical, 3 months", what: "Most patients return to most activities. Climbers begin progressive return to crimp grips under guidance." },
+    { when: "Post-op, weeks 1 to 2", what: "Protective splint, hand elevated, dressings kept dry. Suture removal around day 10 to 14." },
+    { when: "Post-op, weeks 2 to 6", what: "Pulley-protection ring during activity. Hand therapy for scar management, motion, and gentle strengthening." },
+    { when: "Post-op, 3 to 6 months", what: "Progressive return to gripping, climbing, and sport. Crimping and full-effort climbing usually permitted around 6 months after surgical reconstruction." },
+  ],
+  misconceptions: {
+    intro: "Two common misconceptions about pulley injuries.",
+    items: [
+      {
+        heading: "'I heard a pop, so I need surgery.'",
+        body: "Most pulley ruptures, including ones that pop audibly, are isolated A2 or A4 ruptures that heal well with 6 weeks of pulley protection and hand therapy. The decision to operate depends on which pulleys are torn and whether the tendon is bowstringing, not on the audibility of the pop.",
+      },
+      {
+        heading: "'If it's not bowstringing on exam, it's fine to climb.'",
+        body: "A single-pulley rupture often does not produce obvious bowstringing in the office, but climbing through it can convert a manageable single-pulley injury into a multiple-pulley problem that does require surgery. Even when imaging shows an isolated injury, a real protected-healing period is the right call.",
+      },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Most commonly torn", value: "A2 (base of finger), then A4 (middle joint)" },
+    { label: "Classic mechanism", value: "The crimp grip in climbing" },
+    { label: "Isolated tears", value: "Usually heal without surgery" },
+    { label: "Pulley-protection period", value: "About 6 weeks" },
+  ],
+  whyDrLee: [
+    "Treats finger ligament and tendon injuries in athletes, climbers, and active patients regularly.",
+    "Uses dynamic ultrasound rather than static MRI when bowstringing is the question, because the load-bearing exam reveals what a still image cannot.",
+    "Strong conservative bias for isolated injuries; clear surgical criteria for multiple-pulley ruptures.",
+  ],
+  related: [
+    { name: "Finger Collateral Ligament Injury", slug: "finger-collateral-ligament" },
+    { name: "Hand & Wrist Fractures", slug: "hand-wrist-fractures" },
+    { name: "Thumb UCL/RCL Tear (Skier's Thumb)", slug: "thumb-ucl-rcl" },
+  ],
+  ctaCard: {
+    eyebrow: "Popped a finger climbing?",
+    headline: "The grade of injury drives the right treatment.",
+  },
+  faqHeadline: "Finger pulley injury FAQ",
+  faqs: [
+    {
+      question: "What is a finger pulley injury?",
+      answer:
+        "A finger pulley injury is a tear of one or more of the small bands of tissue (annular pulleys A1 through A5) that hold the flexor tendons close to the finger bones. The A2 pulley at the base of the finger is the most commonly injured, followed by A4 at the middle joint. The injury is classically caused by the crimp grip in rock climbing but also occurs with any sudden forceful flexion against resistance, like baseball pitching or catching a heavy bag.",
+    },
+    {
+      question: "Do I need surgery for a finger pulley injury?",
+      answer:
+        "Most isolated single-pulley injuries, including complete ruptures of an isolated A2 or A4, heal with 6 weeks of pulley protection (splint or ring), hand therapy, and a graded return to activity. Surgery is reserved for multiple-pulley ruptures (especially A2 plus A3, or A2 plus A4), injuries with persistent bowstringing on exam, and single-pulley injuries that fail conservative care.",
+    },
+    {
+      question: "What does bowstringing mean?",
+      answer:
+        "Bowstringing is the visible lifting of the flexor tendon away from the finger bone when the finger is actively flexed against resistance. It happens because the ruptured pulley can no longer hold the tendon close to the bone. Bowstringing is the hallmark exam finding of a multiple-pulley injury and is the main indication for surgical reconstruction. Dynamic ultrasound shows it directly, which is why ultrasound is more useful than static MRI for this diagnosis.",
+    },
+    {
+      question: "When can I climb again after a pulley injury?",
+      answer:
+        "After a non-surgical isolated pulley injury, most climbers begin a graded return to climbing around 6 to 8 weeks on large holds (jugs) at low intensity, with crimp grips deferred for several more months. After surgical reconstruction, full-effort climbing and crimping are usually permitted around 6 months. Every return-to-sport timeline should be individualized with a hand surgeon and a hand therapist who understand climbing-specific demands.",
+    },
+    {
+      question: "What is a pulley-protection ring?",
+      answer:
+        "A pulley-protection ring is a small, custom or off-the-shelf ring (often thermoplastic or athletic tape) worn around the affected segment of the finger. It applies gentle, evenly distributed pressure that keeps the tendon close to the bone during healing, taking the place of the torn pulley while it scars in. Climbers often continue to wear pulley-protection tape or rings during early return to climbing for an extended period.",
+    },
+  ],
+  bottomCtaTitle: "Climber's finger that won't quit?",
+  bottomCtaItalic: "Get it graded properly.",
+  bottomCtaBody:
+    "Most pulley injuries heal with protection and time. The few that need surgery do best when treated early. Either way, an accurate grade of the injury is what tells you which path you are on.",
+  metaTitle: "Finger Pulley Injury (Climber's Finger), Steven J. Lee, MD",
+  metaDescription:
+    "Finger pulley injury (A2 / A4 rupture, climber's finger). Anatomy, mechanism, diagnosis with dynamic ultrasound, non-surgical pulley protection, and surgical reconstruction. By Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
+  schemaDescription:
+    "A finger pulley injury is a rupture of one or more of the annular pulleys (A1-A5) that hold the flexor tendons against the finger bones. The A2 pulley is the most commonly injured, classically from the crimp grip in rock climbing but also from any sudden forceful flexion against resistance. Treatment ranges from pulley-protection splinting for isolated injuries to surgical pulley reconstruction with tendon graft for multiple-pulley ruptures or persistent bowstringing.",
+};
+
 // ─────────────────────────────────────────────────────────────────────────────
 export const conditionPages: ConditionPageContent[] = [
   carpalTunnel,
@@ -2533,6 +2685,7 @@ export const conditionPages: ConditionPageContent[] = [
   // Phase B additions (next-tier GSC clicks), May 2026:
   wartenbergsSyndrome,
   tfccTear,
+  fingerPulleyInjury,
 ];
 
 export function conditionPageBySlug(slug: string) {

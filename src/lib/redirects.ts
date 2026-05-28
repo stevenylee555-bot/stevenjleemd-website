@@ -72,7 +72,7 @@ export const redirects: RedirectRule[] = [
   { source: "/intersection-syndrome-nyc-ortho", destination: "/specialties/hand-wrist", permanent: true },
   { source: "/nerve-laceration-doctor-nyc", destination: "/specialties/hand-wrist", permanent: true },
   { source: "/tendon-laceration-doctor-nyc", destination: "/specialties/hand-wrist", permanent: true },
-  { source: "/finger-pulley-rock-climber-injury-n", destination: "/specialties/hand-wrist", permanent: true },
+  { source: "/finger-pulley-rock-climber-injury-n", destination: "/conditions/finger-pulley-injury", permanent: true },
   { source: "/radial-tunnel-nyc-orthopedic", destination: "/specialties/hand-wrist", permanent: true },
   { source: "/hand-and-wrist-pain-nyc", destination: "/specialties/hand-wrist", permanent: true },
   { source: "/hand-and-wrist-hidden", destination: "/specialties/hand-wrist", permanent: true },
