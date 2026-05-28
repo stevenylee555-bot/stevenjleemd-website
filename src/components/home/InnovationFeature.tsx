@@ -63,7 +63,7 @@ export default function InnovationFeature({ home }: { home?: HomeContent }) {
 
             <motion.p
               variants={fadeUp}
-              className="text-white/85 text-sm leading-relaxed mb-10 max-w-xl"
+              className="text-white/75 text-lg leading-[1.65] font-light mb-10 max-w-xl"
             >
               {home?.innovationPara2 ??
                 "Designing a wide range of orthopedic implants has given him a unique engineering perspective that directly shapes his surgical approach, ensuring that every construct is perfectly tailored, sized, and anatomically placed for the individual patient."}

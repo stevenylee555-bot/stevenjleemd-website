@@ -2362,6 +2362,157 @@ const wartenbergsSyndrome: ConditionPageContent = {
     "Wartenberg's syndrome is compression of the superficial radial nerve, a sensory nerve on the back of the wrist and hand. It is most often caused by external pressure such as a tight watch band, and produces burning, tingling, or numbness on the back of the thumb and adjacent fingers. Treatment ranges from removing the source of compression and splinting to corticosteroid injection or surgical decompression.",
 };
 
+const tfccTear: ConditionPageContent = {
+  slug: "tfcc-tear",
+  name: "TFCC Tear",
+  region: "Hand & Wrist",
+  headerTitle: "TFCC Tear:",
+  headerItalic: "the meniscus of the wrist.",
+  headerLede:
+    "The triangular fibrocartilage complex sits on the pinky side of the wrist and cushions the joint during every forearm rotation. When it tears, the wrist clicks and aches with twisting, gripping, and push-ups. Many tears heal with splinting, injections, or PRP; the rest do well with arthroscopic surgery.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
+    reviewed: "May 2026",
+  },
+  overview: [
+    "The triangular fibrocartilage complex (TFCC) is a small but important cartilage-and-ligament structure on the pinky side of the wrist. It cushions the joint between the ulna and the small carpal bones and stabilizes the distal radioulnar joint as the forearm rotates. People sometimes describe it as the wrist's equivalent of a knee meniscus, which is reasonable shorthand: it absorbs load and gets torn in similar ways.",
+    "TFCC tears come from acute trauma like a fall onto an outstretched hand, from cumulative wear over time, or from the chronic stress of a long ulna pressing into the carpal bones (ulnar positive variance). The result is pain, clicking, and weakness on the ulnar side of the wrist that gets worse with the activities that load the joint.",
+  ],
+  bodySections: [
+    {
+      heading: "Anatomy",
+      body: [
+        "The TFCC is made up of about six interrelated structures: an articular disc of fibrocartilage, the dorsal and volar radioulnar ligaments, the meniscus homolog, the ulnocarpal ligaments, and the sheath of the extensor carpi ulnaris tendon. Together they cushion the joint and hold the radius and ulna in proper alignment.",
+        "Because so much load passes through the TFCC during rotation, even small tears can produce symptoms that are out of proportion to how the wrist looks on imaging.",
+      ],
+    },
+    {
+      heading: "Causes",
+      body: [
+        "Acute traumatic tears most often follow a fall onto an outstretched hand, a forced wrist twist, or a sudden loading event during sport. These are Palmer Class 1 tears in the standard classification.",
+        "Degenerative tears develop more slowly from cumulative wear, often associated with ulnar positive variance (an ulna that sits slightly long relative to the radius). These Palmer Class 2 tears are common in middle-aged and older patients and often coexist with ulnar impaction syndrome and chondromalacia of the adjacent cartilage.",
+      ],
+    },
+    {
+      heading: "Symptoms",
+      body: [
+        "Pain on the pinky side of the wrist, worsened by forearm rotation (turning a doorknob, pouring a pot), wrist extension (push-ups), and gripping.",
+        "A clicking, popping, or catching sensation with rotation. Some patients can reproduce the click voluntarily.",
+        "Weakness and trouble carrying heavy objects with the affected hand.",
+        "Swelling on the ulnar side of the wrist in acute injuries.",
+      ],
+    },
+    {
+      heading: "Diagnosis",
+      body: [
+        "Examination focuses on the classic ulnar-sided wrist findings: point tenderness over the TFCC, a positive ulnocarpal stress test, and pain reproduced with provocative loading of the joint.",
+        "X-rays evaluate alignment and ulnar variance (often the missing piece of the picture when wear is the main mechanism). MRI, ideally with arthrogram contrast, is the imaging study of choice when the diagnosis is unclear or surgery is being planned. The combination of exam and imaging usually settles the question.",
+      ],
+    },
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "Most TFCC tears improve with a real trial of conservative care. The standard course is a wrist splint worn for at least 4 weeks continuously, removed only for hygiene, combined with activity modification to avoid the loading patterns that hurt. Anti-inflammatories help with associated swelling.",
+        "When pain persists, a corticosteroid injection into the joint can provide meaningful relief. For tears with biological healing potential, PRP (platelet-rich plasma) is a useful alternative or addition. Dr. Lee was among the first surgeons in NYC to use PRP for upper-extremity injuries and performs more than 250 PRP procedures per year.",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "When the wrist does not respond to a real trial of non-surgical care, or when the tear pattern is clearly surgical from the start, wrist arthroscopy is the procedure of choice. Through two small (4 mm) incisions, a camera and instruments are introduced into the joint to visualize and treat the TFCC under direct vision.",
+        "Tears in the central, poorly-vascularized portion of the TFCC are debrided (the unstable flap is trimmed back to stable tissue). Peripheral tears with good blood supply are repaired with sutures arthroscopically. Complex or chronic tears with associated DRUJ instability occasionally require an open repair. Dr. Lee has performed wrist arthroscopy for over 20 years and teaches the technique to other surgeons in cadaver labs.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee favors arthroscopic management whenever the tear pattern allows it, because the camera-based approach lets the wrist be evaluated end-to-end (TFCC, cartilage surfaces, ligaments) and treated through 4 mm incisions instead of an open exposure. Faster recovery and less stiffness are the practical benefit.",
+      "When ulnar impaction is contributing, the TFCC repair is often combined with an arthroscopic wafer procedure (a small shortening of the ulna). That combined approach treats both the tear and its underlying mechanical cause in one operation.",
+    ],
+  },
+  recoveryIntro:
+    "Recovery depends on whether the procedure was a debridement or a repair, and on the size of the surgical exposure.",
+  recovery: [
+    { when: "Debridement, weeks 1 to 2", what: "Non-removable splint or short-arm cast. Hand and finger motion encouraged." },
+    { when: "Debridement, weeks 2 to 5", what: "Removable wrist brace, hand therapy begins for motion and gradual strengthening." },
+    { when: "Debridement, weeks 5 to 10", what: "Brace weaned. Most patients return to most daily activities and non-contact sport in this window." },
+    { when: "Repair, weeks 1 to 4", what: "Long-arm or short-arm immobilization (depending on tear pattern) to protect the repair." },
+    { when: "Repair, weeks 4 to 8", what: "Removable splint and hand therapy. Gentle progressive loading." },
+    { when: "Repair, 3 to 6 months", what: "Return to full strength, gripping-heavy work, contact sport. Some residual stiffness can persist longer." },
+  ],
+  misconceptions: {
+    intro: "Two persistent misconceptions about ulnar-sided wrist pain.",
+    items: [
+      {
+        heading: "'TFCC tears always need surgery.'",
+        body: "Most do not. The majority of TFCC tears, including many complete tears in good locations, improve with splinting, activity modification, and a corticosteroid or PRP injection. Surgery is reserved for tears that fail a real trial of non-surgical care, or whose pattern is clearly unstable from the start.",
+      },
+      {
+        heading: "'Pinky-side wrist pain is always a TFCC tear.'",
+        body: "Not always. Ulnar impaction syndrome, ulnar styloid fractures, ECU tendon problems, lunotriquetral ligament tears, and DRUJ instability all produce similar pain in the same location. A careful exam and the right imaging separate them, and the right diagnosis changes the right treatment.",
+      },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Sometimes called", value: "The wrist's meniscus" },
+    { label: "Common location", value: "Pinky side of wrist" },
+    { label: "Most patients", value: "Improve without surgery" },
+    { label: "Surgery type", value: "Arthroscopic (two 4 mm portals)" },
+  ],
+  whyDrLee: [
+    "Over 20 years of wrist arthroscopy experience.",
+    "Teaches arthroscopic TFCC repair to other surgeons in cadaver labs.",
+    "Among the first in NYC to use PRP for upper-extremity injuries (250+ per year).",
+  ],
+  related: [
+    { name: "Ulnar Impaction Syndrome", slug: "ulnar-impaction-syndrome" },
+    { name: "Distal Radius Fracture", slug: "distal-radius-fracture" },
+    { name: "Scapholunate Ligament Injury", slug: "scapholunate" },
+  ],
+  ctaCard: {
+    eyebrow: "Wrist clicks with rotation?",
+    headline: "An accurate exam separates TFCC from the conditions that mimic it.",
+  },
+  faqHeadline: "TFCC tear FAQ",
+  faqs: [
+    {
+      question: "What is a TFCC tear?",
+      answer:
+        "A TFCC tear is an injury to the triangular fibrocartilage complex, a small cushion of cartilage and ligaments on the pinky side of the wrist that stabilizes the joint during forearm rotation. Tears can come from acute trauma like a fall onto an outstretched hand, or from cumulative wear over time, often associated with a long ulna (ulnar positive variance). Symptoms include pinky-side wrist pain, clicking with rotation, and weakness with gripping.",
+    },
+    {
+      question: "Why does my wrist click and hurt when I rotate it?",
+      answer:
+        "Forearm rotation loads the TFCC directly, so a tear or instability in this structure produces clicking, pain, and a sense of catching with twisting motions. Activities that combine rotation with grip, like turning a doorknob or pouring a pot, are the classic provocateurs. Other ulnar-sided wrist conditions like ulnar impaction syndrome and ECU tendonitis can mimic this pattern, which is why an accurate exam matters.",
+    },
+    {
+      question: "Do TFCC tears need surgery?",
+      answer:
+        "Most do not. The majority of TFCC tears improve with a real trial of conservative care: a wrist splint worn continuously for 4 or more weeks, activity modification, and either a corticosteroid or PRP injection. Surgery is considered when symptoms persist despite this trial, when imaging shows an unstable tear pattern from the start, or when the tear is associated with DRUJ instability that requires reconstruction.",
+    },
+    {
+      question: "What is wrist arthroscopy?",
+      answer:
+        "Wrist arthroscopy is a minimally invasive surgery in which two small 4 mm incisions are made over the wrist. A pencil-sized camera is introduced through one and instruments through the other, allowing the joint to be evaluated and treated under direct video visualization. For TFCC tears, the camera lets the surgeon decide between debridement (trimming back unstable tissue) and repair (suturing the tear) based on the actual tear pattern, with much smaller incisions and less stiffness than an open approach.",
+    },
+    {
+      question: "How long does recovery take?",
+      answer:
+        "After arthroscopic debridement, most patients are out of splinting at 2 weeks, into hand therapy at 2 to 5 weeks, and back to most daily activities and non-contact sport between 5 and 10 weeks. After a TFCC repair, recovery extends to about 3 to 6 months due to longer protected healing of the sutured tissue. Final outcomes are usually achieved by 6 months, with some residual stiffness possibly persisting longer in selected cases.",
+    },
+  ],
+  bottomCtaTitle: "Pinky-side wrist pain that won't quit?",
+  bottomCtaItalic: "Get it evaluated.",
+  bottomCtaBody:
+    "Most TFCC tears do well with conservative care; the rest do well with arthroscopic surgery. Either way, an accurate diagnosis is the first step, and that is what separates TFCC from the conditions it mimics.",
+  metaTitle: "TFCC Tear, Steven J. Lee, MD",
+  metaDescription:
+    "TFCC tear (triangular fibrocartilage complex tear): pinky-side wrist pain from injury, wear, or ulnar impaction. Symptoms, diagnosis, splinting, PRP, and arthroscopic debridement or repair. By Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
+  schemaDescription:
+    "A TFCC tear is an injury to the triangular fibrocartilage complex on the ulnar side of the wrist, which cushions the joint and stabilizes the distal radioulnar joint during forearm rotation. Causes include acute trauma and degenerative wear, often associated with ulnar positive variance. Treatment options range from splinting and corticosteroid or PRP injection to arthroscopic debridement or repair.",
+};
+
 // ─────────────────────────────────────────────────────────────────────────────
 export const conditionPages: ConditionPageContent[] = [
   carpalTunnel,
@@ -2381,6 +2532,7 @@ export const conditionPages: ConditionPageContent[] = [
   thumbUclRcl,
   // Phase B additions (next-tier GSC clicks), May 2026:
   wartenbergsSyndrome,
+  tfccTear,
 ];
 
 export function conditionPageBySlug(slug: string) {

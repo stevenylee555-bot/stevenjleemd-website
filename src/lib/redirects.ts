@@ -67,7 +67,7 @@ export const redirects: RedirectRule[] = [
   { source: "/trigger-finger-2", destination: "/specialties/hand-wrist", permanent: true },
   { source: "/arthritis-hand-fingers", destination: "/specialties/hand-wrist", permanent: true },
   { source: "/mallet-finger-hand-doctor-nyc", destination: "/specialties/hand-wrist", permanent: true },
-  { source: "/tfcc-wrist-doctor-nyc", destination: "/specialties/hand-wrist", permanent: true },
+  { source: "/tfcc-wrist-doctor-nyc", destination: "/conditions/tfcc-tear", permanent: true },
   { source: "/kienbocks-hand-doctor-nyc", destination: "/specialties/hand-wrist", permanent: true },
   { source: "/intersection-syndrome-nyc-ortho", destination: "/specialties/hand-wrist", permanent: true },
   { source: "/nerve-laceration-doctor-nyc", destination: "/specialties/hand-wrist", permanent: true },

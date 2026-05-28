@@ -92,6 +92,14 @@ export const conditions: Condition[] = [
     blurb:
       "Compression of the superficial radial nerve, often by a tight watch band, causing burning and tingling on the back of the hand. Most cases resolve when the source of pressure is identified and removed.",
   },
+  {
+    name: "TFCC Tear",
+    slug: "tfcc-tear",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "Tear of the triangular fibrocartilage complex, the cartilage-and-ligament structure on the pinky side of the wrist. Treated with splinting, PRP, or arthroscopic debridement or repair, depending on the tear pattern.",
+  },
   // Hand & Wrist, phase 2
   {
     name: "Trigger Finger",
