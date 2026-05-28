@@ -2967,6 +2967,170 @@ const mucousCyst: ConditionPageContent = {
     "A mucous cyst is a ganglion cyst over the distal interphalangeal (DIP) joint of a finger, almost always associated with underlying osteoarthritis and an osteophyte. It can produce a visible bump, nail deformity, and the risk of skin rupture with joint infection. Standard treatment is surgical excision of the cyst together with the underlying bone spur to minimize recurrence; aspiration is generally discouraged because of recurrence and infection risk.",
 };
 
+const prpInjections: ConditionPageContent = {
+  slug: "prp-injections",
+  name: "PRP (Platelet-Rich Plasma) Injections",
+  region: "Advanced Treatments",
+  headerTitle: "PRP Injections:",
+  headerItalic: "your own platelets, concentrated.",
+  headerLede:
+    "Platelet-rich plasma is a concentrated extract of the patient's own platelets and growth factors, prepared from a small blood draw and re-injected into an injured tendon, ligament, or joint. The goal is to amplify the body's natural healing response. Dr. Lee was among the first surgeons in NYC to use PRP for upper-extremity injuries and performs more than 250 PRP procedures per year.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
+    reviewed: "May 2026",
+  },
+  overview: [
+    "Platelet-rich plasma (PRP) is an autologous biologic treatment: the cells in the syringe come from the patient's own blood, not from a donor or a manufacturer. A small volume of blood is drawn, spun in a centrifuge to separate its components, and the platelet-rich layer is re-injected into the injury site under ultrasound guidance.",
+    "The biological idea is straightforward. Platelets are not just for clotting; they also carry a dense load of growth factors that signal local cells to heal, build collagen, and form new blood vessels. Concentrating those platelets at the site of an injury is intended to amplify the body's natural healing response in tissues that are otherwise slow to recover.",
+  ],
+  bodySections: [
+    {
+      heading: "What PRP is, and what it isn't",
+      body: [
+        "PRP is a regenerative injection: it uses the patient's own biologic material to stimulate healing. It is fundamentally different from a corticosteroid (cortisone) injection, which suppresses inflammation but does not promote tissue repair.",
+        "PRP is also distinct from stem cell or bone marrow aspirate concentrate (BMAC) treatments, which use different cell populations. The preparation method matters, the platelet concentration matters, and the indication matters. Not every musculoskeletal complaint is a candidate.",
+      ],
+    },
+    {
+      heading: "How the procedure works",
+      body: [
+        "The entire procedure takes about 30 to 45 minutes. A standard blood draw of roughly 10 to 15 mL is obtained from the patient's arm. The tube is placed in a centrifuge, which separates the blood into layers by density: red cells at the bottom, plasma at the top, and a thin straw-colored layer of concentrated platelets in between (the buffy coat).",
+        "The platelet-rich layer is drawn into a syringe and injected directly into the injury site, typically under ultrasound guidance to ensure precise placement into the affected tendon, ligament, or joint. Local anesthetic may be used at the skin to reduce discomfort.",
+      ],
+    },
+    {
+      heading: "Conditions commonly treated",
+      body: [
+        "PRP is most often used for chronic tendon and ligament injuries that have not responded to a real trial of rest, physical therapy, and anti-inflammatories. Common upper-extremity indications include:",
+      ],
+      bullets: [
+        "Lateral epicondylitis (tennis elbow)",
+        "Medial epicondylitis (golfer's elbow)",
+        "Rotator cuff partial tears and chronic tendinopathy",
+        "Biceps tendinitis and tendinopathy",
+        "Thumb basal joint arthritis",
+        "TFCC tears and other wrist ligament injuries",
+        "Knee osteoarthritis, mild to moderate",
+        "Patellar tendinopathy (jumper's knee)",
+        "Achilles tendinopathy",
+      ],
+      bulletsAfter:
+        "PRP is generally not used as the first treatment for any of these conditions; it is reserved for cases where simpler measures have not delivered the expected result.",
+    },
+    {
+      heading: "Who is a good candidate",
+      body: [
+        "The best candidates are patients with a chronic tendinopathy, partial-thickness tendon tear, or mild-to-moderate arthritis who have not improved with 6 to 12 weeks of standard non-surgical care (rest, activity modification, hand therapy, NSAIDs, sometimes a single corticosteroid injection).",
+        "PRP is less likely to help in cases of severe arthritis with bone-on-bone changes, complete tendon ruptures, or end-stage joint disease where the structural problem is beyond what biology can repair. Dr. Lee determines candidacy on a case-by-case basis, weighing the imaging, the patient's activity demands, and the realistic biologic potential of the tissue.",
+      ],
+    },
+    {
+      heading: "What to expect after the injection",
+      body: [
+        "Most patients have moderate soreness at the injection site for 24 to 72 hours, sometimes longer. This is part of the biologic process: PRP triggers a controlled inflammatory response that drives healing. Patients are advised to avoid anti-inflammatory medications (NSAIDs like ibuprofen) for about a week after the injection so the healing cascade is not blunted.",
+        "Clinical improvement is gradual, typically beginning at 4 to 6 weeks and continuing to develop for 3 to 6 months. PRP is not a same-day pain reliever; it is a regenerative treatment whose benefits accrue over time.",
+      ],
+    },
+    {
+      heading: "Series and protocol",
+      body: [
+        "PRP response appears to be dose-dependent for most indications. The standard protocol is a series of 3 injections spaced approximately one week apart. In selected cases (slow responders, more degenerative tissue), a 4th or occasionally 5th injection is added.",
+        "Hand or physical therapy continues throughout the injection series and beyond. PRP is one component of a broader treatment plan, not a standalone replacement for the rehabilitation work that gets the tissue strong and re-loaded.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee was among the first surgeons in NYC to use PRP for upper-extremity injuries and performs more than 250 PRP procedures per year. That volume matters: it allows him to match the right concentration, the right injection technique, and the right post-injection protocol to each indication, rather than applying a one-size-fits-all approach.",
+      "His honest framing for patients: PRP works well for some indications and modestly for others, and the evidence base is strongest for chronic tendinopathies and mild-to-moderate knee osteoarthritis. He recommends it where the literature and his clinical experience support real benefit, and he is comfortable telling patients when surgery is the better path.",
+    ],
+  },
+  recoveryIntro:
+    "PRP is not a procedure with a fixed recovery timeline like surgery; it is a series of office visits with progressive clinical change.",
+  recovery: [
+    { when: "Day of injection", what: "Local soreness, often noticeable within the first hour. No NSAIDs for one week after the injection." },
+    { when: "Days 1 to 3", what: "Peak soreness at the injection site. Ice and acetaminophen are acceptable. Activity is limited to comfort." },
+    { when: "Week 1 to series completion", what: "Second and third injections at one-week intervals. Continued hand therapy or physical therapy alongside the series." },
+    { when: "Weeks 4 to 6", what: "Earliest improvement typically appears as reduced pain and improved function. Some patients feel changes earlier; some take longer." },
+    { when: "3 to 6 months", what: "Full clinical effect realized. The injury is reassessed and next steps decided: continue therapy, repeat series, or revisit surgical options." },
+  ],
+  misconceptions: {
+    intro: "Three common misconceptions about PRP.",
+    items: [
+      {
+        heading: "'PRP is the same as a cortisone shot.'",
+        body: "They are fundamentally different treatments. Cortisone suppresses inflammation and often provides fast but temporary pain relief; it does not heal tissue and can weaken it with repeated use. PRP triggers a controlled inflammatory response intended to stimulate healing and works on a slower, weeks-to-months timeline.",
+      },
+      {
+        heading: "'One PRP injection should fix it.'",
+        body: "PRP appears to be dose-dependent for most indications. The standard protocol is a series of 3 injections spaced one week apart. Expecting a single injection to deliver the result of a series is the most common reason patients walk away dissatisfied.",
+      },
+      {
+        heading: "'PRP can fix anything.'",
+        body: "PRP works best for chronic tendinopathies and mild-to-moderate arthritis. It is not a substitute for surgery in cases of complete tendon rupture, severe arthritis with bone loss, or end-stage joint disease. An honest evaluation about whether biology can solve the structural problem comes before recommending PRP.",
+      },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Source material", value: "Patient's own blood (autologous)" },
+    { label: "Standard protocol", value: "3 injections, one week apart" },
+    { label: "Time to improvement", value: "4 to 6 weeks (gradual)" },
+    { label: "Best for", value: "Chronic tendinopathies, mild-moderate arthritis" },
+  ],
+  whyDrLee: [
+    "Among the first surgeons in NYC to use PRP for upper-extremity injuries.",
+    "Performs more than 250 PRP procedures per year (high-volume experience).",
+    "Uses ultrasound guidance for precise injection placement.",
+  ],
+  related: [
+    { name: "TFCC Tear", slug: "tfcc-tear" },
+    { name: "Ulnar Impaction Syndrome", slug: "ulnar-impaction-syndrome" },
+    { name: "Rotator Cuff Repair", slug: "rotator-cuff" },
+  ],
+  ctaCard: {
+    eyebrow: "Tendon or joint that won't heal?",
+    headline: "PRP can help in the right cases. Honest evaluation matters.",
+  },
+  faqHeadline: "PRP injection FAQ",
+  faqs: [
+    {
+      question: "What is PRP?",
+      answer:
+        "PRP, or platelet-rich plasma, is a concentrated extract of the patient's own platelets and growth factors prepared from a small blood draw. Platelets contain growth factors that signal nearby cells to heal, produce collagen, and form new blood vessels. Concentrating those platelets at the site of an injury (a tendon, ligament, or joint) amplifies the body's natural healing response. PRP is autologous, meaning the cells come from the patient, not from a donor or a manufacturer.",
+    },
+    {
+      question: "How is PRP made and given?",
+      answer:
+        "A standard blood draw of about 10 to 15 mL is obtained from the patient's arm. The tube is placed in a centrifuge that separates the blood into layers, and the platelet-rich layer (the buffy coat) is drawn into a syringe. That concentrated material is then injected directly into the affected tendon, ligament, or joint, typically under ultrasound guidance. The entire procedure takes about 30 to 45 minutes.",
+    },
+    {
+      question: "Does PRP work, and for what?",
+      answer:
+        "The evidence is strongest for chronic tendinopathies (tennis elbow, golfer's elbow, rotator cuff tendinopathy, Achilles tendinopathy, patellar tendinopathy) and mild-to-moderate knee osteoarthritis. Results for ligament partial tears, basal joint arthritis, and TFCC tears are positive in many patients but variable in the literature. PRP is generally not effective for complete tendon ruptures, severe arthritis with bone-on-bone changes, or end-stage joint disease.",
+    },
+    {
+      question: "How many injections will I need, and when will I feel better?",
+      answer:
+        "The standard protocol is a series of 3 injections spaced one week apart, with occasional addition of a 4th or 5th injection in selected cases. Clinical improvement is gradual, typically beginning at 4 to 6 weeks after the series and continuing to develop for 3 to 6 months. PRP is not a same-day pain reliever; it is a regenerative treatment whose benefits accrue over time.",
+    },
+    {
+      question: "Are there side effects, and is PRP safe?",
+      answer:
+        "PRP uses the patient's own cells, which essentially eliminates the risk of allergic reaction or transmissible disease. The most common side effect is moderate soreness at the injection site for 24 to 72 hours after each injection, which is part of the controlled inflammatory response that drives healing. Patients are advised to avoid anti-inflammatory medications (ibuprofen, naproxen) for about a week after each injection so the healing cascade is not blunted. The procedure is accepted by all major professional sports leagues and the International Olympic Committee.",
+    },
+  ],
+  bottomCtaTitle: "Stubborn tendon or joint?",
+  bottomCtaItalic: "Could be a PRP candidate.",
+  bottomCtaBody:
+    "PRP works well for the right indications and is the wrong answer for others. An honest evaluation of the imaging, the failed prior treatments, and the realistic biologic potential of the tissue is what tells you whether PRP makes sense for your case.",
+  metaTitle: "PRP (Platelet-Rich Plasma) Injections, Steven J. Lee, MD",
+  metaDescription:
+    "Platelet-rich plasma (PRP) injections for tendon, ligament, and joint injuries. What PRP is, how it's prepared, indications, the 3-injection protocol, what to expect after, and Dr. Lee's high-volume PRP experience (250+ procedures per year, among the first in NYC for upper extremity).",
+  schemaDescription:
+    "Platelet-rich plasma (PRP) injection is an autologous regenerative treatment in which the patient's own platelets and growth factors are concentrated from a blood draw and injected into an injured tendon, ligament, or joint to stimulate healing. PRP is most effective for chronic tendinopathies and mild-to-moderate arthritis, given as a series of approximately three injections one week apart, with clinical improvement developing gradually over weeks to months.",
+};
+
 // ─────────────────────────────────────────────────────────────────────────────
 export const conditionPages: ConditionPageContent[] = [
   carpalTunnel,
@@ -2990,6 +3154,7 @@ export const conditionPages: ConditionPageContent[] = [
   fingerPulleyInjury,
   olecranonFracture,
   mucousCyst,
+  prpInjections,
 ];
 
 export function conditionPageBySlug(slug: string) {

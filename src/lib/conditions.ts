@@ -124,6 +124,14 @@ export const conditions: Condition[] = [
     blurb:
       "A small cyst over the last joint of the finger, almost always associated with arthritis in that joint. Surgical removal must include the underlying bone spur to prevent recurrence; aspiration alone is best avoided because of infection risk.",
   },
+  {
+    name: "PRP (Platelet-Rich Plasma) Injections",
+    slug: "prp-injections",
+    region: "Advanced Treatments",
+    status: "priority",
+    blurb:
+      "A regenerative injection using concentrated platelets and growth factors from the patient's own blood. Dr. Lee was among the first surgeons in NYC to use PRP for the upper extremity and performs more than 250 PRP procedures per year.",
+  },
   // Hand & Wrist, phase 2
   {
     name: "Trigger Finger",

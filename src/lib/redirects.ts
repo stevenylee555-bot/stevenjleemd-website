@@ -130,7 +130,7 @@ export const redirects: RedirectRule[] = [
 
   // ───────────────────────────────────────────────────────────────────────
   // D. Advanced treatments
-  { source: "/prp-injections", destination: "/specialties/advanced-treatments", permanent: true },
+  { source: "/prp-injections", destination: "/conditions/prp-injections", permanent: true },
   { source: "/copy-of-prp-injections-1", destination: "/specialties/advanced-treatments", permanent: true },
   { source: "/stem-cell-and-ortho-biologics", destination: "/specialties/advanced-treatments", permanent: true },
   { source: "/internal-brace", destination: "/specialties/advanced-treatments", permanent: true },
