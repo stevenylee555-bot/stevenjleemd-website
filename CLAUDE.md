@@ -241,6 +241,27 @@ public/
 
 ---
 
+## Project subagents
+
+Seven project-scoped agents live in `.claude/agents/` to codify recurring workflows. An eighth (user-scoped, cross-practice) lives at `~/.claude/agents/practice-build-strategist.md`. Invoke by name or let the main session route to them.
+
+| Agent | Scope | Purpose | When to use |
+|---|---|---|---|
+| `drlee-content-reviewer` | Project | House-style + claim-wording reviewer (em-dashes, "helped design," "among the first," emoji, superlatives, medical advice, testimonial consent) | Before any copy ships |
+| `drlee-feedback-implementer` | Project | Translates Dr. Lee feedback into edits + recap message for him | Every Dr. Lee feedback round |
+| `drlee-project-pm` | Project | Status snapshot + ranked next-actions; produces internal + Dr-Lee-facing reports | Start/end of every session, or whenever priorities feel unclear |
+| `drlee-sanity-curator` | Project | Reviews pending Sanity drafts, writes a polish-and-publish script | When Dr. Lee has been editing in Studio |
+| `drlee-condition-builder` | Project | Generates new `ConditionPageContent` entries + matching route folders | Adding condition pages (foot/ankle, hip/spine, phase-2) |
+| `drlee-launch-auditor` | Project | Pre-DNS-cutover P0/P1/P2 punch list | Before any deploy touching redirects, sitemap, or env wiring |
+| `drlee-compliance-guardian` | Project | HIPAA/FTC/NY-medical-board regression checker | Before deploys touching forms, analytics, testimonials |
+| `practice-build-strategist` | **User** | Strategic playbook for the doctor-website business; extracts Dr. Lee patterns into a reusable framework for onboarding future doctors (Dr. Bedford next) | Maintaining the playbook, onboarding new doctors, drift audits |
+
+**Key constraints (encoded in every agent's system prompt):**
+- No agent has `git commit` / `git push` authority. Steve owns every push.
+- Read-only agents: `content-reviewer`, `launch-auditor`, `compliance-guardian`.
+- Append-only constraints: `condition-builder` (`conditionPages.ts`), `sanity-curator` (only `scripts/polish-and-publish-*.mjs`).
+- Agents do not invoke each other directly — composition flows through the main session via recommendations.
+
 ## Out of scope (separate sessions)
 
 - Marketing automation, email campaigns, off-site SEO/GEO growth
