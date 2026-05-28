@@ -38,9 +38,9 @@ A full website rebuild for **Dr. Steven J. Lee, MD** — orthopedic surgeon, Chi
 | Fonts | **Inter** (body/UI) + **Newsreader** (serif headlines) | Both via `next/font/google`, injected in `src/app/layout.tsx` |
 | Utilities | **clsx + tailwind-merge** | Via `cn()` in `src/lib/utils.ts` |
 | Hosting | **Vercel** | Auto-deploys on push to `main`. Repo: https://github.com/stevenylee555-bot/stevenjleemd-website |
-| Analytics | **GA4** | Not yet wired — blocked on Dr. Lee providing measurement ID |
+| Analytics | **GA4** (framework wired) + **Vercel Analytics & Speed Insights** | GA4 event wiring ready in `src/lib/analytics.ts`; activates when `NEXT_PUBLIC_GA_ID` is set. Vercel Analytics + Speed Insights mounted in layout (cookieless, no PHI). |
 | Booking | **ZocDoc** | External link only — not an embedded scheduler |
-| Schema | **JSON-LD via next/head** | Builders in `src/lib/schema.ts` — load-bearing for GEO; do not strip |
+| Schema | **JSON-LD `@graph` via next/head** | Builders in `src/lib/schema.ts`, stable `@id` cross-references — load-bearing for GEO; do not strip |
 
 ---
 
@@ -49,11 +49,14 @@ A full website rebuild for **Dr. Steven J. Lee, MD** — orthopedic surgeon, Chi
 ```
 src/
   app/                         App Router routes
-    layout.tsx                 Root layout: fonts, metadata, JSON-LD (Physician + MedicalBusiness), Navbar, Footer, skip link
+    layout.tsx                 Root layout: fonts, metadata, viewport (themeColor), JSON-LD @graph (Physician + MedicalBusiness), Vercel Analytics + Speed Insights, Navbar, Footer, skip link
     page.tsx                   Homepage — composes all src/components/home/* sections
     globals.css                Tailwind v4 @theme tokens + custom utilities
     opengraph-image.tsx        Generated OG image
+    icon.tsx, apple-icon.tsx   Generated favicon + apple touch icon (gold "SJL" on navy)
+    manifest.ts                PWA web manifest
     robots.ts, sitemap.ts      SEO route handlers
+    llms.txt/route.ts          AI-assistant site summary, generated from conditions/specialties data
     about/
       page.tsx                 About index (5-card grid)
       bio/page.tsx
@@ -99,7 +102,7 @@ src/
     conditions.ts              Master condition list (22 conditions, 6 regions, priority/phase2 status)
     conditionPages.ts          Full page content for 9 priority condition pages (~1500 lines)
     specialties.ts             Full page content for 5 specialty pages
-    schema.ts                  JSON-LD builders: physicianSchema, medicalBusinessSchema, buildFaqSchema, buildConditionSchema
+    schema.ts                  JSON-LD @graph builders + stable @ids: physicianNode, medicalBusinessNode, buildGraph, buildFaqSchema, buildConditionSchema, buildMedicalProcedureSchema, buildBreadcrumbSchema, buildReviewSchema/buildAggregateRatingSchema (testimonial scaffolding). physicianSchema/medicalBusinessSchema kept as back-compat exports.
     motion.ts                  Shared motion variants + viewport props (ease, fadeUp, fadeIn, stagger, inViewProps)
     utils.ts                   cn() utility (clsx + tailwind-merge)
 public/
@@ -207,15 +210,18 @@ public/
 
 ---
 
-## Current status (as of 2026-05-25)
+## Current status (as of 2026-05-27)
 
-**Phase 1 is functionally complete.** Site is deployed to a Vercel preview URL, not yet live on stevenjleemd.com.
+**Phase 1 is functionally complete.** Site is deployed to a Vercel preview URL, not yet live on stevenjleemd.com (DNS still on Wix).
+
+**Phase 0 marketing/SEO/GEO code is merged to `main` (2026-05-27).** Four sub-branches landed: (1) JSON-LD `@graph` refactor with stable `@id` cross-references + new MedicalProcedure/BreadcrumbList/Review builders, (2) favicon/apple-icon/manifest/theme color, (3) Vercel Analytics + Speed Insights, (4) `/llms.txt`. The full marketing/SEO/GEO/automation roadmap (KPIs, tool stack, reporting, Dr. Bedford onboarding playbook) lives at `~/.claude/plans/fuzzy-twirling-hartmanis.md`.
 
 **Pre-launch blockers (must complete before DNS cutover):**
 1. **301 redirect map** in `next.config.ts` — old Wix URLs (~110 indexed pages) to new equivalents. CRITICAL: the Wix site has strong AI-search traction (ChatGPT, Gemini, Perplexity, Claude actively crawl it). Do not flip DNS without every redirect in place.
-2. **Google Search Console** verification for the new domain.
-3. **GA4 measurement ID** — blocked on Dr. Lee providing it (no legacy GA history on the Wix site).
-4. **Explicit DNS cutover approval** from Dr. Lee + Wix analytics export before access is lost.
+2. **Google Search Console** + Bing Webmaster verification for the new domain.
+3. **GA4 measurement ID** — framework is wired (`src/lib/analytics.ts`); only needs `NEXT_PUBLIC_GA_ID` set in Vercel. Still blocked on Dr. Lee providing it (no legacy GA history on the Wix site).
+4. **Contact form endpoint** — `NEXT_PUBLIC_FORM_ENDPOINT` is still unset, so the callback form is inert. Wire to Formspree (BAA-covered destination) before leads flow. See [[project_drlee_compliance]].
+5. **Explicit DNS cutover approval** from Dr. Lee + Wix analytics export before access is lost.
 
 **Waiting on client:**
 - Content additions over the next ~2 weeks (Dr. Lee is at conferences)
@@ -264,9 +270,9 @@ Seven project-scoped agents live in `.claude/agents/` to codify recurring workfl
 
 ## Out of scope (separate sessions)
 
-- Marketing automation, email campaigns, off-site SEO/GEO growth
+- Marketing automation, email campaigns, off-site SEO/GEO growth — now an active workstream tracked in `~/.claude/plans/fuzzy-twirling-hartmanis.md` (Phase 0 on-page SEO/GEO code is merged; off-site/reporting/content phases are out-of-repo: GBP, citation tracking, Looker Studio, Beehiiv, reviews, etc.)
 - AI visitor chatbot (Claude API integration — deferred)
 - Sanity CMS integration: now scoped (see "Planned: self-serve CMS" above), not yet built
 - Recovery Shop `/shop` affiliate integration (Phase 2)
-- GA4 wiring (blocked on ID)
+- GA4 measurement ID + contact-form endpoint (frameworks wired; need values/accounts from Dr. Lee)
 - DNS cutover itself (needs explicit Dr. Lee approval)
