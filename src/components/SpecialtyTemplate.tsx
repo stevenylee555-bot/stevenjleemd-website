@@ -67,7 +67,7 @@ export default function SpecialtyTemplate({ specialty }: { specialty: Specialty 
               {specialty.introBody.map((para, i) => (
                 <p
                   key={i}
-                  className="text-navy-900/90 text-[17px] leading-[1.75] font-light"
+                  className="text-navy-900/90 text-[17px] leading-[1.75]"
                 >
                   {para}
                 </p>

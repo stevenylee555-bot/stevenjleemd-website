@@ -70,7 +70,7 @@ export default async function SpecialtiesIndexPage() {
               {introParagraphs.map((para, i) => (
                 <p
                   key={i}
-                  className="text-navy-900/90 text-[18px] leading-[1.7] font-light"
+                  className="text-navy-900/90 text-[18px] leading-[1.7]"
                 >
                   {para}
                 </p>

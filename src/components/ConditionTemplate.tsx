@@ -69,7 +69,7 @@ export default function ConditionTemplate({
           <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-16 lg:gap-20">
             {/* Main column, capped at ~70ch for editorial readability */}
             <article className="max-w-[640px]">
-              <div className="text-navy-900/90 text-[17px] leading-[1.75] font-light">
+              <div className="text-navy-900/90 text-[17px] leading-[1.75]">
                 {/* Overview */}
                 {data.overview.map((para, i) => (
                   <p
@@ -103,7 +103,7 @@ export default function ConditionTemplate({
                       className={
                         i === 0
                           ? "text-navy-950 text-[17px] leading-[1.7] font-normal mb-4"
-                          : "text-navy-900/90 text-[17px] leading-[1.7] font-light"
+                          : "text-navy-900/90 text-[17px] leading-[1.7]"
                       }
                     >
                       {p}
@@ -317,7 +317,7 @@ export default function ConditionTemplate({
                       className="text-navy-900/90 shrink-0 mt-1.5 transition-transform group-open:rotate-90"
                     />
                   </summary>
-                  <p className="text-navy-900/90 text-[17px] leading-[1.7] pb-8 pr-12 font-light max-w-3xl">
+                  <p className="text-navy-900/90 text-[17px] leading-[1.7] pb-8 pr-12 max-w-3xl">
                     {faq.answer}
                   </p>
                 </details>

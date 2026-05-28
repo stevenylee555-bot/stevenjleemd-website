@@ -81,7 +81,7 @@ export default function FAQSection({ faqs }: { faqs: Faq[] }) {
                       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
                       className="overflow-hidden"
                     >
-                      <p className="text-navy-900/90 text-[17px] leading-[1.7] pb-8 pr-12 font-light max-w-3xl">
+                      <p className="text-navy-900/90 text-[17px] leading-[1.7] pb-8 pr-12 max-w-3xl">
                         {faq.answer}
                       </p>
                     </motion.div>

@@ -66,7 +66,7 @@ export default function About({ home }: { home?: HomeContent }) {
               {home?.aboutHeadlineTail ?? "of his field."}
             </motion.h2>
 
-            <motion.div variants={fadeUp} className="space-y-5 text-navy-900/90 text-[17px] leading-[1.7] font-light max-w-2xl">
+            <motion.div variants={fadeUp} className="space-y-5 text-navy-900/90 text-[17px] leading-[1.7] max-w-2xl">
               {paragraphs.map((p, i) => (
                 <p key={i}>{p}</p>
               ))}

@@ -22,7 +22,7 @@ export default function ComingSoon({ title, description, preview }: ComingSoonPr
           {title}
         </h2>
 
-        <p className="text-navy-900/90 text-lg leading-relaxed font-light max-w-2xl mb-10">
+        <p className="text-navy-900/90 text-lg leading-relaxed max-w-2xl mb-10">
           {description}
         </p>
 
