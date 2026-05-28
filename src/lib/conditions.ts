@@ -108,6 +108,14 @@ export const conditions: Condition[] = [
     blurb:
       "Rupture of the small bands that hold the flexor tendons against the finger bones, classically from a crimp-grip fall in rock climbing. Most isolated injuries heal with taping and protected motion; multiple-pulley ruptures may need surgical reconstruction.",
   },
+  {
+    name: "Olecranon Fracture",
+    slug: "olecranon-fracture",
+    region: "Elbow",
+    status: "priority",
+    blurb:
+      "Fracture of the bony tip of the elbow, most often from a direct fall. Non-displaced fractures heal in a splint; displaced fractures and any that disrupt active elbow extension are treated surgically with plates or tension-band fixation.",
+  },
   // Hand & Wrist, phase 2
   {
     name: "Trigger Finger",

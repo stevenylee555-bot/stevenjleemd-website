@@ -86,7 +86,7 @@ export const redirects: RedirectRule[] = [
   { source: "/lucl-orthopedic-nyc", destination: "/specialties/elbow", permanent: true },
   { source: "/distal-humerus-fracture-nyc", destination: "/specialties/elbow", permanent: true },
   { source: "/distal-bicep-tendonitis-nyc", destination: "/specialties/elbow", permanent: true },
-  { source: "/elbow-olecranon-fracture-nyc", destination: "/specialties/elbow", permanent: true },
+  { source: "/elbow-olecranon-fracture-nyc", destination: "/conditions/olecranon-fracture", permanent: true },
   { source: "/terrible-triad-nyc-doctor", destination: "/specialties/elbow", permanent: true },
   { source: "/elbow-arthritis-ortho-nyc", destination: "/specialties/elbow", permanent: true },
   { source: "/medial-epicondylitis-orthopedic-nyc", destination: "/specialties/elbow", permanent: true },

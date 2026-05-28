@@ -2665,6 +2665,158 @@ const fingerPulleyInjury: ConditionPageContent = {
     "A finger pulley injury is a rupture of one or more of the annular pulleys (A1-A5) that hold the flexor tendons against the finger bones. The A2 pulley is the most commonly injured, classically from the crimp grip in rock climbing but also from any sudden forceful flexion against resistance. Treatment ranges from pulley-protection splinting for isolated injuries to surgical pulley reconstruction with tendon graft for multiple-pulley ruptures or persistent bowstringing.",
 };
 
+const olecranonFracture: ConditionPageContent = {
+  slug: "olecranon-fracture",
+  name: "Olecranon Fracture",
+  region: "Elbow",
+  headerTitle: "Olecranon Fracture:",
+  headerItalic: "the broken elbow tip.",
+  headerLede:
+    "The olecranon is the bony point of the elbow you rest on a table. A direct fall onto a flexed elbow can fracture it, and because the triceps tendon attaches there, even a small displacement can rob you of the ability to actively straighten the arm. Non-displaced fractures heal in a splint; displaced fractures are fixed surgically with plates or wires.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
+    reviewed: "May 2026",
+  },
+  overview: [
+    "The olecranon is the prominent bony tip of the elbow, the end of the ulna where the triceps tendon attaches. It sits directly under the skin with almost no soft-tissue cushion, which is why a fall onto the back of the elbow lands force directly onto bone.",
+    "Olecranon fractures range from a hairline crack with no displacement (which can heal in a splint) to a comminuted, intra-articular fracture with separated fragments (which needs surgical fixation). The key functional question with every olecranon fracture is the same: can the patient actively extend the elbow against gravity? When the answer is no, the triceps mechanism is disrupted and surgery is indicated.",
+  ],
+  bodySections: [
+    {
+      heading: "Anatomy",
+      body: [
+        "The olecranon forms the proximal end of the ulna and articulates with the trochlea of the humerus to make up the back half of the elbow joint. The triceps tendon inserts directly into the olecranon and is the only structure that actively extends the elbow.",
+        "Because the bone sits superficially with no fat or muscle padding, fractures here are common after even moderate falls onto the elbow. The ulnar nerve runs in a groove just behind and below the olecranon (the funny bone), which is why some olecranon fractures present with pinky-side numbness or weakness.",
+      ],
+    },
+    {
+      heading: "Causes",
+      body: [
+        "The most common mechanism is a direct fall onto the tip of a flexed elbow. The bone takes the full impact because it has no cushion. Falls from height, sports collisions, and motor-vehicle crashes are typical scenarios.",
+        "Less commonly, the fracture happens through an indirect mechanism: a sudden, forceful contraction of the triceps pulls the olecranon off the rest of the ulna (an avulsion fracture). This pattern is more common in older patients with osteoporotic bone.",
+      ],
+    },
+    {
+      heading: "Symptoms",
+      body: [
+        "Pain and swelling directly over the bony tip of the elbow, often with visible bruising that develops over the first day or two.",
+        "Inability to actively straighten the elbow against gravity. This is the cardinal sign that the triceps mechanism is disrupted and that surgical fixation will likely be needed.",
+        "A palpable gap or step-off at the back of the elbow when there is significant displacement.",
+        "Pinky-side numbness, tingling, or weakness if the adjacent ulnar nerve is irritated or compressed by the fracture or its swelling.",
+      ],
+    },
+    {
+      heading: "Diagnosis",
+      body: [
+        "Standard elbow X-rays confirm the diagnosis and show the fracture pattern. A lateral view is most informative for olecranon fractures.",
+        "A CT scan is added when the fracture extends into the joint surface, when the pattern is comminuted, or when surgical planning needs more detail. MRI is rarely needed unless an associated soft-tissue injury is suspected.",
+      ],
+    },
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "Non-surgical care is appropriate for fractures that are minimally displaced (typically less than 2 mm of separation), do not extend significantly into the joint, and in which the patient can actively extend the elbow against gravity.",
+        "The standard course is immobilization in a long-arm splint or cast for 3 to 4 weeks, followed by a hinged elbow brace allowing progressive motion as the bone heals. Hand therapy is essential, because elbow stiffness is the single most common complication of olecranon injuries, surgical or non-surgical.",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "Surgery is indicated when the fracture is displaced more than 2 mm, when fragments separate (gapping at the fracture site), when the joint surface is disrupted, or when the triceps mechanism is broken (inability to actively extend the elbow).",
+        "Two main fixation strategies are used. Tension-band wiring, with two parallel pins and a figure-of-eight stainless steel wire, is the classic approach for simple transverse fractures. Plate-and-screw fixation with low-profile precontoured olecranon plates is preferred for comminuted patterns, intra-articular fractures, and most modern reconstructions, because the construct is stronger and the rehabilitation can start sooner.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee favors plate-and-screw fixation for most displaced olecranon fractures because the rigid construct allows early protected motion, and early motion is the single best protection against the stiffness that haunts elbow trauma. Tension-band wiring is reserved for simple transverse patterns in good bone.",
+      "He has helped design the orthopedic plating systems used by surgeons across the country, and brings that perspective to choosing the right construct for the patient's fracture pattern, bone quality, and activity demands.",
+    ],
+  },
+  recoveryIntro:
+    "Recovery from an olecranon fracture takes about 3 to 4 months in straightforward cases. The single best predictor of a good outcome is how aggressively elbow motion is restored in the first few weeks.",
+  recovery: [
+    { when: "Non-surgical, weeks 1 to 4", what: "Long-arm splint or cast. Fingers, wrist, and shoulder kept moving to prevent stiffness elsewhere." },
+    { when: "Non-surgical, weeks 4 to 8", what: "Hinged elbow brace with progressive motion. Hand therapy starts." },
+    { when: "Non-surgical, weeks 8 to 16", what: "Bone healing confirmed on X-ray. Progressive strengthening. Most patients return to most activities." },
+    { when: "Post-op, weeks 1 to 2", what: "Non-removable splint, wound check and suture removal at 10 to 14 days." },
+    { when: "Post-op, weeks 2 to 6", what: "Hinged elbow brace and active motion in hand therapy. Lifting restricted." },
+    { when: "Post-op, weeks 6 to 12", what: "Progressive strengthening. Return to most daily activities and light sport." },
+    { when: "3 to 4 months", what: "Most patients return to gripping-heavy work and most sport. Some elbow stiffness can persist. Hardware can be removed later if it irritates the skin." },
+  ],
+  misconceptions: {
+    intro: "Two important misconceptions about elbow fractures.",
+    items: [
+      {
+        heading: "'If I can bend it, it must not be broken.'",
+        body: "Many olecranon fractures preserve passive elbow motion in the early days. The question that matters is whether the patient can actively extend the elbow against gravity. If the triceps mechanism is disrupted, passive motion can still feel reasonably good, but the elbow has lost its primary extensor.",
+      },
+      {
+        heading: "'Once the bone is fixed, I should rest until it heals.'",
+        body: "Wrong. Stiffness is the most common complication of olecranon fractures, and it is far harder to recover motion than to keep it. Early protected motion under a hand therapist's guidance is what produces good long-term outcomes. The fixation is designed to allow that early motion safely.",
+      },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Common mechanism", value: "Direct fall onto the elbow" },
+    { label: "Cardinal sign", value: "Inability to actively extend the elbow" },
+    { label: "Surgical threshold", value: "More than 2 mm displacement, or any triceps disruption" },
+    { label: "Most common complication", value: "Stiffness, addressed with early motion" },
+  ],
+  whyDrLee: [
+    "Helped design the orthopedic plating systems used by surgeons across the country, including constructs used for elbow fractures.",
+    "Coordinates with elbow-specialized hand therapists at both offices for aggressive early motion.",
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
+  ],
+  related: [
+    { name: "UCL Reconstruction (Tommy John)", slug: "ucl-reconstruction" },
+    { name: "Biceps Rupture", slug: "biceps-rupture" },
+    { name: "Hand & Wrist Fractures", slug: "hand-wrist-fractures" },
+  ],
+  ctaCard: {
+    eyebrow: "Fall onto the elbow?",
+    headline: "The first question is whether you can still actively straighten it.",
+  },
+  faqHeadline: "Olecranon fracture FAQ",
+  faqs: [
+    {
+      question: "What is an olecranon fracture?",
+      answer:
+        "An olecranon fracture is a break of the bony tip of the elbow, which is the end of the ulna where the triceps tendon attaches. It usually happens after a direct fall onto the back of a flexed elbow. Because the triceps tendon attaches here, an olecranon fracture often disrupts the patient's ability to actively straighten the elbow against gravity.",
+    },
+    {
+      question: "Does every olecranon fracture need surgery?",
+      answer:
+        "No. Non-displaced fractures (less than 2 mm of separation) where the patient can still actively extend the elbow against gravity are treated non-surgically with splinting for 3 to 4 weeks followed by a hinged elbow brace and hand therapy. Surgery is indicated when the fracture is displaced more than 2 mm, when the joint surface is disrupted, or when the patient cannot actively extend the elbow.",
+    },
+    {
+      question: "What does olecranon-fracture surgery involve?",
+      answer:
+        "Two main fixation strategies are used. Tension-band wiring, with two parallel pins and a figure-of-eight stainless steel wire across the fracture, is the classic option for simple transverse fractures in good bone. Plate-and-screw fixation with low-profile precontoured olecranon plates is preferred for comminuted patterns, intra-articular fractures, and most modern reconstructions because the construct is more rigid and allows earlier protected motion in therapy.",
+    },
+    {
+      question: "Why is stiffness such a big concern after an elbow fracture?",
+      answer:
+        "The elbow is the joint most prone to stiffness after injury, and stiffness is harder to recover than to prevent. Scar tissue forms quickly in the surrounding capsule and muscles, and the longer the elbow stays immobile, the more it locks up. Early, supervised motion under a hand therapist starting in the first weeks after the fracture is the single best protection against permanent stiffness.",
+    },
+    {
+      question: "How long does recovery take?",
+      answer:
+        "Bone healing takes 6 to 8 weeks, and most patients return to most daily activities between 8 and 12 weeks after a non-surgical or surgical olecranon fracture. Return to gripping-heavy work and sport is usually around 3 to 4 months. Some residual elbow stiffness can persist longer, especially without diligent hand therapy. Hardware (plates and screws or wires) can be removed in a second small procedure later if it irritates the skin.",
+    },
+  ],
+  bottomCtaTitle: "Fell on your elbow and can't straighten it?",
+  bottomCtaItalic: "Get it imaged.",
+  bottomCtaBody:
+    "The functional question with every olecranon fracture is whether the triceps mechanism is intact. An X-ray and a focused exam answer that, and the right answer changes whether you need surgery.",
+  metaTitle: "Olecranon Fracture, Steven J. Lee, MD",
+  metaDescription:
+    "Olecranon fracture (broken tip of the elbow): symptoms, diagnosis, splinting for non-displaced fractures, surgical fixation with tension-band wiring or plate-and-screw constructs, and recovery. By Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
+  schemaDescription:
+    "An olecranon fracture is a break of the bony tip of the elbow at the proximal ulna, where the triceps tendon attaches. It is most often caused by a direct fall onto a flexed elbow. Non-displaced fractures are treated with splinting; displaced fractures and those that disrupt active elbow extension are treated surgically with tension-band wiring or plate-and-screw fixation, followed by early protected motion to prevent stiffness.",
+};
+
 // ─────────────────────────────────────────────────────────────────────────────
 export const conditionPages: ConditionPageContent[] = [
   carpalTunnel,
@@ -2686,6 +2838,7 @@ export const conditionPages: ConditionPageContent[] = [
   wartenbergsSyndrome,
   tfccTear,
   fingerPulleyInjury,
+  olecranonFracture,
 ];
 
 export function conditionPageBySlug(slug: string) {
