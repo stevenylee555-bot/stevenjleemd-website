@@ -59,7 +59,7 @@ export const redirects: RedirectRule[] = [
   { source: "/swan-neck-deformity-nyc-hand-doctor", destination: "/specialties/hand-wrist", permanent: true },
   { source: "/dequervains-nyc-hand-doctor", destination: "/specialties/hand-wrist", permanent: true },
   { source: "/rheumatoid-arthritis-finger-hand-do", destination: "/specialties/hand-wrist", permanent: true },
-  { source: "/mucous-cyst-doctor-nyc", destination: "/specialties/hand-wrist", permanent: true },
+  { source: "/mucous-cyst-doctor-nyc", destination: "/conditions/mucous-cyst", permanent: true },
   { source: "/ganglion-cyst-hand-doctor-nyc", destination: "/specialties/hand-wrist", permanent: true },
   { source: "/wartenbergs-syndrome-nyc-hand-docto", destination: "/conditions/wartenbergs-syndrome", permanent: true },
   { source: "/boutonierre-deformity-hand-ortho", destination: "/specialties/hand-wrist", permanent: true },

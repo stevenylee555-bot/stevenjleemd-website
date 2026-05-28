@@ -2817,6 +2817,156 @@ const olecranonFracture: ConditionPageContent = {
     "An olecranon fracture is a break of the bony tip of the elbow at the proximal ulna, where the triceps tendon attaches. It is most often caused by a direct fall onto a flexed elbow. Non-displaced fractures are treated with splinting; displaced fractures and those that disrupt active elbow extension are treated surgically with tension-band wiring or plate-and-screw fixation, followed by early protected motion to prevent stiffness.",
 };
 
+const mucousCyst: ConditionPageContent = {
+  slug: "mucous-cyst",
+  name: "Mucous Cyst",
+  region: "Hand & Wrist",
+  headerTitle: "Mucous Cyst:",
+  headerItalic: "the arthritis bump.",
+  headerLede:
+    "A mucous cyst is a small fluid-filled bump that forms over the last joint of a finger, almost always in a finger with mild osteoarthritis. They are usually painless, but when they press on the nail-forming tissue they can deform the nail, and when the overlying skin thins they can rupture and become infected. Surgical excision removes the cyst plus the underlying bone spur that feeds it.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
+    reviewed: "May 2026",
+  },
+  overview: [
+    "A mucous cyst is a type of ganglion cyst that forms over the distal interphalangeal (DIP) joint of a finger, the joint closest to the nail. The fluid inside is the same lubricating synovial fluid that lines the joint itself; the cyst is the visible outpouching from a degenerated joint capsule.",
+    "Mucous cysts develop almost exclusively in fingers with osteoarthritis at the DIP joint. The same wear that creates Heberden's nodes (the bony bumps of finger arthritis) creates small bone spurs (osteophytes) inside the joint, which irritate the joint lining and feed fluid into the cyst. Treating the cyst without addressing the spur is why recurrence is common when shortcuts are taken.",
+  ],
+  bodySections: [
+    {
+      heading: "Anatomy",
+      body: [
+        "The DIP joint is the small hinge joint at the tip of each finger, just behind the nail. The joint capsule sits directly below thin skin and nail-forming tissue (the germinal matrix). When a small bone spur from joint arthritis pushes against the capsule, a one-way leak of synovial fluid forms, creating the cyst.",
+        "Because the cyst sits so close to the nail matrix, even a small mass can press on the cells that make the nail and produce a visible groove or ridge in the nail growing out beyond it.",
+      ],
+    },
+    {
+      heading: "Causes",
+      body: [
+        "The dominant cause is osteoarthritis of the DIP joint. The cysts can be thought of as the visible signal of a joint that is wearing down, and most patients with mucous cysts also have other signs of finger osteoarthritis (Heberden's nodes, joint stiffness, mild aching).",
+        "Trauma to the finger can occasionally precipitate a cyst in a joint that was already wearing, but isolated injury without underlying arthritis is a less common cause.",
+      ],
+    },
+    {
+      heading: "Symptoms",
+      body: [
+        "A small, often rubbery bump over the back or side of the DIP joint of a finger, sometimes translucent if the overlying skin is thin.",
+        "The cyst typically fluctuates in size over weeks or months, and can occasionally shrink on its own.",
+        "Nail deformity, usually a longitudinal groove or ridge, when the cyst presses on the nail matrix.",
+        "Mild aching or pain with motion, often difficult to separate from the underlying arthritis pain.",
+        "Spontaneous rupture is the most concerning complication. Once the skin breaks open, the cyst communicates with the joint, and the result can be a deep joint infection.",
+      ],
+    },
+    {
+      heading: "Diagnosis",
+      body: [
+        "The diagnosis is almost always clinical. The location, appearance, and association with finger arthritis make mucous cysts straightforward to identify on exam.",
+        "X-rays of the finger confirm the underlying DIP joint arthritis and show the bone spur that is feeding the cyst. This information matters for surgical planning, because removing the cyst without removing the spur leaves the source of the problem in place.",
+      ],
+    },
+    {
+      heading: "Non-surgical management",
+      body: [
+        "Asymptomatic mucous cysts that are not threatening the nail or skin can be observed. Many remain stable for years and never require intervention.",
+        "Dr. Lee specifically advises against in-office aspiration and steroid injection of mucous cysts. Aspiration recurs at a high rate because the underlying bone spur is unchanged, and the puncture creates a tract from skin to the joint, which raises the risk of a deep joint infection. The cosmetic temptation to drain it should be resisted.",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "Surgery is indicated for cysts that are causing pain, threatening the skin (translucent or repeatedly draining), producing nail deformity, or that the patient finds cosmetically unacceptable. Any cyst that has already drained or shown signs of infection should be treated promptly.",
+        "The procedure is performed as outpatient surgery, usually under local anesthesia, through a small incision over the cyst. The cyst is removed completely, and (critically) the underlying bone spur is removed from the joint at the same operation. This combined approach is what keeps the recurrence rate low. When the underlying joint is severely arthritic and painful in its own right, a joint fusion (arthrodesis) is sometimes recommended at the same operation.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee's approach to mucous cysts is conservative until the cyst earns its surgery: observation when it is small and asymptomatic, prompt removal when it threatens the nail or the skin. The single most common reason mucous cysts recur after surgery is failure to address the underlying osteophyte; Dr. Lee removes the bone spur at the same operation as a matter of course.",
+      "Patients who have had a cyst aspirated elsewhere before being referred are a recognizable subgroup, and they need careful inspection for early signs of joint infection from the prior puncture.",
+    ],
+  },
+  recoveryIntro:
+    "Recovery from mucous cyst excision is straightforward, with most patients back to normal activity within a few weeks.",
+  recovery: [
+    { when: "Week 1", what: "Light dressing on the finger. The hand may be used for daily activity. The dressing is kept clean and dry." },
+    { when: "Weeks 1 to 2", what: "Wound check and suture removal. Soft tissues continue to heal." },
+    { when: "Weeks 2 to 4", what: "Most patients return to unrestricted activity. Some residual stiffness at the DIP joint is normal for several weeks." },
+    { when: "Beyond 4 weeks", what: "Underlying arthritis at the joint persists, but the cyst-related symptoms (and any nail deformity from cyst pressure) resolve. The nail typically grows out normally over the next few months." },
+  ],
+  misconceptions: {
+    intro: "Two persistent misconceptions about mucous cysts.",
+    items: [
+      {
+        heading: "'Can't we just drain it in the office?'",
+        body: "Aspiration is tempting because the cyst is right there under thin skin. But the recurrence rate is high (because the underlying bone spur is untouched), and the puncture creates a tract from skin into the joint, raising the risk of a deep joint infection. Most hand surgeons strongly advise against in-office aspiration of mucous cysts for this reason.",
+      },
+      {
+        heading: "'It's just a bump, it can't really hurt my nail permanently.'",
+        body: "If a cyst sits over the nail matrix long enough, it can leave a permanent groove in the nail even after the cyst is removed. Cysts that are causing visible nail changes should be addressed before the deformity becomes fixed.",
+      },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Underlying cause", value: "DIP joint osteoarthritis (almost always)" },
+    { label: "Most common complication", value: "Rupture into the joint, infection" },
+    { label: "Aspiration", value: "Not recommended (high recurrence, infection risk)" },
+    { label: "Surgery key", value: "Remove the underlying bone spur too" },
+  ],
+  whyDrLee: [
+    "Treats mucous cysts and the related spectrum of DIP joint arthritis routinely.",
+    "Removes the underlying osteophyte at the same operation, the single biggest factor in keeping recurrence rates low.",
+    "Coordinates with hand therapists at both NYC and Scarsdale offices for any post-op finger-stiffness management.",
+  ],
+  related: [
+    { name: "Finger Collateral Ligament Injury", slug: "finger-collateral-ligament" },
+    { name: "Basal Joint Arthritis", slug: "basal-joint-arthroplasty" },
+    { name: "Carpal Tunnel Syndrome", slug: "carpal-tunnel" },
+  ],
+  ctaCard: {
+    eyebrow: "Bump on the last knuckle?",
+    headline: "Aspiration is the wrong move. Get it properly evaluated.",
+  },
+  faqHeadline: "Mucous cyst FAQ",
+  faqs: [
+    {
+      question: "What is a mucous cyst?",
+      answer:
+        "A mucous cyst is a small fluid-filled ganglion cyst that forms over the distal interphalangeal (DIP) joint of a finger, the joint closest to the nail. The fluid inside is synovial fluid leaking from the joint through a degenerated capsule. Mucous cysts develop almost exclusively in fingers that already have osteoarthritis at the DIP joint, with bone spurs that irritate the joint lining and feed the cyst.",
+    },
+    {
+      question: "Will the cyst go away on its own?",
+      answer:
+        "Sometimes. Mucous cysts can fluctuate in size and occasionally shrink or resolve, especially small ones. Watching an asymptomatic mucous cyst is a reasonable initial approach. Cysts that are growing, causing nail changes, producing thin or translucent skin, or causing pain are unlikely to resolve and are usually best treated surgically.",
+    },
+    {
+      question: "Why shouldn't I just have it drained in the office?",
+      answer:
+        "Aspiration of a mucous cyst has two big problems: a high recurrence rate (because the underlying bone spur is unchanged and keeps producing the cyst) and a meaningful risk of deep joint infection (because the puncture creates a tract from skin into the joint). Most hand surgeons strongly advise against in-office aspiration of mucous cysts. Excision in the operating room, with removal of the underlying bone spur, is the standard treatment.",
+    },
+    {
+      question: "Will my fingernail grow back normally after surgery?",
+      answer:
+        "Usually yes, if the cyst is removed before the nail deformity becomes fixed. The nail matrix (the cells that grow the nail) is just behind the cyst, and pressure relief after excision typically lets the nail grow back to its normal shape over the next 3 to 6 months. Long-standing cyst-induced nail deformities can sometimes leave a permanent residual groove even after the cyst is gone, which is one reason not to wait too long if nail changes are appearing.",
+    },
+    {
+      question: "How long is recovery after surgery?",
+      answer:
+        "Mucous cyst excision is an outpatient procedure, usually under local anesthesia. Most patients use the hand for daily activities the same week, have sutures removed at 1 to 2 weeks, and return to unrestricted activity within 2 to 4 weeks. Some residual stiffness at the DIP joint is normal for several weeks, and the underlying arthritis at the joint persists, but the cyst-related symptoms and any nail deformity from cyst pressure usually resolve.",
+    },
+  ],
+  bottomCtaTitle: "Bump on the last joint of a finger?",
+  bottomCtaItalic: "Best not to ignore it.",
+  bottomCtaBody:
+    "Mucous cysts that are small and asymptomatic can usually be watched. The ones that are growing, threatening the skin, or causing nail changes should be removed properly, with the underlying bone spur, in the operating room.",
+  metaTitle: "Mucous Cyst, Steven J. Lee, MD",
+  metaDescription:
+    "Mucous cyst of the finger: a ganglion cyst over the DIP joint, almost always associated with osteoarthritis. Symptoms, nail deformity risk, why aspiration is not recommended, surgical excision with osteophyte removal, and recovery. By Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
+  schemaDescription:
+    "A mucous cyst is a ganglion cyst over the distal interphalangeal (DIP) joint of a finger, almost always associated with underlying osteoarthritis and an osteophyte. It can produce a visible bump, nail deformity, and the risk of skin rupture with joint infection. Standard treatment is surgical excision of the cyst together with the underlying bone spur to minimize recurrence; aspiration is generally discouraged because of recurrence and infection risk.",
+};
+
 // ─────────────────────────────────────────────────────────────────────────────
 export const conditionPages: ConditionPageContent[] = [
   carpalTunnel,
@@ -2839,6 +2989,7 @@ export const conditionPages: ConditionPageContent[] = [
   tfccTear,
   fingerPulleyInjury,
   olecranonFracture,
+  mucousCyst,
 ];
 
 export function conditionPageBySlug(slug: string) {

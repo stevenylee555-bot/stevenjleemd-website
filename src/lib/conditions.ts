@@ -116,6 +116,14 @@ export const conditions: Condition[] = [
     blurb:
       "Fracture of the bony tip of the elbow, most often from a direct fall. Non-displaced fractures heal in a splint; displaced fractures and any that disrupt active elbow extension are treated surgically with plates or tension-band fixation.",
   },
+  {
+    name: "Mucous Cyst",
+    slug: "mucous-cyst",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "A small cyst over the last joint of the finger, almost always associated with arthritis in that joint. Surgical removal must include the underlying bone spur to prevent recurrence; aspiration alone is best avoided because of infection risk.",
+  },
   // Hand & Wrist, phase 2
   {
     name: "Trigger Finger",
