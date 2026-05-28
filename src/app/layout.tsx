@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Newsreader } from "next/font/google";
 import { draftMode } from "next/headers";
 import { VisualEditing } from "next-sanity/visual-editing";
@@ -72,6 +72,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.stevenjleemd.com",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#11193a",
 };
 
 export default async function RootLayout({
