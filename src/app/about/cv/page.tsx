@@ -107,7 +107,7 @@ export default async function CVPage() {
               <h2 className="font-serif text-3xl md:text-4xl text-navy-950 tracking-[-0.01em] leading-[1.1] mb-6">
                 {idx?.downloadHeading ?? "Full CV as a PDF."}
               </h2>
-              <p className="text-navy-900/80 text-[17px] leading-[1.7] font-light max-w-xl mb-8">
+              <p className="text-navy-900/90 text-[17px] leading-[1.7] font-light max-w-xl mb-8">
                 {idx?.downloadPara ??
                   "Includes education, professional and faculty appointments, peer-reviewed publications, national presentations, invited lectures, professional memberships, and the full awards and distinctions list."}
               </p>
@@ -147,7 +147,7 @@ export default async function CVPage() {
                     <div className="font-serif text-2xl lg:text-3xl text-navy-950 tracking-[-0.01em] leading-none mb-1.5">
                       {s.value}
                     </div>
-                    <div className="text-navy-900/80 text-xs leading-snug">
+                    <div className="text-navy-900/90 text-xs leading-snug">
                       {s.label}
                     </div>
                   </div>
@@ -189,7 +189,7 @@ export default async function CVPage() {
                     <div className="font-serif text-lg sm:text-xl text-navy-950 tracking-[-0.01em] leading-snug mb-1">
                       {t.title}
                     </div>
-                    <div className="text-navy-900/80 text-sm leading-relaxed">
+                    <div className="text-navy-900/90 text-sm leading-relaxed">
                       {t.detail}
                     </div>
                   </div>
@@ -251,7 +251,7 @@ export default async function CVPage() {
                 <div className="font-serif text-xl text-navy-950 tracking-[-0.01em] mb-3 group-hover:text-gold-600 transition-colors">
                   {l.title}
                 </div>
-                <p className="text-navy-900/80 text-sm leading-relaxed mb-6">
+                <p className="text-navy-900/90 text-sm leading-relaxed mb-6">
                   {l.body}
                 </p>
                 <div className="inline-flex items-center gap-2 text-sm font-medium text-navy-900 group-hover:text-gold-600 transition-colors">

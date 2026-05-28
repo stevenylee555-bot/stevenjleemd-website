@@ -70,7 +70,7 @@ export default async function SpecialtiesIndexPage() {
               {introParagraphs.map((para, i) => (
                 <p
                   key={i}
-                  className="text-navy-900/80 text-[18px] leading-[1.7] font-light"
+                  className="text-navy-900/90 text-[18px] leading-[1.7] font-light"
                 >
                   {para}
                 </p>
@@ -99,7 +99,7 @@ export default async function SpecialtiesIndexPage() {
                   <h2 className="font-serif text-2xl lg:text-3xl text-navy-950 tracking-[-0.01em] leading-snug mb-4">
                     {s.name}
                   </h2>
-                  <p className="text-navy-900/80 text-[15.5px] leading-relaxed mb-8 flex-1 max-w-[42ch]">
+                  <p className="text-navy-900/90 text-[15.5px] leading-relaxed mb-8 flex-1 max-w-[42ch]">
                     {s.lede}
                   </p>
                   <div className="flex items-center gap-2 text-sm font-medium text-navy-900 group-hover:text-gold-600 transition-colors">

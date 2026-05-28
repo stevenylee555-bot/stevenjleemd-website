@@ -45,7 +45,7 @@ export default async function ConditionsIndexPage() {
                     <h2 className="font-serif text-2xl md:text-3xl tracking-[-0.01em] text-navy-950">
                       {region}
                     </h2>
-                    <span className="kicker text-navy-900/65 shrink-0">
+                    <span className="kicker text-navy-900/85 shrink-0">
                       {list.length.toString().padStart(2, "0")} conditions
                     </span>
                   </div>
@@ -69,7 +69,7 @@ export default async function ConditionsIndexPage() {
                                   className="text-navy-900/30 group-hover:text-gold-600 shrink-0 transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 mt-1.5"
                                 />
                               </div>
-                              <p className="text-navy-900/80 text-[14.5px] leading-relaxed">
+                              <p className="text-navy-900/90 text-[14.5px] leading-relaxed">
                                 {c.blurb}
                               </p>
                             </Link>
@@ -83,7 +83,7 @@ export default async function ConditionsIndexPage() {
                                   Coming soon
                                 </span>
                               </div>
-                              <p className="text-navy-900/80 text-[14.5px] leading-relaxed">
+                              <p className="text-navy-900/90 text-[14.5px] leading-relaxed">
                                 {c.blurb}
                               </p>
                             </div>

@@ -67,7 +67,7 @@ export default function SpecialtyTemplate({ specialty }: { specialty: Specialty 
               {specialty.introBody.map((para, i) => (
                 <p
                   key={i}
-                  className="text-navy-900/80 text-[17px] leading-[1.75] font-light"
+                  className="text-navy-900/90 text-[17px] leading-[1.75] font-light"
                 >
                   {para}
                 </p>
@@ -105,7 +105,7 @@ export default function SpecialtyTemplate({ specialty }: { specialty: Specialty 
                     {item.title}
                   </h3>
                 </div>
-                <p className="text-navy-900/80 text-[15px] leading-relaxed pl-10">
+                <p className="text-navy-900/90 text-[15px] leading-relaxed pl-10">
                   {item.body}
                 </p>
               </div>
@@ -174,7 +174,7 @@ export default function SpecialtyTemplate({ specialty }: { specialty: Specialty 
                             className="text-navy-900/30 group-hover:text-gold-600 shrink-0 transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 mt-1"
                           />
                         </div>
-                        <p className="text-navy-900/80 text-sm leading-relaxed">
+                        <p className="text-navy-900/90 text-sm leading-relaxed">
                           {c.blurb}
                         </p>
                       </Link>
@@ -188,7 +188,7 @@ export default function SpecialtyTemplate({ specialty }: { specialty: Specialty 
                             Coming soon
                           </span>
                         </div>
-                        <p className="text-navy-900/80 text-sm leading-relaxed">
+                        <p className="text-navy-900/90 text-sm leading-relaxed">
                           {c.blurb}
                         </p>
                       </div>

@@ -22,18 +22,18 @@ export default function ComingSoon({ title, description, preview }: ComingSoonPr
           {title}
         </h2>
 
-        <p className="text-navy-900/80 text-lg leading-relaxed font-light max-w-2xl mb-10">
+        <p className="text-navy-900/90 text-lg leading-relaxed font-light max-w-2xl mb-10">
           {description}
         </p>
 
         {preview && preview.length > 0 && (
           <div className="border border-navy-900/10 rounded-sm bg-cream/60 p-6 lg:p-8 mb-10">
-            <div className="kicker text-navy-900/80 mb-4">What this page will include</div>
+            <div className="kicker text-navy-900/90 mb-4">What this page will include</div>
             <ul className="space-y-3">
               {preview.map((item) => (
                 <li
                   key={item}
-                  className="flex items-baseline gap-3 text-[15px] text-navy-900/80"
+                  className="flex items-baseline gap-3 text-[15px] text-navy-900/90"
                 >
                   <span className="h-1 w-1 rounded-full bg-gold-500 shrink-0 translate-y-[2px]" />
                   <span>{item}</span>
@@ -45,7 +45,7 @@ export default function ComingSoon({ title, description, preview }: ComingSoonPr
 
         <div className="hairline mb-10" />
 
-        <p className="text-navy-900/80 text-base leading-relaxed mb-8">
+        <p className="text-navy-900/90 text-base leading-relaxed mb-8">
           In the meantime, you can <strong className="text-navy-950 font-semibold">book an appointment</strong> directly,
           or contact the office with questions.
         </p>

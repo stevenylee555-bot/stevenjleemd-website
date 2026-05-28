@@ -52,12 +52,12 @@ export default function ConditionTemplate({
       {/* Byline */}
       <section className="bg-white border-b border-navy-900/[0.06]">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-          <div className="text-sm text-navy-900/80">
-            <span className="kicker text-navy-900/65 mr-3">Written by</span>
+          <div className="text-sm text-navy-900/90">
+            <span className="kicker text-navy-900/85 mr-3">Written by</span>
             <span className="font-semibold text-navy-950">{data.byline.name}</span>
-            <span className="text-navy-900/80"> · {data.byline.title}</span>
+            <span className="text-navy-900/90"> · {data.byline.title}</span>
           </div>
-          <div className="text-xs text-navy-900/80 uppercase tracking-wider">
+          <div className="text-xs text-navy-900/90 uppercase tracking-wider">
             Last reviewed · {data.byline.reviewed}
           </div>
         </div>
@@ -69,7 +69,7 @@ export default function ConditionTemplate({
           <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-16 lg:gap-20">
             {/* Main column, capped at ~70ch for editorial readability */}
             <article className="max-w-[640px]">
-              <div className="text-navy-900/80 text-[17px] leading-[1.75] font-light">
+              <div className="text-navy-900/90 text-[17px] leading-[1.75] font-light">
                 {/* Overview */}
                 {data.overview.map((para, i) => (
                   <p
@@ -103,7 +103,7 @@ export default function ConditionTemplate({
                       className={
                         i === 0
                           ? "text-navy-950 text-[17px] leading-[1.7] font-normal mb-4"
-                          : "text-navy-900/80 text-[17px] leading-[1.7] font-light"
+                          : "text-navy-900/90 text-[17px] leading-[1.7] font-light"
                       }
                     >
                       {p}
@@ -130,7 +130,7 @@ export default function ConditionTemplate({
                       <div className="font-serif text-base sm:text-lg text-gold-600 tracking-[-0.01em]">
                         {r.when}
                       </div>
-                      <div className="text-navy-900/80 text-[15px] leading-relaxed">
+                      <div className="text-navy-900/90 text-[15px] leading-relaxed">
                         {r.what}
                       </div>
                     </li>
@@ -162,7 +162,7 @@ export default function ConditionTemplate({
                   </>
                 )}
 
-                <p className="!mt-12 text-navy-900/80 text-sm italic">
+                <p className="!mt-12 text-navy-900/90 text-sm italic">
                   This page is general educational content authored by Dr. Lee.
                   It is not a substitute for individual medical advice. Every
                   patient&apos;s case is different, book a consultation to discuss
@@ -208,7 +208,7 @@ export default function ConditionTemplate({
                   <dl className="space-y-4">
                     {data.sidebarFacts.map((f) => (
                       <div key={f.label}>
-                        <dt className="text-xs uppercase tracking-wider text-navy-900/80 font-semibold mb-1">
+                        <dt className="text-xs uppercase tracking-wider text-navy-900/90 font-semibold mb-1">
                           {f.label}
                         </dt>
                         <dd className="text-[14.5px] text-navy-900/85 leading-snug">
@@ -221,7 +221,7 @@ export default function ConditionTemplate({
 
                 {/* Why Dr. Lee */}
                 <div>
-                  <div className="kicker text-navy-900/65 mb-3">Why Dr. Lee</div>
+                  <div className="kicker text-navy-900/85 mb-3">Why Dr. Lee</div>
                   <ul className="space-y-3 text-[14.5px] text-navy-900/85">
                     {data.whyDrLee.map((item) => (
                       <li key={item} className="flex items-baseline gap-3">
@@ -238,7 +238,7 @@ export default function ConditionTemplate({
 
                 {/* Related conditions */}
                 <div>
-                  <div className="kicker text-navy-900/65 mb-3">
+                  <div className="kicker text-navy-900/85 mb-3">
                     Related conditions
                   </div>
                   <ul className="divide-y divide-navy-900/[0.08]">
@@ -246,7 +246,7 @@ export default function ConditionTemplate({
                       <li key={r.slug}>
                         <Link
                           href={`/conditions/${r.slug}`}
-                          className="group flex items-center justify-between py-3 text-[14.5px] text-navy-900/80 hover:text-gold-600 transition-colors"
+                          className="group flex items-center justify-between py-3 text-[14.5px] text-navy-900/90 hover:text-gold-600 transition-colors"
                         >
                           <span>{r.name}</span>
                           <ChevronRight
@@ -314,10 +314,10 @@ export default function ConditionTemplate({
                     <ChevronRight
                       size={20}
                       strokeWidth={1.5}
-                      className="text-navy-900/80 shrink-0 mt-1.5 transition-transform group-open:rotate-90"
+                      className="text-navy-900/90 shrink-0 mt-1.5 transition-transform group-open:rotate-90"
                     />
                   </summary>
-                  <p className="text-navy-900/80 text-[17px] leading-[1.7] pb-8 pr-12 font-light max-w-3xl">
+                  <p className="text-navy-900/90 text-[17px] leading-[1.7] pb-8 pr-12 font-light max-w-3xl">
                     {faq.answer}
                   </p>
                 </details>

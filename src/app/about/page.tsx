@@ -80,7 +80,7 @@ export default async function AboutIndexPage() {
                   <h2 className="font-serif text-2xl text-navy-950 tracking-[-0.01em] mb-3 group-hover:text-gold-600 transition-colors">
                     {l.title}
                   </h2>
-                  <p className="text-navy-900/80 text-[15px] leading-relaxed mb-8 flex-1">
+                  <p className="text-navy-900/90 text-[15px] leading-relaxed mb-8 flex-1">
                     {l.body}
                   </p>
                   <div className="flex items-center gap-2 text-sm font-medium text-navy-950 group-hover:text-gold-600 transition-colors">

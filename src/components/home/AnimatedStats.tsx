@@ -122,7 +122,7 @@ export default function AnimatedStats({ home }: { home?: HomeContent }) {
               <div className="text-navy-900 font-semibold text-sm mb-1">
                 {stat.label}
               </div>
-              <div className="text-navy-900/80 text-[13px] leading-relaxed max-w-[200px]">
+              <div className="text-navy-900/90 text-[13px] leading-relaxed max-w-[200px]">
                 {stat.caption}
               </div>
             </motion.div>

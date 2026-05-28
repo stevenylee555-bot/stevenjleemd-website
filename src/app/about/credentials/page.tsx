@@ -236,9 +236,9 @@ export default async function CredentialsPage() {
                     <div className="font-serif text-lg text-navy-950 tracking-[-0.01em] leading-snug">
                       {a.role}
                     </div>
-                    <div className="text-navy-900/80 text-sm mt-0.5">{a.org}</div>
+                    <div className="text-navy-900/90 text-sm mt-0.5">{a.org}</div>
                   </div>
-                  <span className="kicker text-navy-900/80 shrink-0">
+                  <span className="kicker text-navy-900/90 shrink-0">
                     {a.years}
                   </span>
                 </li>
@@ -278,7 +278,7 @@ export default async function CredentialsPage() {
                   <div className="font-serif text-lg text-navy-950 tracking-[-0.01em] leading-snug mb-1">
                     {r.title}
                   </div>
-                  <div className="text-navy-900/80 text-sm leading-relaxed">
+                  <div className="text-navy-900/90 text-sm leading-relaxed">
                     {r.detail}
                   </div>
                 </li>
@@ -293,7 +293,7 @@ export default async function CredentialsPage() {
                   <div className="font-serif text-lg text-navy-950 tracking-[-0.01em] leading-snug mb-1">
                     {r.title}
                   </div>
-                  <div className="text-navy-900/80 text-sm leading-relaxed">
+                  <div className="text-navy-900/90 text-sm leading-relaxed">
                     {r.detail}
                   </div>
                 </li>
@@ -308,7 +308,7 @@ export default async function CredentialsPage() {
                   <div className="font-serif text-lg text-navy-950 tracking-[-0.01em] leading-snug mb-1">
                     {r.title}
                   </div>
-                  <div className="text-navy-900/80 text-sm leading-relaxed">
+                  <div className="text-navy-900/90 text-sm leading-relaxed">
                     {r.detail}
                   </div>
                 </li>
@@ -317,7 +317,7 @@ export default async function CredentialsPage() {
           </Section>
 
           <Section kicker="Implant Design" title="Implants & fixation systems.">
-            <p className="text-navy-900/80 text-[15.5px] leading-relaxed mb-6 max-w-2xl">
+            <p className="text-navy-900/90 text-[15.5px] leading-relaxed mb-6 max-w-2xl">
               {cred?.implantDesignIntro ??
                 "Dr. Lee has served on the design teams for several orthopedic implants now used by surgeons across the country. Selected contributions:"}
             </p>
@@ -327,7 +327,7 @@ export default async function CredentialsPage() {
                   <div className="font-serif text-lg text-navy-950 tracking-[-0.01em] leading-snug mb-1">
                     {d.title}
                   </div>
-                  <div className="text-navy-900/80 text-sm leading-relaxed">
+                  <div className="text-navy-900/90 text-sm leading-relaxed">
                     {d.detail}
                   </div>
                 </li>
@@ -342,7 +342,7 @@ export default async function CredentialsPage() {
                   <div className="font-serif text-lg text-navy-950 tracking-[-0.01em] leading-snug mb-1">
                     {p.title}
                   </div>
-                  <div className="text-navy-900/80 text-sm leading-relaxed">
+                  <div className="text-navy-900/90 text-sm leading-relaxed">
                     {p.detail}
                   </div>
                 </li>
@@ -357,7 +357,7 @@ export default async function CredentialsPage() {
                   <div className="font-serif text-lg text-navy-950 tracking-[-0.01em] leading-snug mb-1">
                     {t.title}
                   </div>
-                  <div className="text-navy-900/80 text-sm leading-relaxed">
+                  <div className="text-navy-900/90 text-sm leading-relaxed">
                     {t.detail}
                   </div>
                 </li>

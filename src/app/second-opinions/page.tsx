@@ -154,7 +154,7 @@ export default async function SecondOpinionsPage() {
                   {so?.whyHeadingEmphasis ?? "helped design the hardware."}
                 </span>
               </h2>
-              <div className="space-y-5 text-navy-900/80 text-[17px] leading-[1.7] font-light max-w-xl">
+              <div className="space-y-5 text-navy-900/90 text-[17px] leading-[1.7] font-light max-w-xl">
                 {whyParagraphs.map((p, i) => (
                   <p key={i}>{p}</p>
                 ))}
@@ -170,7 +170,7 @@ export default async function SecondOpinionsPage() {
                   <div className="font-serif text-lg text-navy-950 tracking-[-0.01em] mb-2">
                     {p.title}
                   </div>
-                  <p className="text-navy-900/80 text-[14px] leading-relaxed">{p.body}</p>
+                  <p className="text-navy-900/90 text-[14px] leading-relaxed">{p.body}</p>
                 </div>
               ))}
             </div>
@@ -198,7 +198,7 @@ export default async function SecondOpinionsPage() {
             {caseList.map((c) => (
               <div key={c.label} className="bg-white p-8">
                 <div className="kicker text-gold-600 mb-3">{c.label}</div>
-                <p className="text-navy-900/80 text-[15px] leading-relaxed">{c.text}</p>
+                <p className="text-navy-900/90 text-[15px] leading-relaxed">{c.text}</p>
               </div>
             ))}
           </div>
@@ -229,7 +229,7 @@ export default async function SecondOpinionsPage() {
                   <div className="font-serif text-xl md:text-2xl text-navy-950 tracking-[-0.01em] mb-3">
                     {s.title}
                   </div>
-                  <p className="text-navy-900/80 text-[16px] leading-[1.7] font-light max-w-2xl">
+                  <p className="text-navy-900/90 text-[16px] leading-[1.7] font-light max-w-2xl">
                     {s.body}
                   </p>
                 </div>
@@ -300,10 +300,10 @@ export default async function SecondOpinionsPage() {
                     <ChevronRight
                       size={20}
                       strokeWidth={1.5}
-                      className="text-navy-900/80 shrink-0 mt-1.5 transition-transform group-open:rotate-90"
+                      className="text-navy-900/90 shrink-0 mt-1.5 transition-transform group-open:rotate-90"
                     />
                   </summary>
-                  <p className="text-navy-900/80 text-[17px] leading-[1.7] pb-8 pr-12 font-light max-w-3xl">
+                  <p className="text-navy-900/90 text-[17px] leading-[1.7] pb-8 pr-12 font-light max-w-3xl">
                     {faq.answer}
                   </p>
                 </details>

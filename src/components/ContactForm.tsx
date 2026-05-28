@@ -26,7 +26,7 @@ const REASONS = [
 type Status = "idle" | "submitting" | "success" | "error";
 
 const inputClass =
-  "w-full rounded-md border border-navy-900/15 bg-white px-4 py-3 text-[15px] text-navy-900 placeholder:text-navy-900/40 focus:border-gold-500 transition-colors";
+  "w-full rounded-md border border-navy-900/15 bg-white px-4 py-3 text-[15px] text-navy-900 placeholder:text-navy-900/75 focus:border-gold-500 transition-colors";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
@@ -88,7 +88,7 @@ export default function ContactForm() {
             <h2 className="font-serif text-[clamp(2rem,3.6vw,3rem)] tracking-[-0.02em] text-navy-950 leading-[1.1] mb-6">
               Prefer we reach <span className="serif-italic text-gold-600">out to you?</span>
             </h2>
-            <p className="text-navy-900/80 text-[15px] leading-relaxed mb-8 max-w-md">
+            <p className="text-navy-900/90 text-[15px] leading-relaxed mb-8 max-w-md">
               Leave your details and the office will call you back to schedule. For the
               fastest scheduling, you can also book online or call us directly.
             </p>
@@ -111,7 +111,7 @@ export default function ContactForm() {
                   <CheckCircle2 size={24} className="text-gold-600" strokeWidth={1.5} />
                 </div>
                 <h3 className="font-serif text-2xl text-navy-950 mb-3">Thank you</h3>
-                <p className="text-navy-900/80 text-[15px] leading-relaxed max-w-sm mx-auto">
+                <p className="text-navy-900/90 text-[15px] leading-relaxed max-w-sm mx-auto">
                   Your request has been received and the office will be in touch. If this
                   is a medical emergency, dial 911. You can also call us 24/7 at{" "}
                   <a href="tel:+12127373301" className="font-semibold text-navy-950 hover:text-gold-600 transition-colors">
@@ -170,7 +170,7 @@ export default function ContactForm() {
                   </div>
                   <div>
                     <label htmlFor="cf-time" className="block text-sm font-medium text-navy-900 mb-1.5">
-                      Best time to call <span className="text-navy-900/40 font-normal">(optional)</span>
+                      Best time to call <span className="text-navy-900/75 font-normal">(optional)</span>
                     </label>
                     <input id="cf-time" name="preferredTime" type="text" placeholder="e.g. weekday mornings" className={inputClass} />
                   </div>

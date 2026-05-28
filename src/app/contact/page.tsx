@@ -55,7 +55,7 @@ export default function ContactPage() {
               <h2 className="font-serif text-2xl text-navy-950 tracking-[-0.01em] mb-3">
                 Book online
               </h2>
-              <p className="text-navy-900/80 text-[15px] leading-relaxed mb-6">
+              <p className="text-navy-900/90 text-[15px] leading-relaxed mb-6">
                 The fastest way. Real-time availability at both locations, 24/7. Skip the call center entirely.
               </p>
               <a
@@ -78,7 +78,7 @@ export default function ContactPage() {
               <h2 className="font-serif text-2xl text-navy-950 tracking-[-0.01em] mb-3">
                 Call the office
               </h2>
-              <p className="text-navy-900/80 text-[15px] leading-relaxed mb-6">
+              <p className="text-navy-900/90 text-[15px] leading-relaxed mb-6">
                 Talk to a person. The call center handles both locations. Wait times may be long during peak hours.
               </p>
               <a
@@ -96,7 +96,7 @@ export default function ContactPage() {
               <h2 className="font-serif text-2xl text-navy-950 tracking-[-0.01em] mb-3">
                 Telemedicine
               </h2>
-              <p className="text-navy-900/80 text-[15px] leading-relaxed mb-6">
+              <p className="text-navy-900/90 text-[15px] leading-relaxed mb-6">
                 Virtual consultations for out-of-state, international, and second-opinion patients. Imaging review included.
               </p>
               <a
@@ -131,7 +131,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-px bg-navy-900/10 border border-navy-900/10">
             {locations.map((loc) => (
               <div key={loc.city} className="bg-white p-8 lg:p-10">
-                <div className="kicker text-navy-900/65 mb-4">{loc.note}</div>
+                <div className="kicker text-navy-900/85 mb-4">{loc.note}</div>
                 <h3 className="font-serif text-3xl text-navy-950 tracking-[-0.01em] mb-6">
                   {loc.city}
                 </h3>
@@ -177,7 +177,7 @@ export default function ContactPage() {
                         aria-hidden="true"
                       />
                       <div className="text-[15px] text-navy-900/85">
-                        <span className="kicker text-navy-900/80 mr-2">Fax</span>
+                        <span className="kicker text-navy-900/90 mr-2">Fax</span>
                         {loc.fax}
                       </div>
                     </div>

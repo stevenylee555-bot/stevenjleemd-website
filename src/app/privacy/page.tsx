@@ -225,14 +225,14 @@ export default function PrivacyPage() {
                   </a>
                 </li>
               </ul>
-              <p className="text-navy-900/70 text-[14px] mt-6">
+              <p className="text-navy-900/85 text-[14px] mt-6">
                 For clinical questions, please do not use the addresses above. Call the office or
                 use the patient portal.
               </p>
             </Section>
           </div>
 
-          <div className="mt-16 pt-8 border-t border-navy-900/10 text-[13.5px] text-navy-900/65 leading-relaxed">
+          <div className="mt-16 pt-8 border-t border-navy-900/10 text-[13.5px] text-navy-900/85 leading-relaxed">
             <p>
               This Privacy Policy is provided for transparency about website data practices and is
               not legal advice. See the practice&apos;s separate Notice of Privacy Practices for

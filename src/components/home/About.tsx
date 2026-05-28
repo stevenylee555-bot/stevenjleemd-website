@@ -66,7 +66,7 @@ export default function About({ home }: { home?: HomeContent }) {
               {home?.aboutHeadlineTail ?? "of his field."}
             </motion.h2>
 
-            <motion.div variants={fadeUp} className="space-y-5 text-navy-900/80 text-[17px] leading-[1.7] font-light max-w-2xl">
+            <motion.div variants={fadeUp} className="space-y-5 text-navy-900/90 text-[17px] leading-[1.7] font-light max-w-2xl">
               {paragraphs.map((p, i) => (
                 <p key={i}>{p}</p>
               ))}
@@ -103,7 +103,7 @@ export default function About({ home }: { home?: HomeContent }) {
               so this column carries the institutional credentials only, with
               the same editorial treatment for visual rhyme. */}
           <motion.aside variants={fadeUp} className="lg:pt-4">
-            <div className="kicker text-navy-900/65 mb-6">Hospital Affiliations</div>
+            <div className="kicker text-navy-900/85 mb-6">Hospital Affiliations</div>
 
             <ul className="divide-y divide-navy-900/10">
               {affiliationList.map((a) => (
@@ -114,12 +114,12 @@ export default function About({ home }: { home?: HomeContent }) {
                   <span className="font-serif text-navy-950 text-lg leading-snug tracking-[-0.01em]">
                     {a.name}
                   </span>
-                  <span className="kicker text-navy-900/80 shrink-0">{a.role}</span>
+                  <span className="kicker text-navy-900/90 shrink-0">{a.role}</span>
                 </li>
               ))}
             </ul>
 
-            <p className="mt-8 text-navy-900/80 text-sm leading-relaxed">
+            <p className="mt-8 text-navy-900/90 text-sm leading-relaxed">
               {home?.aboutNismatNote ??
                 "NISMAT is the Nicholas Institute of Sports Medicine & Athletic Trauma, founded in 1973 as the country's first hospital-based sports medicine center."}
             </p>

@@ -61,7 +61,7 @@ export default function FAQSection({ faqs }: { faqs: Faq[] }) {
                     aria-hidden="true"
                     className={
                       "shrink-0 mt-1.5 transition-all duration-500 " +
-                      (isOpen ? "rotate-45 text-gold-600" : "text-navy-900/80")
+                      (isOpen ? "rotate-45 text-gold-600" : "text-navy-900/90")
                     }
                   >
                     <Plus size={22} strokeWidth={1.5} />
@@ -81,7 +81,7 @@ export default function FAQSection({ faqs }: { faqs: Faq[] }) {
                       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
                       className="overflow-hidden"
                     >
-                      <p className="text-navy-900/80 text-[17px] leading-[1.7] pb-8 pr-12 font-light max-w-3xl">
+                      <p className="text-navy-900/90 text-[17px] leading-[1.7] pb-8 pr-12 font-light max-w-3xl">
                         {faq.answer}
                       </p>
                     </motion.div>
@@ -95,7 +95,7 @@ export default function FAQSection({ faqs }: { faqs: Faq[] }) {
         <motion.div
           {...inViewProps}
           variants={fadeUp}
-          className="mt-12 flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 text-navy-900/80"
+          className="mt-12 flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 text-navy-900/90"
         >
           <BookOpen
             size={18}

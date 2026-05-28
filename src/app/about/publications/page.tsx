@@ -205,11 +205,11 @@ function PubItem({ pub }: { pub: Pub }) {
         {pub.citation}
       </div>
       <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
-        <div className="text-navy-900/80 text-[13.5px] leading-relaxed italic">
+        <div className="text-navy-900/90 text-[13.5px] leading-relaxed italic">
           {pub.journal}
         </div>
         <div className="flex items-center gap-4 shrink-0">
-          <span className="kicker text-navy-900/80">{pub.year}</span>
+          <span className="kicker text-navy-900/90">{pub.year}</span>
           {pub.link && (
             <a
               href={pub.link}
@@ -303,7 +303,7 @@ export default async function PublicationsPage() {
                   <h3 className="font-serif text-xl md:text-2xl text-navy-950 tracking-[-0.01em] mb-2">
                     {group.theme}
                   </h3>
-                  <div className="kicker text-navy-900/80 mb-6">
+                  <div className="kicker text-navy-900/90 mb-6">
                     {group.items.length} selected
                   </div>
                   <ul className="border-t border-navy-900/10">
@@ -321,7 +321,7 @@ export default async function PublicationsPage() {
             <div className="kicker text-gold-600 mb-3">
               {idx?.noteKicker ?? "A note on this list"}
             </div>
-            <p className="text-navy-900/80 text-[16px] leading-[1.7] mb-6">
+            <p className="text-navy-900/90 text-[16px] leading-[1.7] mb-6">
               {idx?.notePara ??
                 "The publications above are selected highlights. The full 37-entry bibliography, including early biomechanical work from residency, all Achilles repair papers, the scapholunate reconstruction series, and the 2022 lateral epicondylitis MRI study, is documented in the CV."}
             </p>

@@ -134,7 +134,7 @@ function Slide({ t }: { t: Testimonial }) {
           <span className="h-px w-10 bg-gold-500 shrink-0" aria-hidden="true" />
           <div>
             <div className="font-semibold text-navy-950 text-[15px]">{t.name}</div>
-            <div className="text-navy-900/80 text-[12.5px] uppercase tracking-[0.12em] mt-1">
+            <div className="text-navy-900/90 text-[12.5px] uppercase tracking-[0.12em] mt-1">
               {t.detail}
             </div>
           </div>
@@ -312,7 +312,7 @@ export default function TestimonialsCarousel({
 
         {/* Footnote + link */}
         <div className="mt-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-          <p className="text-navy-900/80 text-[13px] leading-relaxed max-w-md">
+          <p className="text-navy-900/90 text-[13px] leading-relaxed max-w-md">
             Shared with each patient&apos;s permission. Last names abbreviated for
             privacy.
           </p>

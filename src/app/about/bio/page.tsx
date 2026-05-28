@@ -147,7 +147,7 @@ export default async function BioPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 lg:py-28">
           <div className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-16 lg:gap-20">
             <article className="max-w-[660px]">
-              <div className="space-y-6 text-navy-900/80 text-[17px] leading-[1.75] font-light">
+              <div className="space-y-6 text-navy-900/90 text-[17px] leading-[1.75] font-light">
                 {introParagraphs.map((p, i) =>
                   i === 0 ? (
                     <p
@@ -180,7 +180,7 @@ export default async function BioPage() {
                   </div>
                 </div>
 
-                <div className="kicker text-navy-900/80 mb-4">Credentials</div>
+                <div className="kicker text-navy-900/90 mb-4">Credentials</div>
                 <ul className="space-y-3 mb-10">
                   {credentialsList.map((c) => (
                     <li key={c} className="flex items-baseline gap-3 text-[14.5px] text-navy-900/85">
@@ -190,15 +190,15 @@ export default async function BioPage() {
                   ))}
                 </ul>
 
-                <div className="kicker text-navy-900/80 mb-3">Hospital Affiliations</div>
+                <div className="kicker text-navy-900/90 mb-3">Hospital Affiliations</div>
                 <ul className="space-y-3 mb-10 text-[14.5px] text-navy-900/85">
                   <li>
                     <span className="font-semibold text-navy-950">Lenox Hill Hospital</span>
-                    <div className="text-navy-900/80 text-xs mt-0.5">Chief of Hand and Upper Extremity Surgery</div>
+                    <div className="text-navy-900/90 text-xs mt-0.5">Chief of Hand and Upper Extremity Surgery</div>
                   </li>
                   <li>
                     <span className="font-semibold text-navy-950">NISMAT</span>
-                    <div className="text-navy-900/80 text-xs mt-0.5">Associate Director (Sports Medicine &amp; Athletic Trauma)</div>
+                    <div className="text-navy-900/90 text-xs mt-0.5">Associate Director (Sports Medicine &amp; Athletic Trauma)</div>
                   </li>
                   <li>
                     <span className="font-semibold text-navy-950">
@@ -248,11 +248,11 @@ export default async function BioPage() {
                     <div className="font-serif text-navy-950 text-xl lg:text-[1.35rem] leading-snug tracking-[-0.01em]">
                       {t.institution}
                     </div>
-                    <div className="text-navy-900/80 text-[15px] leading-relaxed mt-1.5">
+                    <div className="text-navy-900/90 text-[15px] leading-relaxed mt-1.5">
                       {t.detail}
                     </div>
                     {t.note && (
-                      <p className="text-navy-900/80 text-[13.5px] italic leading-relaxed mt-2 max-w-md">
+                      <p className="text-navy-900/90 text-[13.5px] italic leading-relaxed mt-2 max-w-md">
                         {t.note}
                       </p>
                     )}
@@ -338,7 +338,7 @@ export default async function BioPage() {
               <h2 className="font-serif text-3xl md:text-4xl lg:text-[2.75rem] text-navy-950 tracking-[-0.02em] leading-[1.1] mb-8">
                 {bio?.researchHeading ?? "Advancing the tools of the field."}
               </h2>
-              <div className="space-y-6 text-navy-900/80 text-[17px] leading-[1.75] font-light">
+              <div className="space-y-6 text-navy-900/90 text-[17px] leading-[1.75] font-light">
                 <p>
                   {bio?.researchPara1 ??
                     "Dr. Lee has been a pioneer in orthopedic research and is nationally recognized for innovative techniques to treat the most difficult disorders in orthopedics. He has designed numerous orthopedic implants now in wide use, including among the most advanced plating systems for fracture fixation of the hand, wrist, elbow, and upper extremity. His anchor designs helped pioneer the use of internal bracing for the upper extremity."}
@@ -375,11 +375,11 @@ export default async function BioPage() {
                 <div className="font-serif text-3xl lg:text-4xl text-navy-950 tracking-[-0.01em] leading-none mb-3">
                   {bio?.patentNumber ?? "12,622,710 B2"}
                 </div>
-                <p className="text-navy-900/80 text-[14.5px] leading-relaxed">
+                <p className="text-navy-900/90 text-[14.5px] leading-relaxed">
                   {bio?.patentDesc ??
                     "Center of Rotation Guide, a surgical instrumentation design granted in 2026, with several additional patents pending."}
                 </p>
-                <div className="mt-6 pt-5 border-t border-navy-900/10 text-navy-900/80 text-[14.5px] leading-relaxed">
+                <div className="mt-6 pt-5 border-t border-navy-900/10 text-navy-900/90 text-[14.5px] leading-relaxed">
                   {bio?.patentNote ??
                     "Implants designed by Dr. Lee are now used by surgeons across the country."}
                 </div>
@@ -397,7 +397,7 @@ export default async function BioPage() {
             <h2 className="font-serif text-3xl md:text-4xl lg:text-[2.75rem] text-navy-950 tracking-[-0.02em] leading-[1.1] mb-8">
               {bio?.teachingHeading ?? "A teacher first, recognized by his own residents."}
             </h2>
-            <div className="space-y-6 text-navy-900/80 text-[17px] leading-[1.75] font-light">
+            <div className="space-y-6 text-navy-900/90 text-[17px] leading-[1.75] font-light">
               <p>
                 Dr. Lee is actively involved in the instruction of physicians and allied
                 health professionals and frequently teaches courses across the country.
@@ -444,7 +444,7 @@ export default async function BioPage() {
                 {bio?.galleryHeadingEmphasis ?? "Counting."}
               </span>
             </h2>
-            <p className="text-navy-900/80 text-[17px] leading-[1.7] font-light">
+            <p className="text-navy-900/90 text-[17px] leading-[1.7] font-light">
               {bio?.galleryIntro ??
                 "National podium presentations at AAOS, AOSSM, and ASSH. Invited lectures at national meetings and educational platforms including the Orthopaedic Summit, the Philadelphia Hand Meeting, VuMedi, and the IFSSH. Course faculty and cadaver-lab instructor at national surgical skills programs. Below, selected moments."}
             </p>
@@ -465,7 +465,7 @@ export default async function BioPage() {
                 </div>
                 <figcaption className="mt-4 lg:mt-5">
                   <div className="kicker text-gold-600 mb-1.5">{img.kicker}</div>
-                  <div className="text-navy-900/80 text-[15px] leading-snug">{img.caption}</div>
+                  <div className="text-navy-900/90 text-[15px] leading-snug">{img.caption}</div>
                 </figcaption>
               </figure>
             ))}
@@ -482,7 +482,7 @@ export default async function BioPage() {
               <h2 className="font-serif text-3xl md:text-4xl lg:text-[2.75rem] text-navy-950 tracking-[-0.02em] leading-[1.1] mb-6">
                 {bio?.practiceHeading ?? "Two New York offices, in person and online."}
               </h2>
-              <p className="text-navy-900/80 text-[17px] leading-[1.75] font-light">
+              <p className="text-navy-900/90 text-[17px] leading-[1.75] font-light">
                 {bio?.practicePara ??
                   "Dr. Lee sees patients at two offices: his primary practice on Manhattan's East 74th Street and a second office in Scarsdale, Westchester. He offers in-person and telemedicine consultations and treats both in-network and out-of-network patients, including international patients who travel specifically to consult with him."}
               </p>
@@ -501,7 +501,7 @@ export default async function BioPage() {
             </div>
 
             <div className="lg:pt-2">
-              <div className="kicker text-navy-900/80 mb-5">Continue</div>
+              <div className="kicker text-navy-900/90 mb-5">Continue</div>
               <div className="grid grid-cols-1 gap-3">
                 {[
                   { label: "Credentials & Awards", href: "/about/credentials" },
@@ -518,7 +518,7 @@ export default async function BioPage() {
                     </span>
                     <ArrowUpRight
                       size={14}
-                      className="text-navy-900/65 group-hover:text-gold-600 transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                      className="text-navy-900/85 group-hover:text-gold-600 transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                     />
                   </Link>
                 ))}
