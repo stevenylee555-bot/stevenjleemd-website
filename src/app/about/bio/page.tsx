@@ -19,7 +19,9 @@ const credentials = [
   "Lenox Hill Hospital Medical Board (since 2023)",
   "Double Fellowship-Trained: Hand & Upper Extremity, Sports Medicine",
   "Double Board Certified: Orthopaedic Surgery & Surgery of the Hand",
-  "Member, American Orthopaedic Association (AOA)",
+  "Fellow, American Orthopaedic Association (AOA)",
+  "Founding Member, Haun Society",
+  "11x Teacher of the Year, Lenox Hill (institution record)",
   "Orthopedic Implant Designer & US Patent Holder",
 ];
 
@@ -375,7 +377,7 @@ export default async function BioPage() {
                 </div>
                 <p className="text-navy-900/80 text-[14.5px] leading-relaxed">
                   {bio?.patentDesc ??
-                    "Center of Rotation Guide, a surgical instrumentation design granted in 2026, with additional patents pending."}
+                    "Center of Rotation Guide, a surgical instrumentation design granted in 2026, with several additional patents pending."}
                 </p>
                 <div className="mt-6 pt-5 border-t border-navy-900/10 text-navy-900/80 text-[14.5px] leading-relaxed">
                   {bio?.patentNote ??
@@ -411,11 +413,11 @@ export default async function BioPage() {
               </p>
               <p>
                 {bio?.teachingPara2 ??
-                  "His teaching has been recognized repeatedly by the Lenox Hill orthopedic residents, who have voted him the Chitranjan S. Ranawat Mentorship Award seven times (2010, 2014, 2015, 2017, 2018, 2019, 2023), the James A. Nicholas Award for Distinction in Orthopaedic Residency Education twice (2021, 2022), and the Maurice Cowen Award for Excellence in Medical Education twice (2003, 2009), eleven teaching honors in all. At Lenox Hill he sits on the orthopedic residency and sports medicine fellowship admissions committees, the Program Evaluation Committee, and the Hospital Medical Board."}
+                  "His teaching has been recognized repeatedly by the Lenox Hill orthopedic residents, who have voted him the Chitranjan S. Ranawat Mentorship Award seven times (2010, 2014, 2015, 2017, 2018, 2019, 2023), the James A. Nicholas Award for Distinction in Orthopaedic Residency Education twice (2021, 2022), and the Maurice Cowen Award for Excellence in Medical Education twice (2003, 2009), eleven teaching honors in all and the most in Lenox Hill Hospital's history. At Lenox Hill he sits on the orthopedic residency and sports medicine fellowship admissions committees, the Program Evaluation Committee, and the Hospital Medical Board."}
               </p>
               <p>
                 {bio?.teachingPara3 ??
-                  "He is a Fellow of the American Academy of Orthopaedic Surgeons and a member of the American Orthopaedic Association, the oldest and most prestigious orthopedic association in the world, comprising fewer than 10% of practicing orthopedic surgeons."}
+                  "He is a Fellow of the American Academy of Orthopaedic Surgeons, a founding member of the Haun Society, and a Fellow of the American Orthopaedic Association, an honor reserved for fewer than 10% of practicing orthopedists globally and a marker of exceptional leadership in the field."}
               </p>
             </div>
 

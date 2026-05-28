@@ -71,16 +71,23 @@ export default function InnovationFeature({ home }: { home?: HomeContent }) {
 
             <motion.ul
               variants={stagger(0.1, 0.05)}
-              className="space-y-3.5 max-w-xl"
+              className="space-y-4 max-w-xl"
             >
               {capabilityList.map((item) => (
                 <motion.li
                   key={item}
                   variants={fadeUp}
-                  className="flex items-baseline gap-3 text-[15px] leading-relaxed"
+                  // items-start + mt on the bullet aligns the dot vertically with
+                  // the middle of the first text line. Previous items-baseline +
+                  // translate-y left the bullet sitting visibly above the line
+                  // (Dr. Lee's 5/27 note).
+                  className="flex items-start gap-3.5 text-[16.5px] leading-[1.65]"
                 >
-                  <span className="h-1.5 w-1.5 rounded-full shrink-0 bg-gold-500 translate-y-[7px]" />
-                  <span className="text-white/85">{item}</span>
+                  <span
+                    aria-hidden="true"
+                    className="h-2 w-2 rounded-full shrink-0 bg-gold-500 mt-[10px]"
+                  />
+                  <span className="text-white/90">{item}</span>
                 </motion.li>
               ))}
             </motion.ul>

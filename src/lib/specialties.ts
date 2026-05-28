@@ -51,26 +51,47 @@ export const specialties: Specialty[] = [
     ],
     iconKey: "hand",
     conditionRegions: ["Hand & Wrist"],
+    // Procedures & Techniques list updated per Dr. Lee's 5/27 feedback.
     approach: [
       {
-        title: "Endoscopic carpal tunnel release",
+        title: "Endoscopic Carpal Tunnel Release",
         body:
           "Minimally invasive technique through a small port, smaller scar, less post-operative tenderness, and faster return to work than traditional open release.",
       },
       {
-        title: "Wrist fracture fixation",
+        title: "Hand and Wrist fracture fixation",
         body:
-          "Volar plating and bridge plating using current-generation hardware, including plating systems Dr. Lee helped design.",
+          "Volar plating and bridge plating for distal radius fractures, plus screw and plate fixation for metacarpal, phalangeal, and scaphoid fractures, including hand and wrist plating systems Dr. Lee helped design.",
       },
       {
-        title: "Ligament reconstruction with internal brace",
+        title: "Ligament Reconstruction with Internal Brace",
         body:
           "Scapholunate, thumb UCL, and basal joint reconstructions using the anchor and tape constructs Dr. Lee helped design.",
       },
       {
-        title: "Revision surgery and salvage",
+        title: "Wrist Arthroscopy",
+        body:
+          "Minimally invasive evaluation and treatment of wrist conditions, including TFCC tears, intercarpal ligament injuries, loose bodies, and persistent post-injury wrist pain.",
+      },
+      {
+        title: "Arthritis Surgery",
+        body:
+          "Reconstruction and arthroplasty for basal joint arthritis, scapholunate advanced collapse, and degenerative wrist and finger joints, including internal-brace suspensionplasty for the thumb CMC.",
+      },
+      {
+        title: "Tendon and Nerve repairs",
+        body:
+          "Primary repair, tendon transfer, and nerve decompression or reconstruction for traumatic injuries, lacerations, and chronic compression neuropathies of the upper extremity.",
+      },
+      {
+        title: "Revision Surgery and Salvage",
         body:
           "Dr. Lee is regularly referred patients whose first surgery elsewhere didn't go as planned. He'll review imaging and operative notes before discussing options.",
+      },
+      {
+        title: "Nonsurgical alternatives",
+        body:
+          "Image-guided injections, custom splinting, structured rehabilitation, and biologic options including PRP and BMAC when surgery is not the right path.",
       },
     ],
     credentials: [
@@ -129,6 +150,14 @@ export const specialties: Specialty[] = [
         title: "Elbow stiffness and contracture",
         body:
           "Open and arthroscopic capsular release for post-traumatic stiffness, with structured rehab to preserve the regained range.",
+      },
+      {
+        // Section requested by Dr. Lee on 5/27. He plans to provide his own
+        // text; the placeholder below is intentionally neutral so it can be
+        // replaced through Sanity Studio without code changes.
+        title: "Elbow Arthroscopy",
+        body:
+          "Minimally invasive arthroscopic treatment of the elbow, including loose body removal, posterior impingement, synovitis, and capsular release. Detailed approach and indications to be expanded.",
       },
     ],
     credentials: [

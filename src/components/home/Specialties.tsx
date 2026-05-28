@@ -14,16 +14,16 @@ import {
   SecondOpinionIcon,
 } from "./icons/AnatomyIcons";
 
-// Order intentionally leads with sports medicine + upper-extremity surgery (per Dr. Lee's PDF:
-// hand patients flow in via LHH Chief role; he wants to grow shoulders, elbows, knees).
+// Order per Dr. Lee's 5/27 feedback: top row Hand & Wrist / Elbow / Shoulder,
+// bottom row Knee & Sports / PRP & Biologics / Second Opinions.
 const specialties = [
   {
-    title: "Shoulder",
-    eyebrow: "Sports medicine",
+    title: "Hand & Wrist",
+    eyebrow: "Chief at Lenox Hill",
     description:
-      "Rotator cuff repair, shoulder arthroscopy, clavicle fractures, and minimally invasive techniques for athletes and active adults.",
-    href: "/specialties/shoulder",
-    Icon: ShoulderIcon,
+      "Carpal tunnel (endoscopic), distal radius fractures, scapholunate ligament repair, basal joint, and the full spectrum of hand surgery.",
+    href: "/specialties/hand-wrist",
+    Icon: HandIcon,
   },
   {
     title: "Elbow",
@@ -34,20 +34,20 @@ const specialties = [
     Icon: ElbowIcon,
   },
   {
+    title: "Shoulder",
+    eyebrow: "Sports medicine",
+    description:
+      "Rotator cuff repair, shoulder arthroscopy, clavicle fractures, and minimally invasive techniques for athletes and active adults.",
+    href: "/specialties/shoulder",
+    Icon: ShoulderIcon,
+  },
+  {
     title: "Knee & Sports",
     eyebrow: "ACL · Meniscus",
     description:
       "ACL reconstruction, knee arthroscopy, meniscus repair, Achilles repair. Sports injury management at the level of the team physician.",
     href: "/specialties/knee",
     Icon: KneeIcon,
-  },
-  {
-    title: "Hand & Wrist",
-    eyebrow: "Chief at Lenox Hill",
-    description:
-      "Carpal tunnel (endoscopic), distal radius fractures, scapholunate ligament repair, basal joint, and the full spectrum of hand surgery.",
-    href: "/specialties/hand-wrist",
-    Icon: HandIcon,
   },
   {
     title: "PRP & Biologics",

@@ -178,11 +178,13 @@ export default function Hero({ home }: { home?: HomeContent }) {
             </motion.div>
           </div>
 
-          {/* Portrait column */}
+          {/* Portrait column. Now visible on mobile per Dr. Lee's 5/27 note:
+              constrained to a smaller width below the copy on small viewports,
+              full flex on lg+. */}
           <motion.div
             variants={heroReveal}
             style={{ y, opacity }}
-            className="relative hidden lg:block"
+            className="relative mx-auto w-full max-w-xs sm:max-w-sm lg:max-w-none mt-12 lg:mt-0"
           >
             {/* Gold accent frame, draws in from corners after portrait reveal */}
             <motion.div
