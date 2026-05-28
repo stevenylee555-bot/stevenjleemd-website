@@ -6,6 +6,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Analytics from "@/components/analytics/Analytics";
+import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { buildGraph, physicianNode, medicalBusinessNode } from "@/lib/schema";
 import { SanityLive } from "@/sanity/live";
 
@@ -110,6 +112,8 @@ export default async function RootLayout({
         <SanityLive />
         {isDraft && <VisualEditing />}
         <Analytics />
+        <VercelAnalytics />
+        <SpeedInsights />
       </body>
     </html>
   );
