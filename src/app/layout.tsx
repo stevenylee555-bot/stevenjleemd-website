@@ -6,7 +6,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Analytics from "@/components/analytics/Analytics";
-import { physicianSchema, medicalBusinessSchema } from "@/lib/schema";
+import { buildGraph, physicianNode, medicalBusinessNode } from "@/lib/schema";
 import { SanityLive } from "@/sanity/live";
 
 const inter = Inter({
@@ -86,11 +86,11 @@ export default async function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(physicianSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalBusinessSchema) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              buildGraph([physicianNode, medicalBusinessNode]),
+            ),
+          }}
         />
       </head>
       <body className="min-h-full flex flex-col bg-white text-navy-900">

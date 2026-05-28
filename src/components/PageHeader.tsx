@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import { buildBreadcrumbSchema, SITE_URL } from "@/lib/schema";
 
 export type PageHeaderProps = {
   kicker?: string;
@@ -16,8 +17,29 @@ export default function PageHeader({
   lede,
   breadcrumb,
 }: PageHeaderProps) {
+  // Emit BreadcrumbList JSON-LD when there are at least 2 levels (a single
+  // item is just "Home" and contributes nothing to crawlers).
+  const breadcrumbSchema =
+    breadcrumb && breadcrumb.length >= 2
+      ? buildBreadcrumbSchema(
+          breadcrumb.map((b) => ({
+            name: b.label,
+            url: b.href.startsWith("http") ? b.href : `${SITE_URL}${b.href}`,
+          })),
+          breadcrumb[breadcrumb.length - 1].href.startsWith("http")
+            ? breadcrumb[breadcrumb.length - 1].href
+            : `${SITE_URL}${breadcrumb[breadcrumb.length - 1].href}`,
+        )
+      : null;
+
   return (
     <section className="relative bg-navy-950 text-white overflow-hidden">
+      {breadcrumbSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+      )}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-navy-950 via-navy-900 to-navy-800" />
         <svg className="absolute inset-0 h-full w-full opacity-[0.05]" aria-hidden="true">
