@@ -84,6 +84,14 @@ export const conditions: Condition[] = [
     blurb:
       "Ligament tear at the base of the thumb, often from a fall or ski-pole injury. Internal brace repair Dr. Lee helped design supports earlier return to pinching and sport.",
   },
+  {
+    name: "Wartenberg's Syndrome",
+    slug: "wartenbergs-syndrome",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "Compression of the superficial radial nerve, often by a tight watch band, causing burning and tingling on the back of the hand. Most cases resolve when the source of pressure is identified and removed.",
+  },
   // Hand & Wrist, phase 2
   {
     name: "Trigger Finger",

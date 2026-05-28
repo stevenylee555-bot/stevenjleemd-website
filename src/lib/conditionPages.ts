@@ -2202,6 +2202,167 @@ const thumbUclRcl: ConditionPageContent = {
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
+// Phase B rebuild #1, May 2026. Wartenberg's syndrome is #5 by Google Search
+// Console clicks (497 / 16mo) and currently has no dedicated page on the new
+// site (was redirecting to /specialties/hand-wrist). Drafted from existing Wix
+// content; awaiting Dr. Lee's clinical review.
+
+const wartenbergsSyndrome: ConditionPageContent = {
+  slug: "wartenbergs-syndrome",
+  name: "Wartenberg's Syndrome",
+  region: "Hand & Wrist",
+  headerTitle: "Wartenberg's Syndrome:",
+  headerItalic: "the watch-strap nerve.",
+  headerLede:
+    "A small sensory nerve runs over the back of the wrist toward the thumb. When it gets compressed, often by something as simple as a tight watch band, the result is burning, tingling, and pain across the back of the hand. Most cases resolve when the pressure is removed; surgery is reserved for the ones that do not.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
+    reviewed: "May 2026",
+  },
+  overview: [
+    "Wartenberg's syndrome (also called cheiralgia paresthetica) is compression of the superficial branch of the radial nerve as it travels along the back of the forearm and wrist. The nerve is purely sensory, so the symptoms are not weakness but pain, numbness, and tingling on the back of the thumb, index, middle, and half of the ring finger.",
+    "Because the nerve sits in a relatively superficial location, the most common cause is simple external pressure: a tight watch band, a wristband, a purse strap, even handcuffs. Other cases come from trauma, swelling, scar tissue, or a scissoring effect between two forearm tendons. A meaningful share of cases have no identifiable cause at all.",
+  ],
+  bodySections: [
+    {
+      heading: "Anatomy",
+      body: [
+        "The radial nerve runs down the arm and branches into a deep motor portion and a superficial sensory portion. The superficial radial nerve carries sensation to the back of the thumb, the index and middle fingers, and the radial half of the ring finger.",
+        "About 8 to 10 centimeters above the wrist crease, the nerve emerges from underneath the brachioradialis tendon and becomes superficial. From that point on it is vulnerable to anything pressing on it from outside.",
+      ],
+    },
+    {
+      heading: "Causes",
+      body: [
+        "External pressure is by far the most common cause: a tight watch band, an elastic wristband, a snug cuff, a heavy purse strap, or a cast that sits over the dorsal forearm. Most cases improve once the source of pressure is identified and removed.",
+        "Trauma to the area, prior surgery near the wrist, or swelling that surrounds the nerve can also cause it. In some patients the tendons of the brachioradialis and extensor carpi radialis longus 'scissor' across the nerve when the forearm rotates, irritating it during repetitive activity. A meaningful share of cases are idiopathic.",
+      ],
+    },
+    {
+      heading: "Symptoms",
+      body: [
+        "Burning, tingling, or numbness on the back of the thumb, index, middle, and radial half of the ring finger. Pain on the back of the wrist or forearm. Some patients describe a 'pins and needles' sensation extending up the forearm.",
+        "Symptoms typically worsen with activities that load or compress the area: gripping, twisting the forearm, wearing the offending watch or band, leaning on the forearm. They often improve briefly when the patient changes hand position or removes the compression. Many patients instinctively start avoiding pressure on the area, which itself becomes a diagnostic clue on exam.",
+      ],
+    },
+    {
+      heading: "Differentiating from de Quervain's tenosynovitis",
+      body: [
+        "Wartenberg's syndrome is commonly mistaken for de Quervain's tenosynovitis (irritation of the thumb tendons at the wrist), and the two conditions can also coexist. The distinction matters because the treatments are different.",
+        "De Quervain's pain is mechanical: it hurts to move the thumb in specific directions, and tenderness is directly over the first dorsal compartment of the wrist. Wartenberg's symptoms are neurologic: tingling, numbness, or burning in a nerve distribution rather than along a tendon. A careful exam separates them, and an ultrasound or selective injection can help when the picture is mixed.",
+      ],
+    },
+    {
+      heading: "Diagnosis",
+      body: [
+        "The diagnosis is primarily clinical. Dr. Lee examines for tenderness along the course of the superficial radial nerve, performs a Tinel's test (tapping the nerve to reproduce the tingling), and checks sensation in the nerve's distribution. The exam typically reveals the diagnosis when the clinical picture is consistent.",
+        "X-rays may be obtained when trauma is suspected. Nerve conduction studies (EMG/NCS) are sometimes ordered but are notoriously insensitive for this specific compression. A negative study does not rule out the diagnosis. Dr. Lee treats consistent clinical findings even when objective testing is normal, while using nerve studies primarily to exclude compression higher up at the elbow or neck.",
+      ],
+    },
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "The first step is removing the source of compression. That alone often resolves the symptoms. Replacing a tight watch with a looser band, switching shoulder-bag straps, padding seatbelt or cast contact points, and adjusting work-related forearm positioning are the routine starting points.",
+        "A loose wrist splint worn intermittently can take pressure off the nerve during recovery. Oral anti-inflammatories help with associated swelling. When symptoms persist, a corticosteroid injection around the nerve can be therapeutic and confirms the diagnosis at the same time. Most patients respond to one or a combination of these measures.",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "Surgery is reserved for patients whose symptoms persist despite a real trial of conservative care, including pressure removal, splinting, and at least one injection. The procedure is a nerve decompression, performed through a small incision over the affected area.",
+        "Anything compressing the nerve is released: tight fascial bands, scar tissue, the scissoring tendons if that pattern is present. The nerve itself is identified, preserved, and protected. Because the nerve is small and runs close to the skin, the procedure requires loupe magnification or an operating microscope, and is best performed by a surgeon experienced with peripheral-nerve work in the hand.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee treats Wartenberg's syndrome the way he treats most nerve compressions: he weights the clinical exam heavily and does not require positive nerve studies to make the diagnosis. The exam findings, the location of the patient's symptoms, and the response to pressure removal or a targeted injection typically tell the whole story.",
+      "When surgery is needed, the procedure is performed with magnification, careful tissue handling, and identification of every branch of the nerve in the surgical field. The goal is a complete decompression without injuring the nerve being protected.",
+    ],
+  },
+  recoveryIntro:
+    "Recovery is generally fast for both non-surgical and surgical management. Surgical recovery follows a standard small-incision peripheral-nerve protocol.",
+  recovery: [
+    { when: "Non-surgical (most patients)", what: "Symptoms typically improve within days to weeks after the source of pressure is removed. A short course of splinting or a single injection often closes the gap." },
+    { when: "Post-op, weeks 1 to 2", what: "Removable thumb spica or wrist splint, hand elevated, dressings kept clean and dry. Wound check and suture removal around day 10 to 14." },
+    { when: "Weeks 2 to 4", what: "Splint weaned. Hand therapy begins for scar management, gentle nerve gliding, and gradual return of motion. Most patients return to office work in this window." },
+    { when: "Weeks 4 to 6", what: "Most patients return to unrestricted daily activity. Some residual tenderness over the incision is normal and resolves over the next month or two." },
+    { when: "3 months", what: "Final result usually achieved. Sensory recovery in the nerve's distribution can continue to improve for several more months after surgery." },
+  ],
+  misconceptions: {
+    intro: "Two common mix-ups around Wartenberg's syndrome.",
+    items: [
+      {
+        heading: "'My EMG was normal, so it can't be Wartenberg's.'",
+        body: "Nerve conduction studies are insensitive for this particular compression. A normal EMG/NCS is the rule, not the exception, and does not rule the diagnosis out. The exam, history, and response to pressure removal carry more weight than the nerve study.",
+      },
+      {
+        heading: "'It hurts on the radial side of my wrist, so it must be de Quervain's.'",
+        body: "Pain on the radial side of the wrist is often assumed to be de Quervain's tenosynovitis, but Wartenberg's produces tingling and numbness in addition to pain, and the symptoms follow a nerve distribution rather than a tendon line. The two conditions can also coexist, which is why an accurate exam matters.",
+      },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Also called", value: "Cheiralgia paresthetica" },
+    { label: "Nerve involved", value: "Superficial radial (sensory only)" },
+    { label: "Common trigger", value: "Tight watch, band, or cuff" },
+    { label: "Most patients", value: "Improve without surgery" },
+  ],
+  whyDrLee: [
+    "Treats peripheral-nerve compressions across thousands of cases per year.",
+    "Uses loupe magnification and microscopic technique for hand-nerve surgery.",
+    "Diagnoses on clinical findings rather than waiting for nerve studies that are often falsely negative.",
+  ],
+  related: [
+    { name: "Carpal Tunnel Syndrome", slug: "carpal-tunnel" },
+    { name: "Finger Collateral Ligament Injury", slug: "finger-collateral-ligament" },
+    { name: "Hand & Wrist Fractures", slug: "hand-wrist-fractures" },
+  ],
+  ctaCard: {
+    eyebrow: "Tingling on the back of the hand?",
+    headline: "A good exam separates this from the conditions it mimics.",
+  },
+  faqHeadline: "Wartenberg's syndrome FAQ",
+  faqs: [
+    {
+      question: "What is Wartenberg's syndrome?",
+      answer:
+        "Wartenberg's syndrome, also called cheiralgia paresthetica, is compression of the superficial radial nerve, a purely sensory nerve that supplies the back of the thumb, index, middle, and half of the ring finger. Compression most often comes from external pressure on the wrist or forearm, like a tight watch band. The symptoms are burning, tingling, or numbness in the nerve's territory, sometimes with pain, but no weakness because the nerve carries only sensation.",
+    },
+    {
+      question: "How is Wartenberg's syndrome different from de Quervain's tenosynovitis?",
+      answer:
+        "De Quervain's is inflammation of the tendons that move the thumb at the wrist, and its symptoms are mechanical: pain with specific thumb motions and tenderness directly over the first dorsal compartment. Wartenberg's is a nerve problem and produces tingling and numbness in addition to pain, following the nerve's sensory distribution. The two can coexist, but the treatments differ, so an accurate exam matters.",
+    },
+    {
+      question: "Can Wartenberg's syndrome heal without surgery?",
+      answer:
+        "Yes. Most cases of Wartenberg's syndrome resolve once the source of compression is identified and removed: a tighter watch, a backpack strap, or any pressure source over the forearm. Splinting, anti-inflammatories, and an occasional corticosteroid injection around the nerve close the gap for most of the remaining patients. Surgery is reserved for symptoms that persist despite a real trial of conservative care.",
+    },
+    {
+      question: "Why was my nerve test normal if I have this condition?",
+      answer:
+        "Nerve conduction studies are not very sensitive for compression of the superficial radial nerve at the wrist, so a normal study is common and does not rule out the diagnosis. Wartenberg's syndrome is primarily a clinical diagnosis based on the location of symptoms, a positive Tinel's test, and the patient's history. The nerve study is mostly useful to rule out compression at a higher level, like the elbow or neck.",
+    },
+    {
+      question: "What does the surgery involve?",
+      answer:
+        "Decompression of the superficial radial nerve is a small, outpatient procedure performed through a short incision over the affected area on the back of the forearm or wrist. Tight tissue bands, scar tissue, and any tendons scissoring across the nerve are released. The nerve is preserved and the wound is closed with absorbable sutures. Most patients return to office work within 2 to 4 weeks and to unrestricted activity by 4 to 6 weeks.",
+    },
+  ],
+  bottomCtaTitle: "Tingling or burning on the back of the hand?",
+  bottomCtaItalic: "Often a simple fix.",
+  bottomCtaBody:
+    "Most patients with Wartenberg's syndrome improve once the source of compression is identified and removed. An accurate diagnosis is the first step, and often the only step you need.",
+  metaTitle: "Wartenberg's Syndrome, Steven J. Lee, MD",
+  metaDescription:
+    "Wartenberg's syndrome (cheiralgia paresthetica), compression of the superficial radial nerve at the wrist. Symptoms, diagnosis, splinting, injections, and surgical decompression. By Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
+  schemaDescription:
+    "Wartenberg's syndrome is compression of the superficial radial nerve, a sensory nerve on the back of the wrist and hand. It is most often caused by external pressure such as a tight watch band, and produces burning, tingling, or numbness on the back of the thumb and adjacent fingers. Treatment ranges from removing the source of compression and splinting to corticosteroid injection or surgical decompression.",
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
 export const conditionPages: ConditionPageContent[] = [
   carpalTunnel,
   distalRadiusFracture,
@@ -2218,6 +2379,8 @@ export const conditionPages: ConditionPageContent[] = [
   extensorTendonSubluxation,
   ulnarImpactionSyndrome,
   thumbUclRcl,
+  // Phase B additions (next-tier GSC clicks), May 2026:
+  wartenbergsSyndrome,
 ];
 
 export function conditionPageBySlug(slug: string) {
