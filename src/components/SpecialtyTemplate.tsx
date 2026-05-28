@@ -5,12 +5,25 @@ import { type Specialty } from "@/lib/specialties";
 import { conditionsByRegion } from "@/lib/conditions";
 import { ZOCDOC_URL } from "@/lib/site";
 import {
+  buildGraph,
+  buildMedicalProcedureSchema,
+  SITE_URL,
+} from "@/lib/schema";
+import {
   HandIcon,
   ElbowIcon,
   ShoulderIcon,
   KneeIcon,
   BiologicsIcon,
 } from "@/components/home/icons/AnatomyIcons";
+
+function slugify(s: string) {
+  return s
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
 
 function iconFor(key: Specialty["iconKey"]) {
   switch (key) {
@@ -33,8 +46,25 @@ export default function SpecialtyTemplate({ specialty }: { specialty: Specialty 
     conditionsByRegion(r)
   );
 
+  const pageUrl = `${SITE_URL}/specialties/${specialty.slug}`;
+  const procedureGraph = buildGraph(
+    specialty.approach.map((p) =>
+      buildMedicalProcedureSchema({
+        name: p.title,
+        description: p.body,
+        url: pageUrl,
+        slug: slugify(p.title),
+        bodyLocation: specialty.shortName,
+      }),
+    ),
+  );
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(procedureGraph) }}
+      />
       <PageHeader
         kicker={specialty.eyebrow}
         title={specialty.headline}
