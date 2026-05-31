@@ -30,8 +30,12 @@ export const heroReveal: Variants = {
   show: { opacity: 1, y: 0, transition: { ...ease, duration: 0.9 } },
 };
 
+// `amount: "some"` triggers as soon as any pixel of the element is in view.
+// `0.25` (previous value) silently broke on mobile for tall grids (e.g. the
+// Specialties grid is ~2010px in a ~844px viewport — the IntersectionObserver
+// never reached the 25% threshold reliably, leaving cards stuck at opacity 0).
 export const inViewProps = {
   initial: "hidden",
   whileInView: "show",
-  viewport: { once: true, amount: 0.25 },
+  viewport: { once: true, amount: "some" },
 } as const;
