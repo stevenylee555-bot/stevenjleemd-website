@@ -342,3 +342,12 @@ export const specialties: Specialty[] = [
 export function specialtyBySlug(slug: string) {
   return specialties.find((s) => s.slug === slug);
 }
+
+// Maps a condition's region to the specialty page that covers it, so condition
+// pages can link up to their parent specialty. Returns undefined if no
+// specialty surfaces that region.
+export function specialtyForRegion(region: string) {
+  return specialties.find((s) =>
+    (s.conditionRegions as string[]).includes(region),
+  );
+}

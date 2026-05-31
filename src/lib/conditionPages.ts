@@ -3312,3 +3312,62 @@ export const conditionPages: ConditionPageContent[] = [
 export function conditionPageBySlug(slug: string) {
   return conditionPages.find((c) => c.slug === slug);
 }
+
+// Named procedures that treat each condition, keyed by slug. Feeds the
+// MedicalCondition JSON-LD (possibleTreatment -> MedicalProcedure -> performer:
+// Dr. Lee), which is the strongest condition-to-procedure co-citation signal for
+// AI search. Names mirror the procedures described on each page; keep them
+// factual and free of superlatives. A slug with no entry falls back to the
+// generic treatment node in buildConditionSchema.
+export const conditionProcedures: Record<string, string[]> = {
+  "carpal-tunnel": ["Endoscopic Carpal Tunnel Release", "Corticosteroid Injection"],
+  "distal-radius-fracture": ["Volar Plate Fixation", "Cast Immobilization"],
+  scapholunate: [
+    "Scapholunate Ligament Repair with Internal Brace",
+    "Tendon-Graft Reconstruction",
+  ],
+  "basal-joint-arthroplasty": [
+    "Basal Joint Reconstruction with Internal Brace",
+    "Corticosteroid Injection",
+  ],
+  "hand-wrist-fractures": [
+    "Internal Fixation with Plates and Screws",
+    "Splinting and Buddy Taping",
+  ],
+  "ucl-reconstruction": [
+    "UCL Reconstruction (Tommy John Surgery)",
+    "Internal Brace Augmentation",
+  ],
+  "biceps-rupture": ["Distal Biceps Tendon Repair"],
+  "rotator-cuff": ["Arthroscopic Rotator Cuff Repair", "Corticosteroid Injection"],
+  "acl-reconstruction": ["ACL Reconstruction"],
+  "achilles-rupture": ["Achilles Tendon Repair", "Functional Bracing Protocol"],
+  "finger-collateral-ligament": [
+    "Collateral Ligament Repair with Internal Brace",
+    "Buddy Taping and Splinting",
+  ],
+  "extensor-tendon-subluxation": [
+    "Sagittal Band Repair",
+    "Sagittal Band Reconstruction",
+  ],
+  "ulnar-impaction-syndrome": [
+    "Arthroscopic Wafer Procedure",
+    "Ulnar Shortening Osteotomy",
+    "PRP Injection",
+  ],
+  "thumb-ucl-rcl": ["Thumb Collateral Ligament Repair with Internal Brace"],
+  "wartenbergs-syndrome": [
+    "Superficial Radial Nerve Decompression",
+    "Corticosteroid Injection",
+  ],
+  "tfcc-tear": [
+    "Arthroscopic TFCC Repair",
+    "Arthroscopic TFCC Debridement",
+    "PRP Injection",
+  ],
+  "finger-pulley-injury": ["Pulley Reconstruction with Tendon Graft"],
+  "olecranon-fracture": ["Tension-Band Wiring", "Plate-and-Screw Fixation"],
+  "mucous-cyst": ["Mucous Cyst Excision with Osteophyte Removal"],
+  "prp-injections": ["Platelet-Rich Plasma Injection"],
+  "internal-brace": ["Internal Brace Augmentation"],
+};

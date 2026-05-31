@@ -12,6 +12,8 @@ import {
 import PageHeader from "@/components/PageHeader";
 import { ZOCDOC_URL } from "@/lib/site";
 import { buildFaqSchema, buildConditionSchema } from "@/lib/schema";
+import { conditionProcedures } from "@/lib/conditionPages";
+import { specialtyForRegion } from "@/lib/specialties";
 import type { ConditionPageContent } from "@/lib/conditionPages";
 
 export default function ConditionTemplate({
@@ -24,7 +26,9 @@ export default function ConditionTemplate({
     name: data.name,
     description: data.schemaDescription,
     url: `https://www.stevenjleemd.com/conditions/${data.slug}`,
+    procedureNames: conditionProcedures[data.slug],
   });
+  const specialty = specialtyForRegion(data.region);
 
   return (
     <>
@@ -235,6 +239,25 @@ export default function ConditionTemplate({
                     ))}
                   </ul>
                 </div>
+
+                {/* Parent specialty */}
+                {specialty && (
+                  <div>
+                    <div className="kicker text-navy-900/85 mb-3">
+                      Specialty area
+                    </div>
+                    <Link
+                      href={`/specialties/${specialty.slug}`}
+                      className="group flex items-center justify-between py-3 border-t border-navy-900/[0.08] text-[14.5px] text-navy-900/90 hover:text-gold-600 transition-colors"
+                    >
+                      <span>{specialty.name}</span>
+                      <ChevronRight
+                        size={14}
+                        className="text-navy-900/30 group-hover:text-gold-600 transition-all group-hover:translate-x-0.5"
+                      />
+                    </Link>
+                  </div>
+                )}
 
                 {/* Related conditions */}
                 <div>

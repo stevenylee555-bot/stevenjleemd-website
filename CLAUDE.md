@@ -217,10 +217,10 @@ public/
 **Phase 0 marketing/SEO/GEO code is merged to `main` (2026-05-27).** Four sub-branches landed: (1) JSON-LD `@graph` refactor with stable `@id` cross-references + new MedicalProcedure/BreadcrumbList/Review builders, (2) favicon/apple-icon/manifest/theme color, (3) Vercel Analytics + Speed Insights, (4) `/llms.txt`. The full marketing/SEO/GEO/automation roadmap (KPIs, tool stack, reporting, Dr. Bedford onboarding playbook) lives at `~/.claude/plans/fuzzy-twirling-hartmanis.md`.
 
 **Pre-launch blockers (must complete before DNS cutover):**
-1. **301 redirect map** in `next.config.ts` — old Wix URLs (~110 indexed pages) to new equivalents. CRITICAL: the Wix site has strong AI-search traction (ChatGPT, Gemini, Perplexity, Claude actively crawl it). Do not flip DNS without every redirect in place.
+1. **301 redirect map** — built: `src/lib/redirects.ts` holds 138 source/destination redirects, wired through `next.config.ts`. CRITICAL: the Wix site has strong AI-search traction (ChatGPT, Gemini, Perplexity, Claude actively crawl it). Remaining pre-cutover step is to verify the map against the final Wix URL export so no indexed page 404s.
 2. **Google Search Console** + Bing Webmaster verification for the new domain.
-3. **GA4 measurement ID** — framework is wired (`src/lib/analytics.ts`); only needs `NEXT_PUBLIC_GA_ID` set in Vercel. Still blocked on Dr. Lee providing it (no legacy GA history on the Wix site).
-4. **Contact form endpoint** — `NEXT_PUBLIC_FORM_ENDPOINT` is still unset, so the callback form is inert. Wire to Formspree (BAA-covered destination) before leads flow. See [[project_drlee_compliance]].
+3. **GA4 measurement ID** — provided and set locally (`NEXT_PUBLIC_GA_ID=G-GLNRM3BQET` in `.env.local`, 2026-05-26). Remaining: confirm it is set in the Vercel project env (`.env.local` does not deploy), then mark `book_appointment`/`phone_call`/`callback_request`/`cv_download` as Key Events, disable Google Signals, and set short data retention.
+4. **Contact form endpoint** — set locally (`NEXT_PUBLIC_FORM_ENDPOINT=https://formspree.io/f/xvzydvvk` in `.env.local`, 2026-05-26). Remaining: confirm it is set in the Vercel project env, and confirm the Formspree account carries a signed BAA and delivers to the Google Workspace BAA mailbox, not a consumer inbox. See [[project_drlee_compliance]].
 5. **Explicit DNS cutover approval** from Dr. Lee + Wix analytics export before access is lost.
 
 **Waiting on client:**
@@ -274,5 +274,5 @@ Seven project-scoped agents live in `.claude/agents/` to codify recurring workfl
 - AI visitor chatbot (Claude API integration — deferred)
 - Sanity CMS integration: now scoped (see "Planned: self-serve CMS" above), not yet built
 - Recovery Shop `/shop` affiliate integration (Phase 2)
-- GA4 measurement ID + contact-form endpoint (frameworks wired; need values/accounts from Dr. Lee)
+- GA4 measurement ID + contact-form endpoint (values set in `.env.local` 2026-05-26; confirm both are also set in the Vercel production env)
 - DNS cutover itself (needs explicit Dr. Lee approval)
