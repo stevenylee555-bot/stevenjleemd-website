@@ -68,8 +68,10 @@ export default function Hero({ home }: { home?: HomeContent }) {
           animate="show"
           className="grid grid-cols-1 lg:grid-cols-[1.15fr_1fr] gap-12 lg:gap-16 items-center"
         >
-          {/* Copy column */}
-          <div>
+          {/* Copy column. On mobile, ordered AFTER the portrait per Dr. Lee's
+              5/28 request to show his picture first on phones. Desktop layout
+              unchanged (copy left, portrait right). */}
+          <div className="order-2 lg:order-1">
             <motion.div variants={heroReveal} className="flex items-center gap-3 mb-8">
               <span className="h-px w-10 bg-gold-500" aria-hidden="true" />
               <span className="kicker text-gold-400 text-[13.5px]!">
@@ -178,13 +180,14 @@ export default function Hero({ home }: { home?: HomeContent }) {
             </motion.div>
           </div>
 
-          {/* Portrait column. Now visible on mobile per Dr. Lee's 5/27 note:
-              constrained to a smaller width below the copy on small viewports,
-              full flex on lg+. */}
+          {/* Portrait column. On mobile, ordered FIRST per Dr. Lee's 5/28
+              request — his picture should be the first thing patients see on
+              phones. Constrained to a smaller width on small viewports, full
+              flex on lg+. Desktop position (right column) unchanged. */}
           <motion.div
             variants={heroReveal}
             style={{ y, opacity }}
-            className="relative mx-auto w-full max-w-xs sm:max-w-sm lg:max-w-none mt-12 lg:mt-0"
+            className="relative mx-auto w-full max-w-xs sm:max-w-sm lg:max-w-none order-1 lg:order-2"
           >
             {/* Gold accent frame, draws in from corners after portrait reveal */}
             <motion.div
