@@ -41,6 +41,7 @@ A full website rebuild for **Dr. Steven J. Lee, MD** — orthopedic surgeon, Chi
 | Analytics | **GA4** (framework wired) + **Vercel Analytics & Speed Insights** | GA4 event wiring ready in `src/lib/analytics.ts`; activates when `NEXT_PUBLIC_GA_ID` is set. Vercel Analytics + Speed Insights mounted in layout (cookieless, no PHI). |
 | Booking | **ZocDoc** | External link only — not an embedded scheduler |
 | Schema | **JSON-LD `@graph` via next/head** | Builders in `src/lib/schema.ts`, stable `@id` cross-references — load-bearing for GEO; do not strip |
+| CMS | **Sanity** (live) | Self-serve editing at `/studio` with draft mode + visual/click-to-edit. Safe public-id fallbacks in `src/sanity/env.ts`; every getter try/catches to in-code content, so missing env vars never break the site. See "Self-serve CMS (Sanity)" below. |
 
 ---
 
@@ -49,8 +50,8 @@ A full website rebuild for **Dr. Steven J. Lee, MD** — orthopedic surgeon, Chi
 ```
 src/
   app/                         App Router routes
-    layout.tsx                 Root layout: fonts, metadata, viewport (themeColor), JSON-LD @graph (Physician + MedicalBusiness), Vercel Analytics + Speed Insights, Navbar, Footer, skip link
-    page.tsx                   Homepage — composes all src/components/home/* sections
+    layout.tsx                 Root layout: fonts, metadata, viewport (themeColor), JSON-LD @graph (Physician + MedicalBusiness), Vercel Analytics + Speed Insights, Navbar, Footer, skip link. Reads draftMode(), always renders <SanityLive/>, renders <VisualEditing/> in draft.
+    page.tsx                   Homepage — composes all src/components/home/* sections. SSR-fetches Sanity content via getHomePage()/getTestimonials() with in-code fallback.
     globals.css                Tailwind v4 @theme tokens + custom utilities
     opengraph-image.tsx        Generated OG image
     icon.tsx, apple-icon.tsx   Generated favicon + apple touch icon (gold "SJL" on navy)
@@ -66,10 +67,10 @@ src/
       videos/page.tsx
     conditions/
       page.tsx                 Conditions library index (grid by region)
-      [slug]/page.tsx          Dynamic condition pages via ConditionTemplate + conditionPages.ts
+      <condition>/page.tsx     21 condition pages, one static folder each, rendered via ConditionTemplate + conditionPages.ts
     specialties/
       page.tsx                 Specialties index (5-card grid)
-      [slug]/page.tsx          Dynamic specialty pages via SpecialtyTemplate + specialties.ts
+      <specialty>/page.tsx     5 specialty pages, one static folder each, rendered via SpecialtyTemplate + specialties.ts
     contact/page.tsx
     second-opinions/page.tsx
     referral-network/page.tsx
@@ -78,6 +79,8 @@ src/
     blog/page.tsx
     shop/page.tsx
     not-found.tsx
+    studio/[[...tool]]/        Sanity Studio (catch-all route): page.tsx + Studio.tsx
+    api/draft-mode/            Draft-mode route handlers: enable/route.ts, disable/route.ts
   components/
     Navbar.tsx                 Fixed nav, desktop dropdowns, mobile drawer, ZocDoc CTA
     Footer.tsx                 4-column footer with locations/hours/links
@@ -100,11 +103,20 @@ src/
         AnatomyIcons.tsx       Custom SVG: HandIcon, ElbowIcon, ShoulderIcon, KneeIcon, BiologicsIcon
   lib/
     conditions.ts              Master condition list (22 conditions, 6 regions, priority/phase2 status)
-    conditionPages.ts          Full page content for 9 priority condition pages (~1500 lines)
+    conditionPages.ts          Full page content for 21 condition pages (~3290 lines)
     specialties.ts             Full page content for 5 specialty pages
     schema.ts                  JSON-LD @graph builders + stable @ids: physicianNode, medicalBusinessNode, buildGraph, buildFaqSchema, buildConditionSchema, buildMedicalProcedureSchema, buildBreadcrumbSchema, buildReviewSchema/buildAggregateRatingSchema (testimonial scaffolding). physicianSchema/medicalBusinessSchema kept as back-compat exports.
     motion.ts                  Shared motion variants + viewport props (ease, fadeUp, fadeIn, stagger, inViewProps)
     utils.ts                   cn() utility (clsx + tailwind-merge)
+  sanity/                      Sanity CMS wiring (live)
+    client.ts                  Sanity client
+    env.ts                     projectId/dataset/apiVersion with safe PUBLIC fallbacks (rj9a0qco / production)
+    live.ts                    sanityFetch + <SanityLive/> (live content + visual editing)
+    image.ts                   urlForImage helper
+    queries.ts                 GROQ queries
+    structure.ts               Studio desk structure
+    get*.ts                    12 typed page getters (getHomePage, getTestimonials, about/bio/credentials/cv/publications/second-opinions/specialty/condition + index getters); each try/catches to in-code content
+    schemaTypes/               12 document/schema types + index.ts
 public/
   images/                      dr-lee-headshot.jpg + 5 speaking/conference photos
   downloads/                   Dr-Steven-Lee-CV.pdf
@@ -183,16 +195,7 @@ public/
 |---|---|
 | Homepage (9 sections) | Done |
 | Conditions index | Done |
-| Carpal Tunnel Syndrome | Done |
-| Distal Radius Fracture | Done |
-| Scapholunate Ligament Injury | Done |
-| Basal Joint Arthritis (Thumb CMC) | Done |
-| Hand & Wrist Fractures | Done |
-| UCL Tear (Tommy John) | Done |
-| Biceps Tendon Rupture | Done |
-| Rotator Cuff Tear | Done |
-| ACL Tear & Reconstruction | Done |
-| Achilles Tendon Rupture | Done |
+| Condition pages (21) | Done, data-driven from `src/lib/conditionPages.ts` |
 | Specialties index | Done |
 | Hand & Wrist specialty | Done |
 | Elbow specialty | Done |
@@ -206,7 +209,6 @@ public/
 **Scaffolded (stub pages, phase 2):**
 - `/about/bio`, `/about/credentials`, `/about/publications`, `/about/videos`, `/about/cv`
 - `/second-opinions`, `/referral-network`, `/testimonials`, `/therapy-protocols`, `/blog`, `/shop`
-- 13 additional condition pages (Trigger Finger, Wrist Arthroscopy, Complex Elbow Trauma, Shoulder Arthroscopy, Clavicle Fracture, Meniscus Tear, Knee Arthroscopy, PRP/BMAC Injections, Peptide Therapy, and others)
 
 ---
 
@@ -215,6 +217,8 @@ public/
 **Phase 1 is functionally complete.** Site is deployed to a Vercel preview URL, not yet live on stevenjleemd.com (DNS still on Wix).
 
 **Phase 0 marketing/SEO/GEO code is merged to `main` (2026-05-27).** Four sub-branches landed: (1) JSON-LD `@graph` refactor with stable `@id` cross-references + new MedicalProcedure/BreadcrumbList/Review builders, (2) favicon/apple-icon/manifest/theme color, (3) Vercel Analytics + Speed Insights, (4) `/llms.txt`. The full marketing/SEO/GEO/automation roadmap (KPIs, tool stack, reporting, Dr. Bedford onboarding playbook) lives at `~/.claude/plans/fuzzy-twirling-hartmanis.md`.
+
+**Self-serve CMS (Sanity) is wired and live.** Studio at `/studio`, draft mode + visual/click-to-edit, and SSR content fetching are all in place. The homepage and testimonials read from Sanity today; the remaining typed getters exist for section-by-section rollout. `src/sanity/env.ts` ships safe public-id fallbacks and every getter try/catches to the in-code copy, so missing Sanity env vars in the Vercel project cannot break the site. See "Self-serve CMS (Sanity)" below.
 
 **Pre-launch blockers (must complete before DNS cutover):**
 1. **301 redirect map** — built: `src/lib/redirects.ts` holds 138 source/destination redirects, wired through `next.config.ts`. CRITICAL: the Wix site has strong AI-search traction (ChatGPT, Gemini, Perplexity, Claude actively crawl it). Remaining pre-cutover step is to verify the map against the final Wix URL export so no indexed page 404s.
@@ -232,18 +236,23 @@ public/
 
 ---
 
-## Planned: self-serve CMS (Sanity)
+## Self-serve CMS (Sanity) - live
 
 **Goal (decided 2026-05-25):** let Dr. Lee edit and add content himself, replacing the current loop (Dr. Lee notes edits in a shared Google Doc, Steve relays them to Claude, Claude deploys).
 
-**Approach (load-bearing for whoever builds it):**
-- **Sanity CMS**, added to the existing Next.js app. Additive only: the site stays on Vercel, this is not a migration. Free tier is sufficient.
-- **Visual / click-on-the-page editing** via Sanity's Presentation tool. This matters more than the CMS brand itself, because Dr. Lee edits by looking at the live page, not by learning an abstract admin.
-- **Draft, review, publish flow:** Dr. Lee's edits save as drafts, Steve reviews and publishes. Protects the claim-wording, no-medical-advice, and SEO/schema guardrails.
-- **Build order:** testimonials section first as a proof-of-concept (cheap adoption test), then expand section by section. Import old-site content so he curates rather than retypes.
-- **Keep in code (NOT CMS-editable):** JSON-LD schema (`src/lib/schema.ts`), layout/components, and the careful-claim rules. Only the words and images move to Sanity.
-- TinaCMS (inline editing) is the fallback if Sanity's UX does not land for him.
-- **When implementing:** this Next.js version is non-standard, consult `node_modules/next/dist/docs/` before using any App Router APIs (draft mode, route handlers, the Studio catch-all route, live/visual-editing wiring).
+**Status: wired and live.** Sanity is added to the existing Next.js app (additive only, site stays on Vercel, free tier). What is in place:
+- **Studio** mounted at `/studio/[[...tool]]` (`src/app/studio/`).
+- **Draft mode + visual/click-to-edit:** `src/app/api/draft-mode/{enable,disable}/route.ts` handlers; the root layout reads `draftMode()`, always renders `<SanityLive/>`, and renders `<VisualEditing/>` in draft.
+- **SSR content fetching** through 12 typed getters in `src/sanity/` (e.g. `getHomePage`, `getTestimonials`, plus about/bio/credentials/cv/publications/second-opinions/specialty/condition + index getters), backed by 12 schema types in `src/sanity/schemaTypes/`.
+- The **homepage and testimonials read from Sanity today**; the other getters exist for section-by-section rollout.
+
+**Safe-fallback behavior (load-bearing):** `src/sanity/env.ts` hardcodes the PUBLIC project id (`rj9a0qco`) and dataset (`production`) as fallbacks, and every getter try/catches to the in-code content. Missing Sanity env vars in the Vercel project will NOT break the site; pages simply render their built-in copy.
+
+**Guardrails (unchanged):**
+- **Draft, review, publish:** Dr. Lee's edits save as drafts, Steve reviews and publishes. Protects the claim-wording, no-medical-advice, and SEO/schema guardrails.
+- **Keep in code (NOT CMS-editable):** JSON-LD schema (`src/lib/schema.ts`), layout/components, and the careful-claim rules. Only the words and images live in Sanity.
+- **Build order so far:** testimonials section first as a proof-of-concept, then expand section by section. Import old-site content so he curates rather than retypes.
+- **When extending:** this Next.js version is non-standard, consult `node_modules/next/dist/docs/` before touching any App Router APIs (draft mode, route handlers, the Studio catch-all route, live/visual-editing wiring).
 
 ---
 
@@ -272,7 +281,6 @@ Seven project-scoped agents live in `.claude/agents/` to codify recurring workfl
 
 - Marketing automation, email campaigns, off-site SEO/GEO growth — now an active workstream tracked in `~/.claude/plans/fuzzy-twirling-hartmanis.md` (Phase 0 on-page SEO/GEO code is merged; off-site/reporting/content phases are out-of-repo: GBP, citation tracking, Looker Studio, Beehiiv, reviews, etc.)
 - AI visitor chatbot (Claude API integration — deferred)
-- Sanity CMS integration: now scoped (see "Planned: self-serve CMS" above), not yet built
 - Recovery Shop `/shop` affiliate integration (Phase 2)
 - GA4 measurement ID + contact-form endpoint (values set in `.env.local` 2026-05-26; confirm both are also set in the Vercel production env)
 - DNS cutover itself (needs explicit Dr. Lee approval)
