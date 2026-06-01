@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ZOCDOC_URL } from "@/lib/site";
+import SiteSearch from "@/components/SiteSearch";
 
 const navLinks = [
   {
@@ -153,13 +154,18 @@ export default function Navbar() {
             </div>
           ))}
 
+          {/* Site search */}
+          <div className="ml-2">
+            <SiteSearch mode="desktop" />
+          </div>
+
           {/* Book CTA */}
           <a
             href={ZOCDOC_URL}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Book online via ZocDoc (opens in new tab)"
-            className="ml-3 px-4 py-2 bg-gold-500 hover:bg-gold-400 text-navy-900 text-sm font-semibold rounded transition-colors whitespace-nowrap"
+            className="ml-2 px-4 py-2 bg-gold-500 hover:bg-gold-400 text-navy-900 text-sm font-semibold rounded transition-colors whitespace-nowrap"
           >
             Book Online
           </a>
@@ -180,6 +186,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       {mobileOpen && (
         <div id="mobile-menu" className="lg:hidden bg-navy-800 border-t border-white/10 px-4 py-4 space-y-2 max-h-[calc(100vh-4rem)] overflow-y-auto">
+          <SiteSearch mode="mobile" onNavigate={() => setMobileOpen(false)} />
           {navLinks.map((link) => (
             <div key={link.href}>
               <Link

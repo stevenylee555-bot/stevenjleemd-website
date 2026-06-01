@@ -109,3 +109,16 @@ html {
 @media (prefers-reduced-motion: reduce) {
   .hero-grain::after { opacity: 0.03; }
 }
+
+/* Site search popover entrance: animates opacity + transform only */
+@keyframes search-pop {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.search-pop {
+  animation: search-pop 160ms cubic-bezier(0.22, 1, 0.36, 1);
+  transform-origin: top right;
+}
+@media (prefers-reduced-motion: reduce) {
+  .search-pop { animation: none; }
+}
