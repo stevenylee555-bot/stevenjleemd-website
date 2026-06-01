@@ -109,9 +109,7 @@ export default function Navbar() {
             Steven J. Lee,{" "}
             <span className="serif-italic text-gold-400">MD</span>
           </span>
-          {/* Credential line shows on mobile and at xl+; hidden in the lg-to-xl
-              band where the horizontal nav is tight, so all links fit on one row. */}
-          <span className="block lg:hidden xl:block text-white/85 text-[11px] tracking-[0.16em] uppercase font-semibold mt-1.5">
+          <span className="block text-white/85 text-[11px] tracking-[0.16em] uppercase font-semibold mt-1.5">
             Chief of Hand &amp; Upper Extremity Surgery
           </span>
         </Link>
@@ -138,7 +136,7 @@ export default function Navbar() {
                 aria-haspopup={link.children ? "true" : undefined}
                 aria-expanded={link.children ? activeDropdown === link.href : undefined}
                 className={cn(
-                  "flex items-center gap-1 px-2.5 xl:px-3 py-2 text-sm text-white/80 hover:text-white hover:bg-white/10 rounded transition-colors whitespace-nowrap",
+                  "flex items-center gap-1 px-2 xl:px-3 py-2 text-sm text-white/80 hover:text-white hover:bg-white/10 rounded transition-colors whitespace-nowrap",
                   activeDropdown === link.href && "bg-white/10 text-white"
                 )}
               >
