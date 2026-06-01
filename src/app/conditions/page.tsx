@@ -40,7 +40,11 @@ export default async function ConditionsIndexPage() {
               const list = conditionsByRegion(region);
               if (list.length === 0) return null;
               return (
-                <div key={region}>
+                <div
+                  key={region}
+                  id={region.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}
+                  className="scroll-mt-28"
+                >
                   <div className="flex items-baseline justify-between gap-6 mb-8 pb-5 border-b border-navy-900/15">
                     <h2 className="font-serif text-2xl md:text-3xl tracking-[-0.01em] text-navy-950">
                       {region}

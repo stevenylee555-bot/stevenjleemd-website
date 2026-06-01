@@ -30,7 +30,17 @@ const navLinks = [
       { label: "PRP & Advanced Treatments", href: "/specialties/advanced-treatments" },
     ],
   },
-  { label: "Conditions", href: "/conditions" },
+  {
+    label: "Conditions",
+    href: "/conditions",
+    children: [
+      { label: "Hand & Wrist", href: "/conditions#hand-wrist" },
+      { label: "Elbow", href: "/conditions#elbow" },
+      { label: "Shoulder", href: "/conditions#shoulder" },
+      { label: "Knee & Sports", href: "/conditions#knee-sports" },
+      { label: "Foot & Ankle", href: "/conditions#foot-ankle" },
+    ],
+  },
   { label: "Therapy Protocols", href: "/therapy-protocols" },
   { label: "Second Opinions", href: "/second-opinions" },
   { label: "Shop", href: "/shop" },
@@ -104,8 +114,10 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* Desktop links */}
-        <div className="hidden lg:flex items-center gap-1">
+        {/* Desktop links. Shown at xl+, where the full row fits within the
+            max-w-7xl container; below xl the mobile menu is used (the nav is
+            too dense for lg without wrapping). */}
+        <div className="hidden xl:flex items-center gap-1">
           {navLinks.map((link) => (
             <div
               key={link.href}
@@ -124,7 +136,7 @@ export default function Navbar() {
                 aria-haspopup={link.children ? "true" : undefined}
                 aria-expanded={link.children ? activeDropdown === link.href : undefined}
                 className={cn(
-                  "flex items-center gap-1 px-3 py-2 text-sm text-white/80 hover:text-white hover:bg-white/10 rounded transition-colors",
+                  "flex items-center gap-1 px-3 py-2 text-sm text-white/80 hover:text-white hover:bg-white/10 rounded transition-colors whitespace-nowrap",
                   activeDropdown === link.href && "bg-white/10 text-white"
                 )}
               >
@@ -171,9 +183,9 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Mobile toggle, 44x44 hit target */}
+        {/* Mobile / tablet toggle, 44x44 hit target */}
         <button
-          className="lg:hidden text-white p-2.5"
+          className="xl:hidden text-white p-2.5"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
           aria-expanded={mobileOpen}
@@ -185,7 +197,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div id="mobile-menu" className="lg:hidden bg-navy-800 border-t border-white/10 px-4 py-4 space-y-2 max-h-[calc(100vh-4rem)] overflow-y-auto">
+        <div id="mobile-menu" className="xl:hidden bg-navy-800 border-t border-white/10 px-4 py-4 space-y-2 max-h-[calc(100vh-4rem)] overflow-y-auto">
           <SiteSearch mode="mobile" onNavigate={() => setMobileOpen(false)} />
           {navLinks.map((link) => (
             <div key={link.href}>

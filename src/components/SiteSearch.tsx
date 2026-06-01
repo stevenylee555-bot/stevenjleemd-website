@@ -229,7 +229,7 @@ export default function SiteSearch({
         )}
       >
         <Search size={15} strokeWidth={1.75} aria-hidden="true" />
-        <span className="hidden xl:inline">Search</span>
+        <span className="hidden 2xl:inline">Search</span>
       </button>
 
       {open && (
