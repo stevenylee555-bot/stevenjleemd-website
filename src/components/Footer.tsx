@@ -126,10 +126,15 @@ export default function Footer() {
             <Link href="/privacy" className="hover:text-white transition-colors">
               Privacy
             </Link>
+            <span className="text-white/40 mx-2" aria-hidden="true">·</span>
+            <Link href="/disclaimer" className="hover:text-white transition-colors">
+              Disclaimer
+            </Link>
           </p>
           <p className="text-center">
-            The information on this website is for general educational purposes only and does not constitute medical advice.
-            Always consult a qualified physician for medical decisions.
+            The information on this website is for general educational purposes only, does not constitute
+            medical advice, and does not create a doctor-patient relationship. Always consult a qualified
+            physician for medical decisions.
           </p>
         </div>
       </div>
