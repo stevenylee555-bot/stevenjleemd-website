@@ -3942,6 +3942,3878 @@ const slacWrist: ConditionPageContent = {
     "SLAC (scapholunate advanced collapse) and SNAC (scaphoid non-union advanced collapse) describe patterns of advanced wrist arthritis. Salvage procedures include proximal row carpectomy, four-corner fusion, total wrist fusion, and wrist denervation.",
 };
 
+// ─────────────────────────────────────────────────────────────────────────────
+// Elbow additions (Dr. Lee feedback, June 2026)
+const elbowByline = {
+  name: "Steven J. Lee, MD",
+  title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
+  reviewed: "May 2026",
+};
+
+const elbowDislocation: ConditionPageContent = {
+  slug: "elbow-dislocation",
+  name: "Elbow Dislocation",
+  region: "Elbow",
+  headerTitle: "Elbow Dislocation:",
+  headerItalic: "getting the joint back, and keeping it moving.",
+  headerLede:
+    "The elbow is one of the most commonly dislocated joints in adults. Most simple dislocations do well with prompt reduction and early protected motion. The ones with associated fractures need a plan that restores stability while avoiding the stiffness the elbow is prone to.",
+  byline: elbowByline,
+  overview: [
+    "An elbow dislocation happens when the forearm bones are forced out of alignment with the upper arm, usually after a fall onto an outstretched hand. Dislocations are grouped as simple, no fracture, or complex, with one or more fractures of the radial head, coronoid, or olecranon.",
+    "The elbow is unusually prone to stiffness after injury, so the modern approach favors restoring stability and then beginning motion early rather than long immobilization. The right balance depends on whether the joint is stable after reduction and whether fractures are present.",
+  ],
+  bodySections: [
+    {
+      heading: "Simple versus complex",
+      body: [
+        "A simple dislocation, with no fracture, is reduced (put back in place) and is usually stable afterward. A complex dislocation involves fractures and is more likely to be unstable, the most severe pattern is the 'terrible triad,' a dislocation with radial head and coronoid fractures, which almost always needs surgery.",
+      ],
+    },
+    {
+      heading: "Why early motion matters",
+      body: [
+        "Scar tissue forms quickly in the elbow, and the longer it is held still, the more it stiffens. Once the joint is stable, supervised motion in the first weeks is the single best protection against a permanently stiff elbow.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "After a dislocation is reduced, Dr. Lee tests the elbow's stability and uses imaging to look for fractures. A stable, simple dislocation is treated without surgery, with a brief period of protection followed by early guided motion.",
+      "When the elbow is unstable or fractures are present, surgery restores the bony and ligament anatomy so motion can begin safely. Complex elbow trauma, including the terrible triad, is the kind of injury Dr. Lee is referred from outside hospitals.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "A simple, stable dislocation is reduced and protected briefly in a splint, then moved early under guidance. X-rays confirm the joint stays located as motion begins.",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "Unstable dislocations and those with fractures are treated surgically to repair or replace the radial head, fix the coronoid, and repair the torn ligaments, so the elbow is stable enough to move early. The goal is a stable joint that does not have to be immobilized into stiffness.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery is built around protecting stability while starting motion early:",
+  recovery: [
+    { when: "Weeks 0 to 2", what: "Splint or hinged brace. Begin guided motion within a safe arc once the joint is confirmed stable. Hand, wrist, and shoulder motion encouraged." },
+    { when: "Weeks 2 to 6", what: "Progressive range of motion in therapy, often in a hinged brace. Avoid forces that stress the healing ligaments." },
+    { when: "Weeks 6 to 12", what: "Strengthening and return to activity as motion and stability allow. Some stiffness is normal and continues to improve." },
+  ],
+  misconceptions: {
+    intro: "A few things worth knowing:",
+    items: [
+      { heading: "Stiffness, not re-dislocation, is the usual problem.", body: "Once a simple elbow dislocation is reduced and stable, the main risk is loss of motion from prolonged immobilization, which is why early guided motion is emphasized." },
+      { heading: "A fracture changes the plan.", body: "A dislocation with fractures is a different injury than a simple one. Imaging matters, because a missed coronoid or radial head fracture can lead to a chronically unstable elbow." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Joint", value: "Elbow (ulnohumeral and radiocapitellar)" },
+    { label: "Mechanism", value: "Fall onto an outstretched hand" },
+    { label: "Two types", value: "Simple (no fracture) and complex (with fracture)" },
+    { label: "Severe pattern", value: "Terrible triad (dislocation plus two fractures)" },
+    { label: "Priority", value: "Stability first, then early motion" },
+    { label: "Main risk", value: "Elbow stiffness" },
+  ],
+  whyDrLee: [
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
+    "Referral surgeon for complex elbow trauma, including the terrible triad",
+    "Early-motion focus to protect against elbow stiffness",
+    "Treats both acute dislocations and chronic instability afterward",
+  ],
+  related: [
+    { name: "LUCL Injury", slug: "lucl-injury" },
+    { name: "Radial Head Fracture", slug: "radial-head-fracture" },
+    { name: "Olecranon Fracture", slug: "olecranon-fracture" },
+    { name: "Biceps Tendon Rupture", slug: "biceps-rupture" },
+  ],
+  ctaCard: {
+    eyebrow: "Dislocated elbow?",
+    headline: "Stability first, motion early.",
+  },
+  faqHeadline: "Elbow dislocation, answered.",
+  faqs: [
+    {
+      question: "Do I need surgery after an elbow dislocation?",
+      answer:
+        "Not always. A simple dislocation with no fracture is usually stable once reduced and is treated without surgery, with early guided motion. Dislocations that are unstable or come with fractures of the radial head, coronoid, or olecranon generally need surgery to restore stability so the elbow can move early.",
+    },
+    {
+      question: "How long until my elbow moves normally again?",
+      answer:
+        "Motion usually begins within the first week or two once the joint is stable. Most patients regain a functional range over several weeks to a few months. Some loss of the last few degrees of motion is common, and gentle, supervised therapy is what protects against a stiff elbow.",
+    },
+    {
+      question: "What is the 'terrible triad'?",
+      answer:
+        "It is an elbow dislocation combined with a radial head fracture and a coronoid fracture. It is an unstable injury that almost always needs surgery to repair or replace the radial head, fix the coronoid, and repair the ligaments. It is exactly the kind of complex elbow trauma Dr. Lee is referred to manage.",
+    },
+  ],
+  bottomCtaTitle: "Elbow popped out, or feels unstable?",
+  bottomCtaItalic: "The early plan shapes the outcome.",
+  bottomCtaBody:
+    "Most simple elbow dislocations recover well with prompt reduction and early motion. The injuries that come with fractures need a plan that restores stability without immobilizing the elbow into stiffness. An accurate early assessment is the first step.",
+  metaTitle: "Elbow Dislocation, Steven J. Lee, MD",
+  metaDescription:
+    "Elbow dislocation evaluated and treated by Dr. Steven J. Lee, MD. Simple versus complex dislocations, the terrible triad, reduction, early motion, and surgery for unstable injuries explained.",
+  schemaDescription:
+    "An elbow dislocation is displacement of the forearm bones from the upper arm, classified as simple (no fracture) or complex (with fracture, including the terrible triad). Treatment ranges from reduction and early motion to surgical stabilization.",
+};
+
+const cubitalTunnel: ConditionPageContent = {
+  slug: "cubital-tunnel",
+  name: "Cubital Tunnel Syndrome",
+  region: "Elbow",
+  headerTitle: "Cubital Tunnel Syndrome:",
+  headerItalic: "the other pinched nerve.",
+  headerLede:
+    "Compression of the ulnar nerve at the elbow, the 'funny bone' nerve, causing numbness in the ring and small fingers. It is the second most common nerve compression in the arm after carpal tunnel, and most cases improve without surgery.",
+  byline: elbowByline,
+  overview: [
+    "Cubital tunnel syndrome is compression or irritation of the ulnar nerve as it passes behind the inside of the elbow. Bending the elbow stretches and tightens the space around the nerve, which is why symptoms are often worst at night or when the elbow is held flexed, like holding a phone.",
+    "Most patients notice numbness and tingling in the ring and small fingers. When compression is more advanced, the hand can become weak or clumsy, and in long-standing cases the small muscles of the hand can waste. Catching it before that point matters.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Typical complaints include:"],
+      bullets: [
+        "Numbness and tingling in the ring and small fingers",
+        "Symptoms worse with the elbow bent or at night",
+        "Aching on the inside of the elbow",
+        "Weak grip, dropping things, or clumsiness in advanced cases",
+        "Difficulty spreading the fingers if the nerve is severely affected",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "Diagnosis combines the history and exam with a nerve test (EMG and nerve conduction study) that measures how well the ulnar nerve is working across the elbow. The test also helps grade severity and guide whether surgery is warranted.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Most cubital tunnel cases respond to non-surgical care. Dr. Lee starts with activity changes, avoiding prolonged elbow flexion, a nighttime splint that keeps the elbow relatively straight, and an honest look at what provokes symptoms.",
+      "Surgery is considered when symptoms persist despite these measures, when there is muscle weakness, or when the nerve test shows meaningful damage. The procedure releases the tight structures around the nerve, and in some cases moves the nerve to a less exposed position. Delaying surgery in the presence of weakness or wasting can limit recovery, so timing matters.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["Most patients start, and stay, here:"],
+      bullets: [
+        "A nighttime splint that keeps the elbow from bending fully",
+        "Activity modification to reduce prolonged or repetitive elbow flexion",
+        "Padding the inside of the elbow to limit direct pressure on the nerve",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "When conservative care fails or weakness is present, the nerve is decompressed by releasing the tight tissue over it. Depending on the situation, the nerve may be left in place (in situ decompression) or moved in front of the elbow (transposition). The choice depends on the anatomy and whether the nerve is unstable.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery after surgery is usually straightforward:",
+  recovery: [
+    { when: "Day 0 to 7", what: "Soft dressing or light splint. Move the fingers immediately. Keep the wound dry until the first visit." },
+    { when: "Weeks 1 to 4", what: "Begin gentle elbow motion. Numbness often improves first; strength recovers more gradually." },
+    { when: "Weeks 4 to 12", what: "Progressive strengthening and return to activity. Nerve recovery can continue for months, especially in long-standing cases." },
+  ],
+  misconceptions: {
+    intro: "Worth setting straight:",
+    items: [
+      { heading: "It is not carpal tunnel.", body: "Carpal tunnel affects the median nerve at the wrist (thumb-side fingers). Cubital tunnel affects the ulnar nerve at the elbow (ring and small fingers). The treatments are different, so the right diagnosis matters." },
+      { heading: "Do not wait for weakness.", body: "Severe or long-standing compression can leave permanent numbness or muscle wasting even after a good operation. Persistent symptoms, especially with any weakness, are a reason to be evaluated rather than wait." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Nerve involved", value: "Ulnar nerve at the elbow" },
+    { label: "Affected fingers", value: "Ring and small fingers" },
+    { label: "Worse with", value: "Elbow bent, at night" },
+    { label: "First-line treatment", value: "Night splinting and activity modification" },
+    { label: "Surgical options", value: "In situ decompression or transposition" },
+    { label: "Key point", value: "Treat before weakness or wasting sets in" },
+  ],
+  whyDrLee: [
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
+    "Conservative first, with surgery reserved for persistent or progressing cases",
+    "Performs both in situ decompression and transposition based on the anatomy",
+    "Distinguishes cubital tunnel from carpal tunnel and neck-related symptoms",
+  ],
+  related: [
+    { name: "Carpal Tunnel Syndrome", slug: "carpal-tunnel" },
+    { name: "Wartenberg's Syndrome", slug: "wartenbergs-syndrome" },
+    { name: "Radial Tunnel Syndrome", slug: "radial-tunnel" },
+    { name: "Medial Epicondylitis", slug: "medial-epicondylitis" },
+  ],
+  ctaCard: {
+    eyebrow: "Ring and small fingers asleep?",
+    headline: "Most cubital tunnel improves without surgery.",
+  },
+  faqHeadline: "Cubital tunnel, answered.",
+  faqs: [
+    {
+      question: "Why do my ring and small fingers go numb?",
+      answer:
+        "Those fingers are supplied by the ulnar nerve, which runs behind the inside of the elbow through the cubital tunnel. When the nerve is compressed or irritated there, often made worse by keeping the elbow bent, the result is numbness and tingling in the ring and small fingers, sometimes with aching at the elbow.",
+    },
+    {
+      question: "Will I need surgery?",
+      answer:
+        "Usually not. Most cases improve with a nighttime splint that keeps the elbow from bending fully, along with activity changes. Surgery is considered when symptoms persist despite these measures, when there is weakness, or when nerve testing shows meaningful damage.",
+    },
+    {
+      question: "What does the surgery involve?",
+      answer:
+        "The tight tissue compressing the ulnar nerve is released. Depending on the anatomy and whether the nerve is stable, it is either left in place or moved to the front of the elbow. Numbness often begins improving first, with strength returning more gradually over weeks to months.",
+    },
+  ],
+  bottomCtaTitle: "Numb fingers and an achy elbow?",
+  bottomCtaItalic: "It is usually very manageable.",
+  bottomCtaBody:
+    "Cubital tunnel syndrome is common and most cases settle with simple measures. The reason to be evaluated is to confirm the diagnosis and to treat it before weakness or muscle wasting develops, since those are harder to reverse.",
+  metaTitle: "Cubital Tunnel Syndrome, Steven J. Lee, MD",
+  metaDescription:
+    "Cubital tunnel syndrome (ulnar nerve compression at the elbow) evaluated and treated by Dr. Steven J. Lee, MD. Splinting, activity modification, and decompression or transposition surgery explained.",
+  schemaDescription:
+    "Cubital tunnel syndrome is compression of the ulnar nerve at the elbow, causing numbness in the ring and small fingers. Treatment ranges from night splinting and activity modification to surgical decompression or ulnar nerve transposition.",
+};
+
+const luclInjury: ConditionPageContent = {
+  slug: "lucl-injury",
+  name: "LUCL Injury (Elbow Instability)",
+  region: "Elbow",
+  headerTitle: "LUCL Injury:",
+  headerItalic: "the elbow that clicks and gives way.",
+  headerLede:
+    "Injury to the lateral ulnar collateral ligament, the main stabilizer on the outside of the elbow, leads to posterolateral rotatory instability. Dr. Lee reconstructs these injuries using anchor and internal-brace constructs he helped design.",
+  byline: elbowByline,
+  overview: [
+    "The lateral ulnar collateral ligament (LUCL) is the key stabilizer on the outer side of the elbow. When it is torn or stretched, the joint can rotate and shift abnormally, a pattern called posterolateral rotatory instability (PLRI). It often follows an elbow dislocation, a fall, or, occasionally, prior surgery or repeated cortisone injections at the outer elbow.",
+    "Patients describe clicking, clunking, or a feeling that the elbow is about to give way, usually when pushing up from a chair or with the arm extended and the palm up. Plain symptoms can be subtle, and the diagnosis is often missed until instability is specifically tested for.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Common findings include:"],
+      bullets: [
+        "Clicking, clunking, or catching on the outer elbow",
+        "A sense the elbow may slip or give way, especially pushing up with the palm up",
+        "Pain and apprehension at the outer elbow",
+        "A history of elbow dislocation or injury",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "The diagnosis rests on specific instability tests on examination, supported by MRI and sometimes an examination under anesthesia. Because routine imaging can look normal, an exam by a surgeon who tests for this pattern is what makes the diagnosis.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "The first step is recognizing the instability, which is frequently overlooked. Dr. Lee tests specifically for posterolateral rotatory instability and confirms it with imaging.",
+      "When the ligament is repairable, it is reattached to the bone with suture anchors. When the tissue is insufficient, the ligament is reconstructed with a tendon graft. In both cases an internal brace tape protects the repair during healing and allows earlier motion. Dr. Lee helped design the anchor and internal-brace constructs used in this reconstruction.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Repair",
+      body: [
+        "When the ligament tissue is good, often in a more acute injury, it is reattached to the bone with suture anchors and protected with an internal brace tape, which supports the repair while it heals.",
+      ],
+    },
+    {
+      heading: "Reconstruction",
+      body: [
+        "When the ligament cannot be repaired, it is reconstructed with a tendon graft, again augmented with an internal brace. The construct restores the outer-side stability the elbow depends on.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery protects the reconstruction while restoring motion:",
+  recovery: [
+    { when: "Weeks 0 to 2", what: "Hinged brace, protecting the repaired ligament. Begin guided motion within a safe arc. Hand and shoulder motion encouraged." },
+    { when: "Weeks 2 to 6", what: "Progressive motion in the brace. Avoid positions that stress the repair." },
+    { when: "Weeks 6 to 16", what: "Strengthening and a graded return to activity and sport, guided by stability and strength." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "It is often missed.", body: "Posterolateral rotatory instability can be subtle and is frequently overlooked, sometimes mislabeled as tennis elbow. A targeted instability exam is what uncovers it." },
+      { heading: "Repeated cortisone at the outer elbow can contribute.", body: "Multiple steroid injections into the outer elbow can weaken the ligament. This is one reason injections for outer-elbow pain are used judiciously." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Ligament involved", value: "Lateral ulnar collateral ligament (LUCL)" },
+    { label: "Result", value: "Posterolateral rotatory instability (PLRI)" },
+    { label: "Common cause", value: "Elbow dislocation or injury" },
+    { label: "Surgical options", value: "Repair with internal brace, or tendon-graft reconstruction" },
+    { label: "Implants used", value: "Anchor and internal-brace constructs Dr. Lee helped design" },
+    { label: "Key step", value: "Recognizing the instability on exam" },
+  ],
+  whyDrLee: [
+    "Co-designer of the anchor and internal-brace system used in reconstruction",
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
+    "Tests specifically for posterolateral rotatory instability, which is often missed",
+    "Treats instability after elbow dislocation and failed prior treatment",
+  ],
+  related: [
+    { name: "Elbow Dislocation", slug: "elbow-dislocation" },
+    { name: "UCL Tear (Tommy John)", slug: "ucl-reconstruction" },
+    { name: "Radial Head Fracture", slug: "radial-head-fracture" },
+    { name: "Lateral Epicondylitis", slug: "lateral-epicondylitis" },
+  ],
+  ctaCard: {
+    eyebrow: "Elbow clicking or giving way?",
+    headline: "Instability is treatable once it is found.",
+  },
+  faqHeadline: "LUCL injury and elbow instability, answered.",
+  faqs: [
+    {
+      question: "What does a LUCL injury feel like?",
+      answer:
+        "Most people notice clicking, clunking, or a feeling that the elbow might slip or give way, often when pushing up from a chair with the palm turned up, or with the arm extended. There is usually pain and apprehension on the outer side of the elbow, frequently after a previous dislocation or injury.",
+    },
+    {
+      question: "Why was it missed before?",
+      answer:
+        "Posterolateral rotatory instability can be subtle, and routine X-rays often look normal. It is diagnosed with specific instability tests on examination, supported by MRI. An evaluation by a surgeon who tests for this pattern is what typically makes the diagnosis.",
+    },
+    {
+      question: "How is it fixed?",
+      answer:
+        "If the ligament tissue is good, it is reattached to the bone with suture anchors and protected with an internal brace tape. If the tissue is insufficient, it is reconstructed with a tendon graft, also augmented with an internal brace. Dr. Lee helped design the anchor and internal-brace constructs used for this reconstruction.",
+    },
+  ],
+  bottomCtaTitle: "Elbow that clicks, catches, or feels unstable?",
+  bottomCtaItalic: "The fix starts with the right diagnosis.",
+  bottomCtaBody:
+    "Lateral elbow instability is treatable, but it has to be recognized first. Dr. Lee tests specifically for posterolateral rotatory instability and reconstructs it with anchor and internal-brace techniques he helped design.",
+  metaTitle: "LUCL Injury and Elbow Instability, Steven J. Lee, MD",
+  metaDescription:
+    "LUCL injury and posterolateral rotatory instability of the elbow, treated by Dr. Steven J. Lee, MD, co-designer of the anchor and internal-brace constructs used in reconstruction. Diagnosis, repair, and reconstruction explained.",
+  schemaDescription:
+    "A LUCL (lateral ulnar collateral ligament) injury causes posterolateral rotatory instability of the elbow. Treatment is ligament repair with an internal brace or tendon-graft reconstruction.",
+};
+
+const tricepsTear: ConditionPageContent = {
+  slug: "triceps-tear",
+  name: "Triceps Tendon Tear",
+  region: "Elbow",
+  headerTitle: "Triceps Tendon Tear:",
+  headerItalic: "the tendon that straightens the elbow.",
+  headerLede:
+    "A tear of the triceps tendon where it attaches to the back of the elbow weakens the ability to straighten the arm. Complete tears are usually repaired surgically, and the results are reliable when treated promptly.",
+  byline: elbowByline,
+  overview: [
+    "The triceps tendon attaches the triceps muscle to the olecranon, the bony point of the elbow, and it is what straightens the elbow against resistance. A tear most often happens from a fall onto an outstretched hand or a sudden forceful load, like a missed bench-press lockout.",
+    "Triceps tendon ruptures are relatively uncommon, which is part of why they are sometimes missed. A complete tear leaves a gap and noticeable weakness with pushing, while partial tears may keep some strength. Distinguishing the two guides treatment.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Common findings include:"],
+      bullets: [
+        "Pain and swelling at the back of the elbow after a fall or forceful effort",
+        "Weakness straightening the elbow, especially pushing or pressing",
+        "A palpable gap or divot above the elbow in complete tears",
+        "Bruising along the back of the arm",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "The exam tests the ability to actively straighten the elbow against gravity and resistance. X-rays may show a small fleck of bone pulled off with the tendon, and MRI confirms whether the tear is partial or complete and how much tendon is involved.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "The key decision is whether the tear is complete. A complete rupture loses meaningful pushing strength and, in active patients, is repaired surgically, ideally sooner rather than later, because a retracted tendon is harder to bring back.",
+      "Dr. Lee reattaches the tendon to the bone with a secure suture-anchor and transosseous construct that allows early, protected motion. Partial tears in lower-demand patients can often be managed without surgery, with bracing and a careful rehabilitation program.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "Low-grade partial tears, particularly in lower-demand patients who retain good extension strength, can be treated with a period of bracing followed by progressive rehabilitation.",
+      ],
+    },
+    {
+      heading: "Surgical repair",
+      body: [
+        "Complete tears, and partial tears with meaningful weakness in active patients, are repaired by reattaching the tendon to the olecranon with a strong suture-anchor and transosseous construct. Secure fixation is what allows protected motion to start early and limits stiffness.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery balances protecting the repair with restoring motion:",
+  recovery: [
+    { when: "Weeks 0 to 2", what: "Splint or hinged brace with the elbow relatively straight to protect the repair. Hand and shoulder motion encouraged." },
+    { when: "Weeks 2 to 6", what: "Progressive guided motion in a brace, avoiding active straightening against resistance." },
+    { when: "Weeks 6 to 16", what: "Strengthening and a graded return to pushing, pressing, and sport as healing allows." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "It is easy to underestimate.", body: "Because triceps ruptures are uncommon, they can be mistaken for a bruise or sprain. Persistent weakness straightening the elbow after an injury deserves an evaluation." },
+      { heading: "Timing helps the repair.", body: "A complete tear repaired promptly is more straightforward than one addressed months later, after the tendon has retracted and scarred." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Tendon involved", value: "Triceps, at the olecranon" },
+    { label: "Function lost", value: "Straightening the elbow against resistance" },
+    { label: "Common cause", value: "Fall onto an outstretched hand or forceful load" },
+    { label: "Surgical option", value: "Suture-anchor and transosseous reattachment" },
+    { label: "Timing", value: "Earlier repair is more straightforward" },
+  ],
+  whyDrLee: [
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
+    "Secure reattachment that allows early protected motion",
+    "Distinguishes partial from complete tears to guide treatment",
+    "Treats both acute ruptures and neglected, retracted tears",
+  ],
+  related: [
+    { name: "Biceps Tendon Rupture", slug: "biceps-rupture" },
+    { name: "Olecranon Fracture", slug: "olecranon-fracture" },
+    { name: "Elbow Dislocation", slug: "elbow-dislocation" },
+    { name: "Lateral Epicondylitis", slug: "lateral-epicondylitis" },
+  ],
+  ctaCard: {
+    eyebrow: "Weak straightening the elbow?",
+    headline: "A triceps tear is worth ruling out.",
+  },
+  faqHeadline: "Triceps tendon tears, answered.",
+  faqs: [
+    {
+      question: "How do I know if I tore my triceps?",
+      answer:
+        "The classic signs after a fall or forceful effort are pain and swelling at the back of the elbow, weakness straightening the arm against resistance, and sometimes a gap you can feel above the elbow. Weakness with pushing that does not recover deserves an evaluation, since complete tears are best treated promptly.",
+    },
+    {
+      question: "Do all triceps tears need surgery?",
+      answer:
+        "No. Low-grade partial tears in lower-demand patients who keep good strength can be managed with bracing and rehabilitation. Complete tears, and partial tears with meaningful weakness in active patients, are usually repaired surgically by reattaching the tendon to the bone.",
+    },
+    {
+      question: "How long is recovery after repair?",
+      answer:
+        "The elbow is protected early to let the tendon heal, with guided motion beginning in the first weeks and active straightening against resistance added later. Most patients work back to strengthening by around six weeks and a graded return to full activity over the following months.",
+    },
+  ],
+  bottomCtaTitle: "Hurt the back of your elbow and lost pushing strength?",
+  bottomCtaItalic: "Prompt evaluation protects the result.",
+  bottomCtaBody:
+    "A complete triceps tear is repaired most reliably when it is treated promptly, before the tendon retracts. If you have lasting weakness straightening the elbow after an injury, it is worth an evaluation.",
+  metaTitle: "Triceps Tendon Tear, Steven J. Lee, MD",
+  metaDescription:
+    "Triceps tendon tear at the elbow evaluated and treated by Dr. Steven J. Lee, MD. Partial versus complete tears, bracing, and surgical reattachment explained.",
+  schemaDescription:
+    "A triceps tendon tear is a partial or complete rupture of the triceps at its attachment to the olecranon, weakening elbow extension. Treatment ranges from bracing to surgical reattachment.",
+};
+
+const lateralEpicondylitis: ConditionPageContent = {
+  slug: "lateral-epicondylitis",
+  name: "Lateral Epicondylitis (Tennis Elbow)",
+  region: "Elbow",
+  headerTitle: "Tennis Elbow:",
+  headerItalic: "outer elbow pain, and how it actually heals.",
+  headerLede:
+    "Lateral epicondylitis, or tennis elbow, is pain at the outer elbow from wear in the tendon that extends the wrist. The large majority improve without surgery, though it can be slow, and most cases have nothing to do with tennis.",
+  byline: elbowByline,
+  overview: [
+    "Tennis elbow is a wear-and-repair problem of the tendon that attaches the wrist-extensor muscles to the outer elbow, most often the ECRB tendon. Despite the name 'itis,' it is less an active inflammation than a tendon that has degenerated and failed to heal, which is why it can be stubborn.",
+    "Pain sits at the bony point on the outside of the elbow and flares with gripping, lifting, or shaking hands. It is common in people who do repetitive gripping at work or in sport, and most people who have it have never played tennis.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Typical complaints include:"],
+      bullets: [
+        "Pain and tenderness over the bony point on the outer elbow",
+        "Pain with gripping, lifting, or turning a doorknob or jar",
+        "A weak or painful grip",
+        "Symptoms that come on gradually rather than from a single injury",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "It is largely a clinical diagnosis based on tenderness over the outer elbow and pain reproduced by resisted wrist and finger extension. Imaging is reserved for cases that do not improve as expected or when another problem, such as outer-elbow instability or nerve irritation, is suspected.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Tennis elbow is treated patiently and conservatively, because the large majority resolve with time and the right rehabilitation. Dr. Lee emphasizes activity modification, a structured eccentric exercise program, and a counterforce brace, the measures with the best track record.",
+      "Corticosteroid injections can calm a bad flare but are used sparingly, because repeated steroid at the outer elbow can weaken the tendon and the supporting ligament. For cases that stall, PRP is an option Dr. Lee discusses, and surgery to remove the degenerated tendon tissue is reserved for the small minority who do not improve after a genuine, extended course of conservative care.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["Most patients improve with a combination of:"],
+      bullets: [
+        "Activity modification to reduce provocative gripping",
+        "A structured eccentric strengthening program with a therapist",
+        "A counterforce brace or wrist splint to offload the tendon",
+        "A corticosteroid injection used sparingly for a significant flare",
+      ],
+    },
+    {
+      heading: "When conservative care stalls",
+      body: [
+        "PRP (platelet-rich plasma) is sometimes used for tendons that are not healing. Surgery, which removes the degenerated portion of the tendon and stimulates healing, is reserved for the small minority with pain that persists after an extended, genuine trial of conservative treatment.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery is usually measured in weeks to months, not days:",
+  recovery: [
+    { when: "Weeks 0 to 6", what: "Activity modification, bracing, and a structured exercise program. Expect gradual, not immediate, improvement." },
+    { when: "Weeks 6 to 12", what: "Continued strengthening and a graded return to gripping activities and sport." },
+    { when: "After surgery (rare)", what: "Protected motion early, then progressive strengthening over two to three months, reserved for the small group who needed it." },
+  ],
+  misconceptions: {
+    intro: "Worth setting straight:",
+    items: [
+      { heading: "It is not really inflammation.", body: "Tennis elbow is mostly tendon degeneration rather than active inflammation, which is why rest alone often is not enough and a loading program works better." },
+      { heading: "Repeated cortisone is not the answer.", body: "A single injection can help a flare, but repeated steroid injections at the outer elbow can weaken the tendon and ligament, so they are used sparingly." },
+      { heading: "Most cases never need surgery.", body: "The large majority of tennis elbow resolves with patience and rehabilitation. Surgery is for the small minority who do not improve after an extended trial." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Tendon involved", value: "Common wrist extensors (ECRB) at the outer elbow" },
+    { label: "Nature", value: "Tendon degeneration more than inflammation" },
+    { label: "First-line treatment", value: "Activity modification, eccentric exercise, bracing" },
+    { label: "Injections", value: "Corticosteroid used sparingly; PRP an option" },
+    { label: "Surgery", value: "Rare, for cases that fail extended conservative care" },
+  ],
+  whyDrLee: [
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
+    "Conservative, structured rehabilitation first, the approach with the best track record",
+    "Uses steroid injections judiciously to protect the tendon and ligament",
+    "Among the first surgeons in NYC to use PRP for upper-extremity tendon problems",
+  ],
+  related: [
+    { name: "Medial Epicondylitis", slug: "medial-epicondylitis" },
+    { name: "Radial Tunnel Syndrome", slug: "radial-tunnel" },
+    { name: "LUCL Injury", slug: "lucl-injury" },
+    { name: "PRP (Platelet-Rich Plasma) Injections", slug: "prp-injections" },
+  ],
+  ctaCard: {
+    eyebrow: "Outer elbow pain with gripping?",
+    headline: "Most tennis elbow heals without surgery.",
+  },
+  faqHeadline: "Tennis elbow, answered.",
+  faqs: [
+    {
+      question: "Do I have to play tennis to get tennis elbow?",
+      answer:
+        "No. Most people with tennis elbow have never played tennis. It comes from repetitive gripping and wrist use at work, at home, or in sport, which wears the tendon that attaches to the outer elbow. The name refers to a common cause, not the only one.",
+    },
+    {
+      question: "Will I need surgery?",
+      answer:
+        "Almost certainly not. The large majority of cases improve with activity modification, a structured eccentric exercise program, and a counterforce brace, though it can take weeks to months. Surgery is reserved for the small minority whose pain persists after an extended, genuine trial of conservative care.",
+    },
+    {
+      question: "Are cortisone shots a good idea?",
+      answer:
+        "A single injection can settle a significant flare, but repeated steroid injections at the outer elbow can weaken the tendon and the nearby ligament, so they are used sparingly. For tendons that are not healing, PRP is an option to discuss, and a loading exercise program remains the foundation.",
+    },
+  ],
+  bottomCtaTitle: "Outer elbow pain that will not settle?",
+  bottomCtaItalic: "Patience and the right program usually win.",
+  bottomCtaBody:
+    "Tennis elbow can be stubborn, but the large majority resolve with activity modification, a structured exercise program, and bracing. Injections are used carefully, and surgery is rarely needed. An accurate diagnosis also rules out the conditions that mimic it.",
+  metaTitle: "Lateral Epicondylitis (Tennis Elbow), Steven J. Lee, MD",
+  metaDescription:
+    "Tennis elbow (lateral epicondylitis) evaluated and treated by Dr. Steven J. Lee, MD. Activity modification, eccentric exercise, bracing, injections, PRP, and when surgery is considered, explained.",
+  schemaDescription:
+    "Lateral epicondylitis (tennis elbow) is degeneration of the common extensor tendon at the outer elbow, causing pain with gripping. Treatment is mainly activity modification, exercise, and bracing, with injections or surgery in selected cases.",
+};
+
+const medialEpicondylitis: ConditionPageContent = {
+  slug: "medial-epicondylitis",
+  name: "Medial Epicondylitis (Golfer's Elbow)",
+  region: "Elbow",
+  headerTitle: "Golfer's Elbow:",
+  headerItalic: "inner elbow pain, treated patiently.",
+  headerLede:
+    "Medial epicondylitis, or golfer's elbow, is pain at the inner elbow from wear in the tendons that flex the wrist. Like tennis elbow, the large majority improve without surgery, with attention to the nearby ulnar nerve.",
+  byline: elbowByline,
+  overview: [
+    "Golfer's elbow is a wear-and-repair problem of the flexor-pronator tendons where they attach to the inner side of the elbow. It is the inner-elbow counterpart to tennis elbow and, like it, is more tendon degeneration than active inflammation.",
+    "Pain sits over the bony bump on the inside of the elbow and flares with gripping, lifting, and wrist flexion. Because the ulnar nerve runs just behind this area, some patients also have tingling in the ring and small fingers, which is checked for as part of the evaluation.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Typical complaints include:"],
+      bullets: [
+        "Pain and tenderness over the bony bump on the inner elbow",
+        "Pain with gripping, lifting, or flexing the wrist",
+        "A weaker or painful grip",
+        "Sometimes tingling in the ring and small fingers if the ulnar nerve is irritated",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "The diagnosis is clinical, based on tenderness over the inner elbow and pain with resisted wrist flexion and forearm rotation. Because the ulnar nerve is nearby, the exam also screens for cubital tunnel symptoms, which can coexist and change the plan.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "As with tennis elbow, golfer's elbow is treated patiently and conservatively, because the large majority resolve with time and a structured rehabilitation program. Dr. Lee emphasizes activity modification, eccentric strengthening, and bracing.",
+      "Injections are used carefully because of the ulnar nerve's proximity. PRP is an option for tendons that are not healing, and surgery to address the degenerated tendon, sometimes alongside an ulnar nerve procedure, is reserved for the small minority who do not improve after an extended trial of conservative care.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["Most patients improve with:"],
+      bullets: [
+        "Activity modification to reduce provocative gripping and wrist flexion",
+        "A structured eccentric strengthening program",
+        "A counterforce brace or wrist splint",
+        "A corticosteroid injection used sparingly, with care around the ulnar nerve",
+      ],
+    },
+    {
+      heading: "When conservative care stalls",
+      body: [
+        "PRP is sometimes used for a tendon that is not healing. Surgery, reserved for the small minority who do not improve after an extended trial, addresses the degenerated tendon and, when the ulnar nerve is involved, decompresses it at the same time.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery is usually measured in weeks to months:",
+  recovery: [
+    { when: "Weeks 0 to 6", what: "Activity modification, bracing, and a structured exercise program. Improvement is gradual." },
+    { when: "Weeks 6 to 12", what: "Progressive strengthening and a graded return to gripping activities and sport." },
+    { when: "After surgery (rare)", what: "Protected motion early, then strengthening over two to three months, for the small group who needed it." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "Check the nerve, not just the tendon.", body: "The ulnar nerve runs right behind the inner elbow, so tingling in the ring and small fingers may mean cubital tunnel is part of the picture, which changes treatment." },
+      { heading: "It is mostly degeneration.", body: "Like tennis elbow, golfer's elbow is more a worn tendon than active inflammation, so a loading exercise program tends to work better than rest alone." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Tendons involved", value: "Flexor-pronator group at the inner elbow" },
+    { label: "Nearby structure", value: "Ulnar nerve (check for cubital tunnel)" },
+    { label: "First-line treatment", value: "Activity modification, eccentric exercise, bracing" },
+    { label: "Injections", value: "Used carefully near the nerve; PRP an option" },
+    { label: "Surgery", value: "Rare, for cases that fail extended conservative care" },
+  ],
+  whyDrLee: [
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
+    "Conservative, structured rehabilitation first",
+    "Screens for ulnar nerve involvement that can accompany inner-elbow pain",
+    "Among the first surgeons in NYC to use PRP for upper-extremity tendon problems",
+  ],
+  related: [
+    { name: "Lateral Epicondylitis", slug: "lateral-epicondylitis" },
+    { name: "Cubital Tunnel Syndrome", slug: "cubital-tunnel" },
+    { name: "UCL Tear (Tommy John)", slug: "ucl-reconstruction" },
+    { name: "PRP (Platelet-Rich Plasma) Injections", slug: "prp-injections" },
+  ],
+  ctaCard: {
+    eyebrow: "Inner elbow pain with gripping?",
+    headline: "Most golfer's elbow heals without surgery.",
+  },
+  faqHeadline: "Golfer's elbow, answered.",
+  faqs: [
+    {
+      question: "What is the difference between golfer's elbow and tennis elbow?",
+      answer:
+        "They are the same kind of problem on opposite sides of the elbow. Golfer's elbow (medial epicondylitis) affects the flexor tendons on the inner side; tennis elbow (lateral epicondylitis) affects the extensor tendons on the outer side. Golfer's elbow also sits next to the ulnar nerve, so nerve symptoms are checked for.",
+    },
+    {
+      question: "Will I need surgery?",
+      answer:
+        "Almost certainly not. The large majority improve with activity modification, a structured eccentric exercise program, and bracing, though it can take weeks to months. Surgery is reserved for the small minority whose pain persists after an extended, genuine trial of conservative care.",
+    },
+    {
+      question: "Why do my ring and small fingers tingle with this?",
+      answer:
+        "The ulnar nerve runs just behind the inner elbow. When the area is irritated, the nerve can be too, producing tingling in the ring and small fingers. If that is present, cubital tunnel syndrome may be part of the picture, which is evaluated and addressed as part of the plan.",
+    },
+  ],
+  bottomCtaTitle: "Inner elbow pain that lingers?",
+  bottomCtaItalic: "A patient, structured approach usually works.",
+  bottomCtaBody:
+    "Golfer's elbow is stubborn but usually resolves with activity modification, a structured exercise program, and bracing. Injections are used carefully near the ulnar nerve, and surgery is rarely needed. The evaluation also checks the nerve, which can be part of the problem.",
+  metaTitle: "Medial Epicondylitis (Golfer's Elbow), Steven J. Lee, MD",
+  metaDescription:
+    "Golfer's elbow (medial epicondylitis) evaluated and treated by Dr. Steven J. Lee, MD. Activity modification, eccentric exercise, bracing, injections, PRP, and the role of the ulnar nerve explained.",
+  schemaDescription:
+    "Medial epicondylitis (golfer's elbow) is degeneration of the flexor-pronator tendons at the inner elbow, causing pain with gripping. Treatment is mainly activity modification, exercise, and bracing, with attention to the nearby ulnar nerve.",
+};
+
+const radialTunnel: ConditionPageContent = {
+  slug: "radial-tunnel",
+  name: "Radial Tunnel Syndrome",
+  region: "Elbow",
+  headerTitle: "Radial Tunnel Syndrome:",
+  headerItalic: "the deep forearm ache mistaken for tennis elbow.",
+  headerLede:
+    "Compression of the radial nerve in the forearm just past the elbow causes a deep, aching pain that is often confused with tennis elbow. Most cases improve without surgery once the diagnosis is made.",
+  byline: elbowByline,
+  overview: [
+    "Radial tunnel syndrome is compression of the posterior interosseous nerve, a branch of the radial nerve, as it passes through the muscles of the upper forearm. The result is a deep, aching pain on the outer forearm, typically a few centimeters below the bony point of the elbow.",
+    "Because the pain sits near the outer elbow, it is frequently mistaken for tennis elbow, and the two can coexist. The distinction matters, because the treatments differ. Unlike a related condition, radial tunnel syndrome is usually a pain problem without true muscle weakness.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Typical complaints include:"],
+      bullets: [
+        "A deep, aching pain on the outer forearm, below the elbow",
+        "Tenderness over the muscle a few centimeters past the bony outer elbow, not directly on it",
+        "Pain worse with repetitive twisting of the forearm and gripping",
+        "Usually no true weakness, which distinguishes it from a related nerve problem",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "Radial tunnel syndrome is a clinical diagnosis. The point of maximum tenderness is over the forearm muscle rather than the bony outer elbow, and specific provocative maneuvers reproduce the pain. A diagnostic nerve block can help confirm it, and nerve testing is often normal, which is part of why it is challenging to diagnose.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "The first task is to separate radial tunnel syndrome from tennis elbow, since they overlap and are treated differently. Dr. Lee localizes the tenderness carefully and uses provocative tests, and sometimes a diagnostic injection, to confirm the source.",
+      "Most patients improve with activity modification, splinting, and time. When pain persists despite a genuine course of conservative care, surgical decompression releases the structures compressing the nerve. Because the diagnosis can be subtle, careful selection is what makes surgery worthwhile.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["Most patients improve with:"],
+      bullets: [
+        "Activity modification to reduce repetitive forearm rotation and gripping",
+        "A wrist or forearm splint to rest the area",
+        "Anti-inflammatory measures and a structured therapy program",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "When pain persists despite an adequate trial of conservative care, and the diagnosis is confirmed, the nerve is decompressed by releasing the tight structures of the radial tunnel. Careful patient selection is essential because the diagnosis can be subtle.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery depends on the treatment:",
+  recovery: [
+    { when: "Non-surgical", what: "Activity modification and splinting over several weeks, with gradual improvement." },
+    { when: "After surgery, weeks 0 to 2", what: "Soft dressing and a light splint. Early gentle motion of the hand and wrist." },
+    { when: "After surgery, weeks 2 to 8", what: "Progressive motion and strengthening, with a graded return to forearm-intensive activity." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "It is not the same as tennis elbow.", body: "The tenderness in radial tunnel syndrome sits over the forearm muscle, not directly on the bony outer elbow. The two can coexist, but treating one will not fix the other." },
+      { heading: "Normal tests do not rule it out.", body: "Nerve conduction studies are often normal in radial tunnel syndrome, which is part of why it is challenging to diagnose. The diagnosis rests on a careful exam and the response to a diagnostic block." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Nerve involved", value: "Posterior interosseous (radial) nerve in the forearm" },
+    { label: "Pain location", value: "Outer forearm, below the elbow" },
+    { label: "Often confused with", value: "Tennis elbow (they can coexist)" },
+    { label: "Weakness", value: "Usually absent (distinguishes it from PIN syndrome)" },
+    { label: "First-line treatment", value: "Activity modification and splinting" },
+    { label: "Surgery", value: "Decompression for confirmed, persistent cases" },
+  ],
+  whyDrLee: [
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
+    "Experienced with peripheral-nerve compressions of the upper extremity",
+    "Separates radial tunnel syndrome from tennis elbow, which often coexist",
+    "Conservative first, with surgery reserved for confirmed, persistent cases",
+  ],
+  related: [
+    { name: "Lateral Epicondylitis", slug: "lateral-epicondylitis" },
+    { name: "Wartenberg's Syndrome", slug: "wartenbergs-syndrome" },
+    { name: "Cubital Tunnel Syndrome", slug: "cubital-tunnel" },
+    { name: "Carpal Tunnel Syndrome", slug: "carpal-tunnel" },
+  ],
+  ctaCard: {
+    eyebrow: "Deep forearm ache near the elbow?",
+    headline: "It may not be tennis elbow.",
+  },
+  faqHeadline: "Radial tunnel syndrome, answered.",
+  faqs: [
+    {
+      question: "How is this different from tennis elbow?",
+      answer:
+        "Both cause outer-elbow-area pain, but the tender spot is different. In tennis elbow it is directly over the bony point of the outer elbow; in radial tunnel syndrome it is over the forearm muscle a few centimeters below it. The two can occur together, and they are treated differently, so localizing the pain carefully matters.",
+    },
+    {
+      question: "Why were my nerve tests normal?",
+      answer:
+        "Nerve conduction studies are frequently normal in radial tunnel syndrome, because the problem is more a pain syndrome than a measurable loss of nerve function. The diagnosis rests on a careful examination, provocative tests, and sometimes the response to a diagnostic injection.",
+    },
+    {
+      question: "Will I need surgery?",
+      answer:
+        "Most patients improve with activity modification, splinting, and time. Surgery, which decompresses the nerve, is reserved for confirmed cases whose pain persists despite a genuine course of conservative care. Careful patient selection is what makes it worthwhile.",
+    },
+  ],
+  bottomCtaTitle: "Forearm pain that was called tennis elbow but is not improving?",
+  bottomCtaItalic: "An accurate diagnosis changes the plan.",
+  bottomCtaBody:
+    "Radial tunnel syndrome is easy to confuse with tennis elbow, and the two can coexist. Localizing the pain and confirming the nerve as the source is what directs the right treatment. Most cases improve without surgery.",
+  metaTitle: "Radial Tunnel Syndrome, Steven J. Lee, MD",
+  metaDescription:
+    "Radial tunnel syndrome evaluated and treated by Dr. Steven J. Lee, MD. How it differs from tennis elbow, why nerve tests can be normal, and conservative versus surgical treatment explained.",
+  schemaDescription:
+    "Radial tunnel syndrome is compression of the posterior interosseous (radial) nerve in the forearm, causing a deep aching pain often confused with tennis elbow. Treatment ranges from activity modification and splinting to surgical decompression.",
+};
+
+const radialHeadFracture: ConditionPageContent = {
+  slug: "radial-head-fracture",
+  name: "Radial Head Fracture",
+  region: "Elbow",
+  headerTitle: "Radial Head Fracture:",
+  headerItalic: "the common elbow fracture, and early motion.",
+  headerLede:
+    "The radial head is the most commonly fractured bone in the adult elbow, usually after a fall onto an outstretched hand. Many are stable and treated with early motion; displaced fractures are fixed or replaced, using elbow hardware Dr. Lee helped design.",
+  byline: elbowByline,
+  overview: [
+    "The radial head is part of the elbow joint on the thumb side, and it helps the forearm rotate and the elbow stay stable. It is the most commonly fractured bone in the adult elbow, almost always from a fall onto an outstretched hand.",
+    "Radial head fractures are graded by how displaced and fragmented they are. Just as important is what comes with them, because these fractures can accompany elbow dislocations, ligament injuries, or, less commonly, a forearm injury that destabilizes the wrist. A careful look for associated injuries shapes the treatment.",
+  ],
+  bodySections: [
+    {
+      heading: "Why associated injuries matter",
+      body: [
+        "An isolated, non-displaced radial head fracture is a very different injury than one that comes with a dislocation or ligament tear. The radial head is a key stabilizer, so when it is fractured as part of a larger injury, restoring or replacing it is part of keeping the elbow stable.",
+      ],
+    },
+    {
+      heading: "Symptoms",
+      body: ["Common findings after a fall include:"],
+      bullets: [
+        "Pain and swelling on the outer side of the elbow",
+        "Pain and limitation turning the palm up and down",
+        "Tenderness directly over the radial head",
+        "A sense of blocking or catching with forearm rotation in displaced fractures",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee's first priority is to see the whole injury, not just the fracture, by checking the elbow for stability and looking for ligament injuries and forearm involvement. Many radial head fractures are stable and do beautifully with early motion rather than prolonged immobilization.",
+      "When a fracture is displaced and blocks motion, it is fixed with small implants, or, when it is too fragmented to reconstruct, replaced. Dr. Lee uses fixation hardware, including elbow plating systems he helped design, and emphasizes starting motion early to protect against the stiffness the elbow is prone to.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "Stable, minimally displaced fractures are treated with a brief period of support followed by early motion. Starting to move the elbow within the first week, once it is safe, is the best protection against stiffness.",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "Displaced fractures that block rotation are fixed with small screws or plates. When the radial head is too fragmented to reconstruct, or instability requires it, it is replaced with an implant. Dr. Lee uses elbow fixation hardware he helped design and prioritizes early, protected motion afterward.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery centers on early, protected motion:",
+  recovery: [
+    { when: "Weeks 0 to 2", what: "Brief support, then begin gentle motion early once it is safe. Hand, wrist, and shoulder motion encouraged." },
+    { when: "Weeks 2 to 6", what: "Progressive range of motion, including forearm rotation, in therapy." },
+    { when: "Weeks 6 to 12", what: "Strengthening and a graded return to activity. Some loss of the last few degrees of motion is common." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "Long immobilization causes stiffness.", body: "The old instinct to keep a fractured elbow still for weeks tends to backfire. For stable radial head fractures, early motion is what protects function." },
+      { heading: "Look beyond the fracture.", body: "A radial head fracture can be the visible part of a larger injury that includes a dislocation or ligament tear. Checking elbow stability and the forearm changes the plan." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Bone involved", value: "Radial head (most fractured bone in the adult elbow)" },
+    { label: "Mechanism", value: "Fall onto an outstretched hand" },
+    { label: "Priority", value: "Check elbow stability and associated injuries" },
+    { label: "Surgical options", value: "Screw or plate fixation, or radial head replacement" },
+    { label: "Hardware", value: "Elbow fixation systems Dr. Lee helped design" },
+    { label: "Recovery focus", value: "Early protected motion" },
+  ],
+  whyDrLee: [
+    "Helped design elbow fixation systems used in these repairs",
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
+    "Evaluates the whole injury, including ligaments and the forearm",
+    "Early-motion focus to protect against elbow stiffness",
+  ],
+  related: [
+    { name: "Elbow Dislocation", slug: "elbow-dislocation" },
+    { name: "Olecranon Fracture", slug: "olecranon-fracture" },
+    { name: "LUCL Injury", slug: "lucl-injury" },
+    { name: "Biceps Tendon Rupture", slug: "biceps-rupture" },
+  ],
+  ctaCard: {
+    eyebrow: "Outer elbow pain after a fall?",
+    headline: "Stable fractures move early.",
+  },
+  faqHeadline: "Radial head fractures, answered.",
+  faqs: [
+    {
+      question: "Do I need surgery for a radial head fracture?",
+      answer:
+        "Often not. Stable, minimally displaced fractures are treated with brief support and early motion. Surgery is for fractures that are displaced and block forearm rotation, or that come with instability, in which case the bone is fixed with small implants or, if too fragmented, replaced.",
+    },
+    {
+      question: "Why start moving it so soon?",
+      answer:
+        "The elbow stiffens faster than almost any other joint when it is held still. For stable radial head fractures, beginning gentle motion within the first week, once it is safe, is the best protection against a permanently stiff elbow.",
+    },
+    {
+      question: "What else is checked besides the fracture?",
+      answer:
+        "Because the radial head is an important stabilizer, Dr. Lee checks the elbow for ligament injuries and instability and looks at the forearm and wrist. A radial head fracture can be part of a larger injury, and recognizing that changes the treatment.",
+    },
+  ],
+  bottomCtaTitle: "Hurt your elbow in a fall?",
+  bottomCtaItalic: "Most radial head fractures do well with early motion.",
+  bottomCtaBody:
+    "The radial head is the most commonly fractured bone in the adult elbow. Many are stable and recover well with early motion, while displaced fractures are fixed or replaced. The key is to evaluate the whole injury and to avoid the stiffness that comes from immobilizing the elbow too long.",
+  metaTitle: "Radial Head Fracture, Steven J. Lee, MD",
+  metaDescription:
+    "Radial head fracture evaluated and treated by Dr. Steven J. Lee, MD. Early motion for stable fractures, fixation or replacement for displaced ones, and the importance of associated injuries explained.",
+  schemaDescription:
+    "A radial head fracture is the most common fracture of the adult elbow, often from a fall onto an outstretched hand. Treatment ranges from early motion for stable fractures to screw or plate fixation or radial head replacement for displaced ones.",
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Shoulder additions (Dr. Lee feedback, June 2026)
+const shoulderByline = {
+  name: "Steven J. Lee, MD",
+  title: "Double Fellowship-Trained · Hand & Sports Medicine",
+  reviewed: "May 2026",
+};
+
+const acSeparation: ConditionPageContent = {
+  slug: "ac-separation",
+  name: "Shoulder Separation (AC Joint)",
+  region: "Shoulder",
+  headerTitle: "Shoulder Separation:",
+  headerItalic: "the bump on top of the shoulder.",
+  headerLede:
+    "A shoulder separation is an injury to the acromioclavicular (AC) joint on top of the shoulder, usually from a fall directly onto the shoulder. Most low-grade separations recover without surgery; higher-grade injuries are evaluated for reconstruction.",
+  byline: shoulderByline,
+  overview: [
+    "A shoulder separation is not the same as a shoulder dislocation. It is an injury to the acromioclavicular joint, where the collarbone meets the tip of the shoulder blade, almost always from a fall directly onto the point of the shoulder, common in cycling, contact sports, and skiing.",
+    "Separations are graded by how much the ligaments are torn and how far the collarbone has shifted. Low grades stay well aligned and heal with time; higher grades leave a visible bump and may need reconstruction. The grade guides the plan.",
+  ],
+  bodySections: [
+    {
+      heading: "Grades, in plain terms",
+      body: [
+        "Low-grade separations (types 1 and 2) involve a sprain or partial tear and stay aligned. Type 3 is a complete ligament tear with a visible bump and is often treated without surgery first. High-grade separations (types 4 through 6) are more displaced and usually need surgery.",
+      ],
+    },
+    {
+      heading: "Symptoms",
+      body: ["Common findings after a fall onto the shoulder include:"],
+      bullets: [
+        "Pain at the top of the shoulder over the AC joint",
+        "A visible bump where the collarbone meets the shoulder",
+        "Pain reaching across the body or overhead",
+        "Tenderness directly over the joint",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Most shoulder separations, including many complete (type 3) injuries, recover well without surgery using a sling, pain control, and a structured return to motion and strength. The bump may persist, but function usually returns.",
+      "Surgery is reserved for high-grade separations, for some active patients with type 3 injuries who do not regain function, and for chronic, symptomatic separations. Reconstruction restores the alignment of the collarbone using graft and fixation techniques. The decision weighs the grade, your activity, and how the shoulder is functioning.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "Low and many intermediate-grade separations are treated with a brief period in a sling, pain control, and a progressive therapy program to restore motion and strength. A residual bump is common and usually does not limit function.",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "High-grade separations, and selected active patients who do not recover function, are treated by reconstructing the torn ligaments and restoring the collarbone's position with graft and fixation. The goal is a stable, functional shoulder.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery depends on the grade and treatment:",
+  recovery: [
+    { when: "Weeks 0 to 2", what: "Sling for comfort. Begin gentle motion as pain allows. Ice and pain control." },
+    { when: "Weeks 2 to 6", what: "Progressive range of motion and early strengthening in therapy." },
+    { when: "Weeks 6 to 12", what: "Strengthening and a graded return to sport and overhead activity." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "A separation is not a dislocation.", body: "A shoulder separation is an AC joint injury on top of the shoulder. A shoulder dislocation is the ball coming out of the socket. They are different injuries with different treatments." },
+      { heading: "The bump may not need fixing.", body: "Many complete separations leave a visible bump but recover good function without surgery. The decision to operate is based on the grade and function, not on the bump alone." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Joint involved", value: "Acromioclavicular (AC) joint" },
+    { label: "Mechanism", value: "Fall directly onto the shoulder" },
+    { label: "Graded", value: "Types 1 to 6 by displacement" },
+    { label: "Most cases", value: "Low and many type 3 injuries: non-surgical" },
+    { label: "Surgery", value: "High-grade and selected active patients" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background for shoulder injuries",
+    "Conservative first for low and many intermediate-grade separations",
+    "Reconstruction for high-grade and symptomatic chronic separations",
+    "Return-to-sport planning as part of the treatment",
+  ],
+  related: [
+    { name: "Shoulder Dislocation & Instability", slug: "shoulder-dislocation" },
+    { name: "AC Joint Arthritis", slug: "ac-arthritis" },
+    { name: "Rotator Cuff Tear", slug: "rotator-cuff" },
+    { name: "Shoulder Impingement Syndrome", slug: "shoulder-impingement" },
+  ],
+  ctaCard: {
+    eyebrow: "Bump on top of the shoulder?",
+    headline: "Most separations recover without surgery.",
+  },
+  faqHeadline: "Shoulder separation, answered.",
+  faqs: [
+    {
+      question: "Is a separated shoulder the same as a dislocated shoulder?",
+      answer:
+        "No. A separated shoulder is an injury to the AC joint on top of the shoulder, where the collarbone meets the shoulder blade. A dislocated shoulder is the ball coming out of the socket. They feel different, look different, and are treated differently, so the distinction matters.",
+    },
+    {
+      question: "Will I need surgery?",
+      answer:
+        "Usually not. Low-grade separations and many complete (type 3) separations recover well without surgery using a sling and a structured rehabilitation program, though a bump may remain. Surgery is reserved for high-grade separations and for selected active patients who do not regain function.",
+    },
+    {
+      question: "Will the bump go away?",
+      answer:
+        "Often a visible bump remains even after the shoulder recovers, especially with complete separations treated without surgery. In most cases it does not limit function. The decision to reconstruct is based on the grade and how the shoulder works, not on appearance alone.",
+    },
+  ],
+  bottomCtaTitle: "Fell on your shoulder and have a bump?",
+  bottomCtaItalic: "The grade guides the plan.",
+  bottomCtaBody:
+    "Most shoulder separations recover well without surgery, while high-grade injuries are evaluated for reconstruction. An accurate grade and a look at how the shoulder is functioning are what determine the right treatment.",
+  metaTitle: "Shoulder Separation (AC Joint), Steven J. Lee, MD",
+  metaDescription:
+    "Shoulder separation (AC joint injury) evaluated and treated by Dr. Steven J. Lee, MD. Grading, non-surgical recovery, and reconstruction for high-grade separations explained.",
+  schemaDescription:
+    "A shoulder separation is an injury to the acromioclavicular (AC) joint, graded by displacement. Most low and intermediate-grade separations are treated without surgery; high-grade injuries may need reconstruction.",
+};
+
+const shoulderDislocation: ConditionPageContent = {
+  slug: "shoulder-dislocation",
+  name: "Shoulder Dislocation & Instability",
+  region: "Shoulder",
+  headerTitle: "Shoulder Dislocation:",
+  headerItalic: "when the shoulder comes out, and stays loose.",
+  headerLede:
+    "The shoulder is the most mobile joint in the body, which is why it is the most commonly dislocated. After a dislocation, especially in younger athletes, the shoulder can stay loose and dislocate again. Arthroscopic repair restores stability when instability recurs.",
+  byline: shoulderByline,
+  overview: [
+    "A shoulder dislocation happens when the ball of the upper arm comes out of the socket, most often forward (anterior) after a fall or a forceful overhead movement. The first dislocation usually tears the labrum, the rim of cartilage that deepens the socket, which is what can leave the shoulder unstable afterward.",
+    "Age and activity strongly influence what happens next. Younger athletes have a high rate of recurrent instability after a first dislocation, while older patients are more likely to have an associated rotator cuff tear. The pattern guides whether rehabilitation alone is enough or whether surgery is warranted.",
+  ],
+  bodySections: [
+    {
+      heading: "First-time versus recurrent",
+      body: [
+        "A first-time dislocation is reduced (put back in place) and rehabilitated. In young, active patients the chance of it happening again is high, and recurrent instability, where the shoulder dislocates or feels like it will with certain positions, is what tips toward surgical repair.",
+      ],
+    },
+    {
+      heading: "Symptoms",
+      body: ["Common findings include:"],
+      bullets: [
+        "A shoulder that has come out of joint, or repeatedly feels like it will",
+        "Apprehension with the arm raised and rotated outward",
+        "A sense of looseness, slipping, or 'dead arm' in athletes",
+        "Pain and weakness after an episode",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "After a first dislocation, Dr. Lee reduces and rehabilitates the shoulder and uses imaging to define the labral and bone injury. Many patients, especially older or lower-demand ones, do well with rehabilitation.",
+      "When instability recurs, or in a young athlete at high risk of recurrence, arthroscopic repair reattaches the torn labrum to the socket rim with suture anchors, restoring stability. When there is significant bone loss, a bone-augmenting procedure may be needed. The plan is matched to the pattern of injury and the demands of the patient.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "A first-time dislocation is reduced and treated with a brief period of rest followed by a structured rehabilitation program focused on the rotator cuff and shoulder-blade muscles. Many patients, particularly older ones, regain a stable, functional shoulder this way.",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "For recurrent instability, the torn labrum is reattached to the socket arthroscopically with current-generation suture anchors. When there is meaningful bone loss from repeated dislocations, a bone-augmentation procedure restores the socket. The goal is a stable shoulder that returns to activity.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery after stabilization protects the repair while restoring motion:",
+  recovery: [
+    { when: "Weeks 0 to 4", what: "Sling to protect the repair. Begin gentle, guided motion within safe limits." },
+    { when: "Weeks 4 to 12", what: "Progressive range of motion and rotator-cuff strengthening in therapy." },
+    { when: "Months 3 to 6", what: "Sport-specific strengthening and a graded return to contact and overhead activity." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "Age changes the risk.", body: "A young athlete who dislocates has a high chance of it happening again, while an older patient is more likely to have a rotator cuff tear. The right workup differs by age." },
+      { heading: "Repeated dislocations cause damage.", body: "Each dislocation can wear away bone and cartilage. Recurrent instability is worth addressing before that bone loss makes the repair more complex." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Joint involved", value: "Glenohumeral (ball and socket)" },
+    { label: "Common injury", value: "Labral (Bankart) tear" },
+    { label: "Highest recurrence", value: "Young athletes" },
+    { label: "Surgical option", value: "Arthroscopic labral repair with suture anchors" },
+    { label: "Bone loss", value: "May need a bone-augmentation procedure" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Arthroscopic, anchor-based labral repair for recurrent instability",
+    "Tailors the plan to age, activity, and the pattern of injury",
+    "Return-to-sport planning built into the treatment",
+  ],
+  related: [
+    { name: "SLAP Tear (Labral Injury)", slug: "slap-tear" },
+    { name: "Rotator Cuff Tear", slug: "rotator-cuff" },
+    { name: "Shoulder Separation (AC Joint)", slug: "ac-separation" },
+    { name: "Shoulder Impingement Syndrome", slug: "shoulder-impingement" },
+  ],
+  ctaCard: {
+    eyebrow: "Shoulder that keeps slipping?",
+    headline: "Stability is restorable.",
+  },
+  faqHeadline: "Shoulder dislocation and instability, answered.",
+  faqs: [
+    {
+      question: "My shoulder dislocated once. Will it happen again?",
+      answer:
+        "It depends mostly on age and activity. Young, active patients have a high chance of recurrent dislocation after a first episode, while older patients are less likely to re-dislocate but more likely to have a rotator cuff tear. Imaging and an exam define your specific risk and guide whether rehabilitation alone is enough.",
+    },
+    {
+      question: "Do I need surgery after a dislocation?",
+      answer:
+        "Not always. Many first-time dislocations, especially in older patients, do well with rehabilitation. Surgery is considered for recurrent instability and for young athletes at high risk of it happening again. Arthroscopic repair reattaches the torn labrum to restore stability.",
+    },
+    {
+      question: "What does the surgery involve?",
+      answer:
+        "Most stabilizations are done arthroscopically, reattaching the torn labrum to the rim of the socket with suture anchors through small incisions. If repeated dislocations have worn away bone, a bone-augmentation procedure may be added. Recovery protects the repair early, then progresses to strengthening and return to sport.",
+    },
+  ],
+  bottomCtaTitle: "Shoulder that has come out, or feels loose?",
+  bottomCtaItalic: "The right plan depends on the pattern.",
+  bottomCtaBody:
+    "Shoulder instability is common after a dislocation, especially in younger athletes. Many shoulders settle with rehabilitation, while recurrent instability is reliably treated with arthroscopic repair. An accurate assessment of the labrum and any bone loss directs the plan.",
+  metaTitle: "Shoulder Dislocation & Instability, Steven J. Lee, MD",
+  metaDescription:
+    "Shoulder dislocation and instability evaluated and treated by Dr. Steven J. Lee, MD. First-time versus recurrent dislocations, rehabilitation, and arthroscopic labral repair explained.",
+  schemaDescription:
+    "A shoulder dislocation is displacement of the ball from the socket, often tearing the labrum and leaving the shoulder unstable. Treatment ranges from rehabilitation to arthroscopic labral repair for recurrent instability.",
+};
+
+const slapTear: ConditionPageContent = {
+  slug: "slap-tear",
+  name: "SLAP Tear (Labral Injury)",
+  region: "Shoulder",
+  headerTitle: "SLAP Tear:",
+  headerItalic: "deep shoulder pain in throwers and lifters.",
+  headerLede:
+    "A SLAP tear is an injury to the top of the labrum where the biceps tendon anchors inside the shoulder. It causes deep shoulder pain and clicking, especially with overhead activity. Many are managed without surgery, and treatment is tailored to age and activity.",
+  byline: shoulderByline,
+  overview: [
+    "SLAP stands for superior labrum, anterior to posterior. It is a tear of the top rim of the shoulder socket, at the spot where the biceps tendon attaches inside the joint. It is common in throwing athletes, in people who lift overhead, and after a fall onto an outstretched arm.",
+    "SLAP tears can be hard to pin down, because deep shoulder pain and clicking overlap with other shoulder problems, and the labrum changes with age. The diagnosis combines the history, specific exam tests, and an MRI, often with contrast.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Common complaints include:"],
+      bullets: [
+        "Deep, hard-to-localize shoulder pain, often with overhead activity",
+        "Clicking, catching, or a popping sensation in the shoulder",
+        "Pain or loss of velocity in throwing athletes",
+        "Pain with lifting or pressing overhead",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "Diagnosis combines specific provocative exam tests with an MRI, frequently with contrast injected into the joint to outline the labrum. Because labral changes are common with age, the exam and the patient's activity matter as much as the image in deciding whether a tear is the source of symptoms.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Many SLAP tears improve without surgery. Dr. Lee starts with a rehabilitation program focused on the rotator cuff, shoulder blade, and, in throwers, the whole kinetic chain, along with activity modification.",
+      "When surgery is warranted, the choice is tailored to age and activity. In younger patients the labrum is repaired with suture anchors; in many older patients, or where the biceps anchor is the pain source, a biceps tenodesis, which reattaches the biceps tendon outside the joint, is more reliable than repair. Matching the procedure to the patient is the key decision.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "Most SLAP tears begin with rehabilitation, restoring rotator-cuff and shoulder-blade strength and, in throwers, correcting mechanics, along with activity modification and anti-inflammatory measures. Many patients improve enough to avoid surgery.",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "When symptoms persist, surgery is arthroscopic. Younger patients usually have the labrum repaired with suture anchors. In older patients, or when the biceps anchor is the problem, a biceps tenodesis reattaches the biceps tendon and tends to be more reliable and predictable.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery depends on the procedure:",
+  recovery: [
+    { when: "Weeks 0 to 4", what: "Sling to protect the repair or tenodesis. Begin gentle, guided motion." },
+    { when: "Weeks 4 to 12", what: "Progressive range of motion and rotator-cuff strengthening." },
+    { when: "Months 3 to 6", what: "Sport-specific strengthening and a graded return to throwing or overhead lifting." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "A labral change on MRI is not always the cause.", body: "The labrum changes with age, so an MRI finding does not by itself mean it is the source of pain. The exam and your activity level matter in deciding whether to treat it." },
+      { heading: "Repair is not always best.", body: "In many older patients, repairing a SLAP tear is less reliable than a biceps tenodesis. The right procedure depends on age and activity, not a single rule." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Structure involved", value: "Superior labrum and biceps anchor" },
+    { label: "Common in", value: "Throwers, overhead lifters, after a fall" },
+    { label: "Imaging", value: "MRI, often with contrast" },
+    { label: "First-line treatment", value: "Rehabilitation and activity modification" },
+    { label: "Surgical options", value: "Arthroscopic repair or biceps tenodesis" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Matches the procedure (repair versus tenodesis) to age and activity",
+    "Conservative first, since many SLAP tears improve without surgery",
+    "Return-to-throwing planning for overhead athletes",
+  ],
+  related: [
+    { name: "Shoulder Dislocation & Instability", slug: "shoulder-dislocation" },
+    { name: "Biceps Tendonitis (Shoulder)", slug: "biceps-tendonitis" },
+    { name: "Rotator Cuff Tear", slug: "rotator-cuff" },
+    { name: "Shoulder Impingement Syndrome", slug: "shoulder-impingement" },
+  ],
+  ctaCard: {
+    eyebrow: "Deep shoulder pain with overhead activity?",
+    headline: "Often treatable without surgery.",
+  },
+  faqHeadline: "SLAP tears, answered.",
+  faqs: [
+    {
+      question: "What is a SLAP tear?",
+      answer:
+        "It is a tear of the top rim of the shoulder socket (the labrum) where the biceps tendon attaches inside the joint. SLAP stands for superior labrum, anterior to posterior. It typically causes deep shoulder pain and clicking, especially with overhead activity, and is common in throwers and overhead lifters.",
+    },
+    {
+      question: "Do I need surgery for a SLAP tear?",
+      answer:
+        "Many SLAP tears improve with a rehabilitation program and activity modification, so surgery is not always needed. When it is, the procedure is tailored to age and activity: younger patients often have the labrum repaired, while in many older patients a biceps tenodesis is more reliable.",
+    },
+    {
+      question: "Why might a tenodesis be better than a repair?",
+      answer:
+        "In many patients, particularly those over their thirties or whose pain comes from the biceps anchor, reattaching the biceps tendon outside the joint (tenodesis) gives more reliable and predictable pain relief than repairing the labral attachment. The best choice depends on your age, activity, and the specific tear.",
+    },
+  ],
+  bottomCtaTitle: "Deep shoulder pain that clicks with overhead activity?",
+  bottomCtaItalic: "The right procedure depends on you.",
+  bottomCtaBody:
+    "SLAP tears are often manageable without surgery, and when surgery is needed, the choice between repair and biceps tenodesis is tailored to your age and activity. An accurate assessment, weighing the exam and imaging together, directs the plan.",
+  metaTitle: "SLAP Tear (Labral Injury), Steven J. Lee, MD",
+  metaDescription:
+    "SLAP tear (superior labral injury) of the shoulder evaluated and treated by Dr. Steven J. Lee, MD. Rehabilitation, arthroscopic labral repair, and biceps tenodesis explained.",
+  schemaDescription:
+    "A SLAP tear is an injury to the superior labrum where the biceps tendon anchors in the shoulder. Treatment ranges from rehabilitation to arthroscopic labral repair or biceps tenodesis, tailored to age and activity.",
+};
+
+const acArthritis: ConditionPageContent = {
+  slug: "ac-arthritis",
+  name: "AC Joint Arthritis",
+  region: "Shoulder",
+  headerTitle: "AC Joint Arthritis:",
+  headerItalic: "pinpoint pain on top of the shoulder.",
+  headerLede:
+    "Arthritis of the acromioclavicular joint causes well-localized pain at the top of the shoulder, worse reaching across the body. Most cases are managed without surgery, and a small arthroscopic procedure helps the few that are not.",
+  byline: shoulderByline,
+  overview: [
+    "The acromioclavicular (AC) joint sits at the top of the shoulder where the collarbone meets the shoulder blade. Like any joint, it can wear out, from age, heavy lifting, or an old separation, and become arthritic.",
+    "AC arthritis is often easy to localize, the pain sits right on top of the shoulder and is reproduced by reaching the arm across the body. It frequently coexists with rotator cuff and impingement problems, which is part of the evaluation.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Common complaints include:"],
+      bullets: [
+        "Pinpoint pain on top of the shoulder over the AC joint",
+        "Pain reaching the arm across the body or sleeping on the shoulder",
+        "Pain with bench press, dips, or overhead lifting",
+        "Sometimes a small bump or tenderness directly over the joint",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "AC arthritis is usually clear on examination, the pain is localized to the joint and reproduced by a cross-body test, supported by X-rays. Because it often coexists with rotator cuff or impingement problems, a diagnostic injection into the AC joint can confirm how much of the pain comes from there.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Most AC arthritis is managed without surgery. Dr. Lee starts with activity modification, anti-inflammatory measures, and, when needed, a corticosteroid injection into the joint, which is also diagnostic.",
+      "When pain persists despite these measures, a small arthroscopic procedure removes the worn end of the collarbone (distal clavicle excision), relieving the painful joint contact. It is often done at the same time as treatment for a coexisting rotator cuff or impingement problem.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "Activity modification (especially avoiding provocative pressing and cross-body loading), anti-inflammatory measures, and a corticosteroid injection into the joint manage the large majority of AC arthritis. The injection also helps confirm the joint as the pain source.",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "For pain that persists, a distal clavicle excision removes a small amount of the worn end of the collarbone so the arthritic surfaces no longer rub. It is commonly performed arthroscopically and is often combined with treatment of any coexisting shoulder problem.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery after a distal clavicle excision is usually quick:",
+  recovery: [
+    { when: "Weeks 0 to 2", what: "Sling for comfort. Begin gentle motion early." },
+    { when: "Weeks 2 to 6", what: "Progressive range of motion and early strengthening." },
+    { when: "Weeks 6 to 12", what: "Strengthening and a graded return to lifting and overhead activity." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "It often travels with other shoulder problems.", body: "AC arthritis frequently coexists with rotator cuff and impingement issues. A diagnostic injection helps sort out how much of the pain is coming from the AC joint." },
+      { heading: "Surgery removes a little bone, not the joint hardware.", body: "The procedure simply removes the worn end of the collarbone so the surfaces no longer grind. There is no implant, and recovery is usually quick." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Joint involved", value: "Acromioclavicular (AC) joint" },
+    { label: "Pain location", value: "Pinpoint, on top of the shoulder" },
+    { label: "Provoked by", value: "Reaching across the body, pressing" },
+    { label: "First-line treatment", value: "Activity modification and injection" },
+    { label: "Surgical option", value: "Distal clavicle excision (often arthroscopic)" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Uses a diagnostic injection to confirm the AC joint as the pain source",
+    "Arthroscopic distal clavicle excision when conservative care fails",
+    "Treats coexisting rotator cuff or impingement problems at the same time",
+  ],
+  related: [
+    { name: "Shoulder Separation (AC Joint)", slug: "ac-separation" },
+    { name: "Shoulder Impingement Syndrome", slug: "shoulder-impingement" },
+    { name: "Rotator Cuff Tear", slug: "rotator-cuff" },
+    { name: "Shoulder Arthritis (Glenohumeral)", slug: "glenohumeral-arthritis" },
+  ],
+  ctaCard: {
+    eyebrow: "Pinpoint pain on top of the shoulder?",
+    headline: "Usually managed without surgery.",
+  },
+  faqHeadline: "AC joint arthritis, answered.",
+  faqs: [
+    {
+      question: "How do I know my pain is from the AC joint?",
+      answer:
+        "AC joint pain is usually well localized to the top of the shoulder and is reproduced by reaching the arm across the body. X-rays support the diagnosis, and because it often coexists with rotator cuff or impingement problems, a small diagnostic injection into the joint can confirm how much of the pain comes from there.",
+    },
+    {
+      question: "Will I need surgery?",
+      answer:
+        "Most AC arthritis is managed without surgery, using activity modification, anti-inflammatory measures, and a corticosteroid injection. Surgery, a small procedure that removes the worn end of the collarbone, is reserved for pain that persists despite these measures.",
+    },
+    {
+      question: "What does the surgery involve?",
+      answer:
+        "A distal clavicle excision removes a small amount of the worn end of the collarbone so the arthritic surfaces no longer rub. It is often done arthroscopically and is frequently combined with treatment of a coexisting rotator cuff or impingement problem. Recovery is usually quick.",
+    },
+  ],
+  bottomCtaTitle: "Sharp pain on top of the shoulder?",
+  bottomCtaItalic: "It is usually very manageable.",
+  bottomCtaBody:
+    "AC joint arthritis is one of the more localized and treatable causes of shoulder pain. Most cases settle with activity modification and an injection, and the few that do not respond well to a small arthroscopic procedure. The evaluation also checks for coexisting shoulder problems.",
+  metaTitle: "AC Joint Arthritis, Steven J. Lee, MD",
+  metaDescription:
+    "Acromioclavicular (AC) joint arthritis evaluated and treated by Dr. Steven J. Lee, MD. Activity modification, injections, and arthroscopic distal clavicle excision explained.",
+  schemaDescription:
+    "AC joint arthritis is wear of the acromioclavicular joint on top of the shoulder, causing localized pain. Treatment ranges from activity modification and injection to arthroscopic distal clavicle excision.",
+};
+
+const glenohumeralArthritis: ConditionPageContent = {
+  slug: "glenohumeral-arthritis",
+  name: "Shoulder Arthritis (Glenohumeral)",
+  region: "Shoulder",
+  headerTitle: "Shoulder Arthritis:",
+  headerItalic: "deep, stiff, aching shoulder pain.",
+  headerLede:
+    "Glenohumeral arthritis is wear of the cartilage in the main ball-and-socket joint of the shoulder, causing deep pain, stiffness, and grinding. Many patients are managed well without surgery, and the full range of options is discussed when arthritis is advanced.",
+  byline: shoulderByline,
+  overview: [
+    "Glenohumeral arthritis is the loss of the smooth cartilage that lines the ball and socket of the shoulder. As the cartilage wears, the bones rub, which produces deep aching pain, stiffness, and a grinding sensation. It can come from age, prior injury, or inflammatory conditions.",
+    "Shoulder arthritis tends to progress slowly, and many people manage well for a long time with non-surgical care. The goal of treatment is to control pain and keep the shoulder functioning, with surgery considered when arthritis is advanced and quality of life is affected.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Common complaints include:"],
+      bullets: [
+        "Deep, aching shoulder pain, often worse with activity and at night",
+        "Stiffness and loss of motion, especially reaching behind the back",
+        "Grinding or catching with movement",
+        "Pain that has built up gradually over months to years",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "X-rays show the joint narrowing and bone changes of arthritis. An MRI is added when the cartilage, rotator cuff, or labrum needs closer evaluation, because the state of the rotator cuff influences which treatments are appropriate.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee treats shoulder arthritis conservatively for as long as it controls symptoms, with activity modification, a therapy program to maintain motion and strength, anti-inflammatory measures, and injections. Many patients do well with this approach for years.",
+      "When arthritis is advanced and pain limits daily life, Dr. Lee discusses the full range of options honestly, from joint-preserving measures to joint replacement, which is the definitive treatment for advanced arthritis. The right path depends on the severity, the condition of the rotator cuff, and your goals.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "Activity modification, a structured therapy program to maintain motion and strength, anti-inflammatory measures, and corticosteroid injections manage many patients well, often for years. The aim is to control pain and preserve function.",
+      ],
+    },
+    {
+      heading: "When arthritis is advanced",
+      body: [
+        "For advanced arthritis that limits daily life, joint replacement is the definitive treatment. Dr. Lee discusses the options honestly, weighing the severity of the arthritis, the condition of the rotator cuff, and your goals, and coordinates the appropriate surgical plan.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery depends on the treatment and is guided individually:",
+  recovery: [
+    { when: "Non-surgical", what: "Ongoing activity modification, therapy, and periodic injections as needed to control symptoms." },
+    { when: "After surgery, early", what: "Protected motion in a sling, with gentle guided range of motion as directed." },
+    { when: "After surgery, later", what: "Progressive strengthening and a graded return to activity over several months." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "The rotator cuff matters.", body: "The condition of the rotator cuff strongly influences which treatments are appropriate for shoulder arthritis, which is why imaging looks at the cuff as well as the cartilage." },
+      { heading: "Many patients avoid surgery for years.", body: "Shoulder arthritis usually progresses slowly. With activity modification, therapy, and injections, many people manage well for a long time before any operation is considered." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Joint involved", value: "Glenohumeral (ball and socket)" },
+    { label: "Cause", value: "Cartilage wear from age, injury, or inflammation" },
+    { label: "First-line treatment", value: "Activity modification, therapy, injections" },
+    { label: "Advanced disease", value: "Joint replacement is the definitive option" },
+    { label: "Key factor", value: "Condition of the rotator cuff" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Conservative management for as long as it controls symptoms",
+    "Honest discussion of all options when arthritis is advanced",
+    "Evaluation that accounts for the rotator cuff, not just the cartilage",
+  ],
+  related: [
+    { name: "Rotator Cuff Tear", slug: "rotator-cuff" },
+    { name: "AC Joint Arthritis", slug: "ac-arthritis" },
+    { name: "Shoulder Impingement Syndrome", slug: "shoulder-impingement" },
+    { name: "PRP (Platelet-Rich Plasma) Injections", slug: "prp-injections" },
+  ],
+  ctaCard: {
+    eyebrow: "Deep, stiff shoulder pain?",
+    headline: "Many patients are managed without surgery.",
+  },
+  faqHeadline: "Shoulder arthritis, answered.",
+  faqs: [
+    {
+      question: "Do I need a shoulder replacement?",
+      answer:
+        "Not for most patients, at least not for a long time. Shoulder arthritis usually progresses slowly, and activity modification, therapy, and injections manage many people well for years. Joint replacement is the definitive treatment when arthritis is advanced and pain limits daily life, and Dr. Lee discusses the options honestly when that point is reached.",
+    },
+    {
+      question: "Why does my shoulder grind and feel stiff?",
+      answer:
+        "As the cartilage that lines the ball and socket wears away, the bones begin to rub, which produces grinding, deep aching pain, and stiffness, especially reaching behind the back. X-rays confirm the diagnosis, and an MRI is added when the rotator cuff or cartilage needs closer evaluation.",
+    },
+    {
+      question: "Can injections help?",
+      answer:
+        "Yes. Corticosteroid injections can relieve pain and, combined with activity modification and a therapy program, are a mainstay of non-surgical management. They do not reverse the arthritis, but they can keep the shoulder comfortable and functional, often for a long time.",
+    },
+  ],
+  bottomCtaTitle: "Living with deep, stiff shoulder pain?",
+  bottomCtaItalic: "There is a lot that can be done before surgery.",
+  bottomCtaBody:
+    "Shoulder arthritis usually progresses slowly, and many patients are managed well for years with activity modification, therapy, and injections. When arthritis is advanced, Dr. Lee discusses the full range of options honestly, including the definitive option of joint replacement.",
+  metaTitle: "Shoulder Arthritis (Glenohumeral), Steven J. Lee, MD",
+  metaDescription:
+    "Glenohumeral (shoulder) arthritis evaluated and treated by Dr. Steven J. Lee, MD. Activity modification, therapy, injections, and the options for advanced arthritis explained.",
+  schemaDescription:
+    "Glenohumeral arthritis is wear of the cartilage in the ball-and-socket shoulder joint, causing deep pain and stiffness. Treatment ranges from activity modification, therapy, and injections to joint replacement for advanced disease.",
+};
+
+const shoulderImpingement: ConditionPageContent = {
+  slug: "shoulder-impingement",
+  name: "Shoulder Impingement Syndrome",
+  region: "Shoulder",
+  headerTitle: "Shoulder Impingement:",
+  headerItalic: "the painful arc with overhead reaching.",
+  headerLede:
+    "Impingement is pinching of the rotator cuff and bursa beneath the bony arch of the shoulder, causing pain with overhead reaching. The large majority improve with a targeted therapy program, and surgery is reserved for stubborn cases.",
+  byline: shoulderByline,
+  overview: [
+    "Shoulder impingement, also called subacromial pain syndrome, is irritation of the rotator cuff tendons and the bursa as they pass beneath the acromion, the bony roof of the shoulder. Reaching overhead narrows that space and pinches the tissue, which produces pain.",
+    "It is one of the most common causes of shoulder pain and often responds well to rehabilitation that restores the balance and mechanics of the rotator cuff and shoulder blade. Impingement can also be an early stage on the way to a rotator cuff tear, so it is evaluated with that in mind.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Common complaints include:"],
+      bullets: [
+        "Pain reaching overhead or out to the side, a 'painful arc'",
+        "Pain sleeping on the shoulder or reaching behind the back",
+        "Aching down the outside of the upper arm",
+        "Weakness or pain lifting the arm",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "Impingement is largely a clinical diagnosis, based on the pattern of pain and specific tests that reproduce it. X-rays show the shape of the bony arch, and an MRI or ultrasound is used when a rotator cuff tear is suspected, since that changes the plan.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Most impingement improves without surgery. Dr. Lee emphasizes a structured rotator-cuff and shoulder-blade rehabilitation program, activity modification, and, when needed, a corticosteroid injection into the subacromial space, which can both relieve pain and help confirm the diagnosis.",
+      "Surgery is reserved for impingement that does not settle after a genuine course of rehabilitation. An arthroscopic subacromial decompression makes more room for the cuff, and any associated problem, such as a cuff tear, is addressed at the same time. First, though, Dr. Lee makes sure there is not an unrecognized cuff tear driving the symptoms.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["Most patients improve with:"],
+      bullets: [
+        "A structured rotator-cuff and shoulder-blade strengthening program",
+        "Activity modification to reduce provocative overhead loading",
+        "Anti-inflammatory measures",
+        "A subacromial corticosteroid injection, which is also diagnostic",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "When impingement persists despite a genuine course of rehabilitation, an arthroscopic subacromial decompression makes more room beneath the bony arch. Any associated problem, such as a cuff tear or AC arthritis, is treated at the same time.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery is usually steady with rehabilitation:",
+  recovery: [
+    { when: "Weeks 0 to 6", what: "Structured therapy program and activity modification. Expect gradual improvement." },
+    { when: "Weeks 6 to 12", what: "Progressive strengthening and a graded return to overhead activity." },
+    { when: "After surgery (when needed)", what: "Early motion, then progressive strengthening over six to twelve weeks." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "Rule out a cuff tear first.", body: "Impingement and rotator cuff tears can feel similar. Confirming whether the cuff is torn matters, because a tear changes the treatment." },
+      { heading: "Rehabilitation usually works.", body: "The large majority of impingement settles with a targeted strengthening program. Surgery is for the minority that does not improve after a genuine rehabilitation effort." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "Pinching of the rotator cuff and bursa under the acromion" },
+    { label: "Hallmark", value: "A painful arc with overhead reaching" },
+    { label: "First-line treatment", value: "Rotator-cuff and shoulder-blade rehabilitation" },
+    { label: "Injection", value: "Subacromial corticosteroid, also diagnostic" },
+    { label: "Surgery", value: "Arthroscopic decompression for stubborn cases" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Rehabilitation-first, since most impingement settles without surgery",
+    "Confirms whether a rotator cuff tear is driving the symptoms",
+    "Arthroscopic treatment when conservative care fails",
+  ],
+  related: [
+    { name: "Rotator Cuff Tear", slug: "rotator-cuff" },
+    { name: "Biceps Tendonitis (Shoulder)", slug: "biceps-tendonitis" },
+    { name: "AC Joint Arthritis", slug: "ac-arthritis" },
+    { name: "Shoulder Dislocation & Instability", slug: "shoulder-dislocation" },
+  ],
+  ctaCard: {
+    eyebrow: "Pain reaching overhead?",
+    headline: "Most impingement improves without surgery.",
+  },
+  faqHeadline: "Shoulder impingement, answered.",
+  faqs: [
+    {
+      question: "What is shoulder impingement?",
+      answer:
+        "It is pinching of the rotator cuff tendons and the bursa as they pass beneath the bony roof of the shoulder. Reaching overhead narrows that space and irritates the tissue, producing a 'painful arc.' It is one of the most common causes of shoulder pain and usually responds to rehabilitation.",
+    },
+    {
+      question: "Will I need surgery?",
+      answer:
+        "Almost certainly not. The large majority of impingement improves with a structured rotator-cuff and shoulder-blade strengthening program, activity modification, and sometimes an injection. Surgery, an arthroscopic decompression, is reserved for the minority whose pain persists after a genuine course of rehabilitation.",
+    },
+    {
+      question: "How is it different from a rotator cuff tear?",
+      answer:
+        "Impingement is irritation of the cuff and bursa without a tear, while a rotator cuff tear is an actual defect in the tendon. They can feel similar and can coexist, so confirming whether the cuff is torn, with an MRI or ultrasound when needed, is part of the evaluation because it changes the treatment.",
+    },
+  ],
+  bottomCtaTitle: "Shoulder pain every time you reach overhead?",
+  bottomCtaItalic: "A targeted program usually fixes it.",
+  bottomCtaBody:
+    "Shoulder impingement is common and usually improves with a focused rehabilitation program. The evaluation confirms whether a rotator cuff tear is part of the picture, and surgery is reserved for the cases that do not settle with conservative care.",
+  metaTitle: "Shoulder Impingement Syndrome, Steven J. Lee, MD",
+  metaDescription:
+    "Shoulder impingement (subacromial pain syndrome) evaluated and treated by Dr. Steven J. Lee, MD. Rotator-cuff rehabilitation, injections, and arthroscopic decompression explained.",
+  schemaDescription:
+    "Shoulder impingement is pinching of the rotator cuff and bursa beneath the acromion, causing pain with overhead reaching. Treatment is mainly rehabilitation, with arthroscopic subacromial decompression for stubborn cases.",
+};
+
+const bicepsTendonitis: ConditionPageContent = {
+  slug: "biceps-tendonitis",
+  name: "Biceps Tendonitis (Shoulder)",
+  region: "Shoulder",
+  headerTitle: "Biceps Tendonitis:",
+  headerItalic: "pain at the front of the shoulder.",
+  headerLede:
+    "Irritation of the long head of the biceps tendon causes pain at the front of the shoulder, often alongside rotator cuff or labral problems. Most cases improve without surgery, and the few that do not respond well to a biceps tenodesis.",
+  byline: shoulderByline,
+  overview: [
+    "The long head of the biceps tendon runs through the front of the shoulder and into the joint. When it becomes irritated or worn, it causes pain at the front of the shoulder that can radiate down the upper arm, worse with lifting and overhead activity.",
+    "Biceps tendonitis rarely occurs in isolation. It usually accompanies rotator cuff disease, impingement, or a labral (SLAP) problem, so the evaluation looks at the whole shoulder rather than the tendon alone.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Common complaints include:"],
+      bullets: [
+        "Aching pain at the front of the shoulder",
+        "Pain radiating down the front of the upper arm",
+        "Pain with lifting, pulling, or overhead activity",
+        "Tenderness over the tendon at the front of the shoulder",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "The exam localizes tenderness to the biceps tendon and uses specific tests that load it. Because biceps tendonitis usually travels with other shoulder problems, an ultrasound or MRI evaluates the cuff and labrum as well, which shapes the treatment.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Most biceps tendonitis improves without surgery. Dr. Lee starts with activity modification, a rotator-cuff and shoulder-blade rehabilitation program, anti-inflammatory measures, and, when needed, a targeted injection.",
+      "When pain persists, or when the tendon is significantly worn or part of a larger problem, a biceps tenodesis reattaches the tendon outside the joint, which reliably relieves the pain. It is frequently done at the same time as treatment for an associated rotator cuff or labral problem.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["Most patients improve with:"],
+      bullets: [
+        "Activity modification to reduce provocative lifting and overhead loading",
+        "A rotator-cuff and shoulder-blade rehabilitation program",
+        "Anti-inflammatory measures",
+        "A targeted corticosteroid injection in selected cases",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "When pain persists or the tendon is significantly worn, a biceps tenodesis reattaches the tendon to the bone outside the joint, which reliably relieves the pain. It is often combined with treatment of a coexisting rotator cuff tear or labral injury.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery depends on whether surgery is needed:",
+  recovery: [
+    { when: "Non-surgical", what: "Activity modification and a therapy program over several weeks, with gradual improvement." },
+    { when: "After tenodesis, weeks 0 to 4", what: "Sling to protect the repair, with gentle guided motion." },
+    { when: "After tenodesis, weeks 4 to 12", what: "Progressive strengthening and a graded return to lifting and overhead activity." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "It rarely travels alone.", body: "Biceps tendonitis usually accompanies a rotator cuff or labral problem, so treating only the tendon may miss the larger issue. The evaluation looks at the whole shoulder." },
+      { heading: "Tenodesis is reliable.", body: "When surgery is needed, reattaching the biceps tendon outside the joint reliably relieves the pain and is often done alongside other shoulder treatment." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Structure involved", value: "Long head of the biceps tendon" },
+    { label: "Pain location", value: "Front of the shoulder, down the upper arm" },
+    { label: "Often with", value: "Rotator cuff, impingement, or labral problems" },
+    { label: "First-line treatment", value: "Rehabilitation and activity modification" },
+    { label: "Surgical option", value: "Biceps tenodesis" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Evaluates the whole shoulder, not just the tendon",
+    "Rehabilitation-first, since most cases improve without surgery",
+    "Biceps tenodesis when conservative care fails or the tendon is worn",
+  ],
+  related: [
+    { name: "Rotator Cuff Tear", slug: "rotator-cuff" },
+    { name: "SLAP Tear (Labral Injury)", slug: "slap-tear" },
+    { name: "Shoulder Impingement Syndrome", slug: "shoulder-impingement" },
+    { name: "Biceps Tendon Rupture", slug: "biceps-rupture" },
+  ],
+  ctaCard: {
+    eyebrow: "Pain at the front of the shoulder?",
+    headline: "Most cases improve without surgery.",
+  },
+  faqHeadline: "Biceps tendonitis, answered.",
+  faqs: [
+    {
+      question: "Is this the same as a torn biceps?",
+      answer:
+        "No. Biceps tendonitis at the shoulder is irritation of the long head of the biceps tendon, not a rupture. A distal biceps rupture is a separate injury at the elbow. Tendonitis causes front-of-shoulder pain and usually improves without surgery.",
+    },
+    {
+      question: "Why does my whole shoulder need to be checked?",
+      answer:
+        "Biceps tendonitis rarely occurs by itself. It usually accompanies a rotator cuff problem, impingement, or a labral (SLAP) injury, so an ultrasound or MRI evaluates those structures too. Treating only the tendon while missing the larger problem tends to disappoint, which is why the whole shoulder is assessed.",
+    },
+    {
+      question: "What is a biceps tenodesis?",
+      answer:
+        "It is a procedure that reattaches the long head of the biceps tendon to the bone just outside the shoulder joint. For pain that persists despite rehabilitation, or when the tendon is significantly worn, it reliably relieves the pain and is often combined with treatment of an associated rotator cuff or labral problem.",
+    },
+  ],
+  bottomCtaTitle: "Aching pain at the front of the shoulder?",
+  bottomCtaItalic: "Usually treatable without surgery.",
+  bottomCtaBody:
+    "Biceps tendonitis improves without surgery in most cases, with rehabilitation and activity modification. Because it usually accompanies other shoulder problems, the evaluation looks at the whole shoulder, and a biceps tenodesis reliably relieves the pain when surgery is needed.",
+  metaTitle: "Biceps Tendonitis (Shoulder), Steven J. Lee, MD",
+  metaDescription:
+    "Shoulder biceps tendonitis (long head of biceps) evaluated and treated by Dr. Steven J. Lee, MD. Rehabilitation, injections, and biceps tenodesis explained, with attention to associated shoulder problems.",
+  schemaDescription:
+    "Biceps tendonitis is irritation of the long head of the biceps tendon at the front of the shoulder, usually accompanying rotator cuff or labral problems. Treatment ranges from rehabilitation to biceps tenodesis.",
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Knee & Sports additions (Dr. Lee feedback, June 2026)
+const sportsByline = {
+  name: "Steven J. Lee, MD",
+  title: "Double Fellowship-Trained · Hand & Sports Medicine",
+  reviewed: "May 2026",
+};
+
+const patellofemoralSyndrome: ConditionPageContent = {
+  slug: "patellofemoral-syndrome",
+  name: "Patellofemoral Pain Syndrome",
+  region: "Knee & Sports",
+  headerTitle: "Patellofemoral Pain:",
+  headerItalic: "the ache around the kneecap.",
+  headerLede:
+    "Patellofemoral pain, sometimes called runner's knee, is aching around or behind the kneecap, worse with stairs, squatting, and sitting. The large majority improve with a targeted rehabilitation program rather than surgery.",
+  byline: sportsByline,
+  overview: [
+    "Patellofemoral pain syndrome is pain at the front of the knee, around or behind the kneecap, where it glides in a groove on the thighbone. It usually comes from a combination of overload and how the kneecap tracks, rather than a single injury.",
+    "It is one of the most common knee complaints, especially in runners, athletes, and active adults. The encouraging part is that it is largely a mechanical and strength problem, which is why a well-designed rehabilitation program is so effective.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Typical complaints include:"],
+      bullets: [
+        "Aching around or behind the kneecap",
+        "Pain with stairs, squatting, kneeling, or running",
+        "Pain after sitting with the knee bent for a while, the 'theater sign'",
+        "Occasional grinding or a sense of the kneecap catching",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "Patellofemoral pain is largely a clinical diagnosis based on the pattern of pain and an exam of kneecap tracking, hip and thigh strength, and flexibility. Imaging is used mainly to rule out other problems when the picture is unclear or recovery stalls.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Patellofemoral pain is treated almost entirely without surgery. Dr. Lee focuses on the root causes, the strength and timing of the hip and thigh muscles, flexibility, footwear, and training load, through a structured therapy program.",
+      "Activity modification, taping or bracing, and addressing training errors round out the plan. Surgery is rarely needed and is reserved for specific structural problems with the kneecap, not for typical patellofemoral pain.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["The foundation of treatment is rehabilitation:"],
+      bullets: [
+        "Hip and thigh strengthening, the single most effective measure",
+        "Activity and training-load modification",
+        "Flexibility work and, for some, taping or a brace",
+        "Footwear and running-form adjustments where relevant",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery is steady with a consistent program:",
+  recovery: [
+    { when: "Weeks 0 to 6", what: "Structured strengthening and activity modification. Expect gradual improvement." },
+    { when: "Weeks 6 to 12", what: "Progressive loading and a graded return to running and sport." },
+    { when: "Ongoing", what: "Maintenance strengthening to keep symptoms from returning." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "Rest alone rarely fixes it.", body: "Because patellofemoral pain is largely a strength and mechanics problem, resting helps short term but the pain returns with activity unless the underlying strength is addressed." },
+      { heading: "It is rarely a surgical problem.", body: "Typical patellofemoral pain responds to rehabilitation. Surgery is reserved for specific structural issues, not for the common form of this condition." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Where it hurts", value: "Around or behind the kneecap" },
+    { label: "Provoked by", value: "Stairs, squatting, prolonged sitting" },
+    { label: "Common in", value: "Runners and active adults" },
+    { label: "Main treatment", value: "Hip and thigh strengthening" },
+    { label: "Surgery", value: "Rarely needed" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Targets the root causes: strength, mechanics, and training load",
+    "Conservative, since the large majority resolve without surgery",
+    "Return-to-sport planning for runners and athletes",
+  ],
+  related: [
+    { name: "Patellar Tendonitis", slug: "patellar-tendonitis" },
+    { name: "ACL Tear", slug: "acl-reconstruction" },
+    { name: "Pes Anserine Bursitis", slug: "pes-anserine-bursitis" },
+    { name: "Knee Collateral Ligament Injury", slug: "knee-collateral-ligament" },
+  ],
+  ctaCard: {
+    eyebrow: "Aching at the front of the knee?",
+    headline: "A targeted program usually fixes it.",
+  },
+  faqHeadline: "Patellofemoral pain, answered.",
+  faqs: [
+    {
+      question: "What causes pain around my kneecap?",
+      answer:
+        "Patellofemoral pain usually comes from a combination of overload and how the kneecap tracks in its groove, influenced by hip and thigh strength, flexibility, and training. It is rarely from a single injury, which is why strengthening the hip and thigh muscles is the most effective treatment.",
+    },
+    {
+      question: "Will I need surgery?",
+      answer:
+        "Almost certainly not. Typical patellofemoral pain responds to a structured rehabilitation program focused on hip and thigh strength, along with activity modification. Surgery is reserved for specific structural problems with the kneecap, not for the common form of this condition.",
+    },
+    {
+      question: "How long until it gets better?",
+      answer:
+        "Most patients improve over six to twelve weeks of a consistent strengthening program, with continued gains after that. Because it is a strength and mechanics problem, ongoing maintenance work helps keep it from returning.",
+    },
+  ],
+  bottomCtaTitle: "Front-of-knee pain with stairs and squatting?",
+  bottomCtaItalic: "It is usually very treatable without surgery.",
+  bottomCtaBody:
+    "Patellofemoral pain is one of the most common and most treatable knee problems. A program that targets hip and thigh strength, flexibility, and training load resolves the large majority. Surgery is rarely necessary.",
+  metaTitle: "Patellofemoral Pain Syndrome, Steven J. Lee, MD",
+  metaDescription:
+    "Patellofemoral pain syndrome (runner's knee) evaluated and treated by Dr. Steven J. Lee, MD. Hip and thigh strengthening, activity modification, and bracing explained.",
+  schemaDescription:
+    "Patellofemoral pain syndrome is pain around or behind the kneecap from overload and tracking, common in active adults. Treatment is mainly hip and thigh strengthening and activity modification.",
+};
+
+const kneeCollateralLigament: ConditionPageContent = {
+  slug: "knee-collateral-ligament",
+  name: "Knee Collateral Ligament Injury (MCL, LCL, PLC)",
+  region: "Knee & Sports",
+  headerTitle: "Collateral Ligament Injury:",
+  headerItalic: "the side-to-side stabilizers of the knee.",
+  headerLede:
+    "Injuries to the knee's side ligaments range from the common, well-healing MCL sprain to the often-missed posterolateral corner injury that needs surgery. Sorting out which ligaments are involved is what guides treatment.",
+  byline: sportsByline,
+  overview: [
+    "The collateral ligaments stabilize the knee from side to side. The medial collateral ligament (MCL) on the inner side is the most commonly injured, usually from a blow to the outside of the knee. The lateral collateral ligament (LCL) and the posterolateral corner (PLC) on the outer side are injured less often but are more serious.",
+    "Most isolated MCL injuries heal well without surgery. LCL and posterolateral corner injuries, by contrast, often need surgery and are frequently part of a larger, multi-ligament injury, which is why a careful, complete examination matters.",
+  ],
+  bodySections: [
+    {
+      heading: "Why the side matters",
+      body: [
+        "An inner-side (MCL) sprain usually heals on its own with bracing and rehabilitation. An outer-side (LCL or posterolateral corner) injury behaves differently, it tends not to heal on its own and is more likely to leave the knee unstable, so it is treated more aggressively and is often reconstructed.",
+      ],
+    },
+    {
+      heading: "Symptoms",
+      body: ["Common findings include:"],
+      bullets: [
+        "Pain and swelling along the inner or outer side of the knee",
+        "A sense of the knee buckling or opening up to the side",
+        "Pain with side-to-side stress on the knee",
+        "Bruising and tenderness over the injured ligament",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "The first step is defining exactly which ligaments are injured, because the inner and outer sides are treated very differently. Dr. Lee examines the knee for side-to-side and rotational instability and confirms the pattern with MRI.",
+      "Most isolated MCL injuries are treated without surgery, in a hinged brace with a structured rehabilitation program. LCL and posterolateral corner injuries, and combined injuries, are repaired or reconstructed, since they do not reliably heal on their own and can leave the knee unstable. The posterolateral corner in particular is often missed, and recognizing it changes the outcome.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "Isolated MCL injuries are treated in a hinged brace with progressive motion and strengthening. Most heal reliably and return to full activity, even higher-grade tears in many cases.",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "LCL and posterolateral corner injuries, and multi-ligament injuries, are repaired or reconstructed because they do not reliably heal and can leave the knee unstable. Restoring the outer-side and rotational stability is what protects the knee long term.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery depends on which ligaments are involved:",
+  recovery: [
+    { when: "MCL, weeks 0 to 6", what: "Hinged brace with progressive motion and strengthening. Most heal without surgery." },
+    { when: "After reconstruction, weeks 0 to 6", what: "Hinged brace protecting the repair, with guided motion and partial weight-bearing as directed." },
+    { when: "Months 3 to 9", what: "Progressive strengthening and a graded return to sport, guided by stability and strength." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "Inner and outer injuries are not the same.", body: "An MCL sprain usually heals on its own; an LCL or posterolateral corner injury often does not and may need surgery. Treating them the same way is a common error." },
+      { heading: "The posterolateral corner is often missed.", body: "Posterolateral corner injuries are easy to overlook and, if untreated, can cause persistent instability and put other reconstructions at risk. A complete exam is what catches them." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Ligaments involved", value: "MCL (inner), LCL and posterolateral corner (outer)" },
+    { label: "Most common", value: "MCL sprain, usually heals without surgery" },
+    { label: "More serious", value: "LCL and posterolateral corner injuries" },
+    { label: "Often missed", value: "Posterolateral corner" },
+    { label: "Key step", value: "Defining exactly which ligaments are injured" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Careful exam for side-to-side and rotational instability",
+    "Recognizes posterolateral corner injuries that are frequently missed",
+    "Non-surgical care for most MCL injuries; reconstruction when needed",
+  ],
+  related: [
+    { name: "ACL Tear", slug: "acl-reconstruction" },
+    { name: "PCL Tear", slug: "pcl-tear" },
+    { name: "Patellofemoral Pain Syndrome", slug: "patellofemoral-syndrome" },
+    { name: "Tibial Plateau Fracture", slug: "tibial-plateau-fracture" },
+  ],
+  ctaCard: {
+    eyebrow: "Knee that buckles to the side?",
+    headline: "The side and pattern guide the plan.",
+  },
+  faqHeadline: "Collateral ligament injuries, answered.",
+  faqs: [
+    {
+      question: "Does an MCL tear need surgery?",
+      answer:
+        "Usually not. Most isolated MCL injuries, including many higher-grade tears, heal reliably without surgery in a hinged brace with a structured rehabilitation program. Surgery is considered mainly when the MCL injury is part of a larger, multi-ligament injury.",
+    },
+    {
+      question: "Why is an outer-side injury more serious?",
+      answer:
+        "The lateral collateral ligament and the posterolateral corner on the outer side tend not to heal on their own and are more likely to leave the knee unstable. They often need repair or reconstruction, and they are frequently part of a larger injury, so a complete examination matters.",
+    },
+    {
+      question: "What is the posterolateral corner?",
+      answer:
+        "It is a group of structures on the outer-back of the knee that controls rotation and side-to-side stability. Injuries there are easy to miss and, if untreated, can cause persistent instability and jeopardize other reconstructions. Recognizing a posterolateral corner injury is what changes the outcome.",
+    },
+  ],
+  bottomCtaTitle: "Side-of-knee injury that feels unstable?",
+  bottomCtaItalic: "Which ligament matters.",
+  bottomCtaBody:
+    "Collateral ligament injuries range from the common, well-healing MCL sprain to the serious, often-missed posterolateral corner injury. A complete examination that defines exactly which ligaments are involved is what directs the right treatment.",
+  metaTitle: "Knee Collateral Ligament Injury (MCL, LCL, PLC), Steven J. Lee, MD",
+  metaDescription:
+    "Knee collateral ligament injuries (MCL, LCL, posterolateral corner) evaluated and treated by Dr. Steven J. Lee, MD. Bracing for most MCL injuries and reconstruction for outer-side and combined injuries explained.",
+  schemaDescription:
+    "Knee collateral ligament injuries involve the MCL (inner), LCL, and posterolateral corner (outer). Most isolated MCL injuries heal without surgery, while LCL and posterolateral corner injuries often require repair or reconstruction.",
+};
+
+const pclTear: ConditionPageContent = {
+  slug: "pcl-tear",
+  name: "PCL Tear",
+  region: "Knee & Sports",
+  headerTitle: "PCL Tear:",
+  headerItalic: "the cruciate ligament that often heals on its own.",
+  headerLede:
+    "The posterior cruciate ligament is injured less often than the ACL and, unlike the ACL, many isolated PCL tears are managed without surgery. The plan depends on the grade and whether other ligaments are involved.",
+  byline: sportsByline,
+  overview: [
+    "The posterior cruciate ligament (PCL) sits deep in the center of the knee and keeps the shinbone from sliding backward. It is injured less commonly than the ACL, classically from a 'dashboard' impact to the front of the bent knee or a fall onto a bent knee.",
+    "Unlike the ACL, many isolated PCL injuries do well without surgery, because the ligament has some capacity to heal and the knee can be stable enough for daily life and many sports with good quadriceps strength. The grade of the tear and whether other ligaments are torn guide the decision.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Common findings include:"],
+      bullets: [
+        "Knee pain and swelling after a dashboard-type impact or a fall onto a bent knee",
+        "A vague sense of instability, often less dramatic than an ACL tear",
+        "Difficulty with stairs and slopes",
+        "Pain at the back of the knee",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "The exam tests for backward sag and shift of the shinbone, and MRI confirms the grade of the PCL tear and whether other ligaments, especially the posterolateral corner, are involved. Identifying combined injuries is important, because they change the plan.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee treats most isolated, lower-grade PCL injuries without surgery, with a structured rehabilitation program focused heavily on quadriceps strength, sometimes with a specialized brace. Many patients return to full activity this way.",
+      "Reconstruction is considered for high-grade tears, for combined ligament injuries, and for patients with persistent instability despite rehabilitation. Because PCL injuries often travel with posterolateral corner injuries, a complete assessment is what determines whether surgery is needed and what it should include.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "Isolated, lower-grade PCL injuries are treated with a quadriceps-focused rehabilitation program, sometimes with a dynamic PCL brace. Many patients regain a stable, functional knee without surgery.",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "High-grade tears, combined ligament injuries, and knees with persistent instability are treated with PCL reconstruction, addressing any associated ligament injury at the same time. Restoring stability protects the cartilage and the rest of the knee.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery depends on the grade and treatment:",
+  recovery: [
+    { when: "Non-surgical, weeks 0 to 12", what: "Bracing as directed and a quadriceps-focused rehabilitation program, with a graded return to activity." },
+    { when: "After reconstruction, weeks 0 to 6", what: "Brace protecting the graft, with guided motion and protected weight-bearing." },
+    { when: "Months 3 to 9", what: "Progressive strengthening and a graded return to sport." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "A PCL tear is not an automatic surgery.", body: "Unlike the ACL, many isolated PCL injuries do well without reconstruction, especially with strong quadriceps. The decision depends on the grade and whether other ligaments are torn." },
+      { heading: "Check the posterolateral corner.", body: "PCL injuries often accompany posterolateral corner injuries. Missing the corner is a common reason a PCL knee stays unstable, so a complete exam matters." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Ligament involved", value: "Posterior cruciate ligament (PCL)" },
+    { label: "Classic cause", value: "Dashboard impact or fall onto a bent knee" },
+    { label: "Many isolated tears", value: "Managed without surgery" },
+    { label: "Rehab focus", value: "Quadriceps strength" },
+    { label: "Check for", value: "Combined and posterolateral corner injuries" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Non-surgical, quadriceps-focused care for most isolated PCL injuries",
+    "Evaluates for combined and posterolateral corner injuries",
+    "Reconstruction for high-grade, combined, or persistently unstable knees",
+  ],
+  related: [
+    { name: "ACL Tear", slug: "acl-reconstruction" },
+    { name: "Knee Collateral Ligament Injury", slug: "knee-collateral-ligament" },
+    { name: "Tibial Plateau Fracture", slug: "tibial-plateau-fracture" },
+    { name: "Patellofemoral Pain Syndrome", slug: "patellofemoral-syndrome" },
+  ],
+  ctaCard: {
+    eyebrow: "Knee hurt in a dashboard-type injury?",
+    headline: "Many PCL tears heal without surgery.",
+  },
+  faqHeadline: "PCL tears, answered.",
+  faqs: [
+    {
+      question: "Is a PCL tear treated like an ACL tear?",
+      answer:
+        "No. Unlike the ACL, many isolated PCL tears do well without surgery, because the ligament has some healing capacity and the knee can be stable with strong quadriceps. The decision depends on the grade of the tear and whether other ligaments are involved.",
+    },
+    {
+      question: "How do I know if I need reconstruction?",
+      answer:
+        "Reconstruction is considered for high-grade PCL tears, for combined ligament injuries, and when the knee stays unstable despite a good rehabilitation program. An exam and MRI define the grade and look for associated injuries, especially of the posterolateral corner.",
+    },
+    {
+      question: "What does PCL rehabilitation focus on?",
+      answer:
+        "The cornerstone is quadriceps strength, which helps stabilize the knee against the backward sag a PCL injury allows. A specialized brace is sometimes used during healing. Many patients regain a stable, functional knee with a consistent program.",
+    },
+  ],
+  bottomCtaTitle: "Hurt the back of your knee?",
+  bottomCtaItalic: "The grade guides the plan.",
+  bottomCtaBody:
+    "Many isolated PCL injuries recover well without surgery, with a quadriceps-focused program. Reconstruction is reserved for high-grade, combined, or persistently unstable knees. A complete assessment, including the posterolateral corner, directs the plan.",
+  metaTitle: "PCL Tear, Steven J. Lee, MD",
+  metaDescription:
+    "Posterior cruciate ligament (PCL) tear evaluated and treated by Dr. Steven J. Lee, MD. Quadriceps-focused rehabilitation for most isolated tears and reconstruction for high-grade or combined injuries explained.",
+  schemaDescription:
+    "A PCL (posterior cruciate ligament) tear is a less common knee ligament injury. Many isolated tears are managed without surgery with quadriceps rehabilitation, while high-grade or combined injuries may need reconstruction.",
+};
+
+const pesAnserineBursitis: ConditionPageContent = {
+  slug: "pes-anserine-bursitis",
+  name: "Pes Anserine Bursitis",
+  region: "Knee & Sports",
+  headerTitle: "Pes Anserine Bursitis:",
+  headerItalic: "inner-knee pain just below the joint.",
+  headerLede:
+    "Pes anserine bursitis is irritation of a small fluid sac on the inner side of the knee, a few centimeters below the joint line. It causes inner-knee pain and almost always settles without surgery.",
+  byline: sportsByline,
+  overview: [
+    "The pes anserine bursa cushions the tendons that attach on the inner side of the shinbone, just below the knee. When it becomes irritated, it produces pain and tenderness in that spot, often mistaken for a problem inside the knee joint itself.",
+    "It is common in runners, in people with knee arthritis, and in those carrying extra weight. It is a benign, self-limiting problem that responds well to simple measures.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Typical complaints include:"],
+      bullets: [
+        "Pain and tenderness on the inner shin a few centimeters below the knee",
+        "Pain with stairs, rising from a chair, or at night",
+        "Sometimes mild swelling over the tender spot",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "The diagnosis is clinical, based on tenderness localized to the pes anserine area rather than the joint line. Imaging is used mainly to rule out other inner-knee problems, such as a meniscus tear or arthritis, when the picture is unclear.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Pes anserine bursitis is treated without surgery. Dr. Lee starts with activity modification, addressing any underlying cause such as tight hamstrings, gait, or knee arthritis, along with anti-inflammatory measures and a stretching and strengthening program.",
+      "A corticosteroid injection into the bursa relieves stubborn cases. Because the bursitis is often a symptom of something else, like arthritis or a training error, treating that underlying factor is what keeps it from returning.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["The condition responds to simple measures:"],
+      bullets: [
+        "Activity modification and addressing the underlying cause",
+        "Stretching and strengthening, especially the hamstrings",
+        "Anti-inflammatory measures and ice",
+        "A corticosteroid injection for stubborn cases",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery is usually steady over a few weeks:",
+  recovery: [
+    { when: "Weeks 0 to 4", what: "Activity modification, stretching, and anti-inflammatory measures." },
+    { when: "Weeks 4 to 8", what: "Progressive strengthening and a graded return to activity, addressing the underlying cause." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "It is not a problem inside the joint.", body: "The pain is from a surface bursa on the inner shin, not from inside the knee. Confirming that avoids unnecessary worry about a meniscus or cartilage problem." },
+      { heading: "It often points to something else.", body: "Pes anserine bursitis frequently accompanies knee arthritis, tight hamstrings, or a training error. Treating that underlying factor is what prevents it from coming back." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "Irritation of the pes anserine bursa, inner shin below the knee" },
+    { label: "Common in", value: "Runners, knee arthritis, extra weight" },
+    { label: "Treatment", value: "Activity modification, stretching, injection" },
+    { label: "Surgery", value: "Essentially never needed" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Treats the underlying cause, not just the bursa",
+    "Conservative, since the condition resolves without surgery",
+    "Distinguishes it from problems inside the knee joint",
+  ],
+  related: [
+    { name: "Patellofemoral Pain Syndrome", slug: "patellofemoral-syndrome" },
+    { name: "Prepatellar Bursitis", slug: "prepatellar-bursitis" },
+    { name: "Knee Collateral Ligament Injury", slug: "knee-collateral-ligament" },
+    { name: "Patellar Tendonitis", slug: "patellar-tendonitis" },
+  ],
+  ctaCard: {
+    eyebrow: "Inner-knee pain below the joint?",
+    headline: "Settles without surgery.",
+  },
+  faqHeadline: "Pes anserine bursitis, answered.",
+  faqs: [
+    {
+      question: "Is this a knee joint problem?",
+      answer:
+        "No. Pes anserine bursitis is irritation of a small fluid sac on the inner shin, a few centimeters below the knee joint, not a problem inside the joint. The tenderness is localized to that spot, which is what distinguishes it from a meniscus or cartilage issue.",
+    },
+    {
+      question: "How is it treated?",
+      answer:
+        "Without surgery. Activity modification, stretching and strengthening (especially the hamstrings), and anti-inflammatory measures resolve most cases, and a corticosteroid injection helps stubborn ones. Addressing the underlying cause, such as arthritis or a training error, keeps it from returning.",
+    },
+  ],
+  bottomCtaTitle: "Tender, achy inner knee?",
+  bottomCtaItalic: "A benign problem with a simple fix.",
+  bottomCtaBody:
+    "Pes anserine bursitis is a benign, self-limiting cause of inner-knee pain that responds to activity modification, stretching, and, when needed, an injection. The evaluation also confirms it is not a problem inside the joint.",
+  metaTitle: "Pes Anserine Bursitis, Steven J. Lee, MD",
+  metaDescription:
+    "Pes anserine bursitis (inner-knee pain) evaluated and treated by Dr. Steven J. Lee, MD. Activity modification, stretching, and injection explained.",
+  schemaDescription:
+    "Pes anserine bursitis is irritation of a bursa on the inner side of the knee below the joint, causing inner-knee pain. It is treated without surgery using activity modification, stretching, and injection.",
+};
+
+const prepatellarBursitis: ConditionPageContent = {
+  slug: "prepatellar-bursitis",
+  name: "Prepatellar Bursitis",
+  region: "Knee & Sports",
+  headerTitle: "Prepatellar Bursitis:",
+  headerItalic: "swelling on the front of the kneecap.",
+  headerLede:
+    "Prepatellar bursitis is swelling of the sac in front of the kneecap, often from kneeling or a direct blow. Most cases settle without surgery, but an infected bursa needs prompt treatment.",
+  byline: sportsByline,
+  overview: [
+    "The prepatellar bursa is a thin sac between the skin and the front of the kneecap. Repeated kneeling or a direct blow can irritate it and fill it with fluid, producing a soft, swollen bump on the front of the knee, sometimes called housemaid's knee.",
+    "Most prepatellar bursitis is irritation that settles with simple measures. The important exception is an infected bursa, which is red, warm, and tender and needs prompt treatment to avoid spreading.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Common findings include:"],
+      bullets: [
+        "A soft, swollen bump on the front of the kneecap",
+        "Pain with kneeling or pressure on the front of the knee",
+        "Limited bending when the swelling is large",
+        "Redness, warmth, and fever if the bursa is infected",
+      ],
+    },
+    {
+      heading: "When to act quickly",
+      body: [
+        "A bursa that is red, hot, very tender, or accompanied by fever may be infected (septic bursitis). That needs prompt evaluation, often with aspiration to test the fluid and antibiotics, and sometimes drainage. Distinguishing infected from simply irritated is the key first step.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "For a non-infected, irritated bursa, Dr. Lee uses activity modification (especially avoiding kneeling), padding, anti-inflammatory measures, and sometimes aspiration of the fluid. Most settle without surgery.",
+      "When infection is suspected, the fluid is tested and treated with antibiotics, with drainage if needed. Surgical removal of the bursa is reserved for chronic, recurrent cases that do not respond to these measures.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["Most irritated bursae respond to:"],
+      bullets: [
+        "Avoiding kneeling and using knee padding",
+        "Anti-inflammatory measures and ice",
+        "Aspiration of the fluid in selected cases",
+      ],
+    },
+    {
+      heading: "Infection and recurrence",
+      body: [
+        "A suspected infected bursa is aspirated, tested, and treated with antibiotics, with drainage when needed. For chronic or repeatedly recurrent bursitis that does not settle, surgical removal of the bursa is an option.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery is usually quick for an irritated bursa:",
+  recovery: [
+    { when: "Weeks 0 to 3", what: "Avoid kneeling, use padding, and apply anti-inflammatory measures. Swelling subsides gradually." },
+    { when: "If infected", what: "Antibiotics and close follow-up, with drainage if the infection does not settle promptly." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "Most are not infected.", body: "The majority of prepatellar bursitis is simple irritation that settles with padding and avoiding kneeling. But a red, hot, tender bursa needs prompt evaluation for infection." },
+      { heading: "Repeated kneeling is the usual culprit.", body: "Occupations and activities that involve frequent kneeling are the classic cause. Padding and avoiding kneeling are both treatment and prevention." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "Swelling of the bursa in front of the kneecap" },
+    { label: "Common cause", value: "Kneeling or a direct blow" },
+    { label: "Watch for", value: "Infection (red, hot, tender, fever)" },
+    { label: "Treatment", value: "Padding, activity modification, aspiration" },
+    { label: "Surgery", value: "Reserved for chronic, recurrent cases" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Distinguishes an infected bursa from a simply irritated one",
+    "Conservative care for the typical, non-infected case",
+    "Bursa removal reserved for chronic, recurrent bursitis",
+  ],
+  related: [
+    { name: "Pes Anserine Bursitis", slug: "pes-anserine-bursitis" },
+    { name: "Patellar Tendonitis", slug: "patellar-tendonitis" },
+    { name: "Patellofemoral Pain Syndrome", slug: "patellofemoral-syndrome" },
+    { name: "Patella Fracture", slug: "patella-fracture" },
+  ],
+  ctaCard: {
+    eyebrow: "Swelling on the front of the knee?",
+    headline: "Usually settles without surgery.",
+  },
+  faqHeadline: "Prepatellar bursitis, answered.",
+  faqs: [
+    {
+      question: "What causes the swelling on the front of my knee?",
+      answer:
+        "It is usually fluid in the prepatellar bursa, the sac in front of the kneecap, from repeated kneeling or a direct blow. It produces a soft, swollen bump. Most cases are simple irritation, but a bursa that is red, hot, and very tender may be infected and needs prompt attention.",
+    },
+    {
+      question: "Do I need surgery?",
+      answer:
+        "Almost never. Non-infected bursitis settles with avoiding kneeling, padding, anti-inflammatory measures, and sometimes aspiration. An infected bursa is treated with antibiotics and drainage if needed. Surgical removal is reserved for chronic, recurrent cases.",
+    },
+  ],
+  bottomCtaTitle: "Soft, swollen bump on the kneecap?",
+  bottomCtaItalic: "Usually simple, occasionally urgent.",
+  bottomCtaBody:
+    "Most prepatellar bursitis is simple irritation that settles with padding and avoiding kneeling. The one thing to act on quickly is a red, hot, tender bursa, which may be infected. The evaluation sorts out which one you have.",
+  metaTitle: "Prepatellar Bursitis, Steven J. Lee, MD",
+  metaDescription:
+    "Prepatellar bursitis (kneecap swelling) evaluated and treated by Dr. Steven J. Lee, MD. Activity modification, aspiration, and the warning signs of infection explained.",
+  schemaDescription:
+    "Prepatellar bursitis is swelling of the bursa in front of the kneecap, often from kneeling. Most cases settle without surgery; an infected bursa needs prompt antibiotic treatment and sometimes drainage.",
+};
+
+const stressFracture: ConditionPageContent = {
+  slug: "stress-fracture",
+  name: "Stress Fracture",
+  region: "Knee & Sports",
+  headerTitle: "Stress Fracture:",
+  headerItalic: "the overuse injury hiding as a shin or foot ache.",
+  headerLede:
+    "A stress fracture is a small crack in bone from repetitive loading rather than a single injury, common in runners and athletes who ramp up too fast. Most heal with activity modification, and treating why it happened is as important as treating the fracture.",
+  byline: sportsByline,
+  overview: [
+    "A stress fracture is a tiny crack that develops when a bone is loaded repeatedly faster than it can repair itself. It shows up most often in the shin and the bones of the foot, typically after a spike in training, a change in surface or footwear, or a return from time off.",
+    "The pain builds gradually, hurts with activity, and eases with rest at first, then becomes more constant. Catching it early matters, because some locations are at higher risk of not healing and need more protection.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Common findings include:"],
+      bullets: [
+        "Activity-related pain that builds over weeks, eased by rest early on",
+        "A focal, tender spot over the bone",
+        "Pain that progresses to hurting with walking or at rest",
+        "A history of a training spike or change in activity",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "Early stress fractures often do not show on X-rays, so an MRI is the most sensitive test and is used when the suspicion is high. The location matters, some sites are low risk and heal readily, while others are high risk for not healing and are treated more aggressively.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee treats most stress fractures with activity modification and a graded, monitored return to loading, protecting the bone while it heals. Just as important is finding why it happened, training errors, footwear, biomechanics, and bone-health or nutritional factors, so it does not recur.",
+      "High-risk locations, and fractures that are not healing, may need a period of protected weight-bearing or, in select cases, surgery to support healing. Identifying the high-risk sites is what prevents a small crack from becoming a complete fracture.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["Most stress fractures heal with:"],
+      bullets: [
+        "Activity modification and a graded return to loading",
+        "Protected weight-bearing for higher-risk sites",
+        "Addressing training, footwear, and biomechanics",
+        "Evaluating bone-health and nutritional factors",
+      ],
+    },
+    {
+      heading: "When more is needed",
+      body: [
+        "High-risk stress fractures and those that fail to heal may need stricter protection or, in select cases, surgical fixation to support healing. Recognizing a high-risk location early is what guides this.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery is gradual and monitored:",
+  recovery: [
+    { when: "Weeks 0 to 6", what: "Activity modification and protected loading as directed, with attention to the underlying cause." },
+    { when: "Weeks 6 to 12", what: "Graded return to loading and running, guided by symptoms and healing." },
+    { when: "Ongoing", what: "Address training, footwear, and bone-health factors to prevent recurrence." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "A normal X-ray does not rule it out.", body: "Early stress fractures often do not appear on X-rays. When suspicion is high, an MRI is the test that confirms it." },
+      { heading: "Why it happened matters.", body: "A stress fracture is usually a sign of a training, biomechanical, or bone-health issue. Treating only the crack, without that, sets up the next one." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "A small crack in bone from repetitive loading" },
+    { label: "Common sites", value: "Shin and bones of the foot" },
+    { label: "Best test", value: "MRI when X-rays are normal" },
+    { label: "Treatment", value: "Activity modification and graded loading" },
+    { label: "Also address", value: "Training, footwear, and bone health" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Treats the fracture and the cause, so it does not recur",
+    "Recognizes high-risk locations that need more protection",
+    "Graded, monitored return to sport",
+  ],
+  related: [
+    { name: "Shin Splints (Medial Tibial Stress Syndrome)", slug: "shin-splints" },
+    { name: "Patellar Tendonitis", slug: "patellar-tendonitis" },
+    { name: "Tibial Plateau Fracture", slug: "tibial-plateau-fracture" },
+    { name: "Achilles Tendonitis", slug: "achilles-tendonitis" },
+  ],
+  ctaCard: {
+    eyebrow: "Activity pain that keeps building?",
+    headline: "A stress fracture is worth ruling out.",
+  },
+  faqHeadline: "Stress fractures, answered.",
+  faqs: [
+    {
+      question: "My X-ray was normal but it still hurts. Could it be a stress fracture?",
+      answer:
+        "Yes. Early stress fractures frequently do not show on X-rays. When the pattern fits, a focal, activity-related ache that builds over weeks after a training spike, an MRI is the most sensitive test and is used to confirm it.",
+    },
+    {
+      question: "Do stress fractures need surgery?",
+      answer:
+        "Most do not. The majority heal with activity modification and a graded return to loading. High-risk locations and fractures that fail to heal may need stricter protection or, in select cases, surgery to support healing. The location strongly influences the plan.",
+    },
+    {
+      question: "Why do you look at my training and nutrition?",
+      answer:
+        "A stress fracture is usually a sign that loading outpaced the bone's ability to adapt, influenced by training, footwear, biomechanics, and bone health. Addressing those factors is what keeps the fracture from recurring once it heals.",
+    },
+  ],
+  bottomCtaTitle: "A nagging shin or foot ache that worsens with activity?",
+  bottomCtaItalic: "Catch it early.",
+  bottomCtaBody:
+    "Stress fractures heal well when caught early and loaded carefully, and the location guides how aggressive to be. Treating why it happened, training, footwear, and bone health, is what prevents the next one.",
+  metaTitle: "Stress Fracture, Steven J. Lee, MD",
+  metaDescription:
+    "Stress fractures evaluated and treated by Dr. Steven J. Lee, MD. MRI diagnosis, activity modification, high-risk locations, and addressing the underlying cause explained.",
+  schemaDescription:
+    "A stress fracture is a small crack in bone from repetitive overload, common in the shin and foot. Most heal with activity modification and graded loading, with attention to high-risk locations and underlying causes.",
+};
+
+const shinSplints: ConditionPageContent = {
+  slug: "shin-splints",
+  name: "Shin Splints (Medial Tibial Stress Syndrome)",
+  region: "Knee & Sports",
+  headerTitle: "Shin Splints:",
+  headerItalic: "exercise-related shin pain, and how to settle it.",
+  headerLede:
+    "Shin splints, or medial tibial stress syndrome, are a common overuse cause of inner-shin pain in runners. They are treated without surgery, and the main job is to distinguish them from a stress fracture.",
+  byline: sportsByline,
+  overview: [
+    "Shin splints, medically called medial tibial stress syndrome, are pain along the inner edge of the shinbone from overuse, where the muscles and the bone's lining are irritated by repetitive loading. It is one of the most common complaints in runners and in anyone who increases activity quickly.",
+    "Shin splints sit on a spectrum with stress fractures, and the early symptoms overlap. The most important step is sorting out which one is present, because a stress fracture needs more protection.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Typical complaints include:"],
+      bullets: [
+        "Aching pain along the inner edge of the shin, over a broad area",
+        "Pain at the start of activity that may ease as you warm up",
+        "Tenderness along a length of the shin rather than one focal spot",
+        "Pain that worsens with continued training",
+      ],
+    },
+    {
+      heading: "Shin splints versus stress fracture",
+      body: [
+        "Shin splints cause tenderness spread along the shin, while a stress fracture causes a focal, pinpoint tender spot and tends to hurt more, including at rest. When the picture is concerning, an MRI distinguishes the two. Getting this right changes how cautious the return to running needs to be.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Shin splints are treated without surgery. Dr. Lee starts with a relative rest period, then a graded return to running, while correcting the factors that caused it, training spikes, footwear, running surface, and mechanics.",
+      "If the pain is focal and concerning, the first job is to rule out a stress fracture, because that needs more protection. Most shin splints settle with a sensible loading program and attention to the underlying cause.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["Shin splints respond to:"],
+      bullets: [
+        "A relative rest period followed by a graded return to running",
+        "Correcting training errors and progressing load gradually",
+        "Footwear and running-form adjustments",
+        "Calf and lower-leg strengthening and flexibility work",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery is gradual and depends on a sensible return:",
+  recovery: [
+    { when: "Weeks 0 to 4", what: "Relative rest, cross-training, and addressing the cause. Pain settles as loading is reduced." },
+    { when: "Weeks 4 to 8", what: "Graded return to running, progressing slowly to avoid recurrence." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "Pushing through can make it worse.", body: "Running through shin pain risks progressing to a stress fracture. A short period of relative rest and a graded return is faster in the long run." },
+      { heading: "It is not always 'just' shin splints.", body: "Focal, pinpoint shin pain that hurts at rest may be a stress fracture, which needs more protection. When in doubt, it is worth confirming." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "Overuse irritation along the inner shin" },
+    { label: "Common in", value: "Runners and rapid activity increases" },
+    { label: "Key distinction", value: "Stress fracture (focal, hurts at rest)" },
+    { label: "Treatment", value: "Relative rest and graded return" },
+    { label: "Surgery", value: "Not needed" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Distinguishes shin splints from a stress fracture",
+    "Corrects the training and mechanical causes",
+    "Graded, sensible return to running",
+  ],
+  related: [
+    { name: "Stress Fracture", slug: "stress-fracture" },
+    { name: "Patellar Tendonitis", slug: "patellar-tendonitis" },
+    { name: "Achilles Tendonitis", slug: "achilles-tendonitis" },
+    { name: "Plantar Fasciitis", slug: "plantar-fasciitis" },
+  ],
+  ctaCard: {
+    eyebrow: "Inner-shin pain when you run?",
+    headline: "Settles with a sensible plan.",
+  },
+  faqHeadline: "Shin splints, answered.",
+  faqs: [
+    {
+      question: "How do I know it is shin splints and not a stress fracture?",
+      answer:
+        "Shin splints cause aching spread along a length of the inner shin and tend to ease as you warm up. A stress fracture causes a focal, pinpoint tender spot and often hurts more, including at rest. When the pain is focal or concerning, an MRI distinguishes the two, which matters because a stress fracture needs more protection.",
+    },
+    {
+      question: "Can I keep running?",
+      answer:
+        "Running through worsening shin pain risks progressing to a stress fracture. A short period of relative rest, cross-training, and a graded return, while correcting training errors and footwear, settles most shin splints faster than pushing through.",
+    },
+  ],
+  bottomCtaTitle: "Shin pain every time you ramp up running?",
+  bottomCtaItalic: "Treat it before it becomes a fracture.",
+  bottomCtaBody:
+    "Shin splints settle with relative rest, a graded return, and correcting the training and mechanical causes. The key step is making sure it is not a stress fracture, which needs more protection.",
+  metaTitle: "Shin Splints (Medial Tibial Stress Syndrome), Steven J. Lee, MD",
+  metaDescription:
+    "Shin splints (medial tibial stress syndrome) evaluated and treated by Dr. Steven J. Lee, MD. Relative rest, graded return to running, and distinguishing them from a stress fracture explained.",
+  schemaDescription:
+    "Shin splints (medial tibial stress syndrome) are an overuse cause of inner-shin pain in runners, treated without surgery. The main step is distinguishing them from a stress fracture.",
+};
+
+const osgoodSchlatter: ConditionPageContent = {
+  slug: "osgood-schlatter",
+  name: "Osgood-Schlatter Disease",
+  region: "Knee & Sports",
+  headerTitle: "Osgood-Schlatter:",
+  headerItalic: "the growing athlete's knee bump.",
+  headerLede:
+    "Osgood-Schlatter is a common cause of knee pain in active, growing adolescents, a painful, prominent bump just below the kneecap. It is self-limiting and settles with growth, managed without surgery.",
+  byline: sportsByline,
+  overview: [
+    "Osgood-Schlatter disease is irritation of the growth area at the top of the shinbone, where the patellar tendon attaches, just below the kneecap. During growth spurts, repetitive pull from the powerful thigh muscles irritates this area, producing pain and a tender, prominent bump.",
+    "It is common in active adolescents, especially around growth spurts and in sports with a lot of running and jumping. It is benign and self-limiting, meaning it resolves as the bones finish growing, and it is managed without surgery.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Typical complaints in a growing athlete include:"],
+      bullets: [
+        "Pain and a tender, prominent bump just below the kneecap",
+        "Pain with running, jumping, kneeling, and stairs",
+        "Pain that flares with activity and eases with rest",
+        "Usually one knee, sometimes both",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "Osgood-Schlatter is a clinical diagnosis based on the age, the activity, and tenderness over the bump below the kneecap. X-rays are used mainly to rule out other causes when the picture is atypical.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Reassurance is a large part of the treatment, because Osgood-Schlatter is benign and resolves with skeletal maturity. Dr. Lee focuses on activity modification to a comfortable level rather than complete rest, along with stretching, strengthening, and ice after activity.",
+      "The bump may remain into adulthood, but the pain almost always resolves as growth finishes. Surgery is essentially never needed for typical Osgood-Schlatter, and is reserved only for the rare adult with a persistent painful ossicle long after growth.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["The condition is managed with simple measures:"],
+      bullets: [
+        "Activity modification to a comfortable level, not complete rest",
+        "Quadriceps and hamstring stretching and strengthening",
+        "Ice after activity and anti-inflammatory measures as needed",
+        "A patellar strap for some athletes during activity",
+      ],
+    },
+  ],
+  recoveryIntro: "The course is reassuring:",
+  recovery: [
+    { when: "Through the growing years", what: "Symptoms flare with activity and settle with rest and the measures above. Activity can usually continue at a comfortable level." },
+    { when: "With skeletal maturity", what: "The pain almost always resolves as the bones finish growing. A painless bump may remain." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "It is not dangerous.", body: "Osgood-Schlatter is benign and self-limiting. Continuing activity at a comfortable level does not harm the knee, and the condition resolves with growth." },
+      { heading: "Complete rest is usually not necessary.", body: "Most young athletes can keep playing at a tolerable level. The goal is to manage the pain, not to stop activity entirely." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Who it affects", value: "Active, growing adolescents" },
+    { label: "Where it hurts", value: "Bump just below the kneecap" },
+    { label: "Nature", value: "Benign and self-limiting" },
+    { label: "Treatment", value: "Activity modification, stretching, ice" },
+    { label: "Resolution", value: "Almost always with skeletal maturity" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Reassurance and activity modification rather than complete rest",
+    "Keeps young athletes playing at a comfortable level when possible",
+    "Especially attuned to the demands of growing, competitive athletes",
+  ],
+  related: [
+    { name: "Patellar Tendonitis", slug: "patellar-tendonitis" },
+    { name: "Patellofemoral Pain Syndrome", slug: "patellofemoral-syndrome" },
+    { name: "Stress Fracture", slug: "stress-fracture" },
+    { name: "Shin Splints (Medial Tibial Stress Syndrome)", slug: "shin-splints" },
+  ],
+  ctaCard: {
+    eyebrow: "Adolescent with a painful knee bump?",
+    headline: "Benign, and it resolves with growth.",
+  },
+  faqHeadline: "Osgood-Schlatter, answered.",
+  faqs: [
+    {
+      question: "Is Osgood-Schlatter serious?",
+      answer:
+        "No. It is a benign, self-limiting condition of active, growing adolescents. The pain comes from irritation of the growth area below the kneecap during growth spurts, and it almost always resolves as the bones finish growing. A painless bump may remain.",
+    },
+    {
+      question: "Does my child have to stop sports?",
+      answer:
+        "Usually not. Most young athletes can keep playing at a comfortable level, with activity modified to manage the pain rather than stopped entirely, along with stretching, strengthening, and ice after activity. Complete rest is rarely necessary.",
+    },
+    {
+      question: "Will the bump go away?",
+      answer:
+        "The pain almost always resolves with skeletal maturity, but the bony bump below the kneecap often remains into adulthood. It is typically painless and does not require treatment. Surgery is reserved for the rare adult with a persistent painful fragment.",
+    },
+  ],
+  bottomCtaTitle: "Growing athlete with knee pain below the kneecap?",
+  bottomCtaItalic: "Reassuring, and very manageable.",
+  bottomCtaBody:
+    "Osgood-Schlatter is a common, benign cause of knee pain in growing athletes that resolves with skeletal maturity. It is managed with activity modification, stretching, and ice, and most young athletes can keep playing at a comfortable level.",
+  metaTitle: "Osgood-Schlatter Disease, Steven J. Lee, MD",
+  metaDescription:
+    "Osgood-Schlatter disease in growing adolescents evaluated and managed by Dr. Steven J. Lee, MD. Activity modification, stretching, and reassurance about its self-limiting course explained.",
+  schemaDescription:
+    "Osgood-Schlatter disease is a self-limiting cause of knee pain in active, growing adolescents, with a tender bump below the kneecap. It is managed without surgery and resolves with skeletal maturity.",
+};
+
+const patellarTendonitis: ConditionPageContent = {
+  slug: "patellar-tendonitis",
+  name: "Patellar Tendonitis (Jumper's Knee)",
+  region: "Knee & Sports",
+  headerTitle: "Patellar Tendonitis:",
+  headerItalic: "jumper's knee, treated with patience.",
+  headerLede:
+    "Patellar tendonitis, or jumper's knee, is pain in the tendon just below the kneecap from overload in jumping and running athletes. Like other tendon problems, it is mostly degeneration, and a loading exercise program is the foundation of treatment.",
+  byline: sportsByline,
+  overview: [
+    "Patellar tendonitis is irritation and wear of the patellar tendon, which connects the kneecap to the shinbone. It is common in athletes who jump and change direction, basketball, volleyball, and similar sports, which is why it is nicknamed jumper's knee.",
+    "Despite the name 'itis,' it is more a degenerative, failed-healing tendon than active inflammation, which is why rest alone often is not enough and a structured loading program works better. It can be stubborn, but the large majority improve without surgery.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Typical complaints include:"],
+      bullets: [
+        "Pain in the tendon just below the kneecap",
+        "Pain with jumping, landing, squatting, and stairs",
+        "Stiffness and pain at the start of activity",
+        "Tenderness directly over the tendon",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "It is largely a clinical diagnosis based on tenderness over the patellar tendon and pain reproduced by loading the knee. Ultrasound or MRI is used to assess the tendon when the picture is unclear or recovery stalls.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Patellar tendonitis is treated patiently and conservatively. Dr. Lee emphasizes a structured loading program, especially eccentric and heavy-slow resistance exercise, along with load management and activity modification, the measures with the best track record for tendons.",
+      "For tendons that stall, PRP is an option Dr. Lee discusses. Surgery, which addresses the degenerated portion of the tendon, is reserved for the small minority with pain that persists after an extended, genuine course of conservative care.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["The foundation of treatment is loading the tendon, not resting it:"],
+      bullets: [
+        "A structured eccentric and heavy-slow resistance program",
+        "Load and training-volume management",
+        "Activity modification during flares",
+        "PRP as an option for tendons that are not healing",
+      ],
+    },
+    {
+      heading: "When conservative care stalls",
+      body: [
+        "Surgery, which removes the degenerated portion of the tendon and stimulates healing, is reserved for the small minority whose pain persists after an extended, genuine trial of a loading program.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery is measured in months, not days:",
+  recovery: [
+    { when: "Weeks 0 to 12", what: "A structured loading program with load management. Improvement is gradual." },
+    { when: "Months 3 to 6", what: "Progressive return to jumping and sport as the tendon tolerates load." },
+    { when: "After surgery (rare)", what: "Protected loading early, then a graded program over several months." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "Rest alone usually is not enough.", body: "Because patellar tendonitis is mostly tendon degeneration, the tendon needs progressive loading to heal. Complete rest tends to feel better briefly, then the pain returns with activity." },
+      { heading: "It takes patience.", body: "Tendons heal slowly. A loading program works, but over months rather than days, which is the part athletes find hardest." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Tendon involved", value: "Patellar tendon, below the kneecap" },
+    { label: "Common in", value: "Jumping and cutting athletes" },
+    { label: "Nature", value: "Degeneration more than inflammation" },
+    { label: "Foundation", value: "Eccentric and heavy-slow loading" },
+    { label: "Surgery", value: "Rare, for cases that fail extended care" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Loading-program-first, the approach with the best track record",
+    "PRP as an option for tendons that are not healing",
+    "Return-to-sport planning for jumping athletes",
+  ],
+  related: [
+    { name: "Patellofemoral Pain Syndrome", slug: "patellofemoral-syndrome" },
+    { name: "Osgood-Schlatter Disease", slug: "osgood-schlatter" },
+    { name: "Patellar and Quadriceps Tendon Rupture", slug: "patellar-quad-tendon-rupture" },
+    { name: "PRP (Platelet-Rich Plasma) Injections", slug: "prp-injections" },
+  ],
+  ctaCard: {
+    eyebrow: "Pain below the kneecap with jumping?",
+    headline: "A loading program is the foundation.",
+  },
+  faqHeadline: "Patellar tendonitis, answered.",
+  faqs: [
+    {
+      question: "Why does rest not fix my jumper's knee?",
+      answer:
+        "Patellar tendonitis is mostly tendon degeneration rather than active inflammation. The tendon needs progressive, controlled loading to heal, so rest feels better briefly but the pain returns with activity. A structured eccentric and heavy-slow loading program is the treatment with the best track record.",
+    },
+    {
+      question: "Will I need surgery?",
+      answer:
+        "Almost certainly not. The large majority of patellar tendonitis improves with a loading program and load management, though it takes months. Surgery, which addresses the degenerated portion of the tendon, is reserved for the small minority whose pain persists after an extended, genuine trial of conservative care.",
+    },
+    {
+      question: "Does PRP help?",
+      answer:
+        "For tendons that are not healing despite a good loading program, PRP is an option Dr. Lee discusses. The loading program remains the foundation, with PRP considered as an adjunct in stubborn cases rather than a substitute for the exercise work.",
+    },
+  ],
+  bottomCtaTitle: "Stubborn pain in the tendon below your kneecap?",
+  bottomCtaItalic: "Patience and the right loading win.",
+  bottomCtaBody:
+    "Jumper's knee is stubborn but the large majority improve with a structured loading program and load management, with PRP an option for tendons that stall. Surgery is rarely needed.",
+  metaTitle: "Patellar Tendonitis (Jumper's Knee), Steven J. Lee, MD",
+  metaDescription:
+    "Patellar tendonitis (jumper's knee) evaluated and treated by Dr. Steven J. Lee, MD. Eccentric and heavy-slow loading, load management, PRP, and when surgery is considered explained.",
+  schemaDescription:
+    "Patellar tendonitis (jumper's knee) is degeneration of the patellar tendon below the kneecap from overload. Treatment is mainly a structured loading exercise program, with PRP or surgery in selected cases.",
+};
+
+const patellarQuadRupture: ConditionPageContent = {
+  slug: "patellar-quad-tendon-rupture",
+  name: "Patellar and Quadriceps Tendon Rupture",
+  region: "Knee & Sports",
+  headerTitle: "Patellar and Quad Tendon Rupture:",
+  headerItalic: "when the knee can no longer straighten.",
+  headerLede:
+    "A complete rupture of the patellar or quadriceps tendon breaks the knee's ability to straighten and needs prompt surgical repair. Treated quickly, the results are reliable.",
+  byline: sportsByline,
+  overview: [
+    "The quadriceps and patellar tendons connect the powerful thigh muscles to the kneecap and then to the shinbone, forming the extensor mechanism that straightens the knee. A complete tear of either, usually from a forceful, off-balance load or a fall, breaks that mechanism, so the knee cannot actively straighten or hold against gravity.",
+    "These are time-sensitive injuries. A complete rupture is repaired surgically, and repairing it promptly, before the tendon retracts and scars, makes the operation more straightforward and the result more reliable.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Common findings include:"],
+      bullets: [
+        "A sudden pop and giving way, often while loading a bent knee",
+        "Inability to straighten the knee or keep it straight against gravity",
+        "A palpable gap above or below the kneecap",
+        "A kneecap that sits too high or too low, with swelling and bruising",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "The exam tests the ability to actively straighten the knee, which is lost in a complete rupture. X-rays show the position of the kneecap, and ultrasound or MRI confirms whether the tear is partial or complete and which tendon is involved.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "The key recognition is that a lost ability to straighten the knee after an injury is a surgical emergency of timing, even if it is not a true emergency of the hour. Dr. Lee repairs complete ruptures promptly, reattaching the tendon to the kneecap with a secure suture-anchor or transosseous construct that allows protected motion to begin.",
+      "Partial tears with an intact ability to straighten the knee can sometimes be treated without surgery, in a brace, with a careful rehabilitation program. Distinguishing complete from partial is the decision that drives everything.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "A partial tear that preserves the ability to actively straighten the knee can be treated in a brace with a progressive rehabilitation program, monitored closely to be sure the extensor mechanism stays intact.",
+      ],
+    },
+    {
+      heading: "Surgical repair",
+      body: [
+        "A complete rupture is repaired by reattaching the tendon to the kneecap with a secure construct, ideally sooner rather than later, before the tendon retracts. Strong fixation is what allows protected motion to start and limits stiffness.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery protects the repair while restoring motion:",
+  recovery: [
+    { when: "Weeks 0 to 2", what: "Brace with the knee straight to protect the repair. Begin gentle, guided motion as directed." },
+    { when: "Weeks 2 to 8", what: "Progressive range of motion in a brace, with weight-bearing as the repair allows." },
+    { when: "Months 3 to 6", what: "Strengthening and a graded return to activity and sport." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "Losing the ability to straighten is the red flag.", body: "If you cannot actively straighten the knee or keep it straight after an injury, the extensor mechanism may be torn, which needs prompt evaluation rather than waiting to see if it improves." },
+      { heading: "Timing protects the result.", body: "A complete rupture repaired promptly is more straightforward than one addressed weeks later, after the tendon has retracted and scarred." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Structure involved", value: "Quadriceps or patellar tendon (extensor mechanism)" },
+    { label: "Hallmark", value: "Cannot actively straighten the knee" },
+    { label: "Complete tears", value: "Prompt surgical repair" },
+    { label: "Partial tears", value: "Bracing if straightening is preserved" },
+    { label: "Timing", value: "Earlier repair is more straightforward" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Recognizes a torn extensor mechanism as time-sensitive",
+    "Secure repair that allows protected motion early",
+    "Distinguishes complete from partial tears to guide treatment",
+  ],
+  related: [
+    { name: "Patella Fracture", slug: "patella-fracture" },
+    { name: "Patellar Tendonitis", slug: "patellar-tendonitis" },
+    { name: "Patellofemoral Pain Syndrome", slug: "patellofemoral-syndrome" },
+    { name: "Tibial Plateau Fracture", slug: "tibial-plateau-fracture" },
+  ],
+  ctaCard: {
+    eyebrow: "Can't straighten your knee after an injury?",
+    headline: "Prompt evaluation protects the result.",
+  },
+  faqHeadline: "Patellar and quad tendon rupture, answered.",
+  faqs: [
+    {
+      question: "How do I know if I ruptured the tendon?",
+      answer:
+        "The hallmark is a sudden pop followed by the inability to actively straighten the knee or hold it straight against gravity, often with a gap you can feel above or below the kneecap and a kneecap that sits too high or too low. Losing the ability to straighten the knee after an injury deserves prompt evaluation.",
+    },
+    {
+      question: "Does it always need surgery?",
+      answer:
+        "Complete ruptures do, because the knee cannot straighten without an intact tendon. They are repaired by reattaching the tendon to the kneecap, ideally promptly. Partial tears that preserve the ability to straighten the knee can sometimes be treated in a brace with rehabilitation.",
+    },
+    {
+      question: "How soon should it be repaired?",
+      answer:
+        "A complete rupture is best repaired sooner rather than later, before the tendon retracts and scars, which makes the operation more straightforward and the result more reliable. It is a time-sensitive injury, even if not a same-hour emergency.",
+    },
+  ],
+  bottomCtaTitle: "Sudden pop and a knee that won't straighten?",
+  bottomCtaItalic: "This one is time-sensitive.",
+  bottomCtaBody:
+    "A complete patellar or quadriceps tendon rupture breaks the knee's ability to straighten and is repaired most reliably when treated promptly. If you cannot straighten the knee after an injury, it is worth an urgent evaluation.",
+  metaTitle: "Patellar and Quadriceps Tendon Rupture, Steven J. Lee, MD",
+  metaDescription:
+    "Patellar and quadriceps tendon ruptures evaluated and treated by Dr. Steven J. Lee, MD. The lost ability to straighten the knee, prompt surgical repair, and recovery explained.",
+  schemaDescription:
+    "A patellar or quadriceps tendon rupture tears the knee's extensor mechanism, so the knee cannot actively straighten. Complete ruptures are repaired surgically, ideally promptly; some partial tears are braced.",
+};
+
+const patellaFracture: ConditionPageContent = {
+  slug: "patella-fracture",
+  name: "Patella Fracture",
+  region: "Knee & Sports",
+  headerTitle: "Patella Fracture:",
+  headerItalic: "a broken kneecap, and whether you can straighten it.",
+  headerLede:
+    "A patella (kneecap) fracture usually comes from a direct blow or fall. The key question is whether the knee can still straighten. Fractures that stay aligned with an intact straightening mechanism heal without surgery; displaced ones are fixed.",
+  byline: sportsByline,
+  overview: [
+    "The patella, or kneecap, sits within the tendon that straightens the knee. It usually breaks from a direct blow or a fall onto the front of the knee. Because the kneecap is part of the straightening mechanism, the most important question is whether the knee can still actively straighten.",
+    "When the fragments stay aligned and the straightening mechanism is intact, many patella fractures heal without surgery. When the fragments are displaced or the knee cannot straighten, surgery restores the alignment and the mechanism.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Common findings after a blow or fall include:"],
+      bullets: [
+        "Pain and swelling over the front of the knee",
+        "Difficulty or inability to straighten the knee or keep it straight",
+        "A palpable gap in the kneecap",
+        "Bruising and tenderness directly over the patella",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "X-rays confirm the fracture and how displaced it is, and the exam tests whether the knee can actively straighten. Sometimes a CT scan adds detail for surgical planning. Whether the straightening mechanism is intact is what drives the decision.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee's central question is whether the knee can straighten and whether the fragments are aligned. A non-displaced fracture with an intact straightening mechanism is treated without surgery, immobilized briefly and then moved early to limit stiffness.",
+      "Displaced fractures, and any fracture where the knee cannot straighten, are fixed surgically, restoring the alignment and the extensor mechanism with a tension-band or screw-and-plate construct. Early protected motion follows to protect against the stiffness the knee is prone to after immobilization.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "A non-displaced patella fracture with an intact ability to straighten the knee is treated in a brace, with early motion introduced as healing allows to avoid stiffness.",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "Displaced fractures, and fractures that disrupt the ability to straighten the knee, are fixed surgically to restore the kneecap's alignment and the straightening mechanism. Secure fixation allows protected motion to start early.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery balances protection with early motion:",
+  recovery: [
+    { when: "Weeks 0 to 2", what: "Brace, with early gentle motion introduced as the treatment allows. Weight-bearing as directed." },
+    { when: "Weeks 2 to 6", what: "Progressive range of motion and strengthening, protecting the healing fracture." },
+    { when: "Weeks 6 to 12", what: "Strengthening and a graded return to activity as the fracture heals." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "Can you straighten the knee?", body: "The ability to actively straighten the knee is the key question with a kneecap fracture. If it is lost, the straightening mechanism is disrupted and surgery is usually needed." },
+      { heading: "Early motion limits stiffness.", body: "As with the elbow, the knee stiffens when held still too long. For stable fractures and after fixation, early protected motion is what protects function." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Bone involved", value: "Patella (kneecap)" },
+    { label: "Mechanism", value: "Direct blow or fall onto the front of the knee" },
+    { label: "Key question", value: "Can the knee still straighten?" },
+    { label: "Non-displaced", value: "Treated without surgery" },
+    { label: "Displaced", value: "Surgical fixation" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Decision driven by the straightening mechanism and alignment",
+    "Early protected motion to limit stiffness",
+    "Surgical fixation for displaced fractures",
+  ],
+  related: [
+    { name: "Patellar and Quadriceps Tendon Rupture", slug: "patellar-quad-tendon-rupture" },
+    { name: "Tibial Plateau Fracture", slug: "tibial-plateau-fracture" },
+    { name: "Patellofemoral Pain Syndrome", slug: "patellofemoral-syndrome" },
+    { name: "Prepatellar Bursitis", slug: "prepatellar-bursitis" },
+  ],
+  ctaCard: {
+    eyebrow: "Broke your kneecap?",
+    headline: "Whether you can straighten it guides the plan.",
+  },
+  faqHeadline: "Patella fractures, answered.",
+  faqs: [
+    {
+      question: "Do I need surgery for a broken kneecap?",
+      answer:
+        "It depends on whether the fragments are displaced and whether you can still straighten the knee. A non-displaced fracture with an intact straightening mechanism is treated without surgery. Displaced fractures, or any fracture where the knee cannot straighten, are fixed surgically.",
+    },
+    {
+      question: "Why does it matter if I can straighten my knee?",
+      answer:
+        "The kneecap is part of the mechanism that straightens the knee. If a fracture disrupts that, you cannot actively straighten the leg, which signals that the mechanism needs to be surgically restored. It is the single most important finding in deciding treatment.",
+    },
+    {
+      question: "How long is recovery?",
+      answer:
+        "Whether treated in a brace or with surgery, early protected motion is introduced to limit stiffness, with strengthening and a graded return over the following weeks to a few months as the fracture heals. The exact pace depends on the fracture and the fixation.",
+    },
+  ],
+  bottomCtaTitle: "Direct blow to the kneecap?",
+  bottomCtaItalic: "The straightening test guides everything.",
+  bottomCtaBody:
+    "A patella fracture is treated based on alignment and whether the knee can straighten. Stable fractures with an intact mechanism heal without surgery, while displaced ones are fixed. Early protected motion protects against stiffness.",
+  metaTitle: "Patella Fracture, Steven J. Lee, MD",
+  metaDescription:
+    "Patella (kneecap) fracture evaluated and treated by Dr. Steven J. Lee, MD. Non-surgical care for stable fractures and surgical fixation for displaced ones, with early motion explained.",
+  schemaDescription:
+    "A patella fracture is a break of the kneecap, often from a direct blow. Non-displaced fractures with an intact extensor mechanism are treated without surgery; displaced fractures are surgically fixed.",
+};
+
+const tibialPlateauFracture: ConditionPageContent = {
+  slug: "tibial-plateau-fracture",
+  name: "Tibial Plateau Fracture",
+  region: "Knee & Sports",
+  headerTitle: "Tibial Plateau Fracture:",
+  headerItalic: "a fracture into the surface of the knee.",
+  headerLede:
+    "A tibial plateau fracture breaks the top of the shinbone where it forms the knee joint. Because it involves the joint surface, restoring a smooth, aligned surface is the priority. The treatment depends on how displaced and depressed the fracture is.",
+  byline: sportsByline,
+  overview: [
+    "The tibial plateau is the top of the shinbone, the flat surface the thighbone rests on to form the knee joint. A fracture here, from a fall, a sports injury, or a higher-energy impact, involves the joint surface itself, which makes restoring a smooth, well-aligned surface the central goal.",
+    "Because the joint surface is involved, how much the fracture is displaced or depressed strongly influences both treatment and the long-term health of the knee. These fractures also need a careful check of the surrounding soft tissues and the leg's circulation.",
+  ],
+  bodySections: [
+    {
+      heading: "Why the joint surface matters",
+      body: [
+        "An aligned, smooth joint surface lets the knee glide and share load evenly. When a fracture leaves the surface depressed or stepped, it raises the long-term risk of arthritis, which is why displaced tibial plateau fractures are realigned and fixed.",
+      ],
+    },
+    {
+      heading: "Symptoms and urgent checks",
+      body: [
+        "A tibial plateau fracture causes pain, swelling, and an inability to bear weight after the injury. Because of the energy involved, the evaluation also checks the soft tissues, the ligaments, and the leg's circulation, since significant swelling can occasionally threaten the muscles' blood supply and needs urgent attention.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee evaluates the fracture with X-rays and usually a CT scan to map the joint surface, and examines the soft tissues, ligaments, and circulation. Non-displaced fractures with a well-preserved joint surface are treated without surgery, with protected weight-bearing and early motion.",
+      "Displaced or depressed fractures are fixed surgically to restore the joint surface and alignment, supporting it with plates and screws and, when needed, bone graft. The aim is a congruent surface and a stable knee, which is what protects against later arthritis.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "Non-displaced fractures with a preserved joint surface are treated with protected weight-bearing, bracing, and early motion, monitored with imaging to be sure the alignment holds.",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "Displaced or depressed fractures are realigned and fixed with plates and screws, with bone graft when needed to support a restored joint surface. A congruent, stable surface is the goal, since it influences the long-term health of the knee.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery protects the joint surface while restoring motion:",
+  recovery: [
+    { when: "Weeks 0 to 6", what: "Protected or limited weight-bearing with early motion to keep the knee from stiffening." },
+    { when: "Weeks 6 to 12", what: "Progressive weight-bearing as healing allows, with continued range of motion and strengthening." },
+    { when: "Months 3 to 6", what: "Strengthening and a graded return to activity as the fracture consolidates." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "It is a joint injury, not just a broken bone.", body: "Because the fracture involves the knee's surface, restoring a smooth, aligned surface matters for the long-term health of the joint, not only for the bone to heal." },
+      { heading: "Weight-bearing is limited at first.", body: "Putting weight on a healing tibial plateau too early can displace the surface. Protected weight-bearing with early motion is the usual balance." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Bone involved", value: "Top of the tibia (knee joint surface)" },
+    { label: "Why it matters", value: "Involves the joint surface" },
+    { label: "Imaging", value: "X-ray plus CT to map the surface" },
+    { label: "Non-displaced", value: "Protected weight-bearing and early motion" },
+    { label: "Displaced", value: "Surgical realignment and fixation" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Restores the joint surface to protect long-term knee health",
+    "Checks ligaments, soft tissues, and circulation, not just the bone",
+    "Early protected motion to limit stiffness",
+  ],
+  related: [
+    { name: "Patella Fracture", slug: "patella-fracture" },
+    { name: "Knee Collateral Ligament Injury", slug: "knee-collateral-ligament" },
+    { name: "ACL Tear", slug: "acl-reconstruction" },
+    { name: "PCL Tear", slug: "pcl-tear" },
+  ],
+  ctaCard: {
+    eyebrow: "Fracture into the knee surface?",
+    headline: "Restoring the surface is the priority.",
+  },
+  faqHeadline: "Tibial plateau fractures, answered.",
+  faqs: [
+    {
+      question: "Why is a tibial plateau fracture more involved than a regular break?",
+      answer:
+        "Because it breaks the top of the shinbone where it forms the knee joint, so the fracture involves the joint surface itself. Restoring a smooth, aligned surface matters for how the knee moves and shares load, and for the long-term risk of arthritis, which is why displaced fractures are realigned and fixed.",
+    },
+    {
+      question: "Do I need surgery?",
+      answer:
+        "It depends on how displaced and depressed the joint surface is. Non-displaced fractures with a preserved surface are treated with protected weight-bearing, bracing, and early motion. Displaced or depressed fractures are fixed surgically with plates and screws, and bone graft when needed, to restore the surface.",
+    },
+    {
+      question: "When can I put weight on it?",
+      answer:
+        "Weight-bearing is limited at first, because loading a healing tibial plateau too early can displace the joint surface. The usual approach is protected weight-bearing with early motion to prevent stiffness, progressing as imaging confirms the fracture is healing in good alignment.",
+    },
+  ],
+  bottomCtaTitle: "Fracture at the top of the shinbone?",
+  bottomCtaItalic: "The joint surface is what matters most.",
+  bottomCtaBody:
+    "A tibial plateau fracture involves the knee's joint surface, so restoring a smooth, aligned surface is the priority. Non-displaced fractures are protected and moved early, while displaced ones are realigned and fixed to protect the long-term health of the knee.",
+  metaTitle: "Tibial Plateau Fracture, Steven J. Lee, MD",
+  metaDescription:
+    "Tibial plateau fracture evaluated and treated by Dr. Steven J. Lee, MD. Protected weight-bearing for non-displaced fractures and surgical fixation to restore the joint surface for displaced ones explained.",
+  schemaDescription:
+    "A tibial plateau fracture breaks the top of the shinbone at the knee joint surface. Non-displaced fractures are treated with protected weight-bearing; displaced or depressed fractures are surgically realigned and fixed.",
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Foot & Ankle additions (Dr. Lee feedback, June 2026). Reuses sportsByline.
+const ankleSprain: ConditionPageContent = {
+  slug: "ankle-sprain",
+  name: "Ankle Sprain and Instability",
+  region: "Foot & Ankle",
+  headerTitle: "Ankle Sprain and Instability:",
+  headerItalic: "the rolled ankle, and the one that keeps giving way.",
+  headerLede:
+    "Ankle sprains are among the most common injuries in sport. Most heal with functional rehabilitation rather than prolonged immobilization. When the ankle keeps giving way, ligament repair restores stability.",
+  byline: sportsByline,
+  overview: [
+    "An ankle sprain is a stretch or tear of the ligaments on the outer side of the ankle, usually from rolling the foot inward. Most are treated successfully with early, functional rehabilitation, and the old approach of long immobilization has largely been replaced by guided motion and strengthening.",
+    "The problem to watch for is chronic instability, when the ankle keeps turning or giving way after the initial injury heals. That is what tips a simple sprain toward needing a brace program or, occasionally, surgery, and it is also a reason to look for injuries a sprain can hide.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Common findings include:"],
+      bullets: [
+        "Pain, swelling, and bruising on the outer ankle after rolling it",
+        "Difficulty bearing weight early on",
+        "A sense of the ankle giving way or turning easily afterward",
+        "Recurrent sprains with progressively less force",
+      ],
+    },
+    {
+      heading: "What a sprain can hide",
+      body: [
+        "Persistent pain after an ankle sprain deserves a closer look, because a sprain can accompany or be mistaken for a fracture, a cartilage lesion of the ankle (OCD), or a tendon injury on the outer ankle. Sorting these out is part of the evaluation when symptoms do not settle.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "For an acute sprain, Dr. Lee favors functional rehabilitation, early protected motion, balance and strength training, and a graded return to activity, which recovers faster and more completely than prolonged immobilization.",
+      "When the ankle remains unstable despite a genuine rehabilitation and bracing program, surgery repairs or reconstructs the torn outer ligaments to restore stability. Persistent pain prompts a search for an associated cartilage or tendon problem that may need its own treatment.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["Most sprains, and many unstable ankles, respond to:"],
+      bullets: [
+        "Early functional rehabilitation rather than long immobilization",
+        "Balance (proprioception) and strength training",
+        "A brace during return to sport for unstable ankles",
+        "A graded return to cutting and pivoting activity",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "For chronic instability that persists despite a genuine rehabilitation and bracing program, the torn outer ligaments are repaired or reconstructed to restore stability. Any associated cartilage or tendon problem is addressed at the same time.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery emphasizes functional rehabilitation:",
+  recovery: [
+    { when: "Weeks 0 to 2", what: "Protected weight-bearing and early motion. Control swelling. Begin balance work as comfort allows." },
+    { when: "Weeks 2 to 6", what: "Progressive strengthening and balance training, then a graded return to running and cutting." },
+    { when: "After surgery", what: "A brace early, then progressive strengthening and a graded return to sport over the following months." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "Rest-only is not the best plan.", body: "Functional rehabilitation, early guided motion, balance, and strength work, recovers an ankle sprain faster and more completely than prolonged immobilization." },
+      { heading: "A sprain that will not settle deserves a second look.", body: "Persistent pain after a sprain can mean an associated fracture, cartilage lesion, or tendon injury that a sprain can hide. That is worth evaluating rather than assuming it is just a slow sprain." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "Stretch or tear of the outer ankle ligaments" },
+    { label: "Best early treatment", value: "Functional rehabilitation" },
+    { label: "Watch for", value: "Chronic instability, recurrent giving way" },
+    { label: "Surgery", value: "Ligament repair or reconstruction for instability" },
+    { label: "If pain persists", value: "Look for a hidden cartilage or tendon injury" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Functional rehabilitation first, the faster and more complete approach",
+    "Ligament repair or reconstruction for chronic instability",
+    "Looks for the cartilage and tendon injuries a sprain can hide",
+  ],
+  related: [
+    { name: "Osteochondritis Dissecans (OCD)", slug: "osteochondritis-dissecans" },
+    { name: "Achilles Tendon Rupture", slug: "achilles-rupture" },
+    { name: "Jones and Pseudo-Jones Fracture", slug: "jones-fracture" },
+    { name: "Achilles Tendonitis", slug: "achilles-tendonitis" },
+  ],
+  ctaCard: {
+    eyebrow: "Ankle that keeps rolling?",
+    headline: "Stability is restorable.",
+  },
+  faqHeadline: "Ankle sprains and instability, answered.",
+  faqs: [
+    {
+      question: "Should I immobilize a sprained ankle?",
+      answer:
+        "For most sprains, no. Functional rehabilitation, early protected motion, balance training, and progressive strengthening, recovers the ankle faster and more completely than prolonged immobilization. A brief period of protection is fine early on, but the goal is to get the ankle moving and strong.",
+    },
+    {
+      question: "Why does my ankle keep giving way?",
+      answer:
+        "After a sprain, the outer ligaments can heal loose, and the ankle's balance reflexes can be impaired, leading to recurrent turning or giving way. A targeted balance and strengthening program with a brace resolves many cases. When instability persists, surgery to repair or reconstruct the ligaments restores stability.",
+    },
+    {
+      question: "My ankle still hurts months after a sprain. Why?",
+      answer:
+        "Persistent pain after a sprain is worth evaluating, because a sprain can accompany or hide a fracture, a cartilage lesion of the ankle (OCD), or a tendon injury on the outer ankle. Identifying one of these explains the lingering pain and directs the right treatment.",
+    },
+  ],
+  bottomCtaTitle: "Sprained ankle that won't settle, or keeps rolling?",
+  bottomCtaItalic: "There is usually a clear path back.",
+  bottomCtaBody:
+    "Most ankle sprains recover well with functional rehabilitation, and chronic instability is reliably treated with a brace program or ligament surgery. Persistent pain prompts a look for the cartilage or tendon injuries a sprain can hide.",
+  metaTitle: "Ankle Sprain and Instability, Steven J. Lee, MD",
+  metaDescription:
+    "Ankle sprains and chronic ankle instability evaluated and treated by Dr. Steven J. Lee, MD. Functional rehabilitation, bracing, and ligament repair or reconstruction explained.",
+  schemaDescription:
+    "An ankle sprain is a tear of the outer ankle ligaments, usually treated with functional rehabilitation. Chronic instability is treated with bracing or ligament repair or reconstruction.",
+};
+
+const osteochondritisDissecans: ConditionPageContent = {
+  slug: "osteochondritis-dissecans",
+  name: "Osteochondritis Dissecans (OCD)",
+  region: "Foot & Ankle",
+  headerTitle: "Osteochondritis Dissecans:",
+  headerItalic: "a cartilage-and-bone lesion in the joint.",
+  headerLede:
+    "Osteochondritis dissecans is a lesion of the cartilage and the bone beneath it, often in the ankle or knee. Stable lesions can heal without surgery; unstable or loose ones are treated arthroscopically.",
+  byline: sportsByline,
+  overview: [
+    "Osteochondritis dissecans (OCD) is a problem of the cartilage and the layer of bone just beneath it, where a segment loses its blood supply or is injured and can begin to separate. In the ankle it usually affects the talus, the bone of the lower ankle joint, and it also occurs in the knee.",
+    "OCD can follow an injury, such as an ankle sprain, or develop from repetitive stress. Whether it is treated without surgery depends largely on whether the lesion is stable and still attached, or unstable and at risk of becoming a loose fragment in the joint.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Common findings include:"],
+      bullets: [
+        "Deep, aching joint pain, often after an ankle injury that did not fully settle",
+        "Swelling with activity",
+        "Catching, locking, or a sense of something loose in the joint",
+        "Pain that lingers well beyond a typical sprain",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "X-rays may show the lesion, but MRI is the key test, it shows the cartilage, the bone beneath, and whether the fragment is stable or separating. That stability assessment is what guides whether surgery is needed.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "The central question is stability. A stable OCD lesion, especially in a younger patient with open growth plates, can often heal without surgery, with a period of protected weight-bearing and activity modification.",
+      "An unstable lesion, a loose fragment, or a lesion that has not healed with non-surgical care is treated arthroscopically, by stabilizing the fragment, stimulating new cartilage, or addressing the underlying bone, depending on the size and condition of the lesion. Identifying instability early is what protects the joint surface.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "Stable lesions are treated with protected weight-bearing and activity modification, giving the cartilage and bone a chance to heal. This is more often successful in younger patients with growth remaining.",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "Unstable lesions, loose fragments, and lesions that fail non-surgical care are treated arthroscopically. Depending on the lesion, the surgery stabilizes the fragment, stimulates new cartilage, or addresses the bone beneath. The goal is a stable, smooth joint surface.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery depends on stability and treatment:",
+  recovery: [
+    { when: "Non-surgical", what: "A period of protected weight-bearing and activity modification, monitored with imaging." },
+    { when: "After surgery, weeks 0 to 6", what: "Protected weight-bearing with early motion, depending on the procedure." },
+    { when: "Months 3 to 6", what: "Progressive return to loading and sport as the cartilage and bone heal." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "It can hide behind a 'sprain.'", body: "An OCD lesion in the ankle often follows a sprain and explains pain that lingers well beyond it. Persistent post-sprain pain is a reason to look at the cartilage with an MRI." },
+      { heading: "Stability drives the plan.", body: "Whether an OCD lesion needs surgery depends mostly on whether it is stable and attached, or unstable and separating. The MRI assessment of stability is the key piece." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "A cartilage-and-bone lesion in a joint" },
+    { label: "Common site", value: "Talus (ankle), also the knee" },
+    { label: "Best test", value: "MRI for lesion stability" },
+    { label: "Stable lesions", value: "Often heal without surgery" },
+    { label: "Unstable or loose", value: "Treated arthroscopically" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Bases the plan on lesion stability, the key factor",
+    "Arthroscopic treatment for unstable or loose lesions",
+    "Considers OCD when post-sprain pain lingers",
+  ],
+  related: [
+    { name: "Ankle Sprain and Instability", slug: "ankle-sprain" },
+    { name: "Achilles Tendonitis", slug: "achilles-tendonitis" },
+    { name: "Stress Fracture", slug: "stress-fracture" },
+    { name: "PRP (Platelet-Rich Plasma) Injections", slug: "prp-injections" },
+  ],
+  ctaCard: {
+    eyebrow: "Deep joint pain after an injury?",
+    headline: "Stability decides the treatment.",
+  },
+  faqHeadline: "Osteochondritis dissecans, answered.",
+  faqs: [
+    {
+      question: "What is osteochondritis dissecans?",
+      answer:
+        "It is a lesion of the cartilage and the bone just beneath it, where a segment is injured or loses its blood supply and can begin to separate. In the ankle it usually affects the talus, and it also occurs in the knee. It can follow an injury like an ankle sprain or develop from repetitive stress.",
+    },
+    {
+      question: "Do I need surgery?",
+      answer:
+        "It depends on whether the lesion is stable. A stable, attached lesion, especially in a younger patient, can often heal with protected weight-bearing and activity modification. An unstable lesion, a loose fragment, or one that fails non-surgical care is treated arthroscopically. An MRI assessment of stability guides the decision.",
+    },
+    {
+      question: "Could this be why my ankle still hurts after a sprain?",
+      answer:
+        "Possibly. An OCD lesion of the ankle often follows a sprain and explains deep pain, swelling, or catching that lingers well beyond a typical sprain. Persistent post-sprain pain is a reason to look at the cartilage with an MRI.",
+    },
+  ],
+  bottomCtaTitle: "Deep joint pain that lingers after an injury?",
+  bottomCtaItalic: "The cartilage is worth a look.",
+  bottomCtaBody:
+    "Osteochondritis dissecans is a cartilage-and-bone lesion that often hides behind a stubborn ankle sprain. Stable lesions can heal without surgery, while unstable ones are treated arthroscopically. An MRI assessment of stability directs the plan.",
+  metaTitle: "Osteochondritis Dissecans (OCD), Steven J. Lee, MD",
+  metaDescription:
+    "Osteochondritis dissecans (OCD) of the ankle and knee evaluated and treated by Dr. Steven J. Lee, MD. Non-surgical care for stable lesions and arthroscopic treatment for unstable ones explained.",
+  schemaDescription:
+    "Osteochondritis dissecans (OCD) is a lesion of cartilage and underlying bone, often in the ankle (talus) or knee. Stable lesions may heal without surgery; unstable or loose lesions are treated arthroscopically.",
+};
+
+const achillesTendonitis: ConditionPageContent = {
+  slug: "achilles-tendonitis",
+  name: "Achilles Tendonitis",
+  region: "Foot & Ankle",
+  headerTitle: "Achilles Tendonitis:",
+  headerItalic: "the runner's heel-cord ache.",
+  headerLede:
+    "Achilles tendonitis is pain and stiffness in the heel cord from overuse. Like other tendon problems, it is mostly degeneration, and a loading exercise program is the foundation. The key is to treat it before the tendon is at risk of rupture.",
+  byline: sportsByline,
+  overview: [
+    "Achilles tendonitis, more accurately tendinopathy, is overuse irritation and wear of the Achilles tendon, the heel cord that connects the calf to the heel. It comes in two main forms, midportion (a few centimeters above the heel) and insertional (right at the heel bone), which are treated somewhat differently.",
+    "It is common in runners and in people who increase activity quickly. Despite the name 'itis,' it is largely degeneration rather than active inflammation, which is why a structured loading program, not rest alone, is the foundation of treatment.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Typical complaints include:"],
+      bullets: [
+        "Pain and stiffness in the heel cord, worse in the morning and at the start of activity",
+        "Tenderness and sometimes thickening of the tendon",
+        "Pain with running, jumping, and climbing stairs",
+        "A creaking sensation in the tendon in some cases",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "Achilles tendonitis is largely a clinical diagnosis based on tenderness and pain with loading the tendon. Ultrasound or MRI is used to assess the tendon when the picture is unclear, recovery stalls, or there is concern about a partial tear.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee treats Achilles tendonitis patiently and conservatively, with a structured loading program, especially eccentric and heavy-slow calf exercise, the approach with the best track record for this tendon, along with load management and footwear or heel-lift adjustments.",
+      "For tendons that stall, PRP is an option Dr. Lee discusses. Surgery is reserved for the small minority with persistent pain after an extended program. One caution shapes everything: a tendon weakened by chronic tendinopathy is at some risk of rupture, so loading is progressed sensibly and steroid injection into the tendon is avoided.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["The foundation is loading the tendon, not resting it:"],
+      bullets: [
+        "A structured eccentric and heavy-slow calf-loading program",
+        "Load and training-volume management",
+        "A heel lift or footwear adjustment, particularly for the insertional form",
+        "PRP as an option for tendons that are not healing",
+      ],
+    },
+    {
+      heading: "When conservative care stalls",
+      body: [
+        "Surgery, which addresses the degenerated portion of the tendon and any bone spur in the insertional form, is reserved for the small minority whose pain persists after an extended, genuine loading program. Steroid injection into the tendon is avoided because it can weaken it.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery is measured in months and depends on consistent loading:",
+  recovery: [
+    { when: "Weeks 0 to 12", what: "A structured calf-loading program with load management. Improvement is gradual." },
+    { when: "Months 3 to 6", what: "Progressive return to running and sport as the tendon tolerates load." },
+    { when: "After surgery (rare)", what: "Protected loading early, then a graded program over several months." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "Rest alone usually is not enough.", body: "Because Achilles tendonitis is mostly degeneration, the tendon needs progressive loading to heal. Complete rest helps briefly, then the pain returns with activity." },
+      { heading: "Avoid steroid injections into the tendon.", body: "Injecting steroid directly into the Achilles can weaken it and raise the risk of rupture, so it is avoided. The loading program is the safer, more effective foundation." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Tendon involved", value: "Achilles (heel cord)" },
+    { label: "Two forms", value: "Midportion and insertional" },
+    { label: "Nature", value: "Degeneration more than inflammation" },
+    { label: "Foundation", value: "Eccentric and heavy-slow calf loading" },
+    { label: "Caution", value: "Avoid steroid injection into the tendon" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Loading-program-first, the approach with the best track record",
+    "Avoids steroid injection into the tendon to protect against rupture",
+    "Has authored peer-reviewed papers on Achilles tendon repair",
+  ],
+  related: [
+    { name: "Achilles Tendon Rupture", slug: "achilles-rupture" },
+    { name: "Plantar Fasciitis", slug: "plantar-fasciitis" },
+    { name: "Shin Splints (Medial Tibial Stress Syndrome)", slug: "shin-splints" },
+    { name: "PRP (Platelet-Rich Plasma) Injections", slug: "prp-injections" },
+  ],
+  ctaCard: {
+    eyebrow: "Stiff, achy heel cord?",
+    headline: "A loading program is the foundation.",
+  },
+  faqHeadline: "Achilles tendonitis, answered.",
+  faqs: [
+    {
+      question: "Why does rest not fix my Achilles pain?",
+      answer:
+        "Achilles tendonitis is mostly degeneration of the tendon rather than active inflammation. The tendon needs progressive, controlled loading to heal, so rest feels better briefly but the pain returns with activity. A structured eccentric and heavy-slow calf-loading program is the treatment with the best track record.",
+    },
+    {
+      question: "Can I get a cortisone shot for it?",
+      answer:
+        "Injecting steroid directly into the Achilles tendon is avoided, because it can weaken the tendon and raise the risk of rupture. The loading exercise program is the safer and more effective foundation, with PRP an option Dr. Lee discusses for tendons that are not healing.",
+    },
+    {
+      question: "Could it turn into a rupture?",
+      answer:
+        "A tendon weakened by chronic tendinopathy carries some risk of rupture, which is why loading is progressed sensibly and steroid injections into the tendon are avoided. Treating the tendonitis with a structured program is part of protecting the tendon.",
+    },
+  ],
+  bottomCtaTitle: "Heel-cord pain that will not settle?",
+  bottomCtaItalic: "Patience and the right loading win.",
+  bottomCtaBody:
+    "Achilles tendonitis is stubborn but the large majority improve with a structured calf-loading program and load management, with PRP an option for tendons that stall. Steroid injections into the tendon are avoided, and surgery is rarely needed.",
+  metaTitle: "Achilles Tendonitis, Steven J. Lee, MD",
+  metaDescription:
+    "Achilles tendonitis (tendinopathy) evaluated and treated by Dr. Steven J. Lee, MD. Eccentric and heavy-slow loading, load management, PRP, and why steroid injections into the tendon are avoided explained.",
+  schemaDescription:
+    "Achilles tendonitis (tendinopathy) is overuse degeneration of the heel cord, in midportion and insertional forms. Treatment is mainly a structured calf-loading program, with PRP or surgery in selected cases.",
+};
+
+const plantarFasciitis: ConditionPageContent = {
+  slug: "plantar-fasciitis",
+  name: "Plantar Fasciitis",
+  region: "Foot & Ankle",
+  headerTitle: "Plantar Fasciitis:",
+  headerItalic: "the first-step-in-the-morning heel pain.",
+  headerLede:
+    "Plantar fasciitis is the most common cause of heel pain, classically worst with the first steps in the morning. It is stubborn but the large majority resolve without surgery, with stretching, support, and patience.",
+  byline: sportsByline,
+  overview: [
+    "Plantar fasciitis is irritation and wear of the plantar fascia, the thick band of tissue along the bottom of the foot that supports the arch. The hallmark is sharp heel pain with the first steps in the morning or after sitting, which eases as you walk and then returns with prolonged standing.",
+    "It comes from overload, a spike in activity, tight calves, unsupportive footwear, or time on hard surfaces. It can be slow to settle, but it is reassuring that the large majority resolve without surgery.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Typical complaints include:"],
+      bullets: [
+        "Sharp heel pain with the first steps in the morning or after rest",
+        "Pain that eases with walking, then returns with prolonged standing",
+        "Tenderness at the inner part of the heel",
+        "Pain worse on hard surfaces or in unsupportive shoes",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "Plantar fasciitis is a clinical diagnosis based on the classic pattern and tenderness at the heel. Imaging is used mainly to rule out other causes, such as a stress fracture or nerve entrapment, when the picture is atypical or recovery stalls.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Plantar fasciitis is treated conservatively, and patiently. Dr. Lee emphasizes the measures with the best track record, calf and plantar-fascia stretching, supportive footwear or orthotics, a night splint, and activity modification, which resolve the large majority over weeks to months.",
+      "For stubborn cases, options include a corticosteroid injection used judiciously (since repeated steroid can weaken the fascia), shockwave therapy, and PRP. Surgery is reserved for the small minority with pain that persists after an extended, genuine course of conservative care.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["The large majority resolve with:"],
+      bullets: [
+        "Calf and plantar-fascia stretching, the most effective single measure",
+        "Supportive footwear or an orthotic insert",
+        "A night splint that holds a gentle stretch",
+        "Activity modification and load management",
+      ],
+    },
+    {
+      heading: "When conservative care stalls",
+      body: [
+        "For stubborn cases, a judicious corticosteroid injection, shockwave therapy, or PRP are options. Surgery, which releases part of the fascia, is reserved for the small minority whose pain persists after an extended, genuine trial of conservative care.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery is gradual and rewards consistency:",
+  recovery: [
+    { when: "Weeks 0 to 6", what: "Daily stretching, supportive footwear, a night splint, and activity modification." },
+    { when: "Weeks 6 to 12 and beyond", what: "Continued stretching and load management, with gradual resolution. Most improve over a few months." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "The heel spur is usually not the problem.", body: "Many people with plantar fasciitis have a heel spur, but the spur is usually not the source of pain and rarely needs to be removed. Treatment targets the fascia and calf, not the spur." },
+      { heading: "It takes patience.", body: "Plantar fasciitis can be slow to settle. Consistent stretching and support over weeks to months works for the large majority, even when progress feels gradual." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "Irritation of the plantar fascia on the sole" },
+    { label: "Hallmark", value: "First-step-in-the-morning heel pain" },
+    { label: "Most effective measure", value: "Calf and plantar-fascia stretching" },
+    { label: "Adjuncts", value: "Orthotics, night splint, shockwave, PRP" },
+    { label: "Surgery", value: "Rare, for cases that fail extended care" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Conservative, stretching-and-support-first approach",
+    "Uses steroid injections judiciously to protect the fascia",
+    "Surgery reserved for the small minority who need it",
+  ],
+  related: [
+    { name: "Achilles Tendonitis", slug: "achilles-tendonitis" },
+    { name: "Stress Fracture", slug: "stress-fracture" },
+    { name: "Morton's Neuroma", slug: "mortons-neuroma" },
+    { name: "Shin Splints (Medial Tibial Stress Syndrome)", slug: "shin-splints" },
+  ],
+  ctaCard: {
+    eyebrow: "Heel pain with your first steps?",
+    headline: "It resolves without surgery for most.",
+  },
+  faqHeadline: "Plantar fasciitis, answered.",
+  faqs: [
+    {
+      question: "Why does my heel hurt most in the morning?",
+      answer:
+        "Overnight the plantar fascia tightens, and the first steps in the morning stretch the irritated tissue, producing sharp heel pain that eases as you warm up and then returns with prolonged standing. That classic pattern is the hallmark of plantar fasciitis.",
+    },
+    {
+      question: "Will I need surgery?",
+      answer:
+        "Almost certainly not. The large majority of plantar fasciitis resolves with calf and plantar-fascia stretching, supportive footwear or orthotics, a night splint, and activity modification, though it can take weeks to months. Surgery is reserved for the small minority whose pain persists after an extended, genuine course of conservative care.",
+    },
+    {
+      question: "Do I need my heel spur removed?",
+      answer:
+        "Usually not. Many people with plantar fasciitis have a heel spur, but the spur is generally not the source of the pain and rarely needs to be removed. Treatment focuses on the plantar fascia and calf rather than the spur.",
+    },
+  ],
+  bottomCtaTitle: "Stubborn heel pain that just won't quit?",
+  bottomCtaItalic: "Consistency and patience usually win.",
+  bottomCtaBody:
+    "Plantar fasciitis is one of the most common and most treatable causes of heel pain. Stretching, supportive footwear, and a night splint resolve the large majority over a few months. Injections are used carefully, and surgery is rarely needed.",
+  metaTitle: "Plantar Fasciitis, Steven J. Lee, MD",
+  metaDescription:
+    "Plantar fasciitis (heel pain) evaluated and treated by Dr. Steven J. Lee, MD. Stretching, orthotics, night splints, injections, shockwave, PRP, and when surgery is considered explained.",
+  schemaDescription:
+    "Plantar fasciitis is irritation of the plantar fascia on the sole of the foot, causing first-step heel pain. The large majority resolve with stretching, support, and activity modification.",
+};
+
+const mortonsNeuroma: ConditionPageContent = {
+  slug: "mortons-neuroma",
+  name: "Morton's Neuroma",
+  region: "Foot & Ankle",
+  headerTitle: "Morton's Neuroma:",
+  headerItalic: "the pebble-in-the-shoe forefoot pain.",
+  headerLede:
+    "Morton's neuroma is an irritated, thickened nerve between the toes, usually causing burning forefoot pain and a sensation like a pebble in the shoe. Most cases improve with footwear changes and simple measures.",
+  byline: sportsByline,
+  overview: [
+    "Morton's neuroma is a thickening and irritation of one of the small nerves that run between the long bones of the foot to the toes, most often between the third and fourth toes. The nerve becomes compressed and inflamed, producing pain and altered sensation in the forefoot.",
+    "People often describe burning pain into the toes, numbness, or the feeling of a pebble underfoot or a sock bunched up. Tight or narrow shoes and high heels make it worse, which is why footwear is the first thing addressed.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Typical complaints include:"],
+      bullets: [
+        "Burning or sharp pain in the ball of the foot, often into the toes",
+        "A sensation of a pebble underfoot or a bunched-up sock",
+        "Numbness or tingling between the toes",
+        "Relief when taking the shoe off and rubbing the foot",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "Morton's neuroma is usually diagnosed by examination, squeezing the forefoot reproduces the pain and sometimes a click. Ultrasound or MRI confirms it and rules out other causes when the picture is unclear, and a diagnostic injection can help.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Most Morton's neuromas improve without surgery. Dr. Lee starts with the highest-yield change, wider, lower-heeled shoes with a roomy toe box, along with a metatarsal pad that takes pressure off the nerve, and activity modification.",
+      "A corticosteroid injection relieves many cases that do not settle with footwear alone. For persistent pain, options include further injections or surgery to decompress or remove the irritated nerve. The plan escalates only as far as the symptoms require.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["Most patients improve with:"],
+      bullets: [
+        "Wider, lower-heeled shoes with a roomy toe box",
+        "A metatarsal pad to offload the nerve",
+        "Activity modification",
+        "A corticosteroid injection for cases that do not settle with footwear",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "For pain that persists despite footwear changes and injections, surgery either decompresses the nerve by releasing the tight tissue over it or removes the irritated segment of nerve. The choice depends on the situation and prior treatment.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery depends on the treatment:",
+  recovery: [
+    { when: "Non-surgical", what: "Footwear changes and a metatarsal pad bring relief over weeks; an injection can speed it." },
+    { when: "After surgery, weeks 0 to 4", what: "Protected weight-bearing in a stiff-soled shoe, with wound care." },
+    { when: "Weeks 4 to 8", what: "Progressive return to normal footwear and activity." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "It is a nerve, not a tumor.", body: "Despite the name 'neuroma,' it is an irritated, thickened nerve, not a cancer. The concern is symptoms and function, not malignancy." },
+      { heading: "Shoes matter most at first.", body: "The single highest-yield change is roomier, lower-heeled footwear with a metatarsal pad. Many cases settle with footwear and a pad before any injection or surgery." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "Irritated, thickened nerve between the toes" },
+    { label: "Common site", value: "Between the third and fourth toes" },
+    { label: "Hallmark", value: "Burning forefoot pain, pebble-like sensation" },
+    { label: "First-line treatment", value: "Footwear changes and a metatarsal pad" },
+    { label: "Surgery", value: "Decompression or nerve excision for persistent cases" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Experienced with peripheral-nerve problems of the limb",
+    "Footwear-and-pad first, escalating only as symptoms require",
+    "Decompression or excision for cases that do not settle",
+  ],
+  related: [
+    { name: "Plantar Fasciitis", slug: "plantar-fasciitis" },
+    { name: "Stress Fracture", slug: "stress-fracture" },
+    { name: "Jones and Pseudo-Jones Fracture", slug: "jones-fracture" },
+    { name: "Wartenberg's Syndrome", slug: "wartenbergs-syndrome" },
+  ],
+  ctaCard: {
+    eyebrow: "Feels like a pebble in your shoe?",
+    headline: "Most cases improve without surgery.",
+  },
+  faqHeadline: "Morton's neuroma, answered.",
+  faqs: [
+    {
+      question: "What does Morton's neuroma feel like?",
+      answer:
+        "Most people describe burning or sharp pain in the ball of the foot that radiates into the toes, often with numbness and the sensation of a pebble underfoot or a bunched-up sock. Tight or high-heeled shoes make it worse, and taking the shoe off and rubbing the foot brings relief.",
+    },
+    {
+      question: "Is it a tumor?",
+      answer:
+        "No. Despite the name 'neuroma,' it is an irritated, thickened nerve between the toes, not a cancer. The reason to treat it is the pain and altered sensation it causes, not any concern about malignancy.",
+    },
+    {
+      question: "Will I need surgery?",
+      answer:
+        "Usually not. Most Morton's neuromas improve with roomier, lower-heeled footwear and a metatarsal pad, and a corticosteroid injection helps many that do not settle with footwear alone. Surgery, which decompresses or removes the irritated nerve, is reserved for pain that persists despite these measures.",
+    },
+  ],
+  bottomCtaTitle: "Burning forefoot pain like a pebble underfoot?",
+  bottomCtaItalic: "Start with the simple things.",
+  bottomCtaBody:
+    "Morton's neuroma is an irritated nerve between the toes, and most cases improve with footwear changes, a metatarsal pad, and sometimes an injection. Surgery is reserved for pain that persists despite these measures.",
+  metaTitle: "Morton's Neuroma, Steven J. Lee, MD",
+  metaDescription:
+    "Morton's neuroma (forefoot nerve pain) evaluated and treated by Dr. Steven J. Lee, MD. Footwear changes, metatarsal pads, injections, and surgery for persistent cases explained.",
+  schemaDescription:
+    "Morton's neuroma is an irritated, thickened nerve between the toes causing burning forefoot pain. Most cases improve with footwear changes, a metatarsal pad, and injection; surgery is for persistent cases.",
+};
+
+const jonesFracture: ConditionPageContent = {
+  slug: "jones-fracture",
+  name: "Jones and Pseudo-Jones Fracture",
+  region: "Foot & Ankle",
+  headerTitle: "Jones Fracture:",
+  headerItalic: "two different breaks of the same bone.",
+  headerLede:
+    "Fractures at the base of the fifth metatarsal, on the outer side of the foot, come in two types that behave very differently. A true Jones fracture has a poor blood supply and often needs a screw, while a pseudo-Jones avulsion usually heals on its own.",
+  byline: sportsByline,
+  overview: [
+    "The fifth metatarsal is the long bone on the outer edge of the foot, and its base is a common fracture site, usually from rolling the ankle and foot inward. Two patterns occur close together but behave differently, which is why telling them apart matters.",
+    "A pseudo-Jones, or avulsion, fracture is at the very tip of the bone where a tendon pulls off a fragment, and it usually heals on its own. A true Jones fracture sits a bit farther along, in a zone with a poor blood supply, and is prone to slow healing or non-union, so it is treated more aggressively, especially in athletes.",
+  ],
+  bodySections: [
+    {
+      heading: "Why the two types differ",
+      body: [
+        "The difference is location and blood supply. The avulsion (pseudo-Jones) fragment has a good blood supply and reliably heals with protected weight-bearing. The true Jones fracture sits in a watershed zone with poor blood supply, so it heals slowly and is at real risk of non-union, which is why screw fixation is often chosen, particularly for active patients.",
+      ],
+    },
+    {
+      heading: "Symptoms",
+      body: ["Common findings after rolling the foot include:"],
+      bullets: [
+        "Pain, swelling, and tenderness on the outer edge of the foot",
+        "Difficulty bearing weight on the outer foot",
+        "Bruising along the outer border of the foot",
+        "An injury easily mistaken for an ankle sprain",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "The first step is identifying which fracture is present, because the two are managed differently. Dr. Lee confirms the pattern on X-ray and treats a pseudo-Jones avulsion with protected weight-bearing, since it reliably heals.",
+      "A true Jones fracture is treated based on the patient and the fracture. Non-athletes may be treated with strict non-weight-bearing immobilization, but because of the poor blood supply and non-union risk, screw fixation is often the better choice, especially for athletes who want a more reliable, faster return to sport.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Pseudo-Jones (avulsion) fracture",
+      body: [
+        "This fracture at the tip of the bone has a good blood supply and reliably heals with protected weight-bearing in a stiff-soled shoe or boot, followed by a graded return to activity. Surgery is rarely needed.",
+      ],
+    },
+    {
+      heading: "True Jones fracture",
+      body: [
+        "Because it sits in a zone of poor blood supply with a real risk of non-union, a true Jones fracture is treated either with strict non-weight-bearing immobilization or, often, with a screw placed across the fracture. Screw fixation is frequently chosen for athletes for a more reliable, faster return to sport.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery depends on the fracture type and treatment:",
+  recovery: [
+    { when: "Pseudo-Jones", what: "Protected weight-bearing in a boot or stiff-soled shoe, with a graded return over several weeks." },
+    { when: "True Jones, non-surgical", what: "A period of strict non-weight-bearing immobilization, monitored with imaging for healing." },
+    { when: "True Jones, after screw fixation", what: "Protected weight-bearing, then a graded return to sport guided by healing on imaging." },
+  ],
+  misconceptions: {
+    intro: "Worth knowing:",
+    items: [
+      { heading: "Not all fifth-metatarsal fractures are the same.", body: "A pseudo-Jones avulsion heals readily; a true Jones fracture has a poor blood supply and a real risk of non-union. Telling them apart is what guides treatment." },
+      { heading: "It is easily mistaken for a sprain.", body: "A fracture at the base of the fifth metatarsal can feel like an ankle sprain. Outer-foot pain after rolling the ankle deserves an X-ray." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Bone involved", value: "Base of the fifth metatarsal (outer foot)" },
+    { label: "Two types", value: "Pseudo-Jones (avulsion) and true Jones" },
+    { label: "Pseudo-Jones", value: "Good blood supply, heals reliably" },
+    { label: "True Jones", value: "Poor blood supply, non-union risk" },
+    { label: "Surgical option", value: "Screw fixation, often for athletes" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Distinguishes a true Jones fracture from a pseudo-Jones avulsion",
+    "Screw fixation for Jones fractures when reliability and faster return matter",
+    "Return-to-sport planning for athletes",
+  ],
+  related: [
+    { name: "Ankle Sprain and Instability", slug: "ankle-sprain" },
+    { name: "Stress Fracture", slug: "stress-fracture" },
+    { name: "Morton's Neuroma", slug: "mortons-neuroma" },
+    { name: "Osteochondritis Dissecans (OCD)", slug: "osteochondritis-dissecans" },
+  ],
+  ctaCard: {
+    eyebrow: "Outer-foot pain after rolling your ankle?",
+    headline: "Which fracture matters.",
+  },
+  faqHeadline: "Jones and pseudo-Jones fractures, answered.",
+  faqs: [
+    {
+      question: "What is the difference between a Jones and a pseudo-Jones fracture?",
+      answer:
+        "Both are at the base of the fifth metatarsal, but a pseudo-Jones (avulsion) fracture is at the very tip where a tendon pulls off a fragment and has a good blood supply, so it heals reliably. A true Jones fracture sits a bit farther along, in a zone with poor blood supply, so it heals slowly and is at real risk of non-union.",
+    },
+    {
+      question: "Do I need surgery?",
+      answer:
+        "A pseudo-Jones avulsion rarely needs surgery and heals with protected weight-bearing. A true Jones fracture is treated either with strict non-weight-bearing immobilization or with a screw across the fracture. Because of the poor blood supply, screw fixation is often chosen, especially for athletes who want a more reliable, faster return to sport.",
+    },
+    {
+      question: "I thought I just sprained my ankle. Could it be a fracture?",
+      answer:
+        "Yes. A fracture at the base of the fifth metatarsal happens from the same rolling-in mechanism as an ankle sprain and can feel similar. Pain and tenderness on the outer edge of the foot after rolling the ankle deserve an X-ray to tell the two apart.",
+    },
+  ],
+  bottomCtaTitle: "Pain on the outer edge of your foot after a roll?",
+  bottomCtaItalic: "The exact break determines the plan.",
+  bottomCtaBody:
+    "Fractures at the base of the fifth metatarsal come in two types that heal very differently. A pseudo-Jones avulsion heals on its own, while a true Jones fracture often needs a screw because of its poor blood supply. Telling them apart is the first step.",
+  metaTitle: "Jones and Pseudo-Jones Fracture, Steven J. Lee, MD",
+  metaDescription:
+    "Fifth metatarsal base fractures (Jones and pseudo-Jones) evaluated and treated by Dr. Steven J. Lee, MD. Why the two types differ, protected weight-bearing, and screw fixation explained.",
+  schemaDescription:
+    "Jones and pseudo-Jones fractures are two patterns at the base of the fifth metatarsal. The pseudo-Jones avulsion heals reliably; the true Jones fracture has a poor blood supply and often needs screw fixation.",
+};
+
 export const conditionPages: ConditionPageContent[] = [
   carpalTunnel,
   distalRadiusFracture,
@@ -3972,6 +7844,43 @@ export const conditionPages: ConditionPageContent[] = [
   ganglionCyst,
   scaphoidFracture,
   slacWrist,
+  // Elbow additions (Dr. Lee feedback, June 2026):
+  elbowDislocation,
+  cubitalTunnel,
+  luclInjury,
+  tricepsTear,
+  lateralEpicondylitis,
+  medialEpicondylitis,
+  radialTunnel,
+  radialHeadFracture,
+  // Shoulder additions (Dr. Lee feedback, June 2026):
+  acSeparation,
+  shoulderDislocation,
+  slapTear,
+  acArthritis,
+  glenohumeralArthritis,
+  shoulderImpingement,
+  bicepsTendonitis,
+  // Knee & Sports additions (Dr. Lee feedback, June 2026):
+  patellofemoralSyndrome,
+  kneeCollateralLigament,
+  pclTear,
+  pesAnserineBursitis,
+  prepatellarBursitis,
+  stressFracture,
+  shinSplints,
+  osgoodSchlatter,
+  patellarTendonitis,
+  patellarQuadRupture,
+  patellaFracture,
+  tibialPlateauFracture,
+  // Foot & Ankle additions (Dr. Lee feedback, June 2026):
+  ankleSprain,
+  osteochondritisDissecans,
+  achillesTendonitis,
+  plantarFasciitis,
+  mortonsNeuroma,
+  jonesFracture,
 ];
 
 export function conditionPageBySlug(slug: string) {
@@ -3985,6 +7894,65 @@ export function conditionPageBySlug(slug: string) {
 // factual and free of superlatives. A slug with no entry falls back to the
 // generic treatment node in buildConditionSchema.
 export const conditionProcedures: Record<string, string[]> = {
+  "ankle-sprain": ["Functional Rehabilitation", "Ligament Repair or Reconstruction"],
+  "osteochondritis-dissecans": ["Protected Weight-Bearing", "Arthroscopic Treatment"],
+  "achilles-tendonitis": ["Eccentric Calf-Loading Program", "PRP Injection"],
+  "plantar-fasciitis": [
+    "Stretching and Orthotics",
+    "Corticosteroid Injection",
+    "Plantar Fascia Release",
+  ],
+  "mortons-neuroma": [
+    "Footwear Modification and Metatarsal Pad",
+    "Corticosteroid Injection",
+    "Nerve Decompression or Excision",
+  ],
+  "jones-fracture": ["Protected Weight-Bearing", "Screw Fixation"],
+  "patellofemoral-syndrome": ["Physical Therapy and Activity Modification", "Bracing or Taping"],
+  "knee-collateral-ligament": [
+    "Hinged Bracing and Rehabilitation",
+    "Ligament Repair or Reconstruction",
+  ],
+  "pcl-tear": ["Quadriceps Rehabilitation and Bracing", "PCL Reconstruction"],
+  "pes-anserine-bursitis": ["Activity Modification and Therapy", "Corticosteroid Injection"],
+  "prepatellar-bursitis": ["Aspiration and Activity Modification", "Bursa Excision"],
+  "stress-fracture": ["Activity Modification and Protected Loading", "Risk-Factor Evaluation"],
+  "shin-splints": ["Relative Rest and Gait Training", "Graded Return to Running"],
+  "osgood-schlatter": ["Activity Modification", "Stretching and Strengthening"],
+  "patellar-tendonitis": ["Eccentric Loading Program", "PRP Injection"],
+  "patellar-quad-tendon-rupture": ["Tendon Repair"],
+  "patella-fracture": ["Bracing with Early Motion", "Open Reduction and Internal Fixation"],
+  "tibial-plateau-fracture": ["Protected Weight-Bearing", "Open Reduction and Internal Fixation"],
+  "ac-separation": ["Sling and Rehabilitation", "AC Joint Reconstruction"],
+  "shoulder-dislocation": ["Closed Reduction", "Arthroscopic Labral (Bankart) Repair"],
+  "slap-tear": ["Arthroscopic SLAP Repair", "Biceps Tenodesis"],
+  "ac-arthritis": ["Corticosteroid Injection", "Distal Clavicle Excision"],
+  "glenohumeral-arthritis": ["Corticosteroid Injection", "Shoulder Arthroscopy"],
+  "shoulder-impingement": [
+    "Rotator-Cuff Rehabilitation",
+    "Arthroscopic Subacromial Decompression",
+  ],
+  "biceps-tendonitis": ["Rehabilitation and Injection", "Biceps Tenodesis"],
+  "elbow-dislocation": ["Closed Reduction", "Ligament Repair with Internal Brace"],
+  "cubital-tunnel": ["Ulnar Nerve Decompression", "Ulnar Nerve Transposition"],
+  "lucl-injury": ["LUCL Repair with Internal Brace", "Tendon-Graft Reconstruction"],
+  "triceps-tear": ["Triceps Tendon Repair"],
+  "lateral-epicondylitis": [
+    "Eccentric Rehabilitation Program",
+    "PRP Injection",
+    "Extensor Tendon Debridement",
+  ],
+  "medial-epicondylitis": [
+    "Eccentric Rehabilitation Program",
+    "PRP Injection",
+    "Flexor Tendon Debridement",
+  ],
+  "radial-tunnel": ["Activity Modification and Splinting", "Radial Tunnel Decompression"],
+  "radial-head-fracture": [
+    "Early Motion Protocol",
+    "Screw or Plate Fixation",
+    "Radial Head Replacement",
+  ],
   "de-quervains": ["First Dorsal Compartment Release", "Corticosteroid Injection"],
   "dupuytrens-disease": [
     "Needle Aponeurotomy",

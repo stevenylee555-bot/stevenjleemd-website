@@ -214,6 +214,71 @@ export const conditions: Condition[] = [
     blurb:
       "Distal biceps repair using tendon-to-bone anchors Dr. Lee helped design.",
   },
+  // Elbow, June 2026 additions (Dr. Lee feedback)
+  {
+    name: "Elbow Dislocation",
+    slug: "elbow-dislocation",
+    region: "Elbow",
+    status: "priority",
+    blurb:
+      "Simple and complex elbow dislocations, including the terrible triad. Stability first, then early motion to protect against the stiffness the elbow is prone to.",
+  },
+  {
+    name: "Cubital Tunnel Syndrome",
+    slug: "cubital-tunnel",
+    region: "Elbow",
+    status: "priority",
+    blurb:
+      "Ulnar nerve compression at the elbow, causing numbness in the ring and small fingers. Most cases improve with night splinting; surgery decompresses or moves the nerve when needed.",
+  },
+  {
+    name: "LUCL Injury (Elbow Instability)",
+    slug: "lucl-injury",
+    region: "Elbow",
+    status: "priority",
+    blurb:
+      "Lateral ligament injury causing posterolateral rotatory instability. Repair or reconstruction using anchor and internal-brace constructs Dr. Lee helped design.",
+  },
+  {
+    name: "Triceps Tendon Tear",
+    slug: "triceps-tear",
+    region: "Elbow",
+    status: "priority",
+    blurb:
+      "A tear of the triceps at the elbow weakens straightening the arm. Complete tears are repaired by reattaching the tendon to the bone.",
+  },
+  {
+    name: "Lateral Epicondylitis (Tennis Elbow)",
+    slug: "lateral-epicondylitis",
+    region: "Elbow",
+    status: "priority",
+    blurb:
+      "Outer-elbow tendon pain. The large majority improve with activity modification, eccentric exercise, and bracing; PRP and surgery are reserved for stubborn cases.",
+  },
+  {
+    name: "Medial Epicondylitis (Golfer's Elbow)",
+    slug: "medial-epicondylitis",
+    region: "Elbow",
+    status: "priority",
+    blurb:
+      "Inner-elbow tendon pain, treated patiently with exercise and bracing, with attention to the nearby ulnar nerve.",
+  },
+  {
+    name: "Radial Tunnel Syndrome",
+    slug: "radial-tunnel",
+    region: "Elbow",
+    status: "priority",
+    blurb:
+      "A deep forearm ache often mistaken for tennis elbow, from radial nerve compression. Most cases improve without surgery once the diagnosis is made.",
+  },
+  {
+    name: "Radial Head Fracture",
+    slug: "radial-head-fracture",
+    region: "Elbow",
+    status: "priority",
+    blurb:
+      "The most common adult elbow fracture. Stable fractures move early; displaced ones are fixed or replaced using elbow hardware Dr. Lee helped design.",
+  },
   // Elbow, phase 2
   {
     name: "Complex Elbow Trauma",
@@ -237,6 +302,63 @@ export const conditions: Condition[] = [
     region: "Shoulder",
     status: "priority",
     blurb: "Arthroscopic repair with current-generation suture anchors.",
+  },
+  // Shoulder, June 2026 additions (Dr. Lee feedback)
+  {
+    name: "Shoulder Separation (AC Joint)",
+    slug: "ac-separation",
+    region: "Shoulder",
+    status: "priority",
+    blurb:
+      "An AC joint injury on top of the shoulder, usually from a fall. Most low-grade separations recover without surgery; high-grade injuries are evaluated for reconstruction.",
+  },
+  {
+    name: "Shoulder Dislocation & Instability",
+    slug: "shoulder-dislocation",
+    region: "Shoulder",
+    status: "priority",
+    blurb:
+      "The shoulder coming out of the socket, and the instability that can follow, especially in young athletes. Arthroscopic labral repair restores stability when it recurs.",
+  },
+  {
+    name: "SLAP Tear (Labral Injury)",
+    slug: "slap-tear",
+    region: "Shoulder",
+    status: "priority",
+    blurb:
+      "A tear of the top labrum where the biceps anchors, common in throwers and lifters. Many are managed without surgery; repair or biceps tenodesis is tailored to age and activity.",
+  },
+  {
+    name: "AC Joint Arthritis",
+    slug: "ac-arthritis",
+    region: "Shoulder",
+    status: "priority",
+    blurb:
+      "Pinpoint pain on top of the shoulder from AC joint wear. Usually managed with injection and activity modification; a small arthroscopic procedure helps stubborn cases.",
+  },
+  {
+    name: "Shoulder Arthritis (Glenohumeral)",
+    slug: "glenohumeral-arthritis",
+    region: "Shoulder",
+    status: "priority",
+    blurb:
+      "Cartilage wear in the main shoulder joint, causing deep pain and stiffness. Many patients are managed for years without surgery; replacement is the definitive option for advanced arthritis.",
+  },
+  {
+    name: "Shoulder Impingement Syndrome",
+    slug: "shoulder-impingement",
+    region: "Shoulder",
+    status: "priority",
+    blurb:
+      "Pinching of the rotator cuff under the bony arch, causing a painful arc overhead. The large majority improve with targeted therapy.",
+  },
+  {
+    name: "Biceps Tendonitis (Shoulder)",
+    slug: "biceps-tendonitis",
+    region: "Shoulder",
+    status: "priority",
+    blurb:
+      "Irritation of the long head of the biceps at the front of the shoulder, usually alongside cuff or labral problems. Most improve without surgery; tenodesis helps the rest.",
   },
   // Shoulder, phase 2
   {
@@ -263,6 +385,103 @@ export const conditions: Condition[] = [
     status: "priority",
     blurb: "ACL reconstruction with autograft or allograft, internal brace augmentation when appropriate.",
   },
+  // Knee & Sports, June 2026 additions (Dr. Lee feedback)
+  {
+    name: "Patellofemoral Pain Syndrome",
+    slug: "patellofemoral-syndrome",
+    region: "Knee & Sports",
+    status: "priority",
+    blurb:
+      "Aching around the kneecap, worse with stairs and squatting. The large majority improve with a hip and thigh strengthening program rather than surgery.",
+  },
+  {
+    name: "Knee Collateral Ligament Injury (MCL, LCL, PLC)",
+    slug: "knee-collateral-ligament",
+    region: "Knee & Sports",
+    status: "priority",
+    blurb:
+      "The side ligaments of the knee. Most MCL injuries heal in a brace; LCL and posterolateral corner injuries are more serious and often need surgery.",
+  },
+  {
+    name: "PCL Tear",
+    slug: "pcl-tear",
+    region: "Knee & Sports",
+    status: "priority",
+    blurb:
+      "Posterior cruciate ligament injury, often from a dashboard-type impact. Many isolated tears are managed with quadriceps-focused rehabilitation rather than surgery.",
+  },
+  {
+    name: "Pes Anserine Bursitis",
+    slug: "pes-anserine-bursitis",
+    region: "Knee & Sports",
+    status: "priority",
+    blurb:
+      "Inner-knee pain just below the joint from an irritated bursa. Settles without surgery using activity modification, stretching, and injection.",
+  },
+  {
+    name: "Prepatellar Bursitis",
+    slug: "prepatellar-bursitis",
+    region: "Knee & Sports",
+    status: "priority",
+    blurb:
+      "Swelling on the front of the kneecap, often from kneeling. Most settle without surgery, but an infected bursa needs prompt treatment.",
+  },
+  {
+    name: "Stress Fracture",
+    slug: "stress-fracture",
+    region: "Knee & Sports",
+    status: "priority",
+    blurb:
+      "A small crack in bone from repetitive loading, common in the shin and foot. Most heal with activity modification, and treating the cause prevents recurrence.",
+  },
+  {
+    name: "Shin Splints (Medial Tibial Stress Syndrome)",
+    slug: "shin-splints",
+    region: "Knee & Sports",
+    status: "priority",
+    blurb:
+      "Exercise-related inner-shin pain in runners. Treated without surgery; the main step is distinguishing it from a stress fracture.",
+  },
+  {
+    name: "Osgood-Schlatter Disease",
+    slug: "osgood-schlatter",
+    region: "Knee & Sports",
+    status: "priority",
+    blurb:
+      "A common, benign cause of knee pain in growing adolescents. Managed with activity modification and stretching, and it resolves with skeletal maturity.",
+  },
+  {
+    name: "Patellar Tendonitis (Jumper's Knee)",
+    slug: "patellar-tendonitis",
+    region: "Knee & Sports",
+    status: "priority",
+    blurb:
+      "Pain in the tendon below the kneecap in jumping athletes. A structured loading program is the foundation; PRP and surgery are reserved for stubborn cases.",
+  },
+  {
+    name: "Patellar and Quadriceps Tendon Rupture",
+    slug: "patellar-quad-tendon-rupture",
+    region: "Knee & Sports",
+    status: "priority",
+    blurb:
+      "A complete tear breaks the knee's ability to straighten and needs prompt surgical repair. Treated quickly, the results are reliable.",
+  },
+  {
+    name: "Patella Fracture",
+    slug: "patella-fracture",
+    region: "Knee & Sports",
+    status: "priority",
+    blurb:
+      "A broken kneecap. Stable fractures with an intact straightening mechanism heal without surgery; displaced ones are fixed.",
+  },
+  {
+    name: "Tibial Plateau Fracture",
+    slug: "tibial-plateau-fracture",
+    region: "Knee & Sports",
+    status: "priority",
+    blurb:
+      "A fracture into the knee's joint surface at the top of the shinbone. Restoring a smooth, aligned surface is the priority; displaced fractures are fixed.",
+  },
   // Knee & Sports, phase 2
   {
     name: "Meniscus Tear",
@@ -287,6 +506,55 @@ export const conditions: Condition[] = [
     status: "priority",
     blurb:
       "Repair and reconstruction. Dr. Lee has authored four peer-reviewed papers on Achilles repair.",
+  },
+  // Foot & Ankle, June 2026 additions (Dr. Lee feedback)
+  {
+    name: "Ankle Sprain and Instability",
+    slug: "ankle-sprain",
+    region: "Foot & Ankle",
+    status: "priority",
+    blurb:
+      "The rolled ankle and the one that keeps giving way. Most heal with functional rehabilitation; ligament repair restores stability for chronic instability.",
+  },
+  {
+    name: "Osteochondritis Dissecans (OCD)",
+    slug: "osteochondritis-dissecans",
+    region: "Foot & Ankle",
+    status: "priority",
+    blurb:
+      "A cartilage-and-bone lesion, often in the ankle, that can hide behind a stubborn sprain. Stable lesions may heal without surgery; unstable ones are treated arthroscopically.",
+  },
+  {
+    name: "Achilles Tendonitis",
+    slug: "achilles-tendonitis",
+    region: "Foot & Ankle",
+    status: "priority",
+    blurb:
+      "Overuse pain and stiffness in the heel cord. A structured calf-loading program is the foundation; steroid injections into the tendon are avoided.",
+  },
+  {
+    name: "Plantar Fasciitis",
+    slug: "plantar-fasciitis",
+    region: "Foot & Ankle",
+    status: "priority",
+    blurb:
+      "The most common cause of heel pain, worst with the first steps in the morning. The large majority resolve without surgery, with stretching and support.",
+  },
+  {
+    name: "Morton's Neuroma",
+    slug: "mortons-neuroma",
+    region: "Foot & Ankle",
+    status: "priority",
+    blurb:
+      "An irritated nerve between the toes causing burning forefoot pain. Most cases improve with footwear changes, a metatarsal pad, and sometimes an injection.",
+  },
+  {
+    name: "Jones and Pseudo-Jones Fracture",
+    slug: "jones-fracture",
+    region: "Foot & Ankle",
+    status: "priority",
+    blurb:
+      "Two different fractures at the base of the fifth metatarsal. The avulsion heals on its own; a true Jones fracture often needs a screw because of its poor blood supply.",
   },
 
   // Advanced Treatments, phase 2
