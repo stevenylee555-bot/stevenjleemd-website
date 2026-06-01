@@ -17,54 +17,34 @@ export type Testimonial = {
   initials: string;
 };
 
-// Fallback content, shown only when Sanity has no published testimonials yet.
-// Once Dr. Lee adds real ones in the Studio, those replace these automatically.
+// Verified patient testimonials carried over from Dr. Lee's prior site, where
+// they were published with the patient's consent. Shown until Dr. Lee curates
+// testimonials in the Studio, at which point published Sanity entries replace
+// these automatically. No patient photos are used; the carousel renders initials.
 const fallbackTestimonials: Testimonial[] = [
   {
     quote:
-      "I was told my wrist would never be the same after the break. Dr. Lee saw it differently,",
-    emphasis:
-      "and a few months later I was back to gardening and holding my grandchildren.",
-    name: "Margaret R.",
-    detail: "Distal Radius Fracture · Hand & Wrist",
-    image: "/images/testimonials/patient-1.jpg",
-    initials: "MR",
+      "Dr. Lee is a world class doctor and person who has been my friend for decades. As a golf teaching professional I have had several students with very bad hand injuries.",
+    emphasis: "I sent them to Dr. Lee and he saved each of them.",
+    name: "Jim McLean",
+    detail: "Hand & Upper Extremity · Golf Instructor",
+    initials: "JM",
   },
   {
     quote:
-      "Two surgeons told me my throwing days were over. Dr. Lee laid out a plan no one else had considered,",
-    emphasis: "and I returned to the mound the next season.",
-    name: "David L.",
-    detail: "UCL Reconstruction · Second Opinion",
-    image: "/images/testimonials/patient-2.jpg",
-    initials: "DL",
+      "It has been an absolute pleasure having Dr. Steven Lee as my doctor. Dr. Lee has looked after me for years.",
+    emphasis: "As a retired professional tennis player, I have had many aches and pains.",
+    name: "Katrina Adams",
+    detail: "Sports Medicine · Professional Tennis",
+    initials: "KA",
   },
   {
     quote:
-      "I flew in from overseas specifically to see Dr. Lee for my shoulder. From the first consultation through recovery,",
-    emphasis: "I felt I was in the most capable hands.",
-    name: "Priya S.",
-    detail: "Rotator Cuff Repair · International Patient",
-    image: "/images/testimonials/patient-3.jpg",
-    initials: "PS",
-  },
-  {
-    quote:
-      "After my ACL tear I worried I had lost a step for good. Dr. Lee's team guided every stage of the recovery,",
-    emphasis: "and I am back on the court playing the way I used to.",
-    name: "James T.",
-    detail: "ACL Reconstruction · Sports Medicine",
-    image: "/images/testimonials/patient-4.jpg",
-    initials: "JT",
-  },
-  {
-    quote:
-      "The arthritis in my thumb made everyday tasks painful. Dr. Lee explained every option clearly and never rushed me,",
-    emphasis: "and today I can open a jar and write a letter without pain.",
-    name: "Eleanor W.",
-    detail: "Basal Joint Reconstruction · Hand & Wrist",
-    image: "/images/testimonials/patient-5.jpg",
-    initials: "EW",
+      "Back in March 2016 I had Steven do my procedure. It was bothering me for some time until it was time to get it done. I had meniscus tears and cartilage damage.",
+    emphasis: "All went well and I have never looked back.",
+    name: "Clive Leach",
+    detail: "Meniscus Repair · Knee & Sports",
+    initials: "CL",
   },
 ];
 
@@ -313,8 +293,7 @@ export default function TestimonialsCarousel({
         {/* Footnote + link */}
         <div className="mt-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <p className="text-navy-900/90 text-[13px] leading-relaxed max-w-md">
-            Shared with each patient&apos;s permission. Last names abbreviated for
-            privacy.
+            Shared with each patient&apos;s permission.
           </p>
           <Link
             href="/testimonials"
