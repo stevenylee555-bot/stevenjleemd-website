@@ -108,6 +108,47 @@ export const conditions: Condition[] = [
     blurb:
       "Rupture of the small bands that hold the flexor tendons against the finger bones, classically from a crimp-grip fall in rock climbing. Most isolated injuries heal with taping and protected motion; multiple-pulley ruptures may need surgical reconstruction.",
   },
+  // Hand & Wrist, May 2026 additions (Dr. Lee feedback)
+  {
+    name: "De Quervain's Tenosynovitis",
+    slug: "de-quervains",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "Thumb-side wrist pain from irritation of the first dorsal compartment tendons. Most cases improve with splinting and a corticosteroid injection; persistent cases are treated with a short release.",
+  },
+  {
+    name: "Dupuytren's Disease",
+    slug: "dupuytrens-disease",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "Progressive thickening of the palm's fascia that can curl a finger over time. Treated based on function, with in-office needle and enzyme options as well as surgery.",
+  },
+  {
+    name: "Ganglion Cyst",
+    slug: "ganglion-cyst",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "The most common lump in the hand, a benign fluid-filled cyst. Many need no treatment; symptomatic cysts are treated with aspiration or excision of the cyst and its stalk.",
+  },
+  {
+    name: "Scaphoid Fracture",
+    slug: "scaphoid-fracture",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "The most commonly fractured carpal bone, with a fragile blood supply that makes early treatment important. Treated with casting or a headless compression screw depending on the fracture.",
+  },
+  {
+    name: "SLAC Wrist and Salvage Procedures",
+    slug: "slac-wrist",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "End-stage wrist arthritis after an old scapholunate tear or scaphoid non-union. Salvage procedures relieve pain and preserve a functional wrist.",
+  },
   {
     name: "Olecranon Fracture",
     slug: "olecranon-fracture",
@@ -277,7 +318,9 @@ export const regions = [
 ] as const;
 
 export function conditionsByRegion(region: Condition["region"]) {
-  return conditions.filter((c) => c.region === region);
+  return conditions
+    .filter((c) => c.region === region)
+    .sort((a, b) => a.name.localeCompare(b.name, "en", { sensitivity: "base" }));
 }
 
 export function priorityConditions() {
