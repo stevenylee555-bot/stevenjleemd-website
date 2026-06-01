@@ -105,19 +105,21 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
         {/* Logo / Name */}
         <Link href="/" className="flex flex-col leading-tight group">
-          <span className="font-serif text-white text-xl lg:text-[22px] tracking-[-0.01em] leading-none">
+          <span className="font-serif text-white text-xl xl:text-[22px] tracking-[-0.01em] leading-none">
             Steven J. Lee,{" "}
             <span className="serif-italic text-gold-400">MD</span>
           </span>
-          <span className="text-white/85 text-[11px] tracking-[0.16em] uppercase font-semibold mt-1.5">
+          {/* Credential line shows on mobile and at xl+; hidden in the lg-to-xl
+              band where the horizontal nav is tight, so all links fit on one row. */}
+          <span className="block lg:hidden xl:block text-white/85 text-[11px] tracking-[0.16em] uppercase font-semibold mt-1.5">
             Chief of Hand &amp; Upper Extremity Surgery
           </span>
         </Link>
 
-        {/* Desktop links. Shown at xl+, where the full row fits within the
-            max-w-7xl container; below xl the mobile menu is used (the nav is
-            too dense for lg without wrapping). */}
-        <div className="hidden xl:flex items-center gap-1">
+        {/* Desktop links. Shown at lg+; spacing tightens in the lg-to-xl band
+            (compact padding/gaps, credential line hidden) so the full row fits
+            without wrapping, then relaxes at xl. Below lg the mobile menu is used. */}
+        <div className="hidden lg:flex items-center gap-0.5 xl:gap-1">
           {navLinks.map((link) => (
             <div
               key={link.href}
@@ -136,7 +138,7 @@ export default function Navbar() {
                 aria-haspopup={link.children ? "true" : undefined}
                 aria-expanded={link.children ? activeDropdown === link.href : undefined}
                 className={cn(
-                  "flex items-center gap-1 px-3 py-2 text-sm text-white/80 hover:text-white hover:bg-white/10 rounded transition-colors whitespace-nowrap",
+                  "flex items-center gap-1 px-2.5 xl:px-3 py-2 text-sm text-white/80 hover:text-white hover:bg-white/10 rounded transition-colors whitespace-nowrap",
                   activeDropdown === link.href && "bg-white/10 text-white"
                 )}
               >
@@ -185,7 +187,7 @@ export default function Navbar() {
 
         {/* Mobile / tablet toggle, 44x44 hit target */}
         <button
-          className="xl:hidden text-white p-2.5"
+          className="lg:hidden text-white p-2.5"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
           aria-expanded={mobileOpen}
@@ -197,7 +199,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div id="mobile-menu" className="xl:hidden bg-navy-800 border-t border-white/10 px-4 py-4 space-y-2 max-h-[calc(100vh-4rem)] overflow-y-auto">
+        <div id="mobile-menu" className="lg:hidden bg-navy-800 border-t border-white/10 px-4 py-4 space-y-2 max-h-[calc(100vh-4rem)] overflow-y-auto">
           <SiteSearch mode="mobile" onNavigate={() => setMobileOpen(false)} />
           {navLinks.map((link) => (
             <div key={link.href}>
