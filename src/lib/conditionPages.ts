@@ -7814,6 +7814,325 @@ const jonesFracture: ConditionPageContent = {
     "Jones and pseudo-Jones fractures are two patterns at the base of the fifth metatarsal. The pseudo-Jones avulsion heals reliably; the true Jones fracture has a poor blood supply and often needs screw fixation.",
 };
 
+// ─────────────────────────────────────────────────────────────────────────────
+// Hand & Wrist additions (Dr. Lee feedback, June 2026):
+const triggerFinger: ConditionPageContent = {
+  slug: "trigger-finger",
+  name: "Trigger Finger",
+  region: "Hand & Wrist",
+  headerTitle: "Trigger Finger:",
+  headerItalic: "when a finger catches, clicks, or locks.",
+  headerLede:
+    "A thickened nodule on the flexor tendon catches as it tries to glide through a snug pulley at the base of the finger. Most cases resolve with a single in-office injection. The minority that do not are handled with a short A1 pulley release that is one of the most reliable operations in hand surgery.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
+    reviewed: "June 2026",
+  },
+  overview: [
+    "Trigger finger, more formally stenosing tenosynovitis, is one of the most common reasons patients are sent to a hand surgeon. The flexor tendon that bends the finger develops a small nodule, and the tendon sheath at the base of the finger (the A1 pulley) thickens around it. When the finger flexes, the nodule gets pulled past a narrowed pulley; straightening it then takes a forceful pop, a click, or a moment of locking before the finger snaps open.",
+    "It is more common in women than men, peaks between the ages of 40 and 60, and is strongly associated with diabetes. The thumb, ring, and middle fingers are most often affected, sometimes more than one at a time. Patients usually point to a tender spot in the palm at the base of the involved finger rather than to the finger itself.",
+  ],
+  bodySections: [
+    {
+      heading: "Anatomy of the A1 pulley",
+      body: [
+        "Each finger has a series of fibrous pulleys that hold the flexor tendons close to the bone as the finger bends. The A1 pulley sits right at the base of the finger, over the metacarpophalangeal joint. In a healthy hand, the tendons glide through it freely.",
+        "In trigger finger, two things happen at once: a small nodule forms on the tendon (often near the entrance to the A1 pulley), and the pulley itself thickens. The mismatch is what produces the catching. The problem is mechanical, not nerve or joint.",
+      ],
+    },
+    {
+      heading: "Symptoms",
+      body: ["The presentation is recognizable, and patients usually describe a combination of:"],
+      bullets: [
+        "A tender bump or spot in the palm at the base of the affected finger",
+        "Clicking, catching, or popping when the finger bends and straightens",
+        "Stiffness, especially first thing in the morning",
+        "Locking, the finger gets stuck bent and has to be straightened with the other hand",
+        "Pain that can travel along the front of the finger when it triggers",
+      ],
+      bulletsAfter:
+        "A finger that is locked in flexion and cannot be straightened, or a finger that hurts at rest with swelling that is spreading, deserves prompt evaluation rather than watchful waiting.",
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "Trigger finger is a clinical diagnosis. Imaging is rarely needed. The exam reproduces the catching with active finger motion and finds a tender, sometimes palpable nodule over the A1 pulley. X-rays are used only to rule out arthritis or another joint problem when the picture is mixed.",
+      ],
+    },
+    {
+      heading: "Risk factors and associations",
+      body: [
+        "Diabetes is the strongest medical association: people with diabetes are more likely to develop trigger finger, more likely to have multiple fingers involved, and less likely to respond to a single corticosteroid injection. Repetitive forceful gripping (tools, sports equipment, instruments) and certain inflammatory conditions can also contribute. Most cases, however, occur without an identifiable cause.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee treats trigger finger conservatively first. A corticosteroid injection placed into the flexor tendon sheath at the A1 pulley resolves the majority of cases in a single visit, and is performed in the office in a few minutes. A second injection is reasonable for patients whose symptoms partially improve or return. Splinting and activity modification help in early or mild cases.",
+      "When injections do not deliver lasting relief, Dr. Lee performs an A1 pulley release. It is a short outpatient procedure under local anesthesia that opens the tight pulley so the tendon glides freely. Most patients use the hand the same day and are back to typing and light work within a few days. The result is durable, and recurrence in the same finger is uncommon.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["First-line care resolves the majority of trigger fingers:"],
+      bullets: [
+        "Corticosteroid injection into the flexor tendon sheath, the single most effective non-surgical step",
+        "Activity modification to reduce sustained or forceful gripping",
+        "Night splinting of the metacarpophalangeal joint in selected early cases",
+        "Anti-inflammatory medication for symptom control",
+      ],
+      bulletsAfter:
+        "A first injection resolves symptoms in roughly two-thirds of patients without diabetes; the response is lower in patients with diabetes, and a second injection is often added before considering surgery.",
+    },
+    {
+      heading: "A1 pulley release",
+      body: [
+        "When symptoms persist despite injection, the A1 pulley is divided through a small incision in the palm. The flexor tendons are inspected, the nodule is left alone (it remodels on its own once the pulley is open), and the wound is closed with absorbable sutures.",
+        "The procedure takes about ten to fifteen minutes per finger, is performed under local anesthesia, and does not require general anesthesia or sedation in most patients. Multiple fingers can be released in the same visit. The triggering is eliminated immediately; residual stiffness from long-standing locking can take a few weeks of motion to settle.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery after an A1 pulley release is faster than most patients expect:",
+  recovery: [
+    { when: "Day 0 to 3", what: "Soft dressing. Light hand use the same day. Move the finger gently from the start to prevent stiffness." },
+    { when: "Week 1", what: "Most patients return to typing and desk work. Keep the wound clean and dry; sutures are usually absorbable." },
+    { when: "Weeks 2 to 4", what: "Resume normal hand use. Some palm tenderness at the incision is normal and fades over several weeks." },
+    { when: "Weeks 4 to 6", what: "Return to heavy gripping, manual labor, and sport. Scar sensitivity continues to improve over the following months." },
+  ],
+  misconceptions: {
+    intro: "A few things worth setting straight about trigger finger:",
+    items: [
+      {
+        heading: "It is not arthritis.",
+        body: "Trigger finger is a tendon and pulley problem, not a joint problem. The nodule patients feel is on the tendon, not on the bone. Treatment is directed at the pulley, not the joint.",
+      },
+      {
+        heading: "It is not Dupuytren's disease.",
+        body: "Dupuytren's is a thickening of the fascia under the skin that bends a finger toward the palm and is not associated with catching. Trigger finger involves the flexor tendon sheath, produces clicking and locking, and is treated very differently.",
+      },
+      {
+        heading: "An injection is not a temporary band-aid.",
+        body: "For most patients without diabetes, a single well-placed corticosteroid injection is the definitive treatment. A second injection is offered before surgery if symptoms partially improve or recur.",
+      },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Other name", value: "Stenosing tenosynovitis" },
+    { label: "Structure involved", value: "A1 pulley at the base of the finger" },
+    { label: "First-line treatment", value: "Corticosteroid injection in the office" },
+    { label: "Surgical option", value: "A1 pulley release, about 10 to 15 minutes" },
+    { label: "Anesthesia", value: "Local, outpatient, no general" },
+    { label: "Return to desk work", value: "Within a few days of release" },
+  ],
+  whyDrLee: [
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
+    "Injection-first approach in the office, with surgery reserved for cases that do not respond",
+    "Comfortable releasing multiple fingers in a single short visit",
+    "Distinguishes trigger finger from Dupuytren's disease, arthritis, and tendon laceration on examination",
+  ],
+  related: [
+    { name: "Carpal Tunnel Syndrome", slug: "carpal-tunnel" },
+    { name: "Dupuytren's Disease", slug: "dupuytrens-disease" },
+    { name: "De Quervain's Tenosynovitis", slug: "de-quervains" },
+    { name: "Basal Joint Arthritis", slug: "basal-joint-arthroplasty" },
+  ],
+  ctaCard: {
+    eyebrow: "Finger catching or locking?",
+    headline: "Most cases resolve with a single in-office injection.",
+  },
+  faqHeadline: "Trigger finger, answered.",
+  faqs: [
+    {
+      question: "What is trigger finger?",
+      answer:
+        "Trigger finger, or stenosing tenosynovitis, is a condition in which a finger catches, clicks, or locks as it bends and straightens. It is caused by a thickened nodule on the flexor tendon that has trouble gliding through a tight pulley at the base of the finger (the A1 pulley). It is most common in adults aged 40 to 60, more frequent in women, and strongly associated with diabetes.",
+    },
+    {
+      question: "Will a steroid injection cure trigger finger?",
+      answer:
+        "For most patients without diabetes, a single corticosteroid injection into the flexor tendon sheath resolves trigger finger as a one-time treatment, with success rates around two-thirds for a first injection. A second injection is offered before considering surgery for patients who partially improve or whose symptoms recur. Patients with diabetes respond at lower rates, and surgical release is considered sooner.",
+    },
+    {
+      question: "What is an A1 pulley release?",
+      answer:
+        "An A1 pulley release is a short outpatient operation in which the tight A1 pulley at the base of the finger is divided through a small incision in the palm so the flexor tendon can glide freely. It takes about 10 to 15 minutes per finger, is performed under local anesthesia, and does not require general anesthesia in most patients. Multiple fingers can be released in the same visit.",
+    },
+    {
+      question: "How long is recovery after trigger finger surgery?",
+      answer:
+        "Most patients use the hand for light activity the same day, return to typing and desk work within a few days, and resume heavy gripping or manual labor at four to six weeks. Triggering is eliminated immediately; residual stiffness from long-standing locking can take a few weeks of motion to settle. Formal hand therapy is rarely required.",
+    },
+    {
+      question: "Can trigger finger come back after surgery?",
+      answer:
+        "Recurrence of trigger finger in the same finger after a properly performed A1 pulley release is uncommon, well under five percent of patients. A different finger can develop trigger finger on its own, particularly in patients with diabetes or with multiple-digit involvement at the outset.",
+    },
+  ],
+  bottomCtaTitle: "Finger catching, popping, or locking?",
+  bottomCtaItalic: "It is one of the most treatable problems in the hand.",
+  bottomCtaBody:
+    "Most patients with trigger finger improve with a single in-office injection, and the small minority who do not are reliably treated with a short A1 pulley release. The first step is an accurate exam to separate trigger finger from the conditions it can mimic.",
+  metaTitle: "Trigger Finger, Steven J. Lee, MD",
+  metaDescription:
+    "Trigger finger (stenosing tenosynovitis): catching, clicking, or locking of a finger from a thickened flexor tendon nodule at the A1 pulley. In-office corticosteroid injection and A1 pulley release explained by Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
+  schemaDescription:
+    "Trigger finger (stenosing tenosynovitis) is a condition in which a thickened nodule on the flexor tendon catches as it passes through the A1 pulley at the base of the finger, causing clicking, catching, or locking. Treatment options include corticosteroid injection in the office and a short outpatient A1 pulley release.",
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+const wristArthroscopy: ConditionPageContent = {
+  slug: "wrist-arthroscopy",
+  name: "Wrist Arthroscopy",
+  region: "Hand & Wrist",
+  headerTitle: "Wrist Arthroscopy:",
+  headerItalic: "two small incisions, the whole joint under direct vision.",
+  headerLede:
+    "Wrist arthroscopy uses a pencil-thin camera and instruments introduced through two 4 mm portals to evaluate and treat the inside of the wrist. It is the diagnostic and surgical workhorse for ulnar-sided wrist pain, ligament tears, cartilage problems, and persistent wrist pain that imaging cannot explain. Dr. Lee has performed wrist arthroscopy for over twenty years and teaches the technique to other surgeons in cadaver labs.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
+    reviewed: "June 2026",
+  },
+  overview: [
+    "Wrist arthroscopy is a minimally invasive operation that allows a surgeon to see and treat the inside of the wrist joint through two small 4 mm portals, one for a thin camera and one for instruments. The same technique that has been standard in the knee and shoulder for decades is now well established in the wrist, where the joint is smaller and the structures more delicate.",
+    "Dr. Lee uses wrist arthroscopy for two related purposes. The first is diagnostic: when a careful exam and high-quality imaging cannot fully explain a patient's wrist pain, arthroscopy provides a direct view of every ligament and cartilage surface in the joint. The second is therapeutic: many of the problems that arthroscopy reveals (TFCC tears, scapholunate or lunotriquetral ligament tears, loose bodies, synovitis, and selected cartilage lesions) can be treated in the same setting through the same small incisions.",
+  ],
+  bodySections: [
+    {
+      heading: "What wrist arthroscopy can evaluate and treat",
+      body: ["Wrist arthroscopy is used in a defined set of clinical situations:"],
+      bullets: [
+        "TFCC tears, the most common indication, with debridement of central tears and arthroscopic repair of peripheral tears",
+        "Scapholunate and lunotriquetral ligament tears, graded under direct vision and treated by debridement, capsulodesis, or repair depending on severity",
+        "Ulnar impaction syndrome, often combined with an arthroscopic wafer procedure to shorten a long ulna",
+        "Synovitis and inflammatory wrist conditions when biopsy or debulking is needed",
+        "Dorsal wrist ganglion cysts, which can be excised arthroscopically from inside the joint",
+        "Loose bodies and cartilage flaps that catch and lock the joint",
+        "Distal radius fracture assessment, to check the joint surface and screen for ligament tears at the time of fixation",
+        "Persistent wrist pain after a fall or twist when imaging is normal but symptoms continue",
+      ],
+    },
+    {
+      heading: "How the procedure works",
+      body: [
+        "Wrist arthroscopy is an outpatient operation performed under regional or light general anesthesia. The hand is suspended in a small traction tower that opens the joint just enough to introduce instruments safely. Two 4 mm incisions are made on the back of the wrist, the camera is introduced through one and instruments through the other.",
+        "Through the camera, every ligament, the TFCC, both rows of carpal bones, and the cartilage surfaces are inspected in sequence. Findings are graded with the Geissler classification for ligaments and the Palmer classification for TFCC tears, then treated immediately if a procedure is appropriate. The whole operation typically takes thirty to ninety minutes depending on what is found.",
+      ],
+    },
+    {
+      heading: "Why arthroscopy over open surgery",
+      body: [
+        "Arthroscopy reaches the same internal structures that an open operation does, but through 4 mm incisions instead of a much larger exposure. The benefits patients notice are practical: less scar tenderness, less stiffness afterward, faster return to motion, and a smaller visible scar.",
+        "The benefit the surgeon notices is information. The camera magnifies the joint several times over and shows the cartilage surfaces, the underside of the TFCC, and the membranous portions of the interosseous ligaments in a way that no open exposure or MRI can match. For ulnar-sided wrist pain, that view often resolves a diagnosis that imaging alone could not.",
+      ],
+    },
+    {
+      heading: "When wrist arthroscopy is not the right answer",
+      body: [
+        "Arthroscopy is not a treatment for advanced arthritis of the wrist (SLAC or SNAC wrist), for which salvage procedures like proximal row carpectomy or four-corner fusion are appropriate. It is also not a first step in problems that respond well to non-surgical care: most TFCC tears, most ganglion cysts, most cases of ulnar impaction syndrome, and most early ligament sprains improve with splinting, activity modification, and corticosteroid or PRP injection. Surgery, including arthroscopy, is reserved for cases that fail a real trial of conservative treatment or whose pattern is clearly surgical from the start.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee has performed wrist arthroscopy for more than twenty years and teaches the technique to other surgeons in cadaver labs. The approach he favors is to use arthroscopy decisively: when a real trial of non-surgical care has failed, or when imaging shows a clearly surgical pattern, a single arthroscopic operation can both confirm the diagnosis and complete the treatment. That avoids the alternative of staged operations or repeated invasive imaging.",
+      "When ulnar impaction is contributing to ulnar-sided wrist pain, the TFCC repair or debridement is often combined with an arthroscopic wafer procedure (a small shortening of the ulna) at the same setting. When a scapholunate ligament tear is found, the severity is graded under direct vision and treatment is matched to the grade rather than to MRI alone. The point of the operation is to leave the wrist with a problem solved, not just inspected.",
+    ],
+  },
+  recoveryIntro:
+    "Recovery depends on what was treated. The two ends of the spectrum are straightforward debridement (fastest) and a formal arthroscopic repair (slowest).",
+  recovery: [
+    { when: "Day 0 to 7", what: "Soft dressing or short splint. Move the fingers and elbow from the start. Keep the wound dry until the first visit." },
+    { when: "Debridement, weeks 1 to 2", what: "Removable wrist brace. Sutures out. Begin gentle wrist motion." },
+    { when: "Debridement, weeks 2 to 6", what: "Hand therapy for motion and gradual strengthening. Return to most daily activities and desk work." },
+    { when: "Debridement, weeks 6 to 12", what: "Return to gripping-heavy work and non-contact sport. Most final outcomes are reached by three months." },
+    { when: "Repair, weeks 1 to 4", what: "Longer immobilization in a splint or cast (the exact length depends on the tear pattern and the structures repaired)." },
+    { when: "Repair, weeks 4 to 8", what: "Removable splint and hand therapy. Gentle progressive loading." },
+    { when: "Repair, 3 to 6 months", what: "Return to full strength, gripping-heavy work, and contact sport. Some residual stiffness can persist longer in selected cases." },
+  ],
+  misconceptions: {
+    intro: "Two persistent misconceptions are worth addressing:",
+    items: [
+      {
+        heading: "'Arthroscopy is a small procedure, so the recovery is nothing.'",
+        body: "The incisions are small, but the recovery is dictated by what was treated, not by the size of the skin opening. A debridement recovers fast; a formal ligament or TFCC repair recovers like the open version of the same operation. Patients are best served by an honest preview of which they are signing up for.",
+      },
+      {
+        heading: "'A normal MRI means the wrist is fine.'",
+        body: "MRI is excellent for most wrist problems but misses some real tears, especially partial scapholunate and lunotriquetral ligament tears and small TFCC perforations. When a careful exam strongly suggests a problem the imaging does not confirm, diagnostic arthroscopy is sometimes the right next step.",
+      },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Incisions", value: "Two 4 mm portals" },
+    { label: "Anesthesia", value: "Regional or light general, outpatient" },
+    { label: "Operation length", value: "About 30 to 90 minutes" },
+    { label: "Most common indication", value: "TFCC tear" },
+    { label: "Other indications", value: "Scapholunate or LT tears, ulnar impaction, synovitis, loose bodies" },
+    { label: "Dr. Lee's experience", value: "Over 20 years, teaches in cadaver labs" },
+  ],
+  whyDrLee: [
+    "Over twenty years of wrist arthroscopy experience",
+    "Teaches arthroscopic TFCC repair and ligament grading to other surgeons in cadaver labs",
+    "Combines arthroscopy with PRP for selected biological injuries, among the first in NYC to use PRP for upper-extremity problems (over 250 procedures per year)",
+    "Frequent second-opinion provider for patients told their wrist pain has no surgical option",
+  ],
+  related: [
+    { name: "TFCC Tear", slug: "tfcc-tear" },
+    { name: "Scapholunate Ligament Injury", slug: "scapholunate" },
+    { name: "Ulnar Impaction Syndrome", slug: "ulnar-impaction-syndrome" },
+    { name: "Ganglion Cyst", slug: "ganglion-cyst" },
+  ],
+  ctaCard: {
+    eyebrow: "Wrist pain that imaging cannot explain?",
+    headline: "Arthroscopy answers what MRI cannot.",
+  },
+  faqHeadline: "Wrist arthroscopy, answered.",
+  faqs: [
+    {
+      question: "What is wrist arthroscopy?",
+      answer:
+        "Wrist arthroscopy is a minimally invasive operation in which a pencil-thin camera and instruments are introduced into the wrist joint through two small 4 mm portals. It allows the surgeon to see every ligament and cartilage surface in the joint and to treat many problems (TFCC tears, scapholunate and lunotriquetral ligament tears, ulnar impaction, synovitis, loose bodies) through the same small incisions. It is performed as an outpatient procedure under regional or light general anesthesia.",
+    },
+    {
+      question: "What conditions are treated with wrist arthroscopy?",
+      answer:
+        "The most common indications are TFCC tears, scapholunate and lunotriquetral ligament tears, ulnar impaction syndrome (often combined with an arthroscopic wafer procedure), wrist synovitis, loose bodies, selected cartilage lesions, dorsal ganglion cysts, and persistent wrist pain that imaging cannot explain. Arthroscopy is also used during distal radius fracture fixation to evaluate the joint surface and screen for ligament tears.",
+    },
+    {
+      question: "How long does wrist arthroscopy take, and what is the anesthesia?",
+      answer:
+        "Most wrist arthroscopies take between thirty and ninety minutes depending on what is treated. It is an outpatient operation performed under regional anesthesia (a nerve block that numbs the arm) or light general anesthesia. Patients go home the same day with a soft dressing or short splint.",
+    },
+    {
+      question: "How long is recovery after wrist arthroscopy?",
+      answer:
+        "Recovery depends on what was treated. After arthroscopic debridement, most patients are out of splinting at two weeks, in hand therapy by two to five weeks, and back to most daily activities and non-contact sport at six to twelve weeks. After a formal repair (a TFCC repair or a ligament repair), recovery extends to three to six months because the sutured tissue needs longer protected healing. Final outcomes are usually reached by six months.",
+    },
+    {
+      question: "Is wrist arthroscopy better than open wrist surgery?",
+      answer:
+        "Arthroscopy reaches the same internal structures as an open operation through much smaller incisions, with less scar tenderness, less stiffness, and a faster return to motion in most cases. It also gives the surgeon a magnified, direct view of the joint that an open exposure cannot match. Open surgery remains the right answer for advanced arthritis (SLAC or SNAC wrist), for some complex ligament reconstructions, and for problems outside the joint capsule. The two are complementary, not interchangeable.",
+    },
+    {
+      question: "Will I need physical therapy after wrist arthroscopy?",
+      answer:
+        "Most patients benefit from a course of hand therapy after wrist arthroscopy. After a simple debridement, therapy is brief and focused on regaining motion and grip strength. After a formal repair, therapy is longer and follows a protocol that protects the sutured tissue while gradually restoring motion and strength. Therapy is coordinated with Dr. Lee from the first post-operative visit.",
+    },
+  ],
+  bottomCtaTitle: "Wrist pain that hasn't been pinned down?",
+  bottomCtaItalic: "Sometimes the camera answers the question.",
+  bottomCtaBody:
+    "When exam and imaging cannot fully explain wrist pain, wrist arthroscopy can both confirm the diagnosis and complete the treatment in the same operation. The first step is an evaluation to decide whether arthroscopy is the right next move or whether non-surgical care should run first.",
+  metaTitle: "Wrist Arthroscopy, Steven J. Lee, MD",
+  metaDescription:
+    "Wrist arthroscopy explained: minimally invasive evaluation and treatment of TFCC tears, scapholunate and lunotriquetral ligament tears, ulnar impaction, synovitis, and persistent wrist pain. Performed by Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
+  schemaDescription:
+    "Wrist arthroscopy is a minimally invasive surgical procedure that uses two 4 mm portals to introduce a small camera and instruments into the wrist joint. It is used to diagnose and treat TFCC tears, scapholunate and lunotriquetral ligament tears, ulnar impaction syndrome, wrist synovitis, loose bodies, and selected cartilage lesions, as well as to evaluate the joint during distal radius fracture fixation.",
+};
+
 export const conditionPages: ConditionPageContent[] = [
   carpalTunnel,
   distalRadiusFracture,
@@ -7881,6 +8200,9 @@ export const conditionPages: ConditionPageContent[] = [
   plantarFasciitis,
   mortonsNeuroma,
   jonesFracture,
+  // Hand & Wrist additions (Dr. Lee feedback, June 2026):
+  triggerFinger,
+  wristArthroscopy,
 ];
 
 export function conditionPageBySlug(slug: string) {
@@ -8023,4 +8345,11 @@ export const conditionProcedures: Record<string, string[]> = {
   "mucous-cyst": ["Mucous Cyst Excision with Osteophyte Removal"],
   "prp-injections": ["Platelet-Rich Plasma Injection"],
   "internal-brace": ["Internal Brace Augmentation"],
+  "trigger-finger": ["Corticosteroid Injection", "A1 Pulley Release"],
+  "wrist-arthroscopy": [
+    "Arthroscopic TFCC Repair",
+    "Arthroscopic TFCC Debridement",
+    "Arthroscopic Ligament Grading and Treatment",
+    "Arthroscopic Wafer Procedure",
+  ],
 };

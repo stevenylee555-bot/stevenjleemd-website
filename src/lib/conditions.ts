@@ -181,20 +181,21 @@ export const conditions: Condition[] = [
     blurb:
       "A high-strength suture-tape augmentation that protects a ligament or tendon repair during early healing, allowing earlier motion and faster return to activity. Dr. Lee helped design the internal-brace constructs used for the upper extremity.",
   },
-  // Hand & Wrist, phase 2
   {
     name: "Trigger Finger",
     slug: "trigger-finger",
     region: "Hand & Wrist",
-    status: "phase2",
-    blurb: "In-office or surgical release.",
+    status: "priority",
+    blurb:
+      "Catching, clicking, or locking of a finger from a thickened tendon nodule at the A1 pulley. Most cases resolve with a single in-office injection; a short A1 pulley release handles the rest.",
   },
   {
     name: "Wrist Arthroscopy",
     slug: "wrist-arthroscopy",
     region: "Hand & Wrist",
-    status: "phase2",
-    blurb: "Minimally invasive evaluation and treatment of wrist pain.",
+    status: "priority",
+    blurb:
+      "Two 4 mm portals, a small camera, and direct visualization of every ligament and cartilage surface in the wrist. The diagnostic and treatment workhorse for TFCC tears, ligament injuries, and persistent wrist pain.",
   },
 
   // Elbow, priority

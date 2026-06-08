@@ -64,7 +64,7 @@ export const redirects: RedirectRule[] = [
   { source: "/wartenbergs-syndrome-nyc-hand-docto", destination: "/conditions/wartenbergs-syndrome", permanent: true },
   { source: "/boutonierre-deformity-hand-ortho", destination: "/specialties/hand-wrist", permanent: true },
   { source: "/hand-and-wrist-t-u", destination: "/specialties/hand-wrist", permanent: true },
-  { source: "/trigger-finger-2", destination: "/specialties/hand-wrist", permanent: true },
+  { source: "/trigger-finger-2", destination: "/conditions/trigger-finger", permanent: true },
   { source: "/arthritis-hand-fingers", destination: "/specialties/hand-wrist", permanent: true },
   { source: "/mallet-finger-hand-doctor-nyc", destination: "/specialties/hand-wrist", permanent: true },
   { source: "/tfcc-wrist-doctor-nyc", destination: "/conditions/tfcc-tear", permanent: true },
