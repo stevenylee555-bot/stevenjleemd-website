@@ -95,6 +95,14 @@ const galleryImages = [
     kicker: "NFL Fracture Management",
     caption: "Faculty panel on professional-athlete fracture care",
   },
+  {
+    src: "/images/dr-lee-arthrex-cadaver-lab.jpg",
+    alt: "Dr. Lee teaching hand surgery technique at an Arthrex surgical skills course",
+    width: 3135,
+    height: 3724,
+    kicker: "Arthrex Surgical Skills Course",
+    caption: "Faculty teaching surgical technique at the bench",
+  },
 ];
 
 function SectionKicker({ label, light = false }: { label: string; light?: boolean }) {
