@@ -197,6 +197,39 @@ export const conditions: Condition[] = [
     blurb:
       "Two 4 mm portals, a small camera, and direct visualization of every ligament and cartilage surface in the wrist. The diagnostic and treatment workhorse for TFCC tears, ligament injuries, and persistent wrist pain.",
   },
+  // Hand & Wrist trauma additions (Dr. Lee feedback, June 2026)
+  {
+    name: "Jersey Finger",
+    slug: "jersey-finger",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "Avulsion of the deep flexor tendon off the fingertip, classically from grabbing a jersey. The tip can no longer bend, and prompt surgical reattachment gives the best result.",
+  },
+  {
+    name: "Mallet Finger",
+    slug: "mallet-finger",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "A drooping fingertip from a disrupted terminal extensor tendon, usually from a jam. Most cases heal with continuous extension splinting; selected fractures need surgery.",
+  },
+  {
+    name: "Tendon Lacerations of the Hand",
+    slug: "tendon-lacerations",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "Cuts that divide the flexor or extensor tendons that move the fingers. Treated with early surgical repair and a structured hand therapy program, often alongside nerve or vessel repair.",
+  },
+  {
+    name: "Nerve Lacerations of the Hand",
+    slug: "nerve-lacerations",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "Cuts to the digital or major nerves of the hand and wrist, causing numbness and, with larger nerves, weakness. Repaired under magnification, with recovery unfolding gradually as the nerve regrows.",
+  },
 
   // Elbow, priority
   {

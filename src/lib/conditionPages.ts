@@ -8133,6 +8133,640 @@ const wristArthroscopy: ConditionPageContent = {
     "Wrist arthroscopy is a minimally invasive surgical procedure that uses two 4 mm portals to introduce a small camera and instruments into the wrist joint. It is used to diagnose and treat TFCC tears, scapholunate and lunotriquetral ligament tears, ulnar impaction syndrome, wrist synovitis, loose bodies, and selected cartilage lesions, as well as to evaluate the joint during distal radius fracture fixation.",
 };
 
+// ─────────────────────────────────────────────────────────────────────────────
+const jerseyFinger: ConditionPageContent = {
+  slug: "jersey-finger",
+  name: "Jersey Finger",
+  region: "Hand & Wrist",
+  headerTitle: "Jersey Finger:",
+  headerItalic: "when the fingertip can no longer bend.",
+  headerLede:
+    "Jersey finger is an avulsion of the deep flexor tendon (the FDP) off the tip of the finger, classically when a hand grabbing a jersey is suddenly pulled straight. The fingertip can no longer bend on its own. It is time-sensitive: the best results come from prompt repair, and a retracted tendon is a reason to be seen quickly. Dr. Lee helped design the suture anchor systems used to reattach tendons to bone.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
+    reviewed: "June 2026",
+  },
+  overview: [
+    "Jersey finger is the common name for an avulsion of the flexor digitorum profundus (FDP) tendon, the deep tendon that bends the last joint of the finger, off its attachment at the tip. It earns its name from the typical mechanism: a player grabs an opponent's jersey, the opponent pulls away, and the gripping fingertip is forced straight against a powerfully contracting tendon. The tendon tears off the bone rather than the bone giving way.",
+    "The ring finger is involved in the large majority of cases, both because of its position when the hand grips and because of how it loads relative to its neighbors. Patients can usually still bend the middle knuckle of the finger, which is driven by a separate tendon, but cannot bend the very tip. Because the injury hides behind generic swelling and bruising, it is frequently missed at first as a 'jammed finger.'",
+  ],
+  bodySections: [
+    {
+      heading: "Anatomy: the deep flexor tendon",
+      body: [
+        "Each finger is bent by two flexor tendons. The flexor digitorum superficialis (FDS) bends the middle joint (the PIP), and the flexor digitorum profundus (FDP) runs all the way to the tip and bends the last joint (the DIP). When the FDP avulses off the tip, the finger keeps most of its grip from the FDS but loses the ability to curl the fingertip into the palm.",
+        "Once detached, the FDP tendon retracts back toward the hand. How far it retracts matters: a tendon that pulls all the way into the palm loses its blood supply and the small tethers that nourish it, which is why these injuries are graded and why timing drives the treatment plan.",
+      ],
+    },
+    {
+      heading: "Symptoms",
+      body: ["Jersey finger can look deceptively minor at first. Patients usually describe:"],
+      bullets: [
+        "Pain and swelling at the front of the finger after a forceful grabbing or tackling injury",
+        "Inability to bend the fingertip (the DIP joint) when the rest of the finger is held still",
+        "A finger that rests slightly straighter than its neighbors",
+        "A tender lump in the palm or along the finger where the retracted tendon has bunched up",
+        "Bruising that develops over the following day",
+      ],
+      bulletsAfter:
+        "Loss of active fingertip bending after a grabbing injury is the key sign, and it is a reason to be seen promptly rather than to wait and see, because the window for the most reliable repair is measured in days to a couple of weeks.",
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "The diagnosis is made on examination. Holding the middle joint of the finger steady and asking the patient to bend the tip isolates the FDP; if the tip will not curl, the tendon is no longer connected. X-rays are taken to look for a fleck of bone pulled off with the tendon (a bony avulsion), which changes the surgical plan. Ultrasound or MRI is sometimes used to locate exactly how far the tendon has retracted.",
+      ],
+    },
+    {
+      heading: "How jersey finger is classified",
+      body: [
+        "Hand surgeons use the Leddy and Packer classification, which is based on how far the tendon retracts and whether a piece of bone came with it. A tendon that retracts into the palm has lost its blood supply and needs the earliest repair. A tendon held up at the middle of the finger by its small tethers, or one attached to a bone fragment caught higher in the finger, allows a little more time. This grading, made from the exam and X-ray, is what determines how urgently surgery should happen.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Jersey finger is one of the injuries where getting to the right surgeon quickly genuinely changes the outcome. Dr. Lee evaluates these urgently, grades the injury from the exam and X-ray, and plans repair before the tendon scars down in a retracted position. When the tendon has pulled into the palm, that repair is best done within days.",
+      "The repair reattaches the FDP tendon to the tip of the finger. Dr. Lee helped design the suture anchor systems used to secure tendon to bone, and selects the fixation, an anchor or a bone fragment repair, that matches the injury. The goal is a strong enough reattachment to allow a protected, early-motion hand therapy program, which is what protects the fingertip from stiffening as it heals.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Surgical repair",
+      body: [
+        "Jersey finger is a surgical injury in almost every case, because a detached deep flexor tendon does not heal back to bone on its own. The retracted tendon is retrieved, passed back down its sheath to the tip of the finger, and reattached to the bone with a suture anchor or, when a bone fragment is involved, fixed with a small screw or suture construct.",
+        "When the injury is recognized late and the tendon has scarred down, primary reattachment may no longer be possible. In that situation the options change to a staged tendon reconstruction, a fusion of the fingertip joint, or simply accepting the loss of fingertip bending, which is why early diagnosis matters so much.",
+      ],
+    },
+  ],
+  recoveryIntro:
+    "Recovery after jersey finger repair is deliberate, because a tendon reattached to bone must be protected while it heals and then coaxed back to motion:",
+  recovery: [
+    { when: "Week 0 to 1", what: "Protective splint that keeps the wrist and fingers in a flexed, tendon-relaxing position. A hand therapy program is started early." },
+    { when: "Weeks 1 to 6", what: "Supervised hand therapy with carefully controlled, protected motion to keep the tendon gliding without stressing the repair. No active gripping." },
+    { when: "Weeks 6 to 8", what: "Begin active bending of the finger against light resistance as the repair gains strength. Splint use is gradually reduced." },
+    { when: "Weeks 8 to 12", what: "Progressive strengthening. Most daily activities resume." },
+    { when: "3 to 6 months", what: "Return to contact sport and heavy gripping once strength and motion are restored. Some loss of full fingertip motion is common and improves with therapy." },
+  ],
+  misconceptions: {
+    intro: "Jersey finger is one of the most commonly missed hand injuries, so a few points are worth making plainly:",
+    items: [
+      {
+        heading: "It is not a jammed finger.",
+        body: "A jammed finger is sore but still bends. Jersey finger looks similar at first but the fingertip will not curl on its own. If the tip cannot bend after a grabbing injury, it should be examined for a tendon avulsion rather than dismissed.",
+      },
+      {
+        heading: "Waiting is not harmless.",
+        body: "Unlike many finger injuries, jersey finger gets harder to fix the longer it is left. A tendon that has retracted into the palm loses its blood supply, and a delayed diagnosis can turn a straightforward repair into a complex reconstruction.",
+      },
+      {
+        heading: "You can still grip, and that is misleading.",
+        body: "Because a second tendon still bends the middle joint, the hand can close enough to fool both patient and examiner. The specific loss is fingertip bending, and it has to be tested directly.",
+      },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "Avulsion of the deep flexor tendon (FDP) off the fingertip" },
+    { label: "Most common finger", value: "Ring finger" },
+    { label: "Key sign", value: "Cannot bend the fingertip on its own" },
+    { label: "Classification", value: "Leddy and Packer, by tendon retraction" },
+    { label: "Treatment", value: "Prompt surgical reattachment to bone" },
+    { label: "Timing", value: "Best results from early repair, often within days" },
+  ],
+  whyDrLee: [
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
+    "Helped design the suture anchor systems used to reattach tendons to bone",
+    "Evaluates acute tendon avulsions urgently, when the window for the best repair is open",
+    "Frequent second-opinion provider for finger injuries dismissed elsewhere as a sprain",
+  ],
+  related: [
+    { name: "Tendon Lacerations of the Hand", slug: "tendon-lacerations" },
+    { name: "Mallet Finger", slug: "mallet-finger" },
+    { name: "Finger Pulley Injury (Climber's Finger)", slug: "finger-pulley-injury" },
+    { name: "Hand & Wrist Fractures", slug: "hand-wrist-fractures" },
+  ],
+  ctaCard: {
+    eyebrow: "Fingertip won't bend after a grab injury?",
+    headline: "Jersey finger is time-sensitive. Get it evaluated quickly.",
+  },
+  faqHeadline: "Jersey finger, answered.",
+  faqs: [
+    {
+      question: "What is jersey finger?",
+      answer:
+        "Jersey finger is an avulsion of the flexor digitorum profundus (FDP) tendon, the deep tendon that bends the tip of the finger, off its attachment at the fingertip bone. It usually happens when a gripping finger is forcibly straightened, such as grabbing a jersey while an opponent pulls away. The ring finger is most often affected, and the hallmark is the inability to bend the very tip of the finger.",
+    },
+    {
+      question: "How do I know if I have jersey finger or just a jammed finger?",
+      answer:
+        "The distinguishing test is whether the tip of the finger can bend. With a jammed finger, the fingertip still curls even though it is sore. With jersey finger, the fingertip cannot bend on its own because the tendon that powers it has detached. If the tip will not bend after a grabbing or tackling injury, the finger should be examined for a tendon avulsion.",
+    },
+    {
+      question: "Does jersey finger need surgery?",
+      answer:
+        "Yes, in nearly all cases. The detached deep flexor tendon does not reattach to bone on its own, so surgical repair is needed to restore fingertip bending. The tendon is retrieved and reattached to the fingertip with a suture anchor or, when a fragment of bone is involved, with a small fixation construct.",
+    },
+    {
+      question: "How soon does jersey finger need to be treated?",
+      answer:
+        "Promptly. When the tendon has retracted into the palm it loses its blood supply, and the most reliable repair is performed within days. Other patterns allow a little more time, often up to a couple of weeks, but in general jersey finger gets harder to fix the longer it is left, so early evaluation by a hand surgeon is important.",
+    },
+    {
+      question: "What is recovery like after jersey finger surgery?",
+      answer:
+        "Recovery follows a protected hand therapy program. The finger is splinted at first, then guided through carefully controlled motion to keep the tendon gliding without stressing the repair, with active gripping withheld for about six weeks. Strengthening follows, and return to contact sport and heavy gripping is usually around three to six months. Some patients have a small permanent loss of fingertip motion.",
+    },
+  ],
+  bottomCtaTitle: "A fingertip that won't bend is not a sprain.",
+  bottomCtaItalic: "Jersey finger rewards an early diagnosis.",
+  bottomCtaBody:
+    "Jersey finger is one of the most commonly missed hand injuries, and unlike most finger problems it gets harder to fix with time. If the tip of a finger cannot bend after a grabbing injury, an accurate exam and prompt treatment offer the best chance at a full recovery.",
+  metaTitle: "Jersey Finger, Steven J. Lee, MD",
+  metaDescription:
+    "Jersey finger (avulsion of the FDP flexor tendon off the fingertip): why the fingertip stops bending, why it is time-sensitive, and how it is repaired. Explained by Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
+  schemaDescription:
+    "Jersey finger is an avulsion of the flexor digitorum profundus (FDP) tendon from its attachment at the fingertip, usually caused by forced straightening of a gripping finger. It results in loss of active bending at the fingertip joint and is treated with prompt surgical reattachment of the tendon to bone.",
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+const malletFinger: ConditionPageContent = {
+  slug: "mallet-finger",
+  name: "Mallet Finger",
+  region: "Hand & Wrist",
+  headerTitle: "Mallet Finger:",
+  headerItalic: "the drooping fingertip, straightened by a splint.",
+  headerLede:
+    "Mallet finger is a disruption of the tendon that straightens the tip of the finger, leaving the fingertip drooping and unable to lift on its own. Most cases heal without surgery using a splint that holds the tip straight, but the splinting has to be done correctly and continuously. Certain fractures and joint injuries do need an operation, which is why an accurate exam and X-ray matter.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
+    reviewed: "June 2026",
+  },
+  overview: [
+    "Mallet finger is an injury to the terminal extensor tendon, the thin tendon that straightens the last joint of the finger (the DIP). When it is disrupted, the fingertip drops and cannot be actively lifted, producing the bent, hammer-like shape that gives the injury its name. It is one of the most common closed tendon injuries of the hand.",
+    "It usually happens when the tip of an extended finger is suddenly forced to bend, classically a ball striking the end of the finger, or a finger jammed while making a bed or tucking in a sheet. The tendon either tears from the bone (a soft-tissue mallet) or pulls a fragment of bone with it (a bony mallet). Most mallet fingers do well with splinting, but the result depends almost entirely on whether the fingertip is kept straight long enough for the tendon to heal.",
+  ],
+  bodySections: [
+    {
+      heading: "Anatomy: the terminal extensor tendon",
+      body: [
+        "The finger is straightened by the extensor tendon, which fans out over the back of the finger and ends in a thin terminal slip that attaches to the top of the last bone. That terminal slip is what lifts the fingertip. It is delicate, and a relatively minor-seeming jam can disrupt it.",
+        "When the slip is torn or pulled off with a chip of bone, the muscle that bends the fingertip is left unopposed, so the tip rests in a dropped position. If the injury is neglected, the imbalance can gradually pull the middle joint of the finger into a hyperextended posture, called a swan-neck deformity.",
+      ],
+    },
+    {
+      heading: "Symptoms",
+      body: ["Mallet finger is usually recognizable:"],
+      bullets: [
+        "A fingertip that droops and cannot be straightened actively",
+        "Pain, swelling, and sometimes bruising over the top of the last joint",
+        "The ability to straighten the tip if someone else pushes it up (passive motion is preserved)",
+        "Occasionally a small bruise under the nail or a dropped, tender nail-fold if a fracture is involved",
+      ],
+      bulletsAfter:
+        "An open wound over the joint, or a fingertip that is both drooping and shifted out of line, deserves prompt evaluation, because those situations are more likely to need surgery.",
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "Mallet finger is diagnosed on examination by the dropped fingertip that cannot be actively lifted. An X-ray is important: it shows whether the injury is purely soft tissue or whether a fragment of bone has been avulsed, and, in bony mallets, whether the joint surface is involved or the last bone has slipped out of position. Those X-ray findings are what separate the splint cases from the surgical cases.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "The most important thing about mallet finger is also the most underappreciated: the great majority heal beautifully with a splint, but only if the fingertip is kept perfectly straight, continuously, for the full course. Dr. Lee's emphasis is on getting the splinting right, choosing a splint the patient can actually wear, teaching how to change it without ever letting the tip bend, and following the finger to make sure it is healing.",
+      "Surgery is reserved for the minority that need it: large bone fragments with the last bone slipping out of joint, open injuries, and selected mallets that have failed proper splinting. When an operation is needed, the fragment or joint is stabilized with fine wires or a small fixation construct. Dr. Lee's bias is to avoid operating on a finger that a well-managed splint would heal.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment (most cases)",
+      body: [
+        "The standard treatment for most mallet fingers is a splint that holds the last joint of the finger fully straight, worn continuously for about six to eight weeks, followed by several weeks of night and activity splinting as the tendon matures. The middle joint of the finger is left free to move.",
+        "The single rule that determines success is that the fingertip must not bend, even for a moment, during the healing period. Letting the tip drop while changing the splint resets the clock. Done correctly, splinting restores a straight, functional finger in most patients, even when treatment starts a few weeks after the injury.",
+      ],
+    },
+    {
+      heading: "Surgical treatment (selected cases)",
+      body: [
+        "Surgery is considered when a large bone fragment is involved and the last bone has subluxated (slipped out of alignment), when the injury is open, or when a properly performed course of splinting has failed. The joint is realigned and held with fine wires (pins) or a small fixation construct while it heals.",
+        "Because surgery on a small joint carries its own risks, including stiffness and nail or joint problems, it is chosen selectively. For most mallet fingers, splinting remains the better path.",
+      ],
+    },
+  ],
+  recoveryIntro:
+    "Recovery is straightforward but demands discipline, because the splint is doing the work:",
+  recovery: [
+    { when: "Weeks 0 to 6", what: "Continuous splinting of the fingertip in full extension, day and night. The tip must never be allowed to droop, including during splint changes." },
+    { when: "Weeks 6 to 8", what: "If the finger holds straight on its own, transition to night and activity splinting. Begin gentle active motion of the fingertip." },
+    { when: "Weeks 8 to 12", what: "Wean out of the splint. Gradually resume normal use as motion and strength return." },
+    { when: "After surgery", what: "Pins, if used, are typically removed at around six weeks, followed by a supervised motion and splinting program." },
+  ],
+  misconceptions: {
+    intro: "Mallet finger is simple in principle and easy to get wrong in practice:",
+    items: [
+      {
+        heading: "It is not too late after a few weeks.",
+        body: "Many mallet fingers still respond well to splinting even when treatment starts two to three weeks after the injury. A dropped fingertip is worth evaluating rather than writing off as permanent.",
+      },
+      {
+        heading: "The splint only works if it is never off.",
+        body: "The most common reason splinting fails is letting the fingertip bend during splint changes. Keeping the tip straight the entire time, including when swapping or cleaning the splint, is what allows the tendon to heal.",
+      },
+      {
+        heading: "Most mallet fingers do not need surgery.",
+        body: "It is a common worry, but the large majority of mallet fingers heal with a splint. Surgery is reserved for specific fracture and joint patterns, not for the typical injury.",
+      },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "Disruption of the tendon that straightens the fingertip" },
+    { label: "Typical cause", value: "A ball or jam forcing the fingertip to bend" },
+    { label: "Two types", value: "Soft-tissue (tendon) and bony (avulsion fracture)" },
+    { label: "Main treatment", value: "Continuous extension splinting, about 6 to 8 weeks" },
+    { label: "Surgery", value: "Selected fractures, joint subluxation, or open injuries" },
+    { label: "Key to success", value: "The fingertip must never be allowed to droop" },
+  ],
+  whyDrLee: [
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
+    "Splint-first philosophy, with surgery reserved for the fractures that truly need it",
+    "Careful X-ray assessment to separate the splint cases from the surgical ones",
+    "Frequent second-opinion provider for dropped fingertips and failed splinting",
+  ],
+  related: [
+    { name: "Jersey Finger", slug: "jersey-finger" },
+    { name: "Tendon Lacerations of the Hand", slug: "tendon-lacerations" },
+    { name: "Finger Collateral Ligament Injury", slug: "finger-collateral-ligament" },
+    { name: "Hand & Wrist Fractures", slug: "hand-wrist-fractures" },
+  ],
+  ctaCard: {
+    eyebrow: "Fingertip drooping after a jam?",
+    headline: "Most mallet fingers heal with the right splint, worn correctly.",
+  },
+  faqHeadline: "Mallet finger, answered.",
+  faqs: [
+    {
+      question: "What is mallet finger?",
+      answer:
+        "Mallet finger is an injury to the terminal extensor tendon, the tendon that straightens the last joint of the finger. When it is disrupted, the fingertip droops and cannot be lifted actively, producing a hammer-like shape. It usually follows a ball or jam striking the end of an extended finger, and it can involve the tendon alone or a small avulsed fragment of bone.",
+    },
+    {
+      question: "Does mallet finger need surgery?",
+      answer:
+        "Most mallet fingers do not need surgery. The standard treatment is a splint that holds the fingertip fully straight, worn continuously for about six to eight weeks. Surgery is reserved for specific situations, such as a large bone fragment with the joint slipping out of alignment, an open injury, or a case that has failed a properly performed course of splinting.",
+    },
+    {
+      question: "How long do you have to wear a mallet finger splint?",
+      answer:
+        "The fingertip is splinted in full extension continuously, day and night, for about six to eight weeks, followed by several more weeks of night and activity splinting as the tendon matures. The critical rule is that the fingertip must never be allowed to bend during this period, including while changing the splint, or the healing process restarts.",
+    },
+    {
+      question: "Can mallet finger be treated if it is a few weeks old?",
+      answer:
+        "Often yes. Many mallet fingers still respond well to splinting even when treatment begins two to three weeks after the injury, so a dropped fingertip is worth evaluating rather than assuming it is permanent. A hand surgeon can determine whether splinting is still likely to work or whether another approach is needed.",
+    },
+    {
+      question: "What happens if mallet finger is left untreated?",
+      answer:
+        "An untreated mallet finger can leave a permanently dropped fingertip and, over time, can pull the middle joint of the finger into a hyperextended position called a swan-neck deformity. Because a straightforward splint can usually prevent this, prompt evaluation and treatment are worthwhile even for a seemingly minor injury.",
+    },
+  ],
+  bottomCtaTitle: "A drooping fingertip usually has a simple fix.",
+  bottomCtaItalic: "If the splinting is done right.",
+  bottomCtaBody:
+    "Most mallet fingers heal without surgery, but only when the fingertip is kept straight continuously for the full course. An accurate exam and X-ray separate the splint cases from the few that need an operation, and getting the splint right from the start is what protects the result.",
+  metaTitle: "Mallet Finger, Steven J. Lee, MD",
+  metaDescription:
+    "Mallet finger (drooping fingertip from a terminal extensor tendon injury): why it happens, how extension splinting heals most cases, and when surgery is needed. Explained by Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
+  schemaDescription:
+    "Mallet finger is a disruption of the terminal extensor tendon at the last joint of the finger, causing the fingertip to droop and lose the ability to straighten actively. It is most often caused by a forced bending of an extended fingertip and is usually treated with continuous extension splinting, with surgery reserved for selected fractures and joint injuries.",
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+const tendonLacerations: ConditionPageContent = {
+  slug: "tendon-lacerations",
+  name: "Tendon Lacerations of the Hand",
+  region: "Hand & Wrist",
+  headerTitle: "Tendon Lacerations:",
+  headerItalic: "a cut tendon, repaired and rehabbed.",
+  headerLede:
+    "A deep cut to the hand or wrist can divide the tendons that bend or straighten the fingers, leaving a finger that will not move the way it should. Tendon lacerations need surgical repair followed by a carefully staged hand therapy program, and they are often accompanied by nerve or blood-vessel injuries that must be addressed at the same time. The result depends as much on the rehabilitation as on the repair.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
+    reviewed: "June 2026",
+  },
+  overview: [
+    "Tendons are the cords that connect muscle to bone and move the fingers. The flexor tendons run along the palm side and bend the fingers; the extensor tendons run along the back of the hand and straighten them. Because both sets sit just beneath the skin, a laceration from a knife, a piece of broken glass, a box cutter, or a power tool can divide one or more of them.",
+    "A cut tendon does not heal across a gap on its own; the two ends retract and must be surgically reconnected to restore motion. Tendon lacerations are also rarely isolated. The same blade that cuts a tendon often cuts the nerve or artery lying next to it, so a careful examination of motion, sensation, and circulation is part of every evaluation. The quality of the final result depends heavily on a well-executed repair and an equally well-executed therapy program.",
+  ],
+  bodySections: [
+    {
+      heading: "Flexor versus extensor tendon injuries",
+      body: [
+        "Flexor tendon lacerations, on the palm side, are the more demanding to treat. The flexor tendons travel through a tight sheath and a series of pulleys, and historically the zone of the finger where they are most confined was called 'no man's land' because of how challenging repairs there can be. A cut flexor tendon almost always needs surgical repair to restore the ability to bend the finger.",
+        "Extensor tendon lacerations, on the back of the hand, are generally more forgiving but still varied. Some partial or specific extensor injuries can be treated with splinting, while complete cuts are repaired. The location along the back of the hand and finger guides whether the treatment is a splint, a repair, or a combination.",
+      ],
+    },
+    {
+      heading: "Symptoms",
+      body: ["After a deep cut to the hand or wrist, the signs of a tendon injury are usually clear:"],
+      bullets: [
+        "Inability to bend a finger (a cut flexor tendon) or to straighten it (a cut extensor tendon)",
+        "A finger that rests out of line with its neighbors at rest",
+        "Weakness or a sudden 'give' when trying to move the finger, which can signal a partial cut",
+        "Numbness in the finger, a sign the nerve next to the tendon may also be cut",
+        "A wound that bleeds briskly or a pale, cool fingertip, which can signal an artery injury",
+      ],
+      bulletsAfter:
+        "Any deep cut to the hand with loss of finger movement, numbness, or poor circulation should be evaluated urgently, because tendon, nerve, and vessel injuries are best repaired early and a wound also carries infection risk.",
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "Tendon lacerations are diagnosed by examination. Testing each finger's ability to bend and straighten, with the neighboring joints controlled, identifies which tendons are cut, and checking sensation and circulation identifies any associated nerve or artery injury. X-rays are taken to look for embedded glass or metal and any bone injury. The depth and position of the wound, combined with the exam, define the surgical plan.",
+      ],
+    },
+    {
+      heading: "Why timing matters",
+      body: [
+        "Clean tendon lacerations are best repaired early, ideally within the first couple of weeks, while the tendon ends are still healthy and have not retracted and scarred. A repair done in that window is called a primary repair and gives the most predictable result. When a tendon injury is recognized late, the ends may have shortened or scarred down, and treatment can require a more involved staged reconstruction, sometimes using a tendon graft. Heavily contaminated wounds are handled differently, with the focus first on a clean, infection-free wound.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Tendon laceration care is where the experience of a dedicated hand surgeon shows. Dr. Lee approaches these injuries comprehensively: identifying every divided structure, tendon, nerve, and vessel, and repairing them in the same setting rather than missing a partner injury that limits the result. As Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, he treats the full spectrum of hand trauma.",
+      "Just as important is what happens after the repair. Modern tendon repair is built to tolerate early, protected motion, because a tendon that is allowed to glide gently as it heals forms fewer adhesions and recovers more motion than one held completely still. Dr. Lee uses repair techniques strong enough to support a structured hand therapy program and coordinates that therapy closely from the first post-operative visit.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Surgical repair",
+      body: [
+        "Most tendon lacerations are repaired surgically by reconnecting the cut ends with a specialized core-and-peripheral suture technique designed to be strong enough for early motion. Any cut nerve or artery is repaired under magnification at the same time, and embedded debris is removed and the wound cleaned.",
+        "When a tendon cannot be directly repaired, because too much time has passed, too much tendon is missing, or the wound was heavily contaminated, reconstruction with a tendon graft may be needed, sometimes as a planned two-stage procedure. The choice between direct repair and reconstruction depends on the injury, its age, and the condition of the surrounding tissue.",
+      ],
+    },
+    {
+      heading: "Hand therapy",
+      body: [
+        "Hand therapy is not optional after a tendon repair; it is half of the treatment. A certified hand therapist guides a protocol of protected motion that keeps the repaired tendon gliding without overloading it. The protocol differs for flexor and extensor injuries and is tailored to the strength of the repair. Skipping or rushing therapy is the most common cause of a stiff finger after an otherwise good repair.",
+      ],
+    },
+  ],
+  recoveryIntro:
+    "Recovery from a tendon repair is measured in months and is paced by the healing tendon. A representative flexor-tendon timeline looks like this:",
+  recovery: [
+    { when: "Week 0 to 1", what: "Protective splint that takes tension off the repair. A hand therapy program begins within the first several days." },
+    { when: "Weeks 1 to 6", what: "Supervised protected-motion therapy to keep the tendon gliding. Active gripping is withheld while the repair is most vulnerable." },
+    { when: "Weeks 6 to 8", what: "Begin active motion and light strengthening as the repair gains strength. Splint use is gradually reduced." },
+    { when: "Weeks 8 to 12", what: "Progressive strengthening and return to most daily activities." },
+    { when: "3 to 6 months", what: "Return to heavy gripping, manual labor, and sport. Extensor repairs often recover somewhat faster than flexor repairs." },
+  ],
+  misconceptions: {
+    intro: "A few points often surprise patients with a cut tendon:",
+    items: [
+      {
+        heading: "A small cut can still divide a tendon.",
+        body: "Tendons sit just under the skin, so a short, clean-looking laceration can completely cut one. The size of the skin wound does not predict the damage underneath; the loss of finger movement does.",
+      },
+      {
+        heading: "The repair is only half the job.",
+        body: "A technically perfect tendon repair can still end in a stiff finger if therapy is skipped or rushed. The protected-motion rehabilitation that follows surgery is what determines how much motion the finger regains.",
+      },
+      {
+        heading: "Waiting makes it harder.",
+        body: "A cut tendon does not reconnect on its own, and the ends retract and scar with time. A delayed injury can turn a direct repair into a more involved reconstruction, so early evaluation matters.",
+      },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "A surgical division of the tendons that move the fingers" },
+    { label: "Two groups", value: "Flexor (palm side) and extensor (back of hand)" },
+    { label: "Common causes", value: "Knives, glass, box cutters, power tools" },
+    { label: "Often associated with", value: "Nerve and blood-vessel injuries" },
+    { label: "Treatment", value: "Early surgical repair plus protected-motion hand therapy" },
+    { label: "Timing", value: "Best repaired early, generally within about two weeks" },
+  ],
+  whyDrLee: [
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
+    "Treats the full spectrum of acute hand trauma, including combined tendon, nerve, and vessel injuries",
+    "Uses repair techniques built to support early protected motion and fewer adhesions",
+    "Coordinates certified hand therapy closely from the first post-operative visit",
+  ],
+  related: [
+    { name: "Nerve Lacerations of the Hand", slug: "nerve-lacerations" },
+    { name: "Jersey Finger", slug: "jersey-finger" },
+    { name: "Mallet Finger", slug: "mallet-finger" },
+    { name: "Hand & Wrist Fractures", slug: "hand-wrist-fractures" },
+  ],
+  ctaCard: {
+    eyebrow: "Deep cut and a finger that won't move?",
+    headline: "Cut tendons are best repaired early. Get evaluated promptly.",
+  },
+  faqHeadline: "Tendon lacerations, answered.",
+  faqs: [
+    {
+      question: "What happens when a tendon in the hand is cut?",
+      answer:
+        "When a tendon in the hand is cut, the finger loses the movement that tendon controls: a cut flexor tendon on the palm side prevents the finger from bending, and a cut extensor tendon on the back of the hand prevents it from straightening. The cut ends retract and do not reconnect on their own, so most complete tendon lacerations require surgical repair to restore motion.",
+    },
+    {
+      question: "Do all cut tendons need surgery?",
+      answer:
+        "Most complete tendon lacerations need surgical repair, because the divided ends will not heal across a gap by themselves. Some partial cuts and certain extensor tendon injuries can be managed with splinting instead. A hand surgeon determines which approach is appropriate based on which tendon is cut, how completely, and where along the hand or finger the injury sits.",
+    },
+    {
+      question: "How soon should a cut tendon be repaired?",
+      answer:
+        "Clean tendon lacerations are best repaired early, generally within about two weeks, while the tendon ends are still healthy and have not retracted and scarred. A repair in that window, called a primary repair, gives the most predictable result. Injuries recognized late may require a more involved staged reconstruction, sometimes with a tendon graft.",
+    },
+    {
+      question: "Why is hand therapy so important after tendon repair?",
+      answer:
+        "Hand therapy is half of the treatment after a tendon repair. A repaired tendon that is guided through gentle, protected motion forms fewer adhesions and regains more movement than one held completely still. A certified hand therapist follows a protocol matched to the repair, and skipping or rushing therapy is the most common reason a finger ends up stiff after an otherwise successful repair.",
+    },
+    {
+      question: "How long is recovery after a hand tendon repair?",
+      answer:
+        "Recovery is measured in months. The finger is protected and guided through therapy for the first six weeks while the repair is most vulnerable, then progresses to active motion and strengthening, with return to heavy gripping and sport usually around three to six months. Extensor tendon repairs often recover somewhat faster than flexor tendon repairs.",
+    },
+  ],
+  bottomCtaTitle: "A cut that stops a finger from moving needs a hand surgeon.",
+  bottomCtaItalic: "Early repair and the right therapy protect the result.",
+  bottomCtaBody:
+    "Tendon lacerations are best repaired early and almost always come with a nerve or vessel injury that should be addressed at the same time. The combination of a strong repair and a structured hand therapy program is what restores a finger that moves, which is why these injuries are best managed by a dedicated hand surgeon.",
+  metaTitle: "Tendon Lacerations of the Hand, Steven J. Lee, MD",
+  metaDescription:
+    "Flexor and extensor tendon lacerations of the hand: why a cut tendon stops a finger from moving, why timing matters, and how repair plus hand therapy restore function. Explained by Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
+  schemaDescription:
+    "A tendon laceration of the hand is a cut that divides one or more of the flexor or extensor tendons that move the fingers, resulting in loss of the ability to bend or straighten the affected finger. It is treated with early surgical repair, often alongside repair of associated nerve or blood-vessel injuries, followed by a structured hand therapy program.",
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+const nerveLacerations: ConditionPageContent = {
+  slug: "nerve-lacerations",
+  name: "Nerve Lacerations of the Hand",
+  region: "Hand & Wrist",
+  headerTitle: "Nerve Lacerations:",
+  headerItalic: "restoring feeling and function after a cut nerve.",
+  headerLede:
+    "A deep cut to the hand, wrist, or forearm can divide a nerve, leaving numbness in the fingers and, with larger nerves, weakness in the hand. A cut nerve is repaired under magnification, and because nerves regrow slowly, recovery unfolds over many months. Early, accurate repair gives the best chance of meaningful return of sensation and strength.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Chief of Hand and Upper Extremity Surgery, Lenox Hill Hospital",
+    reviewed: "June 2026",
+  },
+  overview: [
+    "Nerves carry the signals for both feeling and movement in the hand. The small digital nerves run along each side of every finger and supply sensation to the fingertip; the larger median, ulnar, and radial nerves cross the wrist and forearm and supply both sensation and the muscles that drive grip and pinch. Because these nerves lie close to the skin and alongside the tendons and arteries, the same cut that injures a tendon often injures a nerve.",
+    "When a nerve is cut, the part beyond the injury loses its connection and stops transmitting signals, producing numbness and, for the larger nerves, weakness. Unlike a cut tendon, a nerve cannot simply be tied back together and work again; the nerve fibers must regrow from the repair site outward, a slow process that takes months. The job of surgery is to line the cut ends up precisely so that regrowth has the best possible path to follow.",
+  ],
+  bodySections: [
+    {
+      heading: "Digital nerves and major nerves",
+      body: [
+        "Digital nerve lacerations, the small nerves along the sides of the fingers, are the most common nerve injury from a hand laceration. They cause numbness along one side of a finger. Repairing them protects the fingertip, restores protective sensation, and helps prevent a painful nerve scar called a neuroma.",
+        "Lacerations of the major nerves, the median, ulnar, or radial nerve at the wrist or forearm, are more serious because these nerves carry both sensation and the signals to important hand muscles. A cut to one of these can cause a larger area of numbness together with weakness or paralysis of specific muscles, and timely repair is important for the best chance of recovery.",
+      ],
+    },
+    {
+      heading: "Symptoms",
+      body: ["After a deep cut, the signs that a nerve has been injured include:"],
+      bullets: [
+        "Numbness or loss of feeling in a finger or part of the hand",
+        "Tingling, burning, or an electric sensation in the area the nerve supplies",
+        "Weakness of grip or pinch, or difficulty moving the thumb or fingers, with a larger nerve injury",
+        "A specific patch of skin that feels different from the same spot on the other hand",
+        "A tender spot at the wound that sends a shock into the finger when tapped",
+      ],
+      bulletsAfter:
+        "Numbness or weakness after a deep cut should be evaluated promptly, because nerve injuries are best identified and repaired early and are easily overlooked when attention is on the more obvious wound.",
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "A nerve laceration is diagnosed by examination. Mapping exactly where sensation is lost identifies which nerve is involved, and testing the muscles supplied by the larger nerves identifies any motor injury. The location and depth of the wound, combined with this exam, usually make the diagnosis. In injuries that are older or less clear, nerve conduction studies (an EMG) can help define the damage.",
+      ],
+    },
+    {
+      heading: "Why nerve recovery is slow",
+      body: [
+        "Even after a perfect repair, a nerve does not work immediately. The regenerating fibers must grow from the repair site all the way to the skin or muscle they supply, advancing at roughly an inch a month. Sensation returns gradually and from the repair outward, which is why feeling in a fingertip can take many months to come back after a wrist-level injury. Setting that expectation early is part of treatment, because recovery is real but unhurried.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Nerve injuries are easy to miss in the middle of a bloody wound, and a missed digital nerve can mean a permanently numb fingertip or a painful neuroma. Dr. Lee's approach is to examine sensation and muscle function carefully in every hand laceration, identify each injured nerve, and repair it in the same setting as the tendon and vessel injuries that usually accompany it. As Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, he treats the full spectrum of these injuries.",
+      "A nerve is repaired under magnification by aligning the cut ends precisely and securing them with very fine suture, with as little tension as possible. When a segment of nerve is missing and the ends cannot be brought together without tension, the gap is bridged with a nerve graft or a nerve conduit rather than forcing a tight repair, which heals poorly. The aim throughout is to give the regrowing fibers the cleanest, straightest path back to the hand.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Surgical repair",
+      body: [
+        "A cleanly cut nerve is repaired directly: under magnification, the outer sheaths of the two ends are aligned and joined with fine sutures so the internal fibers face their counterparts. A tension-free repair is the goal, because a repair pulled tight does not heal well.",
+        "When nerve tissue is missing, or the ends have retracted too far to meet, the gap is bridged. Short gaps can be spanned with a hollow nerve conduit; longer gaps are reconstructed with a nerve graft. The choice depends on the size of the gap and which nerve is involved.",
+      ],
+    },
+    {
+      heading: "Recovery and rehabilitation",
+      body: [
+        "After repair, the hand is protected briefly to take tension off the nerve, then guided through a hand therapy program. Therapy addresses the associated tendon injuries, keeps the joints supple while sensation is absent, protects the numb skin from burns and cuts, and later includes sensory re-education to help the brain interpret the returning signals. Progress is followed over many months as feeling advances toward the fingertip.",
+      ],
+    },
+  ],
+  recoveryIntro:
+    "Recovery from a nerve repair is gradual and is paced by how fast the nerve regrows, not by how the skin wound looks:",
+  recovery: [
+    { when: "Week 0 to 3", what: "Protective splinting to take tension off the repair while the connection heals. Associated tendon injuries are managed alongside." },
+    { when: "Weeks 3 to 6", what: "Begin a hand therapy program. Protect the numb skin, and keep the joints moving while sensation is still absent." },
+    { when: "Months 1 to 6", what: "Regenerating nerve fibers advance at roughly an inch a month. A tender, tingling spot that moves toward the fingertip over time is a sign of progress." },
+    { when: "6 to 18 months", what: "Sensation returns gradually from the repair outward. Sensory re-education helps the brain reinterpret the signals. Final results can take a year or more." },
+  ],
+  misconceptions: {
+    intro: "Cut nerves come with a few expectations worth correcting:",
+    items: [
+      {
+        heading: "A repaired nerve does not work right away.",
+        body: "Stitching a nerve back together restores the path, not the signal. The fibers have to regrow toward the hand over months, so numbness persists for a while after surgery even when the repair is perfect.",
+      },
+      {
+        heading: "Numbness after a cut is not something to ignore.",
+        body: "A numb finger after a laceration usually means a cut nerve, not a bruise that will pass. Identifying and repairing it early gives the best chance of recovering sensation and avoiding a painful neuroma.",
+      },
+      {
+        heading: "A small wound can still cut a major nerve.",
+        body: "Nerves lie just under the skin next to the tendons and arteries, so a short laceration at the wrist or finger can divide a nerve. The numbness or weakness, not the size of the cut, is what reveals the injury.",
+      },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "A cut dividing a nerve that supplies feeling or muscle in the hand" },
+    { label: "Most common type", value: "Digital nerve, along the side of a finger" },
+    { label: "Major nerves", value: "Median, ulnar, and radial at the wrist or forearm" },
+    { label: "Treatment", value: "Microsurgical repair, or graft or conduit for a gap" },
+    { label: "Recovery speed", value: "Nerves regrow at roughly an inch per month" },
+    { label: "Timeline", value: "Sensation can take many months to a year or more" },
+  ],
+  whyDrLee: [
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
+    "Examines sensation and muscle function in every hand laceration so nerve injuries are not missed",
+    "Repairs nerves under magnification, tension-free, with grafts or conduits when a gap exists",
+    "Treats combined nerve, tendon, and vessel injuries in a single comprehensive setting",
+  ],
+  related: [
+    { name: "Tendon Lacerations of the Hand", slug: "tendon-lacerations" },
+    { name: "Cubital Tunnel Syndrome", slug: "cubital-tunnel" },
+    { name: "Carpal Tunnel Syndrome", slug: "carpal-tunnel" },
+    { name: "Wartenberg's Syndrome", slug: "wartenbergs-syndrome" },
+  ],
+  ctaCard: {
+    eyebrow: "Numbness or weakness after a deep cut?",
+    headline: "A cut nerve is best repaired early. Get evaluated promptly.",
+  },
+  faqHeadline: "Nerve lacerations, answered.",
+  faqs: [
+    {
+      question: "What happens when a nerve in the hand is cut?",
+      answer:
+        "When a nerve in the hand is cut, the area it supplies loses its signal. A cut digital nerve causes numbness along one side of a finger, while a cut to a larger nerve such as the median or ulnar nerve can cause a broader area of numbness along with weakness of grip, pinch, or thumb and finger movement. The nerve does not reconnect on its own, so repair is usually needed.",
+    },
+    {
+      question: "Can a cut nerve be repaired?",
+      answer:
+        "Yes. A cleanly cut nerve is repaired under magnification by aligning the cut ends precisely and joining them with very fine sutures, with as little tension as possible. When a segment of nerve is missing and the ends cannot meet without tension, the gap is bridged with a nerve graft or a nerve conduit. The goal of repair is to give the regrowing nerve fibers the straightest possible path back to the hand.",
+    },
+    {
+      question: "How long does it take to recover feeling after a nerve repair?",
+      answer:
+        "Recovery is slow because the nerve fibers must regrow from the repair site to the skin or muscle they supply, advancing at roughly an inch a month. Sensation returns gradually and from the repair outward, so feeling in a fingertip can take many months after a wrist-level injury, and final results can take a year or more. A repaired nerve does not restore feeling immediately.",
+    },
+    {
+      question: "Will sensation fully return after a cut nerve is repaired?",
+      answer:
+        "Many patients regain useful, protective sensation after a nerve repair, and digital nerve repairs in particular often do well, but recovery varies and is rarely instantaneous or complete. The extent of return depends on the patient's age, which nerve was injured, how cleanly it was cut, and how early it was repaired. Sensory re-education in hand therapy helps the brain make the most of the signals that return.",
+    },
+    {
+      question: "Why should numbness after a cut be checked quickly?",
+      answer:
+        "Numbness after a deep cut usually means a nerve has been divided, and nerve injuries are best identified and repaired early, while the ends are healthy and before scar forms. Early repair gives the best chance of recovering sensation and helps prevent a painful nerve scar called a neuroma. Because nerve injuries are easily overlooked next to a more obvious wound, prompt evaluation by a hand surgeon is important.",
+    },
+  ],
+  bottomCtaTitle: "Numbness after a cut means a nerve until proven otherwise.",
+  bottomCtaItalic: "Early repair gives the best chance of recovery.",
+  bottomCtaBody:
+    "A cut nerve will not reconnect on its own, and recovery, while real, unfolds over many months as the nerve regrows. Identifying every injured nerve early, repairing it precisely and tension-free, and pairing it with the right hand therapy is what gives feeling and function the best chance to return.",
+  metaTitle: "Nerve Lacerations of the Hand, Steven J. Lee, MD",
+  metaDescription:
+    "Digital and major nerve lacerations of the hand and wrist: why a cut nerve causes numbness and weakness, how microsurgical repair and grafts work, and why recovery is gradual. Explained by Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
+  schemaDescription:
+    "A nerve laceration of the hand is a cut that divides a nerve supplying sensation or muscle function, most commonly a digital nerve along a finger or a major nerve such as the median, ulnar, or radial nerve at the wrist or forearm. It causes numbness and, with larger nerves, weakness, and is treated with microsurgical repair or, when a gap exists, a nerve graft or conduit, followed by a gradual recovery as the nerve regrows.",
+};
+
 export const conditionPages: ConditionPageContent[] = [
   carpalTunnel,
   distalRadiusFracture,
@@ -8203,6 +8837,11 @@ export const conditionPages: ConditionPageContent[] = [
   // Hand & Wrist additions (Dr. Lee feedback, June 2026):
   triggerFinger,
   wristArthroscopy,
+  // Hand & Wrist trauma additions (Dr. Lee feedback, June 2026):
+  jerseyFinger,
+  malletFinger,
+  tendonLacerations,
+  nerveLacerations,
 ];
 
 export function conditionPageBySlug(slug: string) {
