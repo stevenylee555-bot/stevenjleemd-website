@@ -122,7 +122,7 @@ export default function Specialties({ home }: { home?: HomeContent }) {
                 </div>
 
                 <div className="kicker text-gold-600 mb-3">{s.eyebrow}</div>
-                <h3 className="font-serif text-2xl lg:text-3xl text-navy-950 tracking-[-0.01em] mb-4">
+                <h3 className="font-serif font-bold text-2xl lg:text-3xl text-navy-950 tracking-[-0.01em] mb-4">
                   {s.title}
                 </h3>
                 <p className="text-navy-900/90 text-[16px] leading-relaxed mb-8 flex-1 max-w-[34ch]">
