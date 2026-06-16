@@ -253,6 +253,7 @@ public/
 - **Keep in code (NOT CMS-editable):** JSON-LD schema (`src/lib/schema.ts`), layout/components, and the careful-claim rules. Only the words and images live in Sanity.
 - **Build order so far:** testimonials section first as a proof-of-concept, then expand section by section. Import old-site content so he curates rather than retypes.
 - **When extending:** this Next.js version is non-standard, consult `node_modules/next/dist/docs/` before touching any App Router APIs (draft mode, route handlers, the Studio catch-all route, live/visual-editing wiring).
+- **Sanity images need `next/image` allowlisting (load-bearing gotcha):** any Sanity-hosted image rendered through `next/image` requires `cdn.sanity.io` in `next.config.ts` `images.remotePatterns`, or production silently fails to load it and any `onError` fallback (e.g. initials) shows instead. This bites only in production: `next dev` often renders in-code fallback images, so the missing host passes local testing and only surfaces after deploy. The testimonial carousel hit exactly this (2026-06-15). When forking this repo for a new doctor, keep the `cdn.sanity.io` `remotePatterns` entry.
 
 ---
 
