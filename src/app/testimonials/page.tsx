@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
-import TestimonialsCarousel from "@/components/home/TestimonialsCarousel";
 import BookingCTA from "@/components/home/BookingCTA";
-import { getTestimonials } from "@/sanity/getTestimonials";
 
 export const metadata: Metadata = {
   title: "Patient Testimonials, Steven J. Lee, MD",
@@ -92,9 +90,7 @@ function StoryPhoto({ image, name }: { image: string; name: string }) {
   );
 }
 
-export default async function TestimonialsPage() {
-  const testimonials = await getTestimonials();
-
+export default function TestimonialsPage() {
   return (
     <>
       <PageHeader
@@ -107,8 +103,6 @@ export default async function TestimonialsPage() {
           { label: "Testimonials", href: "/testimonials" },
         ]}
       />
-
-      <TestimonialsCarousel items={testimonials} showMoreLink={false} />
 
       {/* Full accounts */}
       <section className="bg-white">

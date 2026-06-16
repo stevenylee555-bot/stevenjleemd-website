@@ -14,6 +14,7 @@ const navLinks = [
     children: [
       { label: "Biography", href: "/about/bio" },
       { label: "Credentials & Awards", href: "/about/credentials" },
+      { label: "Testimonials", href: "/testimonials" },
       { label: "Publications", href: "/about/publications" },
       { label: "Videos", href: "/about/videos" },
       { label: "CV", href: "/about/cv" },
