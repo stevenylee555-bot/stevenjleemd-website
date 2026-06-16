@@ -17,33 +17,60 @@ export type Testimonial = {
   initials: string;
 };
 
-// Verified patient testimonials carried over from Dr. Lee's prior site, where
-// they were published with the patient's consent. Shown until Dr. Lee curates
-// testimonials in the Studio, at which point published Sanity entries replace
-// these automatically. No patient photos are used; the carousel renders initials.
+// Verified patient testimonials carried over from Dr. Lee's prior site and from
+// notable patients who gave written consent to be featured. Shown until Dr. Lee
+// curates testimonials in the Studio, at which point published Sanity entries
+// replace these automatically. Photos live in /public/images/testimonials and
+// are pre-cropped to the carousel's 4:5 portrait frame.
 const fallbackTestimonials: Testimonial[] = [
   {
-    quote:
-      "Dr. Lee is a world class doctor and person who has been my friend for decades. As a golf teaching professional I have had several students with very bad hand injuries.",
-    emphasis: "I sent them to Dr. Lee and he saved each of them.",
-    name: "Jim McLean",
-    detail: "Hand & Upper Extremity · Golf Instructor",
-    initials: "JM",
+    quote: "Dr. Lee has literally saved my life",
+    emphasis: "and helps keep my body in top shape.",
+    name: "Mark Messier",
+    detail: "Hockey Hall of Famer, New York Rangers Captain",
+    image: "/images/testimonials/mark-messier.jpg",
+    initials: "MM",
+  },
+  {
+    quote: "Thank you, Dr. Lee, for fixing my wrist!",
+    name: "Cameron Young",
+    detail: "PGA Tour Professional",
+    image: "/images/testimonials/cameron-young.jpg",
+    initials: "CY",
   },
   {
     quote:
       "It has been an absolute pleasure having Dr. Steven Lee as my doctor. Dr. Lee has looked after me for years.",
     emphasis: "As a retired professional tennis player, I have had many aches and pains.",
     name: "Katrina Adams",
-    detail: "Sports Medicine · Professional Tennis",
+    detail: "Former USTA President and Chairman, Professional Tennis Player",
+    image: "/images/testimonials/katrina-adams.jpg",
     initials: "KA",
+  },
+  {
+    quote: "Thank you for getting me back into playing shape.",
+    emphasis: "You're the best!",
+    name: "Genie Bouchard",
+    detail: "WTA Professional Tennis Player",
+    image: "/images/testimonials/genie-bouchard.jpg",
+    initials: "GB",
+  },
+  {
+    quote:
+      "Dr. Lee is a world class doctor and person who has been my friend for decades. As a golf teaching professional I have had several students with very bad hand injuries.",
+    emphasis: "I sent them to Dr. Lee and he saved each of them.",
+    name: "Jim McLean",
+    detail: "Hall of Fame Golf Instructor, Top 100 Golf Teacher",
+    image: "/images/testimonials/jim-mclean.jpg",
+    initials: "JM",
   },
   {
     quote:
       "Back in March 2016 I had Steven do my procedure. It was bothering me for some time until it was time to get it done. I had meniscus tears and cartilage damage.",
     emphasis: "All went well and I have never looked back.",
     name: "Clive Leach",
-    detail: "Meniscus Repair · Knee & Sports",
+    detail: "Professional Squash Player, Former World No. 8",
+    image: "/images/testimonials/clive-leach.jpg",
     initials: "CL",
   },
 ];
@@ -126,8 +153,10 @@ function Slide({ t }: { t: Testimonial }) {
 
 export default function TestimonialsCarousel({
   items,
+  showMoreLink = true,
 }: {
   items?: Testimonial[];
+  showMoreLink?: boolean;
 }) {
   const reduce = useReducedMotion();
   const data = items && items.length > 0 ? items : fallbackTestimonials;
@@ -295,19 +324,21 @@ export default function TestimonialsCarousel({
           <p className="text-navy-900/90 text-[13px] leading-relaxed max-w-md">
             Shared with each patient&apos;s permission.
           </p>
-          <Link
-            href="/testimonials"
-            className="group inline-flex items-center gap-2 text-sm font-semibold text-navy-950 hover:text-gold-600 transition-colors"
-          >
-            <span className="border-b border-navy-950/30 group-hover:border-gold-600 pb-0.5">
-              Read more patient stories
-            </span>
-            <ArrowUpRight
-              size={15}
-              aria-hidden="true"
-              className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-            />
-          </Link>
+          {showMoreLink && (
+            <Link
+              href="/testimonials"
+              className="group inline-flex items-center gap-2 text-sm font-semibold text-navy-950 hover:text-gold-600 transition-colors"
+            >
+              <span className="border-b border-navy-950/30 group-hover:border-gold-600 pb-0.5">
+                Read more patient stories
+              </span>
+              <ArrowUpRight
+                size={15}
+                aria-hidden="true"
+                className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+              />
+            </Link>
+          )}
         </div>
       </div>
     </section>

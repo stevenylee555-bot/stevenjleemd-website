@@ -57,8 +57,8 @@ export default async function HomePage() {
       <AnimatedStats home={home} />
       <InnovationFeature home={home} />
       <Specialties home={home} />
-      <SecondOpinion home={home} />
       <TestimonialsCarousel items={testimonials} />
+      <SecondOpinion home={home} />
       <About home={home} />
       <ConditionsPreview />
       <BookingCTA />
