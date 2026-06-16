@@ -280,6 +280,14 @@ export const conditions: Condition[] = [
     blurb:
       "The most common adult elbow fracture. Stable fractures move early; displaced ones are fixed or replaced using elbow hardware Dr. Lee helped design.",
   },
+  {
+    name: "Terrible Triad of the Elbow",
+    slug: "terrible-triad",
+    region: "Elbow",
+    status: "priority",
+    blurb:
+      "An elbow dislocation with radial head and coronoid fractures, one of the most unstable elbow injuries. Almost always reconstructed surgically, then moved early. The complex trauma Dr. Lee is referred from outside hospitals.",
+  },
   // Elbow, phase 2
   {
     name: "Complex Elbow Trauma",
@@ -360,6 +368,22 @@ export const conditions: Condition[] = [
     status: "priority",
     blurb:
       "Irritation of the long head of the biceps at the front of the shoulder, usually alongside cuff or labral problems. Most improve without surgery; tenodesis helps the rest.",
+  },
+  {
+    name: "Proximal Biceps Tendon Tear",
+    slug: "proximal-biceps-tear",
+    region: "Shoulder",
+    status: "priority",
+    blurb:
+      "Rupture of the long head of the biceps at the shoulder, often with a 'Popeye' bulge. Everyday strength is largely preserved, so many cases are treated without surgery; tenodesis is for active patients or an associated tear.",
+  },
+  {
+    name: "Pectoralis Major Tear",
+    slug: "pectoralis-tear",
+    region: "Shoulder",
+    status: "priority",
+    blurb:
+      "Rupture of the chest muscle's tendon, classically during a heavy bench press. Complete tears in active patients are best repaired surgically, and early repair gives the strongest result.",
   },
   // Shoulder, phase 2
   {

@@ -8,7 +8,7 @@ import { createClient } from "@sanity/client";
 import { conditionPages, type ConditionBodySection } from "../src/lib/conditionPages";
 
 // Conditions that have a route + code data but no Sanity document yet.
-const MISSING_SLUGS = ["trigger-finger", "wrist-arthroscopy"];
+const MISSING_SLUGS = ["terrible-triad", "proximal-biceps-tear", "pectoralis-tear"];
 
 const client = createClient({
   projectId: "rj9a0qco",

@@ -4025,10 +4025,10 @@ const elbowDislocation: ConditionPageContent = {
     "Treats both acute dislocations and chronic instability afterward",
   ],
   related: [
+    { name: "Terrible Triad of the Elbow", slug: "terrible-triad" },
     { name: "LUCL Injury", slug: "lucl-injury" },
     { name: "Radial Head Fracture", slug: "radial-head-fracture" },
     { name: "Olecranon Fracture", slug: "olecranon-fracture" },
-    { name: "Biceps Tendon Rupture", slug: "biceps-rupture" },
   ],
   ctaCard: {
     eyebrow: "Dislocated elbow?",
@@ -4895,6 +4895,130 @@ const radialHeadFracture: ConditionPageContent = {
     "A radial head fracture is the most common fracture of the adult elbow, often from a fall onto an outstretched hand. Treatment ranges from early motion for stable fractures to screw or plate fixation or radial head replacement for displaced ones.",
 };
 
+const terribleTriad: ConditionPageContent = {
+  slug: "terrible-triad",
+  name: "Terrible Triad of the Elbow",
+  region: "Elbow",
+  headerTitle: "Terrible Triad:",
+  headerItalic: "the elbow's most unstable injury.",
+  headerLede:
+    "The terrible triad is an elbow dislocation combined with a radial head fracture and a coronoid fracture. It is one of the most unstable injuries the elbow can sustain and almost always needs surgery to rebuild stability so the joint can begin moving early. This is exactly the kind of complex elbow trauma Dr. Lee is referred from outside hospitals.",
+  byline: elbowByline,
+  overview: [
+    "The terrible triad is a specific pattern of elbow injury: a dislocation that occurs together with a fracture of the radial head and a fracture of the coronoid, the bony beak at the front of the ulna. Each of those three structures is a stabilizer, so losing all three at once leaves the elbow profoundly unstable.",
+    "The name reflects how difficult these injuries once were to treat. With a modern, systematic repair of each damaged structure and an emphasis on early motion, the outlook today is far better than the name suggests, but the injury still demands an experienced surgeon and a clear plan.",
+  ],
+  bodySections: [
+    {
+      heading: "What is torn or broken",
+      body: ["A terrible triad damages three stabilizers of the elbow at the same time:"],
+      bullets: [
+        "The radial head, the disc-shaped bone on the outer elbow that fractures",
+        "The coronoid, the front bony beak of the ulna that resists the elbow sliding backward",
+        "The lateral ligament complex, which tears as the elbow dislocates",
+      ],
+      bulletsAfter:
+        "The medial ligament is often injured as well. Because every layer of restraint is compromised, the elbow re-dislocates easily until each part is repaired.",
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "X-rays confirm the dislocation and the fractures, and the elbow is reduced (put back in place) promptly. A CT scan is usually obtained to map the radial head and coronoid fractures in detail, because the size and number of fragments guide the surgical plan. The diagnosis is rarely subtle, but recognizing the full pattern, rather than treating it as a simple dislocation, is what protects against a chronically unstable elbow.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "A terrible triad almost always needs surgery. Dr. Lee approaches it systematically, repairing or replacing the radial head, fixing the coronoid, and repairing the lateral ligament complex, and addressing the medial side when the elbow is still unstable after that. The goal is an elbow stable enough to start moving within days, not weeks.",
+      "Complex elbow trauma, including the terrible triad, is the kind of injury Dr. Lee is referred to manage from outside hospitals. He uses the anchor and internal-brace constructs he helped design to secure the ligament repairs, which supports the early motion that protects against stiffness.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Surgical treatment",
+      body: [
+        "Surgery rebuilds the elbow one stabilizer at a time. The radial head is fixed if the fracture is simple, or replaced with an implant if it is too fragmented to repair. The coronoid is reattached, often with sutures or a small plate. The lateral ligament complex is repaired back to the bone with anchors, and an internal brace can reinforce the repair. If the elbow still feels unstable, the medial ligament is repaired or a hinged external fixator is added to hold the joint located while it heals.",
+      ],
+    },
+    {
+      heading: "Why non-surgical treatment rarely works",
+      body: [
+        "Because all three stabilizers are damaged, a terrible triad treated in a cast tends to re-dislocate or settle into a poorly aligned, stiff, arthritic elbow. Non-surgical care is reserved for the rare, very stable variant or for patients who cannot undergo surgery, and it requires close radiographic monitoring to confirm the joint stays located.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery is built around protecting the repairs while starting motion early:",
+  recovery: [
+    { when: "Weeks 0 to 2", what: "Splint or hinged brace. Guided motion begins within a safe arc once the repair is confirmed stable in surgery. Hand, wrist, and shoulder motion encouraged from the start." },
+    { when: "Weeks 2 to 6", what: "Progressive range of motion in therapy, usually in a hinged brace, while avoiding forces that stress the healing ligaments." },
+    { when: "Weeks 6 to 12", what: "Strengthening and a graded return to activity as motion and stability allow. Some loss of the last few degrees of motion is common and continues to improve." },
+    { when: "Months 3 to 6", what: "Continued strengthening toward final outcome. Heavy load and contact activity are cleared once stability and motion are reliable." },
+  ],
+  misconceptions: {
+    intro: "Two points that matter most:",
+    items: [
+      { heading: "The name overstates today's outlook.", body: "The 'terrible triad' was named decades ago, before modern repair techniques. With a systematic repair of each structure and early motion, most patients regain a functional, stable elbow. The name describes the injury's complexity, not the expected result." },
+      { heading: "It is not a simple dislocation.", body: "Treating a terrible triad like an ordinary elbow dislocation, by reducing it and resting it, usually leads to re-dislocation or a stiff, arthritic elbow. Recognizing the full fracture pattern, often with a CT scan, is what changes the plan and the outcome." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Three injuries", value: "Dislocation, radial head fracture, coronoid fracture" },
+    { label: "Mechanism", value: "Fall onto an outstretched hand" },
+    { label: "Stability", value: "Highly unstable, prone to re-dislocation" },
+    { label: "Treatment", value: "Almost always surgical reconstruction" },
+    { label: "Priority", value: "Stability first, then early motion" },
+    { label: "Main risk", value: "Re-dislocation, stiffness, and arthritis" },
+  ],
+  whyDrLee: [
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
+    "Referral surgeon for complex elbow trauma, including the terrible triad",
+    "Helped design the anchors and internal-brace constructs used in the ligament repairs",
+    "Early-motion focus to protect against the stiffness the elbow is prone to",
+  ],
+  related: [
+    { name: "Elbow Dislocation", slug: "elbow-dislocation" },
+    { name: "Radial Head Fracture", slug: "radial-head-fracture" },
+    { name: "LUCL Injury", slug: "lucl-injury" },
+    { name: "Olecranon Fracture", slug: "olecranon-fracture" },
+  ],
+  ctaCard: {
+    eyebrow: "Complex elbow fracture-dislocation?",
+    headline: "Rebuild stability, move early.",
+  },
+  faqHeadline: "Terrible triad, answered.",
+  faqs: [
+    {
+      question: "What is the terrible triad of the elbow?",
+      answer:
+        "It is an elbow dislocation that happens together with two fractures: a fracture of the radial head on the outer elbow and a fracture of the coronoid at the front of the ulna. Because three stabilizers are damaged at once, the elbow is very unstable, and the injury almost always needs surgery to repair or replace the radial head, fix the coronoid, and repair the torn ligaments.",
+    },
+    {
+      question: "Do I really need surgery for a terrible triad?",
+      answer:
+        "In almost all cases, yes. With all three stabilizers damaged, an elbow treated without surgery tends to re-dislocate or heal stiff and arthritic. Surgery rebuilds each structure so the joint is stable enough to begin moving within days, which is what protects against a permanently stiff elbow. Non-surgical care is reserved for rare, very stable injuries or for patients who cannot have surgery.",
+    },
+    {
+      question: "Why is it called 'terrible'?",
+      answer:
+        "The name comes from how poorly these injuries did decades ago, before modern repair techniques, when they often ended in instability, stiffness, and arthritis. Today, with a systematic repair of each damaged structure and early guided motion, most patients regain a functional, stable elbow. The name reflects the complexity of the injury, not the outcome you should expect now.",
+    },
+    {
+      question: "Will my elbow ever be normal again?",
+      answer:
+        "Most patients regain a stable, functional elbow that handles daily activity well. It is common to lose the last few degrees of full straightening, and recovery takes several months, but a well-executed repair followed by early motion gives the best chance of a strong, dependable elbow. Outcomes are better when the injury is recognized and treated correctly from the start.",
+    },
+  ],
+  bottomCtaTitle: "Told you have a terrible triad?",
+  bottomCtaItalic: "The right repair, done early, changes everything.",
+  bottomCtaBody:
+    "A terrible triad is a serious, unstable elbow injury, but its modern outlook is far better than the name implies. The key is a systematic repair of the radial head, coronoid, and ligaments, followed by early motion. It is exactly the kind of complex elbow trauma Dr. Lee is referred to manage. An accurate early assessment is the first step.",
+  metaTitle: "Terrible Triad of the Elbow, Steven J. Lee, MD",
+  metaDescription:
+    "Terrible triad of the elbow (dislocation with radial head and coronoid fractures) evaluated and treated by Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital. Systematic surgical reconstruction and early-motion recovery explained.",
+  schemaDescription:
+    "The terrible triad of the elbow is an injury pattern combining an elbow dislocation with a radial head fracture and a coronoid fracture, damaging three stabilizers at once. It is highly unstable and almost always treated with surgical repair or replacement of the radial head, coronoid fixation, and ligament repair, followed by early protected motion.",
+};
+
 // ─────────────────────────────────────────────────────────────────────────────
 // Shoulder additions (Dr. Lee feedback, June 2026)
 const shoulderByline = {
@@ -5721,6 +5845,246 @@ const bicepsTendonitis: ConditionPageContent = {
     "Shoulder biceps tendonitis (long head of biceps) evaluated and treated by Dr. Steven J. Lee, MD. Rehabilitation, injections, and biceps tenodesis explained, with attention to associated shoulder problems.",
   schemaDescription:
     "Biceps tendonitis is irritation of the long head of the biceps tendon at the front of the shoulder, usually accompanying rotator cuff or labral problems. Treatment ranges from rehabilitation to biceps tenodesis.",
+};
+
+const proximalBicepsTear: ConditionPageContent = {
+  slug: "proximal-biceps-tear",
+  name: "Proximal Biceps Tendon Tear",
+  region: "Shoulder",
+  headerTitle: "Proximal Biceps Tear:",
+  headerItalic: "the rupture at the front of the shoulder.",
+  headerLede:
+    "A proximal biceps tear is a rupture of the long head of the biceps tendon where it attaches inside the shoulder. It often produces a sudden pop, a bruise, and a 'Popeye' bulge in the arm. Many people do very well without surgery; active patients and those bothered by cramping or appearance are candidates for a tenodesis.",
+  byline: shoulderByline,
+  overview: [
+    "The biceps has two tendons at the top: the long head, which runs through the front of the shoulder and anchors inside the joint, and the short head. A proximal biceps tear is a rupture of that long head at the shoulder, a different injury from a distal biceps rupture at the elbow and from biceps tendonitis, which is irritation rather than a tear.",
+    "The tear often follows years of wear and is frequently the end stage of long-standing biceps tendonitis or rotator cuff disease. When the worn tendon finally gives way, the pain it had been causing often improves, which is why many ruptures are treated without surgery.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["A proximal biceps rupture typically causes:"],
+      bullets: [
+        "A sudden pop or snap at the front of the shoulder, sometimes with lifting",
+        "A bulge of muscle lower in the arm, the 'Popeye' sign",
+        "Bruising along the front of the upper arm",
+        "Aching or cramping with activity, and sometimes mild loss of forearm-turning strength",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "The diagnosis is usually clear from the history and the visible Popeye deformity on exam. Because the long head of the biceps is so often torn alongside a rotator cuff or labral problem, an ultrasound or MRI is used to evaluate the rest of the shoulder, which is what shapes the treatment decision.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Most isolated proximal biceps ruptures are treated without surgery. The strength loss is small for everyday activity, the deformity is cosmetic, and the pain often improves once the worn tendon has released. Dr. Lee starts with reassurance, activity modification, and a strengthening program.",
+      "Surgery, a biceps tenodesis that reattaches the tendon to the bone, is considered for younger or highly active patients, for those with bothersome cramping or appearance, and especially when the rupture is part of a larger rotator cuff or labral problem that is being treated anyway. Dr. Lee evaluates the whole shoulder rather than the tendon alone before recommending a path.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["Most patients do well with:"],
+      bullets: [
+        "Reassurance that the strength loss is small for daily activity",
+        "Activity modification during the painful early weeks",
+        "A progressive shoulder and arm strengthening program",
+        "Treatment of any associated rotator cuff or tendonitis symptoms",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "When surgery is chosen, a biceps tenodesis reattaches the long head of the biceps tendon to the bone of the upper arm. It corrects the Popeye deformity, relieves cramping, and restores the muscle's resting tension. It is frequently performed at the same time as an arthroscopic rotator cuff or labral repair when the rupture is part of a larger problem.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery depends on whether surgery is needed:",
+  recovery: [
+    { when: "Non-surgical", what: "Pain settles over a few weeks. Strengthening progresses as comfort allows, with most patients back to full activity by six to twelve weeks." },
+    { when: "After tenodesis, weeks 0 to 4", what: "Sling to protect the repair, with gentle guided motion." },
+    { when: "After tenodesis, weeks 4 to 12", what: "Progressive strengthening and a graded return to lifting and overhead activity." },
+    { when: "After tenodesis, months 3 to 4", what: "Return to heavier lifting and sport as strength returns." },
+  ],
+  misconceptions: {
+    intro: "Two things to understand:",
+    items: [
+      { heading: "Surgery is usually optional.", body: "Unlike a distal biceps rupture at the elbow, a proximal (long-head) rupture at the shoulder loses little functional strength. Many patients never need surgery, and the main reasons to operate are cramping, appearance, or an associated shoulder problem." },
+      { heading: "It rarely happens alone.", body: "A long-head biceps rupture is often the end stage of rotator cuff or labral disease. The evaluation looks at the whole shoulder, because what else is found frequently matters more than the biceps tear itself." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Structure involved", value: "Long head of the biceps tendon at the shoulder" },
+    { label: "Hallmark sign", value: "'Popeye' bulge in the upper arm" },
+    { label: "Strength loss", value: "Small for everyday activity" },
+    { label: "First-line treatment", value: "Reassurance and strengthening" },
+    { label: "Surgical option", value: "Biceps tenodesis" },
+    { label: "Often with", value: "Rotator cuff or labral disease" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Evaluates the whole shoulder, not just the biceps tendon",
+    "Honest about when surgery is and is not needed for the deformity",
+    "Biceps tenodesis for active patients or when treating an associated tear",
+  ],
+  related: [
+    { name: "Biceps Tendonitis (Shoulder)", slug: "biceps-tendonitis" },
+    { name: "Rotator Cuff Tear", slug: "rotator-cuff" },
+    { name: "SLAP Tear (Labral Injury)", slug: "slap-tear" },
+    { name: "Biceps Tendon Rupture", slug: "biceps-rupture" },
+  ],
+  ctaCard: {
+    eyebrow: "Pop and a bulge in your arm?",
+    headline: "Often treatable without surgery.",
+  },
+  faqHeadline: "Proximal biceps tears, answered.",
+  faqs: [
+    {
+      question: "Is this the same as the biceps tear that needs urgent surgery?",
+      answer:
+        "No. The urgent one is a distal biceps rupture at the elbow, which loses significant strength and is usually repaired promptly. A proximal biceps tear is a rupture of the long head at the shoulder, which loses very little functional strength. Most proximal tears are treated without surgery, and the decision is rarely urgent.",
+    },
+    {
+      question: "Do I need surgery for the Popeye bulge?",
+      answer:
+        "Usually not for function. The bulge is cosmetic, and everyday strength is largely preserved because the short head of the biceps and the other elbow flexors compensate. Surgery, a biceps tenodesis, is considered for younger or very active patients, for bothersome cramping or appearance, or when a rotator cuff or labral problem is being treated at the same time.",
+    },
+    {
+      question: "Why does my whole shoulder need to be checked?",
+      answer:
+        "A long-head biceps rupture is often the end stage of rotator cuff or labral disease, so the tendon rarely tears in isolation. An ultrasound or MRI evaluates the cuff and labrum, and what is found there often matters more than the biceps tear itself and shapes whether surgery is recommended.",
+    },
+  ],
+  bottomCtaTitle: "Felt a pop and see a bulge in your arm?",
+  bottomCtaItalic: "Most proximal biceps tears do well without surgery.",
+  bottomCtaBody:
+    "A proximal biceps tear loses little everyday strength, and many patients recover fully without surgery. Because it often signals a rotator cuff or labral problem, the evaluation looks at the whole shoulder, and a biceps tenodesis is available when the deformity, cramping, or an associated tear calls for it. The first step is an accurate assessment.",
+  metaTitle: "Proximal Biceps Tendon Tear (Shoulder), Steven J. Lee, MD",
+  metaDescription:
+    "Proximal (long head) biceps tendon tear at the shoulder evaluated and treated by Dr. Steven J. Lee, MD. The Popeye deformity, non-surgical care, and biceps tenodesis explained, with attention to associated rotator cuff and labral problems.",
+  schemaDescription:
+    "A proximal biceps tendon tear is a rupture of the long head of the biceps where it attaches inside the shoulder, often producing a 'Popeye' deformity. Everyday strength is largely preserved, so most cases are treated non-surgically, with biceps tenodesis reserved for active patients, bothersome deformity, or an associated rotator cuff or labral injury.",
+};
+
+const pectoralisTear: ConditionPageContent = {
+  slug: "pectoralis-tear",
+  name: "Pectoralis Major Tear",
+  region: "Shoulder",
+  headerTitle: "Pectoralis Major Tear:",
+  headerItalic: "the bench-press injury.",
+  headerLede:
+    "A pectoralis major tear is a rupture of the chest muscle's tendon where it attaches to the upper arm, classically during a heavy bench press. In active patients, a complete tendon tear is best repaired surgically, and early repair gives the strongest, most reliable result.",
+  byline: shoulderByline,
+  overview: [
+    "The pectoralis major is the large chest muscle that powers pushing and bringing the arm across the body. It narrows into a flat tendon that attaches to the upper arm bone just below the shoulder. A pectoralis major tear is a rupture of that tendon, almost always in men between roughly twenty and forty, and most often during the lowering phase of a heavy bench press.",
+    "The injury matters because, unlike many muscle strains, a complete tendon rupture does not heal back to the bone on its own. In active people, leaving it unrepaired leaves visible deformity and a lasting loss of pushing power, which is why prompt evaluation is important.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["A pectoralis major rupture typically causes:"],
+      bullets: [
+        "A sudden tearing sensation or pop at the front of the shoulder or armpit, often mid bench press",
+        "Sharp pain, swelling, and extensive bruising over the chest and upper arm",
+        "A change in the shape of the chest, with the fold of the armpit losing its normal definition",
+        "Weakness pushing the arm forward or bringing it across the body",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "The history of a pop during heavy pressing, together with bruising and a change in the contour of the chest and armpit fold, usually makes the diagnosis clear on exam. An MRI confirms the tear, shows whether it is partial or complete, and identifies exactly where the tendon has pulled away, which guides whether and how to repair it. Timing matters, so evaluation should not wait.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee distinguishes a partial tear or a muscle-level strain, which often does well with rehabilitation, from a complete tendon avulsion off the bone, which in an active patient is best repaired. The goal of repair is to restore the pushing strength and the normal contour of the chest.",
+      "When surgery is indicated, the tendon is reattached to the upper arm bone using anchors or a cortical-button construct, the same precision, anchor-based approach Dr. Lee brings to the rest of the upper extremity. Repairs done early, while the tendon is still mobile, are more straightforward and stronger than those attempted months later.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "Partial tears, muscle-level strains, and ruptures in lower-demand or older patients can be managed without surgery, with a period of rest and sling support followed by a progressive strengthening program. The trade-off is some residual loss of peak pushing strength and a change in the contour of the chest, which many less-active patients accept.",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "For a complete tendon avulsion in an active patient, surgery reattaches the pectoralis tendon to the upper arm bone with suture anchors or a cortical button. It restores pushing strength and the normal shape of the chest. Early repair, within the first weeks, is technically easier and yields the most reliable strength, although chronic tears can still be reconstructed when needed.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery after repair is deliberate, to protect the tendon as it heals to bone:",
+  recovery: [
+    { when: "Weeks 0 to 6", what: "Sling to protect the repair, with gentle guided motion and no active pushing or pressing." },
+    { when: "Weeks 6 to 12", what: "Progressive range of motion and light strengthening as the repair consolidates." },
+    { when: "Months 3 to 4", what: "Resistance training resumes gradually, building toward heavier loads." },
+    { when: "Months 4 to 6", what: "Return to full pressing and contact sport once strength and motion are reliable." },
+  ],
+  misconceptions: {
+    intro: "Two points worth knowing:",
+    items: [
+      { heading: "A complete tear does not heal on its own.", body: "Once the tendon pulls off the bone, it cannot reattach without surgery. Waiting does not let it 'knit back together,' and a delayed repair is harder than an early one, so an active patient with a complete tear should be evaluated quickly." },
+      { heading: "Timing changes the operation.", body: "A tear repaired within the first few weeks is usually straightforward, because the tendon is still mobile. Months later, the muscle has retracted and scarred, sometimes requiring a graft. Early evaluation keeps the simpler, stronger repair on the table." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Muscle involved", value: "Pectoralis major (chest)" },
+    { label: "Classic mechanism", value: "Heavy bench press, lowering phase" },
+    { label: "Who", value: "Most often active men, roughly 20 to 40" },
+    { label: "Complete tears", value: "Best repaired surgically in active patients" },
+    { label: "Timing", value: "Early repair is easier and stronger" },
+    { label: "Recovery to sport", value: "Roughly four to six months after repair" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Anchor-based, precision repair philosophy applied to the chest wall",
+    "Clear about which tears need surgery and which do not",
+    "Emphasis on early repair for the strongest, most reliable result",
+  ],
+  related: [
+    { name: "Rotator Cuff Tear", slug: "rotator-cuff" },
+    { name: "Proximal Biceps Tendon Tear", slug: "proximal-biceps-tear" },
+    { name: "Shoulder Dislocation & Instability", slug: "shoulder-dislocation" },
+    { name: "Biceps Tendon Rupture", slug: "biceps-rupture" },
+  ],
+  ctaCard: {
+    eyebrow: "Pop during a heavy bench press?",
+    headline: "Early evaluation protects the repair.",
+  },
+  faqHeadline: "Pectoralis tears, answered.",
+  faqs: [
+    {
+      question: "Do I need surgery for a pectoralis major tear?",
+      answer:
+        "It depends on the tear and your activity level. A complete tendon avulsion off the bone in an active patient is best repaired surgically to restore pushing strength and the normal shape of the chest. Partial tears, muscle-level strains, and ruptures in lower-demand patients can often be managed without surgery. An MRI helps define the tear, and the decision is individualized.",
+    },
+    {
+      question: "How soon do I need to be seen?",
+      answer:
+        "Soon. A complete pectoralis tendon tear does not heal back to the bone on its own, and a repair is technically easier and stronger when done within the first few weeks, before the muscle retracts and scars. If you felt a pop during heavy pressing and have bruising or a change in the shape of your chest, it is worth being evaluated promptly rather than waiting.",
+    },
+    {
+      question: "Will I get my bench-press strength back?",
+      answer:
+        "After an early, well-healed repair, most active patients regain pushing strength close to their other side and return to pressing and sport, typically around four to six months out. Recovery is deliberate, because the tendon needs time to heal to the bone, so strengthening is staged carefully to protect the repair.",
+    },
+  ],
+  bottomCtaTitle: "Tore your chest muscle lifting?",
+  bottomCtaItalic: "With this injury, timing matters.",
+  bottomCtaBody:
+    "A complete pectoralis major tear does not heal back to the bone on its own, and in active patients an early repair restores both strength and the shape of the chest. Partial tears can often be rehabilitated. The first step, especially if you felt a pop during a heavy press, is a prompt evaluation while the simpler, stronger repair is still possible.",
+  metaTitle: "Pectoralis Major Tear, Steven J. Lee, MD",
+  metaDescription:
+    "Pectoralis major tendon tear (the bench-press injury) evaluated and treated by Dr. Steven J. Lee, MD. Surgical repair for complete tears in active patients, the importance of early treatment, and recovery explained.",
+  schemaDescription:
+    "A pectoralis major tear is a rupture of the chest muscle's tendon at its attachment to the upper arm, classically during a heavy bench press in active men. Complete tendon avulsions do not heal to bone on their own and are best repaired surgically in active patients, with early repair giving the strongest result; partial tears are often managed non-surgically.",
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -8172,6 +8536,7 @@ export const conditionPages: ConditionPageContent[] = [
   medialEpicondylitis,
   radialTunnel,
   radialHeadFracture,
+  terribleTriad,
   // Shoulder additions (Dr. Lee feedback, June 2026):
   acSeparation,
   shoulderDislocation,
@@ -8180,6 +8545,8 @@ export const conditionPages: ConditionPageContent[] = [
   glenohumeralArthritis,
   shoulderImpingement,
   bicepsTendonitis,
+  proximalBicepsTear,
+  pectoralisTear,
   // Knee & Sports additions (Dr. Lee feedback, June 2026):
   patellofemoralSyndrome,
   kneeCollateralLigament,
@@ -8259,7 +8626,14 @@ export const conditionProcedures: Record<string, string[]> = {
     "Arthroscopic Subacromial Decompression",
   ],
   "biceps-tendonitis": ["Rehabilitation and Injection", "Biceps Tenodesis"],
+  "proximal-biceps-tear": ["Strengthening Rehabilitation", "Biceps Tenodesis"],
+  "pectoralis-tear": ["Rehabilitation for Partial Tears", "Pectoralis Major Tendon Repair"],
   "elbow-dislocation": ["Closed Reduction", "Ligament Repair with Internal Brace"],
+  "terrible-triad": [
+    "Radial Head Repair or Replacement",
+    "Coronoid Fixation",
+    "Lateral Ligament Repair with Internal Brace",
+  ],
   "cubital-tunnel": ["Ulnar Nerve Decompression", "Ulnar Nerve Transposition"],
   "lucl-injury": ["LUCL Repair with Internal Brace", "Tendon-Graft Reconstruction"],
   "triceps-tear": ["Triceps Tendon Repair"],
