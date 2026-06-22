@@ -782,15 +782,16 @@ export const conditions: Condition[] = [
       "Osteoarthritis of the knee, with gradual cartilage wear, pain, stiffness, and swelling. Conservative care comes first and for as long as it controls symptoms; partial or total knee replacement is reserved for advanced arthritis that limits daily life.",
   },
 
-  // Advanced Treatments, phase 2
+  // Advanced Treatments
   {
-    name: "PRP / BMAC Injections",
+    name: "Orthobiologics (PRP & BMAC)",
     slug: "prp-bmac",
     region: "Advanced Treatments",
-    status: "phase2",
+    status: "priority",
     blurb:
-      "Dr. Lee was among the first surgeons in NYC to perform PRP, including for upper extremity injuries. 250+ PRP procedures performed annually.",
+      "Evidence-based biologic treatments that use the patient's own blood (PRP) or bone marrow (BMAC) to support healing, with an honest account of what they can and cannot do, and how they differ from marketed stem cell injections.",
   },
+  // Advanced Treatments, phase 2
   {
     name: "Peptide Therapy",
     slug: "peptide-therapy",

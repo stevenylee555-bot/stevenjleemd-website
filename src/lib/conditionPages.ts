@@ -12249,6 +12249,135 @@ const seversDisease: ConditionPageContent = {
     "Sever's disease (calcaneal apophysitis) is irritation of the growth plate at the back of the heel in active, growing children and adolescents. It is benign and self-limiting and is managed without surgery using activity modification, heel cups, calf stretching, and footwear changes, resolving as the growth plate matures.",
 };
 
+const orthobiologics: ConditionPageContent = {
+  slug: "prp-bmac",
+  name: "Orthobiologics (PRP & BMAC)",
+  region: "Advanced Treatments",
+  headerTitle: "Orthobiologics:",
+  headerItalic: "using your own biology to support healing.",
+  headerLede:
+    "Orthobiologics use a patient's own blood or bone marrow to support the healing of tendons, ligaments, cartilage, and joints. Dr. Lee uses evidence-based, point-of-care preparations, mainly PRP and bone marrow aspirate concentrate, as one part of a larger treatment plan, and is candid about what they can and cannot do.",
+  byline: { name: "Steven J. Lee, MD", title: "Double Fellowship-Trained · Hand & Sports Medicine", reviewed: "June 2026" },
+  overview: [
+    "Orthobiologics are treatments that use the body's own biological materials, such as platelets, growth factors, and cells, to support the healing of musculoskeletal injuries. The two that Dr. Lee uses most are PRP (platelet-rich plasma) and BMAC (bone marrow aspirate concentrate). Both are autologous, meaning they come from the patient, and both are prepared and injected the same day in the office (point-of-care).",
+    "Used in the right situation, orthobiologics can help tissues that are slow to heal. They are not a cure-all, and the evidence is stronger for some uses than others. Dr. Lee's approach is to use them selectively, where the evidence supports them, and to be honest when surgery or another treatment is the better option.",
+  ],
+  bodySections: [
+    {
+      heading: "What orthobiologics are",
+      body: [
+        "PRP is made by drawing a small amount of the patient's blood and concentrating the platelets, which carry growth factors that signal local cells to heal and build tissue. BMAC is made by drawing bone marrow, usually from the pelvis, and concentrating the cells and growth factors it contains. Both use the patient's own tissue, which is why allergic reactions and disease transmission are essentially eliminated.",
+        "These are different from a cortisone injection, which suppresses inflammation but does not heal tissue. Orthobiologics aim to support the body's own repair, and they work on a slower timeline of weeks to months.",
+      ],
+    },
+    {
+      heading: "The honest answer on \"stem cell\" therapy",
+      body: [
+        "Many clinics advertise \"stem cell\" injections for joints and tendons. It is important to be clear about what that means. Bone marrow concentrate contains a small number of the body's own cells along with growth factors, and it is sometimes loosely called a stem cell treatment, but it is not the same as the marketed amniotic or laboratory-expanded \"stem cell\" products some clinics sell.",
+        "The FDA has not approved expanded or amniotic stem cell products for orthopedic use, and the marketing around them often runs well ahead of the evidence. Dr. Lee does not offer unproven stem cell therapies. He uses autologous, point-of-care preparations within accepted practice and tells patients honestly what the science does and does not yet show.",
+      ],
+    },
+    {
+      heading: "What the evidence supports",
+      body: [
+        "The evidence is strongest for chronic tendon problems, such as tennis elbow, golfer's elbow, and rotator cuff, patellar, and Achilles tendinopathy, and for mild-to-moderate osteoarthritis, particularly of the knee. Results are more variable for partial ligament tears and some wrist and thumb conditions.",
+        "Orthobiologics are generally not a substitute for surgery in a complete tendon rupture or in end-stage, bone-on-bone arthritis. Dr. Lee uses them when simpler measures have not worked and the problem is one the evidence supports, not as a first step for everything.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee was among the first surgeons in NYC to use PRP for the upper extremity and performs more than 250 PRP procedures a year, across the upper and lower extremity. That volume and experience inform how and when he recommends a biologic, and how he prepares and places the injection.",
+      "His philosophy is conservative and honest: orthobiologics are a useful tool for specific problems, not a cure for everything. He will recommend one when the evidence supports it and the timing is right, and he will say so plainly when surgery, therapy, or simply more time is the better path.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Platelet-rich plasma (PRP)",
+      body: [
+        "A small blood draw is concentrated in a centrifuge, and the platelet-rich layer is injected into the affected tendon, ligament, or joint, often the same visit. PRP has its own dedicated page with the full procedure, recovery, and candidacy details.",
+      ],
+    },
+    {
+      heading: "Bone marrow aspirate concentrate (BMAC)",
+      body: [
+        "Bone marrow is drawn, usually from the pelvis, with the area numbed, then concentrated and injected into the target tissue the same day. Because it is the patient's own marrow, the safety profile is favorable. It is used selectively, for example in some cases of cartilage or joint problems, when the evidence and the clinical picture support it.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery after an orthobiologic injection follows a general pattern:",
+  recovery: [
+    { when: "First few days", what: "Soreness at the injection site is common and is part of the healing response. Anti-inflammatory medications such as ibuprofen are usually avoided for about a week before and after, so the healing cascade is not blunted." },
+    { when: "Weeks", what: "Activity is advanced gradually, often alongside physical therapy. The biologic effect develops over time rather than immediately." },
+    { when: "Weeks to months", what: "Benefit, when it occurs, builds over several weeks to a few months. Some conditions are treated with a short series rather than a single injection." },
+  ],
+  misconceptions: {
+    intro: "What patients should understand going in:",
+    items: [
+      { heading: "It is not a guaranteed cure.", body: "Orthobiologics can help tissues that are slow to heal, but they do not work for everyone or every condition, and they are not a substitute for surgery in complete tears or end-stage arthritis. Honest expectations are part of the conversation." },
+      { heading: "It is not the same as marketed stem cell injections.", body: "Bone marrow concentrate uses the patient's own cells within accepted practice. It is different from the unproven amniotic or expanded stem cell products some clinics sell, which are not FDA-approved for orthopedic use. Dr. Lee does not offer those." },
+      { heading: "It is usually not covered by insurance.", body: "PRP and BMAC are generally an out-of-pocket expense, because insurers classify them as not yet standard for many uses. The cost is discussed clearly before any treatment." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "Treatments using the patient's own blood or marrow" },
+    { label: "Main types", value: "PRP and bone marrow aspirate concentrate (BMAC)" },
+    { label: "Source", value: "Autologous (from the patient), point-of-care" },
+    { label: "Best evidence", value: "Chronic tendinopathy and mild-to-moderate arthritis" },
+    { label: "Insurance", value: "Generally not covered (out of pocket)" },
+  ],
+  whyDrLee: [
+    "Among the first surgeons in NYC to use PRP for the upper extremity",
+    "Performs more than 250 PRP procedures a year",
+    "Evidence-based and honest about what biologics can and cannot do",
+    "Does not offer unproven stem cell products",
+  ],
+  related: [
+    { name: "PRP (Platelet-Rich Plasma) Injections", slug: "prp-injections" },
+    { name: "Internal Brace", slug: "internal-brace" },
+    { name: "Lateral Epicondylitis (Tennis Elbow)", slug: "lateral-epicondylitis" },
+    { name: "Knee Arthritis", slug: "knee-arthritis" },
+  ],
+  ctaCard: { eyebrow: "Considering a biologic injection?", headline: "Get an honest read on whether it fits your problem." },
+  faqHeadline: "Orthobiologics, answered honestly.",
+  faqs: [
+    {
+      question: "Is this stem cell therapy?",
+      answer:
+        "Not in the way the term is usually marketed. Bone marrow aspirate concentrate contains a small number of the body's own cells along with growth factors, and it is sometimes loosely called a stem cell treatment, but it is not the same as the amniotic or laboratory-expanded \"stem cell\" products some clinics sell. The FDA has not approved those for orthopedic use, and Dr. Lee does not offer unproven stem cell therapies. He uses the patient's own PRP and bone marrow concentrate within accepted practice.",
+    },
+    {
+      question: "What is the difference between PRP and BMAC?",
+      answer:
+        "PRP (platelet-rich plasma) is concentrated from a small blood draw and is rich in platelets and growth factors. BMAC (bone marrow aspirate concentrate) is drawn from the bone marrow, usually in the pelvis, and contains a mix of cells and growth factors. Both come from the patient and are prepared and injected the same day. PRP is used most often; BMAC is used more selectively for certain cartilage and joint problems.",
+    },
+    {
+      question: "Does it actually work?",
+      answer:
+        "The evidence is strongest for chronic tendon problems such as tennis elbow, golfer's elbow, and rotator cuff, patellar, and Achilles tendinopathy, and for mild-to-moderate osteoarthritis, especially of the knee. Results are more variable for partial ligament tears and some other conditions, and orthobiologics are generally not a substitute for surgery in complete tears or end-stage arthritis. Dr. Lee recommends them when the evidence and your specific problem line up, and is candid when they are unlikely to help.",
+    },
+    {
+      question: "Is it covered by insurance?",
+      answer:
+        "Usually not. PRP and BMAC are generally an out-of-pocket expense because insurers classify them as not yet standard for many uses. The cost is discussed clearly before any treatment so there are no surprises.",
+    },
+    {
+      question: "Is it safe?",
+      answer:
+        "Because PRP and BMAC use the patient's own tissue, the risk of allergic reaction or transmissible disease is essentially eliminated. The most common effect is soreness at the injection or harvest site for a few days. As with any injection, there is a small risk of infection or bleeding, which is minimized with sterile, in-office technique.",
+    },
+  ],
+  bottomCtaTitle: "Wondering if a biologic is right for you?",
+  bottomCtaItalic: "Start with an honest evaluation.",
+  bottomCtaBody:
+    "Orthobiologics can help the right problem at the right time, and are not the answer for every injury. An evaluation with Dr. Lee will tell you plainly whether PRP, BMAC, or another approach makes the most sense for your case.",
+  metaTitle: "Orthobiologics (PRP & BMAC), Steven J. Lee, MD",
+  metaDescription:
+    "Orthobiologics explained honestly: PRP and bone marrow aspirate concentrate (BMAC), what the evidence supports, and how they differ from marketed stem cell injections. Evidence-based biologic treatment by Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
+  schemaDescription:
+    "Orthobiologics are treatments that use a patient's own blood (PRP) or bone marrow (BMAC) to support healing of tendons, ligaments, cartilage, and joints. The evidence is strongest for chronic tendinopathy and mild-to-moderate osteoarthritis. They are autologous, point-of-care, generally not insurance-covered, and distinct from unproven amniotic or expanded stem cell products that are not FDA-approved for orthopedic use.",
+};
+
 export const conditionPages: ConditionPageContent[] = [
   carpalTunnel,
   distalRadiusFracture,
@@ -12352,6 +12481,8 @@ export const conditionPages: ConditionPageContent[] = [
   peronealTendonitis,
   lisfrancInjury,
   seversDisease,
+  // Advanced Treatments build-out (June 2026):
+  orthobiologics,
 ];
 
 export function conditionPageBySlug(slug: string) {
@@ -12365,6 +12496,7 @@ export function conditionPageBySlug(slug: string) {
 // factual and free of superlatives. A slug with no entry falls back to the
 // generic treatment node in buildConditionSchema.
 export const conditionProcedures: Record<string, string[]> = {
+  "prp-bmac": ["Platelet-Rich Plasma (PRP) Injection", "Bone Marrow Aspirate Concentrate (BMAC) Injection"],
   "intersection-syndrome": ["Activity Modification and Splinting", "Corticosteroid Injection", "Surgical Compartment Release"],
   "nerve-laceration": ["Microsurgical Nerve Repair", "Nerve Graft Reconstruction", "Nerve Conduit Repair"],
   "tendon-laceration": ["Flexor Tendon Repair", "Extensor Tendon Repair", "Guided Hand Therapy Protocol"],
