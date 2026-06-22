@@ -26,6 +26,8 @@ const MISSING_SLUGS = [
   // Foot & Ankle
   "ankle-fracture", "posterior-tibial-tendonitis", "peroneal-tendonitis",
   "lisfranc-injury", "severs-disease",
+  // Advanced Treatments
+  "prp-bmac",
 ];
 
 const client = createClient({
