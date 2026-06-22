@@ -40,6 +40,7 @@ const navLinks = [
       { label: "Shoulder", href: "/conditions#shoulder" },
       { label: "Knee & Sports", href: "/conditions#knee-sports" },
       { label: "Foot & Ankle", href: "/conditions#foot-ankle" },
+      { label: "Advanced Treatments", href: "/conditions#advanced-treatments" },
     ],
   },
   { label: "Therapy Protocols", href: "/therapy-protocols" },

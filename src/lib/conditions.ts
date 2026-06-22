@@ -197,6 +197,96 @@ export const conditions: Condition[] = [
     blurb:
       "Two 4 mm portals, a small camera, and direct visualization of every ligament and cartilage surface in the wrist. The diagnostic and treatment workhorse for TFCC tears, ligament injuries, and persistent wrist pain.",
   },
+  // Hand & Wrist, old-site condition build-out (June 2026)
+  {
+    name: "Guyon's Canal Syndrome",
+    slug: "guyons-canal",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "Ulnar nerve compression at the wrist, in Guyon's canal, causing numbness and tingling in the ring and small fingers and sometimes grip weakness. Treated by relieving the source of pressure, with decompression reserved for persistent or weakening cases.",
+  },
+  {
+    name: "Swan Neck Deformity",
+    slug: "swan-neck-deformity",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "A finger deformity with the middle joint hyperextended and the fingertip flexed, from an imbalance of the finger's tendons and ligaments. Early flexible deformities respond to therapy and small splints; fixed or disabling ones are treated surgically.",
+  },
+  {
+    name: "Rheumatoid Arthritis of the Hand",
+    slug: "rheumatoid-arthritis-hand",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "Systemic inflammatory arthritis affecting the joints and tendons of the hand and wrist. Medical management with a rheumatologist is the foundation; the hand surgeon addresses tendon ruptures, nerve compression, and painful deformities.",
+  },
+  {
+    name: "Boutonniere Deformity",
+    slug: "boutonniere-deformity",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "A bent finger from disruption of the central slip of the extensor tendon, after injury or in rheumatoid arthritis. Recognized early, it is often treated with splinting and therapy; chronic deformities may need reconstruction.",
+  },
+  {
+    name: "Mallet Finger",
+    slug: "mallet-finger",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "A drooping fingertip from disruption of the terminal extensor tendon, often from a ball striking the finger. Most are treated with continuous splinting; surgery is reserved for large bony fragments or open injuries.",
+  },
+  {
+    name: "Kienbock's Disease",
+    slug: "kienbocks-disease",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "Loss of blood supply to the lunate, a carpal bone of the wrist, causing pain, stiffness, and reduced grip. Treatment is staged by imaging, from immobilization early to joint-leveling or salvage procedures in advanced collapse.",
+  },
+  // Hand & Wrist, old-site build-out part 2 (June 2026)
+  {
+    name: "Intersection Syndrome",
+    slug: "intersection-syndrome",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "An overuse tendinopathy where two forearm tendon groups cross a few centimeters above the wrist, causing pain, swelling, and sometimes a squeak. Common in rowers and weightlifters, and it usually settles with rest, splinting, and activity changes.",
+  },
+  {
+    name: "Nerve Laceration",
+    slug: "nerve-laceration",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "A cut nerve in the hand, wrist, or forearm, often from glass or a knife, causing numbness or weakness in that nerve's distribution. Treatment is early microsurgical repair, with grafts or conduits to bridge gaps and hand therapy to support recovery.",
+  },
+  {
+    name: "Tendon Laceration",
+    slug: "tendon-laceration",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "A cut flexor or extensor tendon, usually from a sharp injury, causing loss of finger bending or straightening. Treated with precise specialist repair and a structured hand-therapy motion program to prevent stiffness and rupture.",
+  },
+  {
+    name: "Hand and Finger Arthritis",
+    slug: "hand-arthritis",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "Osteoarthritis of the finger joints and hand, with pain, stiffness, and bony nodes. Conservative care comes first, with splints, therapy, and injections; surgery is reserved for joints that stay painful.",
+  },
+  {
+    name: "Chronic Exertional Forearm Compartment Syndrome",
+    slug: "forearm-compartment-syndrome",
+    region: "Hand & Wrist",
+    status: "priority",
+    blurb:
+      "Exercise-induced forearm pain, tightness, and swelling that builds with activity and eases with rest, from elevated pressure in the forearm muscle compartments. Seen in climbers and grip-intensive athletes, with fasciotomy an option for those who must keep competing.",
+  },
 
   // Elbow, priority
   {
@@ -390,14 +480,14 @@ export const conditions: Condition[] = [
     name: "Shoulder Arthroscopy",
     slug: "shoulder-arthroscopy",
     region: "Shoulder",
-    status: "phase2",
+    status: "priority",
     blurb: "Minimally invasive treatment for instability, impingement, and labral tears.",
   },
   {
     name: "Clavicle Fracture",
     slug: "clavicle-fracture",
     region: "Shoulder",
-    status: "phase2",
+    status: "priority",
     blurb:
       "Plate fixation with current-generation hardware.",
   },
@@ -512,14 +602,14 @@ export const conditions: Condition[] = [
     name: "Meniscus Tear",
     slug: "meniscus",
     region: "Knee & Sports",
-    status: "phase2",
+    status: "priority",
     blurb: "Meniscal repair or partial meniscectomy via arthroscopy.",
   },
   {
     name: "Knee Arthroscopy",
     slug: "knee-arthroscopy",
     region: "Knee & Sports",
-    status: "phase2",
+    status: "priority",
     blurb: "Minimally invasive treatment for cartilage, meniscus, and ligament injuries.",
   },
 
@@ -580,6 +670,116 @@ export const conditions: Condition[] = [
     status: "priority",
     blurb:
       "Two different fractures at the base of the fifth metatarsal. The avulsion heals on its own; a true Jones fracture often needs a screw because of its poor blood supply.",
+  },
+
+  // Foot & Ankle, old-site build-out (June 2026)
+  {
+    name: "Ankle Fracture",
+    slug: "ankle-fracture",
+    region: "Foot & Ankle",
+    status: "priority",
+    blurb:
+      "A break of one or more of the ankle bones, usually from a twist or fall. Stable, well-aligned fractures heal in a cast or boot; displaced or unstable fractures are fixed with plates and screws to restore the joint.",
+  },
+  {
+    name: "Posterior Tibial Tendon Dysfunction",
+    slug: "posterior-tibial-tendonitis",
+    region: "Foot & Ankle",
+    status: "priority",
+    blurb:
+      "Irritation then degeneration of the posterior tibial tendon, the main dynamic support of the arch, causing inner-ankle pain and a progressive flattening foot. Caught early it is treated with orthotics, bracing, and therapy.",
+  },
+  {
+    name: "Peroneal Tendonitis",
+    slug: "peroneal-tendonitis",
+    region: "Foot & Ankle",
+    status: "priority",
+    blurb:
+      "Irritation of the peroneal tendons behind the outer ankle bone, often after sprains or from overuse. Most cases settle with relative rest, bracing or taping, and therapy; tendons that subluxate or tear may need surgery.",
+  },
+  {
+    name: "Lisfranc Injury",
+    slug: "lisfranc-injury",
+    region: "Foot & Ankle",
+    status: "priority",
+    blurb:
+      "An easily missed injury to the ligaments and joints of the midfoot, from a twist or crush. Stable sprains are immobilized; unstable injuries need surgical fixation or fusion to prevent midfoot arthritis.",
+  },
+  {
+    name: "Sever's Disease",
+    slug: "severs-disease",
+    region: "Foot & Ankle",
+    status: "priority",
+    blurb:
+      "A common, benign, self-limiting irritation of the heel growth plate in active growing children. Managed without surgery with activity modification, heel cups, calf stretching, and footwear changes, resolving as the growth plate matures.",
+  },
+
+  // Elbow & Shoulder, old-site build-out (June 2026)
+  {
+    name: "Distal Humerus Fracture",
+    slug: "distal-humerus-fracture",
+    region: "Elbow",
+    status: "priority",
+    blurb:
+      "A break of the lower end of the upper-arm bone at the elbow, often into the joint surface. Most displaced adult fractures are fixed with plates and screws to restore the joint and allow early motion, with elbow replacement for selected comminuted fractures in older patients.",
+  },
+  {
+    name: "Elbow Arthritis",
+    slug: "elbow-arthritis",
+    region: "Elbow",
+    status: "priority",
+    blurb:
+      "Osteoarthritis, post-traumatic, or inflammatory wear of the elbow, with pain, stiffness, and sometimes locking from loose bodies. Managed conservatively first; refractory cases are treated with arthroscopic debridement and, when advanced, joint replacement.",
+  },
+  {
+    name: "Olecranon Bursitis",
+    slug: "olecranon-bursitis",
+    region: "Elbow",
+    status: "priority",
+    blurb:
+      "Swelling of the bursa over the tip of the elbow ('Popeye elbow'), from pressure, trauma, gout, or infection. The key step is telling an infected bursa from a non-infected one; most non-infected cases settle with simple measures, and surgery is reserved for refractory cases.",
+  },
+  {
+    name: "Distal Biceps Tendonitis",
+    slug: "distal-biceps-tendonitis",
+    region: "Elbow",
+    status: "priority",
+    blurb:
+      "Irritation or partial wear of the biceps tendon where it attaches at the elbow, distinct from a complete distal biceps rupture. Managed conservatively with activity modification, therapy, and PRP for a tendon that is not healing, while watching for progression to a tear.",
+  },
+  {
+    name: "Adhesive Capsulitis (Frozen Shoulder)",
+    slug: "frozen-shoulder",
+    region: "Shoulder",
+    status: "priority",
+    blurb:
+      "A painful, progressive loss of shoulder motion as the capsule thickens and tightens, more common in diabetics. Mostly non-surgical, with a stretching program, anti-inflammatory measures, and a corticosteroid injection; the large majority recover their motion.",
+  },
+
+  // Knee & Sports, old-site build-out (June 2026)
+  {
+    name: "Patellar Instability",
+    slug: "patellar-instability",
+    region: "Knee & Sports",
+    status: "priority",
+    blurb:
+      "The kneecap slipping or dislocating, usually toward the outside, often in young athletes. First-time dislocations are usually treated without surgery; recurrent instability is treated with MPFL reconstruction that addresses the underlying anatomy.",
+  },
+  {
+    name: "Baker's Cyst (Popliteal Cyst)",
+    slug: "bakers-cyst",
+    region: "Knee & Sports",
+    status: "priority",
+    blurb:
+      "A fluid-filled swelling behind the knee, usually a secondary sign of a meniscus tear or arthritis inside the joint. The key is to treat the underlying cause, not just the cyst.",
+  },
+  {
+    name: "Knee Arthritis",
+    slug: "knee-arthritis",
+    region: "Knee & Sports",
+    status: "priority",
+    blurb:
+      "Osteoarthritis of the knee, with gradual cartilage wear, pain, stiffness, and swelling. Conservative care comes first and for as long as it controls symptoms; partial or total knee replacement is reserved for advanced arthritis that limits daily life.",
   },
 
   // Advanced Treatments, phase 2

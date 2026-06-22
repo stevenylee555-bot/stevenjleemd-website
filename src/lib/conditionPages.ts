@@ -8497,6 +8497,3758 @@ const wristArthroscopy: ConditionPageContent = {
     "Wrist arthroscopy is a minimally invasive surgical procedure that uses two 4 mm portals to introduce a small camera and instruments into the wrist joint. It is used to diagnose and treat TFCC tears, scapholunate and lunotriquetral ligament tears, ulnar impaction syndrome, wrist synovitis, loose bodies, and selected cartilage lesions, as well as to evaluate the joint during distal radius fracture fixation.",
 };
 
+// ─────────────────────────────────────────────────────────────────────────────
+// Phase-2 build-out (June 2026): Knee Arthroscopy
+const kneeArthroscopy: ConditionPageContent = {
+  slug: "knee-arthroscopy",
+  name: "Knee Arthroscopy",
+  region: "Knee & Sports",
+  headerTitle: "Knee Arthroscopy:",
+  headerItalic: "the least invasive way to fix the knee.",
+  headerLede:
+    "Knee arthroscopy is a minimally invasive, outpatient operation that lets the surgeon see inside the joint through small portals and treat what is found in the same sitting. It is the workhorse of modern knee surgery, used for meniscus tears, cartilage injuries, loose bodies, and to assist ligament reconstruction.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Double Fellowship-Trained · Hand & Sports Medicine",
+    reviewed: "June 2026",
+  },
+  overview: [
+    "Knee arthroscopy uses a small camera, the arthroscope, inserted through a portal incision a few millimeters long, with instruments introduced through one or two additional portals. The surgeon sees the inside of the joint on a monitor in high definition and works through the same small openings. There is no large incision and no need to open the joint.",
+    "Because the access is so small, most knee arthroscopy is done as a same-day outpatient procedure under regional or light general anesthesia. It is used both to diagnose problems that imaging cannot fully explain and to treat them: trimming or repairing a meniscus tear, smoothing a cartilage lesion, removing a loose fragment, or preparing the joint during ligament reconstruction.",
+  ],
+  bodySections: [
+    {
+      heading: "What knee arthroscopy treats",
+      body: ["A single arthroscopic setup can address several common problems:"],
+      bullets: [
+        "Meniscus tears, by repair when the tissue and tear pattern allow, or by partial trimming when they do not",
+        "Cartilage and chondral lesions, smoothed, stabilized, or treated with cartilage-restoration techniques",
+        "Loose bodies, fragments of cartilage or bone floating in the joint and causing catching or locking",
+        "Plica and inflamed synovium that produce mechanical irritation",
+        "As the working platform for ACL and other ligament reconstruction",
+      ],
+      bulletsAfter:
+        "It is also a diagnostic tool: when exam and MRI leave the cause of a mechanical knee symptom unclear, arthroscopy can both confirm the diagnosis and complete the treatment in one operation.",
+    },
+    {
+      heading: "How the decision is made",
+      body: [
+        "Arthroscopy is not the first answer for every knee. Many problems, including most degenerative meniscus tears and early arthritis, improve with physical therapy, activity modification, and selective injections. Arthroscopy is reserved for mechanical problems that a camera and instruments can actually fix: a displaced or unstable meniscus tear, a loose body, a focal cartilage lesion, or locking and catching that does not settle with conservative care.",
+        "MRI guides the plan before surgery, but the final decision about repair versus trimming is often confirmed under direct vision once the tear is seen and probed.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee's operating principle is to use the least invasive procedure that solves the problem, and to preserve tissue wherever possible. In the knee that means repairing a meniscus rather than removing it whenever the tear is in a region that can heal and the tissue quality allows, because preserving the meniscus protects the cartilage from later arthritis.",
+      "Knee arthroscopy is performed as an outpatient procedure with regional or light general anesthesia. When the work is a simple trimming or loose-body removal, recovery is quick, often a matter of days to a few weeks. When a repair is performed, the recovery is deliberately more protected to let the tissue heal. Dr. Lee sets that expectation clearly before surgery so the recovery plan matches what was actually done inside the joint.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "What happens during the procedure",
+      body: [
+        "After anesthesia, the surgeon makes two or three small portal incisions around the front of the knee. Sterile fluid is used to gently expand the joint for visibility. The arthroscope is introduced through one portal and instruments through the others. The surgeon inspects the entire joint, the meniscus, cartilage surfaces, ligaments, and lining, then performs the indicated treatment. The portals are closed with a stitch or two or adhesive strips, and a dressing is applied.",
+      ],
+    },
+    {
+      heading: "Diagnostic versus therapeutic arthroscopy",
+      body: [
+        "A purely diagnostic arthroscopy, performed when imaging is inconclusive, is rare today because MRI is so capable. More often arthroscopy is both diagnostic and therapeutic in the same sitting: the surgeon confirms what is wrong and fixes it immediately, which is one of the procedure's main advantages.",
+      ],
+    },
+  ],
+  recoveryIntro:
+    "Recovery depends heavily on what was done. Simple debridement or partial meniscectomy recovers quickly; a meniscus repair is more protected:",
+  recovery: [
+    {
+      when: "Days 0–7",
+      what: "Crutches as needed, ice, elevation, and dressing care. For simple debridement or partial meniscectomy, many patients are walking with minimal aids within days. For a repair, weight-bearing is protected per the surgeon's plan.",
+    },
+    {
+      when: "Weeks 1–3",
+      what: "Swelling settles and portals heal. Range-of-motion and quadriceps activation begin. Simple cases often return to desk work and light activity in this window.",
+    },
+    {
+      when: "Weeks 3–6",
+      what: "Progressive strengthening and return to most daily activities for trimming and loose-body cases. Repair cases remain in a more graduated, protected protocol.",
+    },
+    {
+      when: "Months 2–6",
+      what: "Return to sport for simple procedures is often in the early weeks; meniscus repair return to cutting and pivoting sport is later and criteria-based, typically several months out.",
+    },
+  ],
+  misconceptions: {
+    intro: "What patients often misunderstand about knee arthroscopy:",
+    items: [
+      {
+        heading: "Arthroscopy does not fix arthritis.",
+        body: "Scoping a knee for generalized arthritis does not reliably relieve pain and is not recommended as a treatment for osteoarthritis alone. Arthroscopy treats mechanical problems like a displaced meniscus tear or a loose body, not the worn cartilage of arthritis.",
+      },
+      {
+        heading: "Recovery time is not one number.",
+        body: "A partial meniscectomy can recover in a couple of weeks, while a meniscus repair done through the same small portals is deliberately protected for months. The portals are tiny in both cases; what differs is the healing the tissue needs.",
+      },
+      {
+        heading: "Not every meniscus tear should be removed.",
+        body: "When a tear is in the vascular zone and the tissue allows, repairing the meniscus preserves its shock-absorbing function and protects the cartilage long term. Removing meniscus is reserved for tears that cannot heal.",
+      },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Procedure type", value: "Minimally invasive, outpatient" },
+    { label: "Access", value: "Two to three small portal incisions" },
+    { label: "Anesthesia", value: "Regional or light general" },
+    { label: "Common uses", value: "Meniscus, cartilage, loose bodies, ligament work" },
+    { label: "Simple-case recovery", value: "Days to a few weeks" },
+    { label: "Repair recovery", value: "More protected, several months" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, sports medicine and hand & upper extremity",
+    "Tissue-preserving philosophy, repairs meniscus rather than removes it when feasible",
+    "Least invasive effective procedure as the default approach",
+    "Recovery plan matched to exactly what was done inside the joint",
+  ],
+  related: [
+    { name: "Meniscus Tear", slug: "meniscus" },
+    { name: "ACL Tear & Reconstruction", slug: "acl-reconstruction" },
+    { name: "Knee Collateral Ligament Injury", slug: "knee-collateral-ligament" },
+    { name: "PCL Tear", slug: "pcl-tear" },
+  ],
+  ctaCard: {
+    eyebrow: "Mechanical knee symptoms?",
+    headline: "Find out whether arthroscopy is the right next step.",
+  },
+  faqHeadline: "Knee arthroscopy, answered.",
+  faqs: [
+    {
+      question: "What is knee arthroscopy?",
+      answer:
+        "Knee arthroscopy is a minimally invasive, usually outpatient operation in which a surgeon inserts a small camera and instruments through two or three portal incisions, each only a few millimeters long, to see inside the knee and treat what is found. It is used to repair or trim meniscus tears, address cartilage lesions, remove loose bodies, and assist ligament reconstruction. Because the incisions are so small, most patients go home the same day.",
+    },
+    {
+      question: "How long is recovery after knee arthroscopy?",
+      answer:
+        "Recovery depends on what was done. A simple debridement or partial meniscectomy often allows return to light activity within days and to most activity within a few weeks. A meniscus repair, performed through the same small portals, is deliberately more protected and can take several months before return to cutting or pivoting sport, because the repaired tissue needs time to heal.",
+    },
+    {
+      question: "Does knee arthroscopy treat arthritis?",
+      answer:
+        "No. Arthroscopy is not an effective treatment for generalized knee arthritis and is not recommended for osteoarthritis alone. It treats mechanical problems such as a displaced meniscus tear, a focal cartilage lesion, or a loose body causing catching or locking. Arthritis is managed with physical therapy, activity modification, injections, and, when advanced, joint replacement.",
+    },
+    {
+      question: "Is knee arthroscopy done under general anesthesia?",
+      answer:
+        "Knee arthroscopy is typically performed under regional anesthesia or light general anesthesia as a same-day outpatient procedure. The choice depends on the patient, the planned work, and the anesthesiologist's assessment. Most patients are discharged home a few hours after surgery with a small dressing over the portals.",
+    },
+    {
+      question: "Can I get a second opinion on a knee scope I've been told I need?",
+      answer:
+        "Yes, and many patients do. If you have an MRI report and images, sending them ahead of the visit lets the discussion be substantive from the start, including whether arthroscopy is truly indicated or whether a course of physical therapy and activity modification should come first.",
+    },
+  ],
+  bottomCtaTitle: "Knee catching, locking, or not settling?",
+  bottomCtaItalic: "Sometimes the camera is the answer.",
+  bottomCtaBody:
+    "When a mechanical knee problem will not settle with conservative care, knee arthroscopy can both confirm the diagnosis and fix it in a single minimally invasive operation. The first step is an evaluation to decide whether arthroscopy is the right move or whether non-surgical care should run first.",
+  metaTitle: "Knee Arthroscopy | Steven J. Lee, MD",
+  metaDescription:
+    "Knee arthroscopy by Dr. Steven J. Lee, MD, double fellowship-trained in sports medicine. Minimally invasive, outpatient treatment of meniscus tears, cartilage lesions, and loose bodies, with a tissue-preserving approach and recovery timeline.",
+  schemaDescription:
+    "Knee arthroscopy is a minimally invasive, outpatient surgical procedure that uses small portal incisions to introduce a camera and instruments into the knee. It is used to diagnose and treat meniscus tears, cartilage and chondral lesions, loose bodies, and plica, and to assist ligament reconstruction.",
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Phase-2 build-out (June 2026): Meniscus Tear
+const meniscusTear: ConditionPageContent = {
+  slug: "meniscus",
+  name: "Meniscus Tear",
+  region: "Knee & Sports",
+  headerTitle: "Meniscus Tear:",
+  headerItalic: "preserve the cushion when you can.",
+  headerLede:
+    "The meniscus is the knee's shock absorber, and a tear is one of the most common knee injuries. The central question is whether the tear can be repaired and preserved, or whether it needs to be trimmed, and many degenerative tears improve with no surgery at all.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Double Fellowship-Trained · Hand & Sports Medicine",
+    reviewed: "June 2026",
+  },
+  overview: [
+    "Each knee has two menisci, C-shaped wedges of cartilage that sit between the thigh bone and shin bone and act as shock absorbers and stabilizers. They spread load across the joint and protect the smooth articular cartilage from wear. When a meniscus tears, that protection is compromised, and the goal of treatment is to preserve as much of it as possible.",
+    "Meniscus tears come in two broad types. Acute traumatic tears happen in younger, active people during a twisting or pivoting injury. Degenerative tears develop gradually in older knees as the tissue weakens with age. The type of tear, its location, and the patient's age and activity all shape whether treatment is repair, trimming, or non-surgical care.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms of a meniscus tear",
+      body: ["Common symptoms include:"],
+      bullets: [
+        "Pain along the joint line, on the inner or outer side of the knee",
+        "Swelling that develops over hours to a day after the injury",
+        "Catching, locking, or a sense that the knee is stuck",
+        "Pain with twisting, squatting, or pivoting",
+        "A feeling of giving way or instability",
+      ],
+    },
+    {
+      heading: "How meniscus tears are diagnosed",
+      body: [
+        "The exam, joint-line tenderness and provocative tests such as McMurray's, is highly suggestive. MRI confirms the diagnosis, shows the location and pattern of the tear, and helps determine whether it sits in the vascular zone that can heal. Plain X-rays do not show the meniscus but are used to assess for arthritis and overall alignment.",
+        "Whether a tear is ultimately repairable is often confirmed at the time of arthroscopy, when the surgeon can see and probe the tissue directly.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee's bias is to preserve the meniscus whenever it can be preserved. When a tear is in the vascular 'red zone' and the tissue quality allows, repair is preferred over removal, because keeping the meniscus protects the cartilage from the accelerated arthritis that can follow meniscus loss. Partial meniscectomy, trimming the torn portion, is reserved for tears that are irreparable or degenerative.",
+      "Many degenerative tears do not need surgery at all. Physical therapy, activity modification, and selective injections, including PRP in appropriate cases, often settle symptoms. Dr. Lee is among the first surgeons in NYC to use PRP for the upper extremity, and applies the same biologic principles, judiciously, in the knee. When surgery is indicated, it is done arthroscopically, and biologic augmentation is considered in selected repair cases to support healing.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "Many degenerative meniscus tears, and some stable traumatic tears, improve without surgery. A structured program of physical therapy to restore strength and mechanics, activity modification, and selective injections is the first line for these tears. PRP is considered in selected cases. Studies show that for many degenerative tears, supervised physical therapy produces outcomes comparable to arthroscopic trimming.",
+      ],
+    },
+    {
+      heading: "Meniscus repair",
+      body: [
+        "When the tear is in the vascular zone and the tissue allows, the meniscus is repaired arthroscopically with sutures that bring the torn edges together so they can heal. Preserving the meniscus protects the cartilage long term. Repair recovery is more protected and longer than trimming: bracing, graduated weight-bearing, and roughly four to six months before return to sport. Biologic augmentation is considered in selected cases to support healing.",
+      ],
+    },
+    {
+      heading: "Partial meniscectomy",
+      body: [
+        "When a tear is degenerative or otherwise irreparable, the torn fragment is trimmed arthroscopically and the stable rim is smoothed, removing only what cannot heal. Recovery is quick, often days to a few weeks, because no tissue needs to knit back together. The trade-off is that removing meniscus reduces the cushion, which is why repair is preferred whenever feasible.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery depends entirely on whether the tear was repaired or trimmed:",
+  recovery: [
+    {
+      when: "Days 0–14",
+      what: "After partial meniscectomy, crutches as needed and quick return to walking, with light activity within days to a couple of weeks. After repair, protected weight-bearing in a brace per the surgeon's plan.",
+    },
+    {
+      when: "Weeks 2–6",
+      what: "Meniscectomy patients progress to most daily activities and light exercise. Repair patients work on range of motion within protected limits and begin graduated strengthening.",
+    },
+    {
+      when: "Months 2–4",
+      what: "Meniscectomy patients typically back to full activity. Repair patients continue progressive strengthening with bracing weaned per protocol.",
+    },
+    {
+      when: "Months 4–6",
+      what: "Return to cutting and pivoting sport after a repair is typically in the four-to-six-month range and criteria-based, once strength and function are restored.",
+    },
+  ],
+  misconceptions: {
+    intro: "What patients most often misunderstand about meniscus tears:",
+    items: [
+      {
+        heading: "Surgery is not always necessary.",
+        body: "Many degenerative meniscus tears improve with physical therapy, activity modification, and selective injections. For these tears, supervised rehab often produces outcomes comparable to arthroscopic trimming, and surgery is not the automatic answer.",
+      },
+      {
+        heading: "Repair is usually better than removal, when it is possible.",
+        body: "Preserving the meniscus protects the cartilage from later arthritis. When a tear is in the vascular zone and the tissue allows, repairing it is preferred over trimming, even though the recovery is longer.",
+      },
+      {
+        heading: "A tear on MRI is not always the cause of the pain.",
+        body: "Meniscus changes are common on MRI in older knees that are not symptomatic from the meniscus. Treatment is guided by symptoms and exam, not by the imaging finding alone.",
+      },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Structure involved", value: "Meniscus, the knee's shock absorber" },
+    { label: "Tear types", value: "Acute traumatic (younger) and degenerative (older)" },
+    { label: "Preferred surgery", value: "Repair when the tear is in the vascular zone" },
+    { label: "Trimming option", value: "Partial meniscectomy for irreparable tears" },
+    { label: "Non-surgical option", value: "PT, activity modification, selective injection" },
+    { label: "Return to sport after repair", value: "Roughly 4 to 6 months, criteria-based" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, sports medicine and hand & upper extremity",
+    "Tissue-preserving philosophy, repairs the meniscus rather than removing it when feasible",
+    "Among the first surgeons in NYC to use PRP for the upper extremity; applies biologics judiciously",
+    "Conservative first, will recommend non-surgical care for degenerative tears when appropriate",
+  ],
+  related: [
+    { name: "Knee Arthroscopy", slug: "knee-arthroscopy" },
+    { name: "ACL Tear & Reconstruction", slug: "acl-reconstruction" },
+    { name: "Knee Collateral Ligament Injury", slug: "knee-collateral-ligament" },
+    { name: "PCL Tear", slug: "pcl-tear" },
+  ],
+  ctaCard: {
+    eyebrow: "Twisted your knee?",
+    headline: "Find out whether your meniscus can be repaired.",
+  },
+  faqHeadline: "Meniscus tears, answered.",
+  faqs: [
+    {
+      question: "Does a meniscus tear always need surgery?",
+      answer:
+        "No. Many degenerative meniscus tears improve without surgery through physical therapy, activity modification, and selective injections, and for these tears supervised rehabilitation often produces outcomes comparable to arthroscopic trimming. Surgery is more often indicated for acute traumatic tears that cause mechanical locking or catching, or for repairable tears in younger active patients where preserving the meniscus is the goal.",
+    },
+    {
+      question: "What is the difference between meniscus repair and meniscectomy?",
+      answer:
+        "Meniscus repair stitches the torn edges of the meniscus back together so the tissue can heal, preserving the cushion that protects the knee's cartilage; it is preferred when the tear is in the vascular zone and the tissue allows, and recovery is longer and more protected. Partial meniscectomy trims away the torn, irreparable portion of the meniscus; recovery is quicker, but removing meniscus reduces the joint's natural shock absorption.",
+    },
+    {
+      question: "Why is repairing the meniscus better than removing it?",
+      answer:
+        "The meniscus is the knee's shock absorber, and preserving it protects the smooth articular cartilage from accelerated wear. Removing meniscus tissue increases load on the cartilage and is associated with a higher long-term risk of arthritis. For that reason, repair is preferred whenever the tear is in a region that can heal and the tissue quality allows, even though it requires a longer, more protected recovery.",
+    },
+    {
+      question: "How long is recovery after meniscus surgery?",
+      answer:
+        "Recovery depends on the procedure. After a partial meniscectomy, many patients return to light activity within days and to most activity within a few weeks. After a meniscus repair, recovery is deliberately more protected, with bracing and graduated weight-bearing, and return to cutting or pivoting sport is typically in the four-to-six-month range and based on restored strength and function rather than the calendar.",
+    },
+    {
+      question: "Can PRP help a meniscus tear?",
+      answer:
+        "Platelet-rich plasma is considered in selected cases, both as a non-surgical option for certain tears and as biologic augmentation to support healing during a meniscus repair. It is not appropriate for every tear, and it is not a substitute for surgery when a tear is mechanically unstable. Dr. Lee, who is among the first surgeons in NYC to use PRP for the upper extremity, applies these biologics judiciously based on the specific tear.",
+    },
+  ],
+  bottomCtaTitle: "Knee pain after a twist or with age?",
+  bottomCtaItalic: "Find out if the cushion can be saved.",
+  bottomCtaBody:
+    "A meniscus tear does not always mean surgery, and when surgery is right, repairing the meniscus is usually better than removing it. The first step is a real evaluation to determine the tear type and whether it can be preserved.",
+  metaTitle: "Meniscus Tear, Repair & Treatment | Steven J. Lee, MD",
+  metaDescription:
+    "Meniscus tear treatment by Dr. Steven J. Lee, MD, double fellowship-trained in sports medicine. Meniscus repair versus partial meniscectomy, non-surgical care for degenerative tears, PRP in selected cases, and recovery timeline.",
+  schemaDescription:
+    "A meniscus tear is a tear of the C-shaped cartilage that cushions the knee. Treatment depends on the tear type and location: arthroscopic repair is preferred for tears in the vascular zone, partial meniscectomy is used for irreparable tears, and many degenerative tears improve with physical therapy, activity modification, and selective injection.",
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Phase-2 build-out (June 2026): Clavicle Fracture
+const clavicleFracture: ConditionPageContent = {
+  slug: "clavicle-fracture",
+  name: "Clavicle Fracture",
+  region: "Shoulder",
+  headerTitle: "Clavicle Fracture:",
+  headerItalic: "knowing when a collarbone needs a plate.",
+  headerLede:
+    "A clavicle fracture, a broken collarbone, is a common injury from a fall onto the shoulder, sport, or cycling. Many heal well in a sling with no surgery, while displaced or shortened fractures often do better with modern plate-and-screw fixation. The judgment is in telling them apart.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Double Fellowship-Trained · Hand & Sports Medicine",
+    reviewed: "June 2026",
+  },
+  overview: [
+    "The clavicle, or collarbone, is the strut that connects the arm and shoulder to the chest. It is one of the most commonly broken bones in the body. Most clavicle fractures occur in the middle third of the bone, the midshaft, from a direct fall onto the shoulder, a sports collision, or a cycling crash.",
+    "The historical teaching was that nearly all clavicle fractures should be treated in a sling and left to heal. That has been refined. Many fractures still heal well non-operatively, but for significantly displaced, shortened, or comminuted fractures, modern plate-and-screw fixation improves the reliability of union and allows earlier, more comfortable motion. The decision turns on the fracture pattern and the patient.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms of a clavicle fracture",
+      body: ["A broken collarbone typically produces:"],
+      bullets: [
+        "Sharp pain over the collarbone, worse with arm movement",
+        "Swelling, bruising, or a visible bump or deformity",
+        "A grinding sensation when the shoulder moves",
+        "Tenting of the skin over a sharp fracture fragment in displaced fractures",
+        "Difficulty lifting or rotating the arm",
+      ],
+    },
+    {
+      heading: "How clavicle fractures are diagnosed",
+      body: [
+        "Diagnosis is made on exam and plain X-rays, which show the location, the degree of displacement, the amount of shortening, and whether the fracture is in multiple pieces (comminuted). The midshaft is the most common location; fractures of the distal third, near the shoulder, behave differently and can be more unstable.",
+        "A CT scan is occasionally used for complex or distal fractures to plan fixation. The imaging answers the key surgical questions: how displaced, how shortened, how many fragments, and where along the bone.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee treats the fracture pattern, not a blanket rule. Many midshaft clavicle fractures with acceptable alignment heal reliably in a sling, and for those, surgery adds risk without benefit. The fractures that benefit from fixation are the significantly displaced, shortened, or comminuted midshaft fractures, open fractures, fractures tenting the skin, and unstable distal-third fractures, where plating improves the reliability of union and lets the shoulder start moving sooner.",
+      "When fixation is indicated, Dr. Lee uses modern plate-and-screw constructs. As a surgeon who helped design upper-extremity plating systems, he brings particular attention to fixation technique and hardware choice. The goal is a reliable union with the least disruption necessary, and a recovery plan that returns the patient to activity as the bone heals.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "Many clavicle fractures, particularly midshaft fractures with acceptable alignment, heal well without surgery. Treatment is a simple arm sling for comfort, early gentle motion of the elbow and hand, and a graduated return of shoulder motion as pain allows. Healing is monitored with periodic X-rays. The collarbone often develops a palpable bump at the healing site, which is normal and not a sign of a problem.",
+      ],
+    },
+    {
+      heading: "Surgical fixation",
+      body: [
+        "Surgery is considered for significantly displaced, shortened, or comminuted midshaft fractures, open fractures, fractures tenting the skin, and unstable distal-third fractures. The standard technique is plate-and-screw fixation: the fragments are realigned and held with a contoured plate, which improves the reliability of union and allows earlier motion. Intramedullary fixation, a rod inside the bone, is used occasionally for selected fracture patterns. Dr. Lee uses modern fixation hardware throughout.",
+      ],
+    },
+  ],
+  recoveryIntro:
+    "Whether treated in a sling or with a plate, clavicle healing follows a broadly similar timeline:",
+  recovery: [
+    {
+      when: "Weeks 0–2",
+      what: "Arm sling for comfort. Early gentle elbow, wrist, and hand motion. Ice and oral pain medication. Avoid lifting and overhead activity. After surgery, the incision is monitored and the shoulder is protected.",
+    },
+    {
+      when: "Weeks 2–6",
+      what: "Progressive shoulder range of motion as pain settles. The sling is weaned. X-rays confirm the fracture is healing. Light daily activities resume.",
+    },
+    {
+      when: "Weeks 6–12",
+      what: "Bony union is typically achieved in this window, around 6 to 12 weeks. Strengthening begins. Most daily and occupational activity resumes as the fracture consolidates.",
+    },
+    {
+      when: "Months 3+",
+      what: "Return to contact sport and heavy lifting once the fracture is healed on X-ray and strength has returned, typically around three months, confirmed by the clinical and radiographic picture.",
+    },
+  ],
+  misconceptions: {
+    intro: "What patients often misunderstand about clavicle fractures:",
+    items: [
+      {
+        heading: "Not every broken collarbone needs surgery.",
+        body: "Many midshaft clavicle fractures with acceptable alignment heal reliably in a sling. Surgery is reserved for significantly displaced, shortened, or comminuted fractures, open fractures, skin tenting, and unstable distal-third fractures, where fixation improves the reliability of union.",
+      },
+      {
+        heading: "Surgery is not just about the X-ray looking straighter.",
+        body: "Fixation is recommended when the fracture pattern carries a meaningful risk of non-union, malunion, or prolonged disability. For fractures that will heal well on their own, plating adds the risks of surgery without a clear benefit.",
+      },
+      {
+        heading: "A bump at the healing site is usually normal.",
+        body: "Clavicle fractures, especially those treated without surgery, often heal with a palpable or visible bump where new bone forms. In most cases this is a normal part of healing and not a sign that something is wrong.",
+      },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Bone involved", value: "Clavicle (collarbone), most often the midshaft" },
+    { label: "Typical mechanism", value: "Fall onto the shoulder, sport, or cycling" },
+    { label: "Non-surgical option", value: "Sling immobilization with monitored healing" },
+    { label: "Surgical option", value: "Plate-and-screw fixation for displaced fractures" },
+    { label: "Time to union", value: "Roughly 6 to 12 weeks" },
+    { label: "Return to contact sport", value: "Once healed on X-ray, around three months" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, sports medicine and hand & upper extremity",
+    "Helped design upper-extremity plating systems; particular attention to fixation technique",
+    "Treats the fracture pattern, recommends a sling when surgery is not needed",
+    "Modern plate-and-screw and selective intramedullary fixation when surgery is indicated",
+  ],
+  related: [
+    { name: "AC Joint Separation", slug: "ac-separation" },
+    { name: "Shoulder Dislocation", slug: "shoulder-dislocation" },
+    { name: "Rotator Cuff Tear", slug: "rotator-cuff" },
+    { name: "Shoulder Arthroscopy", slug: "shoulder-arthroscopy" },
+  ],
+  ctaCard: {
+    eyebrow: "Broken collarbone?",
+    headline: "Find out whether yours needs a sling or a plate.",
+  },
+  faqHeadline: "Clavicle fractures, answered.",
+  faqs: [
+    {
+      question: "Does a broken collarbone need surgery?",
+      answer:
+        "Not always. Many clavicle fractures, particularly midshaft fractures with acceptable alignment, heal well in a sling without surgery. Surgery, usually plate-and-screw fixation, is considered for significantly displaced, shortened, or comminuted midshaft fractures, open fractures, fractures tenting the skin, and unstable distal-third fractures, where fixation improves the reliability of bone healing and allows earlier shoulder motion.",
+    },
+    {
+      question: "How is a clavicle fracture fixed surgically?",
+      answer:
+        "The standard surgical technique is plate-and-screw fixation: the fracture fragments are realigned and held in place with a contoured metal plate secured by screws. This restores the length and alignment of the collarbone, improves the reliability of union, and allows the shoulder to begin moving sooner. Intramedullary fixation, placing a rod inside the bone, is used in selected fracture patterns. Modern fixation hardware is used throughout.",
+    },
+    {
+      question: "How long does a clavicle fracture take to heal?",
+      answer:
+        "Most clavicle fractures achieve bony union in roughly 6 to 12 weeks, whether treated in a sling or with surgical fixation. A sling is used early for comfort, gentle shoulder motion is progressed over the first several weeks, and strengthening follows once healing is confirmed on X-ray. Return to contact sport and heavy lifting typically follows around three months, once the fracture is healed and strength has returned.",
+    },
+    {
+      question: "Why is there still a bump after my collarbone healed?",
+      answer:
+        "A palpable or visible bump over the collarbone is common after a clavicle fracture, especially one treated without surgery, because new bone forms as the fracture heals. In most cases this bump is a normal part of healing and not a sign of a problem. Persistent pain, motion that grinds, or a fracture that has not healed on X-ray are the findings that warrant further evaluation.",
+    },
+    {
+      question: "Can I get a second opinion on whether my clavicle fracture needs surgery?",
+      answer:
+        "Yes, and the decision is exactly the kind that benefits from a careful look. If you have your X-rays, sharing them ahead of the visit allows a substantive discussion of the fracture pattern, the degree of displacement and shortening, and whether your fracture is likely to heal well in a sling or would benefit from plate-and-screw fixation.",
+    },
+  ],
+  bottomCtaTitle: "Collarbone broken in a fall or crash?",
+  bottomCtaItalic: "Get the surgery-or-sling call right.",
+  bottomCtaBody:
+    "Most clavicle fractures heal well, but the ones that need fixation do better when it is done early and well. The first step is an evaluation of your X-rays and fracture pattern to decide whether a sling or a plate is the right path.",
+  metaTitle: "Clavicle Fracture (Broken Collarbone) | Steven J. Lee, MD",
+  metaDescription:
+    "Clavicle fracture treatment by Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital. When a broken collarbone heals in a sling versus needs plate-and-screw fixation, and the recovery timeline.",
+  schemaDescription:
+    "A clavicle fracture is a break in the collarbone, most commonly in the midshaft, from a fall onto the shoulder, sport, or cycling. Many heal in a sling without surgery, while significantly displaced, shortened, or comminuted fractures are treated with plate-and-screw fixation to improve the reliability of union, with bony healing typically in 6 to 12 weeks.",
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Phase-2 build-out (June 2026): Shoulder Arthroscopy
+const shoulderArthroscopy: ConditionPageContent = {
+  slug: "shoulder-arthroscopy",
+  name: "Shoulder Arthroscopy",
+  region: "Shoulder",
+  headerTitle: "Shoulder Arthroscopy:",
+  headerItalic: "the workhorse of modern shoulder surgery.",
+  headerLede:
+    "Shoulder arthroscopy is a minimally invasive, outpatient operation performed through small portals. It is the platform for most modern shoulder surgery, rotator cuff repair, labral and SLAP repair, decompression for impingement, and more, and it lets the surgeon both diagnose and treat in the same sitting.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Double Fellowship-Trained · Hand & Sports Medicine",
+    reviewed: "June 2026",
+  },
+  overview: [
+    "Shoulder arthroscopy uses a small camera, the arthroscope, and specialized instruments introduced through portal incisions a few millimeters long. The surgeon sees the inside of the shoulder in high definition on a monitor and works through the same small openings, without the large incision and muscle disruption of traditional open surgery.",
+    "It has become the workhorse of shoulder surgery because so much can be done through it. The same arthroscopic setup is used to repair the rotator cuff, repair labral and SLAP tears, stabilize a dislocating shoulder, decompress an impinging space, treat AC joint arthritis, perform a biceps tenodesis, and remove loose bodies or inflamed tissue, as well as to evaluate the joint directly when imaging is inconclusive.",
+  ],
+  bodySections: [
+    {
+      heading: "What shoulder arthroscopy treats",
+      body: ["A single arthroscopic platform addresses a wide range of shoulder problems:"],
+      bullets: [
+        "Rotator cuff tears, repaired with suture anchors back to the bony footprint",
+        "Labral tears, including Bankart repair for instability and SLAP repair at the top of the socket",
+        "Subacromial impingement, treated with arthroscopic subacromial decompression",
+        "AC joint arthritis, treated with distal clavicle excision",
+        "Biceps tendon problems, addressed with biceps tenodesis",
+        "Loose bodies and synovitis, removed or debrided; and direct diagnostic evaluation",
+      ],
+    },
+    {
+      heading: "How the decision is made",
+      body: [
+        "Arthroscopy is not the first answer for every shoulder. Many problems, including most impingement and many partial cuff tears, improve with physical therapy, activity modification, and selective injection. Arthroscopy is reserved for structural problems that surgery can fix: a symptomatic full-thickness cuff tear, recurrent instability with a labral tear, or impingement and AC arthritis that have not settled with conservative care.",
+        "MRI guides the plan before surgery, and the final treatment is often confirmed under direct vision once the structures are seen and probed during the procedure.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Conservative care comes first. Not every shoulder problem needs surgery, and Dr. Lee will recommend a structured course of physical therapy and selective injection when that is the right path. Arthroscopy is reserved for the structural problems that genuinely benefit from it.",
+      "When surgery is indicated, Dr. Lee performs all-arthroscopic repair using current-generation, anchor-based fixation. As a surgeon who helped design suture anchors and internal brace constructs, he brings particular attention to fixation technique. Shoulder arthroscopy is typically an outpatient procedure under regional anesthesia plus light sedation. When a repair is protected, a sling is generally worn for four to six weeks, followed by a progressive, disciplined therapy program.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "What happens during the procedure",
+      body: [
+        "After regional anesthesia and light sedation, the surgeon makes several small portal incisions around the shoulder. Sterile fluid gently expands the joint and the subacromial space for visibility. The arthroscope is introduced through one portal and instruments through the others. The surgeon inspects the joint, the rotator cuff, labrum, cartilage, and biceps, then performs the indicated repair or decompression, securing tissue back to bone with suture anchors where needed. The portals are closed with a stitch or two, and the arm is placed in a sling.",
+      ],
+    },
+    {
+      heading: "Outpatient and anesthesia",
+      body: [
+        "Shoulder arthroscopy is usually performed as a same-day outpatient procedure. Regional anesthesia, often an interscalene nerve block, controls pain around the shoulder and is combined with light sedation. Most patients go home a few hours after surgery with the arm in a sling and a clear, written rehabilitation plan.",
+      ],
+    },
+  ],
+  recoveryIntro:
+    "Recovery depends on what was done. A decompression recovers faster than a protected repair:",
+  recovery: [
+    {
+      when: "Weeks 0–6",
+      what: "Sling for a protected repair, typically four to six weeks. Passive or limited motion per the surgeon's protocol while the repair heals. Elbow, wrist, and hand motion encouraged. A decompression without a repair allows earlier active motion.",
+    },
+    {
+      when: "Weeks 6–12",
+      what: "Sling discontinued for repairs. Active range of motion progresses. Pain typically declines significantly. Therapy advances toward full motion.",
+    },
+    {
+      when: "Months 3–6",
+      what: "Progressive strengthening. Functional return for daily activities and light occupational use. Decompression-only patients are usually back to most activity earlier in this window.",
+    },
+    {
+      when: "Months 6–12",
+      what: "Return to sport, overhead work, and full strength for repair cases, which continues to improve up to a year after surgery, guided by restored strength and function.",
+    },
+  ],
+  misconceptions: {
+    intro: "What patients often misunderstand about shoulder arthroscopy:",
+    items: [
+      {
+        heading: "Small incisions do not mean a small recovery.",
+        body: "The portals are only a few millimeters, but when a rotator cuff or labrum is repaired, the tissue still needs months to heal to bone. The recovery is driven by the biology of healing, not the size of the incisions.",
+      },
+      {
+        heading: "Not every shoulder problem needs a scope.",
+        body: "Many cases of impingement and many partial cuff tears improve with physical therapy and selective injection. Arthroscopy is reserved for structural problems that surgery can actually fix and that have not settled with conservative care.",
+      },
+      {
+        heading: "Rehab is part of the surgery, not optional.",
+        body: "The technical repair is one component; the outcome depends heavily on following the post-operative therapy. Skipping or rushing the protocol is a common cause of stiffness or re-tear after shoulder arthroscopy.",
+      },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Procedure type", value: "Minimally invasive, outpatient" },
+    { label: "Access", value: "Several small portal incisions" },
+    { label: "Anesthesia", value: "Regional block plus light sedation" },
+    { label: "Common uses", value: "Cuff repair, labral/SLAP repair, decompression" },
+    { label: "Sling for a protected repair", value: "Typically 4 to 6 weeks" },
+    { label: "Return to sport after repair", value: "Roughly 6 to 12 months, criteria-based" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, sports medicine and hand & upper extremity",
+    "All-arthroscopic technique with current-generation anchor-based fixation",
+    "Helped design suture anchors and internal brace constructs",
+    "Conservative first, will recommend non-surgical care when surgery is not needed",
+  ],
+  related: [
+    { name: "Rotator Cuff Tear", slug: "rotator-cuff" },
+    { name: "SLAP Tear", slug: "slap-tear" },
+    { name: "Shoulder Dislocation", slug: "shoulder-dislocation" },
+    { name: "Shoulder Impingement", slug: "shoulder-impingement" },
+  ],
+  ctaCard: {
+    eyebrow: "Shoulder problem not settling?",
+    headline: "Find out whether arthroscopy is the right next step.",
+  },
+  faqHeadline: "Shoulder arthroscopy, answered.",
+  faqs: [
+    {
+      question: "What is shoulder arthroscopy?",
+      answer:
+        "Shoulder arthroscopy is a minimally invasive, usually outpatient operation in which a surgeon inserts a small camera and instruments through portal incisions a few millimeters long to see inside the shoulder and treat what is found. It is the platform for most modern shoulder surgery, including rotator cuff repair, labral and SLAP repair, stabilization for instability, subacromial decompression for impingement, distal clavicle excision for AC arthritis, and biceps tenodesis.",
+    },
+    {
+      question: "What conditions are treated with shoulder arthroscopy?",
+      answer:
+        "Shoulder arthroscopy is used to repair rotator cuff tears, repair labral tears including Bankart repair for instability and SLAP repair at the top of the socket, decompress the subacromial space for impingement, excise the distal clavicle for AC joint arthritis, perform biceps tenodesis, and remove loose bodies or inflamed tissue. It is also used to evaluate the joint directly when exam and imaging leave the diagnosis unclear.",
+    },
+    {
+      question: "How long is recovery after shoulder arthroscopy?",
+      answer:
+        "Recovery depends on what was done. A subacromial decompression without a repair allows relatively early motion and a faster return to activity. When a rotator cuff or labrum is repaired, a sling is typically worn for four to six weeks, active motion progresses over the following weeks, and return to sport, overhead work, and full strength for repair cases is generally in the six-to-twelve-month range, guided by restored strength and function rather than the calendar.",
+    },
+    {
+      question: "Is shoulder arthroscopy done as an outpatient procedure?",
+      answer:
+        "Yes, shoulder arthroscopy is typically performed as a same-day outpatient procedure. It is usually done under regional anesthesia, often an interscalene nerve block, combined with light sedation. Most patients go home a few hours after surgery with the arm in a sling and a written rehabilitation plan, rather than staying overnight in the hospital.",
+    },
+    {
+      question: "Does every shoulder problem need arthroscopy?",
+      answer:
+        "No. Many shoulder problems, including most impingement and many partial rotator cuff tears, improve with physical therapy, activity modification, and selective corticosteroid injection. Arthroscopy is reserved for structural problems that surgery can fix, such as a symptomatic full-thickness cuff tear, recurrent instability with a labral tear, or impingement and AC arthritis that have not settled with conservative care. Conservative treatment generally comes first.",
+    },
+  ],
+  bottomCtaTitle: "Shoulder pain or instability that won't settle?",
+  bottomCtaItalic: "Find out what's actually going on.",
+  bottomCtaBody:
+    "Shoulder arthroscopy can both confirm the diagnosis and fix the problem in a single minimally invasive operation, but not every shoulder needs it. The first step is an evaluation to decide whether arthroscopy is the right move or whether conservative care should run first.",
+  metaTitle: "Shoulder Arthroscopy | Steven J. Lee, MD",
+  metaDescription:
+    "Shoulder arthroscopy by Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital. Minimally invasive, outpatient treatment for rotator cuff repair, labral and SLAP repair, and subacromial decompression, with recovery timeline.",
+  schemaDescription:
+    "Shoulder arthroscopy is a minimally invasive, outpatient surgical procedure that uses small portal incisions to introduce a camera and instruments into the shoulder. It is used to repair rotator cuff and labral tears, perform Bankart and SLAP repair, decompress the subacromial space for impingement, excise the distal clavicle for AC arthritis, perform biceps tenodesis, and evaluate the joint directly.",
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Old-site condition build-out (June 2026): six hand and wrist conditions that
+// had dedicated URLs on the legacy Wix site, rebuilt in the new editorial voice.
+
+const guyonsCanal: ConditionPageContent = {
+  slug: "guyons-canal",
+  name: "Guyon's Canal Syndrome",
+  region: "Hand & Wrist",
+  headerTitle: "Guyon's Canal Syndrome:",
+  headerItalic: "ulnar nerve compression at the wrist.",
+  headerLede:
+    "Numbness and tingling in the ring and small fingers, sometimes with grip or pinch weakness, from pressure on the ulnar nerve as it passes through Guyon's canal at the wrist. It is distinct from cubital tunnel syndrome, where the same nerve is pinched at the elbow.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Double Fellowship-Trained · Hand & Sports Medicine",
+    reviewed: "June 2026",
+  },
+  overview: [
+    "Guyon's canal syndrome is compression of the ulnar nerve as it travels through Guyon's canal, a narrow passage on the small-finger side of the palm side of the wrist. When the nerve is squeezed in this canal, it produces numbness and tingling in the ring and small fingers, and in some patients weakness of grip and pinch.",
+    "Because the ulnar nerve can also be compressed at the elbow, where the problem is called cubital tunnel syndrome, telling the two apart is an important part of the evaluation. The pattern of numbness, the presence or absence of certain hand weakness, and nerve testing all help locate exactly where the nerve is being pinched.",
+  ],
+  bodySections: [
+    {
+      heading: "Anatomy and causes",
+      body: [
+        "Guyon's canal is bordered by two small wrist bones and a roof of ligament. Within or near the canal the ulnar nerve divides into branches that supply sensation to the ring and small fingers and power to many of the small muscles of the hand. Pressure anywhere along this path produces symptoms.",
+        "Common causes include a ganglion cyst pressing on the nerve, repetitive or sustained pressure on the base of the palm, trauma such as a wrist fracture, and prolonged gripping. A classic example is the cyclist who develops numbness and weakness after long rides leaning on the handlebars, sometimes called handlebar palsy.",
+      ],
+    },
+    {
+      heading: "Symptoms",
+      body: ["Typical complaints include:"],
+      bullets: [
+        "Numbness and tingling in the ring and small fingers",
+        "Weakness of grip or pinch, or clumsiness with fine tasks",
+        "Symptoms brought on by sustained pressure on the palm, such as cycling",
+        "In longer-standing cases, visible wasting of the small muscles of the hand",
+      ],
+    },
+    {
+      heading: "Guyon's canal versus cubital tunnel",
+      body: [
+        "Both conditions involve the ulnar nerve and both can cause ring and small finger numbness, which is why they are often confused. The key difference is the location of the compression: Guyon's canal is at the wrist, cubital tunnel is at the elbow. The back of the small-finger side of the hand and certain hand muscles are affected differently depending on the site, and a nerve conduction study can confirm where the nerve is being pinched. Identifying the correct level is what makes treatment effective.",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "Diagnosis combines the clinical exam with nerve testing. The exam maps where numbness and weakness are present and checks for a cyst or a point of tenderness at the wrist. An electrodiagnostic study (EMG/NCV) measures how well the ulnar nerve is conducting and helps localize the compression to the wrist rather than the elbow. Imaging such as ultrasound or MRI is used when a ganglion cyst or other mass is suspected as the cause.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Many cases of Guyon's canal syndrome improve once the source of pressure is identified and removed. Dr. Lee starts with activity and ergonomic modification, padded gloves and handlebar changes for cyclists, a supportive splint, and treatment of any underlying ganglion cyst that is compressing the nerve.",
+      "When compression persists despite these measures, or when there is weakness or muscle wasting, Dr. Lee performs a surgical decompression of Guyon's canal that releases the roof of the canal and frees the ulnar nerve. If a cyst is the cause, it is removed at the same time. The priority is to relieve pressure before the nerve sustains lasting damage.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["Most early cases begin here:"],
+      bullets: [
+        "Activity and ergonomic modification, including padded gloves and handlebar adjustments for cyclists",
+        "A wrist splint to rest the nerve and limit provoking positions",
+        "Treating an underlying ganglion cyst that is pressing on the nerve",
+        "Anti-inflammatory measures for symptom control",
+      ],
+    },
+    {
+      heading: "Surgical decompression",
+      body: [
+        "When symptoms persist or there is weakness, the roof of Guyon's canal is released through a small incision so the ulnar nerve is no longer compressed. If a ganglion cyst is responsible, it is excised at the same time. The procedure is outpatient, and the technical priority is protecting the branches of the ulnar nerve as the canal is opened.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery after a decompression is usually steady:",
+  recovery: [
+    { when: "Day 0 to 7", what: "Soft dressing and a light splint. Use the hand for daily activities. Keep the wound dry until the first visit." },
+    { when: "Weeks 1 to 2", what: "Sutures removed. Begin gentle motion. Tingling often begins to settle as the nerve recovers." },
+    { when: "Weeks 2 to 6", what: "Progressive strengthening and return to gripping. Numbness improves over weeks; long-standing weakness recovers more slowly." },
+  ],
+  misconceptions: {
+    intro: "A few points worth clearing up:",
+    items: [
+      { heading: "It is not the same as carpal tunnel.", body: "Carpal tunnel affects the median nerve and the thumb side of the hand. Guyon's canal affects the ulnar nerve and the ring and small fingers. The treatments differ, so an accurate exam matters." },
+      { heading: "The same numbness can come from the elbow.", body: "Cubital tunnel syndrome at the elbow can cause the same ring and small finger numbness. Locating where the nerve is pinched, at the wrist or the elbow, changes the treatment." },
+      { heading: "A cyst is a common and treatable cause.", body: "When a ganglion cyst is pressing on the nerve in the canal, removing the cyst often relieves the compression directly." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Affected nerve", value: "Ulnar nerve at the wrist (Guyon's canal)" },
+    { label: "Typical symptoms", value: "Ring and small finger numbness, grip or pinch weakness" },
+    { label: "Common causes", value: "Ganglion cyst, sustained palm pressure, trauma" },
+    { label: "Key distinction", value: "Different from cubital tunnel (ulnar nerve at the elbow)" },
+    { label: "First-line treatment", value: "Activity modification, splinting, treat any cyst" },
+    { label: "Surgical option", value: "Decompression of Guyon's canal" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained in hand and upper extremity surgery",
+    "Distinguishes wrist-level from elbow-level ulnar nerve compression",
+    "Treats any underlying ganglion cyst at the same time as decompression",
+    "Conservative first, with surgery reserved for persistent compression or weakness",
+  ],
+  related: [
+    { name: "Cubital Tunnel Syndrome", slug: "cubital-tunnel" },
+    { name: "Carpal Tunnel Syndrome", slug: "carpal-tunnel" },
+    { name: "Ganglion Cyst", slug: "ganglion-cyst" },
+    { name: "Wartenberg's Syndrome", slug: "wartenbergs-syndrome" },
+  ],
+  ctaCard: {
+    eyebrow: "Ring and small finger numbness?",
+    headline: "The first step is locating the nerve compression.",
+  },
+  faqHeadline: "Guyon's canal syndrome, answered.",
+  faqs: [
+    {
+      question: "What is Guyon's canal syndrome?",
+      answer:
+        "Guyon's canal syndrome is compression of the ulnar nerve as it passes through Guyon's canal, a narrow passage on the small-finger side of the wrist. It causes numbness and tingling in the ring and small fingers, and sometimes weakness of grip and pinch. Common causes include a ganglion cyst pressing on the nerve, sustained pressure on the palm (as in cycling), and wrist trauma.",
+    },
+    {
+      question: "How is it different from cubital tunnel syndrome?",
+      answer:
+        "Both conditions involve the ulnar nerve and can cause numbness in the ring and small fingers. The difference is where the nerve is compressed: Guyon's canal syndrome is at the wrist, while cubital tunnel syndrome is at the elbow. A clinical exam and a nerve conduction study help localize the compression, which determines the correct treatment.",
+    },
+    {
+      question: "Why do cyclists get this?",
+      answer:
+        "Leaning body weight on the handlebars for long rides puts sustained pressure on the base of the palm, where the ulnar nerve runs through Guyon's canal. This can produce numbness and weakness sometimes called handlebar palsy. Padded gloves, handlebar adjustments, and changing hand position often relieve the pressure and the symptoms.",
+    },
+    {
+      question: "Does it always need surgery?",
+      answer:
+        "No. Many cases improve once the source of pressure is identified and removed, using activity and ergonomic modification, splinting, and treatment of any underlying cyst. Surgery to decompress Guyon's canal is considered when symptoms persist despite these measures, or when there is weakness or muscle wasting that indicates the nerve is under ongoing pressure.",
+    },
+  ],
+  bottomCtaTitle: "Ring and small finger numbness that will not settle?",
+  bottomCtaItalic: "Find out where the nerve is pinched.",
+  bottomCtaBody:
+    "Ulnar nerve symptoms can come from the wrist or the elbow, and the treatments differ. The first step is an accurate diagnosis that locates the compression, so the right treatment can relieve it before the nerve is damaged.",
+  metaTitle: "Guyon's Canal Syndrome | Steven J. Lee, MD",
+  metaDescription:
+    "Guyon's canal syndrome (ulnar nerve compression at the wrist) evaluated and treated by Dr. Steven J. Lee, MD. Causes, how it differs from cubital tunnel, and treatment from activity modification to decompression.",
+  schemaDescription:
+    "Guyon's canal syndrome is compression of the ulnar nerve as it passes through Guyon's canal at the wrist, causing numbness and tingling in the ring and small fingers and sometimes grip or pinch weakness. It is distinct from cubital tunnel syndrome at the elbow. Treatment ranges from activity modification and splinting to surgical decompression of Guyon's canal.",
+};
+
+const swanNeckDeformity: ConditionPageContent = {
+  slug: "swan-neck-deformity",
+  name: "Swan Neck Deformity",
+  region: "Hand & Wrist",
+  headerTitle: "Swan Neck Deformity:",
+  headerItalic: "a finger that bends in two directions.",
+  headerLede:
+    "A finger deformity in which the middle joint hyperextends and the fingertip flexes, from an imbalance of the finger's tendons and ligaments. Early flexible deformities often respond to therapy and small splints, while fixed or disabling ones are treated surgically.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Double Fellowship-Trained · Hand & Sports Medicine",
+    reviewed: "June 2026",
+  },
+  overview: [
+    "Swan neck deformity describes a finger in which the middle knuckle, the PIP joint, is hyperextended while the fingertip joint, the DIP joint, is bent. The shape resembles a swan's neck. It arises when the delicate balance of tendons and ligaments that normally hold the finger straight is disrupted.",
+    "The deformity has several causes. It is commonly seen in rheumatoid arthritis, where chronic inflammation loosens the supporting structures, and it can also follow an untreated mallet injury at the fingertip or develop in fingers that are naturally lax. Some patients have a mild, flexible deformity that is mostly cosmetic, while others develop a stiff, fixed finger that catches and interferes with grip.",
+  ],
+  bodySections: [
+    {
+      heading: "Why the finger deforms",
+      body: [
+        "The finger is balanced by tendons on the back that straighten it and structures on the palm side that prevent the middle joint from over-straightening. When this balance is lost, often because the volar plate on the palm side becomes lax or the tendon balance shifts, the middle joint drifts into hyperextension and the fingertip drops into flexion. The result is the characteristic swan-neck shape.",
+      ],
+    },
+    {
+      heading: "Common causes",
+      body: ["Swan neck deformity is associated with:"],
+      bullets: [
+        "Rheumatoid arthritis and other inflammatory arthritis",
+        "A prior mallet injury that was not fully treated",
+        "Natural ligament laxity in some patients",
+        "Old injury or imbalance of the finger tendons",
+      ],
+    },
+    {
+      heading: "Flexible versus fixed deformity",
+      body: [
+        "The most important question on examination is whether the deformity is flexible or fixed. A flexible deformity can still be straightened passively and often responds to therapy and splinting. A fixed deformity has become stiff and cannot be passively corrected, which changes the treatment toward surgery. The examination also looks for the underlying cause, since treating rheumatoid arthritis or an old mallet injury is part of addressing the deformity.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Treatment depends on whether the deformity is flexible or fixed and on how much it interferes with function. For early, flexible deformities, Dr. Lee favors hand therapy together with a small ring or figure-of-eight splint that blocks the middle joint from over-straightening while still allowing the finger to bend. These splints are unobtrusive and often restore a smooth, functional grip.",
+      "When the deformity is fixed or genuinely disabling, surgery is considered. The options include soft-tissue rebalancing, tendon procedures, and procedures at the PIP joint itself, chosen to match the specific finger and the underlying cause. When rheumatoid arthritis is driving the problem, Dr. Lee coordinates with the patient's rheumatologist so the medical disease is managed alongside the mechanical correction.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["Flexible deformities often respond well to:"],
+      bullets: [
+        "Hand therapy to maintain motion and balance",
+        "A ring or figure-of-eight splint that blocks hyperextension while allowing bending",
+        "Treating the underlying cause, such as rheumatoid arthritis or an old mallet injury",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "For fixed or disabling deformities, surgery rebalances the finger. Depending on the case this may involve soft-tissue procedures that restrain the middle joint, tendon procedures that restore balance, or procedures at the PIP joint itself. The choice is tailored to the individual finger and the underlying cause.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery depends on the procedure performed:",
+  recovery: [
+    { when: "Early weeks", what: "Protective splinting holds the corrected position. Hand therapy guides a careful range of motion so the correction is maintained." },
+    { when: "Weeks 4 to 8", what: "Progressive motion and strengthening under therapy guidance, with splinting weaned as the finger stabilizes." },
+    { when: "Beyond 8 weeks", what: "Return to fuller hand use. Final motion and strength continue to improve over the following months." },
+  ],
+  misconceptions: {
+    intro: "A few points worth clarifying:",
+    items: [
+      { heading: "Early splinting can do a lot.", body: "A small ring splint that blocks hyperextension often restores a smooth grip in flexible deformities, without surgery." },
+      { heading: "It is not always from arthritis.", body: "Swan neck deformity can follow an old mallet injury or occur in naturally lax fingers, not only in rheumatoid arthritis. The cause guides the treatment." },
+      { heading: "Fixed deformities are a different problem.", body: "Once a finger becomes stiff and cannot be straightened by hand, splinting alone is unlikely to correct it, and surgery is considered." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "PIP joint hyperextension with DIP flexion" },
+    { label: "Common causes", value: "Rheumatoid arthritis, prior mallet injury, laxity" },
+    { label: "Key exam finding", value: "Whether the deformity is flexible or fixed" },
+    { label: "Early treatment", value: "Hand therapy and ring or figure-of-eight splints" },
+    { label: "Surgical options", value: "Soft-tissue rebalancing, tendon, or PIP procedures" },
+    { label: "Coordinated care", value: "With rheumatology when inflammatory arthritis is the cause" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained in hand and upper extremity surgery",
+    "Sees many complex and second-opinion hand cases",
+    "Matches treatment to whether the deformity is flexible or fixed",
+    "Coordinates with rheumatology when inflammatory arthritis is the cause",
+  ],
+  related: [
+    { name: "Mallet Finger", slug: "mallet-finger" },
+    { name: "Boutonniere Deformity", slug: "boutonniere-deformity" },
+    { name: "Rheumatoid Arthritis of the Hand", slug: "rheumatoid-arthritis-hand" },
+    { name: "Finger Collateral Ligament Injury", slug: "finger-collateral-ligament" },
+  ],
+  ctaCard: {
+    eyebrow: "A finger that bends the wrong way?",
+    headline: "Flexible deformities often respond to splinting.",
+  },
+  faqHeadline: "Swan neck deformity, answered.",
+  faqs: [
+    {
+      question: "What is a swan neck deformity?",
+      answer:
+        "A swan neck deformity is a finger in which the middle joint (PIP) is hyperextended and the fingertip joint (DIP) is bent, giving a shape that resembles a swan's neck. It results from an imbalance of the tendons and ligaments that normally keep the finger straight. It is associated with rheumatoid arthritis, a prior mallet injury, or natural ligament laxity.",
+    },
+    {
+      question: "Can it be treated without surgery?",
+      answer:
+        "Often, yes, when the deformity is still flexible. Hand therapy combined with a small ring or figure-of-eight splint that blocks the middle joint from over-straightening, while still allowing the finger to bend, frequently restores a smooth and functional grip. Treating the underlying cause, such as rheumatoid arthritis, is part of the plan.",
+    },
+    {
+      question: "When is surgery needed?",
+      answer:
+        "Surgery is considered when the deformity is fixed, meaning the finger can no longer be straightened by hand, or when it is disabling. Procedures include soft-tissue rebalancing, tendon procedures, and procedures at the PIP joint, chosen to match the specific finger and the underlying cause.",
+    },
+    {
+      question: "Is it related to rheumatoid arthritis?",
+      answer:
+        "It can be. Rheumatoid arthritis is a common cause, because chronic inflammation loosens the structures that balance the finger. When inflammatory arthritis is the driver, the medical disease is managed with a rheumatologist alongside any mechanical treatment of the deformity. Swan neck deformity can also occur after an old mallet injury or in naturally lax fingers.",
+    },
+  ],
+  bottomCtaTitle: "A finger drifting into a swan-neck shape?",
+  bottomCtaItalic: "Caught early, it is often correctable with a splint.",
+  bottomCtaBody:
+    "Flexible swan neck deformities frequently respond to therapy and a small splint, while fixed ones are evaluated for surgery. The first step is an exam that determines whether the deformity is flexible or fixed and identifies the underlying cause.",
+  metaTitle: "Swan Neck Deformity | Steven J. Lee, MD",
+  metaDescription:
+    "Swan neck deformity of the finger evaluated and treated by Dr. Steven J. Lee, MD. Causes, the flexible-versus-fixed distinction, and treatment from splinting and therapy to surgical rebalancing.",
+  schemaDescription:
+    "Swan neck deformity is a finger deformity with hyperextension of the PIP joint and flexion of the DIP joint, caused by an imbalance of the finger's tendons and ligaments. It is associated with rheumatoid arthritis, a prior mallet injury, or laxity. Treatment ranges from hand therapy and ring or figure-of-eight splinting for flexible deformities to surgical soft-tissue rebalancing, tendon procedures, or PIP joint procedures for fixed or disabling ones.",
+};
+
+const rheumatoidArthritisHand: ConditionPageContent = {
+  slug: "rheumatoid-arthritis-hand",
+  name: "Rheumatoid Arthritis of the Hand",
+  region: "Hand & Wrist",
+  headerTitle: "Rheumatoid Arthritis of the Hand:",
+  headerItalic: "coordinated care for joints and tendons.",
+  headerLede:
+    "A systemic inflammatory arthritis that affects the joints and tendons of the hand and wrist. Medical management with a rheumatologist is the foundation; the hand surgeon addresses tendon ruptures, nerve compression, painful deformities, and joint reconstruction when they arise.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Double Fellowship-Trained · Hand & Sports Medicine",
+    reviewed: "June 2026",
+  },
+  overview: [
+    "Rheumatoid arthritis is a systemic inflammatory disease in which the body's immune system attacks the lining of the joints, called the synovium. In the hand and wrist it causes synovitis, swelling and inflammation of the joints and tendon sheaths, which over time can lead to joint deformity and tendon damage.",
+    "The most important point is that rheumatoid arthritis is primarily a medical disease. Modern medications managed by a rheumatologist control the inflammation and have transformed outcomes, so far fewer patients develop the severe deformities once common. The hand surgeon plays a focused, complementary role: addressing specific problems that medication cannot fix, such as a ruptured tendon, a compressed nerve, or a painful, damaged joint.",
+  ],
+  bodySections: [
+    {
+      heading: "How rheumatoid arthritis affects the hand",
+      body: [
+        "Persistent synovitis stretches and weakens the ligaments and tendons that hold the hand in balance. Over time this can produce characteristic changes:",
+      ],
+      bullets: [
+        "Drift of the fingers at the large knuckles (MCP joints)",
+        "Swan neck and boutonniere deformities of the fingers",
+        "Tendon ruptures, particularly of the extensor tendons at the back of the wrist",
+        "Nerve compression, such as carpal tunnel syndrome from swelling",
+        "Pain and instability at the wrist",
+      ],
+      bulletsAfter:
+        "Recognizing these problems early allows them to be addressed before they become fixed or before a tendon ruptures, which is one reason coordinated follow-up matters.",
+    },
+    {
+      heading: "Medical management comes first",
+      body: [
+        "The foundation of treatment is medical, directed by a rheumatologist. Disease-modifying medications and biologic therapies control the underlying inflammation that drives joint and tendon damage. Well-controlled disease both relieves symptoms and protects the hand from progressive deformity. Hand therapy, splinting, and joint protection strategies support function and comfort throughout.",
+      ],
+    },
+    {
+      heading: "When the hand surgeon is involved",
+      body: [
+        "Surgery in rheumatoid arthritis is targeted, not routine. The hand surgeon becomes involved for specific, identifiable problems: a ruptured tendon that has taken away motion, a nerve under compression, an inflamed tendon sheath that threatens rupture, or a joint that has become painful or unstable enough to limit daily life. The goal is always function and comfort, with the medical team managing the disease itself.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee's role in rheumatoid arthritis of the hand is collaborative and conservative. The disease is managed medically by the rheumatologist, and Dr. Lee focuses on the mechanical problems that medication cannot reverse. He works alongside the medical team rather than replacing it, and surgery is recommended only when a specific structural problem warrants it.",
+      "When intervention is appropriate, the options are matched to the problem: repair or reconstruction of a ruptured tendon, removal of inflamed tendon lining to prevent further ruptures, decompression of a compressed nerve, and reconstruction or fusion of a joint that has become painful or unstable. The aim is to restore function and relieve pain while preserving as much natural motion as the joint allows.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Conservative and coordinated care",
+      body: ["The mainstays for most patients are non-surgical and shared with the medical team:"],
+      bullets: [
+        "Medical management of the disease by a rheumatologist",
+        "Hand therapy and joint protection strategies",
+        "Splinting to support deformity-prone joints",
+        "Corticosteroid injections for selected inflamed joints or tendon sheaths",
+      ],
+    },
+    {
+      heading: "Targeted surgical options",
+      body: [
+        "When a specific structural problem develops, surgical options include tendon repair or reconstruction for ruptures, removal of inflamed tendon lining (tenosynovectomy) to prevent rupture, nerve decompression, and joint reconstruction or fusion for painful or unstable joints. Each is chosen to address an identified problem rather than the disease as a whole.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery depends on the specific procedure performed:",
+  recovery: [
+    { when: "Early weeks", what: "Protective splinting and an individualized hand therapy program guide healing while protecting the repair or reconstruction." },
+    { when: "Weeks 6 to 12", what: "Progressive motion and strengthening as healing allows, coordinated with ongoing medical management of the disease." },
+    { when: "Ongoing", what: "Continued rheumatology follow-up to keep the inflammation controlled, which protects the result and the rest of the hand." },
+  ],
+  misconceptions: {
+    intro: "A few points worth clearing up:",
+    items: [
+      { heading: "Surgery is not the first step.", body: "Rheumatoid arthritis is managed medically by a rheumatologist. Hand surgery is reserved for specific problems such as a ruptured tendon or a painful, damaged joint." },
+      { heading: "It is not just wear-and-tear arthritis.", body: "Rheumatoid arthritis is an inflammatory, systemic disease, different from osteoarthritis. That is why controlling the inflammation is central to treatment." },
+      { heading: "Modern treatment changes the outlook.", body: "With today's medications, far fewer patients develop the severe deformities once associated with the disease. Early, coordinated care protects the hand." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "Systemic inflammatory arthritis of joints and tendons" },
+    { label: "Primary treatment", value: "Medical management with a rheumatologist" },
+    { label: "Hand problems", value: "Synovitis, deformity, tendon rupture, nerve compression" },
+    { label: "Surgeon's role", value: "Targeted repair, decompression, and reconstruction" },
+    { label: "Care model", value: "Coordinated with the rheumatology team" },
+    { label: "Goal", value: "Function and comfort, preserving motion where possible" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained in hand and upper extremity surgery",
+    "Coordinates closely with the patient's rheumatologist",
+    "Sees many complex and second-opinion hand cases",
+    "Targets surgery to specific structural problems, not the disease itself",
+  ],
+  related: [
+    { name: "Swan Neck Deformity", slug: "swan-neck-deformity" },
+    { name: "Boutonniere Deformity", slug: "boutonniere-deformity" },
+    { name: "Carpal Tunnel Syndrome", slug: "carpal-tunnel" },
+    { name: "Basal Joint Arthritis", slug: "basal-joint-arthroplasty" },
+  ],
+  ctaCard: {
+    eyebrow: "Rheumatoid arthritis in the hand?",
+    headline: "Coordinated care, with surgery only when needed.",
+  },
+  faqHeadline: "Rheumatoid arthritis of the hand, answered.",
+  faqs: [
+    {
+      question: "How does rheumatoid arthritis affect the hand?",
+      answer:
+        "Rheumatoid arthritis is a systemic inflammatory disease in which the immune system attacks the lining of the joints and tendon sheaths. In the hand and wrist it causes synovitis (swelling and inflammation) and over time can lead to joint deformities such as finger drift, swan neck, and boutonniere, as well as tendon ruptures and nerve compression. Early, controlled treatment limits this progression.",
+    },
+    {
+      question: "Is surgery the main treatment?",
+      answer:
+        "No. Rheumatoid arthritis is primarily a medical disease, and the foundation of treatment is medication managed by a rheumatologist to control the underlying inflammation. The hand surgeon addresses specific problems that medication cannot fix, such as a ruptured tendon, a compressed nerve, a painful deformity, or a joint that needs reconstruction or fusion.",
+    },
+    {
+      question: "Why is treating it early important?",
+      answer:
+        "Persistent inflammation gradually weakens the ligaments and tendons that balance the hand, which can lead to fixed deformities and tendon ruptures. Controlling the disease early with medical management, and recognizing structural problems before they become fixed or a tendon ruptures, protects hand function. This is one reason coordinated follow-up between rheumatology and hand surgery matters.",
+    },
+    {
+      question: "What does the hand surgeon do for rheumatoid arthritis?",
+      answer:
+        "The hand surgeon works alongside the rheumatologist and focuses on the mechanical problems that medication cannot reverse. Common procedures include repair or reconstruction of ruptured tendons, removal of inflamed tendon lining to prevent further ruptures, decompression of a compressed nerve such as in carpal tunnel syndrome, and reconstruction or fusion of a painful or unstable joint. The aim is to restore function and relieve pain.",
+    },
+  ],
+  bottomCtaTitle: "Rheumatoid arthritis affecting your hands?",
+  bottomCtaItalic: "The best results come from coordinated care.",
+  bottomCtaBody:
+    "Rheumatoid arthritis is managed medically, and the hand surgeon addresses the specific problems medication cannot fix. The first step is an evaluation that fits into your overall care, so any tendon, nerve, or joint problem is caught and treated at the right time.",
+  metaTitle: "Rheumatoid Arthritis of the Hand | Steven J. Lee, MD",
+  metaDescription:
+    "Rheumatoid arthritis of the hand and wrist, evaluated and treated by Dr. Steven J. Lee, MD, in coordination with rheumatology. Tendon ruptures, nerve compression, painful deformities, and joint reconstruction explained.",
+  schemaDescription:
+    "Rheumatoid arthritis of the hand is a systemic inflammatory arthritis affecting the joints and tendons of the hand and wrist, causing synovitis, joint deformity (such as finger drift, swan neck, and boutonniere), and tendon ruptures. Medical management with a rheumatologist is primary; the hand surgeon addresses tendon ruptures, nerve compression, painful deformities, and joint reconstruction or fusion when needed.",
+};
+
+const boutonniereDeformity: ConditionPageContent = {
+  slug: "boutonniere-deformity",
+  name: "Boutonniere Deformity",
+  region: "Hand & Wrist",
+  headerTitle: "Boutonniere Deformity:",
+  headerItalic: "why early recognition matters.",
+  headerLede:
+    "A bent finger, with the middle joint flexed and the fingertip hyperextended, from disruption of the central slip of the extensor tendon. Recognized early, it is often treated successfully without surgery; left unrecognized, it can become a fixed deformity.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Double Fellowship-Trained · Hand & Sports Medicine",
+    reviewed: "June 2026",
+  },
+  overview: [
+    "A boutonniere deformity is a finger in which the middle joint, the PIP joint, is bent into flexion while the fingertip joint, the DIP joint, is hyperextended. The name comes from the way the joint can poke through the tendon like a finger through a buttonhole. It develops when the central slip, the part of the extensor tendon that straightens the middle joint, is disrupted.",
+    "The central slip can be torn by a jamming injury or a cut, or it can be weakened by inflammation in rheumatoid arthritis. Importantly, a boutonniere deformity is often not obvious at the moment of injury. It can develop over the following days to weeks as the tendon balance shifts, which is exactly why early recognition is so valuable, the deformity is far easier to treat before it becomes fixed.",
+  ],
+  bodySections: [
+    {
+      heading: "How the deformity develops",
+      body: [
+        "When the central slip is disrupted, it can no longer straighten the middle joint, so the joint drifts into flexion. The other extensor structures, the lateral bands, then slip toward the palm side of the joint, which worsens the flexion at the middle joint and pulls the fingertip into hyperextension. The longer this imbalance persists, the stiffer and more fixed the finger becomes.",
+      ],
+    },
+    {
+      heading: "Causes",
+      body: ["A boutonniere deformity can follow:"],
+      bullets: [
+        "A jamming injury that forces the middle joint into flexion",
+        "A cut or laceration over the back of the middle joint",
+        "Rheumatoid arthritis, where inflammation weakens the central slip",
+      ],
+    },
+    {
+      heading: "Why early recognition matters",
+      body: [
+        "A fresh boutonniere injury can look deceptively minor, and the deformity may not appear until days or weeks later. Recognized early, it usually responds to splinting and therapy. Once it becomes chronic and fixed, correction is harder and often requires surgery. For this reason a finger that cannot fully straighten its middle joint after a jamming injury deserves prompt evaluation, even when the initial swelling seems modest.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee emphasizes early recognition because it changes the entire treatment path. When a boutonniere deformity is identified early, the great majority are treated nonoperatively with a splint that holds the middle joint straight while leaving the fingertip free to move, worn continuously for about six weeks, paired with a guided therapy program. This allows the central slip to heal in the correct position.",
+      "For chronic or fixed deformities, where splinting alone cannot restore balance, surgery is considered. Reconstruction of the central slip and rebalancing of the extensor mechanism can improve the position and function of the finger. The result of surgery for a chronic boutonniere is generally less predictable than early splinting, which is the strongest argument for catching the problem early.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["Recognized early, most boutonniere deformities are treated without surgery:"],
+      bullets: [
+        "Continuous PIP extension splinting, typically for about six weeks",
+        "A splint that holds the middle joint straight while leaving the fingertip free to bend",
+        "A guided hand therapy program to restore motion as healing progresses",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "For chronic or fixed deformities that no longer respond to splinting, surgery reconstructs the central slip and rebalances the extensor mechanism to improve the finger's position and function. Restoring motion in a stiff finger is part of the work, and results are generally less predictable than early nonoperative treatment.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery centers on protecting the healing tendon:",
+  recovery: [
+    { when: "Weeks 0 to 6", what: "Continuous PIP extension splinting holds the middle joint straight so the central slip heals in position, while the fingertip is kept moving." },
+    { when: "Weeks 6 to 10", what: "Splinting is gradually weaned and guided motion of the middle joint begins under hand therapy supervision." },
+    { when: "Beyond 10 weeks", what: "Progressive strengthening and return to full hand use, with motion continuing to improve over the following months." },
+  ],
+  misconceptions: {
+    intro: "A few points worth clearing up:",
+    items: [
+      { heading: "It may not show up right away.", body: "A boutonniere deformity can develop over days to weeks after a jamming injury, so a finger that will not fully straighten its middle joint deserves evaluation even if it looked minor at first." },
+      { heading: "Early splinting works.", body: "When recognized early, most boutonniere deformities are treated successfully with continuous extension splinting and therapy, without surgery." },
+      { heading: "Splint compliance is the key.", body: "The splint must hold the middle joint straight continuously for about six weeks. Interrupting it lets the tendon heal in the wrong position." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "PIP flexion with DIP hyperextension" },
+    { label: "Underlying cause", value: "Disruption of the central slip of the extensor tendon" },
+    { label: "Often follows", value: "A jamming injury, a cut, or rheumatoid arthritis" },
+    { label: "Early treatment", value: "Continuous PIP extension splinting for about 6 weeks" },
+    { label: "Surgical option", value: "Central slip reconstruction for chronic deformity" },
+    { label: "Key point", value: "Early recognition makes nonoperative treatment likely" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained in hand and upper extremity surgery",
+    "Emphasizes early recognition, when nonoperative treatment works best",
+    "Sees many complex and second-opinion hand cases",
+    "Reconstruction and rebalancing for chronic, fixed deformities",
+  ],
+  related: [
+    { name: "Mallet Finger", slug: "mallet-finger" },
+    { name: "Swan Neck Deformity", slug: "swan-neck-deformity" },
+    { name: "Finger Collateral Ligament Injury", slug: "finger-collateral-ligament" },
+    { name: "Rheumatoid Arthritis of the Hand", slug: "rheumatoid-arthritis-hand" },
+  ],
+  ctaCard: {
+    eyebrow: "Jammed finger that will not straighten?",
+    headline: "Caught early, it is usually treated with a splint.",
+  },
+  faqHeadline: "Boutonniere deformity, answered.",
+  faqs: [
+    {
+      question: "What is a boutonniere deformity?",
+      answer:
+        "A boutonniere deformity is a finger in which the middle joint (PIP) is bent into flexion and the fingertip joint (DIP) is hyperextended. It develops when the central slip, the part of the extensor tendon that straightens the middle joint, is disrupted by a jamming injury, a cut, or inflammation from rheumatoid arthritis. The imbalance pulls the middle joint down and the fingertip up.",
+    },
+    {
+      question: "Why does early recognition matter so much?",
+      answer:
+        "A boutonniere deformity often is not obvious right after the injury and can develop over the following days to weeks. Recognized early, it usually responds to continuous splinting and therapy. Once it becomes chronic and fixed, it is harder to correct and may require surgery with less predictable results. A finger that cannot fully straighten its middle joint after a jamming injury should be evaluated promptly.",
+    },
+    {
+      question: "How is it treated without surgery?",
+      answer:
+        "Early boutonniere deformities are typically treated with a splint that holds the middle joint straight while leaving the fingertip free to move, worn continuously for about six weeks, along with a guided hand therapy program. This lets the central slip heal in the correct position. Consistent splint use is the key to success.",
+    },
+    {
+      question: "When is surgery needed?",
+      answer:
+        "Surgery is considered for chronic or fixed deformities that no longer respond to splinting. It involves reconstructing the central slip and rebalancing the extensor mechanism to improve the finger's position and function. Because results of surgery for a chronic boutonniere are generally less predictable than early splinting, the emphasis is on recognizing and treating the problem early.",
+    },
+  ],
+  bottomCtaTitle: "A finger that will not straighten after a jam?",
+  bottomCtaItalic: "Get it checked before it becomes fixed.",
+  bottomCtaBody:
+    "A boutonniere deformity can develop quietly in the days after an injury, and it is far easier to treat early. The first step is an evaluation, so a simple splinting program can be started before the deformity becomes fixed.",
+  metaTitle: "Boutonniere Deformity | Steven J. Lee, MD",
+  metaDescription:
+    "Boutonniere deformity of the finger evaluated and treated by Dr. Steven J. Lee, MD. Causes, why early recognition matters, and treatment from PIP extension splinting to central slip reconstruction.",
+  schemaDescription:
+    "Boutonniere deformity is a finger deformity with PIP joint flexion and DIP joint hyperextension, caused by disruption of the central slip of the extensor tendon after injury or in rheumatoid arthritis. Recognized early, it is often treated nonoperatively with continuous PIP extension splinting for about six weeks and therapy; chronic or fixed deformities may require central slip reconstruction.",
+};
+
+const malletFinger: ConditionPageContent = {
+  slug: "mallet-finger",
+  name: "Mallet Finger",
+  region: "Hand & Wrist",
+  headerTitle: "Mallet Finger:",
+  headerItalic: "a drooping fingertip, and how it heals.",
+  headerLede:
+    "A fingertip that droops and cannot fully straighten, from disruption of the terminal extensor tendon at the last joint, often from a ball striking the finger. Most mallet fingers heal well with continuous splinting, and splint compliance is the key to success.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Double Fellowship-Trained · Hand & Sports Medicine",
+    reviewed: "June 2026",
+  },
+  overview: [
+    "A mallet finger is a fingertip that droops at the last joint, the DIP joint, and cannot be straightened actively. It results from disruption of the terminal extensor tendon, the tendon that straightens the very tip of the finger, where it attaches at the base of the fingertip bone. Sometimes a small piece of bone is pulled off with the tendon, called a bony mallet.",
+    "The classic cause is a ball striking the end of an extended finger, which is why it is sometimes called baseball finger. The injury forcibly bends the fingertip while the tendon is trying to keep it straight, and the tendon either tears or avulses a fragment of bone. The good news is that most mallet fingers heal well with splinting alone, provided the splint is worn correctly and continuously.",
+  ],
+  bodySections: [
+    {
+      heading: "What happens in the finger",
+      body: [
+        "The terminal extensor tendon is what straightens the fingertip. When it is disrupted, the tip can no longer be held straight and droops downward, while the pull of the flexor tendon on the palm side goes unopposed. The aim of treatment is to hold the fingertip straight continuously so the tendon, or the bony fragment, can heal in the correct position.",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "The diagnosis is usually clear on examination: the fingertip droops and cannot be actively straightened. An X-ray is important to determine whether the injury is purely tendinous or whether a fragment of bone was avulsed, and if so, how large the fragment is and whether the joint has shifted out of position (subluxation). These findings guide whether splinting alone is sufficient or whether surgery should be considered.",
+      ],
+    },
+    {
+      heading: "Splinting is the foundation",
+      body: [
+        "For the great majority of mallet fingers, continuous splinting of the fingertip in a straight position for six to eight weeks allows the tendon to heal. The single most important factor in success is keeping the fingertip straight at all times during this period, including when changing or cleaning the splint. Letting the tip droop even briefly can reset the healing clock.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee treats the great majority of mallet fingers nonoperatively. The fingertip is held straight in a splint continuously for six to eight weeks, followed by a period of nighttime splinting as the tendon matures. The emphasis throughout is on splint technique and compliance, because the tendon heals reliably only if the fingertip is never allowed to droop during the healing period.",
+      "Surgery is reserved for specific situations: a large bony fragment with the joint shifting out of position (subluxation), an open injury, or selected cases that do not heal with splinting. When surgery is needed, the goal is to restore the alignment of the joint and the attachment of the tendon. For most patients, however, a well-managed splinting program is all that is required.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["Most mallet fingers are treated successfully without surgery:"],
+      bullets: [
+        "Continuous DIP extension splinting for six to eight weeks, keeping the fingertip straight at all times",
+        "A period of nighttime splinting afterward as the tendon matures",
+        "Careful splint hygiene, keeping the tip straight even during splint changes",
+        "Hand therapy guidance on technique and a graded return to motion",
+      ],
+    },
+    {
+      heading: "When surgery is considered",
+      body: [
+        "Surgery is reserved for a large bony fragment with the joint shifting out of position (subluxation), open injuries, and selected cases that do not heal with splinting. The goal is to restore the joint alignment and the tendon attachment. Most patients never need an operation.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery follows the healing of the tendon:",
+  recovery: [
+    { when: "Weeks 0 to 8", what: "Continuous splinting holds the fingertip straight so the tendon heals. The tip must not be allowed to droop, even during splint changes." },
+    { when: "Weeks 8 to 12", what: "Splinting is gradually reduced, often continued at night, and gentle motion of the fingertip begins under guidance." },
+    { when: "Beyond 12 weeks", what: "Return to full use. A small residual droop or a slight bump at the joint is common and usually does not affect function." },
+  ],
+  misconceptions: {
+    intro: "A few points worth clearing up:",
+    items: [
+      { heading: "It is not just a jammed finger.", body: "A drooping fingertip that cannot be straightened is a tendon injury, not a simple sprain. It needs splinting, and an X-ray to check for a bone fragment." },
+      { heading: "Splint compliance is everything.", body: "The fingertip must stay straight continuously for six to eight weeks. Letting it droop, even briefly during a splint change, can restart the healing process." },
+      { heading: "Most do not need surgery.", body: "The great majority of mallet fingers heal well with splinting. Surgery is reserved for large bony fragments with joint subluxation or open injuries." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "Drooping fingertip from terminal extensor tendon disruption" },
+    { label: "Classic cause", value: "A ball striking the end of the finger" },
+    { label: "First-line treatment", value: "Continuous DIP extension splinting, 6 to 8 weeks" },
+    { label: "Key to success", value: "Keeping the fingertip straight at all times" },
+    { label: "Imaging", value: "X-ray to check for a bony fragment and joint position" },
+    { label: "Surgery", value: "For large bony fragments with subluxation or open injury" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained in hand and upper extremity surgery",
+    "Treats the great majority of mallet fingers without surgery",
+    "Careful attention to splint technique and compliance",
+    "Surgery reserved for bony fragments with subluxation or open injuries",
+  ],
+  related: [
+    { name: "Boutonniere Deformity", slug: "boutonniere-deformity" },
+    { name: "Swan Neck Deformity", slug: "swan-neck-deformity" },
+    { name: "Mucous Cyst", slug: "mucous-cyst" },
+    { name: "Finger Collateral Ligament Injury", slug: "finger-collateral-ligament" },
+  ],
+  ctaCard: {
+    eyebrow: "Fingertip that will not straighten?",
+    headline: "Most mallet fingers heal with a splint.",
+  },
+  faqHeadline: "Mallet finger, answered.",
+  faqs: [
+    {
+      question: "What is a mallet finger?",
+      answer:
+        "A mallet finger is a fingertip that droops at the last joint and cannot be actively straightened, caused by disruption of the terminal extensor tendon where it attaches at the base of the fingertip bone. It often happens when a ball strikes the end of an extended finger. Sometimes a small piece of bone is pulled off with the tendon, which is called a bony mallet.",
+    },
+    {
+      question: "Do I need surgery for a mallet finger?",
+      answer:
+        "Usually not. Most mallet fingers are treated nonoperatively with continuous splinting of the fingertip in a straight position for six to eight weeks. Surgery is reserved for specific situations, such as a large bony fragment with the joint shifting out of position (subluxation) or an open injury. An X-ray helps determine which situation applies.",
+    },
+    {
+      question: "How long do I wear the splint, and why does it matter so much?",
+      answer:
+        "The fingertip is splinted straight continuously for six to eight weeks, often followed by a period of nighttime splinting. Splint compliance is the key to success: the fingertip must stay straight at all times, including during splint changes and cleaning. Allowing the tip to droop, even briefly, can interrupt healing and restart the clock.",
+    },
+    {
+      question: "What happens if a mallet finger is not treated?",
+      answer:
+        "Left untreated, the fingertip may remain permanently drooped, and over time a swan neck deformity can develop at the same finger because of the shift in tendon balance. Treating a mallet finger promptly with proper splinting gives the best chance of a straight, functional fingertip, which is why early evaluation is worthwhile.",
+    },
+  ],
+  bottomCtaTitle: "A fingertip that droops and will not straighten?",
+  bottomCtaItalic: "It usually heals well with the right splint.",
+  bottomCtaBody:
+    "Most mallet fingers heal with a continuous splinting program, and the first step is an evaluation with an X-ray to confirm the injury and check for a bone fragment. Done right, and worn faithfully, a splint is often all that is needed.",
+  metaTitle: "Mallet Finger | Steven J. Lee, MD",
+  metaDescription:
+    "Mallet finger (drooping fingertip) evaluated and treated by Dr. Steven J. Lee, MD. Causes, the role of continuous DIP extension splinting, and when surgery is needed for bony fragments or open injuries.",
+  schemaDescription:
+    "Mallet finger is a drooping fingertip caused by disruption of the terminal extensor tendon at the DIP joint, often from a ball striking the fingertip. Most are treated nonoperatively with continuous DIP extension splinting for six to eight weeks; surgery is reserved for large bony fragments with joint subluxation or open injuries. Splint compliance is the key to success.",
+};
+
+const kienbocksDisease: ConditionPageContent = {
+  slug: "kienbocks-disease",
+  name: "Kienbock's Disease",
+  region: "Hand & Wrist",
+  headerTitle: "Kienbock's Disease:",
+  headerItalic: "loss of blood supply to a wrist bone.",
+  headerLede:
+    "Wrist pain, stiffness, and reduced grip from loss of blood supply to the lunate, one of the small carpal bones of the wrist. Treatment is staged by imaging, with the goal of offloading the lunate and preserving a functional wrist.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Double Fellowship-Trained · Hand & Sports Medicine",
+    reviewed: "June 2026",
+  },
+  overview: [
+    "Kienbock's disease is avascular necrosis of the lunate, meaning the lunate, one of the small carpal bones in the center of the wrist, loses its blood supply and begins to weaken. Over time the bone can soften, fragment, and collapse, which changes the mechanics of the entire wrist.",
+    "Patients typically notice gradual wrist pain, stiffness, and a weaker grip, often without a clear injury. Because the early stages can resemble a simple wrist strain, the diagnosis is sometimes delayed. The outlook depends heavily on the stage at which it is caught, which is why imaging and staging are central to deciding on treatment.",
+  ],
+  bodySections: [
+    {
+      heading: "What happens to the lunate",
+      body: [
+        "When the lunate loses its blood supply, the bone is no longer able to maintain and repair itself under the normal loads of the wrist. In the early stages the bone looks structurally intact but shows changes on MRI. As the disease advances, the bone can flatten, fragment, and collapse, after which the surrounding carpal bones shift and wrist arthritis can follow.",
+      ],
+    },
+    {
+      heading: "Symptoms",
+      body: ["Common complaints include:"],
+      bullets: [
+        "Gradual central wrist pain, often without a clear injury",
+        "Stiffness and reduced wrist motion",
+        "Decreased grip strength",
+        "Tenderness over the back of the wrist at the lunate",
+      ],
+    },
+    {
+      heading: "Staging and the role of imaging",
+      body: [
+        "Kienbock's disease is staged using imaging. X-rays may be normal very early, so an MRI is often used to detect the loss of blood supply before the bone changes shape. As the disease progresses, X-rays show flattening, fragmentation, and collapse, and CT can detail the bone. Staging matters because treatment is matched to the stage, from observation early to reconstructive or salvage procedures in advanced collapse.",
+      ],
+    },
+    {
+      heading: "Why ulnar variance matters",
+      body: [
+        "The relative lengths of the two forearm bones at the wrist, called ulnar variance, influence how load passes through the lunate. When the ulna sits shorter than the radius (negative ulnar variance), the lunate bears more stress, which is relevant to both the development of the disease and the choice of treatment. Procedures that level the joint aim to shift load away from the lunate.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee's approach to Kienbock's disease is staged. The first step is accurate diagnosis and staging with X-ray and MRI, because the right treatment depends entirely on how far the disease has progressed and on the patient's ulnar variance. In the earliest stages, immobilization and careful observation may be appropriate while the situation is monitored.",
+      "When intervention is warranted, the strategy is to offload the lunate and preserve the wrist. Options range by stage and may include a joint-leveling osteotomy to redistribute load, procedures intended to restore blood supply (revascularization), and, in advanced collapse, salvage procedures such as proximal row carpectomy or a partial wrist fusion. The unifying goal across all stages is to relieve pain and protect wrist function for the long term.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Early-stage treatment",
+      body: ["In early disease the emphasis is on protecting and offloading the lunate:"],
+      bullets: [
+        "Immobilization and activity modification",
+        "Careful observation with monitoring of the stage over time",
+        "Joint-leveling osteotomy to shift load off the lunate in suitable cases",
+        "Revascularization procedures intended to restore blood supply",
+      ],
+    },
+    {
+      heading: "Advanced-stage and salvage options",
+      body: [
+        "When the lunate has collapsed and the wrist mechanics have changed, salvage procedures relieve pain while preserving a functional, if altered, wrist. Options include proximal row carpectomy and partial wrist fusion, chosen based on the pattern of damage and the patient's needs. The goal is durable pain relief and a useful wrist.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery depends on the procedure performed:",
+  recovery: [
+    { when: "Early weeks", what: "Immobilization protects the wrist or the surgical reconstruction while early healing takes place." },
+    { when: "Weeks 6 to 12", what: "Progressive motion and strengthening under hand therapy guidance as healing allows." },
+    { when: "Beyond 12 weeks", what: "Continued recovery of motion and grip over the following months, with the timeline varying by the procedure performed." },
+  ],
+  misconceptions: {
+    intro: "A few points worth clearing up:",
+    items: [
+      { heading: "It is not a simple wrist sprain.", body: "Kienbock's disease involves loss of blood supply to a wrist bone. Persistent central wrist pain without a clear injury deserves imaging, including an MRI, rather than being dismissed as a strain." },
+      { heading: "The stage drives the treatment.", body: "Early disease may be managed with immobilization or joint-leveling procedures, while advanced collapse may need salvage surgery. Accurate staging is essential." },
+      { heading: "The goal is to preserve the wrist.", body: "Across stages, treatment aims to offload the lunate and protect wrist function, not simply to remove the bone." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "Avascular necrosis of the lunate (a carpal bone)" },
+    { label: "Typical symptoms", value: "Central wrist pain, stiffness, decreased grip" },
+    { label: "Diagnosis", value: "Staged with X-ray and MRI" },
+    { label: "Relevant factor", value: "Ulnar variance influences load on the lunate" },
+    { label: "Early treatment", value: "Immobilization, observation, joint-leveling osteotomy" },
+    { label: "Advanced options", value: "Proximal row carpectomy, partial wrist fusion" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained in hand and upper extremity surgery",
+    "Stages the disease carefully with X-ray and MRI before treatment",
+    "Matches treatment to the stage and the patient's ulnar variance",
+    "Sees many complex and second-opinion wrist cases",
+  ],
+  related: [
+    { name: "Scaphoid Fracture", slug: "scaphoid-fracture" },
+    { name: "SLAC Wrist and Salvage Procedures", slug: "slac-wrist" },
+    { name: "Scapholunate Ligament Injury", slug: "scapholunate" },
+    { name: "Wrist Arthroscopy", slug: "wrist-arthroscopy" },
+  ],
+  ctaCard: {
+    eyebrow: "Persistent central wrist pain?",
+    headline: "Staging it early protects the wrist.",
+  },
+  faqHeadline: "Kienbock's disease, answered.",
+  faqs: [
+    {
+      question: "What is Kienbock's disease?",
+      answer:
+        "Kienbock's disease is avascular necrosis of the lunate, meaning one of the small carpal bones in the center of the wrist loses its blood supply and begins to weaken. Over time the bone can soften, fragment, and collapse. It typically causes gradual wrist pain, stiffness, and decreased grip strength, often without a clear injury.",
+    },
+    {
+      question: "How is it diagnosed and staged?",
+      answer:
+        "Diagnosis combines the clinical exam with imaging. X-rays may be normal in the earliest stages, so an MRI is often used to detect the loss of blood supply before the bone changes shape. As the disease advances, X-rays show flattening, fragmentation, and collapse. Staging is important because treatment is matched to how far the disease has progressed, and the relative length of the forearm bones (ulnar variance) is also assessed.",
+    },
+    {
+      question: "How is Kienbock's disease treated?",
+      answer:
+        "Treatment is staged. In early disease, immobilization and observation may be appropriate, and joint-leveling osteotomy or revascularization procedures can offload the lunate and aim to preserve it. In advanced collapse, salvage procedures such as proximal row carpectomy or a partial wrist fusion relieve pain while preserving a functional wrist. The unifying goal is to offload the lunate and protect wrist function.",
+    },
+    {
+      question: "Why does ulnar variance matter?",
+      answer:
+        "Ulnar variance is the relative length of the two forearm bones at the wrist. When the ulna sits shorter than the radius, the lunate bears more stress, which is relevant both to how the disease develops and to the choice of treatment. Joint-leveling procedures are designed to shift load away from the lunate, which is why this measurement is part of the evaluation.",
+    },
+  ],
+  bottomCtaTitle: "Central wrist pain that will not resolve?",
+  bottomCtaItalic: "Early staging changes the options.",
+  bottomCtaBody:
+    "Kienbock's disease is easier to manage when it is caught and staged early, before the lunate collapses. The first step is an accurate diagnosis with X-ray and MRI, so the treatment can be matched to the stage and aimed at preserving the wrist.",
+  metaTitle: "Kienbock's Disease | Steven J. Lee, MD",
+  metaDescription:
+    "Kienbock's disease (avascular necrosis of the lunate) evaluated and treated by Dr. Steven J. Lee, MD. Symptoms, imaging and staging, the role of ulnar variance, and stage-based treatment from immobilization to salvage procedures.",
+  schemaDescription:
+    "Kienbock's disease is avascular necrosis of the lunate, a carpal bone of the wrist, causing wrist pain, stiffness, and decreased grip strength. It is staged by imaging (X-ray and MRI), and ulnar variance is relevant. Treatment ranges by stage from immobilization and observation to joint-leveling osteotomy, revascularization, and salvage procedures such as proximal row carpectomy or partial fusion in advanced collapse.",
+};
+
+const intersectionSyndrome: ConditionPageContent = {
+  slug: "intersection-syndrome",
+  name: "Intersection Syndrome",
+  region: "Hand & Wrist",
+  headerTitle: "Intersection Syndrome:",
+  headerItalic: "the overuse pain on the back of the forearm.",
+  headerLede:
+    "Intersection syndrome is an overuse problem where two groups of forearm tendons cross and rub a few centimeters above the wrist. It causes pain and swelling on the back of the forearm and usually settles with rest and activity changes.",
+  byline: { name: "Steven J. Lee, MD", title: "Double Fellowship-Trained · Hand & Sports Medicine", reviewed: "June 2026" },
+  overview: [
+    "Intersection syndrome happens where the first dorsal compartment tendons (the ones that move the thumb) cross over the second compartment tendons (the wrist extensors) on the back of the forearm. With repetitive wrist motion, the tendons and their sheaths become inflamed at this crossing point, roughly four to six centimeters above the wrist.",
+    "It is most common in rowers, weightlifters, racquet-sport athletes, and anyone doing repetitive wrist extension. The good news is that the large majority settle without surgery.",
+  ],
+  bodySections: [
+    {
+      heading: "How it shows up",
+      body: [
+        "Pain and swelling sit on the back of the forearm, above the wrist, rather than over the wrist itself. Some patients notice a squeak or a soft creaking (crepitus) with wrist movement.",
+      ],
+      bullets: [
+        "Pain and swelling a few centimeters above the back of the wrist",
+        "A squeak or creaking sensation with wrist motion",
+        "Symptoms that flare with repetitive gripping and wrist extension",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "Intersection syndrome is usually a clinical diagnosis based on the location of the pain and swelling and the activities that bring it on. It is distinguished from de Quervain's tenosynovitis, which sits lower and closer to the thumb side of the wrist. Imaging is used mainly when the picture is atypical.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee treats intersection syndrome conservatively, because the large majority resolve with rest, splinting, and a change in the activity that caused it. The emphasis is on identifying and modifying the repetitive motion that drives the inflammation.",
+      "When pain persists despite a real trial of non-surgical care, a corticosteroid injection can settle it, and surgical release of the involved compartment is reserved for the small minority who do not improve.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["Most cases improve with a structured non-surgical plan."],
+      bullets: [
+        "Relative rest and activity modification to reduce repetitive wrist extension",
+        "A wrist splint to rest the tendons",
+        "Anti-inflammatory measures for symptom control",
+        "A corticosteroid injection when symptoms persist",
+      ],
+    },
+    {
+      heading: "Surgery",
+      body: [
+        "Surgical release of the second dorsal compartment is reserved for the small minority whose pain persists after an extended, genuine trial of conservative care.",
+      ],
+    },
+  ],
+  recoveryIntro: "Most patients recover without surgery on this general timeline:",
+  recovery: [
+    { when: "Weeks 0 to 2", what: "Rest, splinting, and activity modification, with anti-inflammatory measures to settle the flare." },
+    { when: "Weeks 2 to 6", what: "Gradual return to activity as symptoms allow, correcting the technique or training error that provoked it." },
+    { when: "Beyond 6 weeks", what: "Persistent cases are reassessed; an injection or, rarely, surgical release is considered." },
+  ],
+  misconceptions: {
+    intro: "What patients often get wrong:",
+    items: [
+      { heading: "It is not de Quervain's.", body: "Intersection syndrome sits higher on the forearm than de Quervain's tenosynovitis. The location is what separates them, and it changes the treatment." },
+      { heading: "Rest alone is not always enough.", body: "Without changing the repetitive motion that caused it, the pain tends to return. Correcting the activity or technique is part of the cure." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "Overuse inflammation where forearm tendons cross" },
+    { label: "Where it hurts", value: "Back of the forearm, above the wrist" },
+    { label: "Common in", value: "Rowers, weightlifters, racquet athletes" },
+    { label: "First-line care", value: "Rest, splinting, activity modification" },
+    { label: "Surgery", value: "Rarely needed" },
+  ],
+  whyDrLee: [
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
+    "Double fellowship-trained, hand and upper extremity plus sports medicine",
+    "Conservative first, with attention to the sport or activity that caused it",
+    "Surgery reserved for the small minority who truly need it",
+  ],
+  related: [
+    { name: "De Quervain's Tenosynovitis", slug: "de-quervains" },
+    { name: "Carpal Tunnel Syndrome", slug: "carpal-tunnel" },
+    { name: "Hand & Wrist Fractures", slug: "hand-wrist-fractures" },
+  ],
+  ctaCard: { eyebrow: "Aching above the wrist?", headline: "Get the diagnosis right before you train through it." },
+  faqHeadline: "Intersection syndrome, answered.",
+  faqs: [
+    { question: "What is intersection syndrome?", answer: "Intersection syndrome is an overuse condition where two groups of forearm tendons cross and rub a few centimeters above the back of the wrist, causing pain, swelling, and sometimes a squeak. It is common in rowers, weightlifters, and racquet-sport athletes and usually improves with rest, splinting, and activity changes." },
+    { question: "How is it different from de Quervain's?", answer: "De Quervain's tenosynovitis causes pain lower down, on the thumb side of the wrist, while intersection syndrome sits higher up on the back of the forearm. The location of the pain is the main way to tell them apart, and it determines the treatment." },
+    { question: "Will I need surgery?", answer: "Almost certainly not. The large majority of intersection syndrome resolves with relative rest, a wrist splint, anti-inflammatory measures, and a change in the activity that caused it. Surgery to release the involved compartment is reserved for the small minority whose pain persists after an extended trial of conservative care." },
+    { question: "How long does it take to get better?", answer: "Many patients improve within a few weeks of resting the tendons and modifying the activity, though it can take longer in athletes who need to keep training. Correcting the repetitive motion or technique that provoked it is what prevents it from coming back." },
+  ],
+  bottomCtaTitle: "Forearm pain that won't quit?",
+  bottomCtaItalic: "A correct diagnosis is the fast path back.",
+  bottomCtaBody:
+    "Intersection syndrome is very treatable once it is correctly identified and the provoking activity is addressed. Get an evaluation before you train around forearm pain that is not improving.",
+  metaTitle: "Intersection Syndrome, Steven J. Lee, MD",
+  metaDescription:
+    "Intersection syndrome explained: overuse pain and swelling on the back of the forearm above the wrist, common in rowers and weightlifters. Diagnosis and conservative treatment by Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
+  schemaDescription:
+    "Intersection syndrome is an overuse tenosynovitis where the first and second dorsal compartment tendons cross on the back of the forearm, causing pain and swelling above the wrist. It is treated with rest, splinting, activity modification, and occasionally a corticosteroid injection; surgical release is rarely needed.",
+};
+
+const nerveLaceration: ConditionPageContent = {
+  slug: "nerve-laceration",
+  name: "Nerve Laceration",
+  region: "Hand & Wrist",
+  headerTitle: "Nerve Laceration:",
+  headerItalic: "microsurgical repair to restore feeling and function.",
+  headerLede:
+    "A cut nerve in the hand, wrist, or forearm causes numbness and sometimes weakness in that nerve's territory. Early microsurgical repair gives the best chance of recovering feeling and function.",
+  byline: { name: "Steven J. Lee, MD", title: "Double Fellowship-Trained · Hand & Sports Medicine", reviewed: "June 2026" },
+  overview: [
+    "Nerves carry both sensation and the signals that move muscles. When a nerve is cut, often by glass, a knife, or a deep laceration, the skin it supplies goes numb and, depending on the nerve, certain muscles weaken. Unlike a cut tendon, a divided nerve does not simply hold still; the cut ends must be brought back together precisely so the fibers can regrow across the repair.",
+    "Outcomes depend on how cleanly the nerve was cut, where along its length the injury sits, the patient's age, and how soon a precise repair is performed. Recovery is gradual because the nerve must regrow from the repair site toward the fingertip.",
+  ],
+  bodySections: [
+    {
+      heading: "What a cut nerve feels like",
+      body: [
+        "A complete nerve laceration produces numbness in a specific, mappable area of the hand and, for nerves that drive muscles, weakness or loss of certain movements. Many nerve injuries occur alongside cut tendons or blood vessels in the same wound, so the whole injury is evaluated together.",
+      ],
+    },
+    {
+      heading: "How it is evaluated",
+      body: [
+        "The diagnosis is usually clear from the mechanism, the wound, and a careful sensory and motor exam. In selected cases, nerve studies help map the injury or assess recovery over time. A wound that suggests a deep, sharp injury is explored so the nerve, and any associated tendon, can be repaired.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee's priority with any sharp hand injury is to see the whole picture, the nerve, the tendons, and the blood supply, because these structures travel together and are often injured together. A clean nerve laceration is best repaired early, under magnification, with fine sutures that align the nerve ends without tension.",
+      "When a segment of nerve is missing or the ends cannot be brought together without tension, the gap is bridged with a nerve graft or a nerve conduit. Recovery is then guided by hand therapy and sensory re-education as feeling returns.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Microsurgical repair",
+      body: [
+        "A clean, sharply cut nerve is repaired by precisely aligning and suturing the ends under magnification (a direct repair). Done early and without tension, this gives the regrowing fibers the best path to follow.",
+      ],
+    },
+    {
+      heading: "Nerve graft or conduit",
+      body: [
+        "When the ends cannot meet without tension, or a segment is missing, the gap is reconstructed with a nerve graft or a synthetic conduit so the fibers have a scaffold to regrow across.",
+      ],
+    },
+  ],
+  recoveryIntro: "Nerve recovery is gradual and follows the regrowth of the nerve fibers:",
+  recovery: [
+    { when: "Early", what: "The repair or graft is protected, often with a splint, while the coaptation heals. Any associated tendon repair is rehabilitated on its own protected schedule." },
+    { when: "Weeks to months", what: "The nerve regrows slowly from the repair toward the fingertip. Hand therapy maintains motion and prevents stiffness while feeling has not yet returned." },
+    { when: "Months and beyond", what: "Sensation returns gradually, supported by sensory re-education. Final recovery can take many months and depends on the level and severity of the injury." },
+  ],
+  misconceptions: {
+    intro: "What patients often misunderstand:",
+    items: [
+      { heading: "A numb finger after a cut is not minor.", body: "Numbness in a defined area after a laceration can mean the nerve was divided. Early evaluation matters, because a clean nerve repaired promptly does far better than one addressed late." },
+      { heading: "Recovery is slow by nature.", body: "Even a perfect repair recovers gradually, because the nerve has to regrow from the repair site. Patience and hand therapy are part of the treatment, not a sign that something is wrong." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "A cut nerve in the hand, wrist, or forearm" },
+    { label: "Typical cause", value: "Glass, knife, or deep laceration" },
+    { label: "Main symptom", value: "Numbness, sometimes weakness, in the nerve's area" },
+    { label: "Best treatment", value: "Early, tension-free microsurgical repair" },
+    { label: "Recovery", value: "Gradual, over months" },
+  ],
+  whyDrLee: [
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
+    "Hand and upper-extremity fellowship training with microsurgical experience",
+    "Treats the whole injury, nerve, tendon, and blood supply, together",
+    "Coordinates repair with structured hand therapy and sensory re-education",
+  ],
+  related: [
+    { name: "Tendon Laceration", slug: "tendon-laceration" },
+    { name: "Hand & Wrist Fractures", slug: "hand-wrist-fractures" },
+    { name: "Carpal Tunnel Syndrome", slug: "carpal-tunnel" },
+  ],
+  ctaCard: { eyebrow: "Numbness after a cut?", headline: "A divided nerve does best when it is repaired early." },
+  faqHeadline: "Nerve lacerations, answered.",
+  faqs: [
+    { question: "How is a cut nerve treated?", answer: "A cleanly cut nerve is repaired microsurgically by aligning and suturing the nerve ends under magnification, ideally early and without tension. When a segment is missing or the ends cannot meet, the gap is bridged with a nerve graft or a synthetic conduit. Hand therapy and sensory re-education then support recovery as feeling returns." },
+    { question: "Will the feeling come back?", answer: "Feeling often returns gradually after a well-aligned, early repair, but recovery is slow because the nerve must regrow from the repair site toward the fingertip. How much returns depends on the level and severity of the injury, the patient's age, and how promptly the repair was done." },
+    { question: "How long does nerve recovery take?", answer: "Nerve fibers regrow slowly, so recovery is measured in months rather than weeks. Hand therapy during this time keeps the joints moving and prevents stiffness while sensation has not yet returned, which protects the final result." },
+    { question: "Why does a cut nerve need surgery when a small cut might not?", answer: "A divided nerve will not reconnect on its own in a useful way; the ends must be brought back together precisely so the fibers can regrow across the repair. That is why a laceration causing numbness in a specific area should be evaluated promptly rather than simply bandaged." },
+  ],
+  bottomCtaTitle: "Cut your hand and lost feeling?",
+  bottomCtaItalic: "Early evaluation protects the result.",
+  bottomCtaBody:
+    "A nerve laceration does best when the whole injury is assessed and repaired early by an experienced hand surgeon. If a cut left part of your hand numb or weak, get it evaluated promptly.",
+  metaTitle: "Nerve Laceration, Steven J. Lee, MD",
+  metaDescription:
+    "Nerve laceration of the hand, wrist, or forearm: early microsurgical repair, nerve grafts and conduits for gaps, and hand therapy for recovery. Treated by Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
+  schemaDescription:
+    "A nerve laceration is a cut of a nerve in the hand, wrist, or forearm causing numbness and sometimes weakness in that nerve's distribution. Treatment is early tension-free microsurgical repair, with nerve grafts or conduits to bridge gaps, followed by hand therapy and sensory re-education.",
+};
+
+const tendonLaceration: ConditionPageContent = {
+  slug: "tendon-laceration",
+  name: "Tendon Laceration",
+  region: "Hand & Wrist",
+  headerTitle: "Tendon Laceration:",
+  headerItalic: "precise repair and a guided motion program.",
+  headerLede:
+    "A cut flexor or extensor tendon takes away a finger's ability to bend or straighten. Precise repair followed by a structured hand-therapy program restores motion while protecting the repair.",
+  byline: { name: "Steven J. Lee, MD", title: "Double Fellowship-Trained · Hand & Sports Medicine", reviewed: "June 2026" },
+  overview: [
+    "Tendons are the cables that connect muscles to bone and move the fingers. When a tendon is cut, usually by a sharp injury, the finger loses the movement that tendon controls: a cut flexor tendon prevents bending, a cut extensor tendon prevents full straightening. Because tendons are under tension, the cut ends often retract, so the finger may not work even though the skin wound looks small.",
+    "Tendon repair is as much about the rehabilitation as the surgery. The repair must be precise, and the early motion program must protect it while preventing the stiffness and scarring that limit results.",
+  ],
+  bodySections: [
+    {
+      heading: "Flexor versus extensor injuries",
+      body: [
+        "Flexor tendons run on the palm side and bend the fingers. Injuries here, especially in the demanding zone within the finger sometimes called no-man's-land, are technically challenging and need meticulous repair and a carefully staged therapy program.",
+        "Extensor tendons run on the back of the hand and straighten the fingers. Their repair and rehabilitation vary by zone and are often more forgiving, though they still require a protected motion protocol.",
+      ],
+    },
+    {
+      heading: "How it is evaluated",
+      body: [
+        "The diagnosis is usually clear from the inability to bend or straighten the finger and from the wound. Because nerves and blood vessels travel alongside the tendons, the whole injury is examined together, and a wound suggesting a deep, sharp cut is explored and repaired.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee approaches a cut tendon as part of the whole injury, checking the nearby nerves and blood vessels at the same time. The tendon is repaired with a strong, low-profile technique that is built to tolerate the early guided motion that protects the result.",
+      "The repair is then paired with a hand-therapy program matched to the tendon and zone involved. Getting the rehabilitation right is what separates a finger that moves well from one that stiffens or ruptures.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Surgical repair",
+      body: [
+        "The cut ends are retrieved and sewn together with a strong core repair, restoring the tendon's continuity. Any associated nerve or vessel injury is addressed in the same setting.",
+      ],
+    },
+    {
+      heading: "Guided rehabilitation",
+      body: [
+        "Early protected motion under a hand therapist's guidance keeps the tendon gliding and prevents binding scar, while protecting the repair from forces that could rupture it. The exact protocol depends on which tendon and zone were involved.",
+      ],
+    },
+  ],
+  recoveryIntro: "Tendon repair recovery is built around protecting the repair while restoring glide:",
+  recovery: [
+    { when: "Weeks 0 to 6", what: "The repair is protected in a splint with an early, guided motion program from a hand therapist. Active loading is avoided to protect the repair from rupture." },
+    { when: "Weeks 6 to 12", what: "Progressive active motion and then gentle strengthening as the repair matures, advancing on the therapist's schedule." },
+    { when: "Months 3 and beyond", what: "Return to full strength and activity as healing allows. Scar management and motion work continue until the finger glides freely." },
+  ],
+  misconceptions: {
+    intro: "What patients often misunderstand:",
+    items: [
+      { heading: "A small cut can still divide a tendon.", body: "Because tendons are under tension, a cut end can retract out of sight, so a finger can stop bending or straightening even when the skin wound looks minor. Loss of movement after a cut needs prompt evaluation." },
+      { heading: "Therapy is not optional.", body: "The hand-therapy program is part of the repair, not an add-on. Skipping or rushing it leads to stiffness or rupture, which are the main reasons tendon results disappoint." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "A cut flexor or extensor tendon of the hand" },
+    { label: "Typical cause", value: "Sharp laceration (glass, knife, blade)" },
+    { label: "Main sign", value: "Loss of finger bending or straightening" },
+    { label: "Treatment", value: "Precise repair plus guided hand therapy" },
+    { label: "Recovery", value: "Protected motion over about 3 months" },
+  ],
+  whyDrLee: [
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
+    "Hand and upper-extremity fellowship training in complex tendon repair",
+    "Repairs the whole injury, tendon, nerve, and vessel, together",
+    "Pairs the repair with a zone-specific hand-therapy program",
+  ],
+  related: [
+    { name: "Nerve Laceration", slug: "nerve-laceration" },
+    { name: "Finger Pulley Injury", slug: "finger-pulley-injury" },
+    { name: "Hand & Wrist Fractures", slug: "hand-wrist-fractures" },
+  ],
+  ctaCard: { eyebrow: "Finger won't bend after a cut?", headline: "A divided tendon needs precise, early repair." },
+  faqHeadline: "Tendon lacerations, answered.",
+  faqs: [
+    { question: "How is a cut tendon treated?", answer: "A cut tendon is repaired surgically by retrieving the ends and sewing them together with a strong core repair, addressing any associated nerve or vessel injury at the same time. The repair is then paired with a guided hand-therapy program that protects it while restoring smooth gliding of the tendon." },
+    { question: "Why is my finger not moving if the cut was small?", answer: "Tendons are under tension, so when one is divided the cut end can retract out of sight even through a small skin wound. That is why a finger can lose the ability to bend or straighten after what looks like a minor cut, and why loss of movement should be evaluated promptly." },
+    { question: "How important is hand therapy after the repair?", answer: "It is essential. Early protected motion under a hand therapist keeps the tendon gliding and prevents the scar and stiffness that limit results, while protecting the repair from rupture. Skipping or rushing therapy is the most common reason a tendon repair disappoints." },
+    { question: "How long until the finger works normally?", answer: "Tendon repairs are protected for roughly the first six weeks, with progressive motion and then strengthening over the following weeks. Most patients are working back to full strength by around three months, though the exact timeline depends on which tendon and zone were involved." },
+  ],
+  bottomCtaTitle: "Cut your hand and a finger stopped working?",
+  bottomCtaItalic: "Precise repair plus the right therapy is the path back.",
+  bottomCtaBody:
+    "A cut tendon does best when it is repaired early by an experienced hand surgeon and rehabilitated with a structured program. If a finger stopped bending or straightening after a cut, get it evaluated promptly.",
+  metaTitle: "Tendon Laceration, Steven J. Lee, MD",
+  metaDescription:
+    "Flexor and extensor tendon laceration repair and rehabilitation by Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital. Precise surgical repair plus a zone-specific hand-therapy motion program.",
+  schemaDescription:
+    "A tendon laceration is a cut of a flexor or extensor tendon of the hand, causing loss of finger bending or straightening. Treatment is precise surgical repair of the tendon ends followed by a guided early-motion hand-therapy program to restore gliding and prevent stiffness or rupture.",
+};
+
+const handArthritis: ConditionPageContent = {
+  slug: "hand-arthritis",
+  name: "Hand and Finger Arthritis",
+  region: "Hand & Wrist",
+  headerTitle: "Hand & Finger Arthritis:",
+  headerItalic: "comfort and function, with surgery only when needed.",
+  headerLede:
+    "Arthritis of the finger joints and hand causes pain, stiffness, and bony swelling. Most patients are managed well without surgery, which is reserved for joints that stay painful despite good non-surgical care.",
+  byline: { name: "Steven J. Lee, MD", title: "Double Fellowship-Trained · Hand & Sports Medicine", reviewed: "June 2026" },
+  overview: [
+    "Osteoarthritis of the hand is the gradual wearing of the cartilage in the small joints of the fingers, most often the joints closest to the fingertips (DIP) and the middle joints (PIP). It produces pain, stiffness, and the firm bony knobs known as Heberden's and Bouchard's nodes. Arthritis at the base of the thumb is common and important enough that it has its own page.",
+    "Like arthritis elsewhere, hand arthritis exists on a spectrum. Many people live comfortably for years with simple measures, and surgery is considered only for specific joints that remain painful or deformed despite them.",
+  ],
+  bodySections: [
+    {
+      heading: "How it shows up",
+      body: [
+        "Pain and stiffness are usually worst in the morning or after use, and patients often notice firm swelling and enlargement of the affected finger joints. Small fluid-filled mucous cysts can form over an arthritic fingertip joint.",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "The diagnosis is usually clear from the pattern of joint involvement and the exam, with X-rays confirming the degree of cartilage loss. Importantly, the decision to treat is based on symptoms and function, not on how the X-ray looks.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee manages hand arthritis conservatively for as long as it controls symptoms. Many patients do well for years with activity modification, splinting, hand therapy, anti-inflammatory measures, and selective injections.",
+      "When a specific joint stays painful or deformed despite these measures, targeted surgery, such as a joint fusion, a joint replacement, or removal of a painful mucous cyst, can reliably relieve pain. The procedure is matched to which joint is involved and how the hand is used.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["The large majority of hand arthritis is managed without surgery."],
+      bullets: [
+        "Activity modification and joint-protection techniques",
+        "Splinting for painful joints, especially during provocative activities",
+        "Hand therapy and anti-inflammatory measures",
+        "A selective corticosteroid injection for a painful flare",
+      ],
+    },
+    {
+      heading: "Surgery",
+      body: [
+        "For a joint that stays painful despite conservative care, options include fusing the joint (which reliably removes pain at the cost of that joint's motion), replacing the joint in selected fingers, or removing a painful mucous cyst with the underlying bone spur. Dr. Lee matches the procedure to the joint involved and the patient's hand demands.",
+      ],
+    },
+  ],
+  recoveryIntro: "Most patients never need surgery; when a joint is treated, recovery depends on the procedure:",
+  recovery: [
+    { when: "Ongoing", what: "Conservative care, splinting, therapy, and periodic injections as needed to keep symptoms controlled." },
+    { when: "Early after surgery", what: "Protection of the treated joint in a splint, with guided motion of the surrounding fingers to prevent stiffness." },
+    { when: "Following months", what: "Progressive use and strengthening; a fused joint is reliably pain-free once healed, while motion-preserving procedures rehabilitate on their own schedule." },
+  ],
+  misconceptions: {
+    intro: "What patients often misunderstand:",
+    items: [
+      { heading: "A bad X-ray does not mean you need surgery.", body: "The decision to operate is based on pain and function, not on the appearance of the X-ray. Many people with significant arthritis on imaging are comfortable with simple measures." },
+      { heading: "Thumb-base arthritis is its own problem.", body: "Arthritis at the base of the thumb is common and is treated differently from finger-joint arthritis. It has its own dedicated page and its own reconstruction options." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "Osteoarthritis of the finger and hand joints" },
+    { label: "Common joints", value: "Fingertip (DIP) and middle (PIP) joints" },
+    { label: "Main symptoms", value: "Pain, stiffness, bony swelling" },
+    { label: "First-line care", value: "Splints, therapy, injections" },
+    { label: "Surgery", value: "Fusion or replacement for stubborn joints" },
+  ],
+  whyDrLee: [
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
+    "Double fellowship-trained, hand and upper extremity plus sports medicine",
+    "Conservative management for as long as it controls symptoms",
+    "Surgery matched to the specific joint and the patient's hand demands",
+  ],
+  related: [
+    { name: "Basal Joint Arthritis", slug: "basal-joint-arthroplasty" },
+    { name: "Mucous Cyst", slug: "mucous-cyst" },
+    { name: "Trigger Finger", slug: "trigger-finger" },
+  ],
+  ctaCard: { eyebrow: "Stiff, aching finger joints?", headline: "Most hand arthritis is managed well without surgery." },
+  faqHeadline: "Hand and finger arthritis, answered.",
+  faqs: [
+    { question: "Do I need surgery for hand arthritis?", answer: "Usually not. Most hand and finger arthritis is managed for years with activity modification, splints, hand therapy, anti-inflammatory measures, and selective injections. Surgery, such as a joint fusion or replacement, is reserved for a specific joint that stays painful or deformed despite a real trial of these measures." },
+    { question: "What are the bony bumps on my finger joints?", answer: "Those firm knobs are Heberden's nodes (at the fingertip joints) and Bouchard's nodes (at the middle joints), and they are a common feature of finger osteoarthritis. They reflect the bony changes of arthritis and do not by themselves mean surgery is needed; treatment is guided by pain and function." },
+    { question: "Is thumb arthritis the same thing?", answer: "Arthritis at the base of the thumb is a common and distinct problem that is treated differently from finger-joint arthritis, with its own bracing, injection, and reconstruction options. It has its own dedicated page on this site." },
+    { question: "What surgery is done for an arthritic finger joint?", answer: "Options include fusing the joint, which reliably eliminates pain at the cost of that joint's motion, replacing the joint in selected fingers to preserve some movement, or removing a painful mucous cyst along with the underlying bone spur. The choice depends on which joint is involved and how the hand is used." },
+  ],
+  bottomCtaTitle: "Hand arthritis slowing you down?",
+  bottomCtaItalic: "There is a lot to do before surgery is on the table.",
+  bottomCtaBody:
+    "Most hand and finger arthritis is comfortably managed without an operation. If a specific joint stays painful despite good care, an evaluation can sort out whether a targeted procedure makes sense.",
+  metaTitle: "Hand & Finger Arthritis, Steven J. Lee, MD",
+  metaDescription:
+    "Hand and finger osteoarthritis: conservative care with splints, therapy, and injections, and joint fusion or replacement for stubborn joints. Treated by Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
+  schemaDescription:
+    "Hand and finger arthritis is osteoarthritis of the small joints of the fingers and hand, causing pain, stiffness, and bony nodes. It is managed first with activity modification, splinting, hand therapy, and injections, with joint fusion or replacement reserved for joints that remain painful.",
+};
+
+const forearmCompartmentSyndrome: ConditionPageContent = {
+  slug: "forearm-compartment-syndrome",
+  name: "Chronic Exertional Forearm Compartment Syndrome",
+  region: "Hand & Wrist",
+  headerTitle: "Chronic Exertional Forearm Compartment Syndrome:",
+  headerItalic: "forearm pain that builds with effort.",
+  headerLede:
+    "This is exercise-induced forearm pain, tightness, and swelling that builds with activity and eases with rest. It is seen in climbers and grip-intensive athletes, and a fasciotomy is an option for those who must keep competing.",
+  byline: { name: "Steven J. Lee, MD", title: "Double Fellowship-Trained · Hand & Sports Medicine", reviewed: "June 2026" },
+  overview: [
+    "The forearm muscles sit inside compartments wrapped by a firm sheath called fascia. In chronic exertional compartment syndrome, repeated hard use makes the muscles swell faster than the sheath can accommodate, so pressure builds during activity. The result is forearm pain, tightness, cramping, and sometimes numbness or grip weakness that comes on with exercise and settles with rest.",
+    "It is most common in rock climbers, motocross riders, rowers, and other grip-intensive athletes. It is important to separate this exertional, activity-related condition from acute compartment syndrome, which is a sudden, severe surgical emergency after trauma.",
+  ],
+  bodySections: [
+    {
+      heading: "How it shows up",
+      body: [
+        "The hallmark is reproducible: symptoms appear after a predictable amount of forearm effort and resolve with rest, only to return when the activity resumes. Between bouts the exam is often normal, which is why the history matters so much.",
+      ],
+      bullets: [
+        "Forearm tightness, cramping, and pain that build with sustained gripping",
+        "Symptoms that reliably ease with rest",
+        "Sometimes numbness or weakness during the activity",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "Because the exam is often normal at rest, the diagnosis rests on the classic activity-related history and is confirmed with compartment pressure testing, which measures the pressure in the forearm compartments around exercise. Other causes of exertional forearm pain are ruled out as part of the workup.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee starts with activity modification, technique and training adjustments, and addressing grip mechanics, because many athletes can manage symptoms by changing how and how much they load the forearm.",
+      "For dedicated athletes whose sport depends on sustained grip and who do not improve with these measures, a fasciotomy, releasing the tight fascial sheath so the muscle has room to swell, can relieve the exertional pressure. The decision is individualized to the athlete's sport and goals.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "First-line care is activity modification: adjusting training volume, grip technique, and rest, sometimes with therapy. Many athletes manage well by changing how they load the forearm.",
+      ],
+    },
+    {
+      heading: "Fasciotomy",
+      body: [
+        "When symptoms limit an athlete who must keep competing, a fasciotomy releases the fascia of the affected compartments so the muscle can expand without building damaging pressure. It is offered to the right athlete after non-surgical measures have been tried.",
+      ],
+    },
+  ],
+  recoveryIntro: "Most athletes start with non-surgical management; when a fasciotomy is done, recovery is staged:",
+  recovery: [
+    { when: "Non-surgical", what: "Training and grip adjustments, with a graded return to the provoking activity as symptoms allow." },
+    { when: "Early after fasciotomy", what: "Wound healing and protected motion, avoiding heavy gripping while the release heals." },
+    { when: "Following weeks to months", what: "Progressive strengthening and a graded return to sport-specific grip loading as comfort allows." },
+  ],
+  misconceptions: {
+    intro: "What patients often misunderstand:",
+    items: [
+      { heading: "This is not the same as acute compartment syndrome.", body: "Acute compartment syndrome is a sudden, severe emergency after an injury and needs immediate surgery. The chronic exertional form builds with exercise and eases with rest, and it is managed on a planned, non-emergency basis." },
+      { heading: "A normal exam at rest does not rule it out.", body: "Because the problem only appears with exertion, the forearm often looks and feels normal in the office. The activity-related history and pressure testing are what make the diagnosis." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "Exertional pressure buildup in the forearm muscles" },
+    { label: "Common in", value: "Climbers, motocross, grip-intensive athletes" },
+    { label: "Hallmark", value: "Pain with effort, relief with rest" },
+    { label: "Diagnosis", value: "History plus compartment pressure testing" },
+    { label: "Surgery", value: "Fasciotomy for athletes who must keep competing" },
+  ],
+  whyDrLee: [
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
+    "Double fellowship-trained, hand and upper extremity plus sports medicine",
+    "Especially attuned to the demands of grip-intensive athletes",
+    "Non-surgical management first, fasciotomy for the right athlete",
+  ],
+  related: [
+    { name: "Intersection Syndrome", slug: "intersection-syndrome" },
+    { name: "Lateral Epicondylitis (Tennis Elbow)", slug: "lateral-epicondylitis" },
+    { name: "Hand & Wrist Fractures", slug: "hand-wrist-fractures" },
+  ],
+  ctaCard: { eyebrow: "Forearms pump out and shut down?", headline: "There are real options for exertional forearm pain." },
+  faqHeadline: "Chronic exertional forearm compartment syndrome, answered.",
+  faqs: [
+    { question: "What is chronic exertional forearm compartment syndrome?", answer: "It is exercise-induced forearm pain, tightness, and swelling that builds during sustained gripping and eases with rest, caused by pressure rising inside the forearm muscle compartments faster than the surrounding sheath can accommodate. It is common in climbers, motocross riders, and other grip-intensive athletes." },
+    { question: "How is it diagnosed?", answer: "Because the forearm often looks and feels normal at rest, the diagnosis relies on the classic activity-related history and is confirmed with compartment pressure testing, which measures the pressure in the forearm compartments around exercise. Other causes of exertional forearm pain are ruled out as part of the evaluation." },
+    { question: "Do I need surgery?", answer: "Not necessarily. Many athletes improve by adjusting training volume, grip technique, and rest. A fasciotomy, which releases the tight fascial sheath so the muscle has room to expand, is offered to dedicated athletes whose sport depends on sustained grip and who do not improve with non-surgical measures." },
+    { question: "Is this the same as the compartment syndrome that needs emergency surgery?", answer: "No. Acute compartment syndrome is a sudden, severe emergency after trauma and requires immediate surgery. The chronic exertional form described here builds gradually with exercise and resolves with rest, and it is evaluated and treated on a planned, non-emergency basis." },
+  ],
+  bottomCtaTitle: "Forearms that pump out mid-effort?",
+  bottomCtaItalic: "A clear diagnosis points to the right plan.",
+  bottomCtaBody:
+    "Exertional forearm compartment syndrome is treatable once it is correctly diagnosed, with options ranging from training adjustments to a fasciotomy for athletes who must keep competing. Get an evaluation if forearm pain reliably shuts down your performance.",
+  metaTitle: "Chronic Exertional Forearm Compartment Syndrome, Steven J. Lee, MD",
+  metaDescription:
+    "Chronic exertional forearm compartment syndrome in climbers and grip-intensive athletes: activity-related diagnosis with pressure testing, activity modification, and fasciotomy. Treated by Dr. Steven J. Lee, MD, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
+  schemaDescription:
+    "Chronic exertional forearm compartment syndrome is exercise-induced pain and tightness from elevated pressure in the forearm muscle compartments, relieved by rest. It is diagnosed by history and compartment pressure testing and treated with activity modification, with fasciotomy for athletes who must continue grip-intensive sport.",
+};
+
+// Old-site condition build-out, part 3 (June 2026): four elbow conditions and
+// one shoulder condition rebuilt from the legacy Wix pages.
+const distalHumerusFracture: ConditionPageContent = {
+  slug: "distal-humerus-fracture",
+  name: "Distal Humerus Fracture",
+  region: "Elbow",
+  headerTitle: "Distal Humerus Fracture:",
+  headerItalic: "a break at the top of the elbow.",
+  headerLede:
+    "The distal humerus is the lower end of the upper-arm bone, where it flares out to form the top half of the elbow joint. A fall onto the elbow or a higher-energy injury can fracture it, and because the break often runs into the joint surface, restoring a smooth, stable joint is the goal. Most displaced adult fractures are fixed with plates and screws so the elbow can start moving early.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Double Fellowship-Trained · Hand & Sports Medicine",
+    reviewed: "June 2026",
+  },
+  overview: [
+    "A distal humerus fracture is a break of the lower end of the humerus, the upper-arm bone, at the point where it widens into the two columns and the spool-shaped surface that make up the top of the elbow joint. These are demanding injuries because the bone is shaped intricately, the joint surface is involved in most adult fractures, and the elbow is the joint most prone to stiffness after any injury.",
+    "Fractures here range from a simple crack outside the joint to a comminuted, intra-articular pattern with several separated fragments. The treatment goal in a displaced fracture is to rebuild the joint surface accurately and fix it rigidly enough that guided motion can begin early, because a stiff but healed elbow is a poor result. The right plan depends on the fracture pattern, the patient's age, and the quality of the bone.",
+  ],
+  bodySections: [
+    {
+      heading: "Anatomy",
+      body: [
+        "The distal humerus splits into two columns of bone (medial and lateral) that support the trochlea and capitellum, the surfaces that articulate with the forearm bones to form the elbow hinge. This double-column shape is why surgeons often need two plates, one on each column, to rebuild the lower humerus securely.",
+        "The ulnar nerve runs in a groove on the inner side of the distal humerus, directly in the surgical field, so nerve protection is part of every fixation. The triceps tendon crosses the back of the bone, which influences how the fracture is exposed at surgery.",
+      ],
+    },
+    {
+      heading: "Causes",
+      body: [
+        "In younger adults, distal humerus fractures usually follow higher-energy trauma such as a fall from height, a sports collision, or a motor-vehicle crash, and the fragments are often badly displaced and comminuted.",
+        "In older adults, especially those with osteoporotic bone, a simple fall onto the elbow can produce a comminuted intra-articular fracture. The combination of a shattered joint surface and soft bone is what makes elbow replacement an option for some of these patients.",
+      ],
+    },
+    {
+      heading: "Symptoms",
+      body: [
+        "Immediate pain, swelling, and bruising around the elbow, often with an obvious deformity when the fracture is displaced.",
+        "Inability to move the elbow, and severe pain with any attempt to bend or straighten it.",
+        "Numbness, tingling, or weakness in the hand, particularly on the pinky side, if the nearby ulnar nerve is irritated or stretched by the fracture.",
+        "In high-energy or open injuries, a wound over the elbow, which makes the injury an urgent surgical problem.",
+      ],
+    },
+    {
+      heading: "Diagnosis",
+      body: [
+        "Elbow X-rays confirm the fracture and show the overall pattern. Because the lower humerus is a three-dimensional structure, a single view rarely tells the whole story.",
+        "A CT scan is obtained in nearly all displaced or intra-articular fractures. It maps the fragments and the joint surface precisely, which is what allows accurate surgical planning and a faithful reconstruction of the elbow.",
+      ],
+    },
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "Non-surgical care is reserved for fractures that are non-displaced or minimally displaced and stable, and for some patients whose health makes surgery too risky. It involves a period of splinting followed by a hinged elbow brace and early guided motion.",
+        "The trade-off is real: prolonged immobilization of any elbow fracture risks permanent stiffness, so even non-surgical treatment aims to start protected motion as soon as the fracture is stable enough to allow it.",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "Most displaced adult distal humerus fractures are treated with open reduction and internal fixation, rebuilding the joint surface and securing the two columns with plates and screws. A dual-plate construct (one plate on each column) is the standard for restoring the strength needed to begin early motion. The ulnar nerve is identified and protected during the procedure.",
+        "Very comminuted fractures in older, lower-demand patients, where the joint surface cannot be reliably reconstructed, are occasionally treated with total elbow replacement instead. This trades some long-term lifting capacity for a reliably pain-free, mobile elbow, which can be the better answer for the right patient.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee's priority in a distal humerus fracture is an accurately rebuilt joint surface fixed rigidly enough to allow early guided motion, because the elbow punishes prolonged immobilization with stiffness. He uses a dual-column plate-and-screw construct for most displaced adult fractures and protects the ulnar nerve as a routine part of the exposure.",
+      "He has helped design the elbow plating systems used by surgeons across the country, and brings that perspective to matching the construct to the fracture pattern and bone quality. For very comminuted fractures in older, lower-demand patients in whom the joint surface cannot be reliably reconstructed, he discusses elbow replacement as an alternative. Complex elbow trauma is frequently referred to him from other surgeons.",
+    ],
+  },
+  recoveryIntro:
+    "Recovery from a distal humerus fracture takes several months, and the single best predictor of a good outcome is how early and how diligently elbow motion is restored.",
+  recovery: [
+    { when: "Weeks 1 to 2", what: "Splint or non-removable dressing after surgery. Wound check and suture removal around 10 to 14 days. Fingers, wrist, and shoulder kept moving." },
+    { when: "Weeks 2 to 6", what: "Hinged elbow brace and active, guided range-of-motion in hand therapy. Lifting restricted to protect the fixation." },
+    { when: "Weeks 6 to 12", what: "Bone healing progresses on X-ray. Motion advances and gentle strengthening begins. Return to most daily activities." },
+    { when: "3 to 6 months", what: "Progressive strengthening and a graded return to heavier activity. Some residual stiffness can persist. Hardware can be removed later if it irritates the skin." },
+  ],
+  misconceptions: {
+    intro: "Two important misconceptions about elbow fractures.",
+    items: [
+      {
+        heading: "'I should keep the elbow still until the bone fully heals.'",
+        body: "This is the most common and most costly mistake with elbow fractures. Stiffness, not non-union, is the usual problem after a distal humerus fracture, and it is far harder to regain motion than to keep it. The fixation is specifically designed to let protected motion begin early, under a hand therapist's guidance, while the bone heals.",
+      },
+      {
+        heading: "'A fracture this bad means my elbow will never work again.'",
+        body: "Even comminuted intra-articular distal humerus fractures can do well with an accurate reconstruction and diligent therapy. When the joint surface cannot be rebuilt in an older, lower-demand patient, elbow replacement is a reliable way to restore a pain-free, mobile elbow. Outcomes depend heavily on the rehabilitation effort.",
+      },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "Fracture of the lower humerus at the elbow joint" },
+    { label: "Usually intra-articular", value: "Most adult fractures involve the joint surface" },
+    { label: "Standard fixation", value: "Dual-column plates and screws" },
+    { label: "Most common complication", value: "Stiffness, countered with early motion" },
+  ],
+  whyDrLee: [
+    "Helped design the elbow plating systems used by surgeons across the country.",
+    "Double fellowship-trained in hand and upper extremity surgery and in sports medicine, with 25+ years treating complex elbow trauma.",
+    "Complex elbow fractures are frequently referred to him from other surgeons.",
+  ],
+  related: [
+    { name: "Olecranon Fracture", slug: "olecranon-fracture" },
+    { name: "Radial Head Fracture", slug: "radial-head-fracture" },
+    { name: "Terrible Triad of the Elbow", slug: "terrible-triad" },
+    { name: "Elbow Dislocation", slug: "elbow-dislocation" },
+  ],
+  ctaCard: {
+    eyebrow: "High-energy elbow injury?",
+    headline: "Rebuilding the joint surface and moving early is what protects the elbow.",
+  },
+  faqHeadline: "Distal humerus fracture FAQ",
+  faqs: [
+    {
+      question: "What is a distal humerus fracture?",
+      answer:
+        "A distal humerus fracture is a break of the lower end of the upper-arm bone, at the point where it forms the top half of the elbow joint. It usually follows a fall onto the elbow or a higher-energy injury, and in adults the break commonly runs into the joint surface (intra-articular). Because the elbow is prone to stiffness, the treatment goal is to rebuild the joint accurately and allow early motion.",
+    },
+    {
+      question: "Does a distal humerus fracture need surgery?",
+      answer:
+        "Most displaced adult distal humerus fractures need surgery. Non-displaced, stable fractures can sometimes be treated with a brief period of splinting followed by a hinged brace and early guided motion. Displaced fractures, and the intra-articular fractures that make up most adult cases, are treated with open reduction and internal fixation using plates and screws to restore the joint surface and allow early motion.",
+    },
+    {
+      question: "What does the surgery involve?",
+      answer:
+        "Surgery for a displaced distal humerus fracture is an open reduction and internal fixation. The joint surface is reassembled and the two columns of the lower humerus are secured, typically with a plate on each column, so the construct is strong enough for early motion. The ulnar nerve, which runs through the surgical field on the inner elbow, is identified and protected. For very comminuted fractures in older, lower-demand patients whose joint surface cannot be reliably rebuilt, total elbow replacement is sometimes chosen instead.",
+    },
+    {
+      question: "How long does recovery take?",
+      answer:
+        "Bone healing takes roughly 6 to 12 weeks, and most patients return to daily activities over 3 to 4 months, with heavier activity and full strength taking up to 6 months. Early guided motion in hand therapy, starting within the first weeks after surgery, is the single most important factor in avoiding the stiffness the elbow is prone to. Hardware can be removed later in a small second procedure if it irritates the skin.",
+    },
+  ],
+  bottomCtaTitle: "Broke the elbow in a fall or a crash?",
+  bottomCtaItalic: "The joint surface and early motion matter most.",
+  bottomCtaBody:
+    "A distal humerus fracture is a demanding injury, but an accurate reconstruction and early guided motion give the elbow its best chance. If you have a displaced or intra-articular elbow fracture, a CT scan and a focused plan point to the right treatment.",
+  metaTitle: "Distal Humerus Fracture, Steven J. Lee, MD",
+  metaDescription:
+    "Distal humerus fracture (break of the lower upper-arm bone at the elbow): causes, intra-articular patterns, open reduction and internal fixation with dual-column plating, elbow replacement for selected comminuted fractures, and recovery. By Dr. Steven J. Lee, MD, double fellowship-trained hand and sports surgeon.",
+  schemaDescription:
+    "A distal humerus fracture is a break of the lower end of the upper-arm bone where it forms the top of the elbow joint, often intra-articular, from a fall or higher-energy trauma. Most displaced adult fractures are treated with open reduction and internal fixation using dual-column plates and screws to restore the joint surface and allow early motion; very comminuted fractures in older, lower-demand patients are occasionally treated with total elbow replacement.",
+};
+
+const elbowArthritis: ConditionPageContent = {
+  slug: "elbow-arthritis",
+  name: "Elbow Arthritis",
+  region: "Elbow",
+  headerTitle: "Elbow Arthritis:",
+  headerItalic: "pain, stiffness, and a catching joint.",
+  headerLede:
+    "Elbow arthritis is wear or inflammation of the elbow joint that causes pain, stiffness, and loss of motion, sometimes with locking from loose pieces of cartilage or bone floating in the joint. Most patients are managed without surgery for a long time. When symptoms become refractory, arthroscopic clean-up often restores motion, and joint replacement is reserved for advanced arthritis in lower-demand patients.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Double Fellowship-Trained · Hand & Sports Medicine",
+    reviewed: "June 2026",
+  },
+  overview: [
+    "Elbow arthritis is the loss of the smooth cartilage that lines the elbow joint, along with the bone spurs and inflammation that accompany it. It can be osteoarthritis (age-related wear), post-traumatic arthritis (following an old fracture or dislocation), or inflammatory arthritis such as rheumatoid disease. The result is pain, stiffness, and a gradual loss of the ability to fully bend and straighten the elbow.",
+    "Because the elbow is not a major weight-bearing joint, many people manage arthritis here for years with non-surgical care. A distinctive feature of elbow arthritis is mechanical locking or catching, which happens when bone spurs break off and form loose bodies inside the joint. These loose pieces, and the spurs that block motion, are often treatable with a minimally invasive arthroscopic procedure.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Common complaints include:"],
+      bullets: [
+        "Deep aching elbow pain, often worse at the ends of motion or with activity",
+        "Stiffness and loss of full bending or straightening that builds gradually",
+        "Catching, clicking, or locking, which suggests loose bodies in the joint",
+        "Pain near the inner elbow with pinky-side numbness if associated spurs irritate the ulnar nerve",
+      ],
+    },
+    {
+      heading: "Causes",
+      body: [
+        "Post-traumatic arthritis is a common cause in the elbow, developing years after a fracture or dislocation damaged the joint surface. Osteoarthritis can also occur on its own, classically in people who have done heavy, repetitive manual work.",
+        "Inflammatory arthritis, such as rheumatoid arthritis, attacks the joint lining and can affect the elbow as part of a systemic condition, which is managed in partnership with a rheumatologist.",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "X-rays show the joint narrowing, bone spurs, and loose bodies that characterize elbow arthritis, and are usually enough to make the diagnosis and grade its severity.",
+        "A CT scan maps bone spurs and loose bodies precisely when surgery is being planned. An MRI is added when the cartilage or soft tissues need closer evaluation. Blood tests are used when inflammatory arthritis is suspected.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee treats elbow arthritis conservatively for as long as it controls symptoms, with activity modification, a therapy program to preserve motion and strength, anti-inflammatory measures, and injections. In selected cases he uses PRP (platelet-rich plasma); he was among the first surgeons in NYC to use PRP for the upper extremity.",
+      "When symptoms become refractory, arthroscopic debridement with removal of loose bodies and blocking osteophytes is frequently the right next step, and it often restores meaningful motion through small portals. For advanced arthritis in lower-demand patients, joint replacement is the definitive option. Dr. Lee is double fellowship-trained and treats the full spectrum of elbow conditions, including the post-traumatic arthritis that follows complex elbow injuries referred to him from other surgeons.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "First-line care is activity modification, a structured therapy program to maintain motion and strength, anti-inflammatory measures, and corticosteroid injections. PRP is considered in selected cases. This approach controls symptoms for many patients for years, which is often the goal in a joint that is not weight-bearing.",
+      ],
+    },
+    {
+      heading: "Arthroscopic debridement",
+      body: [
+        "When pain, catching, or lost motion no longer respond to non-surgical care, arthroscopic debridement is often the next step. Through small portals, the surgeon removes loose bodies, trims the bone spurs that block motion, and cleans up inflamed tissue. For arthritis where mechanical blocking is the main problem, this can restore a useful arc of motion while preserving the patient's own joint.",
+      ],
+    },
+    {
+      heading: "Joint replacement",
+      body: [
+        "For advanced arthritis that limits daily life, total elbow replacement is the definitive treatment, and it reliably relieves pain and restores motion. Because a replaced elbow has a permanent lifting limit, it is reserved for lower-demand patients, and the decision weighs the severity of the arthritis against the patient's activity goals.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery depends on the treatment and is guided individually:",
+  recovery: [
+    { when: "Non-surgical", what: "Ongoing activity modification, therapy, and periodic injections as needed to control symptoms." },
+    { when: "Arthroscopy, early", what: "Small portal wounds heal quickly. Motion is started promptly to protect the gains made at surgery." },
+    { when: "Arthroscopy, weeks", what: "Progressive motion and strengthening in hand therapy. Return to most activities over several weeks." },
+    { when: "After replacement", what: "Protected motion progressing to gentle strengthening over months, with a permanent lifting limit to protect the implant." },
+  ],
+  misconceptions: {
+    intro: "Two things worth clarifying about elbow arthritis.",
+    items: [
+      {
+        heading: "'Nothing can be done for arthritis except a replacement.'",
+        body: "Not true for the elbow. Many patients are managed for years without surgery, and when surgery is needed, arthroscopic debridement to remove loose bodies and blocking spurs often restores motion while keeping the patient's own joint. Replacement is reserved for advanced arthritis in lower-demand patients.",
+      },
+      {
+        heading: "'My elbow locks up, so the cartilage must be fine.'",
+        body: "Locking and catching are classic signs of arthritis, not signs against it. They are usually caused by loose bodies, pieces of cartilage or bone that have broken off the arthritic joint and float inside it, physically blocking motion. These are among the most satisfying problems to treat arthroscopically.",
+      },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Common types", value: "Osteoarthritis, post-traumatic, inflammatory" },
+    { label: "Classic feature", value: "Locking or catching from loose bodies" },
+    { label: "First-line care", value: "Therapy, activity change, injections, PRP in select cases" },
+    { label: "Surgical options", value: "Arthroscopic debridement; replacement when advanced" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained in hand and upper extremity surgery and in sports medicine, with 25+ years treating the full spectrum of elbow conditions.",
+    "Among the first surgeons in NYC to use PRP for the upper extremity, used in selected arthritis cases.",
+    "Treats the post-traumatic arthritis that follows complex elbow trauma referred to him from other surgeons.",
+  ],
+  related: [
+    { name: "Elbow Dislocation", slug: "elbow-dislocation" },
+    { name: "Radial Head Fracture", slug: "radial-head-fracture" },
+    { name: "Cubital Tunnel Syndrome", slug: "cubital-tunnel" },
+    { name: "Olecranon Bursitis", slug: "olecranon-bursitis" },
+  ],
+  ctaCard: {
+    eyebrow: "Stiff, aching, or locking elbow?",
+    headline: "Many cases are managed without surgery, and clean-up often restores motion.",
+  },
+  faqHeadline: "Elbow arthritis FAQ",
+  faqs: [
+    {
+      question: "What causes elbow arthritis?",
+      answer:
+        "Elbow arthritis is the loss of cartilage in the elbow joint, with bone spurs and inflammation. It can be osteoarthritis from age-related wear, post-traumatic arthritis years after a fracture or dislocation, or inflammatory arthritis such as rheumatoid disease. Post-traumatic arthritis is a particularly common cause in the elbow because of how often the joint is injured. The result is pain, stiffness, and loss of full bending and straightening.",
+    },
+    {
+      question: "Why does my elbow lock or catch?",
+      answer:
+        "Locking and catching in an arthritic elbow are usually caused by loose bodies, small pieces of cartilage or bone that have broken off the worn joint and float inside it. They physically jam the joint as it moves, blocking motion. Loose bodies and the spurs that block motion are often removed through a minimally invasive arthroscopic procedure, which can restore a useful range of motion.",
+    },
+    {
+      question: "Do I need surgery for elbow arthritis?",
+      answer:
+        "Often not. Because the elbow is not a weight-bearing joint, many patients are managed for years with activity modification, therapy, anti-inflammatory measures, and injections, with PRP considered in selected cases. When symptoms become refractory, arthroscopic debridement to remove loose bodies and blocking bone spurs is frequently the next step and often restores motion. Joint replacement is reserved for advanced arthritis in lower-demand patients.",
+    },
+    {
+      question: "Can the elbow be replaced if arthritis is severe?",
+      answer:
+        "Yes. Total elbow replacement is the definitive treatment for advanced elbow arthritis that limits daily life, and it reliably relieves pain and restores motion. Because a replaced elbow carries a permanent lifting restriction, it is reserved for lower-demand patients, and the decision balances the severity of the arthritis against the patient's activity goals.",
+    },
+  ],
+  bottomCtaTitle: "Elbow that aches, stiffens, or locks?",
+  bottomCtaItalic: "Start with the conservative options.",
+  bottomCtaBody:
+    "Elbow arthritis is usually managed without surgery for a long time, and when surgery is needed, arthroscopic clean-up often restores motion while preserving your own joint. An X-ray and a focused exam point to the right plan.",
+  metaTitle: "Elbow Arthritis, Steven J. Lee, MD",
+  metaDescription:
+    "Elbow arthritis (osteoarthritis, post-traumatic, and inflammatory): pain, stiffness, and locking from loose bodies. Conservative care, arthroscopic debridement and loose-body removal, and joint replacement for advanced cases. By Dr. Steven J. Lee, MD, double fellowship-trained hand and sports surgeon.",
+  schemaDescription:
+    "Elbow arthritis is osteoarthritis, post-traumatic, or inflammatory wear of the elbow joint causing pain, stiffness, loss of motion, and sometimes locking from loose bodies. First-line treatment is activity modification, therapy, anti-inflammatory measures, and injections including PRP in selected cases; refractory cases are treated with arthroscopic debridement and loose-body removal, and advanced arthritis in lower-demand patients with joint replacement.",
+};
+
+const olecranonBursitis: ConditionPageContent = {
+  slug: "olecranon-bursitis",
+  name: "Olecranon Bursitis",
+  region: "Elbow",
+  headerTitle: "Olecranon Bursitis:",
+  headerItalic: "the swollen tip of the elbow.",
+  headerLede:
+    "Olecranon bursitis is swelling of the fluid-filled sac (the bursa) over the bony tip of the elbow, sometimes called 'Popeye elbow.' It is usually caused by pressure, leaning, or a knock, and most non-infected cases settle with simple measures. The crucial first step is telling an infected bursa, which is red, warm, tender, and may come with a fever, from a non-infected one, because infection needs prompt treatment.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Double Fellowship-Trained · Hand & Sports Medicine",
+    reviewed: "June 2026",
+  },
+  overview: [
+    "The olecranon bursa is a thin, normally flat sac of tissue that sits between the skin and the bony tip of the elbow, letting the skin glide smoothly over the bone. When it becomes irritated or inflamed, it fills with fluid and produces a soft, sometimes dramatic swelling at the back of the elbow, which is why the condition is nicknamed 'Popeye elbow.'",
+    "Most olecranon bursitis is not infected and settles with simple measures aimed at removing the source of irritation. The single most important question, though, is whether the bursa is infected. An infected bursa is red, warm, very tender, and may be accompanied by fever, and it needs prompt drainage or antibiotics. Distinguishing the two is the foundation of treatment.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Common findings include:"],
+      bullets: [
+        "A soft, fluid-filled swelling over the point of the elbow, sometimes quite large",
+        "Discomfort with leaning on the elbow or with full bending",
+        "Skin that is comfortable and normal in color in a non-infected bursa",
+        "Redness, warmth, marked tenderness, and sometimes fever, which point to an infected bursa needing prompt care",
+      ],
+    },
+    {
+      heading: "Causes",
+      body: [
+        "The most common cause is repeated pressure or leaning on the elbow, which is why olecranon bursitis is sometimes called 'student's elbow' or 'miner's elbow.' A single direct blow to the elbow can also trigger it.",
+        "Other causes include gout, which can deposit crystals in the bursa, inflammatory arthritis, and infection. Infection can follow a small cut or scrape over the elbow that lets bacteria into the bursa, and it is the cause that must never be missed.",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "The diagnosis is usually clinical, based on the appearance and feel of the swelling. The examination focuses on separating an infected from a non-infected bursa using the signs of redness, warmth, tenderness, and fever.",
+        "When infection or gout is suspected, the fluid is aspirated with a needle and sent for analysis and culture. X-rays are obtained when a bone spur or a foreign body is suspected as the underlying driver.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee's first job with olecranon bursitis is to determine whether it is infected, because that single distinction changes everything. A red, warm, tender bursa, particularly with a fever or a break in the skin, is treated promptly with aspiration for culture and antibiotics, and with drainage if it does not settle.",
+      "For the far more common non-infected bursitis, his approach is conservative: activity modification, padding and compression, and most importantly avoiding leaning on the elbow, which removes the source of irritation. Aspiration is used when the swelling is large or uncomfortable. Surgical excision of the bursa is reserved for chronic or refractory cases that do not respond to these measures.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-infected bursitis",
+      body: [
+        "Most cases settle with activity modification, padding or a compression sleeve, and a deliberate effort to stop leaning on the elbow, which is usually the source of the problem. Aspiration of the fluid is added when the swelling is large or uncomfortable, with the understanding that it can refill if the underlying pressure continues.",
+      ],
+    },
+    {
+      heading: "Infected bursitis",
+      body: [
+        "An infected bursa, recognized by redness, warmth, marked tenderness, and sometimes fever, needs prompt treatment. The fluid is aspirated and cultured, antibiotics are started, and surgical drainage is used if the infection does not settle. This is the situation that must not be mistaken for a simple swelling.",
+      ],
+    },
+    {
+      heading: "Surgical excision",
+      body: [
+        "Surgical removal of the bursa is reserved for chronic or refractory cases that do not respond to non-surgical measures, or for recurrent infections. It is an outpatient procedure, and care is taken to let the skin over the bony tip of the elbow heal well, because that skin has little padding beneath it.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery depends on the cause and the treatment:",
+  recovery: [
+    { when: "Non-infected, early", what: "Activity modification, padding, and avoiding leaning on the elbow. Swelling subsides over days to a few weeks." },
+    { when: "After aspiration", what: "A compression dressing reduces refilling. The underlying pressure must be removed to prevent recurrence." },
+    { when: "Infected bursa", what: "Antibiotics and close follow-up, with drainage if needed. Resolution depends on clearing the infection." },
+    { when: "After excision", what: "Wound protection while the elbow-tip skin heals, then a gradual return to activity over several weeks." },
+  ],
+  misconceptions: {
+    intro: "Two things worth understanding about olecranon bursitis.",
+    items: [
+      {
+        heading: "'A big swelling on my elbow must be serious.'",
+        body: "The size of the swelling does not tell you how serious it is. Most olecranon bursitis is not infected and settles with simple measures, even when the swelling looks dramatic. What matters far more than size is whether the bursa is infected, shown by redness, warmth, marked tenderness, and fever.",
+      },
+      {
+        heading: "'Just drain it and it will be gone.'",
+        body: "Aspiration can shrink the swelling, but if the underlying pressure (usually leaning on the elbow) continues, the bursa often refills. Lasting resolution comes from removing the source of irritation. Aspiration also should not be done casually on a possibly infected bursa without the right precautions.",
+      },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "Swelling of the bursa over the elbow tip" },
+    { label: "Common nickname", value: "'Popeye elbow,' 'student's elbow'" },
+    { label: "Most important step", value: "Tell infected from non-infected" },
+    { label: "Surgery", value: "Reserved for chronic or refractory cases" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained in hand and upper extremity surgery and in sports medicine, with 25+ years treating elbow conditions.",
+    "Prioritizes distinguishing an infected bursa from a simple one, the distinction that changes treatment.",
+    "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital.",
+  ],
+  related: [
+    { name: "Olecranon Fracture", slug: "olecranon-fracture" },
+    { name: "Elbow Arthritis", slug: "elbow-arthritis" },
+    { name: "Triceps Tendon Tear", slug: "triceps-tear" },
+    { name: "Cubital Tunnel Syndrome", slug: "cubital-tunnel" },
+  ],
+  ctaCard: {
+    eyebrow: "Swelling on the tip of the elbow?",
+    headline: "The first question is whether it is infected. That changes the plan.",
+  },
+  faqHeadline: "Olecranon bursitis FAQ",
+  faqs: [
+    {
+      question: "What is olecranon bursitis?",
+      answer:
+        "Olecranon bursitis is swelling of the bursa, a thin fluid-filled sac, over the bony tip of the elbow. When the bursa is irritated it fills with fluid and produces a soft, sometimes large swelling at the back of the elbow, nicknamed 'Popeye elbow.' It is most often caused by pressure or leaning on the elbow, but it can also follow a knock, gout, inflammatory arthritis, or infection.",
+    },
+    {
+      question: "How do I know if it is infected?",
+      answer:
+        "An infected olecranon bursa is red, warm, markedly tender, and may come with a fever, and there is often a recent cut or scrape over the elbow. A non-infected bursa, by contrast, is usually a comfortable swelling with normal skin color and temperature. Telling the two apart is the most important step, because an infected bursa needs prompt aspiration for culture, antibiotics, and sometimes drainage, while a non-infected one usually settles with simple measures.",
+    },
+    {
+      question: "Do I need it drained?",
+      answer:
+        "Not always. Most non-infected cases settle with activity modification, padding or compression, and avoiding leaning on the elbow. Aspiration is used when the swelling is large or uncomfortable, or when infection or gout is suspected and the fluid needs to be tested. If the underlying pressure continues, an aspirated bursa can refill, so removing the source of irritation matters for a lasting result.",
+    },
+    {
+      question: "Will I need surgery?",
+      answer:
+        "Usually not. Surgical excision of the bursa is reserved for chronic or refractory cases that do not respond to non-surgical measures, or for recurrent infections. It is an outpatient procedure, and after it the skin over the bony tip of the elbow is protected while it heals because that skin has little cushioning beneath it.",
+    },
+  ],
+  bottomCtaTitle: "Soft swelling at the back of your elbow?",
+  bottomCtaItalic: "Get the infected-versus-not question answered.",
+  bottomCtaBody:
+    "Most olecranon bursitis is not infected and settles with simple measures, but an infected bursa needs prompt care. A quick evaluation sorts out which one you have and points to the right plan.",
+  metaTitle: "Olecranon Bursitis, Steven J. Lee, MD",
+  metaDescription:
+    "Olecranon bursitis (swelling of the bursa over the elbow tip, 'Popeye elbow'): causes, how to tell an infected from a non-infected bursa, activity modification, padding, aspiration, antibiotics or drainage for infection, and surgery for refractory cases. By Dr. Steven J. Lee, MD.",
+  schemaDescription:
+    "Olecranon bursitis is swelling of the bursa over the bony tip of the elbow, caused by pressure or leaning, trauma, gout, or infection. Most non-infected cases settle with activity modification, padding, and avoiding leaning on the elbow, with aspiration for large swellings; an infected bursa, recognized by redness, warmth, tenderness, and fever, needs antibiotics or drainage, and surgical excision is reserved for chronic or refractory cases.",
+};
+
+const distalBicepsTendonitis: ConditionPageContent = {
+  slug: "distal-biceps-tendonitis",
+  name: "Distal Biceps Tendonitis",
+  region: "Elbow",
+  headerTitle: "Distal Biceps Tendonitis:",
+  headerItalic: "front-of-the-elbow pain with lifting.",
+  headerLede:
+    "Distal biceps tendonitis is irritation or partial wear of the biceps tendon where it attaches at the elbow, causing pain in the front of the elbow with lifting and twisting. It is different from a complete distal biceps rupture, which is a separate surgical injury, and from biceps problems at the shoulder. Most cases settle with conservative care, but the tendon is watched closely for progression to a tear.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Double Fellowship-Trained · Hand & Sports Medicine",
+    reviewed: "June 2026",
+  },
+  overview: [
+    "The biceps muscle attaches at the elbow through the distal biceps tendon, which inserts onto the radius bone of the forearm and powers bending of the elbow and turning the palm upward. Distal biceps tendonitis is irritation, inflammation, or partial wear (tendinosis) of this tendon at its attachment, producing pain in the front of the elbow that is worse with lifting and twisting motions.",
+    "It is important to place this condition precisely. It is distinct from a complete distal biceps rupture, in which the tendon tears off the bone and which is generally a surgical injury in active patients. It is also distinct from proximal biceps problems at the shoulder, where the long head of the biceps is irritated. Distal biceps tendonitis is usually managed without surgery, with careful attention to whether it is progressing toward a partial or complete tear.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Common complaints include:"],
+      bullets: [
+        "Pain in the front of the elbow, deep at the crease, worse with lifting and twisting",
+        "Tenderness over the biceps tendon where it dives toward its attachment",
+        "Aching after activities that load the tendon, such as repetitive lifting or curling",
+        "Weakness or a sudden worsening of pain, which can signal progression toward a tear",
+      ],
+    },
+    {
+      heading: "Causes",
+      body: [
+        "Distal biceps tendonitis is usually an overuse problem, from repetitive lifting, pulling, or forearm-twisting activity that loads the tendon faster than it can recover. It is common in people who do heavy manual work or strength training.",
+        "With age, the tendon can degenerate (tendinosis) and develop partial tears at its attachment, which can be painful and which raise the concern that the tendon may eventually rupture completely.",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "The diagnosis starts with the exam: pinpoint tenderness over the distal biceps tendon and pain with resisted elbow bending and forearm rotation. A key part of the exam is confirming the tendon is still attached, distinguishing tendonitis and partial wear from a complete rupture.",
+        "An MRI or ultrasound is used when a partial tear is suspected or when the picture is unclear, because it shows the degree of tendon wear and whether a tear is present, which guides how closely the tendon needs to be watched.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee manages distal biceps tendonitis conservatively in most cases, with activity modification, a therapy program, and anti-inflammatory measures to calm the tendon and correct the loads that irritated it. For a tendon that is not healing, he uses PRP (platelet-rich plasma); he was among the first surgeons in NYC to use PRP for the upper extremity.",
+      "Throughout, he watches for progression. A partial distal biceps tear or a sudden change in pain or strength can signal that the tendon is heading toward a complete rupture, which is a different, surgical problem. Dr. Lee is double fellowship-trained and treats the full spectrum of biceps injuries at the elbow, from tendonitis through complete rupture.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Conservative treatment",
+      body: [
+        "First-line care is activity modification to unload the tendon, a structured therapy program, and anti-inflammatory measures. Correcting the lifting and training patterns that overloaded the tendon is central to keeping it from coming back.",
+      ],
+    },
+    {
+      heading: "PRP for a tendon that is not healing",
+      body: [
+        "For a tendon that remains painful despite conservative care, PRP (platelet-rich plasma) is an option. It uses concentrated platelets and growth factors from the patient's own blood, placed at the tendon to support healing. Dr. Lee was among the first surgeons in NYC to use PRP for the upper extremity.",
+      ],
+    },
+    {
+      heading: "Watching for progression to a tear",
+      body: [
+        "Because partial wear can progress, the tendon is monitored for signs of a partial or complete tear, such as a sudden increase in pain, new weakness, or a change in the contour of the arm. A complete distal biceps rupture is a separate, generally surgical injury, and recognizing it early matters because the strongest results come from early repair.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery is usually non-surgical and depends on calming the tendon and correcting its loads:",
+  recovery: [
+    { when: "Early", what: "Activity modification and anti-inflammatory measures to settle the pain, while keeping the elbow moving." },
+    { when: "Weeks", what: "A progressive therapy program builds tendon tolerance and corrects the lifting and training patterns that overloaded it." },
+    { when: "If not healing", what: "PRP is considered for a tendon that stays painful, with a graded return to loading afterward." },
+    { when: "Ongoing", what: "The tendon is watched for any sign of progression to a partial or complete tear, which would change the plan." },
+  ],
+  misconceptions: {
+    intro: "Two things worth clarifying about distal biceps tendonitis.",
+    items: [
+      {
+        heading: "'Biceps pain means I tore my biceps.'",
+        body: "Not usually. Distal biceps tendonitis is irritation or partial wear of the tendon, not a complete tear, and the tendon is still attached. A complete distal biceps rupture is a different, more dramatic injury, often with a pop, a bruise, and a change in the shape of the arm, and it is generally treated surgically. Part of the evaluation is confirming which one you have.",
+      },
+      {
+        heading: "'It is the same as the biceps problem people get in the shoulder.'",
+        body: "No. The biceps has two ends. Problems at the shoulder involve the long head of the biceps at the front of the shoulder, while distal biceps tendonitis is at the elbow, where the tendon attaches to the forearm. They are evaluated and treated differently, so locating the pain correctly matters.",
+      },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "Irritation or partial wear of the biceps tendon at the elbow" },
+    { label: "Not the same as", value: "A complete distal biceps rupture (a surgical injury)" },
+    { label: "First-line care", value: "Activity modification, therapy, anti-inflammatory measures" },
+    { label: "When not healing", value: "PRP, plus watching for progression to a tear" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained in hand and upper extremity surgery and in sports medicine, treating the full spectrum of biceps injuries at the elbow.",
+    "Among the first surgeons in NYC to use PRP for the upper extremity, used for a tendon that is not healing.",
+    "Repairs complete distal biceps ruptures using tendon-to-bone anchors he helped design, when a tear is found.",
+  ],
+  related: [
+    { name: "Biceps Tendon Rupture", slug: "biceps-rupture" },
+    { name: "Triceps Tendon Tear", slug: "triceps-tear" },
+    { name: "Lateral Epicondylitis (Tennis Elbow)", slug: "lateral-epicondylitis" },
+    { name: "Medial Epicondylitis (Golfer's Elbow)", slug: "medial-epicondylitis" },
+  ],
+  ctaCard: {
+    eyebrow: "Front-of-elbow pain with lifting?",
+    headline: "Most cases settle with conservative care, and the tendon is watched for progression.",
+  },
+  faqHeadline: "Distal biceps tendonitis FAQ",
+  faqs: [
+    {
+      question: "What is distal biceps tendonitis?",
+      answer:
+        "Distal biceps tendonitis is irritation, inflammation, or partial wear of the biceps tendon where it attaches at the elbow, on the radius bone of the forearm. It causes pain in the front of the elbow that is worse with lifting and twisting. It is usually an overuse problem, and with age the tendon can also degenerate and develop partial tears. It is different from a complete distal biceps rupture and from biceps problems at the shoulder.",
+    },
+    {
+      question: "How is it different from a torn biceps?",
+      answer:
+        "Distal biceps tendonitis is irritation or partial wear of a tendon that is still attached, whereas a complete distal biceps rupture is a full tear of the tendon off the bone, often with a pop, bruising, and a change in the shape of the arm. Tendonitis is usually treated without surgery, while a complete rupture in an active patient is generally repaired surgically, and early repair gives the strongest result. Confirming which one is present is part of the evaluation.",
+    },
+    {
+      question: "How is distal biceps tendonitis treated?",
+      answer:
+        "Treatment is conservative in most cases: activity modification to unload the tendon, a structured therapy program, and anti-inflammatory measures, along with correcting the lifting or training patterns that overloaded it. For a tendon that remains painful despite this, PRP (platelet-rich plasma) is an option to support healing. Throughout treatment, the tendon is monitored for any progression to a partial or complete tear.",
+    },
+    {
+      question: "Can distal biceps tendonitis turn into a tear?",
+      answer:
+        "It can. Partial wear of the tendon can progress to a partial or complete tear over time, which is why the tendon is watched during treatment. Warning signs include a sudden increase in pain, new weakness with lifting or twisting, or a change in the contour of the arm. A complete distal biceps rupture is a separate, generally surgical injury, and recognizing it early matters because the strongest results come from early repair.",
+    },
+  ],
+  bottomCtaTitle: "Pain in the front of your elbow when you lift?",
+  bottomCtaItalic: "Most of these settle with the right plan.",
+  bottomCtaBody:
+    "Distal biceps tendonitis is usually managed without surgery, but the tendon is watched for any sign of progression to a tear. An exam, and imaging when needed, confirms the diagnosis and sorts it from a complete rupture.",
+  metaTitle: "Distal Biceps Tendonitis, Steven J. Lee, MD",
+  metaDescription:
+    "Distal biceps tendonitis (irritation or partial wear of the biceps tendon at the elbow): front-of-elbow pain with lifting, how it differs from a complete distal biceps rupture, conservative care, PRP for a tendon that is not healing, and watching for progression. By Dr. Steven J. Lee, MD.",
+  schemaDescription:
+    "Distal biceps tendonitis is irritation or partial wear of the biceps tendon where it attaches at the elbow, causing front-of-elbow pain with lifting and twisting. It is distinct from a complete distal biceps rupture and from proximal biceps problems at the shoulder. Treatment is conservative with activity modification, therapy, and anti-inflammatory measures, with PRP for a tendon that is not healing, while watching for progression to a partial or complete tear.",
+};
+
+const frozenShoulder: ConditionPageContent = {
+  slug: "frozen-shoulder",
+  name: "Adhesive Capsulitis (Frozen Shoulder)",
+  region: "Shoulder",
+  headerTitle: "Frozen Shoulder:",
+  headerItalic: "a stiff, painful shoulder that thaws with time.",
+  headerLede:
+    "Adhesive capsulitis, better known as frozen shoulder, is a painful, progressive loss of shoulder motion as the capsule around the joint thickens and tightens. It is more common in people with diabetes and after periods of immobilization, and it classically passes through freezing, frozen, and thawing phases. The large majority of cases resolve with non-surgical care, and motion returns.",
+  byline: {
+    name: "Steven J. Lee, MD",
+    title: "Double Fellowship-Trained · Hand & Sports Medicine",
+    reviewed: "June 2026",
+  },
+  overview: [
+    "Frozen shoulder, or adhesive capsulitis, is a condition in which the capsule, the envelope of tissue that surrounds the shoulder joint, becomes inflamed, thickened, and tight. As it contracts, it physically restricts the shoulder, causing pain and a progressive loss of motion in every direction, including when someone else tries to move the arm for you.",
+    "It is more common in people with diabetes and can follow a period of immobilization, such as after an injury or surgery when the arm is kept still. Frozen shoulder classically moves through three phases: a painful freezing phase, a stiff frozen phase, and a thawing phase as motion gradually returns. The reassuring fact is that the large majority of cases resolve over time, and treatment is aimed at controlling pain and speeding the return of motion.",
+  ],
+  bodySections: [
+    {
+      heading: "The three phases",
+      body: ["Frozen shoulder typically progresses through three overlapping stages:"],
+      bullets: [
+        "Freezing: increasing pain, often worse at night, with motion gradually becoming more limited",
+        "Frozen: pain begins to ease, but stiffness dominates and the shoulder is at its most restricted",
+        "Thawing: motion gradually returns over months as the capsule loosens",
+      ],
+    },
+    {
+      heading: "Symptoms",
+      body: [
+        "The hallmark is loss of motion in every direction, including passive motion when the examiner moves the arm. This global loss of motion is what distinguishes frozen shoulder from problems like a rotator cuff tear, where the patient is weak but can be moved through a fuller range passively.",
+        "Pain is prominent in the early freezing phase, often disturbing sleep, and tends to ease as the shoulder settles into the frozen phase.",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "The diagnosis is primarily clinical, made by finding a global loss of both active and passive shoulder motion on examination. X-rays are typically normal and are used to rule out arthritis and other causes of a stiff shoulder.",
+        "An MRI is not required to diagnose frozen shoulder but is sometimes used to exclude other problems, such as a rotator cuff tear, when the picture is unclear. Risk factors such as diabetes are reviewed, since they influence the expected course.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee treats frozen shoulder non-surgically in the large majority of cases, because most shoulders recover their motion with time and the right program. The foundation is a structured physical therapy stretching program to restore motion, supported by anti-inflammatory measures, with patient reassurance that the condition is self-limited.",
+      "A corticosteroid injection is often used, particularly in the painful freezing phase, where it can reduce pain and shorten that phase. For the small number of refractory cases that do not regain motion, Dr. Lee discusses manipulation under anesthesia or arthroscopic capsular release. As a double fellowship-trained surgeon, he sets expectations clearly: the great majority of patients recover their motion.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: [
+        "The mainstay is a structured physical therapy stretching program to restore motion, combined with anti-inflammatory measures to control pain. Consistency over time is what produces results, and most patients recover their motion with this approach.",
+      ],
+    },
+    {
+      heading: "Corticosteroid injection",
+      body: [
+        "A corticosteroid injection into the shoulder is often used, especially in the painful freezing phase. It can meaningfully reduce pain and shorten that phase, making the stretching program more tolerable and effective.",
+      ],
+    },
+    {
+      heading: "Refractory cases",
+      body: [
+        "For the small number of shoulders that stay stiff despite a committed program, two options can restore motion: manipulation under anesthesia, in which the surgeon gently moves the relaxed shoulder to free the tight capsule, and arthroscopic capsular release, in which the tightened capsule is divided through small portals. These are reserved for cases that do not respond to non-surgical care.",
+      ],
+    },
+  ],
+  recoveryIntro:
+    "Recovery from frozen shoulder is measured in months, and the reassuring theme is that the large majority of shoulders regain their motion:",
+  recovery: [
+    { when: "Freezing phase", what: "Pain control with anti-inflammatory measures and often a corticosteroid injection, plus gentle motion as tolerated." },
+    { when: "Frozen phase", what: "A consistent stretching program to restore motion as the pain eases and stiffness dominates." },
+    { when: "Thawing phase", what: "Motion gradually returns over months. Stretching and strengthening continue to recapture range." },
+    { when: "After a release or manipulation", what: "Early, frequent motion is essential to hold the gains made, with a graded return to activity over weeks to months." },
+  ],
+  misconceptions: {
+    intro: "Two things that reassure patients with frozen shoulder.",
+    items: [
+      {
+        heading: "'My shoulder will never move normally again.'",
+        body: "The large majority of frozen shoulders recover their motion. The condition is self-limited and moves through freezing, frozen, and thawing phases, with motion returning in the thawing phase. It can take many months, and a consistent stretching program helps, but the natural history is recovery for most people.",
+      },
+      {
+        heading: "'I need surgery to fix a frozen shoulder.'",
+        body: "Most frozen shoulders never need surgery. The foundation of treatment is a stretching program, anti-inflammatory measures, and often a corticosteroid injection to shorten the painful phase. Manipulation under anesthesia or arthroscopic capsular release is reserved for the small number of cases that stay stiff despite a committed non-surgical program.",
+      },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "Capsule of the shoulder thickens and tightens" },
+    { label: "More common in", value: "Diabetes and after immobilization" },
+    { label: "Three phases", value: "Freezing, frozen, thawing" },
+    { label: "Mostly treated", value: "Non-surgically; most recover motion" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained in hand and upper extremity surgery and in sports medicine, with 25+ years treating shoulder conditions.",
+    "Sets clear expectations: the large majority of frozen shoulders recover their motion with non-surgical care.",
+    "Performs arthroscopic capsular release for the small number of refractory cases that need it.",
+  ],
+  related: [
+    { name: "Shoulder Impingement Syndrome", slug: "shoulder-impingement" },
+    { name: "Rotator Cuff Tear", slug: "rotator-cuff" },
+    { name: "Shoulder Arthritis (Glenohumeral)", slug: "glenohumeral-arthritis" },
+    { name: "Shoulder Arthroscopy", slug: "shoulder-arthroscopy" },
+  ],
+  ctaCard: {
+    eyebrow: "Stiff, painful shoulder?",
+    headline: "Most frozen shoulders recover their motion with the right program.",
+  },
+  faqHeadline: "Frozen shoulder FAQ",
+  faqs: [
+    {
+      question: "What is frozen shoulder (adhesive capsulitis)?",
+      answer:
+        "Frozen shoulder, or adhesive capsulitis, is a condition in which the capsule surrounding the shoulder joint becomes inflamed, thickened, and tight, causing pain and a progressive loss of motion in every direction. It is more common in people with diabetes and can follow a period of immobilization. It classically passes through three phases: a painful freezing phase, a stiff frozen phase, and a thawing phase as motion gradually returns.",
+    },
+    {
+      question: "How long does frozen shoulder last?",
+      answer:
+        "Frozen shoulder is measured in months and often takes a year or more to fully resolve, moving through freezing, frozen, and thawing phases. The reassuring part is that the large majority of cases recover their motion over time. A structured stretching program and, in the painful freezing phase, a corticosteroid injection can ease symptoms and help speed the return of motion.",
+    },
+    {
+      question: "How is frozen shoulder treated?",
+      answer:
+        "Frozen shoulder is treated non-surgically in the large majority of cases. The foundation is a structured physical therapy stretching program to restore motion, supported by anti-inflammatory measures. A corticosteroid injection is often used, especially in the painful freezing phase, where it can reduce pain and shorten that phase. Most patients recover their motion with this approach.",
+    },
+    {
+      question: "Will I need surgery for a frozen shoulder?",
+      answer:
+        "Most people do not. Surgery is reserved for the small number of shoulders that stay stiff despite a committed non-surgical program. The two options are manipulation under anesthesia, in which the relaxed shoulder is gently moved to free the tight capsule, and arthroscopic capsular release, in which the tightened capsule is divided through small portals. Both are followed by early, frequent motion to hold the gains.",
+    },
+  ],
+  bottomCtaTitle: "Shoulder that has stiffened and hurts?",
+  bottomCtaItalic: "Most of these thaw with time.",
+  bottomCtaBody:
+    "Frozen shoulder is usually managed without surgery, and the large majority of shoulders regain their motion. An exam confirms the diagnosis, and a structured program with anti-inflammatory measures and a corticosteroid injection can ease the painful phase and speed recovery.",
+  metaTitle: "Frozen Shoulder (Adhesive Capsulitis), Steven J. Lee, MD",
+  metaDescription:
+    "Frozen shoulder (adhesive capsulitis): a painful, progressive loss of shoulder motion through freezing, frozen, and thawing phases, more common in diabetes. Stretching program, anti-inflammatory measures, corticosteroid injection, and release for refractory cases. By Dr. Steven J. Lee, MD.",
+  schemaDescription:
+    "Adhesive capsulitis (frozen shoulder) is a painful, progressive loss of shoulder motion as the joint capsule thickens and tightens, more common in people with diabetes and after immobilization, classically passing through freezing, frozen, and thawing phases. Most cases are treated non-surgically with a physical therapy stretching program, anti-inflammatory measures, and a corticosteroid injection that can shorten the painful phase; refractory cases may need manipulation under anesthesia or arthroscopic capsular release.",
+};
+
+const sportsByline2026 = {
+  name: "Steven J. Lee, MD",
+  title: "Double Fellowship-Trained · Hand & Sports Medicine",
+  reviewed: "June 2026",
+};
+
+const patellarInstability: ConditionPageContent = {
+  slug: "patellar-instability",
+  name: "Patellar Instability",
+  region: "Knee & Sports",
+  headerTitle: "Patellar Instability:",
+  headerItalic: "when the kneecap slips out of place.",
+  headerLede:
+    "Patellar instability is the kneecap slipping or fully dislocating, usually toward the outside of the knee, often in young athletes. A first dislocation is frequently treated without surgery, while recurrent instability is treated with a reconstruction that also addresses the underlying anatomy.",
+  byline: sportsByline2026,
+  overview: [
+    "The patella, or kneecap, normally glides in a shallow groove at the end of the thighbone as the knee bends and straightens. In patellar instability, the kneecap slides partly (a subluxation) or completely (a dislocation) out of that groove, almost always toward the outside of the knee.",
+    "It happens most often in young athletes during a sudden twist, a cutting move, or a direct blow. Some people are more prone to it because of their anatomy: a shallow groove, a high-riding kneecap, or the overall alignment of the leg. Sorting out whether a first-time event or a recurring problem, and why it is happening, is what guides treatment.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Common findings include:"],
+      bullets: [
+        "A sense of the kneecap shifting, giving way, or popping out",
+        "Sudden pain and swelling after a twist or a blow to the knee",
+        "A visible deformity if the kneecap is still dislocated at the time",
+        "Apprehension or guarding when the kneecap is pushed toward the outside",
+      ],
+    },
+    {
+      heading: "Why anatomy matters",
+      body: [
+        "Some kneecaps dislocate because of a single hard injury, and some dislocate because the underlying anatomy makes them prone to it. A shallow trochlear groove, a patella that sits too high, and the alignment of the thigh and shinbone all influence how stable the kneecap is. Identifying these risk factors is important, because they change both the chance of it happening again and what surgery, if needed, should correct.",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "The diagnosis starts with the history and an exam that tests how easily the kneecap shifts toward the outside. X-rays and an MRI check for a piece of cartilage or bone knocked off during the dislocation and measure the anatomic risk factors, which together shape the plan.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "For a first-time dislocation without a loose fragment, Dr. Lee usually treats the knee without surgery: a brief period of bracing, then a structured physical therapy program focused on the quadriceps, especially the inner-thigh VMO, along with hip and core control to keep the kneecap tracking properly.",
+      "Recurrent instability, or a dislocation that knocked off a piece of cartilage or bone, is treated surgically. The most common procedure is reconstruction of the medial patellofemoral ligament (MPFL), the main soft-tissue checkrein that holds the kneecap in place. When the underlying anatomy is a significant driver, a shallow groove, a high-riding patella, or alignment, that is addressed at the same time so the repair is not left to fail against the same forces.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["A first-time dislocation without a loose fragment is usually managed without surgery:"],
+      bullets: [
+        "A short period of bracing to calm the initial injury",
+        "Quadriceps strengthening with emphasis on the VMO",
+        "Hip and core strengthening to improve kneecap tracking",
+        "A graded return to cutting and pivoting sports",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "Recurrent instability, or a dislocation with a displaced cartilage or bone fragment, is treated surgically. MPFL reconstruction restores the main soft-tissue restraint, and significant anatomic risk factors are corrected at the same time so the reconstruction is protected.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery depends on whether treatment is non-surgical or surgical:",
+  recovery: [
+    { when: "Non-surgical, weeks 0 to 6", what: "Bracing as directed, then progressive quadriceps, hip, and core strengthening." },
+    { when: "After reconstruction, weeks 0 to 6", what: "Brace protecting the repair, with guided motion and weight-bearing as directed." },
+    { when: "Months 3 to 6", what: "Progressive strengthening and a graded return to cutting and pivoting sport." },
+  ],
+  misconceptions: {
+    intro: "What patients are often surprised by:",
+    items: [
+      { heading: "A first dislocation does not always mean surgery.", body: "Many first-time dislocations without a loose fragment recover well with bracing and a focused rehabilitation program. Surgery is reserved for recurrent instability or a dislocation that knocked off cartilage or bone." },
+      { heading: "The anatomy needs to be addressed.", body: "If a shallow groove, a high-riding kneecap, or alignment is driving the instability, a soft-tissue repair alone can fail against the same forces. Correcting the underlying anatomy is what makes the result durable." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What happens", value: "Kneecap slips or dislocates, usually outward" },
+    { label: "Common in", value: "Young athletes, during a twist or blow" },
+    { label: "First dislocation", value: "Often treated without surgery" },
+    { label: "Recurrent instability", value: "Usually MPFL reconstruction" },
+    { label: "Key step", value: "Addressing anatomic risk factors" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Conservative care for most first-time dislocations",
+    "MPFL reconstruction that addresses underlying anatomy",
+    "Especially attuned to young athletes returning to sport",
+  ],
+  related: [
+    { name: "Patellofemoral Pain Syndrome", slug: "patellofemoral-syndrome" },
+    { name: "Patella Fracture", slug: "patella-fracture" },
+    { name: "Patellar and Quadriceps Tendon Rupture", slug: "patellar-quad-tendon-rupture" },
+    { name: "ACL Tear", slug: "acl-reconstruction" },
+  ],
+  ctaCard: {
+    eyebrow: "Kneecap that slips or has dislocated?",
+    headline: "The plan depends on why it happens.",
+  },
+  faqHeadline: "Patellar instability, answered.",
+  faqs: [
+    {
+      question: "Do I need surgery after my kneecap dislocated once?",
+      answer:
+        "Often, no. A first-time kneecap dislocation without a loose piece of cartilage or bone is usually treated without surgery, with a short period of bracing followed by a physical therapy program focused on the quadriceps, especially the inner-thigh VMO, plus hip and core strength. Surgery is considered for recurrent instability or when a dislocation knocked off a fragment.",
+    },
+    {
+      question: "What is MPFL reconstruction?",
+      answer:
+        "The medial patellofemoral ligament (MPFL) is the main soft-tissue restraint that holds the kneecap from sliding toward the outside of the knee. When it is stretched or torn and the kneecap keeps dislocating, MPFL reconstruction rebuilds that restraint, commonly with a tendon graft, to restore stability. Significant anatomic risk factors are often corrected at the same time.",
+    },
+    {
+      question: "Why does my kneecap keep dislocating?",
+      answer:
+        "Recurrent dislocation usually reflects the underlying anatomy: a shallow groove on the thighbone, a kneecap that sits too high, or the alignment of the leg, sometimes combined with a stretched medial ligament from a prior dislocation. Identifying these factors matters, because durable treatment addresses the cause rather than just the most recent episode.",
+    },
+    {
+      question: "When can I return to sports?",
+      answer:
+        "After non-surgical treatment, return to cutting and pivoting sports is graded over the first few months as strength and control improve. After MPFL reconstruction, most athletes progress through guided rehabilitation and return to sport over roughly four to six months, depending on strength, stability, and the sport's demands.",
+    },
+  ],
+  bottomCtaTitle: "Kneecap that slips, catches, or has dislocated?",
+  bottomCtaItalic: "The cause guides the cure.",
+  bottomCtaBody:
+    "Patellar instability ranges from a single dislocation that recovers with rehabilitation to a recurrent problem driven by anatomy. A careful evaluation defines the risk factors and directs treatment, from a focused therapy program to MPFL reconstruction that corrects the underlying cause.",
+  metaTitle: "Patellar Instability, Steven J. Lee, MD",
+  metaDescription:
+    "Patellar instability (kneecap dislocation) evaluated and treated by Dr. Steven J. Lee, MD. Bracing and quadriceps-focused therapy for first dislocations, MPFL reconstruction for recurrent instability, explained.",
+  schemaDescription:
+    "Patellar instability is the kneecap slipping or dislocating, usually toward the outside of the knee, often in young athletes. First-time dislocations without a loose fragment are usually treated non-surgically with bracing and quadriceps-focused therapy, while recurrent instability is treated with MPFL reconstruction that also addresses anatomic risk factors such as a shallow groove, a high-riding patella, or alignment.",
+};
+
+const bakersCyst: ConditionPageContent = {
+  slug: "bakers-cyst",
+  name: "Baker's Cyst (Popliteal Cyst)",
+  region: "Knee & Sports",
+  headerTitle: "Baker's Cyst:",
+  headerItalic: "the swelling behind the knee with a cause inside the joint.",
+  headerLede:
+    "A Baker's cyst is a fluid-filled swelling behind the knee. It is usually a secondary sign of a problem inside the joint, such as a meniscus tear or arthritis, which is why the most important step is treating the underlying cause rather than just the cyst.",
+  byline: sportsByline2026,
+  overview: [
+    "A Baker's cyst, also called a popliteal cyst, is a fluid-filled swelling at the back of the knee. It forms when the knee produces extra fluid that collects in a bursa, a normal sac behind the knee, causing it to balloon and become noticeable.",
+    "The important point is that a Baker's cyst is usually a secondary sign, not the root problem. Something inside the joint, most often a meniscus tear or arthritis, irritates the knee and makes it produce extra fluid. That is why treatment is aimed at the underlying cause, since a cyst treated in isolation tends to come back.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Common findings include:"],
+      bullets: [
+        "A soft swelling or fullness behind the knee",
+        "Tightness, especially when the knee is fully bent or straightened",
+        "Aching that may track into the calf",
+        "Symptoms of the underlying problem, such as catching or pain from a meniscus tear or arthritis",
+      ],
+    },
+    {
+      heading: "Why it forms",
+      body: [
+        "The knee normally contains a small amount of lubricating fluid. When something inside the joint irritates it, commonly a meniscus tear or arthritis, the knee makes extra fluid, which can flow back into a bursa behind the knee and distend it. The cyst is the visible result of that process, which is why it points back to a cause inside the joint.",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "An exam identifies the swelling behind the knee, and an ultrasound or MRI confirms the cyst and, importantly, looks inside the joint for the underlying cause. A sudden, painful, swollen calf is evaluated to be sure a cyst that has burst or leaked is not being confused with a blood clot, which is treated very differently.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee's approach is to look past the cyst to its cause. Because a Baker's cyst is almost always a downstream sign of a meniscus tear or arthritis, the evaluation focuses on what is happening inside the joint, and the treatment is directed there.",
+      "When the underlying problem is treated, the cyst frequently improves on its own. For a cyst that stays symptomatic, aspiration or an injection can help. Surgical excision of the cyst itself is rarely needed and tends to recur if the joint problem driving it is not addressed, so it is reserved for selected cases.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Treating the cause",
+      body: [
+        "The mainstay is treating the underlying joint problem. Addressing a meniscus tear or managing arthritis reduces the extra fluid production, and the cyst often shrinks or resolves once the source of irritation is under control.",
+      ],
+    },
+    {
+      heading: "Treating the cyst directly",
+      body: [
+        "A symptomatic cyst can be aspirated or injected for relief. Surgical excision is rarely necessary and tends to recur when the underlying cause is not addressed, so it is reserved for selected, persistent cases after the joint problem has been managed.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery follows the underlying problem more than the cyst:",
+  recovery: [
+    { when: "After treating the cause", what: "As the joint irritation settles, the cyst often shrinks or resolves over weeks to months." },
+    { when: "After aspiration or injection", what: "Symptom relief is often prompt, though the cyst can return if the underlying cause persists." },
+    { when: "Ongoing", what: "Managing the meniscus tear or arthritis is what keeps the cyst from coming back." },
+  ],
+  misconceptions: {
+    intro: "What patients are often surprised by:",
+    items: [
+      { heading: "The cyst is usually not the real problem.", body: "A Baker's cyst is typically a secondary sign of a meniscus tear or arthritis inside the joint. Treating the cyst alone, without addressing the cause, usually leads it to return." },
+      { heading: "Surgery to remove the cyst is rarely the answer.", body: "Excising the cyst is seldom needed and tends to recur if the underlying joint problem is not addressed. The more reliable approach is to treat the cause and reserve direct cyst treatment for persistent cases." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "Fluid-filled swelling behind the knee" },
+    { label: "Usual cause", value: "Meniscus tear or arthritis inside the joint" },
+    { label: "Key principle", value: "Treat the cause, not just the cyst" },
+    { label: "Direct treatment", value: "Aspiration or injection if symptomatic" },
+    { label: "Surgical excision", value: "Rarely needed; tends to recur if cause is ignored" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Looks past the cyst to the joint problem driving it",
+    "Treats the underlying meniscus tear or arthritis first",
+    "Reserves cyst excision for selected, persistent cases",
+  ],
+  related: [
+    { name: "Meniscus Tear", slug: "meniscus" },
+    { name: "Knee Arthritis", slug: "knee-arthritis" },
+    { name: "Knee Arthroscopy", slug: "knee-arthroscopy" },
+    { name: "Patellofemoral Pain Syndrome", slug: "patellofemoral-syndrome" },
+  ],
+  ctaCard: {
+    eyebrow: "Swelling behind your knee?",
+    headline: "The cause is usually inside the joint.",
+  },
+  faqHeadline: "Baker's cysts, answered.",
+  faqs: [
+    {
+      question: "What causes a Baker's cyst?",
+      answer:
+        "A Baker's cyst forms when the knee produces extra fluid that collects in a bursa behind the knee. The extra fluid is usually a response to a problem inside the joint, most often a meniscus tear or arthritis. That is why the cyst is considered a secondary sign, and why treatment focuses on the underlying cause.",
+    },
+    {
+      question: "Does a Baker's cyst need surgery?",
+      answer:
+        "Rarely. Most Baker's cysts improve when the underlying joint problem, such as a meniscus tear or arthritis, is treated. A symptomatic cyst can be aspirated or injected for relief. Surgical excision of the cyst is seldom needed and tends to recur if the underlying cause is not addressed, so it is reserved for selected cases.",
+    },
+    {
+      question: "Will the cyst come back?",
+      answer:
+        "It can, if the cause is not addressed. Because the cyst is driven by extra fluid from a problem inside the joint, treating that problem is what reduces the fluid and keeps the cyst from returning. Aspirating or removing the cyst without managing the underlying cause often leads it to recur.",
+    },
+    {
+      question: "Could the swelling behind my knee be something else?",
+      answer:
+        "A sudden, painful, swollen calf should be evaluated promptly, because a cyst that has burst or leaked can mimic a blood clot, which is a different and potentially serious condition treated in another way. Imaging such as an ultrasound or MRI confirms a Baker's cyst and looks inside the joint for its cause.",
+    },
+  ],
+  bottomCtaTitle: "Fullness or swelling behind the knee?",
+  bottomCtaItalic: "Look at what is driving it.",
+  bottomCtaBody:
+    "A Baker's cyst is usually a downstream sign of a meniscus tear or arthritis inside the knee. Treating that underlying cause is what reliably shrinks the cyst and keeps it from returning, while aspiration or injection helps a persistently symptomatic cyst and surgical removal is rarely necessary.",
+  metaTitle: "Baker's Cyst (Popliteal Cyst), Steven J. Lee, MD",
+  metaDescription:
+    "Baker's cyst (popliteal cyst) evaluated and treated by Dr. Steven J. Lee, MD. Usually a secondary sign of a meniscus tear or arthritis; treating the underlying cause, aspiration, and injection explained.",
+  schemaDescription:
+    "A Baker's cyst (popliteal cyst) is a fluid-filled swelling behind the knee, usually a secondary sign of a problem inside the joint such as a meniscus tear or arthritis that makes the knee produce extra fluid. Treatment is directed at the underlying cause, with aspiration or injection for symptomatic cysts; surgical excision is rarely needed and tends to recur if the underlying problem is not addressed.",
+};
+
+const kneeArthritis: ConditionPageContent = {
+  slug: "knee-arthritis",
+  name: "Knee Arthritis",
+  region: "Knee & Sports",
+  headerTitle: "Knee Arthritis:",
+  headerItalic: "managing cartilage wear, surgery only when needed.",
+  headerLede:
+    "Knee osteoarthritis is gradual cartilage wear that brings pain, stiffness, and swelling. Conservative care comes first and for as long as it controls symptoms, with partial or total knee replacement reserved for advanced arthritis that limits daily life.",
+  byline: sportsByline2026,
+  overview: [
+    "Knee osteoarthritis is the gradual wearing away of the smooth cartilage that caps the bones inside the knee. As the cushion thins, the joint becomes painful, stiff, and prone to swelling, and activity can become harder over time.",
+    "It is one of the most common reasons for knee pain in adults. The encouraging part is that most patients are managed well for years without surgery, and when surgery is eventually needed, joint replacement is a reliable way to relieve pain and restore function.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Common findings include:"],
+      bullets: [
+        "Deep, aching knee pain that worsens with activity",
+        "Stiffness, especially in the morning or after sitting",
+        "Swelling and a sense of grinding or catching",
+        "Gradual loss of motion and, over time, bowing or knock-knee alignment",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "Knee arthritis is largely a clinical diagnosis based on the pattern of pain, stiffness, and the exam. Standing X-rays show the degree of cartilage loss and alignment, which helps stage the arthritis and guide treatment. MRI is used selectively when another problem, such as a meniscus tear, is also suspected.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee treats knee arthritis conservatively first, and for as long as conservative care controls the symptoms. That means activity modification, weight management, a targeted physical therapy program to build the muscles that support the knee, anti-inflammatory measures, and injections when appropriate, including corticosteroid, hyaluronic acid, and PRP in selected cases.",
+      "When arthritis becomes advanced and limits daily life despite these measures, surgery is considered. Depending on how much of the joint is involved, that may be a partial knee replacement, which resurfaces only the worn compartment, or a total knee replacement. Arthroscopy has a limited role in arthritis itself and is reserved for specific mechanical problems, not for the arthritis as a whole.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["Conservative care is the foundation and is continued as long as it controls symptoms:"],
+      bullets: [
+        "Activity modification and weight management to reduce load on the joint",
+        "Physical therapy to strengthen the muscles that support the knee",
+        "Anti-inflammatory measures for symptom control",
+        "Injections in selected cases: corticosteroid, hyaluronic acid, and PRP",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "When arthritis is advanced and limits daily life, options include partial knee replacement, which resurfaces only the worn part of the joint, and total knee replacement. Arthroscopy has a limited role in arthritis itself and is reserved for specific mechanical symptoms rather than the arthritis as a whole.",
+      ],
+    },
+  ],
+  recoveryIntro: "Most patients are managed for years without surgery:",
+  recovery: [
+    { when: "Ongoing, non-surgical", what: "Activity modification, weight management, therapy, and injections as needed to control symptoms." },
+    { when: "After replacement, weeks 0 to 6", what: "Guided motion, weight-bearing as directed, and progressive strengthening." },
+    { when: "Months 3 to 6", what: "Continued strengthening and a return to low-impact activity, with steady gains in comfort and function." },
+  ],
+  misconceptions: {
+    intro: "What patients are often surprised by:",
+    items: [
+      { heading: "Surgery is not the first step.", body: "Most knee arthritis is managed well for years with activity modification, weight management, therapy, and injections. Replacement is reserved for advanced arthritis that limits daily life despite these measures." },
+      { heading: "Arthroscopy does not cure arthritis.", body: "Cleaning out an arthritic knee arthroscopically has a limited role and is reserved for specific mechanical problems. It does not reverse the arthritis itself, which is why it is not a routine treatment for it." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "Gradual cartilage wear in the knee" },
+    { label: "Symptoms", value: "Pain, stiffness, swelling, lost motion" },
+    { label: "First-line care", value: "Activity modification, weight, therapy, injections" },
+    { label: "Injections", value: "Corticosteroid, hyaluronic acid, PRP in selected cases" },
+    { label: "Advanced arthritis", value: "Partial or total knee replacement" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Conservative care first, and for as long as it controls symptoms",
+    "Full range of injections, including PRP in selected cases",
+    "Clear guidance on when replacement is the right step",
+  ],
+  related: [
+    { name: "Meniscus Tear", slug: "meniscus" },
+    { name: "Knee Arthroscopy", slug: "knee-arthroscopy" },
+    { name: "Patellofemoral Pain Syndrome", slug: "patellofemoral-syndrome" },
+    { name: "Baker's Cyst (Popliteal Cyst)", slug: "bakers-cyst" },
+  ],
+  ctaCard: {
+    eyebrow: "Stiff, aching, arthritic knee?",
+    headline: "Most arthritis is managed without surgery for years.",
+  },
+  faqHeadline: "Knee arthritis, answered.",
+  faqs: [
+    {
+      question: "Do I need a knee replacement?",
+      answer:
+        "Not for most people, at least not soon. Knee arthritis is usually managed for years without surgery, using activity modification, weight management, physical therapy, anti-inflammatory measures, and injections. Replacement is reserved for advanced arthritis that limits daily life despite these measures, and the choice of a partial or total replacement depends on how much of the joint is involved.",
+    },
+    {
+      question: "What injections help knee arthritis?",
+      answer:
+        "Several options are used in selected cases. A corticosteroid injection can calm a painful flare, hyaluronic acid aims to improve lubrication in some knees, and PRP, made from a concentrate of the patient's own platelets, is used in selected cases. The right choice depends on the stage of arthritis and the individual knee.",
+    },
+    {
+      question: "Will arthroscopy fix my arthritis?",
+      answer:
+        "Generally no. Arthroscopy has a limited role in knee arthritis itself and is reserved for specific mechanical problems, such as a torn fragment that catches. It does not reverse the underlying cartilage wear, so it is not a routine treatment for arthritis, and conservative care or, eventually, replacement are the mainstays.",
+    },
+    {
+      question: "Can I slow down knee arthritis?",
+      answer:
+        "You can often reduce symptoms and load on the joint. Maintaining a healthy weight lowers the force across the knee, regular low-impact activity and strengthening support the joint, and managing flares early helps. These steps do not regrow cartilage, but they frequently keep an arthritic knee comfortable and active for a long time.",
+    },
+  ],
+  bottomCtaTitle: "Knee pain, stiffness, and swelling from arthritis?",
+  bottomCtaItalic: "Most of it is managed without surgery.",
+  bottomCtaBody:
+    "Knee arthritis is usually controlled for years with activity modification, weight management, physical therapy, anti-inflammatory measures, and injections. Partial or total knee replacement is reserved for advanced arthritis that limits daily life, and arthroscopy has only a limited, specific role.",
+  metaTitle: "Knee Arthritis, Steven J. Lee, MD",
+  metaDescription:
+    "Knee osteoarthritis evaluated and treated by Dr. Steven J. Lee, MD. Conservative care first, including therapy and injections (corticosteroid, hyaluronic acid, PRP), with partial or total knee replacement for advanced arthritis.",
+  schemaDescription:
+    "Knee osteoarthritis is gradual cartilage wear in the knee causing pain, stiffness, and swelling. Treatment is conservative first and for as long as it controls symptoms, including activity modification, weight management, physical therapy, anti-inflammatory measures, and injections such as corticosteroid, hyaluronic acid, and PRP; partial or total knee replacement is reserved for advanced arthritis that limits daily life, and arthroscopy has only a limited role.",
+};
+
+const ankleFracture: ConditionPageContent = {
+  slug: "ankle-fracture",
+  name: "Ankle Fracture",
+  region: "Foot & Ankle",
+  headerTitle: "Ankle Fracture:",
+  headerItalic: "a break of the bones that make the ankle joint.",
+  headerLede:
+    "An ankle fracture is a break of one or more of the ankle bones, usually from a twist or a fall. Stable, well-aligned breaks heal in a cast or boot, while displaced or unstable fractures are realigned and fixed with plates and screws so the joint surface is restored.",
+  byline: sportsByline,
+  overview: [
+    "An ankle fracture is a break of one or more of the malleoli, the bony prominences that form the ankle joint, on the inner side (medial malleolus), the outer side (lateral malleolus, the lower end of the fibula), and sometimes the back of the shinbone (posterior malleolus). It usually happens from twisting or rolling the ankle or from a fall, and it can look and feel a lot like a bad sprain at first.",
+    "The most important question is whether the fracture is stable and well-aligned or unstable and shifted. A single, undisplaced break with the joint still lined up is often treated without surgery. When more than one part is broken, or the joint has shifted out of position, the ankle is unstable, and surgery to realign and fix the bones protects the joint over the long term.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Common findings after a twisting injury or fall include:"],
+      bullets: [
+        "Immediate pain, swelling, and bruising around the ankle",
+        "Difficulty or inability to bear weight",
+        "Tenderness directly over the ankle bones rather than the soft tissue",
+        "Visible deformity when the joint is shifted out of position",
+      ],
+    },
+    {
+      heading: "Stable versus unstable",
+      body: [
+        "An isolated, undisplaced fracture with the joint still aligned is usually stable and can heal in a cast or walking boot. When two or more parts are broken, or the talus (the bone the leg sits on) has shifted within the joint, the ankle is unstable. Unstable patterns are the ones that benefit from surgery, because a joint left even slightly out of alignment is prone to early arthritis.",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "X-rays confirm the fracture and show its alignment. In some patterns a CT scan is added to see the joint surface in detail, and stress views or weight-bearing X-rays help judge whether a single-bone fracture is truly stable. Because an ankle fracture can be mistaken for a sprain, persistent inability to bear weight after a twisting injury is a reason to image the ankle.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee bases the plan on stability and alignment. A stable, well-aligned isolated fracture is treated without surgery in a cast or walking boot, with imaging along the way to confirm the bones stay in position as they heal.",
+      "Displaced or unstable fractures, and those that disrupt the joint surface, are treated with surgery, an open reduction and internal fixation that uses plates and screws to restore the alignment of the joint and hold it securely. Fixing the joint surface accurately and allowing early protected motion is what gives the ankle its best long-term function.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["Stable, well-aligned isolated fractures are treated with:"],
+      bullets: [
+        "A cast or walking boot to protect the healing bone",
+        "A defined period of protected or limited weight-bearing",
+        "Follow-up X-rays to confirm the fracture stays aligned",
+        "A graded return to motion and weight-bearing as it heals",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "Displaced or unstable fractures, especially when more than one part is broken or the joint is shifted, are treated with open reduction and internal fixation. The bones are realigned and held with plates and screws to restore the joint surface, which allows the ankle to begin protected motion early rather than staying immobilized for the whole healing period.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery depends on the fracture and whether surgery was needed:",
+  recovery: [
+    { when: "Weeks 0 to 6", what: "Protection in a cast or boot, with weight-bearing limited according to the fracture and any surgery. Swelling is controlled." },
+    { when: "Weeks 6 to 12", what: "Progressive weight-bearing as the bone heals, with motion and strengthening once it is protected enough." },
+    { when: "Months 3 and beyond", what: "A graded return to walking distance, then running and sport, as strength and confidence return." },
+  ],
+  misconceptions: {
+    intro: "Two things to keep in view:",
+    items: [
+      { heading: "Not every ankle fracture needs surgery.", body: "A stable, well-aligned isolated fracture often heals well in a cast or walking boot. Surgery is for displaced or unstable patterns, where realigning and fixing the joint protects it from early arthritis." },
+      { heading: "A 'bad sprain' that won't bear weight deserves an X-ray.", body: "An ankle fracture can look much like a sprain at first. Pain directly over the ankle bones and difficulty bearing weight after a twist are reasons to image the ankle rather than assume it is only a sprain." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "A break of one or more ankle bones (the malleoli)" },
+    { label: "Key question", value: "Stable and aligned, or displaced and unstable" },
+    { label: "Stable fractures", value: "Cast or walking boot, no surgery" },
+    { label: "Unstable fractures", value: "Plates and screws to restore the joint" },
+    { label: "Goal", value: "An aligned joint surface and early protected motion" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Treats stable, aligned fractures without surgery",
+    "Restores the joint surface with plate-and-screw fixation when unstable",
+    "Favors early protected motion to preserve ankle function",
+  ],
+  related: [
+    { name: "Ankle Sprain and Instability", slug: "ankle-sprain" },
+    { name: "Osteochondritis Dissecans (OCD)", slug: "osteochondritis-dissecans" },
+    { name: "Jones and Pseudo-Jones Fracture", slug: "jones-fracture" },
+    { name: "Stress Fracture", slug: "stress-fracture" },
+  ],
+  ctaCard: {
+    eyebrow: "Broken or badly twisted ankle?",
+    headline: "Alignment is what protects the joint.",
+  },
+  faqHeadline: "Ankle fractures, answered.",
+  faqs: [
+    {
+      question: "Do I need surgery for an ankle fracture?",
+      answer:
+        "It depends on whether the fracture is stable and aligned. A single, undisplaced break with the joint still lined up is often treated without surgery, in a cast or walking boot. When more than one bone is broken, or the joint has shifted out of position, the ankle is unstable, and surgery with plates and screws realigns and holds the bones to restore the joint.",
+    },
+    {
+      question: "How can I tell an ankle fracture from a sprain?",
+      answer:
+        "You often cannot tell them apart by feel, because both cause pain, swelling, and bruising. Pain directly over the ankle bones rather than the soft tissue, and difficulty bearing weight after a twisting injury, point toward a fracture. An X-ray settles the question, which is why a 'bad sprain' that will not bear weight deserves imaging.",
+    },
+    {
+      question: "Why does the joint need to be perfectly aligned?",
+      answer:
+        "The ankle is a weight-bearing joint, and even a small amount of shift in the joint surface concentrates pressure on the cartilage and leads to early arthritis over time. Restoring accurate alignment, with a cast for stable fractures or with plates and screws for displaced ones, is what protects the joint for the long term.",
+    },
+    {
+      question: "How long until I can walk and return to sport?",
+      answer:
+        "Protected healing in a cast or boot typically takes about six weeks, followed by progressive weight-bearing, motion, and strengthening. A graded return to running and sport usually follows over the months after that, depending on the fracture and whether surgery was needed. Surgical fixation often allows earlier protected motion than prolonged casting.",
+    },
+  ],
+  bottomCtaTitle: "Broken ankle, or a twist that won't bear weight?",
+  bottomCtaItalic: "Stability and alignment guide the plan.",
+  bottomCtaBody:
+    "Stable, well-aligned ankle fractures heal in a cast or walking boot, while displaced or unstable fractures are realigned and fixed with plates and screws to restore the joint and allow early protected motion. A 'bad sprain' that will not bear weight is worth an X-ray.",
+  metaTitle: "Ankle Fracture, Steven J. Lee, MD",
+  metaDescription:
+    "Ankle fractures evaluated and treated by Dr. Steven J. Lee, MD. Cast or walking-boot treatment for stable, aligned fractures and open reduction with internal fixation (plates and screws) for displaced or unstable ones explained.",
+  schemaDescription:
+    "An ankle fracture is a break of one or more of the ankle bones (the malleoli), usually from a twist or fall. Stable, well-aligned isolated fractures are treated without surgery in a cast or walking boot; displaced or unstable fractures are treated with open reduction and internal fixation using plates and screws.",
+};
+
+const posteriorTibialTendonitis: ConditionPageContent = {
+  slug: "posterior-tibial-tendonitis",
+  name: "Posterior Tibial Tendon Dysfunction",
+  region: "Foot & Ankle",
+  headerTitle: "Posterior Tibial Tendon Dysfunction:",
+  headerItalic: "the tendon that holds up the arch.",
+  headerLede:
+    "The posterior tibial tendon is the main dynamic support of the arch on the inner ankle. When it becomes irritated and then degenerates, it causes inner-ankle pain and a progressive, often flattening, foot. Catching it early, before the deformity becomes fixed, is what keeps treatment simple.",
+  byline: sportsByline,
+  overview: [
+    "Posterior tibial tendon dysfunction (PTTD) is irritation and then degeneration of the posterior tibial tendon, which runs behind the inner ankle bone and is the main dynamic support of the arch. As the tendon weakens, it can no longer hold the arch up, and the foot gradually flattens and rolls inward.",
+    "It usually starts as inner-ankle pain and swelling and progresses over time. The single most important point is that it is staged: caught early, while the tendon is irritated but the foot is still flexible, it is treated with simple supportive measures. Left to progress, the flatfoot can become fixed and stiff, which is much harder to treat. That is why catching it early matters.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Typical findings include:"],
+      bullets: [
+        "Pain and swelling along the inner ankle and arch",
+        "A gradually flattening arch, often in one foot first",
+        "Difficulty standing on tiptoe on the affected side",
+        "Pain that shifts to the outer ankle as the deformity advances",
+      ],
+    },
+    {
+      heading: "Why catching it early matters",
+      body: [
+        "Early on, the tendon is irritated but the foot is still flexible, and the arch can still be supported and the tendon protected. As the condition advances, the flatfoot becomes progressively fixed, the joints stiffen, and the problem shifts from a tendon to a deformity. The earlier it is recognized, the simpler and more effective the treatment, which is why inner-ankle pain with a flattening arch should not be ignored.",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "The diagnosis is largely clinical, based on inner-ankle tenderness, a flattening arch, and difficulty rising onto the toes. Standing X-rays show the alignment of the foot and how far the deformity has progressed, and MRI or ultrasound assesses the tendon itself when needed.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee's emphasis is on catching the problem early, while the foot is still flexible. Early-stage dysfunction is treated conservatively, with an orthotic or a brace to support the arch and offload the tendon, physical therapy to strengthen the tendon and surrounding muscles, and anti-inflammatory measures to settle the irritation.",
+      "When the collapse is progressive and the simpler measures are not enough, reconstruction is considered, which can combine tendon transfer to restore active arch support with bony realignment to correct the flatfoot. Treating it before the deformity becomes fixed keeps the options simpler and the results more reliable.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["Early-stage dysfunction, while the foot is flexible, responds to:"],
+      bullets: [
+        "An orthotic or a brace to support the arch and offload the tendon",
+        "Physical therapy to strengthen the tendon and surrounding muscles",
+        "Anti-inflammatory measures to settle the irritation",
+        "A period of relative rest from aggravating activity",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "Progressive collapse that does not respond to conservative care may need reconstruction. Depending on the stage, this can combine a tendon transfer to restore active support of the arch with bony realignment (osteotomy) to correct the flatfoot, and occasionally fusion when the deformity is fixed and the joints are arthritic. The aim is a stable, well-aligned, comfortable foot.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery depends on the stage and the treatment:",
+  recovery: [
+    { when: "Non-surgical", what: "A brace or orthotic with therapy over several weeks to months, with the best results when started early." },
+    { when: "After reconstruction, weeks 0 to 6", what: "Protected immobilization and limited weight-bearing while the repair and any bone work heal." },
+    { when: "Months 3 to 6 and beyond", what: "Progressive strengthening and a graded return to walking and activity as the foot rebuilds support." },
+  ],
+  misconceptions: {
+    intro: "Two things to understand:",
+    items: [
+      { heading: "A 'fallen arch' with inner-ankle pain is not just cosmetic.", body: "A newly flattening, painful arch in an adult often means the posterior tibial tendon is failing. Recognized early, while the foot is flexible, it is treated simply. Ignored, it can progress to a fixed deformity." },
+      { heading: "Earlier treatment means simpler treatment.", body: "The condition is staged. In the early stages an orthotic, therapy, and anti-inflammatory measures often suffice. Once the flatfoot becomes fixed, correction is a bigger undertaking, which is why catching it early matters." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Tendon involved", value: "Posterior tibial tendon (inner ankle)" },
+    { label: "Its job", value: "The main dynamic support of the arch" },
+    { label: "Hallmark", value: "Inner-ankle pain and a flattening foot" },
+    { label: "Early treatment", value: "Orthotic or brace, therapy, anti-inflammatory measures" },
+    { label: "Key point", value: "Treat it before the deformity becomes fixed" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Emphasizes catching it early, while the foot is still flexible",
+    "Orthotics, bracing, and therapy first for early-stage dysfunction",
+    "Reconstruction for progressive collapse when conservative care is not enough",
+  ],
+  related: [
+    { name: "Plantar Fasciitis", slug: "plantar-fasciitis" },
+    { name: "Ankle Sprain and Instability", slug: "ankle-sprain" },
+    { name: "Achilles Tendonitis", slug: "achilles-tendonitis" },
+    { name: "Morton's Neuroma", slug: "mortons-neuroma" },
+  ],
+  ctaCard: {
+    eyebrow: "Inner-ankle pain and a flattening arch?",
+    headline: "Catching it early keeps it simple.",
+  },
+  faqHeadline: "Posterior tibial tendon dysfunction, answered.",
+  faqs: [
+    {
+      question: "What is posterior tibial tendon dysfunction?",
+      answer:
+        "It is irritation and then degeneration of the posterior tibial tendon, which runs behind the inner ankle bone and is the main dynamic support of the arch. As the tendon weakens, it can no longer hold the arch up, so the foot gradually flattens and rolls inward, causing inner-ankle pain and a progressive flatfoot.",
+    },
+    {
+      question: "Why is catching it early so important?",
+      answer:
+        "The condition is staged. Early on, the tendon is irritated but the foot is still flexible, and it responds to an orthotic or brace, physical therapy, and anti-inflammatory measures. Left to progress, the flatfoot becomes fixed and stiff, which is much harder to treat. The earlier it is recognized, the simpler and more effective the treatment.",
+    },
+    {
+      question: "Will I need surgery?",
+      answer:
+        "Many early cases are managed without surgery, using an orthotic or brace, therapy, and anti-inflammatory measures. Surgery, in the form of reconstruction, is considered when the collapse is progressive and conservative care is not enough. Treating it before the deformity becomes fixed keeps the options simpler.",
+    },
+    {
+      question: "Why is my flatfoot painful now when it never was before?",
+      answer:
+        "A flatfoot that becomes newly painful in adulthood, especially along the inner ankle, often signals that the posterior tibial tendon is failing. That is different from a lifelong, painless flat foot, and it is worth evaluating early, while the foot is still flexible and treatment is simplest.",
+    },
+  ],
+  bottomCtaTitle: "Inner-ankle pain with an arch that is starting to flatten?",
+  bottomCtaItalic: "The earlier it is caught, the simpler the fix.",
+  bottomCtaBody:
+    "Posterior tibial tendon dysfunction is the main reason an adult arch flattens and turns painful. Early stages respond to an orthotic or brace, physical therapy, and anti-inflammatory measures, while progressive collapse may need reconstruction. Catching it before the deformity becomes fixed is the goal.",
+  metaTitle: "Posterior Tibial Tendon Dysfunction, Steven J. Lee, MD",
+  metaDescription:
+    "Posterior tibial tendon dysfunction (adult flatfoot) evaluated and treated by Dr. Steven J. Lee, MD. Orthotics, bracing, physical therapy, and anti-inflammatory care early, with reconstruction for progressive collapse, explained.",
+  schemaDescription:
+    "Posterior tibial tendon dysfunction is irritation then degeneration of the posterior tibial tendon, the main dynamic support of the arch, causing inner-ankle pain and a progressive flattening foot. Early stages are treated with orthotics or bracing, physical therapy, and anti-inflammatory measures; progressive collapse may need reconstruction.",
+};
+
+const peronealTendonitis: ConditionPageContent = {
+  slug: "peroneal-tendonitis",
+  name: "Peroneal Tendonitis",
+  region: "Foot & Ankle",
+  headerTitle: "Peroneal Tendonitis:",
+  headerItalic: "outer-ankle pain from the tendons behind the bone.",
+  headerLede:
+    "The peroneal tendons run behind the outer ankle bone and help stabilize the ankle. They become irritated after sprains or from overuse, causing outer-ankle pain and swelling. Most cases settle with conservative care, while tendons that slip out of position or tear may need surgery.",
+  byline: sportsByline,
+  overview: [
+    "Peroneal tendonitis is irritation of the peroneal tendons, two tendons that run down the outer side of the lower leg and curve behind the outer ankle bone (the lateral malleolus) on their way into the foot. They help stabilize the ankle and turn the foot outward, and they are commonly irritated after ankle sprains or from overuse.",
+    "It typically causes pain and swelling behind and below the outer ankle bone, worse with activity. Most cases respond well to conservative care. The cases that may need surgery are the ones where a tendon slips out of its normal position behind the bone (subluxation) or develops a tear.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Common findings include:"],
+      bullets: [
+        "Pain and swelling behind and below the outer ankle bone",
+        "Pain that worsens with activity and eases with rest",
+        "Tenderness along the tendons on the outer ankle",
+        "A snapping or popping sensation if a tendon is slipping out of place",
+      ],
+    },
+    {
+      heading: "Often follows a sprain",
+      body: [
+        "Peroneal tendonitis frequently appears after an ankle sprain or in an ankle that keeps rolling, because the same outer-ankle structures are involved. Outer-ankle pain that lingers after a sprain is a reason to look specifically at the peroneal tendons, since they can be a hidden source of ongoing symptoms.",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "The diagnosis is mainly clinical, based on tenderness along the tendons and pain when the foot is turned outward against resistance. Ultrasound or MRI is used when a tear or tendon subluxation is suspected, or when symptoms do not settle with conservative care.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee treats peroneal tendonitis conservatively first. That means relative rest from aggravating activity, bracing or taping to support the outer ankle, physical therapy to strengthen and rebalance the tendons, and anti-inflammatory measures to settle the irritation. Most cases improve with a genuine course of this care.",
+      "Surgery is reserved for the specific situations that do not respond to conservative care: a tendon that subluxates, repeatedly slipping out of position behind the bone, or a tendon that has torn. In those cases the tendon is repaired and stabilized so it tracks properly again. Because outer-ankle pain often follows a sprain, any associated ankle instability is addressed as well.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["Most cases respond to conservative care:"],
+      bullets: [
+        "Relative rest from the activity that aggravates it",
+        "Bracing or taping to support the outer ankle",
+        "Physical therapy to strengthen and rebalance the tendons",
+        "Anti-inflammatory measures to settle the irritation",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "Tendons that subluxate, slipping out of their groove behind the outer ankle bone, or that have torn, may need surgery when conservative care does not resolve them. The procedure repairs the torn tendon and stabilizes it so it tracks properly behind the bone, and any associated ankle instability is addressed at the same time.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery depends on whether surgery is needed:",
+  recovery: [
+    { when: "Non-surgical", what: "Relative rest, bracing or taping, and therapy over several weeks, with most cases improving in that window." },
+    { when: "After surgery, weeks 0 to 6", what: "Protected immobilization while the repaired and stabilized tendon heals." },
+    { when: "Months 2 to 4", what: "Progressive strengthening and a graded return to running and cutting activity." },
+  ],
+  misconceptions: {
+    intro: "Two things to keep in view:",
+    items: [
+      { heading: "Lingering outer-ankle pain after a sprain may be the tendons.", body: "Peroneal tendonitis often follows an ankle sprain. Outer-ankle pain and swelling that persist after a sprain are a reason to look specifically at the peroneal tendons rather than assuming it is just a slow-healing sprain." },
+      { heading: "Most cases do not need surgery.", body: "The large majority of peroneal tendonitis settles with relative rest, bracing or taping, therapy, and anti-inflammatory measures. Surgery is reserved for tendons that slip out of position or tear and do not respond to that care." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "Tendons involved", value: "Peroneal tendons (behind the outer ankle bone)" },
+    { label: "Common triggers", value: "After ankle sprains and from overuse" },
+    { label: "Hallmark", value: "Outer-ankle pain and swelling, worse with activity" },
+    { label: "First-line care", value: "Relative rest, bracing or taping, therapy" },
+    { label: "Surgery", value: "For tendons that subluxate or tear" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Conservative care first: relative rest, bracing, therapy",
+    "Repairs and stabilizes tendons that subluxate or tear",
+    "Looks for the ankle instability that often accompanies it",
+  ],
+  related: [
+    { name: "Ankle Sprain and Instability", slug: "ankle-sprain" },
+    { name: "Osteochondritis Dissecans (OCD)", slug: "osteochondritis-dissecans" },
+    { name: "Achilles Tendonitis", slug: "achilles-tendonitis" },
+    { name: "Jones and Pseudo-Jones Fracture", slug: "jones-fracture" },
+  ],
+  ctaCard: {
+    eyebrow: "Outer-ankle pain that won't settle?",
+    headline: "Most of it responds to conservative care.",
+  },
+  faqHeadline: "Peroneal tendonitis, answered.",
+  faqs: [
+    {
+      question: "What are the peroneal tendons and why do they hurt?",
+      answer:
+        "The peroneal tendons run down the outer side of the lower leg and curve behind the outer ankle bone, helping to stabilize the ankle and turn the foot outward. They become irritated after ankle sprains or from overuse, causing pain and swelling behind and below the outer ankle bone that is worse with activity.",
+    },
+    {
+      question: "Could this be why my ankle still hurts after a sprain?",
+      answer:
+        "Quite possibly. Peroneal tendonitis frequently follows an ankle sprain, because the same outer-ankle structures are involved. Outer-ankle pain and swelling that linger after a sprain are a reason to look specifically at the peroneal tendons, which can be a hidden source of ongoing symptoms.",
+    },
+    {
+      question: "Will I need surgery?",
+      answer:
+        "Usually not. Most peroneal tendonitis settles with relative rest, bracing or taping, physical therapy, and anti-inflammatory measures. Surgery is reserved for tendons that subluxate, repeatedly slipping out of position behind the bone, or that have torn and do not respond to conservative care.",
+    },
+    {
+      question: "What does a snapping feeling at the outer ankle mean?",
+      answer:
+        "A snapping or popping sensation behind the outer ankle bone can mean a peroneal tendon is slipping out of its normal groove, called subluxation. That pattern is worth evaluating, because tendons that repeatedly subluxate are the ones more likely to need surgical stabilization rather than conservative care alone.",
+    },
+  ],
+  bottomCtaTitle: "Outer-ankle pain and swelling, especially after a sprain?",
+  bottomCtaItalic: "The peroneal tendons are worth a look.",
+  bottomCtaBody:
+    "Peroneal tendonitis causes outer-ankle pain and swelling, often after a sprain or from overuse. The large majority settle with relative rest, bracing or taping, physical therapy, and anti-inflammatory measures. Tendons that slip out of position or tear may need surgical repair and stabilization.",
+  metaTitle: "Peroneal Tendonitis, Steven J. Lee, MD",
+  metaDescription:
+    "Peroneal tendonitis evaluated and treated by Dr. Steven J. Lee, MD. Conservative care first, with relative rest, bracing or taping, physical therapy, and anti-inflammatory measures, and surgery for tendons that subluxate or tear, explained.",
+  schemaDescription:
+    "Peroneal tendonitis is irritation of the peroneal tendons behind the outer ankle bone, often after ankle sprains or from overuse, causing outer-ankle pain and swelling. Most cases respond to relative rest, bracing or taping, physical therapy, and anti-inflammatory measures; tendons that subluxate or tear may need surgery.",
+};
+
+const lisfrancInjury: ConditionPageContent = {
+  slug: "lisfranc-injury",
+  name: "Lisfranc Injury",
+  region: "Foot & Ankle",
+  headerTitle: "Lisfranc Injury:",
+  headerItalic: "a midfoot injury that is easily missed.",
+  headerLede:
+    "A Lisfranc injury damages the ligaments and joints of the midfoot, from a twist or a crush. It ranges from a subtle sprain to a fracture-dislocation. Because a missed unstable Lisfranc injury leads to midfoot arthritis, it is taken seriously and evaluated carefully.",
+  byline: sportsByline,
+  overview: [
+    "A Lisfranc injury is an injury to the ligaments and joints of the midfoot, the tarsometatarsal complex, where the long bones of the foot meet the cluster of bones in the middle of the arch. It can happen from a twist of a planted foot or from a direct crush, and it ranges widely, from a subtle ligament sprain to a fracture-dislocation with the midfoot bones shifted out of line.",
+    "The most important teaching point is that a Lisfranc injury is easily missed. A subtle one can be mistaken for an ordinary midfoot sprain, yet a missed unstable injury leads to collapse of the arch and midfoot arthritis. For that reason it is taken seriously, evaluated carefully, and stabilized when unstable.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Findings that should raise suspicion include:"],
+      bullets: [
+        "Midfoot pain and swelling after a twist or crush of the foot",
+        "Difficulty or inability to bear weight through the midfoot",
+        "Bruising on the bottom of the midfoot, a suggestive sign",
+        "Pain across the midfoot when it is twisted or loaded",
+      ],
+    },
+    {
+      heading: "Why it is easily missed, and why that matters",
+      body: [
+        "A subtle Lisfranc injury can look like a midfoot sprain on a casual exam and on plain, non-weight-bearing X-rays. The danger is that a missed unstable injury allows the midfoot to shift and collapse, leading to painful midfoot arthritis. That is why persistent midfoot pain, bruising on the sole, and trouble bearing weight after a twist are taken seriously and imaged thoroughly.",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "Weight-bearing X-rays, often of both feet for comparison, are key, because a subtle instability only shows when the foot is loaded. A CT scan defines fractures, and MRI assesses the ligaments. The goal is to determine whether the midfoot is stable or unstable, because that distinction drives the treatment.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee's first priority is not missing it. A foot with midfoot pain, sole bruising, and trouble bearing weight after a twist is evaluated with weight-bearing imaging to determine whether the injury is stable or unstable, because that is what guides everything.",
+      "A stable sprain with no shift is treated without surgery, immobilized and protected until it heals. An unstable injury, where the midfoot has shifted or there is a fracture-dislocation, is treated surgically to realign and stabilize the midfoot, either by fixing the joints in their correct position or by fusing the involved joints. The aim is a stable, well-aligned midfoot that resists arthritis.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["A stable sprain, with no shift on weight-bearing imaging, is treated with:"],
+      bullets: [
+        "Immobilization in a cast or boot",
+        "A period of protected, limited weight-bearing",
+        "Repeat weight-bearing X-rays to confirm it stays aligned",
+        "A graded return to weight-bearing and activity as it heals",
+      ],
+    },
+    {
+      heading: "Surgical treatment",
+      body: [
+        "An unstable Lisfranc injury, where the midfoot has shifted or there is a fracture-dislocation, is treated surgically to realign and stabilize the midfoot. Depending on the injury, this means fixing the joints in their correct position or fusing the involved joints. Restoring and holding the alignment is what protects the midfoot from collapse and arthritis.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery is deliberate, because the midfoot must heal aligned:",
+  recovery: [
+    { when: "Weeks 0 to 6", what: "Immobilization and protected weight-bearing, whether treated in a boot or after surgery, while the midfoot heals." },
+    { when: "Weeks 6 to 12", what: "Progressive weight-bearing as healing and alignment are confirmed on imaging." },
+    { when: "Months 3 and beyond", what: "A graded return to walking distance, then running and sport, as strength and confidence return." },
+  ],
+  misconceptions: {
+    intro: "Two things to take seriously:",
+    items: [
+      { heading: "A 'midfoot sprain' that won't bear weight deserves a careful look.", body: "A subtle Lisfranc injury is easily mistaken for an ordinary sprain. Midfoot pain, bruising on the sole, and difficulty bearing weight after a twist are reasons for weight-bearing imaging rather than waiting it out." },
+      { heading: "A missed unstable injury leads to arthritis.", body: "The reason Lisfranc injuries are taken so seriously is that an unstable one, if missed, lets the midfoot shift and collapse, causing midfoot arthritis. Identifying and stabilizing it early is what protects the foot." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "An injury to the midfoot ligaments and joints (tarsometatarsal complex)" },
+    { label: "Cause", value: "A twist of a planted foot or a crush" },
+    { label: "Key risk", value: "Easily missed; a missed unstable injury leads to arthritis" },
+    { label: "Best test", value: "Weight-bearing X-rays, with CT or MRI as needed" },
+    { label: "Treatment", value: "Immobilization if stable, surgery if unstable" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "Prioritizes not missing a subtle Lisfranc injury",
+    "Uses weight-bearing imaging to judge stability",
+    "Realigns and stabilizes unstable injuries to protect the midfoot",
+  ],
+  related: [
+    { name: "Ankle Sprain and Instability", slug: "ankle-sprain" },
+    { name: "Jones and Pseudo-Jones Fracture", slug: "jones-fracture" },
+    { name: "Stress Fracture", slug: "stress-fracture" },
+    { name: "Morton's Neuroma", slug: "mortons-neuroma" },
+  ],
+  ctaCard: {
+    eyebrow: "Midfoot pain that won't bear weight?",
+    headline: "A Lisfranc injury is worth ruling out.",
+  },
+  faqHeadline: "Lisfranc injuries, answered.",
+  faqs: [
+    {
+      question: "What is a Lisfranc injury?",
+      answer:
+        "It is an injury to the ligaments and joints of the midfoot, the tarsometatarsal complex, where the long bones of the foot meet the middle of the arch. It happens from a twist of a planted foot or a crush, and it ranges from a subtle ligament sprain to a fracture-dislocation with the midfoot bones shifted out of line.",
+    },
+    {
+      question: "Why are Lisfranc injuries called easily missed?",
+      answer:
+        "A subtle Lisfranc injury can look like an ordinary midfoot sprain on a casual exam and on plain, non-weight-bearing X-rays. The instability often only shows when the foot is loaded, which is why weight-bearing imaging is important. The concern is that a missed unstable injury leads to midfoot collapse and arthritis.",
+    },
+    {
+      question: "Do I need surgery for a Lisfranc injury?",
+      answer:
+        "It depends on stability. A stable sprain with no shift is treated without surgery, immobilized and protected until it heals. An unstable injury, where the midfoot has shifted or there is a fracture-dislocation, is treated surgically to realign and stabilize the midfoot, by fixing or fusing the involved joints.",
+    },
+    {
+      question: "What happens if a Lisfranc injury is not treated?",
+      answer:
+        "An unstable Lisfranc injury that is missed or left untreated allows the midfoot to shift and collapse over time, which leads to painful midfoot arthritis and a flattening arch. That long-term consequence is the reason these injuries are taken seriously and stabilized when unstable.",
+    },
+  ],
+  bottomCtaTitle: "Midfoot pain, sole bruising, or trouble bearing weight after a twist?",
+  bottomCtaItalic: "A Lisfranc injury is worth ruling out.",
+  bottomCtaBody:
+    "A Lisfranc injury is an easily missed midfoot injury, and a missed unstable one leads to midfoot arthritis, so it is taken seriously. Stable sprains are immobilized and protected, while unstable injuries are realigned and stabilized surgically. Weight-bearing imaging is what separates the two.",
+  metaTitle: "Lisfranc Injury, Steven J. Lee, MD",
+  metaDescription:
+    "Lisfranc midfoot injuries evaluated and treated by Dr. Steven J. Lee, MD. Why they are easily missed, weight-bearing imaging, immobilization for stable sprains, and surgical fixation or fusion for unstable injuries, explained.",
+  schemaDescription:
+    "A Lisfranc injury is an injury to the ligaments and joints of the midfoot (the tarsometatarsal complex), from a twist or crush, ranging from a subtle sprain to a fracture-dislocation. It is easily missed, and a missed unstable injury leads to midfoot arthritis. Stable sprains are immobilized; unstable injuries need surgical fixation or fusion.",
+};
+
+const seversDisease: ConditionPageContent = {
+  slug: "severs-disease",
+  name: "Sever's Disease",
+  region: "Foot & Ankle",
+  headerTitle: "Sever's Disease:",
+  headerItalic: "a common, self-limiting heel pain in growing kids.",
+  headerLede:
+    "Sever's disease is irritation of the growth plate at the back of the heel in active, growing children and adolescents, common in running and jumping sports. It is benign and self-limiting, managed without surgery, and it resolves as the growth plate matures.",
+  byline: sportsByline,
+  overview: [
+    "Sever's disease, more precisely calcaneal apophysitis, is irritation of the growth plate at the back of the heel bone (the calcaneus) in growing children and adolescents. The growth plate is a soft area of developing bone, and the strong pull of the Achilles tendon on it during running and jumping makes it sore. It is one of the most common causes of heel pain in active children.",
+    "It is benign and self-limiting. It does not cause lasting damage, and it resolves on its own as the growth plate matures and closes with skeletal maturity. The whole goal of treatment is to keep the child comfortable and active in the meantime, using simple measures, with no surgery involved.",
+  ],
+  bodySections: [
+    {
+      heading: "Symptoms",
+      body: ["Typical findings in an active child or adolescent include:"],
+      bullets: [
+        "Heel pain during and after running and jumping sports",
+        "Tenderness when the back or sides of the heel are squeezed",
+        "Limping or walking on the toes after activity",
+        "Pain in one or both heels, often during a growth spurt",
+      ],
+    },
+    {
+      heading: "Who gets it",
+      body: [
+        "It typically affects active children and adolescents, often during a growth spurt and frequently in those who play running and jumping sports such as soccer, basketball, and track. Tight calf muscles and a recent increase in activity can make it more likely. It tends to flare during busy sports seasons and settle with rest.",
+      ],
+    },
+    {
+      heading: "How it is diagnosed",
+      body: [
+        "Sever's disease is a clinical diagnosis, based on the age, the activity, and tenderness when the heel is squeezed. X-rays are not needed to make the diagnosis, but are sometimes used to rule out other causes of heel pain when the picture is atypical or the pain does not behave as expected.",
+      ],
+    },
+  ],
+  drLeeApproach: {
+    paragraphs: [
+      "Dr. Lee's approach to Sever's disease is reassurance and simple measures, because it is benign and resolves on its own. Treatment centers on activity modification to settle a flare, heel cups to cushion and offload the growth plate, a consistent calf-stretching program, and supportive footwear. There is no role for surgery.",
+      "With 25 years in sports medicine and particular attention to young and competitive athletes, Dr. Lee frames this as a temporary, growth-related condition. The aim is to keep the child playing and comfortable, modifying activity during flares rather than stopping sport entirely, until the growth plate matures and the problem resolves.",
+    ],
+  },
+  treatmentSections: [
+    {
+      heading: "Non-surgical treatment",
+      body: ["Management is entirely non-surgical and centers on simple measures:"],
+      bullets: [
+        "Activity modification to settle a flare, then a graded return",
+        "Heel cups to cushion and offload the growth plate",
+        "A consistent calf-stretching program",
+        "Supportive, well-cushioned footwear",
+      ],
+    },
+    {
+      heading: "Reassurance for families",
+      body: [
+        "Families can be reassured that Sever's disease does not cause lasting harm and does not require surgery. It tends to flare during busy sports seasons and settle with rest and the simple measures above, and it resolves for good as the growth plate matures and closes with skeletal maturity.",
+      ],
+    },
+  ],
+  recoveryIntro: "Recovery is a matter of managing flares until the growth plate matures:",
+  recovery: [
+    { when: "During a flare", what: "Activity modification, heel cups, calf stretching, and supportive shoes settle the symptoms." },
+    { when: "Returning to sport", what: "A graded return as comfort allows, continuing stretching and heel cushioning." },
+    { when: "With skeletal maturity", what: "The condition resolves for good as the growth plate matures and closes." },
+  ],
+  misconceptions: {
+    intro: "Two things for families to know:",
+    items: [
+      { heading: "It is not a 'disease' in the worrying sense.", body: "Despite the name, Sever's disease is a benign, self-limiting irritation of a growth plate. It does not cause lasting damage and it resolves on its own as the child matures, much like Osgood-Schlatter at the knee." },
+      { heading: "Your child usually does not have to stop sport entirely.", body: "Most children can keep playing with activity modification during flares, heel cups, and calf stretching. The goal is to keep them comfortable and active, not to sideline them, until the growth plate matures." },
+    ],
+  },
+  sidebarFacts: [
+    { label: "What it is", value: "Irritation of the heel growth plate (calcaneal apophysitis)" },
+    { label: "Who gets it", value: "Active, growing children and adolescents" },
+    { label: "Nature", value: "Benign and self-limiting" },
+    { label: "Treatment", value: "Activity modification, heel cups, calf stretching, footwear" },
+    { label: "Outlook", value: "Resolves as the growth plate matures" },
+  ],
+  whyDrLee: [
+    "Double fellowship-trained, with a sports-medicine background",
+    "25 years in sports medicine, attuned to young athletes",
+    "Reassuring, non-surgical management of a benign condition",
+    "Keeps young athletes comfortable and active during flares",
+  ],
+  related: [
+    { name: "Osgood-Schlatter Disease", slug: "osgood-schlatter" },
+    { name: "Achilles Tendonitis", slug: "achilles-tendonitis" },
+    { name: "Plantar Fasciitis", slug: "plantar-fasciitis" },
+    { name: "Stress Fracture", slug: "stress-fracture" },
+  ],
+  ctaCard: {
+    eyebrow: "Heel pain in an active child?",
+    headline: "It is common, benign, and self-limiting.",
+  },
+  faqHeadline: "Sever's disease, answered.",
+  faqs: [
+    {
+      question: "What is Sever's disease?",
+      answer:
+        "Sever's disease, or calcaneal apophysitis, is irritation of the growth plate at the back of the heel bone in growing children and adolescents. The strong pull of the Achilles tendon on the soft growth plate during running and jumping makes it sore. It is one of the most common causes of heel pain in active children and is benign and self-limiting.",
+    },
+    {
+      question: "Does my child need surgery or an X-ray?",
+      answer:
+        "No. Sever's disease is managed without surgery, using activity modification, heel cups, calf stretching, and supportive footwear. It is usually a clinical diagnosis based on the child's age, activity, and heel tenderness, so X-rays are not needed to diagnose it, though they are sometimes used to rule out other causes when the picture is atypical.",
+    },
+    {
+      question: "Can my child keep playing sports?",
+      answer:
+        "Usually yes. Most children can keep participating with activity modification during flares, heel cups to cushion the heel, and a consistent calf-stretching program. The goal is to keep them comfortable and active rather than to stop sport entirely. Busy sports seasons may bring flares that settle with rest.",
+    },
+    {
+      question: "Will it go away?",
+      answer:
+        "Yes. Sever's disease is self-limiting and resolves on its own as the growth plate at the back of the heel matures and closes with skeletal maturity. It does not cause lasting damage. In the meantime, simple measures keep the child comfortable through flares.",
+    },
+  ],
+  bottomCtaTitle: "Heel pain in a growing, active child?",
+  bottomCtaItalic: "It is common, benign, and temporary.",
+  bottomCtaBody:
+    "Sever's disease is a common, self-limiting irritation of the heel growth plate in active children, managed without surgery using activity modification, heel cups, calf stretching, and supportive footwear. It resolves as the growth plate matures, and most children stay active through it.",
+  metaTitle: "Sever's Disease (Heel Pain in Children), Steven J. Lee, MD",
+  metaDescription:
+    "Sever's disease (calcaneal apophysitis), heel pain in active growing children, evaluated and treated by Dr. Steven J. Lee, MD. Non-surgical management with activity modification, heel cups, calf stretching, and footwear changes explained.",
+  schemaDescription:
+    "Sever's disease (calcaneal apophysitis) is irritation of the growth plate at the back of the heel in active, growing children and adolescents. It is benign and self-limiting and is managed without surgery using activity modification, heel cups, calf stretching, and footwear changes, resolving as the growth plate matures.",
+};
+
 export const conditionPages: ConditionPageContent[] = [
   carpalTunnel,
   distalRadiusFracture,
@@ -8570,6 +12322,36 @@ export const conditionPages: ConditionPageContent[] = [
   // Hand & Wrist additions (Dr. Lee feedback, June 2026):
   triggerFinger,
   wristArthroscopy,
+  // Phase-2 build-out (June 2026):
+  kneeArthroscopy,
+  meniscusTear,
+  clavicleFracture,
+  shoulderArthroscopy,
+  // Old-site condition build-out (June 2026):
+  guyonsCanal,
+  swanNeckDeformity,
+  rheumatoidArthritisHand,
+  boutonniereDeformity,
+  malletFinger,
+  kienbocksDisease,
+  intersectionSyndrome,
+  nerveLaceration,
+  tendonLaceration,
+  handArthritis,
+  forearmCompartmentSyndrome,
+  distalHumerusFracture,
+  elbowArthritis,
+  olecranonBursitis,
+  distalBicepsTendonitis,
+  frozenShoulder,
+  patellarInstability,
+  bakersCyst,
+  kneeArthritis,
+  ankleFracture,
+  posteriorTibialTendonitis,
+  peronealTendonitis,
+  lisfrancInjury,
+  seversDisease,
 ];
 
 export function conditionPageBySlug(slug: string) {
@@ -8583,6 +12365,11 @@ export function conditionPageBySlug(slug: string) {
 // factual and free of superlatives. A slug with no entry falls back to the
 // generic treatment node in buildConditionSchema.
 export const conditionProcedures: Record<string, string[]> = {
+  "intersection-syndrome": ["Activity Modification and Splinting", "Corticosteroid Injection", "Surgical Compartment Release"],
+  "nerve-laceration": ["Microsurgical Nerve Repair", "Nerve Graft Reconstruction", "Nerve Conduit Repair"],
+  "tendon-laceration": ["Flexor Tendon Repair", "Extensor Tendon Repair", "Guided Hand Therapy Protocol"],
+  "hand-arthritis": ["Splinting and Hand Therapy", "Corticosteroid Injection", "Joint Fusion", "Joint Replacement"],
+  "forearm-compartment-syndrome": ["Activity Modification", "Compartment Pressure Testing", "Fasciotomy"],
   "ankle-sprain": ["Functional Rehabilitation", "Ligament Repair or Reconstruction"],
   "osteochondritis-dissecans": ["Protected Weight-Bearing", "Arthroscopic Treatment"],
   "achilles-tendonitis": ["Eccentric Calf-Loading Program", "PRP Injection"],
@@ -8725,5 +12512,121 @@ export const conditionProcedures: Record<string, string[]> = {
     "Arthroscopic TFCC Debridement",
     "Arthroscopic Ligament Grading and Treatment",
     "Arthroscopic Wafer Procedure",
+  ],
+  "knee-arthroscopy": [
+    "Diagnostic Arthroscopy",
+    "Arthroscopic Meniscus Repair",
+    "Partial Meniscectomy",
+    "Loose Body Removal",
+  ],
+  meniscus: [
+    "Arthroscopic Meniscus Repair",
+    "Partial Meniscectomy",
+    "Physical Therapy and Activity Modification",
+  ],
+  "clavicle-fracture": ["Sling Immobilization", "Plate and Screw Fixation"],
+  "shoulder-arthroscopy": [
+    "Diagnostic Arthroscopy",
+    "Arthroscopic Rotator Cuff Repair",
+    "Arthroscopic Labral Repair",
+    "Subacromial Decompression",
+  ],
+  "guyons-canal": ["Activity and Ergonomic Modification", "Decompression of Guyon's Canal"],
+  "swan-neck-deformity": [
+    "Hand Therapy and Splinting",
+    "Soft-Tissue Rebalancing",
+    "PIP Joint Procedure",
+  ],
+  "rheumatoid-arthritis-hand": [
+    "Tenosynovectomy",
+    "Tendon Repair or Reconstruction",
+    "Nerve Decompression",
+    "Joint Reconstruction or Fusion",
+  ],
+  "boutonniere-deformity": [
+    "PIP Extension Splinting",
+    "Central Slip Reconstruction",
+  ],
+  "mallet-finger": [
+    "Continuous DIP Extension Splinting",
+    "Surgical Fixation for Bony Mallet",
+  ],
+  "kienbocks-disease": [
+    "Immobilization and Observation",
+    "Joint-Leveling Osteotomy",
+    "Revascularization",
+    "Proximal Row Carpectomy",
+    "Partial Wrist Fusion",
+  ],
+  "distal-humerus-fracture": [
+    "Splinting and Early Motion",
+    "Open Reduction and Internal Fixation with Dual-Column Plating",
+    "Total Elbow Replacement",
+  ],
+  "elbow-arthritis": [
+    "Activity Modification and Therapy",
+    "Corticosteroid Injection",
+    "PRP Injection",
+    "Arthroscopic Debridement and Loose-Body Removal",
+    "Total Elbow Replacement",
+  ],
+  "olecranon-bursitis": [
+    "Activity Modification and Padding",
+    "Aspiration",
+    "Antibiotics or Drainage for Infection",
+    "Bursa Excision",
+  ],
+  "distal-biceps-tendonitis": [
+    "Activity Modification and Therapy",
+    "Anti-Inflammatory Measures",
+    "PRP Injection",
+  ],
+  "frozen-shoulder": [
+    "Physical Therapy Stretching Program",
+    "Corticosteroid Injection",
+    "Manipulation Under Anesthesia",
+    "Arthroscopic Capsular Release",
+  ],
+  "patellar-instability": [
+    "Bracing and Quadriceps-Focused Rehabilitation",
+    "MPFL Reconstruction",
+  ],
+  "bakers-cyst": [
+    "Treatment of the Underlying Joint Problem",
+    "Cyst Aspiration",
+    "Corticosteroid Injection",
+    "Surgical Cyst Excision",
+  ],
+  "knee-arthritis": [
+    "Activity Modification and Weight Management",
+    "Physical Therapy",
+    "Corticosteroid Injection",
+    "Hyaluronic Acid Injection",
+    "PRP Injection",
+    "Partial Knee Replacement",
+    "Total Knee Replacement",
+  ],
+  "ankle-fracture": [
+    "Cast or Walking Boot Immobilization",
+    "Open Reduction and Internal Fixation",
+  ],
+  "posterior-tibial-tendonitis": [
+    "Orthotics or Bracing",
+    "Physical Therapy",
+    "Tendon Transfer and Realignment Reconstruction",
+  ],
+  "peroneal-tendonitis": [
+    "Relative Rest, Bracing, and Therapy",
+    "Peroneal Tendon Repair and Stabilization",
+  ],
+  "lisfranc-injury": [
+    "Immobilization and Protected Weight-Bearing",
+    "Open Reduction and Internal Fixation",
+    "Midfoot Fusion",
+  ],
+  "severs-disease": [
+    "Activity Modification",
+    "Heel Cups and Footwear Changes",
+    "Calf Stretching Program",
   ],
 };
