@@ -8,7 +8,25 @@ import { createClient } from "@sanity/client";
 import { conditionPages, type ConditionBodySection } from "../src/lib/conditionPages";
 
 // Conditions that have a route + code data but no Sanity document yet.
-const MISSING_SLUGS = ["terrible-triad", "proximal-biceps-tear", "pectoralis-tear"];
+const MISSING_SLUGS = [
+  // Phase-2 stubs built out (June 2026)
+  "knee-arthroscopy", "meniscus", "clavicle-fracture", "shoulder-arthroscopy",
+  // Old-site condition build-out (June 2026) — Hand & Wrist
+  "guyons-canal", "swan-neck-deformity", "rheumatoid-arthritis-hand",
+  "boutonniere-deformity", "mallet-finger", "kienbocks-disease",
+  "intersection-syndrome", "nerve-laceration", "tendon-laceration",
+  "hand-arthritis", "forearm-compartment-syndrome",
+  // Elbow
+  "distal-humerus-fracture", "elbow-arthritis", "olecranon-bursitis",
+  "distal-biceps-tendonitis",
+  // Shoulder
+  "frozen-shoulder",
+  // Knee & Sports
+  "patellar-instability", "bakers-cyst", "knee-arthritis",
+  // Foot & Ankle
+  "ankle-fracture", "posterior-tibial-tendonitis", "peroneal-tendonitis",
+  "lisfranc-injury", "severs-disease",
+];
 
 const client = createClient({
   projectId: "rj9a0qco",
