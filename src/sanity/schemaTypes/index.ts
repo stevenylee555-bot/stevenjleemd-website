@@ -11,6 +11,8 @@ import { specialtiesIndexPage } from "./specialtiesIndexPage";
 import { specialty } from "./specialty";
 import { publicationsPage } from "./publicationsPage";
 import { cvPage } from "./cvPage";
+import { therapyProtocolsPage } from "./therapyProtocolsPage";
+import { procedureProtocol } from "./procedureProtocol";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
@@ -21,6 +23,8 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     publicationsPage,
     cvPage,
     secondOpinionsPage,
+    therapyProtocolsPage,
+    procedureProtocol,
     conditionsIndexPage,
     conditionPage,
     specialtiesIndexPage,

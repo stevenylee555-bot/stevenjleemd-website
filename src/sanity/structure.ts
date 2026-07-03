@@ -34,6 +34,11 @@ export const structure: StructureResolver = (S) =>
         .title("Second Opinions")
         .id("secondOpinionsPage")
         .child(S.document().schemaType("secondOpinionsPage").documentId("secondOpinionsPage")),
+      S.listItem()
+        .title("Therapy Protocols")
+        .id("therapyProtocolsPage")
+        .child(S.document().schemaType("therapyProtocolsPage").documentId("therapyProtocolsPage")),
+      S.documentTypeListItem("procedureProtocol").title("Post-op protocols"),
       S.divider(),
       S.listItem()
         .title("Conditions (index page)")

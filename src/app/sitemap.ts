@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { conditions } from "@/lib/conditions";
+import { procedureProtocols } from "@/lib/procedureProtocols";
 
 const BASE = "https://www.stevenjleemd.com";
 
@@ -40,6 +41,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     }));
 
+  const protocolRoutes = procedureProtocols
+    .filter((p) => p.status === "live")
+    .map((p) => ({
+      url: `${BASE}/therapy-protocols/${p.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    }));
+
   return [
     ...staticRoutes.map((r) => ({
       url: `${BASE}${r.path}`,
@@ -48,5 +58,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: r.priority,
     })),
     ...conditionRoutes,
+    ...protocolRoutes,
   ];
 }

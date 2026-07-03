@@ -100,6 +100,21 @@ export const SECOND_OPINIONS_QUERY = defineQuery(`
   }
 `);
 
+// The Therapy Protocols page singleton.
+export const THERAPY_PROTOCOLS_QUERY = defineQuery(`
+  *[_id == "therapyProtocolsPage"][0] {
+    headerTitle, headerItalic, headerLede,
+    introHeading, introParagraphs,
+    protocols[]{
+      name, category, summary,
+      sections[]{ heading, body, bullets },
+      warningsHeading, warnings
+    },
+    disclaimerHeading, disclaimer,
+    ctaHeading, ctaBody
+  }
+`);
+
 // The About hub page singleton.
 export const ABOUT_QUERY = defineQuery(`
   *[_id == "aboutPage"][0] {
@@ -156,6 +171,17 @@ export const CONDITION_QUERY = defineQuery(`
     faqHeadline,
     faqs[]{ question, answer },
     bottomCtaTitle, bottomCtaItalic, bottomCtaBody
+  }
+`);
+
+// One post-operative protocol document, by slug (/therapy-protocols/[slug]).
+export const PROCEDURE_PROTOCOL_QUERY = defineQuery(`
+  *[_type == "procedureProtocol" && slug == $slug][0] {
+    officialTitle,
+    sections[]{ heading, body, bullets },
+    warningsHeading, warnings,
+    erWarningsHeading, erWarnings,
+    disclaimer
   }
 `);
 

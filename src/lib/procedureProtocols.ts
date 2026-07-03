@@ -1,0 +1,5774 @@
+// AUTO-GENERATED from Dr. Lee's post-operative instruction PDFs (old Wix site).
+// Source of truth for the /therapy-protocols library: drives the index, the
+// per-procedure pages, and the Sanity seed. Editable prose is mirrored into
+// Sanity (procedureProtocol docs); this file is the in-code fallback, matching
+// the conditions.ts / conditionPages.ts pattern. Verbatim wording, do not reword.
+
+export type ProtocolSection = { heading: string; body: string[]; bullets: string[] };
+
+export type ProcedureRegion =
+  | "Hand & Wrist"
+  | "Elbow & Forearm"
+  | "Shoulder"
+  | "Knee"
+  | "Foot & Ankle";
+
+export type ProcedureStatus = "live" | "pending";
+
+export type ProcedureProtocol = {
+  slug: string;
+  name: string;
+  region: ProcedureRegion;
+  officialTitle: string;
+  status: ProcedureStatus;
+  sections: ProtocolSection[];
+  warnings: string[];
+  erWarnings: string[];
+  disclaimer: string;
+};
+
+export const procedureRegions: ProcedureRegion[] = [
+  "Hand & Wrist",
+  "Elbow & Forearm",
+  "Shoulder",
+  "Knee",
+  "Foot & Ankle",
+];
+
+export const procedureProtocols: ProcedureProtocol[] = [
+  {
+    "slug": "basal-joint-arthroplasty",
+    "name": "Basal Joint Arthroplasty",
+    "region": "Hand & Wrist",
+    "officialTitle": "Basal Joint Arthroplasty",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet. Prolonged use of narcotic medications can also increase nausea symptoms."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Non-Steroidal Anti-Inflammatory Drugs (NSAIDs)",
+        "body": [
+          "NSAID medications such as Ibuprofen, Motrin and Aleve are some of the most common over-the-counter pain medications. While great for relieving pain, there is concern that NSAIDs may impair fracture healing. For this reason, we do not recommend that you take any NSAIDs following your surgery."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to the effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when going from sitting to standing of the affected limb is common after surgery.",
+          "Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, try not to use the thumb until instructed by Dr. Lee. Writing or typing with the other fingers should be fine."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5°F) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "bony-mallet-finger",
+    "name": "Bony Mallet Finger",
+    "region": "Hand & Wrist",
+    "officialTitle": "Bony Mallet Finger",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet. Prolonged use of narcotic medications can also increase nausea symptoms."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Non-Steroidal Anti-Inflammatory Drugs (NSAIDs)",
+        "body": [
+          "NSAID medications such as Ibuprofen, Motrin and Aleve are some of the most common over-the-counter pain medications. While great for relieving pain, there is concern that NSAIDs may impair fracture healing. For this reason, we do not recommend that you take any NSAIDs following your surgery."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to the effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when the affected limb is in a dependent position is common.",
+          "Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, try not to use the affected finger(s) until instructed by Dr. Lee. Writing or typing with the other fingers should be fine."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5°F) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "carpal-tunnel-release",
+    "name": "Carpal Tunnel Release",
+    "region": "Hand & Wrist",
+    "officialTitle": "Carpal Tunnel Release",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually, by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet. Prolonged use of narcotic medications can also increase nausea symptoms."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to the effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, it is fine to use your fingers for typing and writing."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "dequervains-release",
+    "name": "Dequervain's Release",
+    "region": "Hand & Wrist",
+    "officialTitle": "Dequervain’s Release",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually, by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet. Prolonged use of narcotic medications can increase nausea symptoms."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to the effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, it is fine to use the fingers for writing and typing."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "dip-joint-fusion",
+    "name": "DIP Joint Fusion",
+    "region": "Hand & Wrist",
+    "officialTitle": "DIP Joint Fusion",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually, by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. Do NOT use ice over the bandages after this surgery."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet. Prolonged use of narcotic medications can increase nausea symptoms."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Non-Steroidal Anti-Inflammatory Drugs (NSAIDs)",
+        "body": [
+          "NSAID medications such as Ibuprofen, Motrin and Aleve are some of the most common over-the-counter pain medications. While great for relieving pain, there is concern that NSAIDs may impair bone healing. For this reason, we do not recommend that you take any NSAIDs following your surgery."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to the effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, try not to use the fingers/hand until instructed by Dr. Lee."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5°F) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "distal-radius-fracture",
+    "name": "Distal Radius Fracture",
+    "region": "Hand & Wrist",
+    "officialTitle": "Distal Radius Fracture",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet. Prolonged use of narcotic medications can also increase nausea symptoms."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Non-Steroidal Anti-Inflammatory Drugs (NSAIDs)",
+        "body": [
+          "NSAID medications such as Ibuprofen, Motrin and Aleve are some of the most common over-the-counter pain medications. While great for relieving pain, there is concern that NSAIDs may impair fracture healing. For this reason, we do not recommend that you take any NSAIDs following your surgery."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Physical Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Physical Therapy with you at your first post-operative appointment. We have a list of recommended Physical Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, it is fine to use the hand and fingers to open/close or to write or type."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5°F) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "dupuytrens-release",
+    "name": "Dupuytren's Release",
+    "region": "Hand & Wrist",
+    "officialTitle": "Dupuytren’s Fasciectomy",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually, by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. Do NOT use ice over the wound for this surgery."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet. Prolonged use of narcotics can also increase nausea symptoms."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to the effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, try not to use the affected fingers/hand until instructed by Dr. Lee."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "finger-collateral-ligament-repair",
+    "name": "Finger Collateral Ligament Repair",
+    "region": "Hand & Wrist",
+    "officialTitle": "Finger Collateral Ligament Repair",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually, by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet. Prolonged use of narcotics can also increase nausea symptoms."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to the effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, try not to use the fingers/hand until instructed by Dr. Lee."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "finger-infection-i-and-d-plus-nail-removal",
+    "name": "Finger Infection (I&D) + Nail Removal",
+    "region": "Hand & Wrist",
+    "officialTitle": "Finger Incision and Drainage and Nail Removal",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually, by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. Do NOT apply ice after this surgery."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet. Prolonged use of narcotics can increase nausea symptoms."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to the effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, it is fine to use the other fingers to write and type."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "finger-mass-excision",
+    "name": "Finger Mass Excision",
+    "region": "Hand & Wrist",
+    "officialTitle": "Finger Mass Excision",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually, by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet. Prolonged use of narcotics can increase nausea symptoms."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to the effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, it is fine to use the fingers for typing or writing."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5°F) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "guyons-canal-decompression",
+    "name": "Guyon's Canal Decompression",
+    "region": "Hand & Wrist",
+    "officialTitle": "Guyon’s Canal Decompression",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to the effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, you are allowed to use the fingers to type and write."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "hand-fracture",
+    "name": "Hand Fracture",
+    "region": "Hand & Wrist",
+    "officialTitle": "Hand Fracture",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to the effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, try not to use the fingers/hand until instructed by Dr. Lee."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "hand-mass-excision",
+    "name": "Hand Mass Excision",
+    "region": "Hand & Wrist",
+    "officialTitle": "Hand Mass Excision",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually, by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to the effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, try not to use the finger/hand until instructed by Dr. Lee."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "hand-and-wrist-surgery",
+    "name": "Hand and Wrist Surgery",
+    "region": "Hand & Wrist",
+    "officialTitle": "Hand-Wrist Surgery",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually, by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to the effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, try not to use the finger/hand until instructed by Dr. Lee."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "mallet-finger",
+    "name": "Mallet Finger",
+    "region": "Hand & Wrist",
+    "officialTitle": "Mallet Finger",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to the effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, try not to use the affected finger(s) until instructed by Dr. Lee. Writing or typing with the other fingers should be fine."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "mcp-joint-arthroplasty",
+    "name": "MCP Joint Arthroplasty",
+    "region": "Hand & Wrist",
+    "officialTitle": "MCP Joint Arthroplasty",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to the effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, try not to use the fingers until instructed by Dr. Lee."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "nerve-repair",
+    "name": "Nerve Repair",
+    "region": "Hand & Wrist",
+    "officialTitle": "Nerve Repair",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Do not use the affected hand to open or close the fingers, type, lift, carry or bear weight."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "pip-joint-arthroplasty",
+    "name": "PIP Joint Arthroplasty",
+    "region": "Hand & Wrist",
+    "officialTitle": "PIP Joint Arthroplasty",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to the effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, try not to use the fingers until instructed by Dr. Lee."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "proximal-row-carpectomy",
+    "name": "Proximal Row Carpectomy",
+    "region": "Hand & Wrist",
+    "officialTitle": "Proximal Row Carpectomy",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Use of the hands to open/close or to write or type is fine. Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "scaphoid-fracture",
+    "name": "Scaphoid Fracture",
+    "region": "Hand & Wrist",
+    "officialTitle": "Scaphoid Fracture",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Non-Steroidal Anti-Inflammatory Drugs (NSAIDs)",
+        "body": [
+          "NSAID medications such as Ibuprofen, Motrin and Aleve are some of the most common over-the-counter pain medications. While great for relieving pain, there is concern that NSAIDs may impair fracture healing. For this reason, we do not recommend that you take any NSAIDs following your surgery."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when going from sitting to standing of the affected limb is common after surgery.",
+          "Use of the hands to open/close or to write or type is fine. Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5°F) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "scapholunate-ligament-reconstruction",
+    "name": "Scapholunate Ligament Reconstruction",
+    "region": "Hand & Wrist",
+    "officialTitle": "Scapholunate Ligament Reconstruction",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when going from sitting to standing of the affected limb is common after surgery.",
+          "Use of the hands to open/close or to write or type is fine. Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "superficial-radial-nerve-decompression",
+    "name": "Superficial Radial Nerve Decompression",
+    "region": "Hand & Wrist",
+    "officialTitle": "Superficial Radial Nerve Decompression",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when going from sitting to standing of the affected limb is common after surgery.",
+          "Use of the hands to open/close or to write or type is fine. Do not use the affected extremity to weight bear or carry anything greater than 1 pound."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "tendon-repair",
+    "name": "Tendon Repair",
+    "region": "Hand & Wrist",
+    "officialTitle": "Tendon Repair",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when going from sitting to standing of the affected limb is common after surgery.",
+          "Do not use the affected hand to open or close the fingers, type, lift, carry or bear weight."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "tfcc-debridement",
+    "name": "TFCC Debridement",
+    "region": "Hand & Wrist",
+    "officialTitle": "TFCC Debridement",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when going from sitting to standing of the affected limb is common after surgery.",
+          "Use of the hands to open/close or to write or type is fine. Do not use the affected extremity to weight bear or carry anything greater than 1 pound."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "tfcc-repair",
+    "name": "TFCC Repair",
+    "region": "Hand & Wrist",
+    "officialTitle": "TFCC Repair",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when going from sitting to standing of the affected limb is common after surgery.",
+          "Use of the hands to open/close or to write or type is fine. Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "thumb-ucl-repair",
+    "name": "Thumb UCL Repair",
+    "region": "Hand & Wrist",
+    "officialTitle": "Thumb UCL Repair",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when going from sitting to standing of the affected limb is common after surgery.",
+          "Use of the hands to open/close or to write or type is fine. Do not use the affected extremity to weight bear or carry anything greater than 1 pound."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "trigger-finger-release",
+    "name": "Trigger Finger Release",
+    "region": "Hand & Wrist",
+    "officialTitle": "Trigger Finger Release",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when going from sitting to standing of the affected limb is common after surgery.",
+          "Use of the hands to open/close or to write or type is fine. Do not use the affected extremity to weight bear or carry anything greater than 1 pound."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "ulna-impaction-syndrome",
+    "name": "Ulna Impaction Syndrome",
+    "region": "Hand & Wrist",
+    "officialTitle": "Ulna Impaction Syndrome (Wafer Procedure)",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when going from sitting to standing of the affected limb is common after surgery.",
+          "Use of the hands to open/close or to write or type is fine. Do not use the affected extremity to weight bear or carry anything greater than 1 pound."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "wrist-mass-excision",
+    "name": "Wrist Mass Excision",
+    "region": "Hand & Wrist",
+    "officialTitle": "Wrist Mass Excision",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when going from sitting to standing of the affected limb is common after surgery.",
+          "Use of the hands to open/close or to write or type is fine. Do not use the affected extremity to weight bear or carry anything greater than 1 pound."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "distal-biceps-repair",
+    "name": "Distal Biceps Repair",
+    "region": "Elbow & Forearm",
+    "officialTitle": "Distal Biceps Repair",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet. Prolonged use of narcotic medications can also increase nausea symptoms."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "Wear your sling at all times. It can be removed temporarily for showering/bathing."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Physical Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Physical Therapy with you at your first post-operative appointment. We have a list of recommended Physical Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, it is fine to use the hand and fingers to open/close or to write or type."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal. ."
+  },
+  {
+    "slug": "distal-humerus-fracture",
+    "name": "Distal Humerus Fracture",
+    "region": "Elbow & Forearm",
+    "officialTitle": "Distal Humerus Fracture",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet. Prolonged use of narcotic medications can also increase nausea symptoms."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "Wear your sling at all times. You can take it off temporarily when taking a shower/bath."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Non-Steroidal Anti-Inflammatory Drugs (NSAIDs)",
+        "body": [
+          "NSAID medications such as Ibuprofen, Motrin and Aleve are some of the most common over-the-counter pain medications. While great for relieving pain, there is concern that NSAIDs may impair fracture healing. For this reason, we do not recommend that you take any NSAIDs following your surgery."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Physical Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Physical Therapy with you at your first post-operative appointment. We have a list of recommended Physical Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general it is fine to use the hands and fingers to open/close or for writing and typing."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5°F) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "elbow-arthroscopy",
+    "name": "Elbow Arthroscopy",
+    "region": "Elbow & Forearm",
+    "officialTitle": "Arthroscopic Elbow Surgery",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually, by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "You may remove your surgical dressing and begin showering 48 hours after surgery. You will see a few areas that contain stitches once you remove your dressing. These are ok to briefly get wet while taking a quick shower. Once you are done showering, pat the wound dry (no scrubbing) and cover the stitches with a Band-Aid. Do not soak in a bathtub, hot tub, or pool until otherwise directed. It is important to keep the elbow dry at all other times. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet. Prolonged use of narcotics can increase nausea symptoms."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Physical Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Physical Therapy with you at your first post-operative appointment. We have a list of recommended Physical Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Use of the hands to open/close or to write or type is fine. Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, it is fine to use the fingers for writing and typing",
+          "Whether you can bend your elbow will depend on the procedure that was performed. Please ask Dr. Lee specifically about your activity restrictions."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5°F) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "elbow-dislocation",
+    "name": "Elbow Dislocation",
+    "region": "Elbow & Forearm",
+    "officialTitle": "Elbow Dislocation",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually, by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet. Prolonged use of narcotics can also increase nausea symptoms."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Physical Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Physical Therapy with you at your first post-operative appointment. We have a list of recommended Physical Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Use of the hands to open/close or to write or type is fine. Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, it is fine to use the fingers for writing and typing."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "elbow-instability",
+    "name": "Elbow Instability",
+    "region": "Elbow & Forearm",
+    "officialTitle": "Elbow Instability",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet. Prolonged use of narcotics can also increase nausea symptoms."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Physical Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Physical Therapy with you at your first post-operative appointment. We have a list of recommended Physical Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Use of the hands to open/close or to write or type is fine. Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, it is fine to use the fingers for writing and typing."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "elbow-mass-excision",
+    "name": "Elbow Mass Excision",
+    "region": "Elbow & Forearm",
+    "officialTitle": "Elbow Mass Excision",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet. Prolonged use of narcotics can also increase nausea symptoms."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Physical Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Physical Therapy with you at your first post-operative appointment. We have a list of recommended Physical Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Use of the hands to open/close or to write or type is fine. Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, it is fine to use the fingers for writing and typing."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "elbow-nirschl-procedure",
+    "name": "Elbow Nirschl Procedure",
+    "region": "Elbow & Forearm",
+    "officialTitle": "Elbow Nirschl Procedure",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet. Prolonged use of narcotics can also increase nausea symptoms."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Physical Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Physical Therapy with you at your first post-operative appointment. We have a list of recommended Physical Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Use of the hands to open/close or to write or type is fine. Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, it is fine to use the fingers for writing and typing."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5°F) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "forearm-fracture",
+    "name": "Forearm Fracture",
+    "region": "Elbow & Forearm",
+    "officialTitle": "Forearm Fracture",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, with progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Non-Steroidal Anti-Inflammatory Drugs (NSAIDs)",
+        "body": [
+          "NSAID medications such as Ibuprofen, Motrin and Aleve are some of the most common over-the-counter pain medications. While great for relieving pain, there is concern that NSAIDs may impair fracture healing. For this reason, we do not recommend that you take any NSAIDs following your surgery."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Physical Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Physical Therapy with you at your first post-operative appointment. We have a list of recommended Physical Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Use of the hands to open/close or to write or type is fine. Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, it is fine to use the fingers for typing or writing."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5°F) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "forearm-mass-excision",
+    "name": "Forearm Mass Excision",
+    "region": "Elbow & Forearm",
+    "officialTitle": "Forearm Mass Excision",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually, by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block wears off, the sling is optional."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to the effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, use of your fingers for writing and typing is fine."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "olecranon-fracture",
+    "name": "Olecranon Fracture",
+    "region": "Elbow & Forearm",
+    "officialTitle": "Olecranon Fracture",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off. After the block has worn off, it is still preferable to wear the sling, and take off only when showering/bathing."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Non-Steroidal Anti-Inflammatory Drugs (NSAIDs)",
+        "body": [
+          "NSAID medications such as Ibuprofen, Motrin and Aleve are some of the most common over-the-counter pain medications. While great for relieving pain, there is concern that NSAIDs may impair fracture healing. For this reason, we do not recommend that you take any NSAIDs following your surgery."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Physical Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Physical Therapy with you at your first post-operative appointment. We have a list of recommended Physical Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when putting the affected limb in a dependent position is common after surgery.",
+          "Use of the hands to open/close or to write or type is fine. Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5°F) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "radial-head-fracture",
+    "name": "Radial Head Fracture",
+    "region": "Elbow & Forearm",
+    "officialTitle": "Radial Head Fracture",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice overtop of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Non-Steroidal Anti-Inflammatory Drugs (NSAIDs)",
+        "body": [
+          "NSAID medications such as Ibuprofen, Motrin and Aleve are some of the most common over-the-counter pain medications. While great for relieving pain, there is concern that NSAIDs may impair fracture healing. For this reason, we do not recommend that you take any NSAIDs following your surgery."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when going from sitting to standing of the affected limb is common after surgery.",
+          "Use of the hands to open/close or to write or type is fine. Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5°F) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "ulnar-nerve-decompression",
+    "name": "Ulnar Nerve Decompression",
+    "region": "Elbow & Forearm",
+    "officialTitle": "Ulnar Nerve Decompression",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when going from sitting to standing of the affected limb is common after surgery.",
+          "Use of the hands to open/close or to write or type is fine. Do not use the affected extremity to weight bear or carry anything greater than 1 pound."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "ulnar-nerve-transposition",
+    "name": "Ulnar Nerve Transposition",
+    "region": "Elbow & Forearm",
+    "officialTitle": "Ulnar Nerve Transposition",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to elevate the affected extremity above the level of the heart to reduce swelling and discomfort. You can furthermore ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. As long as you can keep the dressings dry, you can shower whenever you want."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "If you received a nerve block, you should have gone home with a sling. Wear your sling until the nerve block completely wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Hand Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Hand Therapy with you at your first post-operative appointment. We have a list of recommended Hand Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when going from sitting to standing of the affected limb is common after surgery.",
+          "Use of the hands to open/close or to write or type is fine. Do not use the affected extremity to weight bear or carry anything greater than 1 pound."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "clavicle-fracture",
+    "name": "Clavicle Fracture",
+    "region": "Shoulder",
+    "officialTitle": "Clavicle Fracture",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually, by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Ice",
+        "body": [
+          "You can ice over top of your surgical dressing for up to 20 minutes at a time, multiple times per day, although depending on your dressing, you may not feel the coldness. Let the area warm up before reapplication."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Your post-operative dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "In order to keep the dressing dry, you will have difficulty showering until the dressing comes off. To clean your body, you may want to consider taking a sponge bath, using mild soap and a soft sponge or washcloth. Do not soak in a bathtub, hot tub, or pool."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet. Prolonged use of narcotic medications can also increase nausea symptoms."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "You must wear the sling at all times after this surgery. However, it can theoretically come off for sponge bathing, at which time the arm should be kept at about the same position as if in the sling. If you are able to sponge bathe with the sling on, that would be preferable."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Non-Steroidal Anti-Inflammatory Drugs (NSAIDs)",
+        "body": [
+          "NSAID medications such as Ibuprofen, Motrin and Aleve are some of the most common over-the-counter pain medications. While great for relieving pain, there is concern that NSAIDs may impair fracture healing. For this reason, we do not recommend that you take any NSAIDs following your surgery."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if it hasn’t already been scheduled."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Physical Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Physical Therapy with you at your first post-operative appointment. We have a list of recommended Physical Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "Do not use the affected extremity to weight bear or carry anything greater than the weight of a pen. In general, it is fine to use the hand and fingers to open/close or to write or type."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5°F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "proximal-humerus-fracture",
+    "name": "Proximal Humerus Fracture",
+    "region": "Shoulder",
+    "officialTitle": "Proximal Humerus Fracture",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Ice",
+        "body": [
+          "You can ice the shoulder for up to 20 minutes at a time, multiple times per day. You may ice over top of your surgical dressing and may continue icing your shoulder once you have been instructed to remove your surgical dressing. Avoid getting your wound wet. Take care to never apply ice directly to your skin. Always use a barrier between the skin and ice, such as a thin cloth."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "Wear your sling at ALL times after your surgery (this includes sleeping). Additionally, you should not lift or carry anything using your affected arm."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Please keep your dressing on until you see your surgeon. It is very important to keep your dressings clean and especially DRY! Also, try to keep from sweating, including exercising or being outside in hot/humid weather.",
+          "In order to keep the dressings dry, you will NOT be able to shower or take a bath until the dressing comes off. To clean your body, you can take a sponge bath, using mild soap and a soft sponge or washcloth. Do not soak in a bathtub, hot tub, or pool."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sleeping",
+        "body": [
+          "You will most likely have difficulty sleeping in the first few weeks after surgery. Most people find it more comfortable to sleep in a more upright position, like 45 degrees up. You can either sleep in a recliner chair or create this position with pillows."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Non-Steroidal Anti-Inflammatory Drugs (NSAIDs)",
+        "body": [
+          "NSAID medications such as Ibuprofen, Motrin and Aleve are some of the most common over-the-counter pain medications. While great for relieving pain, there is concern that NSAIDs may impair fracture healing. For this reason, we do not recommend that you take any NSAIDs following your surgery."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. You should call our office to schedule your appointment if you haven’t already done so."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Physical Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Physical Therapy with you at your first post-operative appointment. We have a list of recommended Physical Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "Use of the hands to open/close or to write or type is fine. Do not use the affected extremity to weight bear or carry anything greater than a pen."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right-hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5°F) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "shoulder-manipulation-under-anesthesia",
+    "name": "Shoulder Manipulation Under Anesthesia",
+    "region": "Shoulder",
+    "officialTitle": "Shoulder Manipulation Under Anesthesia",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Ice",
+        "body": [
+          "You can ice the shoulder for up to 20 minutes at a time, multiple times per day. You may ice over top of your surgical dressing and may continue icing your shoulder once you have been instructed to remove your surgical dressing. Avoid getting your wound wet. Take care to never apply ice directly to your skin. Always use a barrier between the skin and ice, such as a thin cloth."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling and Physical Therapy",
+        "body": [
+          "Wear your sling and start Physical Therapy IMMEDIATELY. Take your Physical Therapy script with you to your first appointment. Please call our office for a list of recommended Physical Therapists should you not already have one."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "You may remove your surgical dressing and begin showering 48 hours after surgery. Please use CAUTION! Be careful not to slip and fall. The effects of anesthesia and/or medication may make you drowsy or light-headed. You will see a few areas that contain stitches once you remove your dressing. These are ok to briefly get wet while in the shower. While in the shower you must keep your arm across the front of the body as if it were still in the sling. Once you are done showering, pat the wound dry (no scrubbing), cover the stitches with a Band-Aid, and put back on your sling. Do not soak in a bathtub, hot tub, or pool until otherwise directed. Try to avoid sweating as it increases your risk for infection."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sleeping",
+        "body": [
+          "You will most likely have difficulty sleeping in the first few weeks after surgery. Most people find it more comfortable to sleep in a more upright position, like 45 degrees up. You can either sleep in a recliner chair or create this position with pillows."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. You should call our office to schedule your appointment if you haven’t already done so."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when going from sitting to standing of the affected limb is common after surgery.",
+          "Use of the hands to open/close or to write or type is fine. Do not use the affected extremity to weight bear or carry anything greater than a pen."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right-hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "shoulder-arthroplasty",
+    "name": "Shoulder Arthroplasty",
+    "region": "Shoulder",
+    "officialTitle": "Shoulder Arthroplasty",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Ice",
+        "body": [
+          "You can ice the shoulder for up to 20 minutes at a time, multiple times per day. You may ice over top of your surgical dressing and may continue icing your shoulder once you have been instructed to remove your surgical dressing. Avoid getting your wound wet. Take care to never apply ice directly to your skin. Always use a barrier between the skin and ice, such as a thin cloth."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "Wear your sling at ALL times after your surgery (this includes sleeping). Additionally, you should not lift or carry anything using your affected arm."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "Please keep your dressing on until you see your surgeon. It is very important to keep your dressings clean and especially DRY! Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "In order to keep the dressings dry, you will NOT be able to shower or take a bath until the dressing comes off. To clean your body, you can take a sponge bath, using mild soap and a soft sponge or washcloth. Do not soak in a bathtub, hot tub, or pool."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sleeping",
+        "body": [
+          "You will most likely have difficulty sleeping in the first few weeks after surgery. Most people find it more comfortable to sleep in a more upright position, like 45 degrees up. You can either sleep in a recliner chair or create this position with pillows."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. You should call our office to schedule your appointment if you haven’t already done so."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Physical Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Physical Therapy with you at your first post-operative appointment. We have a list of recommended Physical Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when going from sitting to standing of the affected limb is common after surgery.",
+          "Use of the hands to open/close or to write or type is fine. Do not use the affected extremity to weight bear or carry anything greater than a pen."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right-hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "shoulder-arthroscopy",
+    "name": "Shoulder Arthroscopy",
+    "region": "Shoulder",
+    "officialTitle": "Arthroscopic Shoulder Surgery",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Ice",
+        "body": [
+          "You can ice the shoulder for up to 20 minutes at a time, multiple times per day. You may ice over top of your surgical dressing and may continue icing your shoulder once you have been instructed to remove your surgical dressing. Avoid getting your wound wet. Take care to never apply ice directly to your skin. Always use a barrier between the skin and ice, such as a thin cloth."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your arm may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected arm are signs that the block is wearing off. You may also experience pain and discomfort of the arm as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sling",
+        "body": [
+          "Wear your sling at ALL times after your surgery (this includes sleeping). Additionally, you should not lift or carry anything using your affected arm."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Surgical Dressing and Showering",
+        "body": [
+          "You may remove your surgical dressing and begin showering 48 hours after surgery. Please use CAUTION! Be careful not to slip and fall. The effects of anesthesia and/or medication may make you drowsy or light-headed. You will see a few areas that contain stitches once you remove your dressing. These are ok to briefly get wet while in the shower. While in the shower you must keep your arm across the front of the body as if it were still in the sling. Once you are done showering, pat the wound dry (no scrubbing), cover the stitches with a Band-Aid, and put your sling back on. Do not soak in a bathtub, hot tub, or pool until otherwise directed. Try to avoid sweating as it increases your risk for infection."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Sleeping",
+        "body": [
+          "You will most likely have difficulty sleeping in the first few weeks after surgery. Most people find it more comfortable to sleep in a more upright position, like 45 degrees up. You can either sleep in a recliner chair or create this position with pillows."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. You should call our office to schedule your appointment if you haven’t already done so."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Physical Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Physical Therapy with you at your first post-operative appointment. We have a list of recommended Physical Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the fingers.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when going from sitting to standing of the affected limb is common after surgery.",
+          "Use of the hands to open/close or to write or type is fine. Do not use the affected extremity to weight bear or carry anything greater than a pen."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right-hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5°F) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "acl-reconstruction",
+    "name": "ACL Reconstruction",
+    "region": "Knee",
+    "officialTitle": "ACL Reconstruction",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually, by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to keep your leg elevated above the level of your heart as much as possible to help reduce pain and swelling. You can furthermore ice the area over top of your surgical dressing for up to 20 minutes at a time, multiple times per day. It’s possible you might not feel much of the cold go through the bandages, however. Let your kneecap area warm up before reapplication. Keep your dressing dry."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Knee Brace, Surgical Dressing, and Showering",
+        "body": [
+          "Your dressing should stay on for about 48 hrs, after which they can be removed and a quick shower is allowable. After drying place bandaids over the area of the small cuts. Otherwise, try to keep the knee dry, including minimizing sweating as that increases the risk of infection.",
+          "Your brace should be on and locked in full extension any time you are attempting to ambulate. If you are having difficulty maneuvering with bathing or showering, you may take a sponge bath with mild soap, water and a soft sponge or washcloth instead."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Weightbearing and Crutches",
+        "body": [
+          "Whether you can bear weight on your leg depends on the procedure performed. Please check with Dr. Lee’s team as to specific instructions for this. Often, the use of crutches or a cane is helpful to ensure stability."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet. Prolonged use of narcotic medications can also increase nausea symptoms."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "CPM",
+        "body": [
+          "We typically recommend starting range of motion movement of the knee shortly after surgery. We will typically arrange for a representative to set up a CPM machine to help you move your knee in an automated fashion. Start with 0-40 degrees, and try to increase by 10 degrees a day until you reach 90 degrees, after which you can return the device to the company. This should be done for a total of 4 hours a day, and can be broken up into whatever time frame that suits your schedule."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if you haven’t already done so."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Physical Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Physical Therapy with you at your first post-operative appointment. We have a list of recommended Physical Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the toes. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to the effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when going from sitting to standing of the affected limb is common after surgery."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F) or chills",
+      "Oozing or increasing redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "knee-arthroscopy",
+    "name": "Knee Arthroscopy",
+    "region": "Knee",
+    "officialTitle": "Arthroscopic Knee Surgery",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually, by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to keep your leg elevated above the level of your heart as much as possible to help reduce pain and swelling. You can furthermore ice the kneecap area over top of your surgical dressing for up to 20 minutes at a time, multiple times per day. It’s possible you might not feel much of the cold go through the bandages, however. Let your kneecap area warm up before reapplication. Keep your dressing dry."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Knee Brace, Surgical Dressing, and Showering",
+        "body": [
+          "You may remove your surgical dressing and begin showering 48 hours after surgery. You will see a few areas that contain stitches once you remove your dressing. These are ok to briefly get wet while in the shower. Once you are done showering, pat the wound dry (no scrubbing) and cover the stitches with a Band-Aid. Do not soak in a bathtub, hot tub, or pool until otherwise directed. Try to avoid sweating as it increases your risk for infection.",
+          "If you have a knee brace on, please keep it on, except when showering. Please use CAUTION! Be careful not to slip and fall. The effects of anesthesia and/or medication may make you drowsy or light-headed."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Weightbearing and Crutches",
+        "body": [
+          "Whether you can bear weight on your leg depends on the procedure performed. Please check with Dr. Lee’s team as to specific instructions for this."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if you haven’t already done so."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Physical Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Physical Therapy with you at your first post-operative appointment. We have a list of recommended Physical Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the toes. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to the effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when going from sitting to standing of the affected limb is common after surgery."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or increasing redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "prepatellar-bursectomy",
+    "name": "Prepatellar Bursectomy",
+    "region": "Knee",
+    "officialTitle": "Prepatellar bursectomy",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to keep your leg elevated above the level of your heart as much as possible to help reduce pain and swelling. You can furthermore ice the kneecap area over top of your surgical dressing for up to 20 minutes at a time, multiple times per day. Let your kneecap area warm up before reapplication. Keep your dressing dry."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Knee Brace, Surgical Dressing, and Showering",
+        "body": [
+          "Your knee brace and dressing must stay on at ALL times and should be kept clean, dry, and in place. Cover your knee brace and dressing with a waterproof bag when bathing to keep them dry. Try to avoid sweating if possible as it can increase the risk of infection. Use CAUTION when showering so as not to slip and fall. If you are having difficulty maneuvering with bathing or showering, you may take a sponge bath with mild soap, water and a soft sponge or washcloth instead."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Weightbearing and Crutches",
+        "body": [
+          "You are allowed to weight bear on your operated leg as long as you wear your brace, and you feel stable to do so. Often, the use of crutches or a cane is helpful to ensure stability."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if you haven’t already done so."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Physical Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Physical Therapy with you at your first post-operative appointment. We have a list of recommended Physical Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the toes. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when going from sitting to standing of the affected limb is common after surgery."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or increasing redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "quadriceps-tendon-repair",
+    "name": "Quadriceps Tendon Repair",
+    "region": "Knee",
+    "officialTitle": "Quadriceps Tendon Repair",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Aspirin",
+        "body": [
+          "Aspirin is a blood-thinning medication that is often used as prophylaxis against DVT (i.e. blood clot) formation. You should only take Aspirin after first speaking with and receiving clearance from your Primary Care Physician. Should your Primary Care Physician say it is safe for you to take Aspirin after your surgery, we recommend that you take one Aspirin 81mg per day for 7 days beginning the first day after surgery. Should your Primary Care Physician recommend against you taking Aspirin, then discuss with your PCP alternative DVT prophylaxis."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to keep your leg elevated above the level of your heart as much as possible to help reduce pain and swelling. You can furthermore ice the kneecap area over top of your surgical dressing for up to 20 minutes at a time, multiple times per day. It’s possible you might not feel much of the cold go through the bandages however. Let your kneecap area warm up before reapplication. Keep your dressing dry."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Knee Brace, Surgical Dressing, and Showering",
+        "body": [
+          "Your knee brace and dressing must stay on at ALL times and should be kept clean, dry, and in place. Cover your knee brace and dressing with a waterproof bag when bathing to keep them dry. Try to avoid sweating if possible as it can increase the risk of infection. Use CAUTION when showering so as not to slip and fall. If you are having difficulty maneuvering with bathing or showering, you may take a sponge bath with mild soap, water and a soft sponge or washcloth instead."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Weightbearing and Crutches",
+        "body": [
+          "You are allowed to weight bear on your operated leg as long as you wear your brace, and you feel stable to do so. Often, the use of crutches or a cane is helpful to ensure stability."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if you haven’t already done so."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Physical Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Physical Therapy with you at your first post-operative appointment. We have a list of recommended Physical Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the toes. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when going from sitting to standing of the affected limb is common after surgery."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5° F ) or chills",
+      "Oozing or increasing redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "achilles-tendon-repair",
+    "name": "Achilles Tendon Repair",
+    "region": "Foot & Ankle",
+    "officialTitle": "Achilles Tendon Repair",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to keep your leg elevated above the level of your heart as much as possible to help reduce pain and swelling. You can furthermore ice the area over top of your surgical dressing for up to 20 minutes at a time, multiple times per day. Let the area warm up before reapplication. Keep your dressing dry."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Aspirin",
+        "body": [
+          "Aspirin is a blood thinning medication that is often used as prophylaxis against DVT (i.e. blood clot) formation. You should only take Aspirin after first speaking with and receiving clearance from your Primary Care Physician. Should your Primary Care Physician say it is safe for you to take Aspirin after your surgery, we recommend that you take Aspirin 81mg per day for 7 days beginning the first day after surgery. Should your Primary Care Physician recommend against you taking Aspirin, then you should not take Aspirin.",
+          "Surgical Dressing and Showering Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. Use CAUTION when showering so as not to slip and fall."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Weightbearing and Crutches",
+        "body": [
+          "Do NOT bear weight on your operated foot. Use crutches to ambulate."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet. Prolonged use of narcotic medications can also increase nausea symptoms."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your leg may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected extremity are signs that the block is wearing off. You may also experience pain and discomfort of the extremity as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if you haven’t already done so."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Physical Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Physical Therapy with you at your first post-operative appointment. We have a list of recommended Physical Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (Blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the toes. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to the effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when the affected limb is in a dependent position is common."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5°F) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  },
+  {
+    "slug": "ankle-surgery",
+    "name": "Ankle Surgery",
+    "region": "Foot & Ankle",
+    "officialTitle": "Ankle Surgery",
+    "status": "live",
+    "sections": [
+      {
+        "heading": "Pain Medication",
+        "body": [
+          "Most of our patients are prescribed a short supply of an opioid narcotic pain medication to help ease their pain post-surgery. This medication, if prescribed, has been sent to your preferred pharmacy. The pain is usually the worst the first few days, and usually by the 3rd day, the pain eases up significantly. It is very important that you only take the opioid pain medication prescribed to you as directed, and only if needed. Besides addiction, one of the side effects of opioid narcotic medications is constipation. We recommend that you take a stool softener when taking this medication. Should you not need to take the opioid pain medication, our recommended medication for pain relief is Tylenol. It is recommended that you consult with your Primary Care Physician prior to taking any medications to ensure the medications are safe for you to take."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Elevation and Ice",
+        "body": [
+          "It is EXTREMELY important to keep your ankle/foot elevated above the level of your heart as much as possible to help reduce pain and swelling. You can furthermore ice the ankle area over top of your surgical dressing for up to 20 minutes at a time, multiple times per day. Let your ankle area warm up before reapplication. Keep your dressing dry."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Aspirin",
+        "body": [
+          "Aspirin is a blood thinning medication that is often used as prophylaxis against DVT (i.e. blood clot) formation. You should only take Aspirin after first speaking with and receiving clearance from your Primary Care Physician. Should your Primary Care Physician say it is safe for you to take Aspirin after your surgery, we recommend that you take Aspirin 81mg per day for 7 days beginning the first day after surgery. Should your Primary Care Physician recommend against you taking Aspirin, then you should not take Aspirin.",
+          "Surgical Dressing and Showering Your post-operative splint and dressing must stay on at ALL times and should be kept clean and especially DRY. Minimize any sweating, including exercising or being outside in hot/humid weather. Sweating increases infection risk.",
+          "For showering, you should cover it with a waterproof bag when bathing to keep it dry. Secure the waterproof bag well to avoid leakage. Use CAUTION when showering so as not to slip and fall."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Weightbearing and Crutches",
+        "body": [
+          "Whether you are allowed to bear weight depends on your specific treatment. Discuss with Dr. Lee about whether weightbearing is allowed."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nausea",
+        "body": [
+          "It is common to get nausea after surgery usually from the result of your anesthesia. Start with drinking fluids such as Ginger Ale, then if tolerated, progress with a light soup and simple foods such as bread. Then if tolerated, you can resume a normal diet. Prolonged use of narcotic medications can also increase nausea symptoms."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Nerve Block",
+        "body": [
+          "You may have received a nerve block with your surgery. If so, your leg may stay numb for up to 24 hours. Increased sensation (usually accompanied by pins/needles sensation) and movement of your affected extremity are signs that the block is wearing off. You may also experience pain and discomfort of the extremity as the nerve block wears off."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "First Post-Operative Appointment",
+        "body": [
+          "Your first post-operative appointment should be scheduled for 7-10 days after your surgery. Call our office to schedule your appointment if you haven’t already done so."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Physical Therapy",
+        "body": [
+          "We will further discuss the details and scheduling of your Physical Therapy with you at your first post-operative appointment. We have a list of recommended Physical Therapists that will be provided to you at that time."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Driving",
+        "body": [
+          "Driving is something that is based purely on your ability to safely drive your car. In general, it is better to be safe than sorry, and only drive when you think you can be in complete control of your vehicle. You should furthermore never drive while taking the pain medication prescribed to you."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Common Concerns",
+        "body": [],
+        "bullets": [
+          "Bruising and/or swelling of the affected limb will continue to develop and may change colors (blue to green to yellow) as time goes on. Gravity can pull the bruising and swelling downward into the toes. Elevation and icing is the best way to alleviate this bruising and swelling.",
+          "Numbness or tingling of the affected limb after surgery is common. This can be secondary to the effects of the nerve block and irritation of nerves due to swelling.",
+          "A sudden rush or feeling of fullness with pain when the affected limb is in a dependent position is common."
+        ]
+      },
+      {
+        "heading": "Speaking to Dr. Lee after surgery",
+        "body": [
+          "Dr. Lee or someone from his team will reach out to you by phone after surgery. Please call 212-737-3301 and request to have Dr. Lee paged if you do not hear from Dr. Lee by 9:00 PM or miss his call."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Patient Portal",
+        "body": [
+          "A great option for contacting our team is through the NY Orthopedics Patient Portal. If you haven’t already registered, you may do so by heading to https://www.newyorkorthopedics.com and clicking on “Patient Portal Log In” in the upper right hand corner of the screen. You should then click the link “Sign up today” and follow the instructions to create your account."
+        ],
+        "bullets": []
+      }
+    ],
+    "warnings": [
+      "Fever (>101.5°F) or chills",
+      "Oozing or redness of the wound",
+      "Severe, unbearable pain, that is not reduced with pain medication"
+    ],
+    "erWarnings": [
+      "Difficulty breathing or heaviness/pain in the chest",
+      "Symptoms of an allergic reaction such as a rash, swelling in places not operated on."
+    ],
+    "disclaimer": "REMEMBER - these are only guidelines for what to expect following surgery. If you have any additional questions or concerns, please do not hesitate to call the office or send a message through the Patient Portal."
+  }
+];
+
+export function procedureBySlug(slug: string): ProcedureProtocol | undefined {
+  return procedureProtocols.find((p) => p.slug === slug);
+}
+
+export function proceduresByRegion(region: ProcedureRegion): ProcedureProtocol[] {
+  return procedureProtocols.filter((p) => p.region === region);
+}
+
+export const livePrograms = procedureProtocols.filter((p) => p.status === "live");

@@ -41,6 +41,17 @@ export default defineConfig({
           secondOpinionsPage: defineLocations({
             locations: [{ title: "Second Opinions", href: "/second-opinions" }],
           }),
+          therapyProtocolsPage: defineLocations({
+            locations: [{ title: "Therapy Protocols", href: "/therapy-protocols" }],
+          }),
+          procedureProtocol: defineLocations({
+            select: { name: "name", slug: "slug" },
+            resolve: (doc) => ({
+              locations: doc?.slug
+                ? [{ title: doc?.name || "Post-op protocol", href: `/therapy-protocols/${doc.slug}` }]
+                : [],
+            }),
+          }),
           conditionsIndexPage: defineLocations({
             locations: [{ title: "Conditions", href: "/conditions" }],
           }),
