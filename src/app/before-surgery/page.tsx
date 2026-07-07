@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowUpRight, Calendar, ExternalLink, Phone, Mail, Printer, MapPin } from "lucide-react";
 import { ZOCDOC_URL } from "@/lib/site";
 import PageHeader from "@/components/PageHeader";
-import { beforeSurgery as d } from "@/lib/surgicalInfo";
+import { getBeforeSurgeryPage } from "@/sanity/getBeforeSurgeryPage";
 
 export const metadata: Metadata = {
   title: "Preparing for Surgery, Steven J. Lee, MD",
@@ -12,7 +12,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.stevenjleemd.com/before-surgery" },
 };
 
-export default function BeforeSurgeryPage() {
+export default async function BeforeSurgeryPage() {
+  const d = await getBeforeSurgeryPage();
   const { planning, coordinator, instructions, locations } = d;
   return (
     <>

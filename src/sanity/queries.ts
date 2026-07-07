@@ -174,6 +174,28 @@ export const CONDITION_QUERY = defineQuery(`
   }
 `);
 
+// The Before Surgery page singleton (/before-surgery).
+export const BEFORE_SURGERY_QUERY = defineQuery(`
+  *[_id == "beforeSurgeryPage"][0] {
+    headerTitle, headerItalic, headerLede,
+    planningHeading, planningBody, paperworkIntro, paperwork,
+    coordinator{ name, role, address, phone, email, fax },
+    instructionsHeading, instructionsIntro,
+    instructions[]{ term, detail },
+    locationsHeading, locationsIntro, outpatient, inpatient,
+    facilities[]{ name, address, description, contact }
+  }
+`);
+
+// The Surgery Nutrition page singleton (/surgery-nutrition).
+export const SURGERY_NUTRITION_QUERY = defineQuery(`
+  *[_id == "surgeryNutritionPage"][0] {
+    headerTitle, headerItalic, headerLede,
+    sections[]{ heading, body, bullets, foodsIntro, foods, groups[]{ heading, bullets, foodsIntro, foods } },
+    smokingClosing, disclaimer
+  }
+`);
+
 // One post-operative protocol document, by slug (/therapy-protocols/[slug]).
 export const PROCEDURE_PROTOCOL_QUERY = defineQuery(`
   *[_type == "procedureProtocol" && slug == $slug][0] {

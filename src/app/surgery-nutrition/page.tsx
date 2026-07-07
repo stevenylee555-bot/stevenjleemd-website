@@ -3,7 +3,8 @@ import Link from "next/link";
 import { ArrowUpRight, Calendar, ExternalLink } from "lucide-react";
 import { ZOCDOC_URL } from "@/lib/site";
 import PageHeader from "@/components/PageHeader";
-import { surgeryNutrition as d, type NutritionGroup } from "@/lib/surgicalInfo";
+import { type NutritionGroup } from "@/lib/surgicalInfo";
+import { getSurgeryNutritionPage } from "@/sanity/getSurgeryNutritionPage";
 
 export const metadata: Metadata = {
   title: "Nutrition & Substance Use Before and After Surgery, Steven J. Lee, MD",
@@ -51,7 +52,8 @@ function Group({ g }: { g: NutritionGroup }) {
   );
 }
 
-export default function SurgeryNutritionPage() {
+export default async function SurgeryNutritionPage() {
+  const d = await getSurgeryNutritionPage();
   return (
     <>
       <PageHeader

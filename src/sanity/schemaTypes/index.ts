@@ -13,6 +13,8 @@ import { publicationsPage } from "./publicationsPage";
 import { cvPage } from "./cvPage";
 import { therapyProtocolsPage } from "./therapyProtocolsPage";
 import { procedureProtocol } from "./procedureProtocol";
+import { beforeSurgeryPage } from "./beforeSurgeryPage";
+import { surgeryNutritionPage } from "./surgeryNutritionPage";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
@@ -23,8 +25,10 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     publicationsPage,
     cvPage,
     secondOpinionsPage,
+    beforeSurgeryPage,
     therapyProtocolsPage,
     procedureProtocol,
+    surgeryNutritionPage,
     conditionsIndexPage,
     conditionPage,
     specialtiesIndexPage,

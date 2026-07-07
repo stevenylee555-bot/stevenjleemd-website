@@ -41,6 +41,12 @@ export default defineConfig({
           secondOpinionsPage: defineLocations({
             locations: [{ title: "Second Opinions", href: "/second-opinions" }],
           }),
+          beforeSurgeryPage: defineLocations({
+            locations: [{ title: "Before Surgery", href: "/before-surgery" }],
+          }),
+          surgeryNutritionPage: defineLocations({
+            locations: [{ title: "Surgery Nutrition", href: "/surgery-nutrition" }],
+          }),
           therapyProtocolsPage: defineLocations({
             locations: [{ title: "Therapy Protocols", href: "/therapy-protocols" }],
           }),

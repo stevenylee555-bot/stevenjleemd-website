@@ -35,10 +35,18 @@ export const structure: StructureResolver = (S) =>
         .id("secondOpinionsPage")
         .child(S.document().schemaType("secondOpinionsPage").documentId("secondOpinionsPage")),
       S.listItem()
+        .title("Before Surgery")
+        .id("beforeSurgeryPage")
+        .child(S.document().schemaType("beforeSurgeryPage").documentId("beforeSurgeryPage")),
+      S.listItem()
         .title("Therapy Protocols")
         .id("therapyProtocolsPage")
         .child(S.document().schemaType("therapyProtocolsPage").documentId("therapyProtocolsPage")),
       S.documentTypeListItem("procedureProtocol").title("Post-op protocols"),
+      S.listItem()
+        .title("Surgery Nutrition")
+        .id("surgeryNutritionPage")
+        .child(S.document().schemaType("surgeryNutritionPage").documentId("surgeryNutritionPage")),
       S.divider(),
       S.listItem()
         .title("Conditions (index page)")
