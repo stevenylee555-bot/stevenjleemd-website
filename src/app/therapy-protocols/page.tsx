@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, Calendar, ExternalLink } from "lucide-react";
+import { AlertCircle, AlertTriangle } from "lucide-react";
 import { ZOCDOC_URL } from "@/lib/site";
 import PageHeader from "@/components/PageHeader";
 import { getTherapyProtocolsPage } from "@/sanity/getTherapyProtocolsPage";
 import { procedureRegions, proceduresByRegion } from "@/lib/procedureProtocols";
+import { generalPostOp as g } from "@/lib/surgicalInfo";
 
 export const metadata: Metadata = {
   title: "Post-Operative Instructions, Steven J. Lee, MD",
@@ -32,9 +34,73 @@ export default async function TherapyProtocolsPage() {
         ]}
       />
 
+      {/* General "what to expect after surgery" guidance */}
+      <section className="bg-white border-b border-navy-900/[0.06]">
+        <div className="mx-auto max-w-5xl px-6 lg:px-10 py-16 lg:py-20">
+          <h2 className="font-serif text-[clamp(1.75rem,3vw,2.5rem)] tracking-[-0.02em] text-navy-950 leading-[1.15] mb-6">
+            {g.heading}
+          </h2>
+          <div className="space-y-4 text-navy-900/90 text-[17px] leading-[1.7] max-w-3xl mb-10">
+            {g.intro.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-7 mb-10">
+            {g.topics.map((t, i) => (
+              <div key={i}>
+                <h3 className="font-serif text-lg text-navy-950 tracking-[-0.01em] mb-2">{t.heading}</h3>
+                <p className="text-navy-900/85 text-[15px] leading-[1.7]">{t.body}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
+            <div className="border border-gold-500/40 bg-gold-500/[0.07] rounded-sm p-6">
+              <div className="flex items-center gap-2.5 mb-4">
+                <AlertCircle size={18} className="text-gold-600 shrink-0" strokeWidth={1.9} />
+                <span className="kicker text-gold-600">Call the office immediately for</span>
+              </div>
+              <ul className="space-y-2.5">
+                {g.callOffice.map((w, i) => (
+                  <li key={i} className="flex items-baseline gap-2.5 text-[14.5px] leading-[1.6] text-navy-900/90">
+                    <span className="h-1 w-1 rounded-full bg-gold-600 shrink-0 translate-y-[7px]" />
+                    <span>{w}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="border border-red-700/30 bg-red-700/[0.05] rounded-sm p-6">
+              <div className="flex items-center gap-2.5 mb-4">
+                <AlertTriangle size={18} className="text-red-700 shrink-0" strokeWidth={1.9} />
+                <span className="kicker text-red-700">Call 911 or go to the ER for</span>
+              </div>
+              <ul className="space-y-2.5">
+                {g.call911.map((w, i) => (
+                  <li key={i} className="flex items-baseline gap-2.5 text-[14.5px] leading-[1.6] text-navy-900/90">
+                    <span className="h-1 w-1 rounded-full bg-red-700 shrink-0 translate-y-[7px]" />
+                    <span>{w}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <p className="text-navy-900/85 text-[15px] leading-[1.7] max-w-3xl">
+            <span className="font-semibold text-navy-950">Follow-up appointment.</span> {g.followUp}
+          </p>
+        </div>
+      </section>
+
       {/* Library by region */}
       <section className="bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 lg:py-28">
+          <div className="mb-12 lg:mb-16">
+            <div className="kicker text-gold-600 mb-3">Procedure-specific instructions</div>
+            <h2 className="font-serif text-[clamp(1.75rem,3vw,2.5rem)] tracking-[-0.02em] text-navy-950 leading-[1.15] max-w-3xl">
+              Find your procedure for detailed recovery instructions.
+            </h2>
+          </div>
           <div className="space-y-20 lg:space-y-24">
             {procedureRegions.map((region) => {
               const list = proceduresByRegion(region);

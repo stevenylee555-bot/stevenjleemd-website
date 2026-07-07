@@ -184,11 +184,11 @@ export const redirects: RedirectRule[] = [
   { source: "/your-diagnosis-nyc-best-orthopedic", destination: "/conditions", permanent: true },
   { source: "/faq", destination: "/", permanent: true },
   { source: "/copy-of-faq", destination: "/", permanent: true },
-  { source: "/surgical-info-1", destination: "/second-opinions", permanent: true },
-  { source: "/surgical-planning", destination: "/second-opinions", permanent: true },
+  { source: "/surgical-info-1", destination: "/before-surgery", permanent: true },
+  { source: "/surgical-planning", destination: "/before-surgery", permanent: true },
   { source: "/procedure-instructions", destination: "/therapy-protocols", permanent: true },
   { source: "/post-operative", destination: "/therapy-protocols", permanent: true },
-  { source: "/copy-of-do-not-use-prev-post-op-ins", destination: "/therapy-protocols", permanent: true },
+  { source: "/copy-of-do-not-use-prev-post-op-ins", destination: "/surgery-nutrition", permanent: true },
   { source: "/search-results", destination: "/conditions", permanent: true },
 
   // ───────────────────────────────────────────────────────────────────────

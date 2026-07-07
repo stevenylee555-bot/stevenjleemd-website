@@ -43,7 +43,15 @@ const navLinks = [
       { label: "Advanced Treatments", href: "/conditions#advanced-treatments" },
     ],
   },
-  { label: "Therapy Protocols", href: "/therapy-protocols" },
+  {
+    label: "Surgical Info",
+    href: "/before-surgery",
+    children: [
+      { label: "Preparing for Surgery", href: "/before-surgery" },
+      { label: "Post-Op Instructions", href: "/therapy-protocols" },
+      { label: "Nutrition & Recovery", href: "/surgery-nutrition" },
+    ],
+  },
   { label: "Second Opinions", href: "/second-opinions" },
   { label: "Shop", href: "/shop" },
   { label: "Contact", href: "/contact" },
