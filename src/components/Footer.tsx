@@ -46,14 +46,24 @@ export default function Footer() {
               <div className="flex items-start gap-2">
                 <MapPin size={15} className="text-gold-400 mt-0.5 shrink-0" aria-hidden="true" />
                 <div>
-                  <div className="font-medium text-white">New York City</div>
+                  <Link
+                    href="/hand-surgeon-upper-east-side"
+                    className="font-medium text-white hover:text-gold-400 transition-colors"
+                  >
+                    New York City
+                  </Link>
                   <div>159 East 74th Street, New York, NY 10021</div>
                 </div>
               </div>
               <div className="flex items-start gap-2">
                 <MapPin size={15} className="text-gold-400 mt-0.5 shrink-0" aria-hidden="true" />
                 <div>
-                  <div className="font-medium text-white">Scarsdale</div>
+                  <Link
+                    href="/hand-surgeon-scarsdale"
+                    className="font-medium text-white hover:text-gold-400 transition-colors"
+                  >
+                    Scarsdale
+                  </Link>
                   <div>2 Overhill Road, Suite 310, Scarsdale, NY 10583</div>
                 </div>
               </div>

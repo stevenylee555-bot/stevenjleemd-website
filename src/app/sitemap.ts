@@ -25,6 +25,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/therapy-protocols", priority: 0.7, freq: "monthly" },
     { path: "/surgery-nutrition", priority: 0.6, freq: "monthly" },
     { path: "/second-opinions", priority: 0.95, freq: "monthly" },
+    { path: "/hand-surgeon-upper-east-side", priority: 0.9, freq: "monthly" },
+    { path: "/hand-surgeon-scarsdale", priority: 0.9, freq: "monthly" },
     { path: "/testimonials", priority: 0.7, freq: "monthly" },
     { path: "/contact", priority: 0.85, freq: "monthly" },
     { path: "/privacy", priority: 0.3, freq: "yearly" },
