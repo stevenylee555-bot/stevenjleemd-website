@@ -250,24 +250,6 @@ export default function Hero({ home }: { home?: HomeContent }) {
                 aria-hidden="true"
               />
 
-              {/* Patent stamp, enters after portrait. A newer credential than
-                  Castle Connolly (which is now in the Recognition list above)
-                  so it adds rather than duplicates. */}
-              <motion.div
-                initial={{ opacity: 0, y: 16 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.95, ease: [0.22, 1, 0.36, 1] }}
-                className="absolute bottom-5 left-5 right-5 sm:right-auto inline-flex items-center gap-3 bg-navy-950/85 backdrop-blur-md px-4 py-2.5 ring-1 ring-white/10"
-              >
-                <span
-                  className="h-1.5 w-1.5 rounded-full bg-gold-500 shrink-0"
-                  aria-hidden="true"
-                />
-                <div className="text-[11px] uppercase tracking-[0.16em] font-semibold text-white/85 leading-tight">
-                  US Patent <span className="text-gold-400">·</span> Surgical
-                  Instrumentation <span className="text-gold-400">·</span> 2026
-                </div>
-              </motion.div>
             </div>
           </motion.div>
         </motion.div>
