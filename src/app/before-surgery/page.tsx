@@ -3,6 +3,12 @@ import Link from "next/link";
 import { ArrowUpRight, Calendar, ExternalLink, Phone, Mail, Printer, MapPin } from "lucide-react";
 import { ZOCDOC_URL } from "@/lib/site";
 import PageHeader from "@/components/PageHeader";
+import FaqAccordion from "@/components/FaqAccordion";
+import {
+  buildFaqSchema,
+  buildMedicalWebPageSchema,
+  SITE_URL,
+} from "@/lib/schema";
 import { getBeforeSurgeryPage } from "@/sanity/getBeforeSurgeryPage";
 
 export const metadata: Metadata = {
@@ -12,11 +18,57 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.stevenjleemd.com/before-surgery" },
 };
 
+// Code-owned (not CMS-editable), answer-first, and general-education only:
+// specifics always defer to the patient's own care team instructions.
+const FAQS = [
+  {
+    question: "How do I schedule surgery with Dr. Lee?",
+    answer:
+      "Surgery is scheduled through Dr. Lee's surgical coordinator after your consultation. The coordinator arranges the date, the facility, insurance authorization, and any required medical clearance, and walks you through each step by phone and email.",
+  },
+  {
+    question: "Can I eat or drink before surgery?",
+    answer:
+      "Most patients are instructed not to eat or drink anything after midnight the night before surgery. Your anesthesia team gives you exact instructions for your case, and those instructions always take precedence.",
+  },
+  {
+    question: "Should I stop my medications before surgery?",
+    answer:
+      "Some medications, including blood thinners and certain anti-inflammatories and supplements, may need to be paused before surgery. Never stop a prescription on your own. Dr. Lee's team coordinates medication instructions with you and, when needed, with your prescribing physician.",
+  },
+  {
+    question: "Where does Dr. Lee perform surgery?",
+    answer:
+      "Dr. Lee operates at accredited outpatient surgery centers in Manhattan and at Lenox Hill Hospital for procedures that call for a hospital setting. The right facility depends on your procedure and health history, and it is confirmed when your surgery is scheduled.",
+  },
+  {
+    question: "Do I need someone to take me home after surgery?",
+    answer:
+      "Yes. If you receive anesthesia or sedation, you must have a responsible adult accompany you home. Plan your ride before surgery day, since the facility cannot discharge you alone.",
+  },
+];
+
 export default async function BeforeSurgeryPage() {
   const d = await getBeforeSurgeryPage();
   const { planning, coordinator, instructions, locations } = d;
+  const pageUrl = `${SITE_URL}/before-surgery`;
+  const webPageSchema = buildMedicalWebPageSchema({
+    url: pageUrl,
+    title: "Preparing for Surgery",
+    description:
+      "How to prepare for surgery with Dr. Steven J. Lee, MD: scheduling, pre-operative instructions, and NYC surgical locations.",
+  });
+  const faqSchema = buildFaqSchema(FAQS, pageUrl);
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <PageHeader
         kicker="Surgical Info"
         title={d.header.title}
@@ -141,6 +193,11 @@ export default async function BeforeSurgeryPage() {
           </div>
         </div>
       </section>
+
+      <FaqAccordion
+        headline="Preparing for surgery, common questions."
+        faqs={FAQS}
+      />
 
       {/* CTA */}
       <section className="bg-navy-950 text-white">

@@ -3,6 +3,12 @@ import Link from "next/link";
 import { ArrowUpRight, Calendar, ExternalLink } from "lucide-react";
 import { ZOCDOC_URL } from "@/lib/site";
 import PageHeader from "@/components/PageHeader";
+import FaqAccordion from "@/components/FaqAccordion";
+import {
+  buildFaqSchema,
+  buildMedicalWebPageSchema,
+  SITE_URL,
+} from "@/lib/schema";
 import { type NutritionGroup } from "@/lib/surgicalInfo";
 import { getSurgeryNutritionPage } from "@/sanity/getSurgeryNutritionPage";
 
@@ -12,6 +18,36 @@ export const metadata: Metadata = {
     "How to optimize your diet for surgery and recovery: calories, protein, key vitamins and minerals (Vitamin C, Calcium, Vitamin D), and guidance on smoking, alcohol, and other substances, from Dr. Steven J. Lee, MD.",
   alternates: { canonical: "https://www.stevenjleemd.com/surgery-nutrition" },
 };
+
+// Code-owned (not CMS-editable), answer-first, general education only. These
+// summarize the visible page content so the FAQ schema matches what renders.
+const FAQS = [
+  {
+    question: "What should I eat before and after surgery?",
+    answer:
+      "Healing raises your body's energy and protein needs, so eat regular, balanced meals with adequate protein from sources such as fish, poultry, eggs, dairy, beans, and nuts. Surgery is not the time for a restrictive weight-loss diet.",
+  },
+  {
+    question: "Which vitamins and minerals support surgical recovery?",
+    answer:
+      "Vitamin C supports collagen and soft-tissue healing, while calcium and vitamin D support bone healing. Getting them from food is preferred. Ask Dr. Lee's team before starting any new supplement, since some interfere with surgery or medications.",
+  },
+  {
+    question: "Does smoking affect healing after surgery?",
+    answer:
+      "Yes. Smoking and vaping reduce blood flow and are strongly associated with slower bone and tendon healing, wound problems, and higher complication rates. Stopping before surgery, even temporarily, measurably improves healing.",
+  },
+  {
+    question: "Can I drink alcohol before or after surgery?",
+    answer:
+      "Heavy alcohol use impairs healing and can interact with anesthesia and pain medication. Limit alcohol in the weeks around surgery and avoid it entirely while taking prescription pain medication.",
+  },
+  {
+    question: "Do I need protein shakes or supplements to heal?",
+    answer:
+      "Not necessarily. Most patients can meet their healing needs with regular food. Protein shakes can help if your appetite is low after surgery, but check with Dr. Lee's team before adding supplements, since some affect bleeding or medications.",
+  },
+];
 
 function Foods({ intro, foods }: { intro?: string; foods?: string[] }) {
   if (!foods?.length) return null;
@@ -54,8 +90,24 @@ function Group({ g }: { g: NutritionGroup }) {
 
 export default async function SurgeryNutritionPage() {
   const d = await getSurgeryNutritionPage();
+  const pageUrl = `${SITE_URL}/surgery-nutrition`;
+  const webPageSchema = buildMedicalWebPageSchema({
+    url: pageUrl,
+    title: "Nutrition & Substance Use Before and After Surgery",
+    description:
+      "How to optimize your diet for surgery and recovery: calories, protein, key vitamins and minerals, and guidance on smoking and alcohol.",
+  });
+  const faqSchema = buildFaqSchema(FAQS, pageUrl);
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <PageHeader
         kicker="Surgical Info"
         title={d.header.title}
@@ -94,6 +146,11 @@ export default async function SurgeryNutritionPage() {
           <p className="text-navy-900/70 text-[14px] leading-[1.7] italic px-2">{d.disclaimer}</p>
         </div>
       </section>
+
+      <FaqAccordion
+        headline="Nutrition and recovery, common questions."
+        faqs={FAQS}
+      />
 
       {/* CTA */}
       <section className="bg-navy-950 text-white">
