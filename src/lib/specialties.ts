@@ -30,6 +30,9 @@ export type Specialty = {
   // SEO
   metaTitle: string;
   metaDescription: string;
+  // Patient FAQs. Answer-first and self-contained so AI engines can quote a
+  // single answer without surrounding context. Rendered with FAQPage schema.
+  faqs?: Array<{ question: string; answer: string }>;
 };
 
 export const specialties: Specialty[] = [
@@ -110,6 +113,33 @@ export const specialties: Specialty[] = [
       "Hand & Wrist Surgery, Steven J. Lee, MD | Chief of Hand and Upper Extremity Surgery, Lenox Hill",
     metaDescription:
       "Hand and wrist surgery in NYC and Scarsdale. Dr. Steven J. Lee, Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, double fellowship-trained, and an orthopedic implant designer. Carpal tunnel, distal radius fractures, scapholunate, basal joint, and more.",
+    faqs: [
+      {
+        question: "What conditions does a hand and wrist surgeon treat?",
+        answer:
+          "A hand and wrist surgeon treats carpal tunnel syndrome, trigger finger, thumb and wrist arthritis, distal radius (wrist) fractures, tendon and nerve injuries, and ligament tears such as scapholunate and thumb UCL injuries. Dr. Lee manages these both surgically and non-surgically at his NYC and Scarsdale offices.",
+      },
+      {
+        question: "Where does Dr. Lee perform hand and wrist surgery?",
+        answer:
+          "Dr. Lee sees patients at his Upper East Side office at 159 East 74th Street in Manhattan and at 2 Overhill Road in Scarsdale, Westchester. Many hand and wrist procedures are outpatient, and out-of-area patients can begin with a telemedicine consultation.",
+      },
+      {
+        question: "Is hand surgery done awake or under general anesthesia?",
+        answer:
+          "Many hand and wrist procedures, including carpal tunnel release, can be done under local or regional anesthesia rather than general anesthesia. The right choice depends on the specific procedure and the patient, and Dr. Lee reviews the options with you before surgery.",
+      },
+      {
+        question: "How long is recovery after hand or wrist surgery?",
+        answer:
+          "Recovery depends on the procedure. Light hand use often returns within one to two weeks after soft-tissue procedures such as carpal tunnel or trigger finger release, while fracture and ligament reconstructions take longer. Dr. Lee provides a procedure-specific recovery timeline for every operation.",
+      },
+      {
+        question: "Does Dr. Lee handle complex or revision hand cases?",
+        answer:
+          "Yes. As Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital, Dr. Lee treats complex fractures, failed prior surgery, and revision cases, and he has helped design several of the hand and wrist implants used in these reconstructions.",
+      },
+    ],
   },
 
   // ─────────────────────────────────────────────────────────────────
@@ -175,6 +205,33 @@ export const specialties: Specialty[] = [
       "Elbow Surgery, Tommy John, Biceps Repair, Trauma | Steven J. Lee, MD",
     metaDescription:
       "Elbow surgery in NYC and Scarsdale by Dr. Steven J. Lee, double fellowship-trained in hand and sports medicine. UCL reconstruction (Tommy John), distal biceps repair, LUCL repair, complex trauma. Implant designer for the anchors used in surgery.",
+    faqs: [
+      {
+        question: "What elbow problems does Dr. Lee treat?",
+        answer:
+          "Dr. Lee treats tennis elbow and golfer's elbow, cubital tunnel (ulnar nerve) compression, distal biceps tendon tears, UCL injuries including Tommy John cases, elbow arthritis, and elbow fractures, at his Manhattan and Scarsdale offices.",
+      },
+      {
+        question: "Who performs Tommy John (UCL) surgery near NYC?",
+        answer:
+          "Dr. Steven J. Lee performs UCL reconstruction and repair, including internal-brace-augmented techniques, for throwing athletes in the New York area. He is double fellowship-trained in hand and upper extremity and in sports medicine, and sees patients on the Upper East Side and in Scarsdale.",
+      },
+      {
+        question: "Do I need surgery for tennis elbow?",
+        answer:
+          "Most tennis elbow improves without surgery through activity changes, therapy, bracing, and in selected cases biologic injections such as PRP. Surgery is reserved for pain that persists despite a full course of non-surgical treatment. Dr. Lee will tell you when an operation is and is not warranted.",
+      },
+      {
+        question: "What is the recovery time after Tommy John surgery?",
+        answer:
+          "Traditional UCL reconstruction returns competitive throwers to the mound around 12 to 15 months, with lighter throwing beginning near month four to five. Internal-brace augmentation in selected patients can shorten this. Returning too early is the most common cause of re-injury.",
+      },
+      {
+        question: "Where does Dr. Lee treat elbow injuries?",
+        answer:
+          "Dr. Lee sees elbow patients at 159 East 74th Street on the Upper East Side of Manhattan and at 2 Overhill Road in Scarsdale, Westchester, with telemedicine available for out-of-area athletes and second opinions.",
+      },
+    ],
   },
 
   // ─────────────────────────────────────────────────────────────────
@@ -232,6 +289,33 @@ export const specialties: Specialty[] = [
       "Shoulder Surgery, Rotator Cuff, Arthroscopy | Steven J. Lee, MD NYC",
     metaDescription:
       "Shoulder surgery in NYC and Scarsdale by Dr. Steven J. Lee, fellowship-trained in sports medicine. Arthroscopic rotator cuff repair, labral surgery, clavicle fixation, return-to-sport planning for athletes and active adults.",
+    faqs: [
+      {
+        question: "What shoulder conditions does Dr. Lee treat?",
+        answer:
+          "Dr. Lee treats rotator cuff tears, shoulder instability and dislocations, labral (SLAP) tears, biceps tendon problems, shoulder arthritis, and fractures, using both arthroscopic and open techniques at his NYC and Scarsdale offices.",
+      },
+      {
+        question: "Does every rotator cuff tear need surgery?",
+        answer:
+          "No. Many partial rotator cuff tears respond to therapy, activity changes, and injections, while larger or full-thickness tears in active patients are more likely to need arthroscopic repair. Dr. Lee bases the recommendation on your symptoms, function, and imaging together, not on the scan alone.",
+      },
+      {
+        question: "Does Dr. Lee perform minimally invasive shoulder surgery?",
+        answer:
+          "Yes. Most rotator cuff repairs, labral repairs, and instability procedures are performed arthroscopically through small incisions, which generally means less soft-tissue disruption and a more comfortable early recovery than open surgery.",
+      },
+      {
+        question: "How long is recovery after rotator cuff repair?",
+        answer:
+          "Rotator cuff repair typically involves a sling for a few weeks followed by a staged physical therapy program. Everyday use returns over the first several weeks, while full strength and return to sport usually take four to six months, depending on the size of the tear.",
+      },
+      {
+        question: "Where does Dr. Lee see shoulder patients?",
+        answer:
+          "Dr. Lee treats shoulder patients on the Upper East Side of Manhattan at 159 East 74th Street and in Scarsdale, Westchester at 2 Overhill Road, with telemedicine consultations available for second opinions.",
+      },
+    ],
   },
 
   // ─────────────────────────────────────────────────────────────────
@@ -284,6 +368,33 @@ export const specialties: Specialty[] = [
       "Knee Surgery & Sports Medicine, ACL, Meniscus, Achilles | Dr. Lee NYC",
     metaDescription:
       "Knee and sports surgery in NYC and Scarsdale by Dr. Steven J. Lee, fellowship-trained in sports medicine. ACL reconstruction, meniscus repair, knee arthroscopy, Achilles tendon repair. Four peer-reviewed Achilles publications.",
+    faqs: [
+      {
+        question: "What knee injuries does Dr. Lee treat?",
+        answer:
+          "Dr. Lee treats ACL and other ligament tears, meniscus injuries, cartilage damage, patellar (kneecap) instability, and knee arthritis, with an emphasis on returning athletes and active patients to sport. He sees patients in NYC and Scarsdale.",
+      },
+      {
+        question: "Does an ACL tear always require surgery?",
+        answer:
+          "Not always. Active patients who want to return to cutting and pivoting sports usually benefit from ACL reconstruction, while some lower-demand patients do well with rehabilitation alone. Dr. Lee helps each patient weigh activity goals, stability, and any associated injuries before deciding.",
+      },
+      {
+        question: "Does Dr. Lee offer PRP or biologic treatment for the knee?",
+        answer:
+          "Yes, in selected cases. For certain tendon problems and early cartilage or arthritis changes, Dr. Lee offers image-guided PRP as part of a broader plan. He was among the first surgeons in New York to use PRP and applies it when the evidence supports it, not as a default.",
+      },
+      {
+        question: "How soon can athletes return to sport after knee surgery?",
+        answer:
+          "Return to sport depends on the procedure. Meniscus and cartilage procedures may allow a return within weeks to a few months, while ACL reconstruction typically requires roughly nine to twelve months of structured rehabilitation before full-contact sport.",
+      },
+      {
+        question: "Where does Dr. Lee treat knee and sports injuries?",
+        answer:
+          "Dr. Lee sees knee and sports-medicine patients at his Manhattan Upper East Side office and his Scarsdale, Westchester office, and offers telemedicine consultations for athletes and second opinions.",
+      },
+    ],
   },
 
   // ─────────────────────────────────────────────────────────────────
@@ -336,6 +447,33 @@ export const specialties: Specialty[] = [
       "PRP & Advanced Treatments, Biologics, BMAC, Peptides | Dr. Lee NYC",
     metaDescription:
       "PRP, BMAC, and peptide therapy in NYC and Scarsdale by Dr. Steven J. Lee, among the first surgeons in New York City to use PRP, and among the first specifically for upper extremity injuries. 250+ PRP procedures annually. Conservative, patient-specific selection.",
+    faqs: [
+      {
+        question: "Does PRP therapy actually work?",
+        answer:
+          "PRP has its strongest evidence for certain tendon conditions, such as tennis elbow, and for selected joint problems. It is not a cure-all. Dr. Lee, who was among the first surgeons in New York to use PRP, recommends it only when the specific diagnosis and the evidence support it.",
+      },
+      {
+        question: "How much does PRP cost, and does insurance cover it?",
+        answer:
+          "PRP and most regenerative injections are considered elective and are typically not covered by insurance, so they are usually self-pay. Dr. Lee's office reviews the expected cost and the likely number of sessions with you in advance so there are no surprises.",
+      },
+      {
+        question: "What is the difference between PRP and BMAC?",
+        answer:
+          "PRP concentrates growth factors from a small blood draw, while BMAC (bone marrow aspirate concentrate) is drawn from the pelvis and is richer in cells. BMAC is used in selected cartilage and tendon cases where PRP alone may not be enough. Dr. Lee selects between them case by case.",
+      },
+      {
+        question: "Is Dr. Lee experienced with regenerative and biologic treatments?",
+        answer:
+          "Yes. Dr. Lee was among the first surgeons in New York City to perform PRP, including for upper extremity injuries, and has published what is believed to be the first review paper on peptides in an orthopedic journal. He performs a high volume of PRP procedures each year.",
+      },
+      {
+        question: "Where can I get PRP or biologic treatment from Dr. Lee?",
+        answer:
+          "Dr. Lee offers image-guided PRP and other biologic treatments at his Upper East Side Manhattan office and his Scarsdale, Westchester office. A consultation determines whether a biologic option is appropriate for your specific condition.",
+      },
+    ],
   },
 ];
 
