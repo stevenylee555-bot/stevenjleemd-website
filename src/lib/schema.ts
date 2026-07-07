@@ -135,14 +135,13 @@ export const SCARSDALE_BUSINESS_ID = `${SITE_URL}/#medical-business-scarsdale`;
 // independently in local search and map results. branchOf ties it back to the
 // primary practice entity. Coordinates are approximate to the Overhill Road
 // building; replace with the exact pin from the verified Google Business
-// Profile once the Scarsdale profile is claimed. Confirm the Scarsdale phone,
-// it may differ from the NYC line.
+// Profile once the Scarsdale profile is claimed.
 export const scarsdaleBusinessNode = {
   "@type": "MedicalBusiness",
   "@id": SCARSDALE_BUSINESS_ID,
   name: "Steven J. Lee, MD, Orthopedic Surgery (Scarsdale)",
   url: SITE_URL,
-  telephone: "+1-212-737-3301",
+  telephone: "+1-914-725-6970",
   priceRange: "$$$$",
   medicalSpecialty: ["Orthopedic", "Hand"],
   branchOf: { "@id": BUSINESS_ID },
