@@ -15,6 +15,7 @@ const footerLinks = {
     { label: "Conditions Library", href: "/conditions" },
     { label: "Therapy Protocols", href: "/therapy-protocols" },
     { label: "Second Opinions", href: "/second-opinions" },
+    { label: "Insurance & Costs", href: "/insurance-and-costs" },
     { label: "Shop", href: "/shop" },
     { label: "Referral Network", href: "/referral-network" },
   ],

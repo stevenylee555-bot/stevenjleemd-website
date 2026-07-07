@@ -310,6 +310,25 @@ export default async function SecondOpinionsPage() {
               </li>
             ))}
           </ul>
+
+          <p className="mt-8 text-navy-900/85 text-[15.5px] leading-relaxed">
+            Wondering how out-of-network reimbursement, superbills, or self-pay
+            visits work?{" "}
+            <Link
+              href="/insurance-and-costs"
+              className="text-gold-600 hover:text-gold-500 underline underline-offset-4"
+            >
+              See how insurance and costs work
+            </Link>
+            , or call the office at{" "}
+            <a
+              href="tel:+12127373301"
+              className="text-gold-600 hover:text-gold-500 underline underline-offset-4"
+            >
+              (212) 737-3301
+            </a>
+            .
+          </p>
         </div>
       </section>
     </>
