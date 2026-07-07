@@ -7,6 +7,7 @@ import { ZOCDOC_URL } from "@/lib/site";
 import {
   buildGraph,
   buildMedicalProcedureSchema,
+  buildMedicalWebPageSchema,
   SITE_URL,
 } from "@/lib/schema";
 import {
@@ -47,6 +48,11 @@ export default function SpecialtyTemplate({ specialty }: { specialty: Specialty 
   );
 
   const pageUrl = `${SITE_URL}/specialties/${specialty.slug}`;
+  const webPageSchema = buildMedicalWebPageSchema({
+    url: pageUrl,
+    title: specialty.metaTitle,
+    description: specialty.metaDescription,
+  });
   const procedureGraph = buildGraph(
     specialty.approach.map((p) =>
       buildMedicalProcedureSchema({
@@ -61,6 +67,10 @@ export default function SpecialtyTemplate({ specialty }: { specialty: Specialty 
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(procedureGraph) }}

@@ -7,6 +7,8 @@ export const metadata: Metadata = {
   description:
     "Operative videos, surgical technique demonstrations, and lectures from Dr. Steven J. Lee, MD via national educational platforms and VuMedi.",
   alternates: { canonical: "https://www.stevenjleemd.com/about/videos" },
+  // Placeholder page: keep out of the index until it holds real content.
+  robots: { index: false, follow: true },
 };
 
 export default function VideosPage() {

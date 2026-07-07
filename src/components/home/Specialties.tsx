@@ -53,7 +53,7 @@ const specialties = [
     title: "PRP & Biologics",
     eyebrow: "Among the first in NYC for upper extremity",
     description:
-      "PRP injections (250+ annually), BMAC stem cell therapy, and peptide treatments, including the first orthopedic-journal review paper on peptides.",
+      "PRP injections (250+ annually), BMAC stem cell therapy, and peptide treatments, including what is believed to be the first orthopedic-journal review paper on peptides.",
     href: "/specialties/advanced-treatments",
     Icon: BiologicsIcon,
   },

@@ -294,7 +294,7 @@ export const specialties: Specialty[] = [
     navLabel: "PRP & Advanced Treatments",
     eyebrow: "Among the first in NYC for upper extremity",
     headline: "Biologic therapies:",
-    headlineItalic: "from the surgeon who pioneered them.",
+    headlineItalic: "from the surgeon who was among the first.",
     lede:
       "Platelet-rich plasma (PRP), bone marrow aspirate concentrate (BMAC), and peptide therapy, used when they're the right tool, not when they're a marketing line. Dr. Lee was among the first surgeons in NYC to perform PRP, including for upper extremity injuries. He performs 250+ PRP procedures annually today.",
     introTitle: "An early adopter, not a marketer.",
@@ -335,7 +335,7 @@ export const specialties: Specialty[] = [
     metaTitle:
       "PRP & Advanced Treatments, Biologics, BMAC, Peptides | Dr. Lee NYC",
     metaDescription:
-      "PRP, BMAC, and peptide therapy in NYC and Scarsdale by Dr. Steven J. Lee, among the first surgeons in New York City to use PRP, and the first specifically for upper extremity injuries. 250+ PRP procedures annually. Conservative, patient-specific selection.",
+      "PRP, BMAC, and peptide therapy in NYC and Scarsdale by Dr. Steven J. Lee, among the first surgeons in New York City to use PRP, and among the first specifically for upper extremity injuries. 250+ PRP procedures annually. Conservative, patient-specific selection.",
   },
 ];
 

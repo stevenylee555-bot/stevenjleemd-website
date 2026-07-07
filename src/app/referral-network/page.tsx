@@ -7,6 +7,8 @@ export const metadata: Metadata = {
   description:
     "Trusted specialists Dr. Steven J. Lee personally recommends, physical therapists, hand therapists, dermatologists, nutritionists, trainers, and more.",
   alternates: { canonical: "https://www.stevenjleemd.com/referral-network" },
+  // Placeholder page: keep out of the index until it holds real content.
+  robots: { index: false, follow: true },
 };
 
 export default function ReferralNetworkPage() {

@@ -11,7 +11,11 @@ import {
 } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import { ZOCDOC_URL } from "@/lib/site";
-import { buildFaqSchema, buildConditionSchema } from "@/lib/schema";
+import {
+  buildFaqSchema,
+  buildConditionSchema,
+  buildMedicalWebPageSchema,
+} from "@/lib/schema";
 import { conditionProcedures } from "@/lib/conditionPages";
 import { specialtyForRegion } from "@/lib/specialties";
 import type { ConditionPageContent } from "@/lib/conditionPages";
@@ -21,17 +25,28 @@ export default function ConditionTemplate({
 }: {
   data: ConditionPageContent;
 }) {
-  const faqSchema = buildFaqSchema(data.faqs);
+  const pageUrl = `https://www.stevenjleemd.com/conditions/${data.slug}`;
+  const faqSchema = buildFaqSchema(data.faqs, pageUrl);
   const conditionSchema = buildConditionSchema({
     name: data.name,
     description: data.schemaDescription,
-    url: `https://www.stevenjleemd.com/conditions/${data.slug}`,
+    url: pageUrl,
     procedureNames: conditionProcedures[data.slug],
+  });
+  const webPageSchema = buildMedicalWebPageSchema({
+    url: pageUrl,
+    title: data.name,
+    description: data.schemaDescription,
+    lastReviewed: data.byline.reviewed,
   });
   const specialty = specialtyForRegion(data.region);
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

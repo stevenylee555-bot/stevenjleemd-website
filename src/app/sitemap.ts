@@ -13,7 +13,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/about/bio", priority: 0.8, freq: "monthly" },
     { path: "/about/credentials", priority: 0.6, freq: "monthly" },
     { path: "/about/publications", priority: 0.7, freq: "monthly" },
-    { path: "/about/videos", priority: 0.6, freq: "monthly" },
     { path: "/about/cv", priority: 0.5, freq: "yearly" },
     { path: "/specialties", priority: 0.8, freq: "monthly" },
     { path: "/specialties/hand-wrist", priority: 0.9, freq: "monthly" },
@@ -26,10 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/therapy-protocols", priority: 0.7, freq: "monthly" },
     { path: "/surgery-nutrition", priority: 0.6, freq: "monthly" },
     { path: "/second-opinions", priority: 0.95, freq: "monthly" },
-    { path: "/shop", priority: 0.5, freq: "monthly" },
-    { path: "/referral-network", priority: 0.6, freq: "monthly" },
     { path: "/testimonials", priority: 0.7, freq: "monthly" },
-    { path: "/blog", priority: 0.6, freq: "weekly" },
     { path: "/contact", priority: 0.85, freq: "monthly" },
     { path: "/privacy", priority: 0.3, freq: "yearly" },
   ];

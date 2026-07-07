@@ -7,6 +7,8 @@ export const metadata: Metadata = {
   description:
     "Braces, supplements, and recovery equipment personally recommended by Dr. Steven J. Lee, MD. Curated product referrals via Recovery Shop.",
   alternates: { canonical: "https://www.stevenjleemd.com/shop" },
+  // Placeholder page: keep out of the index until it holds real content.
+  robots: { index: false, follow: true },
 };
 
 export default function ShopPage() {

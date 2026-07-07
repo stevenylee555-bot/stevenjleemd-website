@@ -129,6 +129,51 @@ export const medicalBusinessNode = {
   ],
 };
 
+export const SCARSDALE_BUSINESS_ID = `${SITE_URL}/#medical-business-scarsdale`;
+
+// Second office as its own LocalBusiness node so both locations resolve
+// independently in local search and map results. branchOf ties it back to the
+// primary practice entity. Coordinates are approximate to the Overhill Road
+// building; replace with the exact pin from the verified Google Business
+// Profile once the Scarsdale profile is claimed. Confirm the Scarsdale phone,
+// it may differ from the NYC line.
+export const scarsdaleBusinessNode = {
+  "@type": "MedicalBusiness",
+  "@id": SCARSDALE_BUSINESS_ID,
+  name: "Steven J. Lee, MD, Orthopedic Surgery (Scarsdale)",
+  url: SITE_URL,
+  telephone: "+1-212-737-3301",
+  priceRange: "$$$$",
+  medicalSpecialty: ["Orthopedic", "Hand"],
+  branchOf: { "@id": BUSINESS_ID },
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "2 Overhill Road, Suite 310",
+    addressLocality: "Scarsdale",
+    addressRegion: "NY",
+    postalCode: "10583",
+    addressCountry: "US",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 40.9884,
+    longitude: -73.8072,
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:00",
+      closes: "17:00",
+    },
+  ],
+  areaServed: [
+    { "@type": "City", name: "Scarsdale" },
+    { "@type": "City", name: "White Plains" },
+    { "@type": "AdministrativeArea", name: "Westchester County" },
+  ],
+};
+
 // Back-compat exports for any callers that still use the standalone shapes.
 export const physicianSchema = {
   "@context": "https://schema.org",
@@ -157,6 +202,9 @@ export function buildFaqSchema(
     "@context": "https://schema.org",
     "@type": "FAQPage",
     ...(pageUrl ? { "@id": `${pageUrl}#faq` } : {}),
+    // Attribute the answers to Dr. Lee. For YMYL/health queries, a credentialed
+    // author is one of the strongest signals for AI-answer citation.
+    author: { "@id": PHYSICIAN_ID },
     mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.question,
@@ -165,6 +213,29 @@ export function buildFaqSchema(
         text: faq.answer,
       },
     })),
+  };
+}
+
+// MedicalWebPage — the schema.org-correct way to state that a clinical page was
+// authored and medically reviewed by a named, credentialed physician. This is
+// the load-bearing E-E-A-T signal: it points `author` and `reviewedBy` at the
+// Physician node so engines resolve the page to Dr. Lee's entity.
+export function buildMedicalWebPageSchema(page: {
+  url: string;
+  title: string;
+  description?: string;
+  lastReviewed?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "@id": `${page.url}#webpage`,
+    url: page.url,
+    name: page.title,
+    ...(page.description ? { description: page.description } : {}),
+    author: { "@id": PHYSICIAN_ID },
+    reviewedBy: { "@id": PHYSICIAN_ID },
+    ...(page.lastReviewed ? { lastReviewed: page.lastReviewed } : {}),
   };
 }
 

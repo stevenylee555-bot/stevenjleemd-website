@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   description:
     "Notes and updates from Dr. Steven J. Lee, MD on orthopedic surgery, implant design, biologics, and the practice.",
   alternates: { canonical: "https://www.stevenjleemd.com/blog" },
+  // Placeholder page: keep out of the index until it holds real content, so a
+  // thin page does not weigh on the domain's quality signal. Links still followed.
+  robots: { index: false, follow: true },
 };
 
 export default function BlogPage() {

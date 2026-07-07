@@ -8,7 +8,12 @@ import Footer from "@/components/Footer";
 import Analytics from "@/components/analytics/Analytics";
 import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { buildGraph, physicianNode, medicalBusinessNode } from "@/lib/schema";
+import {
+  buildGraph,
+  physicianNode,
+  medicalBusinessNode,
+  scarsdaleBusinessNode,
+} from "@/lib/schema";
 import { SanityLive } from "@/sanity/live";
 
 const inter = Inter({
@@ -94,7 +99,11 @@ export default async function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(
-              buildGraph([physicianNode, medicalBusinessNode]),
+              buildGraph([
+                physicianNode,
+                medicalBusinessNode,
+                scarsdaleBusinessNode,
+              ]),
             ),
           }}
         />

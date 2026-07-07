@@ -2,13 +2,41 @@ import Link from "next/link";
 import { ArrowUpRight, Calendar, ExternalLink, AlertCircle, AlertTriangle, ChevronLeft } from "lucide-react";
 import { ZOCDOC_URL } from "@/lib/site";
 import PageHeader from "@/components/PageHeader";
+import {
+  buildMedicalWebPageSchema,
+  buildMedicalProcedureSchema,
+  SITE_URL,
+} from "@/lib/schema";
 import type { ProcedureProtocol } from "@/lib/procedureProtocols";
 
 export default function ProtocolTemplate({ data }: { data: ProcedureProtocol }) {
   const sections = data.sections?.filter((s) => s.heading || s.body?.length || s.bullets?.length) ?? [];
 
+  const pageUrl = `${SITE_URL}/therapy-protocols/${data.slug}`;
+  const title = data.officialTitle || data.name;
+  const webPageSchema = buildMedicalWebPageSchema({
+    url: pageUrl,
+    title: `${title}: Post-Operative Instructions`,
+    description: `Post-operative care and recovery instructions for ${data.name}, from the practice of Steven J. Lee, MD.`,
+  });
+  const procedureSchema = buildMedicalProcedureSchema({
+    name: title,
+    description: `Post-operative recovery protocol for ${data.name}.`,
+    url: pageUrl,
+    slug: data.slug,
+    bodyLocation: data.region,
+  });
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(procedureSchema) }}
+      />
       <PageHeader
         kicker={`Post-Op Instructions · ${data.region}`}
         title={data.officialTitle || data.name}
