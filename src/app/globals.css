@@ -122,3 +122,95 @@ html {
 @media (prefers-reduced-motion: reduce) {
   .search-pop { animation: none; }
 }
+
+/* Print-only elements are hidden on screen and revealed when printing. */
+.print-only { display: none; }
+
+/* ============================================================
+   Post-op protocol print / Save-as-PDF
+   One "Print / Save as PDF" button (PrintProtocolButton) fires
+   window.print(); these rules strip the site chrome and format
+   the page as a clinical letterhead handout for PAs to print.
+   ============================================================ */
+@media print {
+  @page {
+    margin: 0.75in;
+  }
+
+  /* Render tints (warning callouts, gold bullets) instead of dropping them. */
+  html,
+  body {
+    background: #fff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Strip site chrome: skip link, fixed navbar, footer, and anything
+     explicitly marked no-print (hero, back link, print button, CTA). */
+  body > a,
+  body > nav,
+  body > footer,
+  .no-print {
+    display: none !important;
+  }
+
+  /* Drop the fixed-navbar offset so content starts at the top margin. */
+  main {
+    padding-top: 0 !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  /* Keep each instruction/warning block intact across page breaks. */
+  .protocol-print-section {
+    break-inside: avoid;
+  }
+
+  /* Bulk packet: start every protocol on a fresh page (except the first). */
+  .protocol-print-page {
+    break-before: page;
+  }
+  .protocol-print-page:first-of-type {
+    break-before: auto;
+  }
+
+  /* Letterhead */
+  .protocol-print-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--color-navy-950);
+  }
+  .protocol-print-name {
+    font-family: var(--font-newsreader);
+    font-size: 20pt;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--color-navy-950);
+  }
+  .protocol-print-contact {
+    margin-top: 0.35rem;
+    font-size: 9pt;
+    line-height: 1.5;
+    color: #333;
+  }
+  .protocol-print-title-block {
+    margin-top: 1rem;
+  }
+  .protocol-print-kicker {
+    font-size: 8.5pt;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-gold-600);
+  }
+  .protocol-print-title {
+    margin-top: 0.25rem;
+    font-family: var(--font-newsreader);
+    font-size: 22pt;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--color-navy-950);
+  }
+}

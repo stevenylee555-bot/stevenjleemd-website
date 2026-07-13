@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowUpRight, Calendar, ExternalLink } from "lucide-react";
+import { ArrowUpRight, Calendar, ExternalLink, Printer } from "lucide-react";
 import { AlertCircle, AlertTriangle } from "lucide-react";
 import { ZOCDOC_URL } from "@/lib/site";
 import PageHeader from "@/components/PageHeader";
@@ -95,11 +95,20 @@ export default async function TherapyProtocolsPage() {
       {/* Library by region */}
       <section className="bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 lg:py-28">
-          <div className="mb-12 lg:mb-16">
-            <div className="kicker text-gold-600 mb-3">Procedure-specific instructions</div>
-            <h2 className="font-serif text-[clamp(1.75rem,3vw,2.5rem)] tracking-[-0.02em] text-navy-950 leading-[1.15] max-w-3xl">
-              Find your procedure for detailed recovery instructions.
-            </h2>
+          <div className="mb-12 lg:mb-16 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+            <div>
+              <div className="kicker text-gold-600 mb-3">Procedure-specific instructions</div>
+              <h2 className="font-serif text-[clamp(1.75rem,3vw,2.5rem)] tracking-[-0.02em] text-navy-950 leading-[1.15] max-w-3xl">
+                Find your procedure for detailed recovery instructions.
+              </h2>
+            </div>
+            <Link
+              href="/therapy-protocols/print-all"
+              className="inline-flex items-center gap-2 px-5 py-2.5 border border-navy-900/20 text-navy-900 hover:border-gold-500 hover:text-gold-600 rounded-md transition-colors text-[14px] font-medium shrink-0 self-start md:self-auto"
+            >
+              <Printer size={16} strokeWidth={1.9} />
+              Print all protocols
+            </Link>
           </div>
           <div className="space-y-20 lg:space-y-24">
             {procedureRegions.map((region) => {

@@ -1,7 +1,10 @@
 import Link from "next/link";
-import { ArrowUpRight, Calendar, ExternalLink, AlertCircle, AlertTriangle, ChevronLeft } from "lucide-react";
+import { ArrowUpRight, Calendar, ExternalLink, ChevronLeft } from "lucide-react";
 import { ZOCDOC_URL } from "@/lib/site";
 import PageHeader from "@/components/PageHeader";
+import ProtocolBody from "@/components/ProtocolBody";
+import ProtocolPrintHeader from "@/components/ProtocolPrintHeader";
+import PrintProtocolButton from "@/components/PrintProtocolButton";
 import {
   buildMedicalWebPageSchema,
   buildMedicalProcedureSchema,
@@ -10,8 +13,6 @@ import {
 import type { ProcedureProtocol } from "@/lib/procedureProtocols";
 
 export default function ProtocolTemplate({ data }: { data: ProcedureProtocol }) {
-  const sections = data.sections?.filter((s) => s.heading || s.body?.length || s.bullets?.length) ?? [];
-
   const pageUrl = `${SITE_URL}/therapy-protocols/${data.slug}`;
   const title = data.officialTitle || data.name;
   const webPageSchema = buildMedicalWebPageSchema({
@@ -37,105 +38,41 @@ export default function ProtocolTemplate({ data }: { data: ProcedureProtocol }) 
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(procedureSchema) }}
       />
-      <PageHeader
-        kicker={`Post-Op Instructions · ${data.region}`}
-        title={data.officialTitle || data.name}
-        lede="What to expect and how to care for yourself after your procedure. These are Dr. Lee's general guidelines. Always follow the specific instructions given to you after your own surgery."
-        breadcrumb={[
-          { label: "Home", href: "/" },
-          { label: "Post-Op Instructions", href: "/therapy-protocols" },
-          { label: data.name, href: `/therapy-protocols/${data.slug}` },
-        ]}
-      />
+      <div className="no-print">
+        <PageHeader
+          kicker={`Post-Op Instructions · ${data.region}`}
+          title={data.officialTitle || data.name}
+          lede="What to expect and how to care for yourself after your procedure. These are Dr. Lee's general guidelines. Always follow the specific instructions given to you after your own surgery."
+          breadcrumb={[
+            { label: "Home", href: "/" },
+            { label: "Post-Op Instructions", href: "/therapy-protocols" },
+            { label: data.name, href: `/therapy-protocols/${data.slug}` },
+          ]}
+        />
+      </div>
 
-      <section className="bg-cream">
-        <div className="mx-auto max-w-4xl px-6 lg:px-10 py-14 lg:py-20">
-          <Link
-            href="/therapy-protocols"
-            className="inline-flex items-center gap-1.5 text-navy-900/70 hover:text-gold-600 text-[13px] font-medium transition-colors mb-10"
-          >
-            <ChevronLeft size={15} />
-            All post-op instructions
-          </Link>
-
-          {/* Instruction sections */}
-          <div className="bg-white border border-navy-900/10 rounded-sm divide-y divide-navy-900/10">
-            {sections.map((s, si) => (
-              <div key={si} className="p-8 lg:p-10">
-                {s.heading && (
-                  <h2 className="font-serif text-xl md:text-2xl text-navy-950 tracking-[-0.01em] mb-4">
-                    {s.heading}
-                  </h2>
-                )}
-                {s.body?.map((p, pi) => (
-                  <p
-                    key={pi}
-                    className="text-navy-900/90 text-[16px] leading-[1.75] max-w-3xl [&:not(:last-child)]:mb-4"
-                  >
-                    {p}
-                  </p>
-                ))}
-                {s.bullets && s.bullets.length > 0 && (
-                  <ul className="mt-4 space-y-3">
-                    {s.bullets.map((b, bi) => (
-                      <li key={bi} className="flex items-baseline gap-3 text-[15.5px] leading-[1.7] text-navy-900/90">
-                        <span className="h-1.5 w-1.5 rounded-full bg-gold-500 shrink-0 translate-y-[6px]" />
-                        <span>{b}</span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            ))}
+      <section className="bg-cream print:bg-white">
+        <div className="mx-auto max-w-4xl px-6 lg:px-10 py-14 lg:py-20 print:py-0 print:px-0">
+          <div className="no-print flex flex-wrap items-center justify-between gap-4 mb-10">
+            <Link
+              href="/therapy-protocols"
+              className="inline-flex items-center gap-1.5 text-navy-900/70 hover:text-gold-600 text-[13px] font-medium transition-colors"
+            >
+              <ChevronLeft size={15} />
+              All post-op instructions
+            </Link>
+            <PrintProtocolButton />
           </div>
 
-          {/* Warning callouts */}
-          {(data.warnings?.length > 0 || data.erWarnings?.length > 0) && (
-            <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-5">
-              {data.warnings?.length > 0 && (
-                <div className="border border-gold-500/40 bg-gold-500/[0.07] rounded-sm p-6">
-                  <div className="flex items-center gap-2.5 mb-4">
-                    <AlertCircle size={18} className="text-gold-600 shrink-0" strokeWidth={1.9} />
-                    <span className="kicker text-gold-600">Call the office immediately for</span>
-                  </div>
-                  <ul className="space-y-2.5">
-                    {data.warnings.map((w, wi) => (
-                      <li key={wi} className="flex items-baseline gap-2.5 text-[14.5px] leading-[1.6] text-navy-900/90">
-                        <span className="h-1 w-1 rounded-full bg-gold-600 shrink-0 translate-y-[7px]" />
-                        <span>{w}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-              {data.erWarnings?.length > 0 && (
-                <div className="border border-red-700/30 bg-red-700/[0.05] rounded-sm p-6">
-                  <div className="flex items-center gap-2.5 mb-4">
-                    <AlertTriangle size={18} className="text-red-700 shrink-0" strokeWidth={1.9} />
-                    <span className="kicker text-red-700">Go to the ER immediately for</span>
-                  </div>
-                  <ul className="space-y-2.5">
-                    {data.erWarnings.map((w, wi) => (
-                      <li key={wi} className="flex items-baseline gap-2.5 text-[14.5px] leading-[1.6] text-navy-900/90">
-                        <span className="h-1 w-1 rounded-full bg-red-700 shrink-0 translate-y-[7px]" />
-                        <span>{w}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </div>
-          )}
+          {/* Letterhead: print only */}
+          <ProtocolPrintHeader title={title} region={data.region} />
 
-          {/* Disclaimer */}
-          {data.disclaimer && (
-            <p className="mt-8 text-navy-900/70 text-[14px] leading-[1.7] italic">{data.disclaimer}</p>
-          )}
+          <ProtocolBody data={data} />
         </div>
       </section>
 
       {/* CTA */}
-      <section className="bg-navy-950 text-white">
+      <section className="no-print bg-navy-950 text-white">
         <div className="mx-auto max-w-4xl px-6 lg:px-10 py-20 lg:py-24 text-center">
           <div className="inline-flex items-center gap-3 mb-8">
             <span className="h-px w-10 bg-gold-500" />

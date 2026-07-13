@@ -207,6 +207,19 @@ export const PROCEDURE_PROTOCOL_QUERY = defineQuery(`
   }
 `);
 
+// Every post-operative protocol document, keyed by slug. Powers the
+// /therapy-protocols/print-all bulk packet so it reflects Sanity edits.
+export const ALL_PROCEDURE_PROTOCOLS_QUERY = defineQuery(`
+  *[_type == "procedureProtocol"] {
+    "slug": slug,
+    officialTitle,
+    sections[]{ heading, body, bullets },
+    warningsHeading, warnings,
+    erWarningsHeading, erWarnings,
+    disclaimer
+  }
+`);
+
 // The Specialties index page singleton.
 export const SPECIALTIES_INDEX_QUERY = defineQuery(`
   *[_id == "specialtiesIndexPage"][0] {
