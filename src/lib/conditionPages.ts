@@ -51,6 +51,22 @@ export type ConditionPageContent = {
   // Misconceptions
   misconceptions?: { intro: string; items: ConditionMisconception[] };
 
+  // Verified statistics with primary-source citations. GEO: statistics and
+  // literature citations are top AI-citation levers for YMYL pages. HARD RULE:
+  // every number here must be verified against the linked source before it
+  // ships; the sourceLabel names the study so the claim is auditable.
+  keyStats?: Array<{
+    value: string;
+    label: string;
+    sourceLabel: string;
+    url: string;
+  }>;
+
+  // Primary-source reading list, rendered at the article end and emitted as
+  // schema.org `citation` on the MedicalWebPage node. Deliberately NOT
+  // Sanity-editable: claim-bearing links stay in code review.
+  references?: Array<{ label: string; url: string }>;
+
   // Sidebar
   sidebarFacts: Array<{ label: string; value: string }>;
   whyDrLee: string[];
@@ -199,6 +215,27 @@ const distalRadiusFracture: ConditionPageContent = {
     eyebrow: "Recent wrist injury?",
     headline: "Don't let a poorly-set wrist set the next 30 years.",
   },
+  keyStats: [
+    {
+      value: "44%",
+      label:
+        "Share of the roughly 1.5 million US emergency-department hand and forearm fractures each year that involve the radius or ulna, the largest single group.",
+      sourceLabel: "Chung and Spilson, Journal of Hand Surgery (2001)",
+      url: "https://pubmed.ncbi.nlm.nih.gov/11561245/",
+    },
+  ],
+  references: [
+    {
+      label:
+        "Chung KC, Spilson SV. The frequency and epidemiology of hand and forearm fractures in the United States. Journal of Hand Surgery. 2001.",
+      url: "https://pubmed.ncbi.nlm.nih.gov/11561245/",
+    },
+    {
+      label:
+        "Distal Radius Fractures (Broken Wrist). OrthoInfo, American Academy of Orthopaedic Surgeons.",
+      url: "https://orthoinfo.aaos.org/en/diseases--conditions/distal-radius-fractures-broken-wrist/",
+    },
+  ],
   faqHeadline: "Distal radius fractures, answered.",
   faqs: [
     {
@@ -514,6 +551,13 @@ const basalJointArthroplasty: ConditionPageContent = {
     eyebrow: "Thumb pain limiting your hands?",
     headline: "Modern reconstruction. Faster recovery.",
   },
+  references: [
+    {
+      label:
+        "Arthritis of the Thumb. OrthoInfo, American Academy of Orthopaedic Surgeons.",
+      url: "https://orthoinfo.aaos.org/en/diseases--conditions/arthritis-of-the-thumb/",
+    },
+  ],
   faqHeadline: "Basal joint arthritis, answered.",
   faqs: [
     {
@@ -830,6 +874,31 @@ const uclReconstruction: ConditionPageContent = {
     eyebrow: "Throwing arm pain?",
     headline: "Get the right diagnosis before throwing through it.",
   },
+  keyStats: [
+    {
+      value: "96%",
+      label:
+        "Of Major League Baseball pitchers in a large series returned to pitching after Tommy John surgery.",
+      sourceLabel:
+        "Marshall et al., American Journal of Sports Medicine (2019)",
+      url: "https://pubmed.ncbi.nlm.nih.gov/30624958/",
+    },
+    {
+      value: "82%",
+      label:
+        "Returned to pitching at the Major League level in the same series.",
+      sourceLabel:
+        "Marshall et al., American Journal of Sports Medicine (2019)",
+      url: "https://pubmed.ncbi.nlm.nih.gov/30624958/",
+    },
+  ],
+  references: [
+    {
+      label:
+        "Marshall NE, et al. Major League Baseball Pitching Performance After Tommy John Surgery. American Journal of Sports Medicine. 2019.",
+      url: "https://pubmed.ncbi.nlm.nih.gov/30624958/",
+    },
+  ],
   faqHeadline: "Tommy John surgery, answered.",
   faqs: [
     {
@@ -1141,6 +1210,36 @@ const rotatorCuff: ConditionPageContent = {
     eyebrow: "Shoulder pain not getting better?",
     headline: "Find out whether it's the cuff, and whether it needs surgery.",
   },
+  keyStats: [
+    {
+      value: "20.7%",
+      label:
+        "Of adults in a general-population imaging study had a rotator cuff tear; prevalence rises steadily with age.",
+      sourceLabel:
+        "Yamamoto et al., Journal of Shoulder and Elbow Surgery (2010)",
+      url: "https://pubmed.ncbi.nlm.nih.gov/19540777/",
+    },
+    {
+      value: "16.9%",
+      label:
+        "Of people with no shoulder symptoms had a tear in the same study, which is why imaging findings alone never decide treatment.",
+      sourceLabel:
+        "Yamamoto et al., Journal of Shoulder and Elbow Surgery (2010)",
+      url: "https://pubmed.ncbi.nlm.nih.gov/19540777/",
+    },
+  ],
+  references: [
+    {
+      label:
+        "Yamamoto A, et al. Prevalence and risk factors of a rotator cuff tear in the general population. Journal of Shoulder and Elbow Surgery. 2010.",
+      url: "https://pubmed.ncbi.nlm.nih.gov/19540777/",
+    },
+    {
+      label:
+        "Rotator Cuff Tears. OrthoInfo, American Academy of Orthopaedic Surgeons.",
+      url: "https://orthoinfo.aaos.org/en/diseases--conditions/rotator-cuff-tears/",
+    },
+  ],
   faqHeadline: "Rotator cuff tears, answered.",
   faqs: [
     {
@@ -1295,6 +1394,28 @@ const aclReconstruction: ConditionPageContent = {
     eyebrow: "Recent knee injury?",
     headline: "Get a real ACL evaluation before training around it.",
   },
+  keyStats: [
+    {
+      value: "68.6",
+      label:
+        "New ACL tears per 100,000 person-years in a 21-year US population study, with the highest rates in young athletes.",
+      sourceLabel:
+        "Sanders et al., American Journal of Sports Medicine (2016)",
+      url: "https://pubmed.ncbi.nlm.nih.gov/26920430/",
+    },
+  ],
+  references: [
+    {
+      label:
+        "Sanders TL, et al. Incidence of anterior cruciate ligament tears and reconstruction: a 21-year population-based study. American Journal of Sports Medicine. 2016.",
+      url: "https://pubmed.ncbi.nlm.nih.gov/26920430/",
+    },
+    {
+      label:
+        "Anterior Cruciate Ligament (ACL) Injuries. OrthoInfo, American Academy of Orthopaedic Surgeons.",
+      url: "https://orthoinfo.aaos.org/en/diseases--conditions/anterior-cruciate-ligament-acl-injuries/",
+    },
+  ],
   faqHeadline: "ACL tears and reconstruction, answered.",
   faqs: [
     {
@@ -1448,6 +1569,27 @@ const achillesRupture: ConditionPageContent = {
     eyebrow: "Felt a pop in the calf?",
     headline: "Get evaluated within days, not weeks.",
   },
+  keyStats: [
+    {
+      value: "Rising",
+      label:
+        "Population studies show the incidence of acute Achilles tendon rupture has increased significantly in recent decades, especially in people over 50.",
+      sourceLabel:
+        "Ganestam et al., Knee Surgery, Sports Traumatology, Arthroscopy (2016)",
+      url: "https://pubmed.ncbi.nlm.nih.gov/25697284/",
+    },
+  ],
+  references: [
+    {
+      label:
+        "Ganestam A, et al. Increasing incidence of acute Achilles tendon rupture. Knee Surgery, Sports Traumatology, Arthroscopy. 2016.",
+      url: "https://pubmed.ncbi.nlm.nih.gov/25697284/",
+    },
+    {
+      label: "Achilles Tendon Rupture. StatPearls, NCBI Bookshelf.",
+      url: "https://www.ncbi.nlm.nih.gov/books/NBK430844/",
+    },
+  ],
   faqHeadline: "Achilles ruptures, answered.",
   faqs: [
     {
@@ -1618,6 +1760,26 @@ const carpalTunnel: ConditionPageContent = {
     eyebrow: "15-minute procedure",
     headline: "Most patients are home within an hour.",
   },
+  keyStats: [
+    {
+      value: "About 1 in 25",
+      label:
+        "Adults with symptomatic, examination-confirmed carpal tunnel syndrome in a general-population study (3.8 percent).",
+      sourceLabel: "Atroshi et al., JAMA (1999)",
+      url: "https://pubmed.ncbi.nlm.nih.gov/10411196/",
+    },
+  ],
+  references: [
+    {
+      label:
+        "Atroshi I, et al. Prevalence of carpal tunnel syndrome in a general population. JAMA. 1999.",
+      url: "https://pubmed.ncbi.nlm.nih.gov/10411196/",
+    },
+    {
+      label: "Carpal Tunnel Syndrome. StatPearls, NCBI Bookshelf.",
+      url: "https://www.ncbi.nlm.nih.gov/books/NBK448179/",
+    },
+  ],
   faqHeadline: "Carpal tunnel, answered.",
   faqs: [
     {
@@ -4509,6 +4671,26 @@ const lateralEpicondylitis: ConditionPageContent = {
     eyebrow: "Outer elbow pain with gripping?",
     headline: "Most tennis elbow heals without surgery.",
   },
+  keyStats: [
+    {
+      value: "1.3%",
+      label:
+        "Working-age adults with definite lateral epicondylitis at any given time in a population study.",
+      sourceLabel: "Shiri et al., American Journal of Epidemiology (2006)",
+      url: "https://pubmed.ncbi.nlm.nih.gov/16968862/",
+    },
+  ],
+  references: [
+    {
+      label:
+        "Shiri R, et al. Prevalence and determinants of lateral and medial epicondylitis: a population study. American Journal of Epidemiology. 2006.",
+      url: "https://pubmed.ncbi.nlm.nih.gov/16968862/",
+    },
+    {
+      label: "Lateral Epicondylitis (Tennis Elbow). StatPearls, NCBI Bookshelf.",
+      url: "https://www.ncbi.nlm.nih.gov/books/NBK431092/",
+    },
+  ],
   faqHeadline: "Tennis elbow, answered.",
   faqs: [
     {
@@ -8306,6 +8488,12 @@ const triggerFinger: ConditionPageContent = {
     eyebrow: "Finger catching or locking?",
     headline: "Most cases resolve with a single in-office injection.",
   },
+  references: [
+    {
+      label: "Trigger Finger. StatPearls, NCBI Bookshelf.",
+      url: "https://www.ncbi.nlm.nih.gov/books/NBK459310/",
+    },
+  ],
   faqHeadline: "Trigger finger, answered.",
   faqs: [
     {
@@ -8783,6 +8971,13 @@ const meniscusTear: ConditionPageContent = {
     eyebrow: "Twisted your knee?",
     headline: "Find out whether your meniscus can be repaired.",
   },
+  references: [
+    {
+      label:
+        "Meniscus Tears. OrthoInfo, American Academy of Orthopaedic Surgeons.",
+      url: "https://orthoinfo.aaos.org/en/diseases--conditions/meniscus-tears/",
+    },
+  ],
   faqHeadline: "Meniscus tears, answered.",
   faqs: [
     {

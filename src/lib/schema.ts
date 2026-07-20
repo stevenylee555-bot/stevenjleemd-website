@@ -234,6 +234,9 @@ export function buildMedicalWebPageSchema(page: {
   title: string;
   description?: string;
   lastReviewed?: string;
+  // Primary-source references (PubMed/AAOS/NIH). Emitted as schema.org
+  // `citation` so engines see the page's claims are literature-backed.
+  citations?: Array<{ label: string; url: string }>;
 }) {
   return {
     "@context": "https://schema.org",
@@ -245,6 +248,15 @@ export function buildMedicalWebPageSchema(page: {
     author: { "@id": PHYSICIAN_ID },
     reviewedBy: { "@id": PHYSICIAN_ID },
     ...(page.lastReviewed ? { lastReviewed: page.lastReviewed } : {}),
+    ...(page.citations?.length
+      ? {
+          citation: page.citations.map((c) => ({
+            "@type": "CreativeWork",
+            name: c.label,
+            url: c.url,
+          })),
+        }
+      : {}),
   };
 }
 

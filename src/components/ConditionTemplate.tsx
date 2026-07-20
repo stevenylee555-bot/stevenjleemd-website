@@ -38,6 +38,7 @@ export default function ConditionTemplate({
     title: data.name,
     description: data.schemaDescription,
     lastReviewed: data.byline.reviewed,
+    citations: data.references,
   });
   const specialty = specialtyForRegion(data.region);
 
@@ -175,6 +176,63 @@ export default function ConditionTemplate({
                             <strong className="text-navy-950">{item.heading}</strong>{" "}
                             {item.body}
                           </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+
+                {/* Verified statistics (values audited against the linked
+                    primary source; see keyStats rule in conditionPages.ts) */}
+                {data.keyStats && data.keyStats.length > 0 && (
+                  <>
+                    <h2 className="font-serif text-2xl md:text-3xl text-navy-950 tracking-[-0.01em] !mt-14 mb-5 leading-tight">
+                      By the numbers
+                    </h2>
+                    <div className="!my-5 grid gap-4 sm:grid-cols-2 not-prose">
+                      {data.keyStats.map((stat) => (
+                        <div
+                          key={stat.label}
+                          className="rounded-lg border border-navy-900/10 bg-cream p-5"
+                        >
+                          <div className="font-serif text-3xl text-navy-950 leading-none">
+                            {stat.value}
+                          </div>
+                          <div className="mt-2 text-[13.5px] leading-relaxed text-navy-900/90">
+                            {stat.label}
+                          </div>
+                          <a
+                            href={stat.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mt-3 inline-block text-xs font-medium text-gold-600 hover:text-gold-500 underline underline-offset-2"
+                          >
+                            {stat.sourceLabel}
+                          </a>
+                        </div>
+                      ))}
+                    </div>
+                  </>
+                )}
+
+                {/* Primary-source references (also emitted as schema.org
+                    citation on the MedicalWebPage node) */}
+                {data.references && data.references.length > 0 && (
+                  <>
+                    <h2 className="font-serif text-2xl md:text-3xl text-navy-950 tracking-[-0.01em] !mt-14 mb-3 leading-tight">
+                      Sources and further reading
+                    </h2>
+                    <ul className="!my-5 space-y-2">
+                      {data.references.map((ref) => (
+                        <li key={ref.url} className="text-[14px] leading-relaxed">
+                          <a
+                            href={ref.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-navy-900/90 underline underline-offset-2 decoration-gold-500/60 hover:text-navy-950 hover:decoration-gold-500"
+                          >
+                            {ref.label}
+                          </a>
                         </li>
                       ))}
                     </ul>
