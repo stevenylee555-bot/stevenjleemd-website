@@ -33,33 +33,33 @@ const statsFallback = [
 
 const trainingFallback = [
   {
-    year: "1987–1991",
+    year: "1987 to 1991",
     title: "B.A., Lehigh University",
-    detail: "6-year accelerated combined B.A.–M.D. program",
+    detail: "6-year accelerated combined B.A.-M.D. program",
   },
   {
-    year: "1989–1993",
+    year: "1989 to 1993",
     title: "M.D., The Medical College of Pennsylvania",
     detail: "Conferred June 1993",
   },
   {
-    year: "1993–1994",
+    year: "1993 to 1994",
     title: "Surgical Internship",
     detail: "Stony Brook University Hospital",
   },
   {
-    year: "1994–1998",
+    year: "1994 to 1998",
     title: "Orthopaedic Residency",
     detail:
       "Stony Brook University Hospital · Administrative Superchief during chief year",
   },
   {
-    year: "1998–1999",
+    year: "1998 to 1999",
     title: "Emanuel B. Kaplan Hand & Upper Extremity Fellowship",
     detail: "Hospital for Joint Diseases / NYU Medical Center",
   },
   {
-    year: "1999–2000",
+    year: "1999 to 2000",
     title: "James A. Nicholas Sports Medicine Fellowship",
     detail: "Lenox Hill Hospital",
   },

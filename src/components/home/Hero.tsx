@@ -10,10 +10,10 @@ import type { HomeContent } from "@/sanity/getHomePage";
 import { ZOCDOC_URL } from "@/lib/site";
 
 const recognition: { name: string; years: string }[] = [
-  { name: "Castle Connolly Top Doctor", years: "2014–Present" },
+  { name: "Castle Connolly Top Doctor", years: "2014 to Present" },
   { name: "NY Times Super Doctors", years: "Since 2008" },
   { name: "Super Doctors Hall of Fame", years: "Since 2019" },
-  { name: "New York Magazine Best Doctors", years: "2014–Present" },
+  { name: "New York Magazine Best Doctors", years: "2014 to Present" },
   { name: "U.S. News Top Doctor", years: "Multiple years" },
 ];
 

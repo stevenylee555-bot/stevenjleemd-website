@@ -15,28 +15,28 @@ const appointments = [
   {
     role: "Chief, Surgery of the Hand and Upper Extremity",
     org: "Department of Orthopaedic Surgery, Lenox Hill Hospital",
-    years: "2013 – Present",
+    years: "2013 to Present",
   },
   {
     role: "Lenox Hill Hospital Medical Board",
     org: "Lenox Hill Hospital",
-    years: "2023 – Present",
+    years: "2023 to Present",
   },
   {
     role: "Associate Director",
     org: "Nicholas Institute of Sports Medicine and Athletic Trauma (NISMAT)",
-    years: "2006 – Present",
+    years: "2006 to Present",
   },
   {
     role: "Attending Physician",
     org: "Department of Orthopaedic Surgery, Lenox Hill Hospital",
-    years: "2000 – Present",
+    years: "2000 to Present",
   },
   {
     role: "Police Surgeon",
     org:
       "NYC PBA · New York State Troopers, Inc. · Amtrak Fraternal Order of Police",
-    years: "2007 – Present",
+    years: "2007 to Present",
   },
 ];
 
@@ -76,7 +76,7 @@ const recognition = [
   {
     title: "Guide to America's Top Orthopedists",
     detail:
-      "Consumer's Research Council of America, multiple years (2007–2013)",
+      "Consumer's Research Council of America, multiple years (2007 to 2013)",
   },
 ];
 
@@ -158,15 +158,15 @@ const teamPhysician = [
   {
     title: "PGA Tour, Northeast Division",
     detail:
-      "Orthopaedic Surgery Consultant via Physiotherapy Associates / Stryker (2006–2008)",
+      "Orthopaedic Surgery Consultant via Physiotherapy Associates / Stryker (2006 to 2008)",
   },
   {
     title: "New Jersey Red Dogs · New Jersey Gladiators (Arena Football)",
-    detail: "Team Orthopaedic Physician, 2000–2002",
+    detail: "Team Orthopaedic Physician, 2000 to 2002",
   },
   {
     title: "Hofstra University Athletic Teams",
-    detail: "Team Orthopaedic Physician, 2000–2002",
+    detail: "Team Orthopaedic Physician, 2000 to 2002",
   },
 ];
 

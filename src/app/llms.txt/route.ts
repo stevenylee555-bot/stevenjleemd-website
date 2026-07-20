@@ -32,7 +32,7 @@ export function GET() {
     .map((c) => c.name)
     .join(", ");
 
-  const body = `# Steven J. Lee, MD — Orthopedic Surgeon (New York City & Scarsdale)
+  const body = `# Steven J. Lee, MD: Orthopedic Surgeon (New York City & Scarsdale)
 
 > Dr. Steven J. Lee is a double fellowship-trained, board-certified orthopedic surgeon specializing in hand, wrist, elbow, shoulder, and sports medicine. He is Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital and Associate Director at NISMAT. He sees patients in Manhattan (Upper East Side) and Scarsdale, NY, and accepts out-of-network and second-opinion patients, including internationally via telemedicine.
 

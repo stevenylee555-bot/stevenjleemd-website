@@ -49,7 +49,7 @@ export const cvPage = defineType({
         defineArrayMember({
           type: "object",
           fields: [
-            defineField({ name: "year", title: "Year range (e.g. 1994–1998)", type: "string" }),
+            defineField({ name: "year", title: "Year range (e.g. 1994 to 1998)", type: "string" }),
             defineField({ name: "title", title: "Title", type: "string" }),
             defineField({ name: "detail", title: "Detail", type: "text", rows: 2 }),
           ],

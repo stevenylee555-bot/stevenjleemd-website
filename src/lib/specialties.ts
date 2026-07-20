@@ -21,7 +21,7 @@ export type Specialty = {
   iconKey: SpecialtyIconKey;
   // Conditions library regions this specialty surfaces in its list.
   conditionRegions: Array<Condition["region"]>;
-  // 3–4 editorial pillars describing Dr. Lee's approach.
+  // 3 to 4 editorial pillars describing Dr. Lee's approach.
   approach: Array<{ title: string; body: string }>;
   // Credential / authority bullets specific to this region.
   credentials: string[];
@@ -169,7 +169,7 @@ export const specialties: Specialty[] = [
       {
         title: "Distal biceps repair",
         body:
-          "Single-incision tendon-to-bone repair using the cortical button and tenodesis screw constructs Dr. Lee helped develop. Most patients return to full activity within 4–6 months.",
+          "Single-incision tendon-to-bone repair using the cortical button and tenodesis screw constructs Dr. Lee helped develop. Most patients return to full activity within 4 to 6 months.",
       },
       {
         title: "Complex elbow trauma",

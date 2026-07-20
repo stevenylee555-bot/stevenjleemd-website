@@ -191,7 +191,7 @@ export default function ContactPage() {
                       aria-hidden="true"
                     />
                     <div className="text-[15px] text-navy-900/85">
-                      Monday–Friday · 8:00 AM – 5:00 PM
+                      Monday to Friday · 8:00 AM to 5:00 PM
                     </div>
                   </div>
                 </div>

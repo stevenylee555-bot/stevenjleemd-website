@@ -128,7 +128,7 @@ const distalRadiusFracture: ConditionPageContent = {
     {
       heading: "Non-surgical treatment",
       body: [
-        "Fractures that are minimally displaced, stable, and not involving the joint are managed in a well-molded cast. The cast typically stays on for 5–6 weeks, with X-rays every 1–2 weeks to make sure the fracture is staying in good position. Hand therapy is usually started before the cast comes off.",
+        "Fractures that are minimally displaced, stable, and not involving the joint are managed in a well-molded cast. The cast typically stays on for 5 to 6 weeks, with X-rays every 1 to 2 weeks to make sure the fracture is staying in good position. Hand therapy is usually started before the cast comes off.",
       ],
     },
     {
@@ -142,20 +142,20 @@ const distalRadiusFracture: ConditionPageContent = {
   recoveryIntro: "Recovery timelines for surgical fixation:",
   recovery: [
     {
-      when: "Day 0–7",
-      what: "Splint for the first week. Begin finger range-of-motion immediately to prevent stiffness. Elevation and ice. Most patients are off narcotic pain medication within 3–5 days.",
+      when: "Day 0 to 7",
+      what: "Splint for the first week. Begin finger range-of-motion immediately to prevent stiffness. Elevation and ice. Most patients are off narcotic pain medication within 3 to 5 days.",
     },
     {
-      when: "Weeks 1–2",
+      when: "Weeks 1 to 2",
       what: "Sutures removed. Transition to a removable wrist brace. Begin gentle active wrist motion. Hand therapy referral.",
     },
     {
-      when: "Weeks 2–6",
+      when: "Weeks 2 to 6",
       what: "Progressive return to daily activities. No lifting more than a coffee cup. Continued therapy. Bone is healing but not yet strong.",
     },
     {
-      when: "Weeks 6–12",
-      what: "Strength returns. Most patients return to office work by 2 weeks, manual work by 8–12 weeks, and sport by 3 months. Full bone healing takes 3–4 months.",
+      when: "Weeks 6 to 12",
+      what: "Strength returns. Most patients return to office work by 2 weeks, manual work by 8 to 12 weeks, and sport by 3 months. Full bone healing takes 3 to 4 months.",
     },
   ],
   misconceptions: {
@@ -180,8 +180,8 @@ const distalRadiusFracture: ConditionPageContent = {
     { label: "Cause", value: "Fall onto outstretched hand" },
     { label: "Surgical option", value: "Volar plate fixation (plating system Dr. Lee helped design)" },
     { label: "Anesthesia", value: "Regional block + light sedation" },
-    { label: "Cast / brace", value: "5–6 weeks (non-surgical), 2 weeks then brace (surgical)" },
-    { label: "Return to work", value: "Office work ~2 weeks, manual work 8–12 weeks" },
+    { label: "Cast / brace", value: "5 to 6 weeks (non-surgical), 2 weeks then brace (surgical)" },
+    { label: "Return to work", value: "Office work ~2 weeks, manual work 8 to 12 weeks" },
   ],
   whyDrLee: [
     "Chief of Hand and Upper Extremity Surgery at Lenox Hill Hospital",
@@ -214,7 +214,7 @@ const distalRadiusFracture: ConditionPageContent = {
     {
       question: "How long until I can use my hand again?",
       answer:
-        "After surgery, finger motion begins immediately and most patients are typing within a week or two. Light hand use returns by 2–4 weeks. Heavy lifting, gripping, and impact sport are typically deferred until 8–12 weeks. Full bone healing takes 3–4 months.",
+        "After surgery, finger motion begins immediately and most patients are typing within a week or two. Light hand use returns by 2 to 4 weeks. Heavy lifting, gripping, and impact sport are typically deferred until 8 to 12 weeks. Full bone healing takes 3 to 4 months.",
     },
     {
       question: "Will the plate need to be removed later?",
@@ -295,19 +295,19 @@ const scapholunate: ConditionPageContent = {
   recoveryIntro: "Reconstruction recovery typically follows this pattern:",
   recovery: [
     {
-      when: "Weeks 0–6",
+      when: "Weeks 0 to 6",
       what: "Cast or splint immobilization. No wrist motion. Finger and shoulder motion encouraged. K-wires sometimes used to stabilize the bones during healing.",
     },
     {
-      when: "Weeks 6–10",
+      when: "Weeks 6 to 10",
       what: "Removable splint. Begin gentle active wrist motion under hand therapy guidance. K-wires removed if used.",
     },
     {
-      when: "Weeks 10–16",
+      when: "Weeks 10 to 16",
       what: "Progressive strengthening. Discontinue splint for daily activities. Light occupational use returns.",
     },
     {
-      when: "Months 4–6",
+      when: "Months 4 to 6",
       what: "Return to manual work, weight-bearing on the wrist, and most sport. Contact sport and high-impact wrist loading typically deferred to 6 months.",
     },
   ],
@@ -334,7 +334,7 @@ const scapholunate: ConditionPageContent = {
     { label: "Surgical option", value: "Repair with internal brace, or tendon-graft reconstruction" },
     { label: "Implants used", value: "Suture anchors Dr. Lee helped design" },
     { label: "Immobilization", value: "6 weeks cast/splint after surgery" },
-    { label: "Full return", value: "4–6 months" },
+    { label: "Full return", value: "4 to 6 months" },
   ],
   whyDrLee: [
     "Co-designer of the anchor and internal brace system used in reconstruction",
@@ -362,7 +362,7 @@ const scapholunate: ConditionPageContent = {
     {
       question: "How long do I have to get this treated?",
       answer:
-        "The ideal window for direct repair is within 6 weeks. After 3–6 months, repair often isn't possible and reconstruction with a tendon graft becomes necessary. After arthritis develops, the only options are salvage procedures (partial fusion, proximal row carpectomy). The earlier the injury is caught, the more options remain.",
+        "The ideal window for direct repair is within 6 weeks. After 3 to 6 months, repair often isn't possible and reconstruction with a tendon graft becomes necessary. After arthritis develops, the only options are salvage procedures (partial fusion, proximal row carpectomy). The earlier the injury is caught, the more options remain.",
     },
     {
       question: "Will my wrist be normal again?",
@@ -457,19 +457,19 @@ const basalJointArthroplasty: ConditionPageContent = {
   recoveryIntro: "Recovery is faster than the older 'LRTI' technique most patients have heard about:",
   recovery: [
     {
-      when: "Weeks 0–2",
+      when: "Weeks 0 to 2",
       what: "Splint with thumb included. Light hand use for daily activities. Finger motion encouraged. Most patients are off prescription pain medication within a week.",
     },
     {
-      when: "Weeks 2–6",
+      when: "Weeks 2 to 6",
       what: "Removable thumb-spica brace. Begin gentle thumb motion in therapy. Light typing and writing return.",
     },
     {
-      when: "Weeks 6–12",
-      what: "Discontinue brace for daily activities. Progressive strengthening. Most patients regain functional pinch by 8–10 weeks.",
+      when: "Weeks 6 to 12",
+      what: "Discontinue brace for daily activities. Progressive strengthening. Most patients regain functional pinch by 8 to 10 weeks.",
     },
     {
-      when: "Months 3–6",
+      when: "Months 3 to 6",
       what: "Full return to manual work, sport, and forceful pinch. Strength continues to improve up to a year after surgery.",
     },
   ],
@@ -534,7 +534,7 @@ const basalJointArthroplasty: ConditionPageContent = {
     {
       question: "How long until I can use my hand normally?",
       answer:
-        "Light hand use begins within days. Office work and writing return at 2–3 weeks. Most patients are using the thumb normally by 2–3 months, with full strength continuing to improve up to a year after surgery. Compared with older techniques, this is meaningfully faster.",
+        "Light hand use begins within days. Office work and writing return at 2 to 3 weeks. Most patients are using the thumb normally by 2 to 3 months, with full strength continuing to improve up to a year after surgery. Compared with older techniques, this is meaningfully faster.",
     },
     {
       question: "Will I need surgery on my other thumb eventually?",
@@ -620,19 +620,19 @@ const handWristFractures: ConditionPageContent = {
   recoveryIntro: "Typical recovery after fixation of a hand fracture:",
   recovery: [
     {
-      when: "Day 0–7",
-      what: "Protective splint. Begin finger motion in unaffected fingers immediately. Elevation and ice for swelling. Most patients off prescription pain medication within 2–3 days.",
+      when: "Day 0 to 7",
+      what: "Protective splint. Begin finger motion in unaffected fingers immediately. Elevation and ice for swelling. Most patients off prescription pain medication within 2 to 3 days.",
     },
     {
-      when: "Weeks 1–3",
+      when: "Weeks 1 to 3",
       what: "Sutures removed. Transition to removable splint. Begin gentle motion of the operated finger or wrist in hand therapy. Light hand use returns.",
     },
     {
-      when: "Weeks 3–6",
-      what: "Progressive strengthening. Most office workers return to full duty by 3–4 weeks. Manual workers and athletes around 6–8 weeks depending on the fracture.",
+      when: "Weeks 3 to 6",
+      what: "Progressive strengthening. Most office workers return to full duty by 3 to 4 weeks. Manual workers and athletes around 6 to 8 weeks depending on the fracture.",
     },
     {
-      when: "Weeks 6–12",
+      when: "Weeks 6 to 12",
       what: "Full strength returns. Sport and impact activity resume. Stiffness, if present, is actively addressed in therapy, never accepted as the new normal.",
     },
   ],
@@ -657,9 +657,9 @@ const handWristFractures: ConditionPageContent = {
     { label: "Bones involved", value: "Metacarpals, phalanges, scaphoid, other carpal bones" },
     { label: "Common cause", value: "Falls, sports, punches, crush injuries" },
     { label: "Surgical option", value: "Plate/screw fixation with hardware Dr. Lee helped design" },
-    { label: "Immobilization", value: "1–4 weeks depending on fracture and fixation" },
-    { label: "Hand therapy", value: "Begins within 1–2 weeks in most cases" },
-    { label: "Full recovery", value: "6–12 weeks" },
+    { label: "Immobilization", value: "1 to 4 weeks depending on fracture and fixation" },
+    { label: "Hand therapy", value: "Begins within 1 to 2 weeks in most cases" },
+    { label: "Full recovery", value: "6 to 12 weeks" },
   ],
   whyDrLee: [
     "Helped design the hand and wrist plating systems used in fixation",
@@ -682,7 +682,7 @@ const handWristFractures: ConditionPageContent = {
     {
       question: "How can I tell if my finger is broken or just jammed?",
       answer:
-        "A 'jam' usually improves substantially over a week or two. Persistent swelling, visible deformity, inability to make a fist, or pain that doesn't fade after 7–10 days are reasons to get an X-ray. Subtle finger fractures that are mistreated as jams can become stiff, painful fingers, most are easily treated with prompt diagnosis.",
+        "A 'jam' usually improves substantially over a week or two. Persistent swelling, visible deformity, inability to make a fist, or pain that doesn't fade after 7 to 10 days are reasons to get an X-ray. Subtle finger fractures that are mistreated as jams can become stiff, painful fingers, most are easily treated with prompt diagnosis.",
     },
     {
       question: "Do I need surgery, or is buddy-taping enough?",
@@ -702,7 +702,7 @@ const handWristFractures: ConditionPageContent = {
     {
       question: "How soon will my finger move again?",
       answer:
-        "Earlier than most patients expect. Many hand fracture fixations allow gentle finger motion within a few days of surgery, preventing stiffness is one of the central goals. Hand therapy typically begins within the first 1–2 weeks. Most patients regain full finger motion by 6–8 weeks.",
+        "Earlier than most patients expect. Many hand fracture fixations allow gentle finger motion within a few days of surgery, preventing stiffness is one of the central goals. Hand therapy typically begins within the first 1 to 2 weeks. Most patients regain full finger motion by 6 to 8 weeks.",
     },
   ],
   bottomCtaTitle: "Hand fracture that's not healing right?",
@@ -760,7 +760,7 @@ const uclReconstruction: ConditionPageContent = {
     {
       heading: "Non-surgical treatment",
       body: [
-        "Selected partial tears, particularly in athletes not committed to high-level throwing, can be managed with 6–12 weeks of throwing rest, structured rehab focused on hip/core/scapular mechanics, and in some cases PRP injection. A period of supervised return-to-throwing follows. Success depends on tear location, partial vs. complete, and the athlete's demands.",
+        "Selected partial tears, particularly in athletes not committed to high-level throwing, can be managed with 6 to 12 weeks of throwing rest, structured rehab focused on hip/core/scapular mechanics, and in some cases PRP injection. A period of supervised return-to-throwing follows. Success depends on tear location, partial vs. complete, and the athlete's demands.",
       ],
     },
     {
@@ -773,20 +773,20 @@ const uclReconstruction: ConditionPageContent = {
   recoveryIntro: "Recovery for a thrower is a months-long structured progression:",
   recovery: [
     {
-      when: "Weeks 0–2",
-      what: "Posterior splint, then hinged brace. No elbow motion in the first 1–2 weeks to protect the graft. Begin hand and shoulder motion immediately.",
+      when: "Weeks 0 to 2",
+      what: "Posterior splint, then hinged brace. No elbow motion in the first 1 to 2 weeks to protect the graft. Begin hand and shoulder motion immediately.",
     },
     {
-      when: "Weeks 2–6",
+      when: "Weeks 2 to 6",
       what: "Hinged brace with progressive range of motion. Initiate light strengthening for shoulder, scapula, and core. No valgus stress.",
     },
     {
-      when: "Months 2–4",
+      when: "Months 2 to 4",
       what: "Brace off. Full range of motion. Progressive strengthening. No throwing yet.",
     },
     {
-      when: "Months 4–9",
-      what: "Begin interval throwing program at month 4–5. Progress through long-toss, mound work, and competitive throwing under guided protocol. Return to competitive pitching typically at 12–15 months, sometimes faster with internal brace augmentation.",
+      when: "Months 4 to 9",
+      what: "Begin interval throwing program at month 4 to 5. Progress through long-toss, mound work, and competitive throwing under guided protocol. Return to competitive pitching typically at 12 to 15 months, sometimes faster with internal brace augmentation.",
     },
   ],
   misconceptions: {
@@ -811,7 +811,7 @@ const uclReconstruction: ConditionPageContent = {
     { label: "Typical patient", value: "Overhead throwing athletes (baseball, football, tennis)" },
     { label: "Surgical option", value: "UCL reconstruction (docking technique) ± internal brace" },
     { label: "Implants used", value: "Anchors Dr. Lee helped design" },
-    { label: "Throwing return", value: "Begins month 4–5; competition at 12–15 months" },
+    { label: "Throwing return", value: "Begins month 4 to 5; competition at 12 to 15 months" },
     { label: "Internal brace augmentation", value: "May shorten return in selected patients" },
   ],
   whyDrLee: [
@@ -845,7 +845,7 @@ const uclReconstruction: ConditionPageContent = {
     {
       question: "How long until I can pitch again?",
       answer:
-        "Traditional UCL reconstruction returns competitive pitching at 12–15 months. Lighter throwing begins around month 4–5. With internal brace augmentation in appropriate patients, that timeline can be shorter, though the underlying biology of graft maturation still requires patience. Returning too early is the single most common cause of re-injury.",
+        "Traditional UCL reconstruction returns competitive pitching at 12 to 15 months. Lighter throwing begins around month 4 to 5. With internal brace augmentation in appropriate patients, that timeline can be shorter, though the underlying biology of graft maturation still requires patience. Returning too early is the single most common cause of re-injury.",
     },
     {
       question: "Will I throw as hard as before?",
@@ -893,7 +893,7 @@ const bicepsRupture: ConditionPageContent = {
       heading: "How the injury happens",
       body: [
         "The classic mechanism is a sudden, unexpected eccentric load, the biceps is contracting to lift something heavy when the weight suddenly increases (catching a falling box, attempting to lift a load that's heavier than expected). The tendon fails at its insertion onto the radius. Most patients describe a sharp pop, immediate weakness, and pain in the antecubital crease.",
-        "Bruising along the front of the elbow and up the arm typically appears within 24–48 hours. The biceps muscle balls up high in the arm, the 'Popeye sign', though this is less obvious than in proximal biceps ruptures.",
+        "Bruising along the front of the elbow and up the arm typically appears within 24 to 48 hours. The biceps muscle balls up high in the arm, the 'Popeye sign', though this is less obvious than in proximal biceps ruptures.",
       ],
     },
     {
@@ -906,14 +906,14 @@ const bicepsRupture: ConditionPageContent = {
   drLeeApproach: {
     paragraphs: [
       "Distal biceps rupture is a tendon-to-bone reconstruction problem, and the quality of that fixation determines the outcome. Dr. Lee uses a single-incision anterior approach with cortical button and tenodesis screw fixation, a construct he helped design.",
-      "The repair is durable enough to support early protected motion, which avoids the elbow stiffness that has historically been the biggest complication of biceps repair. Most patients are out of formal immobilization within 2–3 weeks.",
+      "The repair is durable enough to support early protected motion, which avoids the elbow stiffness that has historically been the biggest complication of biceps repair. Most patients are out of formal immobilization within 2 to 3 weeks.",
     ],
   },
   treatmentSections: [
     {
       heading: "Non-surgical treatment",
       body: [
-        "Reasonable for low-demand patients (typically elderly, sedentary, or with significant medical comorbidities). Non-operative management results in approximately 30–40% loss of supination strength and 20–30% loss of flexion strength. Many patients functionally adapt to this, but it is a real and permanent change.",
+        "Reasonable for low-demand patients (typically elderly, sedentary, or with significant medical comorbidities). Non-operative management results in approximately 30 to 40% loss of supination strength and 20 to 30% loss of flexion strength. Many patients functionally adapt to this, but it is a real and permanent change.",
       ],
     },
     {
@@ -926,20 +926,20 @@ const bicepsRupture: ConditionPageContent = {
   recoveryIntro: "Recovery after a single-incision repair:",
   recovery: [
     {
-      when: "Week 0–2",
-      what: "Posterior splint immobilizing the elbow at 90 degrees of flexion. Begin shoulder and hand motion immediately. Most patients off prescription pain medication within 3–5 days.",
+      when: "Week 0 to 2",
+      what: "Posterior splint immobilizing the elbow at 90 degrees of flexion. Begin shoulder and hand motion immediately. Most patients off prescription pain medication within 3 to 5 days.",
     },
     {
-      when: "Weeks 2–6",
+      when: "Weeks 2 to 6",
       what: "Hinged elbow brace with progressive range of motion. Active motion encouraged; no lifting. Light office work resumes.",
     },
     {
-      when: "Weeks 6–12",
+      when: "Weeks 6 to 12",
       what: "Discontinue brace. Begin strengthening. Light manual activity returns. No heavy lifting yet.",
     },
     {
-      when: "Months 3–6",
-      what: "Progressive strengthening to full. Return to manual work around month 3–4. Heavy lifting, sport, and full eccentric loading around month 4–6.",
+      when: "Months 3 to 6",
+      what: "Progressive strengthening to full. Return to manual work around month 3 to 4. Heavy lifting, sport, and full eccentric loading around month 4 to 6.",
     },
   ],
   misconceptions: {
@@ -947,7 +947,7 @@ const bicepsRupture: ConditionPageContent = {
     items: [
       {
         heading: "Time matters.",
-        body: "Distal biceps repairs become technically harder over time as the tendon retracts and scars. Acute repair (within 2–4 weeks) is straightforward; delayed repairs sometimes require a tendon graft. The injury benefits from prompt evaluation.",
+        body: "Distal biceps repairs become technically harder over time as the tendon retracts and scars. Acute repair (within 2 to 4 weeks) is straightforward; delayed repairs sometimes require a tendon graft. The injury benefits from prompt evaluation.",
       },
       {
         heading: "The bulge doesn't always go away.",
@@ -964,8 +964,8 @@ const bicepsRupture: ConditionPageContent = {
     { label: "Typical mechanism", value: "Sudden eccentric load on flexed elbow" },
     { label: "Surgical option", value: "Single-incision repair with cortical button + tenodesis screw" },
     { label: "Implants used", value: "Constructs Dr. Lee helped design" },
-    { label: "Best repair window", value: "Within 2–4 weeks of injury" },
-    { label: "Return to lifting", value: "Light at 6–8 weeks; full at 4–6 months" },
+    { label: "Best repair window", value: "Within 2 to 4 weeks of injury" },
+    { label: "Return to lifting", value: "Light at 6 to 8 weeks; full at 4 to 6 months" },
   ],
   whyDrLee: [
     "Co-designer of the cortical button and tenodesis screw used in repair",
@@ -988,12 +988,12 @@ const bicepsRupture: ConditionPageContent = {
     {
       question: "Do I need surgery for a biceps tendon rupture?",
       answer:
-        "Most active adults benefit from prompt surgical repair. Non-operative management is reasonable for low-demand or elderly patients, but typically leaves about 30–40% loss of supination strength and 20–30% loss of flexion strength. For patients who use their arms for work, sport, or daily lifting, repair restores essentially normal function and is generally the better choice.",
+        "Most active adults benefit from prompt surgical repair. Non-operative management is reasonable for low-demand or elderly patients, but typically leaves about 30 to 40% loss of supination strength and 20 to 30% loss of flexion strength. For patients who use their arms for work, sport, or daily lifting, repair restores essentially normal function and is generally the better choice.",
     },
     {
       question: "How long after the injury can it be repaired?",
       answer:
-        "Acute repairs done within 2–4 weeks of injury are technically straightforward. Repairs done 4–12 weeks out are doable but increasingly difficult as the tendon retracts and scars. After about 3 months, the retracted tendon may not reach the bone and a tendon graft is needed to bridge the gap. Earlier evaluation gives more options.",
+        "Acute repairs done within 2 to 4 weeks of injury are technically straightforward. Repairs done 4 to 12 weeks out are doable but increasingly difficult as the tendon retracts and scars. After about 3 months, the retracted tendon may not reach the bone and a tendon graft is needed to bridge the gap. Earlier evaluation gives more options.",
     },
     {
       question: "What is the cortical button?",
@@ -1003,7 +1003,7 @@ const bicepsRupture: ConditionPageContent = {
     {
       question: "When can I lift weights again?",
       answer:
-        "Light lifting (under 5 pounds) begins around 6–8 weeks. Heavier lifting, eccentric loading, and full gym return is staged through months 3–6. Most patients return to manual work around 3–4 months and competitive lifting or contact sport at 4–6 months. Returning to heavy loading too early is the most common preventable cause of re-rupture.",
+        "Light lifting (under 5 pounds) begins around 6 to 8 weeks. Heavier lifting, eccentric loading, and full gym return is staged through months 3 to 6. Most patients return to manual work around 3 to 4 months and competitive lifting or contact sport at 4 to 6 months. Returning to heavy loading too early is the most common preventable cause of re-rupture.",
     },
     {
       question: "Will the muscle bulge come back?",
@@ -1071,7 +1071,7 @@ const rotatorCuff: ConditionPageContent = {
     {
       heading: "Non-surgical treatment",
       body: [
-        "Many patients respond well to a structured program of physical therapy focused on scapular mechanics, posterior cuff strengthening, and selective corticosteroid injection for inflammation. Patients with small partial tears, low functional demands, or atrophic muscle may do well without surgery indefinitely. A reasonable trial of conservative treatment is typically 6–12 weeks before reassessing.",
+        "Many patients respond well to a structured program of physical therapy focused on scapular mechanics, posterior cuff strengthening, and selective corticosteroid injection for inflammation. Patients with small partial tears, low functional demands, or atrophic muscle may do well without surgery indefinitely. A reasonable trial of conservative treatment is typically 6 to 12 weeks before reassessing.",
       ],
     },
     {
@@ -1084,19 +1084,19 @@ const rotatorCuff: ConditionPageContent = {
   recoveryIntro: "Rotator cuff repair is a long rehabilitation. The roadmap:",
   recovery: [
     {
-      when: "Weeks 0–6",
+      when: "Weeks 0 to 6",
       what: "Sling immobilization. Passive range of motion only, therapist or other arm moves the shoulder. No active use of the cuff. Elbow, wrist, and hand motion encouraged.",
     },
     {
-      when: "Weeks 6–12",
+      when: "Weeks 6 to 12",
       what: "Sling discontinued. Begin active range of motion. No resistance. Pain typically declines significantly during this phase.",
     },
     {
-      when: "Months 3–6",
+      when: "Months 3 to 6",
       what: "Progressive strengthening. Functional return for daily activities and light occupational use.",
     },
     {
-      when: "Months 6–12",
+      when: "Months 6 to 12",
       what: "Continued strengthening to full. Return to sport, manual work, and overhead activity. Strength continues to improve up to a year after surgery.",
     },
   ],
@@ -1122,8 +1122,8 @@ const rotatorCuff: ConditionPageContent = {
     { label: "Typical patient", value: "Adults 40+, often after a fall or with chronic overhead use" },
     { label: "Surgical option", value: "All-arthroscopic repair with suture anchors" },
     { label: "Sling duration", value: "6 weeks" },
-    { label: "Return to sport", value: "6–9 months depending on demand" },
-    { label: "Full strength", value: "9–12 months" },
+    { label: "Return to sport", value: "6 to 9 months depending on demand" },
+    { label: "Full strength", value: "9 to 12 months" },
   ],
   whyDrLee: [
     "Double fellowship-trained, sports medicine and hand & upper extremity",
@@ -1146,7 +1146,7 @@ const rotatorCuff: ConditionPageContent = {
     {
       question: "Does every rotator cuff tear need surgery?",
       answer:
-        "No. Many cuff tears are asymptomatic and never require treatment. Symptomatic partial tears and small full-thickness tears often respond well to physical therapy, anti-inflammatories, and selective corticosteroid injection. Surgery is typically considered when conservative treatment has failed for 6–12 weeks, when there is significant weakness, or when there is a sudden traumatic tear in an active patient.",
+        "No. Many cuff tears are asymptomatic and never require treatment. Symptomatic partial tears and small full-thickness tears often respond well to physical therapy, anti-inflammatories, and selective corticosteroid injection. Surgery is typically considered when conservative treatment has failed for 6 to 12 weeks, when there is significant weakness, or when there is a sudden traumatic tear in an active patient.",
     },
     {
       question: "What is an arthroscopic repair?",
@@ -1156,12 +1156,12 @@ const rotatorCuff: ConditionPageContent = {
     {
       question: "Why is the recovery so long?",
       answer:
-        "Rotator cuff tissue heals to bone slowly, the biology of tendon-to-bone healing takes 3–4 months to reach reasonable strength. Loading the repair too early is the most common cause of re-tear. The 6-week sling and graduated rehab protect the healing tendon while it remodels into a durable construct.",
+        "Rotator cuff tissue heals to bone slowly, the biology of tendon-to-bone healing takes 3 to 4 months to reach reasonable strength. Loading the repair too early is the most common cause of re-tear. The 6-week sling and graduated rehab protect the healing tendon while it remodels into a durable construct.",
     },
     {
       question: "Will I get full strength and motion back?",
       answer:
-        "Most patients regain essentially full motion and strength by 9–12 months. The exact outcome depends on the size of the tear, the quality of the tendon and muscle going in, and the patient's commitment to rehab. Larger and more chronic tears have somewhat lower success rates, though even massive tears often improve substantially with appropriate treatment.",
+        "Most patients regain essentially full motion and strength by 9 to 12 months. The exact outcome depends on the size of the tear, the quality of the tendon and muscle going in, and the patient's commitment to rehab. Larger and more chronic tears have somewhat lower success rates, though even massive tears often improve substantially with appropriate treatment.",
     },
     {
       question: "What if my tear is too large to repair?",
@@ -1238,20 +1238,20 @@ const aclReconstruction: ConditionPageContent = {
   recoveryIntro: "ACL reconstruction recovery follows a sport-specific timeline:",
   recovery: [
     {
-      when: "Weeks 0–2",
+      when: "Weeks 0 to 2",
       what: "Crutches, brace, ice, elevation. Focus on regaining full extension, controlling swelling, and beginning quadriceps activation. Most patients are off prescription pain medication within a week.",
     },
     {
-      when: "Weeks 2–6",
+      when: "Weeks 2 to 6",
       what: "Progressive weight-bearing. Discontinue crutches. Begin formal physical therapy. Goals: full range of motion, normal gait, beginning strength work.",
     },
     {
-      when: "Months 2–6",
-      what: "Strength training. Begin straight-line running around month 3–4 in many protocols. Sport-specific drills, cutting, and pivoting added in stages.",
+      when: "Months 2 to 6",
+      what: "Strength training. Begin straight-line running around month 3 to 4 in many protocols. Sport-specific drills, cutting, and pivoting added in stages.",
     },
     {
-      when: "Months 6–12",
-      what: "Return to sport criteria typically met around 9–12 months. Functional testing, single-leg hop tests, strength symmetry, psychological readiness, guide return-to-sport decisions. Returning too early is the single most preventable cause of re-injury.",
+      when: "Months 6 to 12",
+      what: "Return to sport criteria typically met around 9 to 12 months. Functional testing, single-leg hop tests, strength symmetry, psychological readiness, guide return-to-sport decisions. Returning too early is the single most preventable cause of re-injury.",
     },
   ],
   misconceptions: {
@@ -1259,7 +1259,7 @@ const aclReconstruction: ConditionPageContent = {
     items: [
       {
         heading: "Return to sport at 6 months is usually too early.",
-        body: "Despite what some marketing suggests, the biological remodeling of an ACL graft takes 9–12 months in most patients. Returning earlier is associated with higher re-tear rates.",
+        body: "Despite what some marketing suggests, the biological remodeling of an ACL graft takes 9 to 12 months in most patients. Returning earlier is associated with higher re-tear rates.",
       },
       {
         heading: "Not every ACL tear needs surgery.",
@@ -1276,8 +1276,8 @@ const aclReconstruction: ConditionPageContent = {
     { label: "Typical mechanism", value: "Non-contact pivoting / cutting injury" },
     { label: "Graft options", value: "BTB, quadriceps tendon, hamstring, or allograft" },
     { label: "Internal brace augmentation", value: "Available in selected patients" },
-    { label: "Return to running", value: "Typically month 3–4" },
-    { label: "Return to sport", value: "9–12 months with functional testing" },
+    { label: "Return to running", value: "Typically month 3 to 4" },
+    { label: "Return to sport", value: "9 to 12 months with functional testing" },
   ],
   whyDrLee: [
     "Double fellowship-trained, sports medicine and hand & upper extremity",
@@ -1310,7 +1310,7 @@ const aclReconstruction: ConditionPageContent = {
     {
       question: "How long until I can play sports again?",
       answer:
-        "Return-to-sport is typically 9–12 months after reconstruction, with functional testing (strength symmetry, single-leg hop tests, psychological readiness) guiding the timing. Earlier return, especially before 9 months, is associated with higher re-tear rates. The goal is not just clearance by the calendar but readiness by objective testing.",
+        "Return-to-sport is typically 9 to 12 months after reconstruction, with functional testing (strength symmetry, single-leg hop tests, psychological readiness) guiding the timing. Earlier return, especially before 9 months, is associated with higher re-tear rates. The goal is not just clearance by the calendar but readiness by objective testing.",
     },
     {
       question: "What is internal brace augmentation for the ACL?",
@@ -1331,7 +1331,7 @@ const aclReconstruction: ConditionPageContent = {
   metaDescription:
     "ACL reconstruction by Dr. Steven J. Lee, MD, double fellowship-trained in sports medicine. Graft options (BTB, quadriceps, hamstring, allograft), internal brace augmentation in selected patients, return-to-sport timing.",
   schemaDescription:
-    "An ACL tear is a tear of the anterior cruciate ligament, typically from a non-contact pivoting injury. Treatment for active patients is usually ACL reconstruction using a tendon graft, with return to sport at 9–12 months.",
+    "An ACL tear is a tear of the anterior cruciate ligament, typically from a non-contact pivoting injury. Treatment for active patients is usually ACL reconstruction using a tendon graft, with return to sport at 9 to 12 months.",
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -1378,7 +1378,7 @@ const achillesRupture: ConditionPageContent = {
     {
       heading: "Non-surgical treatment (functional rehabilitation)",
       body: [
-        "Modern non-operative treatment is not 'casting and waiting.' It uses a functional bracing protocol that starts in equinus (toes-down position) and progressively brings the foot to neutral over 8–10 weeks. Early weight-bearing is encouraged. With this protocol, re-rupture rates approach those of surgical repair in appropriate patients.",
+        "Modern non-operative treatment is not 'casting and waiting.' It uses a functional bracing protocol that starts in equinus (toes-down position) and progressively brings the foot to neutral over 8 to 10 weeks. Early weight-bearing is encouraged. With this protocol, re-rupture rates approach those of surgical repair in appropriate patients.",
       ],
     },
     {
@@ -1391,20 +1391,20 @@ const achillesRupture: ConditionPageContent = {
   recoveryIntro: "Recovery follows a structured progression whether surgical or non-surgical:",
   recovery: [
     {
-      when: "Weeks 0–2",
+      when: "Weeks 0 to 2",
       what: "Splint or boot in equinus (toes down). Non-weight-bearing initially, transitioning to protected weight-bearing in the boot. Pain typically controlled with oral medication.",
     },
     {
-      when: "Weeks 2–8",
+      when: "Weeks 2 to 8",
       what: "Walking boot with heel lifts. Progressive heel-lift reduction to bring the foot toward neutral. Begin physical therapy. Increasing weight-bearing.",
     },
     {
-      when: "Months 2–4",
+      when: "Months 2 to 4",
       what: "Discontinue boot. Walking in normal shoes. Progressive calf strengthening. Stationary biking, then elliptical, then jogging in graduated steps.",
     },
     {
-      when: "Months 4–9",
-      what: "Return to running typically around month 4–5. Return to cutting sports and jumping around month 6–9 depending on the protocol and the patient's progress.",
+      when: "Months 4 to 9",
+      what: "Return to running typically around month 4 to 5. Return to cutting sports and jumping around month 6 to 9 depending on the protocol and the patient's progress.",
     },
   ],
   misconceptions: {
@@ -1416,10 +1416,10 @@ const achillesRupture: ConditionPageContent = {
       },
       {
         heading: "The slow part is not the surgery, it's the biology.",
-        body: "Tendon takes 6–9 months to remodel into something durable enough for running, cutting, and jumping. This is true regardless of whether the rupture was treated surgically or non-surgically.",
+        body: "Tendon takes 6 to 9 months to remodel into something durable enough for running, cutting, and jumping. This is true regardless of whether the rupture was treated surgically or non-surgically.",
       },
       {
-        heading: "Re-rupture risk is highest at 4–6 months.",
+        heading: "Re-rupture risk is highest at 4 to 6 months.",
         body: "Patients feel good around month 4 and want to push training. The tendon, however, is still remodeling and is vulnerable. Most re-ruptures happen in this window, in patients who exceeded the protocol.",
       },
     ],
@@ -1428,9 +1428,9 @@ const achillesRupture: ConditionPageContent = {
     { label: "Tendon involved", value: "Achilles tendon (calf to heel)" },
     { label: "Typical mechanism", value: "Sudden push-off in recreational sport" },
     { label: "Treatment options", value: "Surgical repair OR functional bracing" },
-    { label: "Boot duration", value: "8–10 weeks regardless of pathway" },
-    { label: "Return to running", value: "Month 4–5" },
-    { label: "Return to sport", value: "6–9 months" },
+    { label: "Boot duration", value: "8 to 10 weeks regardless of pathway" },
+    { label: "Return to running", value: "Month 4 to 5" },
+    { label: "Return to sport", value: "6 to 9 months" },
   ],
   whyDrLee: [
     "Four peer-reviewed publications on Achilles tendon repair",
@@ -1503,7 +1503,7 @@ const carpalTunnel: ConditionPageContent = {
     reviewed: "May 2026",
   },
   overview: [
-    "Carpal tunnel syndrome is compression of the median nerve as it passes through the carpal tunnel, a narrow passageway on the palm side of the wrist. It is the most common nerve compression in the body, affecting roughly 4–5% of adults, and one of the most frequent reasons patients are referred for hand surgery.",
+    "Carpal tunnel syndrome is compression of the median nerve as it passes through the carpal tunnel, a narrow passageway on the palm side of the wrist. It is the most common nerve compression in the body, affecting roughly 4 to 5% of adults, and one of the most frequent reasons patients are referred for hand surgery.",
     "Most patients describe a slow, gradual onset of numbness, tingling, and occasional sharp pain in the thumb, index, middle, and half of the ring finger. Symptoms classically worsen at night and during activities that hold the wrist in a flexed position, driving, holding a phone, reading.",
   ],
   bodySections: [
@@ -1562,19 +1562,19 @@ const carpalTunnel: ConditionPageContent = {
   recoveryIntro: "Recovery is faster than most patients expect. The summary:",
   recovery: [
     {
-      when: "Day 0–3",
-      what: "Light hand use the same day. Bulky dressing for the first 2–3 days. Elevate the hand above heart level to minimize swelling.",
+      when: "Day 0 to 3",
+      what: "Light hand use the same day. Bulky dressing for the first 2 to 3 days. Elevate the hand above heart level to minimize swelling.",
     },
     {
       when: "Week 1",
       what: "Sutures removed. Begin normal daily activities, typing, light cooking, dressing. Avoid heavy gripping or lifting.",
     },
     {
-      when: "Weeks 2–4",
+      when: "Weeks 2 to 4",
       what: "Most patients have returned to office work. Numbness and tingling improve substantially. Scar massage begins.",
     },
     {
-      when: "Weeks 4–6",
+      when: "Weeks 4 to 6",
       what: "Return to heavier activities, exercise, manual labor, sports. Scar tenderness fades over the following months.",
     },
   ],
@@ -1591,16 +1591,16 @@ const carpalTunnel: ConditionPageContent = {
       },
       {
         heading: "Surgery does not require months off work.",
-        body: "Most patients return to office work within a week and full activity within 4–6 weeks.",
+        body: "Most patients return to office work within a week and full activity within 4 to 6 weeks.",
       },
     ],
   },
   sidebarFacts: [
     { label: "Affected area", value: "Median nerve at the wrist" },
-    { label: "Typical age", value: "40–60, but seen across adulthood" },
+    { label: "Typical age", value: "40 to 60, but seen across adulthood" },
     { label: "Surgical option", value: "Endoscopic release (Dr. Lee's preference)" },
     { label: "Procedure time", value: "~15 minutes per hand" },
-    { label: "Return to activity", value: "Light use same day · full use 4–6 weeks" },
+    { label: "Return to activity", value: "Light use same day · full use 4 to 6 weeks" },
     { label: "Anesthesia", value: "Local + light sedation (no general)" },
   ],
   whyDrLee: [
@@ -1643,7 +1643,7 @@ const carpalTunnel: ConditionPageContent = {
     {
       question: "Will carpal tunnel come back after surgery?",
       answer:
-        "Recurrence after a properly performed carpal tunnel release is uncommon, approximately 1–2% of patients. If symptoms persist or return, it usually means either the diagnosis was incomplete (another nerve compression was missed) or the release was not adequate. A revision is occasionally needed and Dr. Lee performs these for patients who have had prior carpal tunnel surgery elsewhere.",
+        "Recurrence after a properly performed carpal tunnel release is uncommon, approximately 1 to 2% of patients. If symptoms persist or return, it usually means either the diagnosis was incomplete (another nerve compression was missed) or the release was not adequate. A revision is occasionally needed and Dr. Lee performs these for patients who have had prior carpal tunnel surgery elsewhere.",
     },
   ],
   bottomCtaTitle: "Think you have carpal tunnel?",
@@ -8562,19 +8562,19 @@ const kneeArthroscopy: ConditionPageContent = {
     "Recovery depends heavily on what was done. Simple debridement or partial meniscectomy recovers quickly; a meniscus repair is more protected:",
   recovery: [
     {
-      when: "Days 0–7",
+      when: "Days 0 to 7",
       what: "Crutches as needed, ice, elevation, and dressing care. For simple debridement or partial meniscectomy, many patients are walking with minimal aids within days. For a repair, weight-bearing is protected per the surgeon's plan.",
     },
     {
-      when: "Weeks 1–3",
+      when: "Weeks 1 to 3",
       what: "Swelling settles and portals heal. Range-of-motion and quadriceps activation begin. Simple cases often return to desk work and light activity in this window.",
     },
     {
-      when: "Weeks 3–6",
+      when: "Weeks 3 to 6",
       what: "Progressive strengthening and return to most daily activities for trimming and loose-body cases. Repair cases remain in a more graduated, protected protocol.",
     },
     {
-      when: "Months 2–6",
+      when: "Months 2 to 6",
       what: "Return to sport for simple procedures is often in the early weeks; meniscus repair return to cutting and pivoting sport is later and criteria-based, typically several months out.",
     },
   ],
@@ -8726,19 +8726,19 @@ const meniscusTear: ConditionPageContent = {
   recoveryIntro: "Recovery depends entirely on whether the tear was repaired or trimmed:",
   recovery: [
     {
-      when: "Days 0–14",
+      when: "Days 0 to 14",
       what: "After partial meniscectomy, crutches as needed and quick return to walking, with light activity within days to a couple of weeks. After repair, protected weight-bearing in a brace per the surgeon's plan.",
     },
     {
-      when: "Weeks 2–6",
+      when: "Weeks 2 to 6",
       what: "Meniscectomy patients progress to most daily activities and light exercise. Repair patients work on range of motion within protected limits and begin graduated strengthening.",
     },
     {
-      when: "Months 2–4",
+      when: "Months 2 to 4",
       what: "Meniscectomy patients typically back to full activity. Repair patients continue progressive strengthening with bracing weaned per protocol.",
     },
     {
-      when: "Months 4–6",
+      when: "Months 4 to 6",
       what: "Return to cutting and pivoting sport after a repair is typically in the four-to-six-month range and criteria-based, once strength and function are restored.",
     },
   ],
@@ -8885,15 +8885,15 @@ const clavicleFracture: ConditionPageContent = {
     "Whether treated in a sling or with a plate, clavicle healing follows a broadly similar timeline:",
   recovery: [
     {
-      when: "Weeks 0–2",
+      when: "Weeks 0 to 2",
       what: "Arm sling for comfort. Early gentle elbow, wrist, and hand motion. Ice and oral pain medication. Avoid lifting and overhead activity. After surgery, the incision is monitored and the shoulder is protected.",
     },
     {
-      when: "Weeks 2–6",
+      when: "Weeks 2 to 6",
       what: "Progressive shoulder range of motion as pain settles. The sling is weaned. X-rays confirm the fracture is healing. Light daily activities resume.",
     },
     {
-      when: "Weeks 6–12",
+      when: "Weeks 6 to 12",
       what: "Bony union is typically achieved in this window, around 6 to 12 weeks. Strengthening begins. Most daily and occupational activity resumes as the fracture consolidates.",
     },
     {
@@ -9045,19 +9045,19 @@ const shoulderArthroscopy: ConditionPageContent = {
     "Recovery depends on what was done. A decompression recovers faster than a protected repair:",
   recovery: [
     {
-      when: "Weeks 0–6",
+      when: "Weeks 0 to 6",
       what: "Sling for a protected repair, typically four to six weeks. Passive or limited motion per the surgeon's protocol while the repair heals. Elbow, wrist, and hand motion encouraged. A decompression without a repair allows earlier active motion.",
     },
     {
-      when: "Weeks 6–12",
+      when: "Weeks 6 to 12",
       what: "Sling discontinued for repairs. Active range of motion progresses. Pain typically declines significantly. Therapy advances toward full motion.",
     },
     {
-      when: "Months 3–6",
+      when: "Months 3 to 6",
       what: "Progressive strengthening. Functional return for daily activities and light occupational use. Decompression-only patients are usually back to most activity earlier in this window.",
     },
     {
-      when: "Months 6–12",
+      when: "Months 6 to 12",
       what: "Return to sport, overhead work, and full strength for repair cases, which continues to improve up to a year after surgery, guided by restored strength and function.",
     },
   ],
