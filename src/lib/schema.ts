@@ -83,10 +83,20 @@ export const physicianNode = {
   ],
   telephone: "+1-212-737-3301",
   faxNumber: "+1-212-737-4876",
+  // NPI is the strongest disambiguator against the name-twin (Steve K. Lee, MD
+  // at HSS, NPI 1396711958). Verified against the CMS registry 2026-07-19.
+  identifier: {
+    "@type": "PropertyValue",
+    propertyID: "NPI",
+    value: "1538154380",
+  },
+  // Verified-identity URLs only. The old Healthgrades slug could not be
+  // confirmed as this Dr. Lee (it is the profile with the wrong-bio issue) and
+  // the old Vitals slug returns 410. Re-add each directory URL only after the
+  // profile is claimed and its exact URL confirmed.
   sameAs: [
     ZOCDOC_URL,
-    "https://www.healthgrades.com/physician/dr-steven-lee",
-    "https://www.vitals.com/doctors/Dr_Steven_Lee",
+    "https://npiregistry.cms.hhs.gov/provider-view/1538154380",
   ],
 };
 
